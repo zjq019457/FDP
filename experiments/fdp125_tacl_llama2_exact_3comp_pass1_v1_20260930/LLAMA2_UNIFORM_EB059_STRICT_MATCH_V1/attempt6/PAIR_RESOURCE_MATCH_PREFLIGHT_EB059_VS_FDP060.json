@@ -1,0 +1,38 @@
+{
+  "artifact_id": "LLAMA2_UNIFORM_EB059_VS_FDP_EB060_PAIR_RESOURCE_PREFLIGHT_V1",
+  "status": "PAIR_RESOURCE_MATCH_PASS_DIAGNOSTIC",
+  "checkpoint": "meta-llama/Llama-2-7b-hf",
+  "model_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa5856660c691f6626d25c2cf25197",
+  "uniform_eb": 0.059,
+  "uniform_B_live": 789577728,
+  "uniform_rank_sha256": "3f4e59be8cf981abb5c6c272702eb42e75729f9167677e29846f957e7935eaf4",
+  "uniform_basis_sha256": "9e85529f6927ed6cdd40fece0ec49b7e00c3500446a3118ced6951631e8ab203",
+  "uniform_realization_audit_sha256": "4c2dd55dabce507d36a6b5e8d7e2845be6dd78e04d00cc22a9a9f1622ade1569",
+  "fdp_eb": 0.06,
+  "fdp_B_live": 788922368,
+  "fdp_rank_sha256": "56b904be040e2002a580fbd22cada28db2727ec8c696fb7548e44c7d654f8d00",
+  "fdp_allocation_sha256": "23af907470c6dce70cefb84ed231e0284015659e80e9f5ab52a7f8d5666825b5",
+  "fdp_basis_sha256": "8163de5e2b3499556a84b31c7e6218a07bd98200f47056a401aa10b000e8165b",
+  "fdp_materialization_audit_sha256": "b00b38e3bedbf9fce11ccf490f01fc2da0e5f95a9a1ec3d193c92de569210e54",
+  "pair_delta_uniform_minus_fdp_bytes": 655360,
+  "pair_gap_pct_relative_to_fdp": 0.0830702774547267,
+  "acceptance_range_pct": [
+    0,
+    0.15
+  ],
+  "pair_acceptance": "PASS_ONE_SIDED_CONSERVATIVE",
+  "wiki_manifest_sha256": "0d5d84d48f24f7a34e4e1b7e67a84ddd02d39acfa63d4bd19b5154951b6d9965",
+  "c4_manifest_sha256": "c5eb905410d1032db4978cc8e654576d99afeb36fe7191ef991da3f248ba6124",
+  "wiki_windows": 166,
+  "c4_windows": 256,
+  "canary": {
+    "reload1_ppl": 7.6242197503394245,
+    "reload2_ppl": 7.6242197503394245,
+    "reload1_total_nll": 8320.32763671875,
+    "reload2_total_nll": 8320.32763671875,
+    "identical": true,
+    "sample_hashes": "verified from per-window logs"
+  },
+  "fdp_per_cell_authorization": "NOT_FORMALLY_AUTHORIZED; this is a pair-specific matched diagnostic only",
+  "foreign_jobs_interrupted": 0
+}

@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-07-28T09:43:17.188671-07:00",
+  "stage": "R2_UNIFORM_PREFLIGHT",
+  "python": "/home/bai-project/anaconda3/envs/eigen/bin/python",
+  "paths": {
+    "model": "/diskD/jiaqizhang/Llama-3",
+    "wikitext2": "/home/bai-project/jiaqizhang/wikitext2",
+    "historical_basis": "/diskD/jiaqizhang/llama3_8b_eigen_basis_wikitext2_eb/eigen_basis_llama3_8b_wikitext2_eb0p045.pt",
+    "isolated_basis": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/r2_uniform_eb045/eigen_basis_llama3_8b_wikitext2_eb0p045.pt",
+    "builder_script": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+    "main_script": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+    "out_dir": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/r2_uniform_eb045"
+  },
+  "hashes": {
+    "historical_basis": "1186efc90a38ef353fdd6c0c05d254ee74c2d9acd8c50e74aa0ed8dac5eddee8",
+    "isolated_basis": "1186efc90a38ef353fdd6c0c05d254ee74c2d9acd8c50e74aa0ed8dac5eddee8",
+    "builder_script": "38c8dba0ee6e92602cd9ce998f68c72348bfc2d5596ef0e468282c7955f3b1e6",
+    "main_script": "f4935bffd603f57d250df2cc7982779cae08f7f456144be351b1c1df7125d2c0",
+    "model_config": "2430cee764b6530ff8673cf9ba8561e1d5a33152d503cd0de909ff5718261441",
+    "protocol": "46045088fa3fca40321c6d59d0367e9f8921c0ba97b9492791f4abed6c2091d4"
+  },
+  "uniform_operating_point": {
+    "tag": "eb045",
+    "error_budget": 0.045
+  },
+  "compress_args": {
+    "model": "/diskD/jiaqizhang/Llama-3",
+    "net": "Llama-3-8b",
+    "dtype": "bf16",
+    "error_budget": 0.045,
+    "avg_dim": 4096,
+    "seqlen": 2048,
+    "nsamples": 64,
+    "seed": 2,
+    "calib_dataset": "c4",
+    "compress_only": true,
+    "attn_implementation": "eager",
+    "eigen_basis_path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/r2_uniform_eb045/eigen_basis_llama3_8b_wikitext2_eb0p045.pt",
+    "save_dir": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/r2_uniform_eb045/final_model",
+    "output_dir": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/r2_uniform_eb045/compress_run",
+    "cache_dir": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/HF_cache",
+    "multigpu": false,
+    "single_gpu_policy": "CUDA_VISIBLE_DEVICES=<preferred>; no --multigpu",
+    "provenance": {
+      "basis": "recovered_from_artifact",
+      "basis_source": "/diskD/jiaqizhang/llama3_8b_eigen_basis_wikitext2_eb/eigen_basis_llama3_8b_wikitext2_eb0p045.pt",
+      "compress_flags": "recovered_from_log",
+      "log_evidence": "/diskD/jiaqizhang/llama3_8b_eigen_kv_eb045/log_rank0_1777656418.txt",
+      "builder_defaults_nsamples_seqlen": "recovered_from_source (offline builder 512x2048 for basis creation)",
+      "note": "Surviving historical basis reused (hashed+copied). Compressed final_model will be rebuilt via main_eigen_attn --compress_only into isolation."
+    }
+  },
+  "expected_artifacts": [
+    "eigen_basis_llama3_8b_wikitext2_eb0p045.pt",
+    "LEGACY_UNIFORM_RANK_PLAN.csv",
+    "final_model/",
+    "final_model/low_rank_config.json",
+    "LEGACY_UNIFORM_BASIS_MANIFEST.json",
+    "LEGACY_UNIFORM_MODEL_MANIFEST.json"
+  ]
+}

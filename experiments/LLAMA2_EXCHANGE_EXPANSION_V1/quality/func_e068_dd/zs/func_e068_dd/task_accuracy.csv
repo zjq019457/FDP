@@ -1,0 +1,6 @@
+task,n,correct,accuracy,metric
+piqa_localjsonl,1838,1342,0.7301414581066377,"acc,none"
+winogrande_localjsonl,1267,778,0.6140489344909235,"acc,none"
+arc_easy_localjsonl,2376,1460,0.6144781144781145,"acc,none"
+arc_challenge_localjsonl,1172,384,0.32764505119453924,"acc,none"
+hellaswag_localjsonl,10042,4624,0.46046604262099183,"acc,none"

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "error": "no common samples",
+      "task": "hellaswag_localjsonl"
+    },
+    {
+      "error": "no common samples",
+      "task": "arc_challenge_localjsonl"
+    },
+    {
+      "error": "no common samples",
+      "task": "arc_easy_localjsonl"
+    },
+    {
+      "error": "no common samples",
+      "task": "winogrande_localjsonl"
+    },
+    {
+      "error": "no common samples",
+      "task": "piqa_localjsonl"
+    }
+  ]
+}

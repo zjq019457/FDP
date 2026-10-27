@@ -1,0 +1,85 @@
+{
+  "files": {
+    "bridgekv/rescuekv_scoring.py": {
+      "exists": true,
+      "sha256": "065f0e6fbcafb47af5707c8d705c5032ecd05e624989ba1397985e29f4a80211",
+      "size_bytes": 44441
+    },
+    "configs/cc_gate_v0.json": {
+      "exists": true,
+      "sha256": "7c87fedcc9fb3276dfa115350a2a695128248b5a532006126bd896f22dca0e7f",
+      "size_bytes": 410
+    },
+    "configs/dataset2maxlen.json": {
+      "exists": true,
+      "sha256": "54d1586d1116c3a72fd17af2a82357c4bff4ca79bee24fb8c3a048a3c9f00d3d",
+      "size_bytes": 1057
+    },
+    "configs/dataset2prompt.json": {
+      "exists": true,
+      "sha256": "3c06dba9f4308375d8751a7dbf6d0f4167b4d64afc27655e6577cc4bb51f1b91",
+      "size_bytes": 8633
+    },
+    "experiments/run_qwen25_sliminfer_variants.py": {
+      "exists": true,
+      "sha256": "3fbbba4161a9792438a2de7efcf901b339be9b26c212ff46f99a00a3fb622061",
+      "size_bytes": 150682
+    },
+    "longbench_eval.py": {
+      "exists": true,
+      "sha256": "a71ef393206539961e976bf83f90349008f01208e16944f2a9c935ea4108b243",
+      "size_bytes": 8688
+    },
+    "longbench_pred.py": {
+      "exists": true,
+      "sha256": "f60f96c9fa7858e2389f51e1d747e184c39d2342511fe709f6d9bf917f999d58",
+      "size_bytes": 9598
+    },
+    "models/modeling_llama.py": {
+      "exists": true,
+      "sha256": "2620daa50c84fc332cb571eff255d2e2e5f4a593e434d2e96acf7386572a0c59",
+      "size_bytes": 54745
+    },
+    "models/modeling_qwen2.py": {
+      "exists": true,
+      "sha256": "549ca394bf48bbec4a6cfabd44d820e6142622634c815ce7a79667ee20d8cbd7",
+      "size_bytes": 51159
+    },
+    "tools/consolidate_official_repro_results.py": {
+      "exists": true,
+      "sha256": "b11d62e2833fd99395be82abba322f3551778de1a842849dfe61ded0ed97cd57",
+      "size_bytes": 8654
+    },
+    "tools/freeze_unified_longbench_v1.py": {
+      "exists": true,
+      "sha256": "610563aad0732f1b9e781f3a2dca221dd8a169a76f07ec6c95354a37ff75fa40",
+      "size_bytes": 54982
+    },
+    "tools/run_cc_sliminfer_v1_17task_full_official.py": {
+      "exists": true,
+      "sha256": "8d3f25c5723322cd1d8cf89f5aadc4bb9cc60a98ee724c86b479d3405302557c",
+      "size_bytes": 32233
+    },
+    "tools/run_drm_add_mechanism_revalidation.py": {
+      "exists": true,
+      "sha256": "0a609c5a3b54caec4c448dc288834b7221726636acf75d58a6fc26c670e22412",
+      "size_bytes": 51571
+    },
+    "tools/run_drm_add_official_17task_full.py": {
+      "exists": true,
+      "sha256": "8ed2a9c2fbd48cfe35fa6fd32fc8441e01a5a6544ad9ea6dd11fe734b6e84f8b",
+      "size_bytes": 64655
+    },
+    "tools/run_drm_add_six_task_gate.py": {
+      "exists": true,
+      "sha256": "09cf4a3e8622e77059464edebecb691fdf1a16637a7ff820187732749154b4e2",
+      "size_bytes": 7413
+    },
+    "utils/cache_utils.py": {
+      "exists": true,
+      "sha256": "bf932cc4c387352cadb55bffc21db4e4b48dfaba43ca2336a8f4ef52443edbe7",
+      "size_bytes": 500773
+    }
+  },
+  "git_commit": "2fdc9815dc0cd9467bfbbc855c7805101dc15706"
+}

@@ -1,0 +1,121 @@
+{
+  "audit_created_utc": "2026-10-01T00:26:05.972556+00:00",
+  "classification": "LLAMA3_3COMP_DIAGNOSTIC_POST_HOC; CURRENT_LLAM3_MEDIUM_CELL_USES_THIS_LOCKED_SCHEDULE",
+  "selection_timing": "POST_HOC_SELECTED relative to the 2026-09-09 five-component formal-method freeze; not pre-formal frozen in the original dev gate",
+  "model": {
+    "repo_id": "meta-llama/Meta-Llama-3-8B",
+    "content_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+    "current_cell_lock_sha256": "29fbf129266e09da0f08303fc4ea32f2a5291b20e1af020f25a07ec96c802cd6",
+    "note": "Llama-3-8B, not Llama-3.1-8B."
+  },
+  "component_mask": "11001",
+  "components": [
+    "d1",
+    "d2",
+    "d5"
+  ],
+  "formula": "q3 = MinMax(d1 + d2 + d5), where d1=Z_rel_mse, d2=score_rel_mse_causal, d5=max(0,-entropy_diff_A); raw component values are summed before layerwise min-max; component z-score normalization is disabled.",
+  "pass1": {
+    "base_error_budget": 0.06,
+    "source_profile": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb060.json",
+    "source_profile_sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+    "profile_generation_code": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/step1_diagnose_llama.py",
+    "profile_generation_code_sha256": "df5273a707fcc6006eaee00dfc0e7848bf3b29eee122a20115af7c74ba0ab75a",
+    "profile_args": {
+      "seqlen": 512,
+      "num_seqs": 2,
+      "prompts_file": null,
+      "dtype": "bf16",
+      "attn_implementation": "eager",
+      "seed_policy": "no explicit seed arg recorded; fixed DEFAULT_PROMPTS[:2] path"
+    },
+    "pass1_compressed_model_path_at_collection": "/diskE/jiaqizhang/llama3_8b_eigen_kv_eb060/final_model",
+    "pass1_model_currently_present": false,
+    "replay_scope": "raw-profile-to-q/schedule replay; Pass1 forward/profile was not reacquired from model weights"
+  },
+  "allocator": {
+    "method_family": "TRUE_TWO_PASS_FDP_EB",
+    "subset_search_code": "/diskF/jiaqizhang/fdp_component_subset_search_v2/configs/re_enumerate_v2.py",
+    "subset_search_code_sha256": "123013ac73df49c312ea02e4ab562c725d5fe2d6b5bd102087a910e77572e45c",
+    "component_code": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/realloc_rank_from_fragility.py",
+    "component_code_sha256": "3799526d7e0ff0e05df6d7e5f2c267e9f09b65d81551ca622985e4a4cf181a6e",
+    "basis_builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+    "basis_builder_sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+    "operator": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+    "operator_sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7",
+    "inverse_mapping": "epsilon_raw_l = 0.06/(1 + 1.2*q_l); scale all layers by 0.06/mean(epsilon_raw); historical subset implementation computes a rho=0.75 geometric blend for intermediate L0, then the canonical builder overrides L0 to exactly 0.06. Effective L0 used in rank search is 0.06.",
+    "rank_search": "threshold 1.00 down to 0.30 inclusive, step 0.02; choose largest threshold with relative layer error <= effective epsilon; min_rank=64; basis-bound clipping; KQ/V ranks saved per layer."
+  },
+  "replay": {
+    "raw_q_sha256_audit_serialization": "3e29bec57d805b896e228f81ea2458efe9d5a976ac395cbf14446b1c72673986",
+    "q_sha256_round8": "33104d536d796ab0cd129e39e2c1ec9427d832c7c38229bca613391f57d9a6d65",
+    "q_was_historically_serialized": false,
+    "epsilon_intermediate_sha256_round8": "56fec59611ff979940d3b2b4350cc22550760976f0d1e02c265300e4b9708144",
+    "epsilon_effective_after_L0_freeze_sha256_round8": "36c4cf4669a0a81d5ecad3737cefd1ba40ae13f19c3ba934baf5fa7f5ae83ed8",
+    "epsilon_effective_mean": 0.05920890324084824,
+    "rank_sha256": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+    "rank_schedule_file_sha256": "3800ab0b3a3cefe076db21bd5be47515ec3583a21eee811985f57758ddd6f512",
+    "rank_schedule_exact_match": true,
+    "rank_sum": 48768,
+    "b_live_bytes": 199753728,
+    "basis_report_sha256": "bc91269c1deed44ab1fbf973e66e90417145c327b5a6db5d679a1c69eb3c585e",
+    "per_layer_eb_file_sha256": "07d019a3e4c4de5830088450507b13276ce0a3e5f9c42fa1070af18350eb3022",
+    "effective_builder_mode": {
+      "per_layer_eb": true,
+      "freeze_layer0_eb": true,
+      "layer0_eb": 0.06
+    },
+    "basis_sha256": "793be8850b160bfb10a233a4971b453889f51453c35cf7d4172ffb5eb8e4d7a1"
+  },
+  "quality_subset_search": {
+    "wiki_ppl": 7.1594697724543135,
+    "c4_ppl": 11.99871051780785,
+    "J": 2.226617555634337,
+    "compressed_model_hash": "5431fe6866f1d1828ab1cbd4e32b612e77fccb3fba65e336bfc99ca32e38dee2",
+    "evaluation_protocol_sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+    "runner_sha256": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+    "source_provenance_sha256": "f63af76b4259c35af36351e4fa289cdf18ebf6c44edffb5f04f132f14e0f93da",
+    "status": "completed subset-search evaluation; post-hoc diagnostic relative to initial five-component freeze"
+  },
+  "current_formal_cell": {
+    "resource_lock_sha256": "29fbf129266e09da0f08303fc4ea32f2a5291b20e1af020f25a07ec96c802cd6",
+    "official_b_live_bytes": 199917568,
+    "fdp125_b_live_bytes": 199753728,
+    "gap_bytes_fdp_minus_official": -163840,
+    "gap_pct_vs_official": -0.081953778069169,
+    "official_wiki_ppl": 7.38435765897,
+    "fdp125_wiki_ppl": 7.15946977245,
+    "official_c4_ppl": 13.39046816253,
+    "fdp125_c4_ppl": 11.99871051781,
+    "official_J": 2.29695352787,
+    "fdp125_J": 2.22661755563,
+    "delta_J": -0.07033597224,
+    "zero_shot": {
+      "official_macro_pct": 64.06312530422815,
+      "fdp125_macro_pct": 65.29739206930603,
+      "delta_pp": 1.2342667650778738,
+      "paired_95_ci_pp": [
+        0.6341115614658619,
+        1.8048856655904593
+      ],
+      "n": 16695
+    },
+    "longbench_17_task": {
+      "official": 20.85,
+      "fdp125": 19.69,
+      "delta_pp": -1.1615,
+      "n_samples": 3950,
+      "positive_tasks": 9,
+      "negative_tasks": 8,
+      "median_task_delta_pp": 0.136
+    },
+    "qa6_scoped_endpoint": {
+      "official": 6.56,
+      "fdp125": 7.24,
+      "delta_pp": 0.68,
+      "n_samples": 1150,
+      "status": "formal scoped QA endpoint; does not replace the 17-task broad endpoint"
+    },
+    "formal_scope_note": "Current Llama-3 Medium cell lock uses this 3-component rank schedule; source cell lock records Official vs FDP125 Direct. It is a present formal cell result, while component choice was post-hoc relative to the earlier 5-component selection freeze."
+  }
+}

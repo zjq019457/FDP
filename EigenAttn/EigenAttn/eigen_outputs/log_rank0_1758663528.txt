@@ -1,0 +1,58 @@
+[2025-09-23 14:38:48 root] (main_eigen_attn.py 329): INFO Namespace(model='/home/bai3090/Desktop/opt-125m', cache_dir='./HF_cache', resume=None, calib_dataset='wikitext2', nsamples=128, batch_size=2, seed=2, tasks='', eval_ppl=False, num_fewshot=0, limit=-1, multigpu=False, attn_implementation='eager', net='opt-125m', load_low_rank=False, load_peft_model=True, peft_model_path='/home/bai3090/Desktop/EigenAttn/dora_opt125m_finetune/final_model', save_dir=None, output_dir='./eigen_outputs', evaluate_baseline=False, avg_dim=48, error_budget=0.025, fine_tune=False)
+[2025-09-23 14:38:48 root] (main_eigen_attn.py 367): INFO === start low rank decomposition ===
+[2025-09-23 14:38:49 root] (main_eigen_attn.py 373): INFO load calibration from ./HF_cache/dataloader_opt_wikitext2_128.cache
+[2025-09-23 14:38:49 root] (eigen_attn.py 10): INFO Starting ...
+[2025-09-23 14:38:49 root] (eigen_attn.py 12): INFO Loading eigen_basis.pt ...
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 0 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 0 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 0 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 1 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 1 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 1 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 2 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 2 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 2 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 3 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 3 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 3 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 4 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 4 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 4 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 5 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 5 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 5 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 6 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 6 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 6 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 7 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 7 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 7 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 8 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 8 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 8 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 9 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 9 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 9 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 10 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 10 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 10 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 44): INFO Layer 11 Q basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 45): INFO Layer 11 K basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 46): INFO Layer 11 V basis shape: torch.Size([768, 48]), input_dim=768, rank=48
+[2025-09-23 14:38:49 root] (eigen_attn.py 137): INFO Loading eigen_basis.pt ...
+[2025-09-23 14:38:50 root] (eigen_attn.py 176): INFO [Precomputed] layer 0 error:1.048482 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:50 root] (eigen_attn.py 176): INFO [Precomputed] layer 1 error:5.235209 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:51 root] (eigen_attn.py 176): INFO [Precomputed] layer 2 error:0.506795 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:52 root] (eigen_attn.py 176): INFO [Precomputed] layer 3 error:0.607507 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:53 root] (eigen_attn.py 176): INFO [Precomputed] layer 4 error:1.272453 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:54 root] (eigen_attn.py 176): INFO [Precomputed] layer 5 error:1.711015 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:54 root] (eigen_attn.py 176): INFO [Precomputed] layer 6 error:1.927811 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:55 root] (eigen_attn.py 176): INFO [Precomputed] layer 7 error:1.964291 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:56 root] (eigen_attn.py 176): INFO [Precomputed] layer 8 error:1.756431 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:57 root] (eigen_attn.py 176): INFO [Precomputed] layer 9 error:1.243949 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:58 root] (eigen_attn.py 176): INFO [Precomputed] layer 10 error:1.574249 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:58 root] (eigen_attn.py 176): INFO [Precomputed] layer 11 error:1.136187 rank_kq: 48 rank_v: 48
+[2025-09-23 14:38:59 root] (main_eigen_attn.py 495): INFO 10.256335973739624
+[2025-09-23 14:38:59 root] (main_eigen_attn.py 497): INFO === Evaluating compressed model ===
+[2025-09-23 14:38:59 root] (main_eigen_attn.py 499): INFO Compressed model parameters : 0.098680512 Billion
+[2025-09-23 14:38:59 root] (main_eigen_attn.py 506): INFO Compressed model KV Cache Size : 0.00439453125 GB for batch size of 1

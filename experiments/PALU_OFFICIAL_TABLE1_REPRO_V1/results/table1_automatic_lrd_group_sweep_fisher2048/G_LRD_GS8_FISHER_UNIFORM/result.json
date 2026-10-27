@@ -1,0 +1,117 @@
+{
+  "allocation_sha256": "c9de1f934ea3be5e670cebf72e9dd25a417ad9b596c6d71788bf93947e6bcecf",
+  "allocator": "official fisher_uniform (Automatic rank allocation)",
+  "campaign": "PALU_OFFICIAL_TABLE1_REPRO_V1",
+  "cell": "G_LRD_GS8_FISHER_UNIFORM",
+  "classification": "OFFICIAL_CODE_FISHER_AUTOMATIC_GROUP_SWEEP; paper Table-1/Table-6 exact invocation remains undocumented",
+  "comparison": {
+    "wikitext2": {
+      "table6_g_lrd_gs8": {
+        "absolute_error": 0.0014420700073243253,
+        "paper_reference": 5.88,
+        "relative_error": 0.00024525000124563356
+      }
+    }
+  },
+  "completed_utc": "2026-09-30T17:56:30.005437+00:00",
+  "dataset_sha256": {
+    "c4": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+    "wiki_test": "3ee89cd6a2ab912afd5d01e98867b46a67d9ec7a9eca0910e5e4c3cdd4cc1925",
+    "wiki_train": "49280f3dd993cbdfd322186194133d5d1935f81e1c91064c239f2a70ebb02701"
+  },
+  "fisher": {
+    "cache_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/cache/_diskE_jiaqizhang_PALU_OFFICIAL_TABLE1_REPRO_V1_model_reference_Llama-2-7b-hf_calib_fisher_info.pt",
+    "cache_sha256": "ef5a71b830006bd7fe09b183bf8871becec4b495783811944b353a1d78b9689b",
+    "fresh_campaign_cache": true,
+    "samples": 2048,
+    "seqlen": 1024
+  },
+  "foreign_jobs_interrupted": 0,
+  "group_size": 8,
+  "historical_results_modified": false,
+  "method": "G-LRD",
+  "model_config_sha256": "9242e7db1bc2a17873e66084c3b1c6ed10883076e156b338fd6a7775748e2e3c",
+  "model_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/model_reference/Llama-2-7b-hf",
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "official_source_sha256": {
+    "compress.py": "d413d8729aa981a67bc98f6035e879f92e2f0ac86066448129f617d14f363544",
+    "decomposition.py": "5c9896bd45910e0f81dbf3e519466eb60c49c2882a66592be2c0fbeb633c09ad",
+    "rank_search.py": "e789cfd4dd67eb9bb4a1bdb1de4142ddb8a8d3fe41f23d72e0b87a5a292bd5fd",
+    "run_ppl_eval.py": "ef8190ba6453c000c9def95f1b06706c3cf8908ec7cd61010360d0dfe097dc5f",
+    "svd_linear.py": "be0b986b727094e82d1c74694eedb656b755ed73b876bdea54af8f8d41fbd7d4"
+  },
+  "old_results_valid": true,
+  "paper_reference": {
+    "wikitext2": {
+      "table6_g_lrd_gs8": 5.88
+    }
+  },
+  "ppl": {
+    "wikitext2": 5.881442070007324
+  },
+  "ppl_protocol": {
+    "sequence_length": 2048,
+    "stride": 2048,
+    "tokens": {
+      "c4": 524288,
+      "wikitext2": 339968
+    }
+  },
+  "realization_sha256": "3a026270797ed4aebf28062d2a7c8ad45eccf38f6f33e18eb80d90357f62f7af",
+  "resource": {
+    "allocation_integrity_pass": true,
+    "allocation_sha256": "c9de1f934ea3be5e670cebf72e9dd25a417ad9b596c6d71788bf93947e6bcecf",
+    "cache_bytes_per_token_fp16": 261376,
+    "compression_fraction": 0.50146484375,
+    "decode_cache_bytes_at_2048_fp16": 535298048,
+    "factor_bytes": 1338245120,
+    "low_rank_module_count": 64,
+    "nominal_50pct_rank_target": 131072,
+    "nominal_50pct_target_exact": false,
+    "prefill_cache_bytes_at_2048_fp16": 535298048,
+    "rank_delta_from_nominal_target": -384,
+    "rank_histogram": {
+      "1024": 52,
+      "128": 4,
+      "160": 8,
+      "192": 24,
+      "224": 28,
+      "256": 24,
+      "288": 4,
+      "320": 20,
+      "352": 4,
+      "384": 8,
+      "448": 4,
+      "480": 4,
+      "512": 12,
+      "544": 8,
+      "576": 24,
+      "608": 8,
+      "64": 4,
+      "768": 8,
+      "896": 4,
+      "928": 4
+    },
+    "rank_quantized_to_32": true,
+    "rank_quantum": 32,
+    "rank_sum": 130688,
+    "rank_sum_matches_selection": true,
+    "ranks_within_native_group_dimensions": true,
+    "realization_sha256": "3a026270797ed4aebf28062d2a7c8ad45eccf38f6f33e18eb80d90357f62f7af",
+    "resource_policy": "report official per-unit 32-rank rounding as realized; do not manually adjust ranks to force the nominal total",
+    "uncompressed_rank": 262144
+  },
+  "result_sha256": "a67ea4b8db8487bf1ce310af78123158429845ae45cd45f301941610e1331c7b",
+  "schema": "PALU_AUTOMATIC_LRD_GROUP_SWEEP_RESULT_V1",
+  "seed": 42,
+  "started_utc": "2026-09-30T17:55:12.668001+00:00",
+  "status": "DONE",
+  "whitening": {
+    "cache_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/cache/whiten/_diskE_jiaqizhang_PALU_OFFICIAL_TABLE1_REPRO_V1_model_reference_Llama-2-7b-hf_w2_scaling_matrices_fp16.pt",
+    "cache_sha256": "89ed1cadab33c7cdf55728eb36d87decf999f3c368c9a34fb95da0b758a76980",
+    "decomposition": "official whiten/truncation-aware SVD",
+    "reused_same_campaign_calibration": true,
+    "samples": 256,
+    "seqlen": 2048
+  }
+}

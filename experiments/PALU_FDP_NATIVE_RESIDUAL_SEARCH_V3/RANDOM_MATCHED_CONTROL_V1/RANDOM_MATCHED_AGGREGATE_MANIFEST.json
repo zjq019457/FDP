@@ -1,0 +1,71 @@
+{
+  "aggregate_seed_action_sha256": "43aad1f04bf90300ad84077eef8b4bef5e340b6d3fe6c385ffc662efa109831e",
+  "all_random_matched_resource_pass": true,
+  "foreign_jobs_interrupted": 0,
+  "frozen_seeds": [
+    0,
+    1,
+    2
+  ],
+  "protocol_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RANDOM_MATCHED_CONTROL_V1/RANDOM_MATCHED_GENERATION_PROTOCOL.json",
+  "protocol_sha256": "00c492df523ea61832da1b56a74990282f5c78584d112692a11c590284b978d6",
+  "quality_evaluation_started": false,
+  "schema": "PALU_V3_RANDOM_MATCHED_AGGREGATE_MANIFEST_V1",
+  "seed_manifests": [
+    {
+      "action_count": 26,
+      "action_manifest_sha256": "15ec31cf7fd292dbe9a568fab9a650f6b65fdec05f9d787bbff5a328a871f4d5",
+      "action_sequence_sha256": "906343a3f76e0f95d1cb7be3e02b16444b4cec36e6e779f6a4d63e559b6892d0",
+      "allocation_sha256": "68811e2f72216d3d8705fa560ec3ec9cab7e3559bf003b89bf410bb5fcbdbca2",
+      "dir": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RANDOM_MATCHED_CONTROL_V1/seed_0",
+      "l1_rank": 1664,
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_pass": true,
+      "schedule_sha256": "524f519b4ccf9b4363c02357af30d05236c446b770abd716426f5f8840971bc0",
+      "seed": 0,
+      "transfer_volume_rank": 832
+    },
+    {
+      "action_count": 26,
+      "action_manifest_sha256": "f812b15274fcdfdb570fb4b433b1d43315217469d5fe44d9db9ecb7cd7cc7e72",
+      "action_sequence_sha256": "a9d1c09a2ac161f429e3f1f7d5a886299bb05b39f2c6c3a941971a051cae58a1",
+      "allocation_sha256": "c1ac7e4cda679d5533d4f504cedf1b4cc43101cc066e757da77633d922f8d752",
+      "dir": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RANDOM_MATCHED_CONTROL_V1/seed_1",
+      "l1_rank": 1664,
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_pass": true,
+      "schedule_sha256": "24d2dbbfe79555004e8d3becefdb8a8f3750a7a592beb1d549e05336adcb0bb7",
+      "seed": 1,
+      "transfer_volume_rank": 832
+    },
+    {
+      "action_count": 26,
+      "action_manifest_sha256": "13028996ed4b2e3ba7e6ffb13aa69c151dc3acb908ed112518585915bbe08b9f",
+      "action_sequence_sha256": "068154019a092ce86e42b021511a4312938b33203e09cd8e8debbdebab2e6bd0",
+      "allocation_sha256": "44e252fdc1278017907937cb45982e472e0e26778f1fba296da1d9fbc8f03422",
+      "dir": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RANDOM_MATCHED_CONTROL_V1/seed_2",
+      "l1_rank": 1664,
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_pass": true,
+      "schedule_sha256": "9c64c4c83bab7990fb0dd084613b578a7ea3e65765e53ba5b1581416e4626181",
+      "seed": 2,
+      "transfer_volume_rank": 832
+    }
+  ],
+  "status": "ALL_SEEDS_RESOURCE_PASS_QUALITY_NOT_STARTED"
+}

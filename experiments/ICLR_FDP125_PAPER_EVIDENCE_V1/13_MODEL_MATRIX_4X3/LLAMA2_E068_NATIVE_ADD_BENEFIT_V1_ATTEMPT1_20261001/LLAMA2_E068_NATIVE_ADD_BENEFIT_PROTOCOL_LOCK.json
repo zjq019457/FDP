@@ -1,0 +1,341 @@
+{
+  "artifact_id": "LLAMA2_E068_NATIVE_ADD_BENEFIT_PROTOCOL_LOCK_V1",
+  "status": "FROZEN_BEFORE_SCORING",
+  "created_utc": "2026-10-02T03:47:46.105258+00:00",
+  "model_repo_id": "meta-llama/Llama-2-7b-hf",
+  "model_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa585660c691f6626d25c2cf25197",
+  "authorization_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama2_7b/medium/provenance_binding_v1_20260925T061200Z/LLAMA2_MEDIUM_CELL_LAUNCH_AUTHORIZATION_V1.json",
+  "authorization_sha256": "5bd25896cb172564fba5b684483809c0db39b604185bf36645d5b548471c0d6b",
+  "provenance_audit_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama2_7b/medium/provenance_binding_v1_20260925T061200Z/LLAMA2_MEDIUM_FINAL_PROVENANCE_HASH_AUDIT_V3.json",
+  "provenance_audit_sha256": "e67de18706ce1e1cfd68aaa7892f95712fea54f711eb733c4b1664c705b525a7",
+  "tokenizer_fingerprint_sha256": "74d06083412d9c11688da0dd9e8e22d7d794028a34c61e00884901668a8ad300",
+  "reference": {
+    "name": "Uniform EB=.068",
+    "q_sha256": "720bbbe44103c95e1a2aa04ec4f0ad5cb85f343bab27ca98b7bc81f5ea066cae",
+    "profile_sha256": "a06651aa00aaa4a1f2584aed506d3c5e358a50c6a8bec5a10531449c971e8fc3",
+    "basis_sha256": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+    "rank_schedule_sha256": "590129c5a0401474266d7652601461b52f7be452ced772dd489b25f3a744913c",
+    "rank_pairs_qk_v": [
+      [
+        4096,
+        4096
+      ],
+      [
+        4096,
+        4096
+      ],
+      [
+        992,
+        3392
+      ],
+      [
+        704,
+        2656
+      ],
+      [
+        736,
+        2784
+      ],
+      [
+        1120,
+        3392
+      ],
+      [
+        1344,
+        3392
+      ],
+      [
+        1696,
+        3520
+      ],
+      [
+        2016,
+        3584
+      ],
+      [
+        2080,
+        3648
+      ],
+      [
+        2848,
+        3840
+      ],
+      [
+        2016,
+        3616
+      ],
+      [
+        2432,
+        3712
+      ],
+      [
+        2080,
+        3648
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2848,
+        3840
+      ],
+      [
+        2400,
+        3744
+      ],
+      [
+        2880,
+        3840
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        1984,
+        3648
+      ],
+      [
+        2016,
+        3648
+      ],
+      [
+        1952,
+        3648
+      ],
+      [
+        2048,
+        3648
+      ],
+      [
+        2112,
+        3648
+      ],
+      [
+        1600,
+        3552
+      ],
+      [
+        1728,
+        3552
+      ],
+      [
+        1696,
+        3584
+      ],
+      [
+        1792,
+        3552
+      ],
+      [
+        1760,
+        3552
+      ],
+      [
+        1696,
+        3584
+      ],
+      [
+        4064,
+        4096
+      ],
+      [
+        1152,
+        3360
+      ]
+    ],
+    "B_live_bytes": 746323968,
+    "accounting": "sum_l((QK_rank_l+V_rank_l)*4096 bytes)"
+  },
+  "legal_perturbation": {
+    "rank_quantum": 32,
+    "interpretation": "one total-rank increment of 32, i.e. one rank per each of 32 heads",
+    "minimum_rank": 64,
+    "maximum_rank": 4096,
+    "delta_B_live_bytes_per_unsaturated_path": 131072,
+    "paths": [
+      "QK",
+      "V"
+    ],
+    "all_other_paths_and_layers_unchanged": true
+  },
+  "loss_protocol": {
+    "metric": "token_mean_next_token_cross_entropy",
+    "delta_loss": "mean NLL of one-rank-quantum-added realization minus Uniform068 reference",
+    "logits_for_loss": "float32 conversion before cross_entropy for both WikiText-2 and C4 tuning windows",
+    "aggregation": "pool token-level NLL sums and target-token counts across all 61 windows; each window has 2047 next-token targets",
+    "same_loss_definition_for_all_64_path_probes": true,
+    "not_final_quality_evaluation": true
+  },
+  "tuning_split": {
+    "manifest_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_ALLOCATOR_TUNING_STUDY_V1/LLAMA2_FDP_STAGE3_HELDOUT_TUNING_SPLIT_V2_UNIQUE_IDS.json",
+    "manifest_sha256": "53532566c8fc635e66a556c51db96ef423ce321adf50b18a8dc8ee4ad2e72194",
+    "source_manifest_declared_model_fingerprint": "a627fb4d2200089590b109ad82c35098778aa5856660cc691f6626d25c2cf25197",
+    "canonical_model_fingerprint_bound_by_metadata_erratum": "a627fb4d2200089590b109ad82c35098778aa585660c691f6626d25c2cf25197",
+    "model_identity_metadata_erratum_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_ADD_BENEFIT_V1_ATTEMPT1_20261001/LLAMA2_E068_ADD_BENEFIT_TUNING_MODEL_IDENTITY_METADATA_ERRATUM.json",
+    "model_identity_metadata_erratum_sha256": "39f8c463abd37c146b5628be336d0455f391bf37272da2b12b98c5e58c6fc5bb",
+    "window_data_path": "/diskF/jiaqizhang/fdp125_tuning_stage2_llama2_20261001/LLAMA2_FDP_STAGE3_TUNING_WINDOWS_V2_UNIQUE_IDS.jsonl",
+    "window_data_sha256": "ce6e67bccf7f142a6d24da2185a7e7a22f9ed9371902dbfa567e23c08005a115",
+    "unique_windows": 61,
+    "dataset_counts": {
+      "wikitext2_train": 32,
+      "c4_nonoverlap_continuation": 29
+    },
+    "disjointness": {
+      "c4": "formal input is first 2048 Llama-2 tokens of each selected text (truncate); tuning uses second non-overlapping 2048-token continuation [2048,4096) from 32 records with sufficient length; same source documents, guaranteed token-window disjointness, not document-disjoint",
+      "wikitext2": "tuning uses wikitext-2-raw-v1 train split; frozen formal final evaluation uses test split; split-level disjoint",
+      "zero_shot": "no zero-shot or accuracy data used in split construction or tuning"
+    },
+    "half_assignment_rule": "within each dataset's frozen manifest order, even index -> A and odd index -> B",
+    "half_ids": {
+      "A": [
+        "wikitext2_train_chunk_00000031",
+        "wikitext2_train_chunk_00000077",
+        "wikitext2_train_chunk_00000294",
+        "wikitext2_train_chunk_00000316",
+        "wikitext2_train_chunk_00000329",
+        "wikitext2_train_chunk_00000592",
+        "wikitext2_train_chunk_00000663",
+        "wikitext2_train_chunk_00000695",
+        "wikitext2_train_chunk_00000792",
+        "wikitext2_train_chunk_00000936",
+        "wikitext2_train_chunk_00001040",
+        "wikitext2_train_chunk_00001050",
+        "wikitext2_train_chunk_00001119",
+        "wikitext2_train_chunk_00001162",
+        "wikitext2_train_chunk_00001264",
+        "wikitext2_train_chunk_00001366",
+        "c4_val_selected_row_4041_tokens_2048_4096",
+        "c4_val_selected_row_33870_tokens_2048_4096",
+        "c4_val_selected_row_12812_tokens_2048_4096",
+        "c4_val_selected_row_39098_tokens_2048_4096",
+        "c4_val_selected_row_42161_tokens_2048_4096",
+        "c4_val_selected_row_24357_tokens_2048_4096",
+        "c4_val_selected_row_2448_tokens_2048_4096",
+        "c4_val_selected_row_8014_tokens_2048_4096",
+        "c4_val_selected_row_9818_tokens_2048_4096",
+        "c4_val_selected_row_699_tokens_2048_4096",
+        "c4_val_selected_row_10676_tokens_2048_4096",
+        "c4_val_selected_row_6694_tokens_2048_4096",
+        "c4_val_selected_row_34379_tokens_2048_4096",
+        "c4_val_selected_row_44891_tokens_2048_4096",
+        "c4_val_selected_row_548_tokens_2048_4096"
+      ],
+      "B": [
+        "wikitext2_train_chunk_00000054",
+        "wikitext2_train_chunk_00000170",
+        "wikitext2_train_chunk_00000313",
+        "wikitext2_train_chunk_00000325",
+        "wikitext2_train_chunk_00000531",
+        "wikitext2_train_chunk_00000625",
+        "wikitext2_train_chunk_00000679",
+        "wikitext2_train_chunk_00000791",
+        "wikitext2_train_chunk_00000885",
+        "wikitext2_train_chunk_00000951",
+        "wikitext2_train_chunk_00001047",
+        "wikitext2_train_chunk_00001103",
+        "wikitext2_train_chunk_00001123",
+        "wikitext2_train_chunk_00001210",
+        "wikitext2_train_chunk_00001282",
+        "wikitext2_train_chunk_00001370",
+        "c4_val_selected_row_31845_tokens_2048_4096",
+        "c4_val_selected_row_677_tokens_2048_4096",
+        "c4_val_selected_row_33627_tokens_2048_4096",
+        "c4_val_selected_row_20961_tokens_2048_4096",
+        "c4_val_selected_row_19312_tokens_2048_4096",
+        "c4_val_selected_row_18952_tokens_2048_4096",
+        "c4_val_selected_row_3819_tokens_2048_4096",
+        "c4_val_selected_row_1019_tokens_2048_4096",
+        "c4_val_selected_row_31569_tokens_2048_4096",
+        "c4_val_selected_row_25515_tokens_2048_4096",
+        "c4_val_selected_row_6814_tokens_2048_4096",
+        "c4_val_selected_row_19054_tokens_2048_4096",
+        "c4_val_selected_row_23863_tokens_2048_4096",
+        "c4_val_selected_row_3813_tokens_2048_4096"
+      ]
+    }
+  },
+  "input_hashes": {
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_CLEAN_REDESIGN_UNIFORM068_PROFILE_V1_20261001T1516_ATTEMPT7/LLAMA2_CLEAN_REDESIGN_D1_D2_D5_PROFILE_V1.json": "a06651aa00aaa4a1f2584aed506d3c5e358a50c6a8bec5a10531449c971e8fc3",
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_CLEAN_REDESIGN_UNIFORM068_PROFILE_V1_20261001T1516_ATTEMPT7/PROFILE_PROTOCOL_LOCK.json": "6a590bbb1f983a84598745227238973af668ff1b3349725bad61811b5a2fbe0b",
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_OPERATING_POINT_E068_FDP070_CAPPED_V1/LLAMA2_E068_UNIFORM_FDP070_CAPPED_PER_LAYER.csv": "9a5289ac6f2bf386ccc5cdb1d7ece76d7a965679c39088e79a67150d732b8487",
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_OPERATING_POINT_E068_FDP070_CAPPED_V1/LLAMA2_E068_UNIFORM_FDP070_CAPPED_RESOURCE_ONLY_MANIFEST_V2.json": "7a9d3ec68b2aa590e79fb6f853e1e5155dc1785f3c392e9527f80b382a983cfd",
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_ALLOCATOR_TUNING_STUDY_V1/LLAMA2_FDP_STAGE3_HELDOUT_TUNING_SPLIT_V2_UNIQUE_IDS.json": "53532566c8fc635e66a556c51db96ef423ce321adf50b18a8dc8ee4ad2e72194",
+    "/diskF/jiaqizhang/fdp125_tuning_stage2_llama2_20261001/LLAMA2_FDP_STAGE3_TUNING_WINDOWS_V2_UNIQUE_IDS.jsonl": "ce6e67bccf7f142a6d24da2185a7e7a22f9ed9371902dbfa567e23c08005a115",
+    "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_full_capacity_basis_only_v1/llama2_e060_full_basis_capacity_only_eb0p06.pt": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0"
+  },
+  "runner_sha256": "e73469786ad24bd46f13a043d47f8dfb0cae116f97823bf9729672621be81229",
+  "attempt": 7,
+  "supersedes_attempt": {
+    "path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_FRAGILITY_V1_ATTEMPT7_a06651aa",
+    "status_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_FRAGILITY_V1_ATTEMPT7_a06651aa/RUN_STATUS.json",
+    "status_sha256": "e343a7fd89ba0b133b7e5f860b1aa7c751e833ec7a27b3727de3f0ffe0b30dcb",
+    "canary_status_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_FRAGILITY_V1_ATTEMPT7_a06651aa/MATERIALIZATION_CANARY_GPU0_STATUS.json",
+    "canary_status_sha256": "0f12355bccf6b4b8017405e9cde479b80e191fdaf0a3cd6010bf24f05c06313c",
+    "canary_log_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_FRAGILITY_V1_ATTEMPT7_a06651aa/MATERIALIZATION_CANARY_GPU0.log",
+    "canary_log_sha256": "637b0841a352bad5b68a0e618982d026f457c486e2422356d8f1b7a18a324d18",
+    "worker_log_sha256": {
+      "gpu0": "73d0de5e0e785449e99f9955375ea1f84364260e4b9cf397e1c76666953a8114",
+      "gpu1": "94cd010c40128a9cac48c7adce75e344ccb150e93986c3abb8a3b483d3c2f6dd",
+      "gpu2": "b31c9253288a5d26e03c5e3d9f805b91502cd97b965bd52d87cd234b9d1bc2be"
+    },
+    "classification": "ENGINEERING_ADAPTER_SCOPE_RESTORED_BEFORE_SINGLE_LAYER_RECONSTRUCTION_ATTEMPT6_NO_PROBES_COMPLETED"
+  },
+  "import_compatibility": {
+    "bindings": [
+      {
+        "name": "Cache",
+        "source": "transformers.cache_utils.Cache",
+        "reason": "type annotation export compatibility"
+      },
+      {
+        "name": "LlamaRotaryEmbedding",
+        "source": "transformers.models.llama.modeling_llama.LlamaRotaryEmbedding",
+        "reason": "HF 4.53 adapter for the historical three-argument constructor call"
+      },
+      {
+        "name": "apply_rotary_pos_emb",
+        "source": "transformers.models.llama.modeling_llama.apply_rotary_pos_emb",
+        "reason": "exact upstream HF 4.53 rotary operator omitted by modeling_llama.__all__"
+      },
+      {
+        "name": "repeat_kv",
+        "source": "transformers.models.llama.modeling_llama.repeat_kv",
+        "reason": "exact upstream HF 4.53 KV replication operator omitted by modeling_llama.__all__"
+      }
+    ],
+    "scope": "worker-subprocess-lifetime name bindings for legacy operator references missing from HF 4.53 wildcard exports; each worker runs in an isolated process; all functions delegate to exact upstream HF 4.53 symbols; rotary adapter delegates to upstream LlamaRotaryEmbedding configured from the exact local Llama-2 config after checking dim/base/max-position; no attention/operator math changes"
+  },
+  "target_output_directory": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_ADD_BENEFIT_V1_ATTEMPT1_20261001",
+  "gpu_preflight": [
+    {
+      "index": 0,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "utilization_pct": 0
+    },
+    {
+      "index": 1,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "utilization_pct": 0
+    },
+    {
+      "index": 2,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "utilization_pct": 0
+    }
+  ],
+  "disk_free_bytes_preflight": {
+    "/diskE": 14189764608,
+    "/diskF": 3732041728,
+    "/diskD": 38721863680,
+    "/": 15366983680
+  },
+  "disk_write_policy": "small protocol/results only on E; model, basis and inputs read-only; no D or F writes"
+}

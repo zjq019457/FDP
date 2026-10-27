@@ -1,0 +1,81 @@
+{
+  "RULER": "deferred; no local protocol manifest discovered",
+  "V1_exchange_manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+  "V2_profile_manifest_sha256": "0f74f0944c0f43ae48c83274a780080793c911173f082b02a6a424a0cafcfd4b",
+  "c4_ids": {
+    "LOCK": [
+      222005,
+      222033,
+      222080,
+      222086,
+      222103,
+      222124,
+      222132,
+      222206
+    ],
+    "PROFILE": [
+      210022,
+      210042,
+      210094,
+      210111,
+      210123,
+      210132,
+      210157,
+      210230
+    ],
+    "TUNE": [
+      216009,
+      216027,
+      216058,
+      216088,
+      216103,
+      216116,
+      216151,
+      216192
+    ]
+  },
+  "c4_train_vs_c4_validation_disjoint": true,
+  "c4_v3_document_ids_pairwise_disjoint": true,
+  "c4_v3_ids_disjoint_from_v1_v2_calibration": true,
+  "foreign_jobs_interrupted": 0,
+  "formal_samples_excluded_from_profile_tune_lock": true,
+  "official_formal_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+  "selection_quality_blind": true,
+  "split_file_sha256": "196adc50a6adf58af13d07d27d9fe1f1da7c1ffba9067f0ca19508138cc69505",
+  "status": "PASS_CALIBRATION_SPLITS_DISJOINT_FORMAL_SEPARATE_RULER_DEFERRED",
+  "wiki_starts": {
+    "LOCK": [
+      2520000,
+      2528192,
+      2536384,
+      2544576,
+      2552768,
+      2560960,
+      2569152,
+      2577344
+    ],
+    "PROFILE": [
+      2380000,
+      2388192,
+      2396384,
+      2404576,
+      2412768,
+      2420960,
+      2429152,
+      2437344
+    ],
+    "TUNE": [
+      2450000,
+      2458192,
+      2466384,
+      2474576,
+      2482768,
+      2490960,
+      2499152,
+      2507344
+    ]
+  },
+  "wiki_train_vs_wiki_test_disjoint": true,
+  "wiki_v3_intervals_disjoint_from_v1_exchange": true,
+  "wiki_v3_intervals_pairwise_disjoint": true
+}

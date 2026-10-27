@@ -1,0 +1,103 @@
+{
+  "active_profile_worker": null,
+  "campaign": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+  "foreign_jobs_interrupted": 0,
+  "gpu1_used": false,
+  "identity": "PASS",
+  "last_state_sync_utc": "2026-09-21T17:42:38.293464+00:00",
+  "official_fisher": {
+    "0.3": "COMPLETE",
+    "0.5": "COMPLETE",
+    "0.7": "COMPLETE"
+  },
+  "official_longbench": {
+    "aggregate_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/AGGREGATE.json",
+    "aggregate_sha256": "6594ac98d81f2f99262d0990783156d982fde1f2edba3cc46805fe9ee9d03551",
+    "completed_tasks": "8/8 per method",
+    "macro_delta_fdp_native_minus_fisher": 0.095,
+    "macro_fdp_native": 39.4425,
+    "macro_fisher": 39.3475,
+    "methods": [
+      "fisher",
+      "fdp_native"
+    ],
+    "ratio": "0.5",
+    "resource_match": "EXACT",
+    "status": "QUALITY_COMPLETE_AGGREGATED",
+    "updated_utc": "2026-09-21T21:31:27.955679+00:00"
+  },
+  "official_native_action_space": "COMPLETE",
+  "official_native_fdp": "TIER_READY_AUTO_DISPATCH",
+  "official_native_phi": "RATIOS_0.7_0.5_0.3_FROZEN",
+  "official_protocol_lock": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_PROTOCOL_LOCK.json",
+  "official_q_group_mapping": "COMPLETE",
+  "official_tier_dispatcher": "ACTIVE",
+  "official_tier_status": {
+    "0.3": {
+      "calibration": {
+        "fdp_native": "EXCHANGE_CALIBRATION_COMPLETE",
+        "fdp_prior": "EXCHANGE_CALIBRATION_COMPLETE"
+      },
+      "formal": {
+        "fdp_native": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fdp_prior": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fisher": "IMPORTED_COMPLETE"
+      },
+      "phi": "FROZEN"
+    },
+    "0.5": {
+      "calibration": {
+        "fdp_native": "EXCHANGE_CALIBRATION_COMPLETE",
+        "fdp_prior": "EXCHANGE_CALIBRATION_COMPLETE",
+        "random_0": "EXCHANGE_CALIBRATION_COMPLETE",
+        "random_1": "EXCHANGE_CALIBRATION_COMPLETE",
+        "random_2": "EXCHANGE_CALIBRATION_COMPLETE"
+      },
+      "formal": {
+        "fdp_native": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fdp_prior": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fisher": "IMPORTED_COMPLETE",
+        "random_0": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "random_1": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "random_2": "OFFICIAL_FORMAL_QUALITY_COMPLETE"
+      },
+      "phi": "FROZEN"
+    },
+    "0.7": {
+      "calibration": {
+        "fdp_native": "EXCHANGE_CALIBRATION_COMPLETE",
+        "fdp_prior": "EXCHANGE_CALIBRATION_COMPLETE"
+      },
+      "formal": {
+        "fdp_native": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fdp_prior": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fisher": "IMPORTED_COMPLETE"
+      },
+      "phi": "FROZEN"
+    }
+  },
+  "official_uniform": {
+    "0.3": "COMPLETE",
+    "0.5": "COMPLETE",
+    "0.7": "COMPLETE"
+  },
+  "official_zero_shot": {
+    "active": null,
+    "cache_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/zero_shot_cache",
+    "dispatcher_state": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/OFFICIAL_ZERO_SHOT_DISPATCH_STATE.json",
+    "old_anchor_schema_mixed": false,
+    "output_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot",
+    "pending": [],
+    "ratio_0p3": "COMPLETE",
+    "ratio_0p5": "COMPLETE",
+    "ratio_0p7": "COMPLETE",
+    "status": "ALL_READY_OFFICIAL_ZERO_SHOT_COMPLETE"
+  },
+  "official_zero_shot_dispatcher": "ACTIVE",
+  "old_branch": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "old_branch_preserved": true,
+  "old_phi_status": "VALID_FOR_OLD_ANCHOR_SCHEMA_ONLY",
+  "source_dependency_repair": "fast_hadamard_transform import fallback only",
+  "status": "OFFICIAL_FORMAL_AND_ZERO_SHOT_COMPLETE",
+  "zero_shot": "OFFICIAL_ALL_TIERS_COMPLETE"
+}

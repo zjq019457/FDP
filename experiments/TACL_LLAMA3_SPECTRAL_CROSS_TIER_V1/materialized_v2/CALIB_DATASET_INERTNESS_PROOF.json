@@ -1,0 +1,12 @@
+{
+  "schema": "SEVERE_V2_MATERIALIZE_CALIB_DATASET_INERTNESS_PROOF_V1",
+  "finding": "calib_dataset passed to main_eigen_attn.py (c4 vs wikitext2) has zero effect on materialized weights when --eigen_basis_path is supplied with --compress_only, because _eigenattn_replace_from_basis (decompose/eigen_attn.py) derives rank_kq/rank_v and all factor tensors purely from the basis .pt tensor shapes, never touching the calibration dataloader built in pipeline part 3/7.",
+  "attempt1_calib_dataset": "wikitext2 (local, /home/bai-project/jiaqizhang/wikitext2)",
+  "attempt1_reason": "first launch used c4 default path which tried allenai/c4 on HF hub and failed under HF_DATASETS_OFFLINE=1; wikitext2 substituted as an inert placeholder, same fix as historical Light materialize attempt2",
+  "attempt2_calib_dataset": "c4 (local, via C4_DATA_DIR=/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/input/c4-train.00000-of-01024.json.gz)",
+  "attempt2_reason": "user correctly recalled a local C4 shard exists; datautils.get_c4 honors env C4_DATA_DIR for fully offline local loading, matching the project convention of c4 as the nominal calib_dataset",
+  "verification": "sha256 of all 8 safetensors shards (4 per profile x severe_uniform, severe_full) computed before and after the rerun; all 8 identical",
+  "severe_uniform_shards_sha256_identical": true,
+  "severe_full_shards_sha256_identical": true,
+  "conclusion": "kept final_model materialized under c4 local calib (attempt2) as canonical; removed the wikitext2-calib attempt1 copies as proven byte-identical duplicates, not as unverified deletions"
+}

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "EigenAttn/main_eigen_attn.py": {
+      "sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7",
+      "size": 202559
+    },
+    "EigenAttn/step1_diagnose_llama.py": {
+      "sha256": "df5273a707fcc6006eaee00dfc0e7848bf3b29eee122a20115af7c74ba0ab75a",
+      "size": 23928
+    },
+    "EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py": {
+      "sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+      "size": 28002
+    },
+    "rebuttal_legacy_reproduction/runners/ppl_instrumented.py": {
+      "sha256": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+      "size": 16645
+    }
+  },
+  "git_commit": "",
+  "git_status_short": "",
+  "repo": "/home/bai-project/jiaqizhang/EigenAttn"
+}

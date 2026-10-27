@@ -1,0 +1,13 @@
+{
+  "all_resource_gates_passed": true,
+  "dispatch_utc": "2026-09-26T21:24:23.873665+00:00",
+  "foreign_jobs_interrupted": 0,
+  "protocol_sha256": "00c492df523ea61832da1b56a74990282f5c78584d112692a11c590284b978d6",
+  "runner_sha256": "3e02294eef7ebcf069f926b94bec9cfe192b71a421b1171de8767fa3633033d0",
+  "seed_to_gpu": {
+    "0": 0,
+    "1": 1,
+    "2": 2
+  },
+  "status": "DISPATCHED"
+}

@@ -1,0 +1,8 @@
+metric,n,value
+wikitext2_ppl,,6.649582661740018
+c4_ppl,,9.693687291910727
+hellaswag_localjsonl_acc_from_correct,10042,0.5628360884285999
+arc_challenge_localjsonl_acc_from_correct,1172,0.4863481228668942
+arc_easy_localjsonl_acc_from_correct,2376,0.7685185185185185
+winogrande_localjsonl_acc_from_correct,1267,0.7229676400947119
+piqa_localjsonl_acc_from_correct,1838,0.7861806311207835

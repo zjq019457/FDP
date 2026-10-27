@@ -1,0 +1,71 @@
+{
+  "artifact_id": "LLAMA2_PASS1_UNIFORM_E060_BASIS_LAUNCH",
+  "started_at_utc": "2026-10-01T00:30:15.882816+00:00",
+  "status": "RUNNING_RESOURCE_ONLY",
+  "pid": 1643395,
+  "gpu_physical": 2,
+  "gpu_visible_as": "cuda:0",
+  "gpu_snapshot_before": [
+    {
+      "index": 0,
+      "uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "free_mib": 51444,
+      "util_pct": 47
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+      "free_mib": 49052,
+      "util_pct": 44
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+      "free_mib": 81153,
+      "util_pct": 0
+    }
+  ],
+  "gpu2_compute_apps_before": [
+    {
+      "uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "pid": 1604083,
+      "used_mib": 29698
+    },
+    {
+      "uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+      "pid": 1474088,
+      "used_mib": 32090
+    }
+  ],
+  "gpu_free_required_mib": 34508,
+  "per_process_memory_fraction": 0.4,
+  "f_free_before_bytes": 69752344576,
+  "f_min_reserve_bytes": 16106127360,
+  "output_root": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930",
+  "log_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/basis_builder.log",
+  "basis_builder_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline_fdp125_cpu_stage_v1.py",
+  "basis_builder_sha256": "9c2d11dd46be745fde2e8d68c6ba70a8cb56827cf9ea037b3b8d57155a0e5be9",
+  "official_builder_sha256": "9c2d11dd46be745fde2e8d68c6ba70a8cb56827cf9ea037b3b8d57155a0e5be9",
+  "checkpoint_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "checkpoint_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa5856660c691f6626d25c2cf25197",
+  "tokenizer_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "protocol": {
+    "pass1": "Uniform EigenAttention",
+    "error_budget": 0.06,
+    "nsamples": 512,
+    "seqlen": 2048,
+    "seed": 2,
+    "dtype": "bf16",
+    "avg_dim": 32,
+    "attn_implementation": "eager",
+    "threshold_init": 1.0,
+    "threshold_floor": 0.3,
+    "threshold_step": 0.02,
+    "min_rank": 64,
+    "low_vram_cpu_staging": true
+  },
+  "purpose": "basis/rank resource preparation only; no quality evaluation",
+  "quality_launched": false,
+  "foreign_jobs_interrupted": 0,
+  "scientific_parameters_modified": false
+}

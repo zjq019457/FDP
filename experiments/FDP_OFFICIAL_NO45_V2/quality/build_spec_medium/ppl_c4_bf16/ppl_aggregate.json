@@ -1,0 +1,15 @@
+{
+  "dataset": "c4",
+  "ppl": 13.981668954549441,
+  "total_nll_sum": 1382939.1574707031,
+  "token_count_sum": 524288,
+  "used_windows": 256,
+  "skipped_windows": 0,
+  "n_windows_considered": 256,
+  "seqlen": 2048,
+  "method": "NO45V2_build_spec_medium_bf16",
+  "model_hash": "e6a7ec8cf5919f18ddf9d61d3f0319c7ccb446cec171d72271c048a33a239211",
+  "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+  "recomputed_from": "exp(sum(total_nll)/sum(token_count))",
+  "timestamp": "2026-10-11T12:44:24.458629-07:00"
+}

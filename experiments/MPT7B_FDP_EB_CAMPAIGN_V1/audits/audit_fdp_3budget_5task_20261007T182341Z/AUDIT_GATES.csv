@@ -1,0 +1,11 @@
+gate,status,finding
+G1 source/config integrity,WARN,Model content fingerprint and tokenizer/task hashes are pinned; upstream revision and exact per-run evaluator invocation are not bound.
+G2 byte accounting,FAIL,Relaxed Uniform has only predicted geometry bytes; no actual cache census.
+G3 native legality,WARN,"Rank schedules are on the 32-layer native lattice. Aggregate +131072 B is one rank-sum quantum, but many layers move, not one local edit; relaxed shapes lack runtime census."
+G4 sample identity,PASS,Ordered PPL window IDs/input hashes and paired zero-shot doc IDs match.
+G5 PPL recomputation,PASS,NLL/token totals and PPL recomputed from per-window outputs.
+G6 J recomputation,WARN,Numerical identity matches half the sum of Wiki and C4 mean NLL; implementation source was not located.
+G7 paired bootstrap,WARN,10k paired PPL CIs recomputed; stored U015/U019 bounds differ slightly. Accuracy bootstrap uses audit-only seed 20261007.
+G8 no outcome-conditioned tuning,PASS,Resource-selection locks state quality_used_to_select=false.
+G9 resource matching,FAIL,Raw Uniform pairs exceed 1%; relaxed candidates are predicted close but actual resource match is unverified.
+A1 frozen accuracy metric contract,FAIL,"HellaSwag task outputs record primary_metric=acc, while the requested frozen formal metric is acc_norm; current rows cannot supply acc_norm (null/missing)."

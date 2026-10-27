@@ -1,0 +1,13 @@
+{
+  "foreign_jobs_interrupted": 0,
+  "frozen_utc": "2026-09-26T21:19:49.701521+00:00",
+  "protocol_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RANDOM_MATCHED_CONTROL_V1/RANDOM_MATCHED_GENERATION_PROTOCOL.json",
+  "protocol_sha256": "00c492df523ea61832da1b56a74990282f5c78584d112692a11c590284b978d6",
+  "quality_evaluation_started": false,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "status": "RANDOM_MATCHED_PROTOCOL_FROZEN"
+}

@@ -1,0 +1,15 @@
+{
+  "attempts": [
+    {
+      "affected_cell": "POST_TUNE_CONTROLLER_ONLY",
+      "affected_pid": 5663,
+      "failure_behavior": "Controller treated the healthy V3 tune PID as exited because it assumed the script was argv[1] and used an incorrect NUL delimiter; the TUNE_DONE gate prevented any lock/formal launch and V3 shared state was untouched.",
+      "failure_type": "CONTROLLER_PROC_ARGV_MATCH_BUG",
+      "foreign_jobs_interrupted": 0,
+      "old_results_valid": true,
+      "repair": "Match any /proc argv token whose basename is run_rs_v3.py and split command lines on byte NUL; preserve TUNE_DONE/lock/formal gates.",
+      "repaired_utc": "2026-09-24T08:35:54.595414+00:00",
+      "v3_outputs_modified": false
+    }
+  ]
+}\n

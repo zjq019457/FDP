@@ -1,0 +1,26 @@
+{
+  "artifact_id": "LLAMA2_E068_NATIVE_ADD_BENEFIT_MATERIALIZATION_CANARY_V1",
+  "status": "PASS_BASELINE_BUILD_AND_FORWARD_CANARY",
+  "gpu_index": 0,
+  "runner_sha256": "e73469786ad24bd46f13a043d47f8dfb0cae116f97823bf9729672621be81229",
+  "protocol_lock_sha256": "b85c02610e1f6a1e19df1ca069d5d5bb1c837583938e725f3f0429435f71bb5e",
+  "basis_sha256": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+  "rank_schedule_sha256": "590129c5a0401474266d7652601461b52f7be452ced772dd489b25f3a744913c",
+  "B_live_bytes": 746323968,
+  "runtime_layer_count": 32,
+  "runtime_rank_schedule_matches_frozen": true,
+  "rope_compatibility": "HF 4.53 upstream LlamaRotaryEmbedding instantiated with frozen local Llama-2 config; exact cos/sin parity on positions 0..3",
+  "runtime_rope_buffer_dtype": "torch.bfloat16",
+  "reference_rope_buffer_dtype": "torch.bfloat16",
+  "rope_max_abs_error": 0.0,
+  "finite_logits": true,
+  "logits_shape": [
+    1,
+    2048,
+    32000
+  ],
+  "token_window_id": "wikitext2_train_chunk_00000031",
+  "final_quality_started": false,
+  "probe_count_started": 0,
+  "created_utc": "2026-10-02T03:48:35.591801+00:00"
+}

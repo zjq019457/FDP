@@ -1,0 +1,96 @@
+{
+  "analysis": {
+    "interval": "percentile 95% CI",
+    "paired_bootstrap_replicates": 10000,
+    "seed": 20260930,
+    "statistic": "unweighted six-task macro accuracy V3 minus V1"
+  },
+  "bound_tasks": [
+    "openbookqa_localjsonl",
+    "hellaswag_localjsonl",
+    "piqa_localjsonl",
+    "arc_easy_localjsonl",
+    "arc_challenge_localjsonl",
+    "winogrande_localjsonl"
+  ],
+  "created_at_utc": "2026-10-01T03:37:06.062587+00:00",
+  "environment": {
+    "accelerate": "1.13.0",
+    "lm_eval": "0.4.11",
+    "python": "/home/bai-project/jiaqizhang/.venv/bin/python",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.53.0"
+  },
+  "gpu": 2,
+  "inputs_manifest_reference": "1f51401f56400d08e0d4706fc44b7c745730c8aa30381d72ac313f65752f7621",
+  "logging": {
+    "log_samples": true,
+    "retained_fields": [
+      "doc_id",
+      "doc_hash",
+      "prompt_hash",
+      "target_hash",
+      "acc"
+    ],
+    "timing_claims": false
+  },
+  "manifest_payload_sha256": "6eee89c585f1db63b98f8c202f08b6fb4edb1fc8ae300d2250b2489a68afd21b",
+  "methods": {
+    "v1_native_formal_reference": {
+      "accepted_transfer_count": 10,
+      "allocation_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+      "output_dir": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/PALU_V1_NATIVE_FORMAL_MATCHED",
+      "rank_sum": 131072,
+      "schedule_file_sha256": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+      "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/fdp_native/final_schedule.json",
+      "schedule_semantic_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf"
+    },
+    "v3_selected": {
+      "allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c",
+      "lock_file_sha256": "d3d17175e8df6a8b60a8874a388b7d703f72bbf68f3bd9cb7456896f308a6764",
+      "lock_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_LOCK/V3_LOCK.json",
+      "output_dir": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/PALU_V3_SELECTED",
+      "rank_sum": 131072
+    }
+  },
+  "metric_rule": "acc,none for all six tasks; unweighted macro mean; preserve acc_norm as secondary raw metric where present",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "parent_manifest_sha256": "1f51401f56400d08e0d4706fc44b7c745730c8aa30381d72ac313f65752f7621",
+  "protocol": {
+    "batch_size": 1,
+    "limit": null,
+    "model_seqlen": 4096,
+    "num_fewshot": 0,
+    "runtime": "same official lm_eval HFLM wrapper and project venv as prior PaLu zero-shot evaluations",
+    "seed": {
+      "fewshot_random_seed": 1234,
+      "numpy_random_seed": 1234,
+      "random_seed": 0,
+      "torch_random_seed": 1234
+    }
+  },
+  "ratio": 0.5,
+  "resources": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "safety": {
+    "diskE_free_bytes": 14220414976,
+    "foreign_jobs_interrupted": 0,
+    "free_mib": 81153,
+    "util_percent": 0
+  },
+  "schema": "palu_paired_zeroshot_sample_logging_v1",
+  "scope": "Isolated logging-only rerun; historical/formal outputs remain immutable.",
+  "status": "FROZEN_BEFORE_RUN",
+  "tasks": [
+    "openbookqa",
+    "hellaswag",
+    "piqa",
+    "arc_easy",
+    "arc_challenge",
+    "winogrande"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "attempts": [
+    {
+      "failure": "KeyError: fisher_allocation_sha256 looked up in FROZEN_INPUTS; actual semantic allocation SHA is in INITIAL_REFRESH_PHI while FROZEN_INPUTS.fisher_schedule_sha256 is the source-file SHA.",
+      "fix": "Verify the Fisher source file SHA and semantic selection SHA in their proper artifacts.",
+      "impact": "No V3 files written by that failed invocation; no existing result invalidated."
+    },
+    {
+      "failure": "NameError: local generator referenced V1 path alias before assigning it.",
+      "fix": "Bind V1 to official_exchange_calibration/ratio_0p5/fdp_native and define the fixed resource census helper.",
+      "impact": "Failed before any split/method/manifest files were written; no existing result invalidated."
+    },
+    {
+      "created_utc": "2026-09-23T07:43:38Z",
+      "experimental_outputs_written": false,
+      "failure_type": "V3_RUNNER_LOCK_CPU_PREFLIGHT_REBIND",
+      "foreign_jobs_interrupted": 0,
+      "new_runner_sha256": "37fc000450646c8cfc1281b26644badd92e788c795dc0b810edcd9c9c4a3aa5b",
+      "old_results_valid": true,
+      "old_runner_sha256": "364e99338776c2800f3c9dd957ed91c4c8c315a22568c40c0b344af0b93af63d",
+      "reason": "CPU-only preflight engineering fixes; no calibration/formal evaluation or eval cache existed.",
+      "repair": "Versioned RUNNER_LOCK addendum binds the corrected preflight code before any calibration starts.",
+      "status": "RUNNER_LOCK_REBOUND_BEFORE_CALIBRATION"
+    },
+    {
+      "affected_cell": "V3_CPU_PREFLIGHT_ONLY",
+      "experimental_outputs_written": false,
+      "failure": "Initial CPU preflight compared q_mapping_sha256 (semantic mapping SHA) to the JSON file-byte SHA.",
+      "failure_type": "V3_Q_MAPPING_HASH_DOMAIN_CONFUSION",
+      "foreign_jobs_interrupted": 0,
+      "old_results_valid": true,
+      "repair": "Compare the q mapping semantic mapping_sha256 field to the frozen manifest; retain byte-SHA checks only for files whose manifest fields are byte SHAs."
+    },
+    {
+      "affected_cell": "V3_CPU_PREFLIGHT_ONLY",
+      "experimental_outputs_written": false,
+      "failure": "First hash-domain repair treated native_action_space_sha256 as an embedded semantic SHA; manifest binds the action-space JSON file bytes.",
+      "failure_type": "V3_ACTION_SPACE_HASH_DOMAIN_CONFUSION",
+      "foreign_jobs_interrupted": 0,
+      "old_results_valid": true,
+      "repair": "Restore byte-SHA verification for the action-space file and do not compare its embedded semantic hash to the file SHA."
+    },
+    {
+      "affected_cell": "V3_CPU_PREFLIGHT_ONLY",
+      "experimental_outputs_written": false,
+      "failure": "Preflight initially compared the formal-protocol digest to the generic Official protocol lock, not the frozen formal-quality protocol manifest bound in the split audit.",
+      "failure_type": "V3_FORMAL_PROTOCOL_FILE_BINDING_FIX",
+      "foreign_jobs_interrupted": 0,
+      "old_results_valid": true,
+      "repair": "Verify the exact formal-quality protocol manifest at PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/formal_protocol/FORMAL_QUALITY_PROTOCOL_MANIFEST.json."
+    },
+    {
+      "affected_cell": "V3_CPU_PREFLIGHT_ONLY",
+      "experimental_outputs_written": false,
+      "failure": "CPU preflight initially used the comma-delimited token hash convention from V2; frozen V3 split token hashes bind little-endian int64 token IDs.",
+      "failure_type": "V3_TOKEN_ID_HASH_ENCODING_FIX",
+      "foreign_jobs_interrupted": 0,
+      "old_results_valid": true,
+      "repair": "Verify each frozen V3 chunk using SHA256 over packed little-endian int64 token IDs, matching the precomputed V3 token binding."
+    },
+    {
+      "affected_stage": "PRE_TUNE_ENGINEERING_ONLY",
+      "created_utc": "2026-09-23T10:05:45Z",
+      "experimental_outputs_written": false,
+      "failure_type": "V3_RUNNER_LOCK_POST_PROFILE_PRE_TUNE_REBIND",
+      "foreign_jobs_interrupted": 0,
+      "formal_outputs_absent": true,
+      "lock_outputs_absent": true,
+      "new_runner_sha256": "ee0079afe568e03395eb0a36be8c0113debe258da0cd2fe961cd682943ef00b8",
+      "old_results_valid": true,
+      "old_runner_sha256": "37fc000450646c8cfc1281b26644badd92e788c795dc0b810edcd9c9c4a3aa5b",
+      "profile_marginals_sha256": "d48c9bb9a4cf73961284c90b57a083e81458bd1290e73174de17af954b6d1d3b",
+      "profile_result_sha256": "3420320fa1d49e40f15a3581bbbd43e09df09bcefe394c16269b456a2aacd87a",
+      "reason": "Engineering-only TUNE runner correction after frozen PROFILE; no TUNE, LOCK, or formal output/cache exists.",
+      "repair": "Versioned addendum binds engineering-corrected TUNE code after verified PROFILE and before any TUNE/LOCK/formal output.",
+      "status": "RUNNER_LOCK_REBOUND_POST_PROFILE_PRE_TUNE",
+      "tune_outputs_absent": true
+    },
+    {
+      "affected_cells": [
+        "V3 TUNE arms A-D only; TUNE has not started and no TUNE cells existed before this repair."
+      ],
+      "affected_files": [
+        "run_rs_v3.py",
+        "RUNNER_LOCK.json",
+        "RUNNER_LOCK_ADDENDUM_002.json"
+      ],
+      "experimental_outputs_written_before_repair": false,
+      "failure": "TUNE cached old marginals during refresh, grouped accepted composite actions after single actions in the LOCK trajectory, omitted composite candidate coverage, and did not restore checkpoints.",
+      "failure_type": "V3_TUNE_ENGINEERING_FIXES_002",
+      "foreign_jobs_interrupted": 0,
+      "old_results_valid": true,
+      "profile_result_sha256": "3420320fa1d49e40f15a3581bbbd43e09df09bcefe394c16269b456a2aacd87a",
+      "profile_result_unchanged": true,
+      "repair": "Force recomputation for refreshed units; serialize/replay action acceptance order; count single and composite candidates separately; restore and validate full deterministic checkpoint state; report L1 moved rank separately from transfer volume."
+    },
+    {
+      "affected_cell": "TUNE arm A first configuration startup; no evaluation or result was produced.",
+      "affected_files": [
+        "run_rs_v3.py",
+        "ENGINEERING_AUDIT.json",
+        "STATE.json"
+      ],
+      "checkpoint_written": false,
+      "eval_cache_written": false,
+      "failed_run_id": "TUNE_ALL_GPU2_ADDENDUM_002_20260923T1010Z",
+      "failed_worker_pid": 3667994,
+      "failure": "First TUNE startup failed before evaluating its initial baseline because load_eval_cache.model_parts was never bound in tune_phase.",
+      "failure_log": "logs/TUNE_ALL_GPU2_ADDENDUM_002_20260923T1010Z.log",
+      "failure_type": "V3_TUNE_EVAL_CACHE_CONTEXT_BINDING_MISSING",
+      "foreign_jobs_interrupted": 0,
+      "formal_ppl_started": false,
+      "old_results_valid": true,
+      "partial_files_created": [
+        "empty CALIBRATION_TUNE config directory only"
+      ],
+      "profile_result_sha256": "3420320fa1d49e40f15a3581bbbd43e09df09bcefe394c16269b456a2aacd87a",
+      "repair": "Bind the existing model/profile/start-allocation evaluation context at TUNE phase entry before any candidate or baseline evaluation."
+    }
+  ],
+  "foreign_jobs_interrupted": 0,
+  "state_reconciliations": [
+    {
+      "foreign_jobs_interrupted": 0,
+      "observed_state": "V3_PROFILE_COMPLETE with stale runner-rebind exception fields",
+      "old_results_valid": true,
+      "prior_error": "RuntimeError('isolated V3 runner changed after RUNNER_LOCK; create a versioned addendum before any run')",
+      "prior_failure_type": "RUNTIME_OR_ENGINEERING_FAILURE",
+      "prior_status": "V3_PROFILE_COMPLETE",
+      "prior_traceback": "Traceback (most recent call last):\n  File \"/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py\", line 983, in main\n    arm_phase(args)\n  File \"/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py\", line 870, in arm_phase\n    raise RuntimeError('isolated V3 runner changed after RUNNER_LOCK; create a versioned addendum before any run')\nRuntimeError: isolated V3 runner changed after RUNNER_LOCK; create a versioned addendum before any run\n",
+      "reconciliation": "Retain exception in this audit record; successful preflight status update clears stale error fields from active state.",
+      "recorded_utc": "2026-09-23T10:06:35Z",
+      "verified_profile_result_sha256": "3420320fa1d49e40f15a3581bbbd43e09df09bcefe394c16269b456a2aacd87a"
+    },
+    {
+      "recorded_utc": "2026-09-24T06:17:40Z",
+      "failure_type": "V3_STALE_ACTIVE_WORKER_METADATA",
+      "affected_cell": "CALIBRATION_TUNE/armA_D16_R16_Rmax0.005_beam0",
+      "failure": "STATE.json named tune_worker_pid=3669497 on GPU2, but that PID was absent while live PID 5663 was executing run_rs_v3.py --gpu 1 --phase tune --arm all and writing the V3 resume log/checkpoint.",
+      "repair": "Updated only dynamic STATE worker fields to PID 5663/GPU1 and added active_worker_observation; retained the previous state record. No manifest, runner lock, method card, profile split, allocation or quality result was changed.",
+      "old_results_valid": true,
+      "formal_ppl_started": false,
+      "foreign_jobs_interrupted": 0
+    }
+  ],
+  "status": "ENGINEERING_PREFLIGHT_REPAIRED"
+}

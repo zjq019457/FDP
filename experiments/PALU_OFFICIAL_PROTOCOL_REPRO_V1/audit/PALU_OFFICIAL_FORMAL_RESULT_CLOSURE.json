@@ -1,0 +1,1263 @@
+{
+  "status": "FORMAL_RESULT_CLOSURE_COMPLETE_LONGBENCH_RUNNING",
+  "formal_rows": [
+    {
+      "ratio": 0.7,
+      "method": "PaLu Automatic (Fisher)",
+      "method_key": "fisher",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL",
+      "wiki_nll": 1.7256771225527108,
+      "wiki_ppl": 5.616322681206661,
+      "c4_nll": 2.026702880859375,
+      "c4_ppl": 7.589023149806249,
+      "J": 1.8761900017060429,
+      "delta_J_vs_fisher": 0.0,
+      "paired_bootstrap_CI95": [
+        0.0,
+        0.0
+      ],
+      "accepted_transfer_count": 0,
+      "native_rank": 183808,
+      "factor_bytes_fp16": 1693974528,
+      "prefill_cache_bytes": 752877568,
+      "decode_cache_bytes": 752877568,
+      "resource_delta_vs_fisher": {
+        "native_rank": 0,
+        "factor_bytes": 0,
+        "prefill_bytes": 0,
+        "decode_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "25cf3376ffe53b3960b5f76fa5df09e8dc7a2665e260095b481d18987b8121c5",
+      "allocation_file_sha256": "25cf3376ffe53b3960b5f76fa5df09e8dc7a2665e260095b481d18987b8121c5",
+      "manifest_sha256": null,
+      "result_sha256": "9502fd36d3a48b71a1721e7d888b792f0d22eb51b6f8d0d3e5a845778daad483",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p7/fisher/result.json",
+      "fisher_reference_sha256": "25cf3376ffe53b3960b5f76fa5df09e8dc7a2665e260095b481d18987b8121c5",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "REFERENCE_BASELINE",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.7,
+      "method": "FDP Prior",
+      "method_key": "fdp_prior",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL",
+      "wiki_nll": 1.7256771225527108,
+      "wiki_ppl": 5.616322681206661,
+      "c4_nll": 2.026702880859375,
+      "c4_ppl": 7.589023149806249,
+      "J": 1.8761900017060429,
+      "delta_J_vs_fisher": 0.0,
+      "paired_bootstrap_CI95": [
+        0.0,
+        0.0
+      ],
+      "accepted_transfer_count": 0,
+      "native_rank": 183808,
+      "factor_bytes_fp16": 1693974528,
+      "prefill_cache_bytes": 752877568,
+      "decode_cache_bytes": 752877568,
+      "resource_delta_vs_fisher": {
+        "native_rank": 0,
+        "factor_bytes": 0,
+        "prefill_bytes": 0,
+        "decode_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "allocation_file_sha256": "c6c45c735a459954cfc312a8be9360ef164c88407027fb1ab21ea0631eba64af",
+      "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+      "result_sha256": "0f452c5c2ec47de5a19a51dd3a80cdd1649b25b6e4c0ae82fab982644a0ea314",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p7/fdp_prior/result.json",
+      "fisher_reference_sha256": "25cf3376ffe53b3960b5f76fa5df09e8dc7a2665e260095b481d18987b8121c5",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "EQUIVALENT_NO_ACTION",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.7,
+      "method": "FDP Native",
+      "method_key": "fdp_native",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL",
+      "wiki_nll": 1.7230504047439759,
+      "wiki_ppl": 5.601589544767384,
+      "c4_nll": 2.0241003036499023,
+      "c4_ppl": 7.569297810607507,
+      "J": 1.873575354196939,
+      "delta_J_vs_fisher": -0.002614647509103798,
+      "paired_bootstrap_CI95": [
+        -0.002763943499829396,
+        -0.002463507365031415
+      ],
+      "accepted_transfer_count": 7,
+      "native_rank": 183808,
+      "factor_bytes_fp16": 1693974528,
+      "prefill_cache_bytes": 752877568,
+      "decode_cache_bytes": 752877568,
+      "resource_delta_vs_fisher": {
+        "native_rank": 0,
+        "factor_bytes": 0,
+        "prefill_bytes": 0,
+        "decode_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "96f6cbb8a53025536edfaafc184ac20f02c89a228bc9a107fee9c0accfd10cba",
+      "allocation_file_sha256": "771a10486413bac476aa30122781a82f1e097101c2f99731008e936dd1af9d33",
+      "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+      "result_sha256": "2ae632d4d229b9b44f8524cdda5e8ed5fc6b8aca1e6f7d8d96266079fce0efcc",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p7/fdp_native/result.json",
+      "fisher_reference_sha256": "25cf3376ffe53b3960b5f76fa5df09e8dc7a2665e260095b481d18987b8121c5",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "POSITIVE",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.5,
+      "method": "PaLu Automatic (Fisher)",
+      "method_key": "fisher",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL",
+      "wiki_nll": 1.7951807228915662,
+      "wiki_ppl": 6.020562676990926,
+      "c4_nll": 2.165447235107422,
+      "c4_ppl": 8.718500264449638,
+      "J": 1.9803139789994941,
+      "delta_J_vs_fisher": 0.0,
+      "paired_bootstrap_CI95": [
+        0.0,
+        0.0
+      ],
+      "accepted_transfer_count": 0,
+      "native_rank": 131072,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "decode_cache_bytes": 536870912,
+      "resource_delta_vs_fisher": {
+        "native_rank": 0,
+        "factor_bytes": 0,
+        "prefill_bytes": 0,
+        "decode_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "allocation_file_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "manifest_sha256": null,
+      "result_sha256": "dbadbe1faaa1656fdffbebc02a61bac707d2c00f13c0136318539d31f9ecd73b",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p5/fisher/result.json",
+      "fisher_reference_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "REFERENCE_BASELINE",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.5,
+      "method": "FDP Prior",
+      "method_key": "fdp_prior",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL",
+      "wiki_nll": 1.7945983151355422,
+      "wiki_ppl": 6.0170572754778195,
+      "c4_nll": 2.1646080017089844,
+      "c4_ppl": 8.71118647725993,
+      "J": 1.9796031584222633,
+      "delta_J_vs_fisher": -0.0007108205772307981,
+      "paired_bootstrap_CI95": [
+        -0.000817333359316171,
+        -0.0006057440516460373
+      ],
+      "accepted_transfer_count": 5,
+      "native_rank": 131072,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "decode_cache_bytes": 536870912,
+      "resource_delta_vs_fisher": {
+        "native_rank": 0,
+        "factor_bytes": 0,
+        "prefill_bytes": 0,
+        "decode_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "f617e8b82c252b2cc978f48ad68c4f306a6f4c549e661dfcad28430e54d62b9d",
+      "allocation_file_sha256": "3cc98560d77a69ff9db7ebfb14daf67088b729deca7b1ed8c013253c6df35b22",
+      "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+      "result_sha256": "2916c64400c368c883034babb8ac74711c8a5f2e54a40b9f98910b7ae72a5007",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p5/fdp_prior/result.json",
+      "fisher_reference_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "POSITIVE",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.5,
+      "method": "FDP Native",
+      "method_key": "fdp_native",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL",
+      "wiki_nll": 1.7923392789909638,
+      "wiki_ppl": 6.003479867310484,
+      "c4_nll": 2.158018112182617,
+      "c4_ppl": 8.65396945472177,
+      "J": 1.9751786955867905,
+      "delta_J_vs_fisher": -0.0051352834127035485,
+      "paired_bootstrap_CI95": [
+        -0.006137675549610552,
+        -0.004299726830907615
+      ],
+      "accepted_transfer_count": 10,
+      "native_rank": 131072,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "decode_cache_bytes": 536870912,
+      "resource_delta_vs_fisher": {
+        "native_rank": 0,
+        "factor_bytes": 0,
+        "prefill_bytes": 0,
+        "decode_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+      "allocation_file_sha256": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+      "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+      "result_sha256": "51c2524f34748de1555e77be1b2a6667de0387a348527fa34dc3928fed19c5dc",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p5/fdp_native/result.json",
+      "fisher_reference_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "POSITIVE",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.5,
+      "method": "random_0",
+      "method_key": "random_0",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL_RANDOM",
+      "wiki_nll": 1.7949277579066265,
+      "wiki_ppl": 6.019039878059538,
+      "c4_nll": 2.1647911071777344,
+      "c4_ppl": 8.712781689184775,
+      "J": 1.9798594325421806,
+      "delta_J_vs_fisher": -0.0004545464573136295,
+      "paired_bootstrap_CI95": [
+        -0.0005357696349362293,
+        -0.00037450675504753386
+      ],
+      "accepted_transfer_count": 1,
+      "native_rank": 131072,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "decode_cache_bytes": 536870912,
+      "resource_delta_vs_fisher": {
+        "decode_bytes": 0,
+        "factor_bytes": 0,
+        "native_rank": 0,
+        "prefill_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "ee363f86653ca99ef42cf3bc15dab1b77b2c2fc495fedbf1e571c10733db494a",
+      "allocation_file_sha256": "287cbd4fe9091afa60c9dd9578cc4b1e8df7d782c6f0662f0161189ebacd70d3",
+      "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+      "result_sha256": "537d1fc2d05c74a20dd8eaecc313703eccf8db3b523b48f4d2737b00f33dc649",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p5/random_0/result.json",
+      "fisher_reference_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "RANDOM_CONTROL",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.5,
+      "method": "random_1",
+      "method_key": "random_1",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL_RANDOM",
+      "wiki_nll": 1.7950865963855422,
+      "wiki_ppl": 6.019996009131495,
+      "c4_nll": 2.1649551391601562,
+      "c4_ppl": 8.714210981259262,
+      "J": 1.9800208677728492,
+      "delta_J_vs_fisher": -0.0002931112266448607,
+      "paired_bootstrap_CI95": [
+        -0.000380056450165898,
+        -0.00021029093179358057
+      ],
+      "accepted_transfer_count": 3,
+      "native_rank": 131072,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "decode_cache_bytes": 536870912,
+      "resource_delta_vs_fisher": {
+        "decode_bytes": 0,
+        "factor_bytes": 0,
+        "native_rank": 0,
+        "prefill_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "490e13ab65feec288857a5ca91a0eb616143427f7441e37e314224efb806d10b",
+      "allocation_file_sha256": "4091d75a03ef8160b6d25d11b9102d1600e0766066046eda1ea981ad09f72013",
+      "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+      "result_sha256": "8a40e6b373bba6d153b88bd64661d9ac6d5dd46ab34f99f163a1b6cbe935aaab",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p5/random_1/result.json",
+      "fisher_reference_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "RANDOM_CONTROL",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.5,
+      "method": "random_2",
+      "method_key": "random_2",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL_RANDOM",
+      "wiki_nll": 1.7950983621987953,
+      "wiki_ppl": 6.0200668396970105,
+      "c4_nll": 2.164886474609375,
+      "c4_ppl": 8.713612644419321,
+      "J": 1.9799924184040851,
+      "delta_J_vs_fisher": -0.00032156059540897964,
+      "paired_bootstrap_CI95": [
+        -0.00046573776796639683,
+        -0.00019186088837772967
+      ],
+      "accepted_transfer_count": 3,
+      "native_rank": 131072,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "decode_cache_bytes": 536870912,
+      "resource_delta_vs_fisher": {
+        "decode_bytes": 0,
+        "factor_bytes": 0,
+        "native_rank": 0,
+        "prefill_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "491ff7d7b15bbd1415883d3c6f2b609d12b57cb3eeb6d2986b3c453bc98a3e97",
+      "allocation_file_sha256": "0c2a92b94473f2020457b1420f6ff628c937148de0658c4420a92d72e03b1f81",
+      "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+      "result_sha256": "6275556c3e9f1247f742ac34eb044f2cf626ffb51eef7b2b1d70576c15a71b21",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p5/random_2/result.json",
+      "fisher_reference_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "RANDOM_CONTROL",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.3,
+      "method": "PaLu Automatic (Fisher)",
+      "method_key": "fisher",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL",
+      "wiki_nll": 2.1540909732680724,
+      "wiki_ppl": 8.620050759816548,
+      "c4_nll": 2.708953857421875,
+      "c4_ppl": 15.013560971100773,
+      "J": 2.4315224153449737,
+      "delta_J_vs_fisher": 0.0,
+      "paired_bootstrap_CI95": [
+        0.0,
+        0.0
+      ],
+      "accepted_transfer_count": 0,
+      "native_rank": 78848,
+      "factor_bytes_fp16": 726663168,
+      "prefill_cache_bytes": 322961408,
+      "decode_cache_bytes": 322961408,
+      "resource_delta_vs_fisher": {
+        "native_rank": 0,
+        "factor_bytes": 0,
+        "prefill_bytes": 0,
+        "decode_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "ab3a9941e71947adc0623972c4f7b6f6226b3e664cfe6529a73af05f9ec596c6",
+      "allocation_file_sha256": "ab3a9941e71947adc0623972c4f7b6f6226b3e664cfe6529a73af05f9ec596c6",
+      "manifest_sha256": null,
+      "result_sha256": "a3805da22111989dbdb223f6e19beedac8c1b1a612a09337d71773275b4cfd25",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p3/fisher/result.json",
+      "fisher_reference_sha256": "ab3a9941e71947adc0623972c4f7b6f6226b3e664cfe6529a73af05f9ec596c6",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "REFERENCE_BASELINE",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.3,
+      "method": "FDP Prior",
+      "method_key": "fdp_prior",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL",
+      "wiki_nll": 2.145090126129518,
+      "wiki_ppl": 8.542811133102338,
+      "c4_nll": 2.6947174072265625,
+      "c4_ppl": 14.80133541179993,
+      "J": 2.4199037666780403,
+      "delta_J_vs_fisher": -0.011618648666933358,
+      "paired_bootstrap_CI95": [
+        -0.012039115630000471,
+        -0.01119610200445336
+      ],
+      "accepted_transfer_count": 8,
+      "native_rank": 78848,
+      "factor_bytes_fp16": 726663168,
+      "prefill_cache_bytes": 322961408,
+      "decode_cache_bytes": 322961408,
+      "resource_delta_vs_fisher": {
+        "native_rank": 0,
+        "factor_bytes": 0,
+        "prefill_bytes": 0,
+        "decode_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "0de95ff201019ffd6be714bf6d4169100085d53149c1381e9b0f41dfd9b21483",
+      "allocation_file_sha256": "4e2c61952642c92b1683f6ad02329d5566f5299c66de12d2951ad71d32275b51",
+      "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+      "result_sha256": "6737599f9315c626d8fa110a8831298bb262ec51dfa1974634921cad6e2a4871",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p3/fdp_prior/result.json",
+      "fisher_reference_sha256": "ab3a9941e71947adc0623972c4f7b6f6226b3e664cfe6529a73af05f9ec596c6",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "POSITIVE",
+      "formal_quality_used_to_select": false
+    },
+    {
+      "ratio": 0.3,
+      "method": "FDP Native",
+      "method_key": "fdp_native",
+      "evidence_type": "CURRENT_OFFICIAL_FORMAL",
+      "wiki_nll": 2.1275943618222892,
+      "wiki_ppl": 8.394648015882101,
+      "c4_nll": 2.6764793395996094,
+      "c4_ppl": 14.53383442096986,
+      "J": 2.4020368507109495,
+      "delta_J_vs_fisher": -0.02948556463402438,
+      "paired_bootstrap_CI95": [
+        -0.030350455318588807,
+        -0.028664772769054735
+      ],
+      "accepted_transfer_count": 15,
+      "native_rank": 78848,
+      "factor_bytes_fp16": 726663168,
+      "prefill_cache_bytes": 322961408,
+      "decode_cache_bytes": 322961408,
+      "resource_delta_vs_fisher": {
+        "native_rank": 0,
+        "factor_bytes": 0,
+        "prefill_bytes": 0,
+        "decode_bytes": 0
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "allocation_sha256": "6c7ee97a1b4210782db59519a23ea6bc0857f24dc3167bc8f9f2953a2e7aef27",
+      "allocation_file_sha256": "4dbfa812a8bc3932995c6b82385932b486d03f96a786f9d370210de1ac500d14",
+      "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+      "result_sha256": "8a86fc82685c12d4f9d852e49d7998175638548f50c1883eba061093d2efc4f8",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_formal_quality/ratio_0p3/fdp_native/result.json",
+      "fisher_reference_sha256": "ab3a9941e71947adc0623972c4f7b6f6226b3e664cfe6529a73af05f9ec596c6",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "classification": "POSITIVE",
+      "formal_quality_used_to_select": false
+    }
+  ],
+  "zero_shot_rows": [
+    {
+      "ratio": 0.3,
+      "method": "FDP Native",
+      "method_key": "fdp_native",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.45201671314741726,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.2841296928327645,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.5109427609427609,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.40509858593905596,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.208,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.6898803046789989,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6140489344909235,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "4dbfa812a8bc3932995c6b82385932b486d03f96a786f9d370210de1ac500d14",
+      "result_sha256": "780d05311e4833bdd2f5c0671ff9b2e1d107c82c5ea61174bdba99eeaac7ca86",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p3/fdp_native/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": 0.002379254215959248
+    },
+    {
+      "ratio": 0.3,
+      "method": "FDP Prior",
+      "method_key": "fdp_prior",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.44889264426504516,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.28668941979522183,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.5075757575757576,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.40061740689105757,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.21,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.6838955386289445,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6045777426992897,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "4e2c61952642c92b1683f6ad02329d5566f5299c66de12d2951ad71d32275b51",
+      "result_sha256": "90b530ebdf97539b5a5eb7271ced4f294486478e75cc0593bcded06bc307abae",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p3/fdp_prior/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": -0.0007448146664128519
+    },
+    {
+      "ratio": 0.3,
+      "method": "PaLu Automatic (Fisher)",
+      "method_key": "fisher",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.449637458931458,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.2832764505119454,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.5105218855218855,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.3980282812188807,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.216,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.6822633297062024,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6077348066298343,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "ab3a9941e71947adc0623972c4f7b6f6226b3e664cfe6529a73af05f9ec596c6",
+      "result_sha256": "a8d3e9504767fa3c6e4480fb4a90cf0437443be676d1e5e2c4afdf425c637ede",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p3/fisher/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": 0.0
+    },
+    {
+      "ratio": 0.5,
+      "method": "FDP Native",
+      "method_key": "fdp_native",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.5485299301367295,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.39419795221843,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.6468855218855218,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.5064728141804421,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.308,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.7584330794341676,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6771902131018153,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+      "result_sha256": "3d162040fac27e4523791dbc9110d46ca4e24ba44a309eaa7db958d15b286c8e",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/fdp_native/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": -0.0005914388334732346
+    },
+    {
+      "ratio": 0.5,
+      "method": "FDP Prior",
+      "method_key": "fdp_prior",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.5497334167565495,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.3984641638225256,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.648989898989899,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.5072694682334197,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.308,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.7600652883569097,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.675611681136543,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "3cc98560d77a69ff9db7ebfb14daf67088b729deca7b1ed8c013253c6df35b22",
+      "result_sha256": "cb811398cc4643d1451cdbbdc5b1c44fde1e7010a17cf0f557ad57d0c1ee41b8",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/fdp_prior/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": 0.0006120477863468254
+    },
+    {
+      "ratio": 0.5,
+      "method": "PaLu Automatic (Fisher)",
+      "method_key": "fisher",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.5491213689702027,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.39590443686006827,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.6502525252525253,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.5064728141804421,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.308,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.7600652883569097,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6740331491712708,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "result_sha256": "3110a39ee244c1801b1ba47d531a638d899648c786f8c579807bdf4be0ff0766",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/fisher/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": 0.0
+    },
+    {
+      "ratio": 0.5,
+      "method": "random_0",
+      "method_key": "random_0",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.5504191187399766,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.3993174061433447,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.6515151515151515,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.506970722963553,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.308,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.7595212187159956,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6771902131018153,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "287cbd4fe9091afa60c9dd9578cc4b1e8df7d782c6f0662f0161189ebacd70d3",
+      "result_sha256": "b9e66b8315700a423d57bb843a2e425200dd67ec83aff4d169b84d73300ae823",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/random_0/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": 0.001297749769773926
+    },
+    {
+      "ratio": 0.5,
+      "method": "random_1",
+      "method_key": "random_1",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.548795101304249,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.39505119453924914,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.6506734006734006,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.5073690499900418,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.308,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.7584330794341676,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6732438831886346,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "4091d75a03ef8160b6d25d11b9102d1600e0766066046eda1ea981ad09f72013",
+      "result_sha256": "dd469ecddec836d0337c819faee045ac8d32f383bdcb8daa9742040fecc19b72",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/random_1/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": -0.0003262676659536723
+    },
+    {
+      "ratio": 0.5,
+      "method": "random_2",
+      "method_key": "random_2",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.5493601671953439,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.39590443686006827,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.6502525252525253,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.5068711412069309,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.308,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.7595212187159956,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.675611681136543,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "0c2a92b94473f2020457b1420f6ff628c937148de0658c4420a92d72e03b1f81",
+      "result_sha256": "b0932a69368a93f37d975d502c5239619e0c214911f1a7615c0912500c08eab5",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/random_2/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": 0.000238798225141168
+    },
+    {
+      "ratio": 0.7,
+      "method": "FDP Native",
+      "method_key": "fdp_native",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.5754277130164857,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.4283276450511945,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.7007575757575758,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.5345548695478988,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.324,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.7774755168661589,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6874506708760852,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "771a10486413bac476aa30122781a82f1e097101c2f99731008e936dd1af9d33",
+      "result_sha256": "2ea46028e5fad215de7d2919072ffd74310f3d8d622fd39ffc9e47b8de32b1b5",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p7/fdp_native/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": -9.606817823470948e-05
+    },
+    {
+      "ratio": 0.7,
+      "method": "FDP Prior",
+      "method_key": "fdp_prior",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.5755237811947204,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.4308873720136519,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.6999158249158249,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.5339573790081658,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.328,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.7752992383025027,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6850828729281768,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "c6c45c735a459954cfc312a8be9360ef164c88407027fb1ab21ea0631eba64af",
+      "result_sha256": "30571f965c5a5d664bcec8e87eae329dcb318043ef21b3661c8747ef63801185",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p7/fdp_prior/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": 0.0
+    },
+    {
+      "ratio": 0.7,
+      "method": "PaLu Automatic (Fisher)",
+      "method_key": "fisher",
+      "evidence_type": "CURRENT_OFFICIAL_ZERO_SHOT_POINT_ESTIMATE",
+      "macro_accuracy": 0.5755237811947204,
+      "selected_accuracy": {
+        "arc_challenge": {
+          "accuracy": 0.4308873720136519,
+          "bound_task": "arc_challenge_localjsonl",
+          "metric": "acc,none"
+        },
+        "arc_easy": {
+          "accuracy": 0.6999158249158249,
+          "bound_task": "arc_easy_localjsonl",
+          "metric": "acc,none"
+        },
+        "hellaswag": {
+          "accuracy": 0.5339573790081658,
+          "bound_task": "hellaswag_localjsonl",
+          "metric": "acc,none"
+        },
+        "openbookqa": {
+          "accuracy": 0.328,
+          "bound_task": "openbookqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "piqa": {
+          "accuracy": 0.7752992383025027,
+          "bound_task": "piqa_localjsonl",
+          "metric": "acc,none"
+        },
+        "winogrande": {
+          "accuracy": 0.6850828729281768,
+          "bound_task": "winogrande_localjsonl",
+          "metric": "acc,none"
+        }
+      },
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "resource": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_match": "EXACT",
+      "schedule_sha256": "25cf3376ffe53b3960b5f76fa5df09e8dc7a2665e260095b481d18987b8121c5",
+      "result_sha256": "1dd4c403f99cebce41fc3f28b8c61c54f8c52ff59569ebb2b52075d5f4647ef0",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p7/fisher/zeroshot.json",
+      "protocol_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+      "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+      "uncertainty": "POINT_ESTIMATE_ONLY; no sample-level paired predictions",
+      "delta_macro_vs_fisher": 0.0
+    }
+  ],
+  "longbench": {
+    "manifest_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/PALU_OFFICIAL_LONGBENCH_V1_MANIFEST.json",
+    "manifest_sha256": "bd4c78a772b194b574284c68fc9d74223bcbade83ae55bb7aa70f84540fe1518",
+    "protocol_audit_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/PALU_OFFICIAL_LONGBENCH_PROTOCOL_AUDIT.json",
+    "tasks": [
+      "triviaqa",
+      "qasper",
+      "trec",
+      "samsum",
+      "lcc",
+      "repobench-p",
+      "qmsum",
+      "multi_news"
+    ],
+    "model": {
+      "checkpoint": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+      "tokenizer": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+      "model_max_context": 4096
+    },
+    "methods": {
+      "fisher": {
+        "status": "RUNNING",
+        "pid": 3108014,
+        "gpu": 1,
+        "completed_tasks": [],
+        "failed_or_prior_attempt_tasks": [
+          "multi_news",
+          "qmsum",
+          "samsum",
+          "lcc",
+          "triviaqa",
+          "repobench-p",
+          "trec",
+          "qasper"
+        ],
+        "total_tasks": 8,
+        "manifest_sha256": "bd4c78a772b194b574284c68fc9d74223bcbade83ae55bb7aa70f84540fe1518",
+        "resource": {
+          "total_native_rank": 131072,
+          "factor_bytes_fp16": 1207959552,
+          "prefill_cache_bytes": 536870912,
+          "decode_cache_bytes": 536870912
+        }
+      },
+      "fdp_native": {
+        "status": "RUNNING",
+        "pid": 3108239,
+        "gpu": 2,
+        "completed_tasks": [],
+        "failed_or_prior_attempt_tasks": [
+          "multi_news",
+          "qmsum",
+          "samsum",
+          "lcc",
+          "triviaqa",
+          "repobench-p",
+          "trec",
+          "qasper"
+        ],
+        "total_tasks": 8,
+        "manifest_sha256": "bd4c78a772b194b574284c68fc9d74223bcbade83ae55bb7aa70f84540fe1518",
+        "resource": {
+          "total_native_rank": 131072,
+          "factor_bytes_fp16": 1207959552,
+          "prefill_cache_bytes": 536870912,
+          "decode_cache_bytes": 536870912
+        }
+      }
+    },
+    "old_anchor_quality_reused": false
+  },
+  "frozen_protocols": {
+    "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+    "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+    "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284"
+  },
+  "safety": {
+    "foreign_jobs_interrupted": 0,
+    "existing_jobs_untouched": true
+  }
+}

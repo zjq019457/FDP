@@ -1,0 +1,13 @@
+{
+  "artifact_id": "LLAMA2_E068_NATIVE_EXCHANGE_ITERATION_ATTEMPT3_ENGINEERING_INVALIDATION_V1",
+  "status": "INVALID_ENGINEERING_PRE_SCORE",
+  "failed_stage": "joint-candidate forward after replacing two layers",
+  "failure_class": "ENGINEERING_DEVICE_RESIDENCY_BUG",
+  "diagnosis": "candidate materializer moved a source layer back to CPU before the joint forward; attempt 4 deep-copies source layers and keeps the copies on CUDA for the complete score, leaving the frozen CPU source untouched",
+  "candidate_exchange_scoring_started": false,
+  "final_quality_started": false,
+  "prior_status_sha256": "1138da624f843df15c23e94d8cd541f8dfa052e966fda15d26288f48dcadb896",
+  "prior_log_sha256": "70d50ddb501266aac41f64c89a9f43ed2e51002ada062e6ce689293afdfc401c",
+  "prior_executor_sha256": "c63977391e196f8dab07c7bb2962e50a4894d8508b9d529676536b4e462974a7",
+  "created_utc": "2026-10-02T04:27:28.546451+00:00"
+}

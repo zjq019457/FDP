@@ -1,0 +1,56 @@
+{
+  "action": "Do not launch Mistral profile/quality until official tokenizer/config and exact HF-converted checkpoint binding plus GQA/RoPE/sliding-window parity are verified.",
+  "artifact_id": "MISTRAL_V02_MODEL_BINDING_AUDIT",
+  "classification": "BLOCKED_MODEL_TOKENIZER_HF_RUNTIME_BINDING",
+  "files": [
+    {
+      "bytes": 14483504258,
+      "exists": true,
+      "file": "consolidated.00.pth",
+      "sha256": "34b3b64b6d85a7f5f1eb6964e179a097b8c18d32978b096e1d6fcd886b31138f"
+    },
+    {
+      "bytes": 232,
+      "exists": true,
+      "file": "params.json",
+      "sha256": "cdda7bcada34ef59af88b76dcc8680d6c381582bfd837e438cb11b5376bad9b0"
+    },
+    {
+      "bytes": null,
+      "exists": false,
+      "file": "config.json",
+      "sha256": null
+    },
+    {
+      "bytes": null,
+      "exists": false,
+      "file": "tokenizer.model",
+      "sha256": null
+    },
+    {
+      "bytes": null,
+      "exists": false,
+      "file": "tokenizer.json",
+      "sha256": null
+    },
+    {
+      "bytes": null,
+      "exists": false,
+      "file": "tokenizer_config.json",
+      "sha256": null
+    }
+  ],
+  "gates": {
+    "HF_config_conversion": "BLOCKED",
+    "Mistral_operator_adapter": "NOT_PARITY_VALIDATED",
+    "checkpoint_content": "PASS_ARCHIVE_HASHED",
+    "quality_authorized": false,
+    "resource_pipeline": "NOT_STARTED",
+    "tokenizer": "BLOCKED_NOT_PRESENT_IN_LOCAL_MODEL_DIR"
+  },
+  "model_identity": "Official raw Mistral CDN archive hash-pinned; no HF repo revision asserted by current ingest audit.",
+  "observed_at_utc": "2026-10-01T01:33:41.938152+00:00",
+  "official_source_archive_sha256": "73a1e8b4e163f28343fdcf5e6ace3a5a5babad499c97742bab90db83818dee98",
+  "official_weights_sha256": "34b3b64b6d85a7f5f1eb6964e179a097b8c18d32978b096e1d6fcd886b31138f",
+  "params_sha256": "cdda7bcada34ef59af88b76dcc8680d6c381582bfd837e438cb11b5376bad9b0"
+}

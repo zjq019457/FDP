@@ -1,0 +1,13 @@
+{
+  "c4_ppl": 7.263338592440111,
+  "expected_total_native_rank": 262144,
+  "gate": "IDENTITY_PROJECTION_GATE",
+  "old_branch_modified": false,
+  "projection_count": 64,
+  "rank_exact": true,
+  "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/results/identity_uniform_ratio_1.0_uniform.json",
+  "selection_exact": true,
+  "status": "PASS",
+  "total_native_rank": 262144,
+  "wiki_ppl": 5.472295641376179
+}

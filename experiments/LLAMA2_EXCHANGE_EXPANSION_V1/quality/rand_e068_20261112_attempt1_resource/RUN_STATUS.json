@@ -1,0 +1,78 @@
+{
+ "label": "rand_e068_20261112",
+ "schedule": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/schedules/rand_e068_20261112/SCHEDULE.json",
+ "schedule_sha256": "4184d9df7d03c93dc9da8b1282c9c7722d41bbb1616828efbf8e7e4eb95ae81b",
+ "rank_sha": "e15399572292001abd33720bbadb02154343fa977eabf8903186afac3b4b8bb9",
+ "B_live": 746323968,
+ "ratio": 0.695068359375,
+ "physical_gpu": 1,
+ "started": "2026-10-12T06:29:28.670206+00:00",
+ "script_sha256": "f475b595cd68045838085bc99300474c8e96944f910c2aeddd65dca9e244f373",
+ "operator_parity": [
+  {
+   "layer": 0,
+   "rank_kq": 4096,
+   "rank_v": 4096,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 1.0,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  },
+  {
+   "layer": 16,
+   "rank_kq": 2400,
+   "rank_v": 3744,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 0.9999999999999999,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  },
+  {
+   "layer": 31,
+   "rank_kq": 1120,
+   "rank_v": 3328,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 1.0,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  }
+ ],
+ "ppl": {
+  "wikitext2": {
+   "ppl": 10.227212106843742,
+   "used": 166,
+   "skipped": 0
+  },
+  "c4": {
+   "ppl": 14.682099362516384,
+   "used": 256,
+   "skipped": 0
+  }
+ },
+ "J": 2.5058405214025785,
+ "status": "FAILED",
+ "error": "RuntimeError('GPU0 does not meet free-VRAM safety gate')",
+ "traceback": "Traceback (most recent call last):\n  File \"/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/code/l2x_quality.py\", line 55, in main\n    base.run_one_arm(label)\n  File \"/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama2_7b/medium/formal_accuracy_after_ppl_v3_20260925T103500Z/l2_medium_formal_zeroshot_v1.py\", line 239, in run_one_arm\n    model, factor_calc = c.build_model(arm, basis_meta)\n  File \"/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama2_7b/medium/canonical_materialization_canary_v4_20260925T094600Z/l2_medium_canonical_materialize_canary_v4.py\", line 140, in build_model\n    if gpu_free_mib()<GPU_GATE_MIB: raise RuntimeError(\"GPU0 does not meet free-VRAM safety gate\")\nRuntimeError: GPU0 does not meet free-VRAM safety gate\n",
+ "failed": "2026-10-12T06:39:25.514916+00:00"
+}

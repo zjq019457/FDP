@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "task": "hellaswag_localjsonl",
+      "p_value": 1.0,
+      "b01": 0,
+      "b10": 0
+    },
+    {
+      "task": "arc_challenge_localjsonl",
+      "p_value": 1.0,
+      "b01": 0,
+      "b10": 0
+    },
+    {
+      "task": "arc_easy_localjsonl",
+      "p_value": 1.0,
+      "b01": 0,
+      "b10": 0
+    },
+    {
+      "task": "winogrande_localjsonl",
+      "p_value": 1.0,
+      "b01": 0,
+      "b10": 0
+    },
+    {
+      "task": "piqa_localjsonl",
+      "p_value": 1.0,
+      "b01": 0,
+      "b10": 0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "job_id": "R1_dense_aggregate",
+  "status": "RUNNING",
+  "pid": 1650778,
+  "gpu": null,
+  "running_for_sec": 30.032310962677002,
+  "updated_at": "2026-07-28T09:17:49.254730-07:00"
+}

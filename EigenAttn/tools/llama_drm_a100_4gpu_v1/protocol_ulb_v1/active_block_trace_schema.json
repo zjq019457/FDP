@@ -1,0 +1,156 @@
+{
+  "$id": "urn:ulb:v1:active-block-trace",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "trace_level": {
+            "const": "full"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "active_before_ids",
+          "candidate_ids",
+          "active_after_ids",
+          "added_ids",
+          "removed_ids",
+          "sink_ids"
+        ]
+      }
+    }
+  ],
+  "properties": {
+    "active_after_ids": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "active_before_ids": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "added_ids": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "candidate_ids": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "decode_step": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "layer_idx": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "method": {
+      "type": "string"
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "protocol_id": {
+      "type": "string"
+    },
+    "removed_ids": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "sample_id": {
+      "type": "string"
+    },
+    "sample_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "selected_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "selection_event_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "sink_ids": {
+      "items": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "task": {
+      "enum": [
+        "passage_retrieval_en",
+        "qasper",
+        "multifieldqa_en",
+        "hotpotqa",
+        "2wikimqa",
+        "musique",
+        "gov_report",
+        "qmsum",
+        "multi_news",
+        "vcsum",
+        "passage_count",
+        "trec",
+        "triviaqa",
+        "samsum",
+        "lsht",
+        "lcc",
+        "repobench-p"
+      ]
+    },
+    "trace_level": {
+      "enum": [
+        "summary",
+        "full"
+      ]
+    },
+    "trace_source": {
+      "enum": [
+        "runtime"
+      ]
+    }
+  },
+  "required": [
+    "protocol_id",
+    "model_id",
+    "method",
+    "task",
+    "sample_id",
+    "sample_index",
+    "decode_step",
+    "layer_idx",
+    "selection_event_index",
+    "selected_count",
+    "trace_level",
+    "trace_source"
+  ],
+  "title": "Unified LongBench active block trace event",
+  "type": "object"
+}

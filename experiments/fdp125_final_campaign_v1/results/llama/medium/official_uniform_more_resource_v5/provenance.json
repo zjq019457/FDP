@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "method": "official_eigenattention_uniform",
+  "tier": "medium",
+  "base_e": 0.055,
+  "B_live": 202932224,
+  "quality": {
+    "wiki": {
+      "dataset": "wikitext2",
+      "ppl": 7.1973638604816,
+      "total_nll_sum": 569945.68359375,
+      "token_count_sum": 288768,
+      "used_windows": 141,
+      "skipped_windows": 0,
+      "n_windows_considered": 141,
+      "seqlen": 2048,
+      "method": "OFFICIAL_UNIFORM_LLAMA_medium",
+      "model_hash": "a259926ee2d8f5599c7753fbd1ce712e5a31df553f3d0b4909edba60d22c9b6a",
+      "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+      "recomputed_from": "exp(sum(total_nll)/sum(token_count))",
+      "timestamp": "2026-09-16T22:06:06.543146-07:00"
+    },
+    "c4": {
+      "dataset": "c4",
+      "ppl": 10.727777142812508,
+      "total_nll_sum": 1244049.6359863281,
+      "token_count_sum": 524288,
+      "used_windows": 256,
+      "skipped_windows": 0,
+      "n_windows_considered": 256,
+      "seqlen": 2048,
+      "method": "OFFICIAL_UNIFORM_LLAMA_medium",
+      "model_hash": "a259926ee2d8f5599c7753fbd1ce712e5a31df553f3d0b4909edba60d22c9b6a",
+      "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+      "recomputed_from": "exp(sum(total_nll)/sum(token_count))",
+      "timestamp": "2026-09-16T22:07:45.271086-07:00"
+    }
+  },
+  "gpu": 3,
+  "seed": 2
+}

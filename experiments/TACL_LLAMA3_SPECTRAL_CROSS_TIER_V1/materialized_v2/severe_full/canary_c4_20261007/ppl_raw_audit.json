@@ -1,0 +1,29 @@
+{
+  "runner": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/ppl_instrumented.py",
+  "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+  "python": "/home/bai-project/anaconda3/envs/eigen/bin/python",
+  "merged_windows": 1,
+  "aggregate": {
+    "dataset": "c4",
+    "ppl": 11.040960549735464,
+    "total_nll_sum": 4918.50146484375,
+    "token_count_sum": 2048,
+    "used_windows": 1,
+    "skipped_windows": 0,
+    "n_windows_considered": 1,
+    "seqlen": 2048,
+    "method": "severe-severe_full-canary",
+    "model_hash": "4b1786b551804107b729c43c8e6931fd4000fd6543400d79fc440b3063189eae",
+    "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+    "recomputed_from": "exp(sum(total_nll)/sum(token_count))",
+    "timestamp": "2026-10-07T16:33:32.116072-07:00"
+  },
+  "original_scorer_source": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/sanity_ppl_dual_protocol.py",
+  "original_scorer_sha256": "915df955dd5a561a341a8f48a221563767eebd0abb08d3449cf1a55f69cb569e",
+  "notes": [
+    "WikiText uses HF-forward float CE path from sanity_ppl_dual_protocol.eval_ppl_wikitext_hf_forward_llama_style",
+    "C4 Llama uses CE without logits.float() matching eval_ppl_c4_legacy_opt_compatible non-OPT branch",
+    "token_count per window = seqlen; aggregate = exp(sum(total_nll)/sum(token_count))"
+  ],
+  "timestamp": "2026-10-07T16:33:32.122412-07:00"
+}

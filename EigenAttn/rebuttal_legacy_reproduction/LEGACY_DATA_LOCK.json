@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-07-28T07:59:59.705251-07:00",
+  "data": {
+    "wikitext_train_parquet": [
+      "/home/bai-project/jiaqizhang/wikitext2/train-00000-of-00001.parquet"
+    ],
+    "c4_selected_texts": [
+      "/diskD/jiaqizhang/llama3_8b_eb045_eval_minimal-20260502T170035Z-3-001/llama3_8b_eb045_eval_minimal/data/c4_ppl_selected_texts.jsonl"
+    ],
+    "c4_selected_rows": [
+      "/diskD/jiaqizhang/llama3_8b_eb045_eval_minimal-20260502T170035Z-3-001/llama3_8b_eb045_eval_minimal/c4_ppl_selected_rows.json"
+    ],
+    "lm_eval_dense_json": [
+      "/diskD/jiaqizhang/lm_eval_0shot_llama3_batch/dense_llama3.json"
+    ],
+    "wikitext_test_parquet": [
+      "/home/bai-project/jiaqizhang/wikitext2/test-00000-of-00001.parquet"
+    ],
+    "wikitext_validation_parquet": [
+      "/home/bai-project/jiaqizhang/wikitext2/validation-00000-of-00001.parquet"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "component_ablation_manifests": 18,
+  "formula": {
+    "components": [
+      "d1",
+      "d2",
+      "d5"
+    ],
+    "eta": 0,
+    "lambda": 1.2,
+    "rho": 0.75,
+    "weights": [
+      1,
+      1,
+      1
+    ]
+  },
+  "generated_at": "2026-09-17T15:33:25",
+  "matched_control_manifests": 24,
+  "policy": "manifest preparation only; no GPU launch; no result changed",
+  "quality_runs_started": 0,
+  "resource_locks_passed": 0
+}

@@ -1,0 +1,265 @@
+{
+  "allocation_file_sha256": "2d39865650ce48052f686d55f2fb03da5ecef6b824f50c74fbb5620ede50d177",
+  "allocator": "official fisher_uniform",
+  "cell": "J_LRD_GS32_FISHER_UNIFORM",
+  "created_utc": "2026-09-30T17:40:49.811497+00:00",
+  "fisher_samples": 2048,
+  "fisher_seqlen": 1024,
+  "group_size": 32,
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "rank_quantum": 32,
+  "ranks": {
+    "model.layers.0.self_attn.k_proj": [
+      288
+    ],
+    "model.layers.0.self_attn.v_proj": [
+      1856
+    ],
+    "model.layers.1.self_attn.k_proj": [
+      544
+    ],
+    "model.layers.1.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.10.self_attn.k_proj": [
+      1088
+    ],
+    "model.layers.10.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.11.self_attn.k_proj": [
+      1248
+    ],
+    "model.layers.11.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.12.self_attn.k_proj": [
+      1088
+    ],
+    "model.layers.12.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.13.self_attn.k_proj": [
+      1024
+    ],
+    "model.layers.13.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.14.self_attn.k_proj": [
+      832
+    ],
+    "model.layers.14.self_attn.v_proj": [
+      3712
+    ],
+    "model.layers.15.self_attn.k_proj": [
+      832
+    ],
+    "model.layers.15.self_attn.v_proj": [
+      3584
+    ],
+    "model.layers.16.self_attn.k_proj": [
+      768
+    ],
+    "model.layers.16.self_attn.v_proj": [
+      3136
+    ],
+    "model.layers.17.self_attn.k_proj": [
+      864
+    ],
+    "model.layers.17.self_attn.v_proj": [
+      3104
+    ],
+    "model.layers.18.self_attn.k_proj": [
+      768
+    ],
+    "model.layers.18.self_attn.v_proj": [
+      2464
+    ],
+    "model.layers.19.self_attn.k_proj": [
+      640
+    ],
+    "model.layers.19.self_attn.v_proj": [
+      2304
+    ],
+    "model.layers.2.self_attn.k_proj": [
+      1056
+    ],
+    "model.layers.2.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.20.self_attn.k_proj": [
+      736
+    ],
+    "model.layers.20.self_attn.v_proj": [
+      2464
+    ],
+    "model.layers.21.self_attn.k_proj": [
+      736
+    ],
+    "model.layers.21.self_attn.v_proj": [
+      2048
+    ],
+    "model.layers.22.self_attn.k_proj": [
+      768
+    ],
+    "model.layers.22.self_attn.v_proj": [
+      2272
+    ],
+    "model.layers.23.self_attn.k_proj": [
+      704
+    ],
+    "model.layers.23.self_attn.v_proj": [
+      2112
+    ],
+    "model.layers.24.self_attn.k_proj": [
+      864
+    ],
+    "model.layers.24.self_attn.v_proj": [
+      2304
+    ],
+    "model.layers.25.self_attn.k_proj": [
+      896
+    ],
+    "model.layers.25.self_attn.v_proj": [
+      2304
+    ],
+    "model.layers.26.self_attn.k_proj": [
+      928
+    ],
+    "model.layers.26.self_attn.v_proj": [
+      2208
+    ],
+    "model.layers.27.self_attn.k_proj": [
+      960
+    ],
+    "model.layers.27.self_attn.v_proj": [
+      2048
+    ],
+    "model.layers.28.self_attn.k_proj": [
+      1216
+    ],
+    "model.layers.28.self_attn.v_proj": [
+      2144
+    ],
+    "model.layers.29.self_attn.k_proj": [
+      928
+    ],
+    "model.layers.29.self_attn.v_proj": [
+      2304
+    ],
+    "model.layers.3.self_attn.k_proj": [
+      1536
+    ],
+    "model.layers.3.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.30.self_attn.k_proj": [
+      992
+    ],
+    "model.layers.30.self_attn.v_proj": [
+      1824
+    ],
+    "model.layers.31.self_attn.k_proj": [
+      992
+    ],
+    "model.layers.31.self_attn.v_proj": [
+      2304
+    ],
+    "model.layers.4.self_attn.k_proj": [
+      1344
+    ],
+    "model.layers.4.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.5.self_attn.k_proj": [
+      1280
+    ],
+    "model.layers.5.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.6.self_attn.k_proj": [
+      1536
+    ],
+    "model.layers.6.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.7.self_attn.k_proj": [
+      1376
+    ],
+    "model.layers.7.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.8.self_attn.k_proj": [
+      1248
+    ],
+    "model.layers.8.self_attn.v_proj": [
+      4096
+    ],
+    "model.layers.9.self_attn.k_proj": [
+      1216
+    ],
+    "model.layers.9.self_attn.v_proj": [
+      4096
+    ]
+  },
+  "resource": {
+    "allocation_integrity_pass": true,
+    "allocation_sha256": "800fc02c1fe1f4bc034f9b7d3834263da142f80e3f801e4d26f0d2aa0202d305",
+    "cache_bytes_per_token_fp16": 262080,
+    "compression_fraction": 0.5001220703125,
+    "decode_cache_bytes_at_2048_fp16": 536739840,
+    "factor_bytes": 2146959360,
+    "low_rank_module_count": 64,
+    "nominal_50pct_rank_target": 131072,
+    "nominal_50pct_target_exact": false,
+    "prefill_cache_bytes_at_2048_fp16": 536739840,
+    "rank_delta_from_nominal_target": -32,
+    "rank_histogram": {
+      "1024": 1,
+      "1056": 1,
+      "1088": 2,
+      "1216": 2,
+      "1248": 2,
+      "1280": 1,
+      "1344": 1,
+      "1376": 1,
+      "1536": 2,
+      "1824": 1,
+      "1856": 1,
+      "2048": 2,
+      "2112": 1,
+      "2144": 1,
+      "2208": 1,
+      "2272": 1,
+      "2304": 5,
+      "2464": 2,
+      "288": 1,
+      "3104": 1,
+      "3136": 1,
+      "3584": 1,
+      "3712": 1,
+      "4096": 13,
+      "544": 1,
+      "640": 1,
+      "704": 1,
+      "736": 2,
+      "768": 3,
+      "832": 2,
+      "864": 2,
+      "896": 1,
+      "928": 2,
+      "960": 1,
+      "992": 2
+    },
+    "rank_quantized_to_32": true,
+    "rank_quantum": 32,
+    "rank_sum": 131040,
+    "rank_sum_matches_selection": true,
+    "ranks_within_native_group_dimensions": true,
+    "realization_sha256": "d8ae7109901a82deb00a54907a93ef29be390198c29a3c1ecffde2043dd8aa5f",
+    "resource_policy": "report official per-unit 32-rank rounding as realized; do not manually adjust ranks to force the nominal total",
+    "uncompressed_rank": 262144
+  },
+  "schema": "PALU_APPENDIX_F3_AUTOMATIC_ALLOCATION_V1",
+  "seed": 42
+}

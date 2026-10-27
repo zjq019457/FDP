@@ -1,0 +1,24 @@
+{
+  "affected_cell": "ratio_0.5/uniform/zero_shot",
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "dataset_binding_audit": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/PALU_ZERO_SHOT_LOCAL_DATASET_BINDING.json",
+  "diskF_policy": "read_only; no new Arrow/cache/temp writes",
+  "failure": "OSError: [Errno 28] No space left on device during local Arrow dataset generation",
+  "failure_type": "STORAGE_FULL",
+  "frozen_protocol_modified": false,
+  "observed_dataset_stage": "hellaswag_localjsonl",
+  "old_result_valid": true,
+  "old_results_modified": false,
+  "q_phi_fisher_exchange_lock_manifest_modified": false,
+  "recorded_at_utc": "2026-09-20T21:54:02.790213+00:00",
+  "repair": {
+    "HF_DATASETS_CACHE": "/diskE/jiaqizhang/PALU_ZERO_SHOT_CACHE/datasets",
+    "HF_HOME": "/diskE/jiaqizhang/PALU_ZERO_SHOT_CACHE/hf_home",
+    "TMPDIR": "/diskE/jiaqizhang/PALU_ZERO_SHOT_CACHE/tmp",
+    "TRANSFORMERS_CACHE": "/diskE/jiaqizhang/PALU_ZERO_SHOT_CACHE/transformers",
+    "cache_root": "/diskE/jiaqizhang/PALU_ZERO_SHOT_CACHE",
+    "retry_policy": "retry failed uniform cell only, then continue READY methods"
+  },
+  "source_datasets_unchanged": true,
+  "status": "ENGINEERING_FIX_APPLIED_RETRYING"
+}

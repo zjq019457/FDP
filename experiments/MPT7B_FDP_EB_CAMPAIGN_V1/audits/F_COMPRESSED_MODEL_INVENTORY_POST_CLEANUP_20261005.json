@@ -1,0 +1,824 @@
+{
+  "root": "/diskF/jiaqizhang",
+  "indexed_checkpoint_count": 46,
+  "records": [
+    {
+      "directory": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "palullama",
+      "architectures": [
+        "PaluLlamaForCausalLM"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "REVIEW_ARCH_UNCLEAR"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/control",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "palullama",
+      "architectures": [
+        "PaluLlamaForCausalLM"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "REVIEW_ARCH_UNCLEAR"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/fdp",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "palullama",
+      "architectures": [
+        "PaluLlamaForCausalLM"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "REVIEW_ARCH_UNCLEAR"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "palullama",
+      "architectures": [
+        "PaluLlamaForCausalLM"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "REVIEW_ARCH_UNCLEAR"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "palullama",
+      "architectures": [
+        "PaluLlamaForCausalLM"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "REVIEW_ARCH_UNCLEAR"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/llama3_8b_eigen_kv_eb045/offline_eval_gpu123_rerun/smoke_logs/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/llama3_8b_eigen_kv_eb045/final_model",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_allocation_utility_v1_scratch/states/PARITY_STATIC/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_allocation_utility_v1_scratch/states/PARITY_REPROFILE/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/models/新建文件夹",
+      "indices": [
+        "pytorch_model.bin.index.json"
+      ],
+      "model_type": "mpt",
+      "architectures": [
+        "MPTForCausalLM"
+      ],
+      "name_or_path": null,
+      "layers": 32,
+      "max_positions": 2048,
+      "shard_count": 2,
+      "weight_bytes": 13298639462,
+      "shards": [
+        {
+          "path": "/diskF/jiaqizhang/models/新建文件夹/pytorch_model-00001-of-00002.bin",
+          "bytes": 9943040275
+        },
+        {
+          "path": "/diskF/jiaqizhang/models/新建文件夹/pytorch_model-00002-of-00002.bin",
+          "bytes": 3355599187
+        }
+      ],
+      "classification": "PRESERVE_ORIGINAL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/replay_old_fdp_0588x_20260909/phase_d_old_fdp/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/replay_old_fdp_0588x_20260909/phase_a_official/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/replay_old_fdp_0820x_20260909/phase_d_old_fdp/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/replay_old_fdp_0820x_20260909/phase_a_official/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/matched_medium_eb0p062/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/matched_mild_eb0p045/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/matched_high_retention_eb0p035/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/matched_aggressive_eb0p1/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/replay_official_0840x_20260909/phase_a_official/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_faithful_fdp_eval/AGGRESSIVE/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp125_tuning_stage2_llama2_20261001/LLAMA2_FDP_STAGE3_RUNS_V1/L1.2_G0.75_K8_C0.25pct/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+      "layers": 32,
+      "max_positions": 4096,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_clean_ablation_v1/tiers/ultra/pass1_uniform/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_scratch/jobs/opt_Uniform_MEDIUM/final_model_orientation_repaired",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "opt",
+      "architectures": [
+        "OPTForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskE/jiaqizhang/opt-30b",
+      "layers": 48,
+      "max_positions": 2048,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_scratch/jobs/llama_HR_Uniform/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_scratch/jobs/llama_Old_FDP_Exact_HIGH_RETENTION_live_lock/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_scratch/jobs/llama_Old_FDP_Exact_AGGRESSIVE_live_lock/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_scratch/jobs/llama_Uniform_AGGRESSIVE_live_lock/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_scratch/jobs/llama_Uniform_HIGH_RETENTION_live_lock/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_scratch/jobs/llama_Orth_AGGRESSIVE_live_lock/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_scratch/jobs/llama_Orth_HIGH_RETENTION_live_lock/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e070_uniform_materialization/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+      "layers": 32,
+      "max_positions": 4096,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/LLAMA2_UNIFORM_EB059_STRICT_MATCH_V1/attempt5/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": null,
+      "layers": 32,
+      "max_positions": 4096,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/materialize/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+      "layers": 32,
+      "max_positions": 4096,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+      "indices": [
+        "model.safetensors.index.json",
+        "pytorch_model.bin.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM"
+      ],
+      "name_or_path": "meta-llama/Llama-2-7b-hf",
+      "layers": 32,
+      "max_positions": 4096,
+      "shard_count": 2,
+      "weight_bytes": 13476876272,
+      "shards": [
+        {
+          "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf/model-00001-of-00002.safetensors",
+          "bytes": 9976578928
+        },
+        {
+          "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf/model-00002-of-00002.safetensors",
+          "bytes": 3500297344
+        }
+      ],
+      "classification": "PRESERVE_ORIGINAL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_official_eb0058_20260909/phase_b_model/final_model",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "name_or_path": "/diskD/jiaqizhang/Llama-3",
+      "layers": 32,
+      "max_positions": 8192,
+      "shard_count": 0,
+      "weight_bytes": 0,
+      "shards": [],
+      "classification": "COMPRESSED_EIGEN_MODEL"
+    },
+    {
+      "directory": "/diskF/jiaqizhang/Llama-3.1",
+      "indices": [
+        "model.safetensors.index.json"
+      ],
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM"
+      ],
+      "name_or_path": null,
+      "layers": 32,
+      "max_positions": 131072,
+      "shard_count": 4,
+      "weight_bytes": 16060556376,
+      "shards": [
+        {
+          "path": "/diskF/jiaqizhang/Llama-3.1/model-00001-of-00004.safetensors",
+          "bytes": 4976698672
+        },
+        {
+          "path": "/diskF/jiaqizhang/Llama-3.1/model-00002-of-00004.safetensors",
+          "bytes": 4999802720
+        },
+        {
+          "path": "/diskF/jiaqizhang/Llama-3.1/model-00003-of-00004.safetensors",
+          "bytes": 4915916176
+        },
+        {
+          "path": "/diskF/jiaqizhang/Llama-3.1/model-00004-of-00004.safetensors",
+          "bytes": 1168138808
+        }
+      ],
+      "classification": "PRESERVE_ORIGINAL"
+    }
+  ]
+}

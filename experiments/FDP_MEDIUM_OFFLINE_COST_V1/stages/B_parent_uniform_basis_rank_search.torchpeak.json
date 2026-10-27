@@ -1,0 +1,7 @@
+{
+ "script": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+ "t_start": 1791656222.7960517,
+ "t_end": 1791658864.6175315,
+ "torch_peak_allocated_bytes": 41890359296,
+ "torch_peak_reserved_bytes": 43893391360
+}

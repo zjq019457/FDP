@@ -1,0 +1,10 @@
+{
+  "artifact": "LLAMA2_EB059_IMPORT_OVERLAY_TEST_ATTEMPT2",
+  "classification": "ENGINEERING_IMPORT_COMPATIBILITY_FAILURE_NO_GPU_NO_QUALITY",
+  "failure": "Overlay imported legacy OPT module, which imports _prepare_4d_causal_attention_mask from transformers.models.opt.modeling_opt; helper has moved in installed Transformers. Llama-2 eager path does not require OPT or MPT classes.",
+  "source_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/models/LMClass.py",
+  "source_sha256": "f05aa3d19e831fa1c3e03066601b7599a5c9350830595dd62daae3ae1eff61da",
+  "overlay_change": "Only remove top-level eager OPT/MPT imports from copied LMClass.py; corresponding classes remain lazily unused in this Llama-2 invocation.",
+  "source_repo_modified": false,
+  "time_utc": "2026-10-01T08:29:28.506550+00:00"
+}

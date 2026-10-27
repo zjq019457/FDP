@@ -1,0 +1,212 @@
+{
+  "categories": {
+    "code_completion": [
+      "lcc",
+      "repobench-p"
+    ],
+    "few_shot_learning": [
+      "trec",
+      "triviaqa",
+      "samsum",
+      "lsht"
+    ],
+    "multi_document_qa": [
+      "hotpotqa",
+      "2wikimqa",
+      "musique"
+    ],
+    "single_document_qa": [
+      "qasper",
+      "multifieldqa_en"
+    ],
+    "summarization": [
+      "gov_report",
+      "qmsum",
+      "multi_news",
+      "vcsum"
+    ],
+    "synthetic_tasks": [
+      "passage_count",
+      "passage_retrieval_en"
+    ]
+  },
+  "macro": "compute each official task score independently, then arithmetic mean over 17 task scores",
+  "name": "LongBench official 17-task full",
+  "pooled_sample_average_forbidden": true,
+  "task_count": 17,
+  "task_order": [
+    "passage_retrieval_en",
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique",
+    "gov_report",
+    "qmsum",
+    "multi_news",
+    "vcsum",
+    "passage_count",
+    "trec",
+    "triviaqa",
+    "samsum",
+    "lsht",
+    "lcc",
+    "repobench-p"
+  ],
+  "tasks": [
+    {
+      "category": "synthetic_tasks",
+      "dataset_file_sha256": "0f34d2955bfc9bd21ccaa3f4c5aa4e41263aaf83d3fb6002ff7118c134f1eabd",
+      "max_new_tokens": 32,
+      "order": 1,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "56a723695100c38ccbbb9ef826d7486014ba5dbe823700321ea801bae2c3d9b5",
+      "task": "passage_retrieval_en"
+    },
+    {
+      "category": "single_document_qa",
+      "dataset_file_sha256": "29aa07d2a63f36f4fb8e8cd200a3428ee3126d750bde6af1c8f9bc41c2366854",
+      "max_new_tokens": 128,
+      "order": 2,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "163bafcf5c62e1e8d3afa287b04ee7f1fdcf9ed10a03e488b2f18657b04bad73",
+      "task": "qasper"
+    },
+    {
+      "category": "single_document_qa",
+      "dataset_file_sha256": "0aac182fd317dcf6d74f8e1e0f3e61029407435346c2e0b3ff9fb45ae49c5c3f",
+      "max_new_tokens": 64,
+      "order": 3,
+      "sample_count": 150,
+      "sample_id_sequence_sha256": "128755ec670744573699775cfeef04697178b4552519eaec8452287b3bf0b9e3",
+      "task": "multifieldqa_en"
+    },
+    {
+      "category": "multi_document_qa",
+      "dataset_file_sha256": "a0005ab2a1bc2ac3a70352dccbf96cccc4e0aac6bb677f6a55180fa51b92ef6f",
+      "max_new_tokens": 32,
+      "order": 4,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "c044fcf4478008e564bdf6e4035b186d83bfe5ceb28cae447a7e855f3659e819",
+      "task": "hotpotqa"
+    },
+    {
+      "category": "multi_document_qa",
+      "dataset_file_sha256": "dda279cf93a99e1e5bfa3291fb199fd55978d10a1feb31822953cf77a1742e37",
+      "max_new_tokens": 32,
+      "order": 5,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "592084092de64d062db4a6bb9e0bfae7dcb0846cd37415e835fc8a7caa27284d",
+      "task": "2wikimqa"
+    },
+    {
+      "category": "multi_document_qa",
+      "dataset_file_sha256": "4ac69b91281c4ec6b21316cb7282e83fb6b4dda04fc68480bb8d8ed1e19ff7bd",
+      "max_new_tokens": 32,
+      "order": 6,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "300aa97a110828bd2d092235aadab7b44ee773bbe0e497beeb76ef18666f0898",
+      "task": "musique"
+    },
+    {
+      "category": "summarization",
+      "dataset_file_sha256": "d28112beb3a9b41d80aa390837fa1a31c9e3da84a5262009c97585cc49f597c4",
+      "max_new_tokens": 512,
+      "order": 7,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "7d2e38edb63cffbf2c51705443ee50190fcb1ae6b6ec03ba6e5f19162fd10b12",
+      "task": "gov_report"
+    },
+    {
+      "category": "summarization",
+      "dataset_file_sha256": "e992f5157679b0c1ca281d0da19d1a8b3496117630ae639c9683ed3dab029113",
+      "max_new_tokens": 512,
+      "order": 8,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "aa1caf6f5a208c33c6a71473897e06b64977956e982d6d41d7a0a151f48b808f",
+      "task": "qmsum"
+    },
+    {
+      "category": "summarization",
+      "dataset_file_sha256": "f8817c00af317c2d7f81128f334bcfe5780c6c2a515d5c96811aa0ddf8b5ee6b",
+      "max_new_tokens": 512,
+      "order": 9,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "0adb8793ccc4439cfee6c5c4065da68c084c433801d156cdf4f6870ec09ec337",
+      "task": "multi_news"
+    },
+    {
+      "category": "summarization",
+      "dataset_file_sha256": "d7412361c418794607c801067c7542254ed5220e1f3ec174dfddc6710ded0e50",
+      "max_new_tokens": 512,
+      "order": 10,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "9f9de9f4decb0cb1c8c38ee5bb3eaa98b7a56f324b1abc41827af7facdb24370",
+      "task": "vcsum"
+    },
+    {
+      "category": "synthetic_tasks",
+      "dataset_file_sha256": "0455a8f1e8e99d63a86bdc6bdb8b943b22509e3102bbef65ce6794045e03bbcd",
+      "max_new_tokens": 32,
+      "order": 11,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "35846ab3d9a55cb469d0665b0e399b89093f03b5c57fbae59c303ef7a71c09cd",
+      "task": "passage_count"
+    },
+    {
+      "category": "few_shot_learning",
+      "dataset_file_sha256": "20a88e14f7442f58a39082cdd7396f1093ea8162da0a4ea7ead7d6757514c8f4",
+      "max_new_tokens": 64,
+      "order": 12,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "51ce916cc5a0767ea34caa3d706b427f3b4fe5b4ac5349ff9ad7b86333a466bc",
+      "task": "trec"
+    },
+    {
+      "category": "few_shot_learning",
+      "dataset_file_sha256": "ed2529de2e10b12c00f49981870c23c7c51667069cdd8d0740e1423ff337d7fa",
+      "max_new_tokens": 32,
+      "order": 13,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "03ed24c63d8a453489b0e7c9fb2f75394df65e57238fb285e8164bc75ad86ba9",
+      "task": "triviaqa"
+    },
+    {
+      "category": "few_shot_learning",
+      "dataset_file_sha256": "d435a4c7a05d2006872da8dd0c44c0a48648baa1ce4f62a4084d07aa7883f0cc",
+      "max_new_tokens": 128,
+      "order": 14,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "8f62b01939516f9af25dd752328ece806933cebe3fda42156f54ab5d5ae74573",
+      "task": "samsum"
+    },
+    {
+      "category": "few_shot_learning",
+      "dataset_file_sha256": "b57834ed102ce3a6dbc501f4005016b1fe883371ba48b381c1d1f698291a4bdd",
+      "max_new_tokens": 64,
+      "order": 15,
+      "sample_count": 200,
+      "sample_id_sequence_sha256": "9245d1ec766e113ecd6c7a7b796b0aaa2e056eb2bea2aa2a171abda6b6634a3a",
+      "task": "lsht"
+    },
+    {
+      "category": "code_completion",
+      "dataset_file_sha256": "a35809a88d899f61c116690b12f9e96d443238852cedc1a9fe48d85bff6f7aa1",
+      "max_new_tokens": 64,
+      "order": 16,
+      "sample_count": 500,
+      "sample_id_sequence_sha256": "ae136a070f024d62685a07347776fb329f4334353897cce097f8122a07fca337",
+      "task": "lcc"
+    },
+    {
+      "category": "code_completion",
+      "dataset_file_sha256": "919a4439e2a84ebb25bacc39ac3b3269a7641af6e02ae205ed78d8c53dfe3568",
+      "max_new_tokens": 64,
+      "order": 17,
+      "sample_count": 500,
+      "sample_id_sequence_sha256": "896e1da1f4df26947e563b891af5c31f6eff98cbd5cfc13060ce3bcf75a2c3c0",
+      "task": "repobench-p"
+    }
+  ],
+  "total_samples": 3950
+}

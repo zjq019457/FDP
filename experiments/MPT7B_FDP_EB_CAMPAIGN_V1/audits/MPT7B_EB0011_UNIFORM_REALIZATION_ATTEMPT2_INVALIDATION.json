@@ -1,0 +1,18 @@
+{
+  "schema": "MPT7B_UNIFORM_REALIZATION_ATTEMPT_INVALIDATION_V1",
+  "tier": "EB0011_UNIFORM",
+  "attempt": 2,
+  "classification": "ENGINEERING_PARITY_HARNESS_INFERENCE_CONTEXT_BUG",
+  "finished_at_remote": "2026-10-05T23:42:25-07:00",
+  "error_type": "RuntimeError",
+  "error": "The parity harness passed an inference tensor captured from the model forward into LayerNorm outside inference_mode; failure occurred before the parity comparison was recorded.",
+  "failure_stage": "compressed_model_realized_and_full_sequence_forward_completed; error in short-input direct-parity harness",
+  "worker_exit_code": 1,
+  "worker_log_path": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/realization/EB0011_UNIFORM_ATTEMPT2/worker.log",
+  "worker_log_sha256": "3677a92d15aee1f1c29d2e2bd86226126c6e248ad698fedaae5b9686313f59c0",
+  "buggy_audit_script_sha256": "9a8cbaa262496f7461bb03aacb5fb245597672c6a761a47c80c1590bebdfe814",
+  "formal_quality_result": false,
+  "scientific_protocol_modified": false,
+  "recovery": "Wrap the direct factorized parity computations in inference_mode and preserve a cache-census progress artifact before the parity stage.",
+  "replacement_audit_script_sha256": "102cea5f03940718e59580d711c08c3a02ebc60fae33f00e96a8dc506a04e3ec"
+}

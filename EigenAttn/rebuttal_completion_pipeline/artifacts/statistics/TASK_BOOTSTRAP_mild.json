@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-07-29T20:05:31.985683-07:00",
+  "rows": [
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 10042,
+      "mean_delta_acc": 0.0013793965345548548,
+      "ci95_low": -0.0011949810794662508,
+      "ci95_high": 0.0039832702648875395,
+      "significant_at_05": false,
+      "align": "task+sample_id(+document_hash)",
+      "task": "hellaswag_localjsonl",
+      "point": "mild"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 1172,
+      "mean_delta_acc": 0.017054095563139894,
+      "ci95_low": 0.0025597269624573205,
+      "ci95_high": 0.03156996587030719,
+      "significant_at_05": true,
+      "align": "task+sample_id(+document_hash)",
+      "task": "arc_challenge_localjsonl",
+      "point": "mild"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 2376,
+      "mean_delta_acc": 0.0016200757575758004,
+      "ci95_low": -0.007996632996633002,
+      "ci95_high": 0.010942760942761032,
+      "significant_at_05": false,
+      "align": "task+sample_id(+document_hash)",
+      "task": "arc_easy_localjsonl",
+      "point": "mild"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 1267,
+      "mean_delta_acc": 0.0008360694554064367,
+      "ci95_low": -0.015785319652723007,
+      "ci95_high": 0.017363851617995252,
+      "significant_at_05": false,
+      "align": "task+sample_id(+document_hash)",
+      "task": "winogrande_localjsonl",
+      "point": "mild"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 1838,
+      "mean_delta_acc": 0.0010700217627856382,
+      "ci95_low": -0.006528835690968404,
+      "ci95_high": 0.008705114254624613,
+      "significant_at_05": false,
+      "align": "task+sample_id(+document_hash)",
+      "task": "piqa_localjsonl",
+      "point": "mild"
+    }
+  ],
+  "macro": {
+    "point": "mild",
+    "n_bootstrap": 10000,
+    "n_samples": 16695,
+    "mean_delta_acc": 0.0024538244983527344,
+    "ci95_low": -0.0003593890386343057,
+    "ci95_high": 0.0052710392333032985,
+    "significant_at_05": false,
+    "align": "task+sample_id(+document_hash)",
+    "status": "ok"
+  }
+}

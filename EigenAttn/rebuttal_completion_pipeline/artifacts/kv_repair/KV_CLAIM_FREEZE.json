@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-07-29T19:47:09.882094-07:00",
+  "matched_budget_claims_allowed": false,
+  "reason": "Until MC evals finish and triple-check documented per method; OP manifests recomputed.",
+  "op_reports": {
+    "mild": {
+      "uniform_bytes": 217219072,
+      "fdp_bytes": 218988544,
+      "runtime_match": null
+    },
+    "moderate": {
+      "uniform_bytes": 196083712,
+      "fdp_bytes": 198377472,
+      "runtime_match": true
+    },
+    "aggressive": {
+      "uniform_bytes": 157908992,
+      "fdp_bytes": 158105600,
+      "runtime_match": null
+    }
+  }
+}

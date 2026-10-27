@@ -1,0 +1,218 @@
+{
+  "schema": "LLAMA3_FULL_RESOURCE_ROBUSTNESS_SCHEDULE_LOCK_V1",
+  "arm_name": "FULL_RESOURCE_AGGRESSIVE_LOW",
+  "paper_label": "Full profile, resource-controlled",
+  "status": "SCHEDULE_REPLAY_PASS_MATERIALIZATION_PENDING",
+  "model": {
+    "repo_id": "meta-llama/Meta-Llama-3-8B",
+    "local_path": "/diskD/jiaqizhang/Llama-3",
+    "content_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+    "tokenizer_file_hashes": {
+      "tokenizer.json": {
+        "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
+        "bytes": 9085698
+      },
+      "tokenizer_config.json": {
+        "sha256": "690727b4fed286383df1c7ca5e805124cb70c6eb4529f807c7b2e60ff741da7e",
+        "bytes": 50566
+      },
+      "special_tokens_map.json": {
+        "sha256": "462d91939dbc37178aa5a3eae7068d1990ccc92e09f288cc71f42cdf139d69cc",
+        "bytes": 73
+      }
+    },
+    "max_position_embeddings": 8192
+  },
+  "method": {
+    "q": "MinMax(d1+d2+d5)",
+    "components": {
+      "d1": "Z_rel_mse",
+      "d2": "score_rel_mse_causal",
+      "d5": "max(0,-entropy_diff_A)"
+    },
+    "allocator": "TRUE_TWO_PASS_FDP_EB",
+    "lambda": 1.2,
+    "rho": 0.75,
+    "only_changed_parameter": "global base error tolerance / operating scalar",
+    "layer0_frozen": true
+  },
+  "tier": "AGGRESSIVE",
+  "original_full_preserved": true,
+  "original_full": {
+    "B_live_bytes": 159416320,
+    "J": 2.596042
+  },
+  "resource_target_B_live_bytes": 157990912,
+  "actual_schedule_B_live_bytes": 157908992,
+  "resource_gap_bytes": -81920,
+  "resource_gap_pct_vs_target": -0.05185108368764907,
+  "acceptance": {
+    "max_absolute_gap_pct": 0.15,
+    "status": "PASS",
+    "quality_blind": true
+  },
+  "rank_vector_kq_v": [
+    [
+      808,
+      992
+    ],
+    [
+      384,
+      872
+    ],
+    [
+      80,
+      584
+    ],
+    [
+      632,
+      904
+    ],
+    [
+      520,
+      872
+    ],
+    [
+      608,
+      880
+    ],
+    [
+      552,
+      880
+    ],
+    [
+      488,
+      832
+    ],
+    [
+      432,
+      816
+    ],
+    [
+      496,
+      840
+    ],
+    [
+      448,
+      808
+    ],
+    [
+      464,
+      808
+    ],
+    [
+      624,
+      904
+    ],
+    [
+      552,
+      880
+    ],
+    [
+      552,
+      872
+    ],
+    [
+      384,
+      800
+    ],
+    [
+      360,
+      800
+    ],
+    [
+      344,
+      776
+    ],
+    [
+      216,
+      688
+    ],
+    [
+      240,
+      720
+    ],
+    [
+      104,
+      624
+    ],
+    [
+      160,
+      680
+    ],
+    [
+      240,
+      720
+    ],
+    [
+      136,
+      680
+    ],
+    [
+      152,
+      704
+    ],
+    [
+      400,
+      824
+    ],
+    [
+      224,
+      744
+    ],
+    [
+      232,
+      728
+    ],
+    [
+      184,
+      704
+    ],
+    [
+      1016,
+      1024
+    ],
+    [
+      488,
+      864
+    ],
+    [
+      392,
+      816
+    ]
+  ],
+  "rank_sha256": "48df5bfebfb9c733938e6f1c6f10d88b49169991baabb68ac4c03e5db505f4f9",
+  "allocation_sha256": "6b3631b488a42a99db768490d9f23256e2cf5709efee4c8246d1538dcdb3a769",
+  "allocation_sha_definition": "SHA256 of exact selected resource schedule candidate JSON bytes",
+  "selected_scalar": 0.09061509296350961,
+  "scalar_plateau": [
+    0.09058570265600127,
+    0.09064448327101794
+  ],
+  "sources": {
+    "protocol_lock_sha256": "85c840f6c5053d3a8734b1c1e173d3d6b649271a9e7b72eaf640bcd8b1e60d99",
+    "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+    "profile_sha256": "864cf9832892f8bcdcb2521604b7827bc87b9cdf0b29284fd3283e3900d180b9",
+    "q_sha256": "2d1480ecceecdd995a0dae34db236078ce503d67fcdff3072fc03d43f23434f5",
+    "candidate_sha256": "6b3631b488a42a99db768490d9f23256e2cf5709efee4c8246d1538dcdb3a769",
+    "plateau_scan_sha256": "f7caeff58b180cb610355798ea95ca710a46fe6e4ce9b438374d3835e575400f",
+    "epsilon_input_sha256": "09402e3e04a2833bc399dfbcc5a81ebc03dceeea0fce573cf9b51418911ca2a3",
+    "final_builder_report_sha256": "01eb22dc8442548835b64ebd8d7a42d3b8097ff393f99f2d88a774267d2930ba",
+    "final_basis_sha256": "fc6e9817e73aa8f038ec3f0209d3fa28d6a27bfa57192e7b17deeca155615bee",
+    "official_builder_sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+    "official_operator_sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7",
+    "evaluation_lock_sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+  },
+  "final_builder": {
+    "exit_code": 0,
+    "layer_count": 32,
+    "exact_rank_vector_replay": true,
+    "report_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/llama3_aggressive_full_resource_low_perlayer_eb_report.json",
+    "basis_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/llama3_aggressive_full_resource_low_perlayer_eb.pt",
+    "basis_bytes": 106710771
+  },
+  "actual_materialized_low_rank_tensor_audit": "PENDING",
+  "realization_sha256": "PENDING",
+  "quality_authorized": false,
+  "schedule_lock_payload_sha256": "86176af332a1ca4028169367a1148449a0d5771fcc984d3494b719d55b63536e"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "FAILED_RESOURCE_MATCH",
+  "tier": "light",
+  "gpu": 0,
+  "path": "official_eigenattention_uniform",
+  "at": "2026-09-16T12:58:59.796675-07:00",
+  "B_live": 217219072,
+  "updated_at": "2026-09-16T14:09:03.756835-07:00"
+}

@@ -1,0 +1,29 @@
+{
+  "formula_name": "F_PARENT_CONSERVATIVE",
+  "status": "BEST_DEV_FDP_FORMULA_LOCKED",
+  "weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "lambda": 1.2,
+  "rho": 0.75,
+  "eta": 0.0,
+  "j_strong": 3.339635,
+  "j_dev": {
+    "light": 2.135747,
+    "medium": 2.27008,
+    "aggressive": 2.619581,
+    "ultra": 5.129243
+  },
+  "natural_compliance": {
+    "light_gap_pct": 0.0,
+    "medium_gap_pct": 0.0,
+    "aggressive_gap_pct": 0.477,
+    "ultra_gap_pct": 0.0,
+    "all_within_1pct": true
+  },
+  "tie_breaker_resolution": "Candidate B rejected due to natural-state resource violations (1.803% on Aggressive, 1.451% on Ultra) and Light guard failure (+0.0061 NLL). Candidate A confirmed as simpler canonical winner."
+}

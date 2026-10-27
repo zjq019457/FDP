@@ -1,0 +1,24 @@
+{
+  "audit_type": "ENGINEERING_BUG_REPAIR",
+  "component": "run_official_phi_chain.sh",
+  "failure_behavior": "The chain waited indefinitely for official_native_marginal/ratio_0p5/status.json, although that status file is produced only after the same chain runs profile_official_native_phi.py.",
+  "root_cause": "SELF_DEPENDENT_DOWNSTREAM_STATUS_WAIT",
+  "repair": "Wait for the already-frozen official Fisher baseline artifact results/fisher_0p5_ratio_0.5_fisher_uniform.json and results/fisher_0p3_ratio_0.3_fisher_uniform.json before profiling; skip a ratio only when its marginal status already exists.",
+  "affected_cells": ["official_native_phi_ratio_0.5", "official_native_phi_ratio_0.3"],
+  "old_results_remain_valid": true,
+  "frozen_inputs_modified": false,
+  "q_modified": false,
+  "phi_definition_modified": false,
+  "allocation_modified": false,
+  "formal_manifest_modified": false,
+  "protocol_modified": false,
+  "old_script_backup": "run_official_phi_chain.sh.buggy_wait_dependency",
+  "repaired_script": "run_official_phi_chain.sh",
+  "foreign_jobs_interrupted": 0,
+  "gpu1_used": false,
+  "timestamp_note": "2026-09-21 live recovery"
+  ,"second_failure_behavior": "The first automatic ratio-0.3 retry failed with a CUDA device mismatch because the recovery chain did not set CUDA_VISIBLE_DEVICES=2.",
+  "second_repair": "Bind every recovered phi profiler to GPU2 with CUDA_VISIBLE_DEVICES=2 and wait for at least 40960 MiB free before launch.",
+  "second_affected_cell": "official_native_phi_ratio_0.3",
+  "second_old_results_remain_valid": true
+}

@@ -1,0 +1,205 @@
+{
+  "campaign": "FDP-125 FINAL FORMULA CLEAN RETEST V1",
+  "frozen_formula": {
+    "components": [
+      "d1",
+      "d2",
+      "d5"
+    ],
+    "weights": [
+      1,
+      1,
+      1
+    ],
+    "lambda": 1.2,
+    "rho": 0.75,
+    "eta": 0
+  },
+  "created_at": "2026-09-12T23:37:24-0700",
+  "write_policy": "compact authority/results on diskF; heavy scratch on diskE; no new diskD writes",
+  "models": {
+    "llama": {
+      "local_path": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_inventory": [
+        {
+          "name": "LICENSE",
+          "size": 7801,
+          "mtime": 1777588792
+        },
+        {
+          "name": "USE_POLICY.md",
+          "size": 4696,
+          "mtime": 1777589396
+        },
+        {
+          "name": "config.json",
+          "size": 654,
+          "mtime": 1777588791
+        },
+        {
+          "name": "generation_config.json",
+          "size": 177,
+          "mtime": 1777588791
+        },
+        {
+          "name": "gitattributes",
+          "size": 1519,
+          "mtime": 1777588791
+        },
+        {
+          "name": "lm_eval_bench5_base.json",
+          "size": 13348,
+          "mtime": 1777675477
+        },
+        {
+          "name": "lm_eval_bench5_base_winogrande_fixed.json",
+          "size": 13687,
+          "mtime": 1777679522
+        },
+        {
+          "name": "model-00001-of-00004.safetensors",
+          "size": 4976698672,
+          "mtime": 1777588984
+        },
+        {
+          "name": "model-00002-of-00004.safetensors",
+          "size": 4999802720,
+          "mtime": 1777589187
+        },
+        {
+          "name": "model-00003-of-00004.safetensors",
+          "size": 4915916176,
+          "mtime": 1777589359
+        },
+        {
+          "name": "model-00004-of-00004.safetensors",
+          "size": 1168138808,
+          "mtime": 1777589396
+        },
+        {
+          "name": "model.safetensors.index.json",
+          "size": 23950,
+          "mtime": 1777589396
+        },
+        {
+          "name": "special_tokens_map.json",
+          "size": 73,
+          "mtime": 1777590844
+        },
+        {
+          "name": "tokenizer.json",
+          "size": 9085698,
+          "mtime": 1777590844
+        },
+        {
+          "name": "tokenizer_config.json",
+          "size": 50566,
+          "mtime": 1777590844
+        }
+      ],
+      "authority_hashes": {
+        "config.json": "2430cee764b6530ff8673cf9ba8561e1d5a33152d503cd0de909ff5718261441",
+        "generation_config.json": "93caf96e269e32b9ee33ad78b0d76d910408d11a63a8b2c49241030836759311",
+        "tokenizer.json": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
+        "tokenizer_config.json": "690727b4fed286383df1c7ca5e805124cb70c6eb4529f807c7b2e60ff741da7e",
+        "special_tokens_map.json": "462d91939dbc37178aa5a3eae7068d1990ccc92e09f288cc71f42cdf139d69cc",
+        "model.safetensors.index.json": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b"
+      },
+      "status": "FROZEN_FOR_DENSE",
+      "model_note": "validated historical Llama-3 authority"
+    },
+    "qwen": {
+      "local_path": "/diskE/jiaqizhang/Qwen2.5-7B",
+      "checkpoint_inventory": [
+        {
+          "name": "LICENSE",
+          "size": 11343,
+          "mtime": 1785336639
+        },
+        {
+          "name": "config.json",
+          "size": 686,
+          "mtime": 1785336638
+        },
+        {
+          "name": "configuration.json",
+          "size": 2,
+          "mtime": 1785336639
+        },
+        {
+          "name": "generation_config.json",
+          "size": 138,
+          "mtime": 1785336639
+        },
+        {
+          "name": "merges.txt",
+          "size": 1671839,
+          "mtime": 1785336640
+        },
+        {
+          "name": "model-00001-of-00004.safetensors",
+          "size": 3945441440,
+          "mtime": 1785337785
+        },
+        {
+          "name": "model-00002-of-00004.safetensors",
+          "size": 3864726352,
+          "mtime": 1785337187
+        },
+        {
+          "name": "model-00003-of-00004.safetensors",
+          "size": 3864726424,
+          "mtime": 1785337265
+        },
+        {
+          "name": "model-00004-of-00004.safetensors",
+          "size": 3556377672,
+          "mtime": 1785337938
+        },
+        {
+          "name": "model.safetensors.index.json",
+          "size": 27752,
+          "mtime": 1785337191
+        },
+        {
+          "name": "tokenizer.json",
+          "size": 7031645,
+          "mtime": 1785337193
+        },
+        {
+          "name": "tokenizer_config.json",
+          "size": 7228,
+          "mtime": 1785337194
+        },
+        {
+          "name": "vocab.json",
+          "size": 2776833,
+          "mtime": 1785337195
+        }
+      ],
+      "authority_hashes": {
+        "config.json": "267ce68584c5f24c3b267d934db2de68dd21d1ca677fb78ed809eb60067f7642",
+        "generation_config.json": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8",
+        "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "tokenizer_config.json": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9",
+        "model.safetensors.index.json": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028"
+      },
+      "status": "FROZEN_FOR_DENSE",
+      "model_note": "Qwen2.5-7B Base, not Instruct"
+    }
+  },
+  "shared": {
+    "dtype": "bf16",
+    "attention_backend": "eager",
+    "seed": 2,
+    "sequence_length": 2048,
+    "evaluator": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/ppl_instrumented.py",
+    "evaluator_sha256": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+    "evaluation_lock": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/LEGACY_EVALUATION_PROTOCOL_LOCK.json",
+    "evaluation_lock_sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+    "eigenattention_operator": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+    "operator_sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7",
+    "llama_basis_builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+    "llama_basis_builder_sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336"
+  }
+}

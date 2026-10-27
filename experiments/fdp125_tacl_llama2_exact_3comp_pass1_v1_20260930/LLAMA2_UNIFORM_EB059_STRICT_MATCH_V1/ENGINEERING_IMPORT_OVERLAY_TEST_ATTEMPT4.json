@@ -1,0 +1,10 @@
+{
+  "artifact": "LLAMA2_EB059_IMPORT_OVERLAY_TEST_ATTEMPT4",
+  "classification": "ENGINEERING_TRANSFORMERS_API_COMPATIBILITY_FAILURE_NO_QUALITY",
+  "failure": "In Transformers 4.53.0, LlamaRotaryEmbedding is not imported by star import and its constructor now accepts config, not (dim,max_position_embeddings,base). Llama-2 has rope_scaling=null, rope_theta=10000, max_position_embeddings=4096.",
+  "source_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/models/modelling_llama_eigen_attn.py",
+  "source_sha256": "85c0ef1b6b802a6c1986d222f70cfd7157e29ee41b399b828ec568ab9cd67cb2",
+  "overlay_change": "Explicitly import the same HF LlamaRotaryEmbedding class and instantiate it with the same Llama-2 config; no non-default RoPE scaling path changed.",
+  "source_repo_modified": false,
+  "time_utc": "2026-10-01T08:33:07.110191+00:00"
+}

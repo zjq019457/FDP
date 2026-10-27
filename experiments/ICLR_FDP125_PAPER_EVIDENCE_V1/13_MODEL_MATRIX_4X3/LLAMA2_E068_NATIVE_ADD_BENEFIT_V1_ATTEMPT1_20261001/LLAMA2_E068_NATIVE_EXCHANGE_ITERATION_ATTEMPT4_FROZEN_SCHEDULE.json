@@ -1,0 +1,737 @@
+{
+  "artifact_id": "LLAMA2_E068_NATIVE_EXCHANGE_ITERATION_ATTEMPT4_FROZEN_SCHEDULE_V1",
+  "status": "FROZEN_AFTER_TUNING",
+  "created_utc": "2026-10-02T04:52:09.602526+00:00",
+  "iteration_lock_sha256": "dd92fd48f07f91d594f39587a51f8b8c31117a956dc4a602401dced59cfb8697",
+  "baseline": {
+    "B_live_bytes": 746323968,
+    "rank_schedule_sha256": "590129c5a0401474266d7652601461b52f7be452ced772dd489b25f3a744913c",
+    "tuning_nll": {
+      "full": 2.4158046915824687,
+      "A": 2.3746488417784386,
+      "B": 2.4583324030466334
+    }
+  },
+  "final": {
+    "B_live_bytes": 746323968,
+    "rank_schedule": [
+      [
+        4096,
+        4096
+      ],
+      [
+        4096,
+        4096
+      ],
+      [
+        1024,
+        3392
+      ],
+      [
+        736,
+        2624
+      ],
+      [
+        768,
+        2752
+      ],
+      [
+        1152,
+        3392
+      ],
+      [
+        1376,
+        3392
+      ],
+      [
+        1728,
+        3520
+      ],
+      [
+        2016,
+        3584
+      ],
+      [
+        2112,
+        3648
+      ],
+      [
+        2848,
+        3840
+      ],
+      [
+        2048,
+        3584
+      ],
+      [
+        2464,
+        3712
+      ],
+      [
+        2080,
+        3648
+      ],
+      [
+        2400,
+        3744
+      ],
+      [
+        2816,
+        3840
+      ],
+      [
+        2400,
+        3712
+      ],
+      [
+        2880,
+        3840
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        1952,
+        3648
+      ],
+      [
+        2016,
+        3648
+      ],
+      [
+        1952,
+        3648
+      ],
+      [
+        2048,
+        3648
+      ],
+      [
+        2080,
+        3648
+      ],
+      [
+        1600,
+        3552
+      ],
+      [
+        1728,
+        3552
+      ],
+      [
+        1664,
+        3584
+      ],
+      [
+        1792,
+        3552
+      ],
+      [
+        1760,
+        3552
+      ],
+      [
+        1696,
+        3584
+      ],
+      [
+        4064,
+        4096
+      ],
+      [
+        1152,
+        3360
+      ]
+    ],
+    "rank_pairs_sha256": "f7584c015fa6cf4265b3702415361f37b4ce9e3d12f6da8a9e144f991d9ee569",
+    "tuning_nll": {
+      "full": 2.3311387407998985,
+      "A": 2.2954609853762933,
+      "B": 2.368005754737624
+    }
+  },
+  "tuning_nll_improvement_full": 0.08466595078257022,
+  "accepted_exchange_count": 9,
+  "attempted_exchange_count": 10,
+  "stop_reason": "JOINT_EXCHANGE_FAILED_FULL_OR_SPLIT_ACCEPTANCE",
+  "accepted_exchanges": [
+    {
+      "iteration": 1,
+      "candidate": {
+        "donor_unit": "L03_V",
+        "receiver_unit": "L04_QK",
+        "donor_q_diagnostic_only": 0.4783130449418372,
+        "receiver_q_diagnostic_only": 0.5901629167318028,
+        "predicted_exchange_gain": 0.03953064556782167,
+        "predicted_gain_half_a": 0.037668133739308995,
+        "predicted_gain_half_b": 0.041455241123951936,
+        "predicted_delta_loss": -0.03953064556782167,
+        "donor_remove_delta_loss": -0.0007723354367797337,
+        "receiver_add_delta_loss": -0.03875831013104193,
+        "donor_rank_before": 2656,
+        "donor_rank_after": 2624,
+        "receiver_rank_before": 736,
+        "receiver_rank_after": 768,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.039262260396624615,
+        "A": -0.037297161719131555,
+        "B": -0.041292862363367266
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "6f15b12873db53f80ee63af9bb69247be32dcb958b522c7e68f9144d43d4814c",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:30:03.504980+00:00"
+    },
+    {
+      "iteration": 2,
+      "candidate": {
+        "donor_unit": "L04_V",
+        "receiver_unit": "L03_QK",
+        "donor_q_diagnostic_only": 0.5901629167318028,
+        "receiver_q_diagnostic_only": 0.4783130449418372,
+        "predicted_exchange_gain": 0.028234415441467223,
+        "predicted_gain_half_a": 0.027136888171443996,
+        "predicted_gain_half_b": 0.02936852695382486,
+        "predicted_delta_loss": -0.028234415441467223,
+        "donor_remove_delta_loss": -0.0006580126254334612,
+        "receiver_add_delta_loss": -0.02757640281603376,
+        "donor_rank_before": 2784,
+        "donor_rank_after": 2752,
+        "receiver_rank_before": 704,
+        "receiver_rank_after": 736,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.021476359635714815,
+        "A": -0.020578270752610983,
+        "B": -0.022404384814922018
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "68652950bcbdaf4814b31702053cfa4e92da69ae3e32ebe36505440f33d079d5",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:32:59.847982+00:00"
+    },
+    {
+      "iteration": 3,
+      "candidate": {
+        "donor_unit": "L11_V",
+        "receiver_unit": "L02_QK",
+        "donor_q_diagnostic_only": 0.9119726975053843,
+        "receiver_q_diagnostic_only": 0.3936758181674508,
+        "predicted_exchange_gain": 0.019635873037662073,
+        "predicted_gain_half_a": 0.017393872062233307,
+        "predicted_gain_half_b": 0.021952607378938893,
+        "predicted_delta_loss": -0.019635873037662073,
+        "donor_remove_delta_loss": -0.0004526183046261222,
+        "receiver_add_delta_loss": -0.01918325473303595,
+        "donor_rank_before": 3616,
+        "donor_rank_after": 3584,
+        "receiver_rank_before": 992,
+        "receiver_rank_after": 1024,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.011157682320864115,
+        "A": -0.009073369349766658,
+        "B": -0.013311472390999057
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "1ea1108ad1ba133f2049870116d7dc08c1d9ae4afd55aca8c59d800ddfec3b3c",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:35:55.950006+00:00"
+    },
+    {
+      "iteration": 4,
+      "candidate": {
+        "donor_unit": "L14_QK",
+        "receiver_unit": "L05_QK",
+        "donor_q_diagnostic_only": 0.8279824347141875,
+        "receiver_q_diagnostic_only": 0.7920993609862083,
+        "predicted_exchange_gain": 0.004160717041995183,
+        "predicted_gain_half_a": 0.004092201538172802,
+        "predicted_gain_half_b": 0.004231516395945434,
+        "predicted_delta_loss": -0.004160717041995183,
+        "donor_remove_delta_loss": -0.00014114920619288923,
+        "receiver_add_delta_loss": -0.004019567835802294,
+        "donor_rank_before": 2432,
+        "donor_rank_after": 2400,
+        "receiver_rank_before": 1120,
+        "receiver_rank_after": 1152,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.0027493442475923224,
+        "A": -0.002146902026790798,
+        "B": -0.003371867875753054
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "d7780e1e0f5043e8ea4043d83af8a294a5f51134dff0e795e17c80a271a1be85",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:38:52.219768+00:00"
+    },
+    {
+      "iteration": 5,
+      "candidate": {
+        "donor_unit": "L16_V",
+        "receiver_unit": "L06_QK",
+        "donor_q_diagnostic_only": 0.6294311958547293,
+        "receiver_q_diagnostic_only": 0.558144697756246,
+        "predicted_exchange_gain": 0.0040252545505292635,
+        "predicted_gain_half_a": 0.0038202331063015293,
+        "predicted_gain_half_b": 0.004237110042898173,
+        "predicted_delta_loss": -0.0040252545505292635,
+        "donor_remove_delta_loss": -0.00013225302190280458,
+        "receiver_add_delta_loss": -0.0038930015286264587,
+        "donor_rank_before": 3744,
+        "donor_rank_after": 3712,
+        "receiver_rank_before": 1344,
+        "receiver_rank_after": 1376,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.003041049152860964,
+        "A": -0.003252923654871509,
+        "B": -0.002822112167450541
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "b728d99c18eb5f2a3374b7eba8af10ddd17213fe43456497e54df8e8d6197620",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:41:48.313394+00:00"
+    },
+    {
+      "iteration": 6,
+      "candidate": {
+        "donor_unit": "L15_QK",
+        "receiver_unit": "L07_QK",
+        "donor_q_diagnostic_only": 0.7658294037121421,
+        "receiver_q_diagnostic_only": 0.6126493873946737,
+        "predicted_exchange_gain": 0.003124592144166393,
+        "predicted_gain_half_a": 0.002980799405749135,
+        "predicted_gain_half_b": 0.003273177973864172,
+        "predicted_delta_loss": -0.003124592144166393,
+        "donor_remove_delta_loss": -0.00011993718347571817,
+        "receiver_add_delta_loss": -0.003004654960690675,
+        "donor_rank_before": 2848,
+        "donor_rank_after": 2816,
+        "receiver_rank_before": 1696,
+        "receiver_rank_after": 1728,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.003171268761211987,
+        "A": -0.0031658372007816737,
+        "B": -0.0031768813736565704
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "9b16a62a6d7537baca3eccf0784ca3a81ad5d9355acd3c6ca2841568fef5188f",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:44:43.983853+00:00"
+    },
+    {
+      "iteration": 7,
+      "candidate": {
+        "donor_unit": "L19_QK",
+        "receiver_unit": "L09_QK",
+        "donor_q_diagnostic_only": 0.5396910970646734,
+        "receiver_q_diagnostic_only": 0.7166128029925276,
+        "predicted_exchange_gain": 0.002571206466805681,
+        "predicted_gain_half_a": 0.00229306822681119,
+        "predicted_gain_half_b": 0.002858615981466972,
+        "predicted_delta_loss": -0.002571206466805681,
+        "donor_remove_delta_loss": -0.00010220640386371099,
+        "receiver_add_delta_loss": -0.00246900006294197,
+        "donor_rank_before": 1984,
+        "donor_rank_after": 1952,
+        "receiver_rank_before": 2080,
+        "receiver_rank_after": 2112,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.0022007996586492773,
+        "A": -0.0020935355800730804,
+        "B": -0.002311639206511451
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "793bb00016796859d12124446a087f9175609b79cae061abec0fe694a876e629",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:47:40.991089+00:00"
+    },
+    {
+      "iteration": 8,
+      "candidate": {
+        "donor_unit": "L23_QK",
+        "receiver_unit": "L11_QK",
+        "donor_q_diagnostic_only": 0.4658530587392441,
+        "receiver_q_diagnostic_only": 0.9119726975053843,
+        "predicted_exchange_gain": 0.0014673718305026548,
+        "predicted_gain_half_a": 0.0017927755827766845,
+        "predicted_gain_half_b": 0.001131121286486625,
+        "predicted_delta_loss": -0.0014673718305026548,
+        "donor_remove_delta_loss": -0.00010018863195439948,
+        "receiver_add_delta_loss": -0.0013671831985482554,
+        "donor_rank_before": 2112,
+        "donor_rank_after": 2080,
+        "receiver_rank_before": 2016,
+        "receiver_rank_after": 2048,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.0010567845750379945,
+        "A": -0.0011796058440656232,
+        "B": -0.0009298692637091932
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "2b2d7207e48a24f969ff79eecc62e00095c00fa0d0f36be75ed631a4223a56fa",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:49:19.874819+00:00"
+    },
+    {
+      "iteration": 9,
+      "candidate": {
+        "donor_unit": "L26_QK",
+        "receiver_unit": "L12_QK",
+        "donor_q_diagnostic_only": 0.455749450456935,
+        "receiver_q_diagnostic_only": 1.0,
+        "predicted_exchange_gain": 0.0007073326800966228,
+        "predicted_gain_half_a": 0.0006491616000796618,
+        "predicted_gain_half_b": 0.0007674427961146257,
+        "predicted_delta_loss": -0.0007073326800966228,
+        "donor_remove_delta_loss": -7.40045220614734e-05,
+        "receiver_add_delta_loss": -0.0006333281580351494,
+        "donor_rank_before": 1696,
+        "donor_rank_after": 1664,
+        "receiver_rank_before": 2432,
+        "receiver_rank_after": 2464,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.0005504020340141302,
+        "A": -0.0004002502740534375,
+        "B": -0.0007055588526401202
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "f7584c015fa6cf4265b3702415361f37b4ce9e3d12f6da8a9e144f991d9ee569",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:50:44.706118+00:00"
+    }
+  ],
+  "attempted_exchanges": [
+    {
+      "iteration": 1,
+      "candidate": {
+        "donor_unit": "L03_V",
+        "receiver_unit": "L04_QK",
+        "donor_q_diagnostic_only": 0.4783130449418372,
+        "receiver_q_diagnostic_only": 0.5901629167318028,
+        "predicted_exchange_gain": 0.03953064556782167,
+        "predicted_gain_half_a": 0.037668133739308995,
+        "predicted_gain_half_b": 0.041455241123951936,
+        "predicted_delta_loss": -0.03953064556782167,
+        "donor_remove_delta_loss": -0.0007723354367797337,
+        "receiver_add_delta_loss": -0.03875831013104193,
+        "donor_rank_before": 2656,
+        "donor_rank_after": 2624,
+        "receiver_rank_before": 736,
+        "receiver_rank_after": 768,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.039262260396624615,
+        "A": -0.037297161719131555,
+        "B": -0.041292862363367266
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "6f15b12873db53f80ee63af9bb69247be32dcb958b522c7e68f9144d43d4814c",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:30:03.504980+00:00"
+    },
+    {
+      "iteration": 2,
+      "candidate": {
+        "donor_unit": "L04_V",
+        "receiver_unit": "L03_QK",
+        "donor_q_diagnostic_only": 0.5901629167318028,
+        "receiver_q_diagnostic_only": 0.4783130449418372,
+        "predicted_exchange_gain": 0.028234415441467223,
+        "predicted_gain_half_a": 0.027136888171443996,
+        "predicted_gain_half_b": 0.02936852695382486,
+        "predicted_delta_loss": -0.028234415441467223,
+        "donor_remove_delta_loss": -0.0006580126254334612,
+        "receiver_add_delta_loss": -0.02757640281603376,
+        "donor_rank_before": 2784,
+        "donor_rank_after": 2752,
+        "receiver_rank_before": 704,
+        "receiver_rank_after": 736,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.021476359635714815,
+        "A": -0.020578270752610983,
+        "B": -0.022404384814922018
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "68652950bcbdaf4814b31702053cfa4e92da69ae3e32ebe36505440f33d079d5",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:32:59.847982+00:00"
+    },
+    {
+      "iteration": 3,
+      "candidate": {
+        "donor_unit": "L11_V",
+        "receiver_unit": "L02_QK",
+        "donor_q_diagnostic_only": 0.9119726975053843,
+        "receiver_q_diagnostic_only": 0.3936758181674508,
+        "predicted_exchange_gain": 0.019635873037662073,
+        "predicted_gain_half_a": 0.017393872062233307,
+        "predicted_gain_half_b": 0.021952607378938893,
+        "predicted_delta_loss": -0.019635873037662073,
+        "donor_remove_delta_loss": -0.0004526183046261222,
+        "receiver_add_delta_loss": -0.01918325473303595,
+        "donor_rank_before": 3616,
+        "donor_rank_after": 3584,
+        "receiver_rank_before": 992,
+        "receiver_rank_after": 1024,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.011157682320864115,
+        "A": -0.009073369349766658,
+        "B": -0.013311472390999057
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "1ea1108ad1ba133f2049870116d7dc08c1d9ae4afd55aca8c59d800ddfec3b3c",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:35:55.950006+00:00"
+    },
+    {
+      "iteration": 4,
+      "candidate": {
+        "donor_unit": "L14_QK",
+        "receiver_unit": "L05_QK",
+        "donor_q_diagnostic_only": 0.8279824347141875,
+        "receiver_q_diagnostic_only": 0.7920993609862083,
+        "predicted_exchange_gain": 0.004160717041995183,
+        "predicted_gain_half_a": 0.004092201538172802,
+        "predicted_gain_half_b": 0.004231516395945434,
+        "predicted_delta_loss": -0.004160717041995183,
+        "donor_remove_delta_loss": -0.00014114920619288923,
+        "receiver_add_delta_loss": -0.004019567835802294,
+        "donor_rank_before": 2432,
+        "donor_rank_after": 2400,
+        "receiver_rank_before": 1120,
+        "receiver_rank_after": 1152,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.0027493442475923224,
+        "A": -0.002146902026790798,
+        "B": -0.003371867875753054
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "d7780e1e0f5043e8ea4043d83af8a294a5f51134dff0e795e17c80a271a1be85",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:38:52.219768+00:00"
+    },
+    {
+      "iteration": 5,
+      "candidate": {
+        "donor_unit": "L16_V",
+        "receiver_unit": "L06_QK",
+        "donor_q_diagnostic_only": 0.6294311958547293,
+        "receiver_q_diagnostic_only": 0.558144697756246,
+        "predicted_exchange_gain": 0.0040252545505292635,
+        "predicted_gain_half_a": 0.0038202331063015293,
+        "predicted_gain_half_b": 0.004237110042898173,
+        "predicted_delta_loss": -0.0040252545505292635,
+        "donor_remove_delta_loss": -0.00013225302190280458,
+        "receiver_add_delta_loss": -0.0038930015286264587,
+        "donor_rank_before": 3744,
+        "donor_rank_after": 3712,
+        "receiver_rank_before": 1344,
+        "receiver_rank_after": 1376,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.003041049152860964,
+        "A": -0.003252923654871509,
+        "B": -0.002822112167450541
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "b728d99c18eb5f2a3374b7eba8af10ddd17213fe43456497e54df8e8d6197620",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:41:48.313394+00:00"
+    },
+    {
+      "iteration": 6,
+      "candidate": {
+        "donor_unit": "L15_QK",
+        "receiver_unit": "L07_QK",
+        "donor_q_diagnostic_only": 0.7658294037121421,
+        "receiver_q_diagnostic_only": 0.6126493873946737,
+        "predicted_exchange_gain": 0.003124592144166393,
+        "predicted_gain_half_a": 0.002980799405749135,
+        "predicted_gain_half_b": 0.003273177973864172,
+        "predicted_delta_loss": -0.003124592144166393,
+        "donor_remove_delta_loss": -0.00011993718347571817,
+        "receiver_add_delta_loss": -0.003004654960690675,
+        "donor_rank_before": 2848,
+        "donor_rank_after": 2816,
+        "receiver_rank_before": 1696,
+        "receiver_rank_after": 1728,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.003171268761211987,
+        "A": -0.0031658372007816737,
+        "B": -0.0031768813736565704
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "9b16a62a6d7537baca3eccf0784ca3a81ad5d9355acd3c6ca2841568fef5188f",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:44:43.983853+00:00"
+    },
+    {
+      "iteration": 7,
+      "candidate": {
+        "donor_unit": "L19_QK",
+        "receiver_unit": "L09_QK",
+        "donor_q_diagnostic_only": 0.5396910970646734,
+        "receiver_q_diagnostic_only": 0.7166128029925276,
+        "predicted_exchange_gain": 0.002571206466805681,
+        "predicted_gain_half_a": 0.00229306822681119,
+        "predicted_gain_half_b": 0.002858615981466972,
+        "predicted_delta_loss": -0.002571206466805681,
+        "donor_remove_delta_loss": -0.00010220640386371099,
+        "receiver_add_delta_loss": -0.00246900006294197,
+        "donor_rank_before": 1984,
+        "donor_rank_after": 1952,
+        "receiver_rank_before": 2080,
+        "receiver_rank_after": 2112,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.0022007996586492773,
+        "A": -0.0020935355800730804,
+        "B": -0.002311639206511451
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "793bb00016796859d12124446a087f9175609b79cae061abec0fe694a876e629",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:47:40.991089+00:00"
+    },
+    {
+      "iteration": 8,
+      "candidate": {
+        "donor_unit": "L23_QK",
+        "receiver_unit": "L11_QK",
+        "donor_q_diagnostic_only": 0.4658530587392441,
+        "receiver_q_diagnostic_only": 0.9119726975053843,
+        "predicted_exchange_gain": 0.0014673718305026548,
+        "predicted_gain_half_a": 0.0017927755827766845,
+        "predicted_gain_half_b": 0.001131121286486625,
+        "predicted_delta_loss": -0.0014673718305026548,
+        "donor_remove_delta_loss": -0.00010018863195439948,
+        "receiver_add_delta_loss": -0.0013671831985482554,
+        "donor_rank_before": 2112,
+        "donor_rank_after": 2080,
+        "receiver_rank_before": 2016,
+        "receiver_rank_after": 2048,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.0010567845750379945,
+        "A": -0.0011796058440656232,
+        "B": -0.0009298692637091932
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "2b2d7207e48a24f969ff79eecc62e00095c00fa0d0f36be75ed631a4223a56fa",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:49:19.874819+00:00"
+    },
+    {
+      "iteration": 9,
+      "candidate": {
+        "donor_unit": "L26_QK",
+        "receiver_unit": "L12_QK",
+        "donor_q_diagnostic_only": 0.455749450456935,
+        "receiver_q_diagnostic_only": 1.0,
+        "predicted_exchange_gain": 0.0007073326800966228,
+        "predicted_gain_half_a": 0.0006491616000796618,
+        "predicted_gain_half_b": 0.0007674427961146257,
+        "predicted_delta_loss": -0.0007073326800966228,
+        "donor_remove_delta_loss": -7.40045220614734e-05,
+        "receiver_add_delta_loss": -0.0006333281580351494,
+        "donor_rank_before": 1696,
+        "donor_rank_after": 1664,
+        "receiver_rank_before": 2432,
+        "receiver_rank_after": 2464,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.0005504020340141302,
+        "A": -0.0004002502740534375,
+        "B": -0.0007055588526401202
+      },
+      "accepted": true,
+      "candidate_rank_pairs_sha256": "f7584c015fa6cf4265b3702415361f37b4ce9e3d12f6da8a9e144f991d9ee569",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:50:44.706118+00:00"
+    },
+    {
+      "iteration": 10,
+      "candidate": {
+        "donor_unit": "L22_V",
+        "receiver_unit": "L02_V",
+        "donor_q_diagnostic_only": 0.49430876082547076,
+        "receiver_q_diagnostic_only": 0.3936758181674508,
+        "predicted_exchange_gain": 0.0004978030999983983,
+        "predicted_gain_half_a": 0.0006012930015599771,
+        "predicted_gain_half_b": 0.0003908635350513556,
+        "predicted_delta_loss": -0.0004978030999983983,
+        "donor_remove_delta_loss": -3.543027593859867e-05,
+        "receiver_add_delta_loss": -0.00046237282405979963,
+        "donor_rank_before": 3648,
+        "donor_rank_after": 3616,
+        "receiver_rank_before": 3392,
+        "receiver_rank_after": 3424,
+        "delta_total_bytes": 0
+      },
+      "actual_delta_loss": {
+        "full": -0.00027223985852176114,
+        "A": -0.0005558578452977692,
+        "B": 2.08320611463364e-05
+      },
+      "accepted": false,
+      "candidate_rank_pairs_sha256": "d5dc544577d14c8df3aeb2a275a65abfbe96090319f43bc4d0b75bb92ad96918",
+      "candidate_B_live_bytes": 746323968,
+      "comparison": "same 61-window pooled token-mean NLL and frozen A/B split",
+      "created_utc": "2026-10-02T04:52:09.596204+00:00"
+    }
+  ],
+  "final_csv_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_ADD_BENEFIT_V1_ATTEMPT1_20261001/LLAMA2_E068_NATIVE_EXCHANGE_ITERATION_ATTEMPT4_FROZEN_SCHEDULE.csv",
+  "final_csv_sha256": "d664ac3d1659fdb1ed31ed0c50f95f3975cc0aab13dbd9984323917f3bdb0170",
+  "q_usage": "diagnostic only; not used to choose exchanges",
+  "basis_rebuilt": false,
+  "final_wiki_c4_or_accuracy_started": false
+}

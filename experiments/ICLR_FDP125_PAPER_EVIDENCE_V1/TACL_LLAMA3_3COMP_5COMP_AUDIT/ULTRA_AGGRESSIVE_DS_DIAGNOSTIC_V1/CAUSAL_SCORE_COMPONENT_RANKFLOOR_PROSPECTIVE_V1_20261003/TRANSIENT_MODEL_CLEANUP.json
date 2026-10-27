@@ -1,0 +1,29 @@
+{
+  "schema": "FDP125_CAUSAL_RANKFLOOR_TRANSIENT_MODEL_CLEANUP_V1",
+  "quality_result_sha256": "8497c28f3af37ba5c45c2a1c22e5dbe7fe233c9bd1b5d17e871523dac1e4632e",
+  "resource_quality_lock_sha256": "4d767e56c613fdecf5f3c5c81fa2da69170635e47e1aa1dff8bd6e6ba8e9bcfd",
+  "deleted_model_directories": {
+    "U_FULL": {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/ultra_aggressive_v1/causal_rankfloor_prospective_v1/realized/U_FULL/final_model",
+      "bytes": 15585729536
+    },
+    "U_NO_S": {
+      "path": "/diskD/jiaqizhang/causal_rankfloor_prospective_v1/realized/U_NO_S/final_model",
+      "bytes": 15585401856
+    }
+  },
+  "retained_basis_sources": {
+    "U_FULL": {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/ultra_aggressive_v1/causal_rankfloor_prospective_v1/U_FULL/causal_u_full_rf64_perlayer_eb.pt",
+      "sha256": "32f15d511ed5be26ca3648aeada68073143ebdea2466cbc4f5664c8f4f89c697",
+      "bytes": 104502253
+    },
+    "U_NO_S": {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/ultra_aggressive_v1/causal_rankfloor_prospective_v1/U_NO_S/causal_u_no_s_rf64_perlayer_eb.pt",
+      "sha256": "84e5a4a07569b80c5d2c70ae1c5b5fa91dc54c6376dac5551dba40e8a5c29f86",
+      "bytes": 104469485
+    }
+  },
+  "retained_quality_window_outputs": true,
+  "created_utc": "2026-10-04T05:42:38.228558+00:00"
+}

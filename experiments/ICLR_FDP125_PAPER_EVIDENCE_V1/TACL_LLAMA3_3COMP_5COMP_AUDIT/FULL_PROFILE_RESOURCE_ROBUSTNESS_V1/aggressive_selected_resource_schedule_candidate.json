@@ -1,0 +1,152 @@
+{
+  "schema": "LLAMA3_FULL_PROFILE_RESOURCE_SCHEDULE_CANDIDATE_V1",
+  "tier": "AGGRESSIVE",
+  "status": "PENDING_FINAL_OFFICIAL_BUILDER_REPLAY",
+  "arm_name": "FULL_RESOURCE_AGGRESSIVE_LOW",
+  "paper_label": "Full profile, resource-controlled",
+  "target_B_live_bytes": 157990912,
+  "candidate_B_live_bytes": 157908992,
+  "gap_bytes": -81920,
+  "gap_pct_vs_target": -0.05185108368764907,
+  "base_scalar": 0.09061509296350961,
+  "scalar_plateau": [
+    0.09058570265600127,
+    0.09064448327101794
+  ],
+  "rank_vector": [
+    [
+      808,
+      992
+    ],
+    [
+      384,
+      872
+    ],
+    [
+      80,
+      584
+    ],
+    [
+      632,
+      904
+    ],
+    [
+      520,
+      872
+    ],
+    [
+      608,
+      880
+    ],
+    [
+      552,
+      880
+    ],
+    [
+      488,
+      832
+    ],
+    [
+      432,
+      816
+    ],
+    [
+      496,
+      840
+    ],
+    [
+      448,
+      808
+    ],
+    [
+      464,
+      808
+    ],
+    [
+      624,
+      904
+    ],
+    [
+      552,
+      880
+    ],
+    [
+      552,
+      872
+    ],
+    [
+      384,
+      800
+    ],
+    [
+      360,
+      800
+    ],
+    [
+      344,
+      776
+    ],
+    [
+      216,
+      688
+    ],
+    [
+      240,
+      720
+    ],
+    [
+      104,
+      624
+    ],
+    [
+      160,
+      680
+    ],
+    [
+      240,
+      720
+    ],
+    [
+      136,
+      680
+    ],
+    [
+      152,
+      704
+    ],
+    [
+      400,
+      824
+    ],
+    [
+      224,
+      744
+    ],
+    [
+      232,
+      728
+    ],
+    [
+      184,
+      704
+    ],
+    [
+      1016,
+      1024
+    ],
+    [
+      488,
+      864
+    ],
+    [
+      392,
+      816
+    ]
+  ],
+  "rank_sha256": "48df5bfebfb9c733938e6f1c6f10d88b49169991baabb68ac4c03e5db505f4f9",
+  "q_sha256": "2d1480ecceecdd995a0dae34db236078ce503d67fcdff3072fc03d43f23434f5",
+  "profile_sha256": "864cf9832892f8bcdcb2521604b7827bc87b9cdf0b29284fd3283e3900d180b9",
+  "epsilon_input_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/aggressive/aggressive_selected_epsilon.json",
+  "epsilon_input_sha256": "09402e3e04a2833bc399dfbcc5a81ebc03dceeea0fce573cf9b51418911ca2a3",
+  "quality_blind": true
+}

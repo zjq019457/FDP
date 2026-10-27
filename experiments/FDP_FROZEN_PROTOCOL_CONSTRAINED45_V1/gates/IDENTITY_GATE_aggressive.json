@@ -1,0 +1,16 @@
+{
+ "tier": "aggressive",
+ "eb": 0.0875,
+ "official_min_thresh": 0.0,
+ "PASS": true,
+ "B_live": 159023104,
+ "frozen_B_live": 159023104,
+ "ranks_equal": true,
+ "rank_sha_compact": "ba92404e4cffce0e06670e1dba7929bc7311c73a4fedee303de336e65d30ea21",
+ "frozen_rank_sha256": null,
+ "frozen_rank_sha_candidates": {
+  "json_default": "baaee591e54fbb41e13119e1bf31e15bb26156216dde4f55674ce0454050d618",
+  "json_indent2": "6036b669cb4335523cb22a49b70699f8d532537f24f0e0f02759aaf6f9efd4c2"
+ },
+ "at": "2026-10-09T06:21:27.029402-07:00"
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_id": "LLAMA2_UNIFORM_EB062_PARTIAL_RUN_INTERRUPTION_V1",
+  "status": "INTERRUPTED_BY_USER_REDIRECT_TO_EB058",
+  "classification": "PARTIAL_DIAGNOSTIC_NOT_A_COMPLETE_PPL_RESULT",
+  "interrupted_utc": "2026-10-01T07:54:07.128431+00:00",
+  "reason": "User redirected requested diagnostic from EB062 to EB058. Our own worker received SIGINT; no foreign process interrupted.",
+  "worker_pid": 1806147,
+  "parent_shell_pid": 1806146,
+  "original_lock_sha256": "b276a1f32692fb1527e62b30e1cbd9f655934654f4d31bc0c6a1ba21ca48f4f0",
+  "progress_snapshot": {
+    "state": "DATASET_COMPLETE",
+    "completed_dataset": "wikitext2",
+    "PPL": 8.201806993263572,
+    "completed": [
+      "wikitext2"
+    ],
+    "updated_utc": "2026-10-01T07:51:06.616752+00:00"
+  },
+  "completed_wikitext2_partial_result": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/LLAMA2_UNIFORM_EB062_DIAGNOSTIC_V1/wikitext2/EB062_PPL_RESULT.json",
+  "completed_wikitext2_partial_result_sha256": "dc71a6216d8256a90f8eb37294adfdd3740ca2cfd76d7391d9d9b9925356e93c",
+  "c4_result_exists": false,
+  "complete_ppl_summary_exists": false,
+  "eligibility": "Do not use as full Wiki/C4/J comparison; retain only as interrupted partial trace.",
+  "foreign_jobs_interrupted": 0
+}

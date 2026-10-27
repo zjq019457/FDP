@@ -1,0 +1,14 @@
+{
+  "schema": "PALU_TABLE1_ENGINEERING_FAILURE_V1",
+  "utc": "2026-09-29T18:39:14.553570+00:00",
+  "cell": "DENSE_C4_PPL",
+  "failure_type": "SERIALIZATION_LOCAL_CLASS_NOT_PICKLABLE",
+  "traceback_last_line": "AttributeError: Can't pickle local object 'get_ppl_eval_loaders.<locals>.TokenizerWrapper'",
+  "ppl_windows_evaluated": 0,
+  "result_written": false,
+  "partial_cache_preserved": "/tmp/c4_testloader__diskE_jiaqizhang_PALU_OFFICIAL_TABLE1_REPRO_V1_model_reference_Llama-2-7b-hf_all.cache (if any); retry uses a distinct model alias/cache key",
+  "repair": "serialize same input_ids tensor inside a pickleable SimpleNamespace; runtime shim only",
+  "affected_cell": "Dense C4 only",
+  "old_results_valid": true,
+  "foreign_jobs_interrupted": 0
+}

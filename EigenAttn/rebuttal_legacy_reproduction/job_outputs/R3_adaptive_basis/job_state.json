@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "job_id": "R3_adaptive_basis",
+  "returncode": 0,
+  "ended_at": "2026-07-28T20:14:03.662656-07:00",
+  "gpu": {
+    "job_id": "R3_adaptive_basis",
+    "gpu_index": 0,
+    "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 44295,
+    "holder_pid": 1872055,
+    "cuda_visible_devices": "0",
+    "acquired_at": "2026-07-28T19:29:10.127266-07:00"
+  },
+  "elapsed_sec": 2693.5310502052307
+}

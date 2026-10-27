@@ -1,0 +1,64 @@
+{
+  "completed_at_utc": "2026-09-28T21:36:04.219865+00:00",
+  "foreign_jobs_interrupted": 0,
+  "historical_outputs_modified": false,
+  "macro_accuracy": {
+    "delta_v3_minus_v1": 0.000592263535997728,
+    "v1": 0.5483371647241683,
+    "v3": 0.548929428260166
+  },
+  "manifest_sha256": "1f51401f56400d08e0d4706fc44b7c745730c8aa30381d72ac313f65752f7621",
+  "paired_uncertainty": "NOT_COMPUTED; runner used log_samples=False, so no per-example paired records",
+  "per_task": {
+    "arc_challenge": {
+      "delta_v3_minus_v1": 0.0008532423208191253,
+      "v1_acc": 0.39419795221843,
+      "v3_acc": 0.39505119453924914
+    },
+    "arc_easy": {
+      "delta_v3_minus_v1": 0.002946127946127919,
+      "v1_acc": 0.6464646464646465,
+      "v3_acc": 0.6494107744107744
+    },
+    "hellaswag": {
+      "delta_v3_minus_v1": 0.0018920533758215452,
+      "v1_acc": 0.5067715594503087,
+      "v3_acc": 0.5086636128261303
+    },
+    "openbookqa": {
+      "delta_v3_minus_v1": -0.0020000000000000018,
+      "v1_acc": 0.308,
+      "v3_acc": 0.306
+    },
+    "piqa": {
+      "delta_v3_minus_v1": 0.003808487486398282,
+      "v1_acc": 0.7589771490750816,
+      "v3_acc": 0.7627856365614799
+    },
+    "winogrande": {
+      "delta_v3_minus_v1": -0.003946329913180779,
+      "v1_acc": 0.675611681136543,
+      "v3_acc": 0.6716653512233622
+    }
+  },
+  "resource_match": "EXACT",
+  "resources": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "results": {
+    "v1_native_formal_reference": {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/PALU_V1_NATIVE_FORMAL_MATCHED/quality/llama2/ratio_0.5/PALU_FDP_NATIVE/zeroshot.json",
+      "schedule_sha": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+      "sha256": "781add55fa245d9f08862f8360e38047b02282fd47fa79e40237aeeeb83fe428"
+    },
+    "v3_selected": {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/PALU_V3_SELECTED/quality/llama2/ratio_0.5/PALU_FDP_NATIVE/zeroshot.json",
+      "schedule_sha": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c",
+      "sha256": "4d620dd8d10e6ea99c35c80d73337a4b6a1ebc745afb776cd8c07d2fb5d2f3be"
+    }
+  },
+  "status": "COMPLETE_DESCRIPTIVE_ZERO_SHOT_PAIR"
+}

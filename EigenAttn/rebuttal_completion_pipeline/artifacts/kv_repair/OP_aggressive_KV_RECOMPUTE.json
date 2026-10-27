@@ -1,0 +1,37 @@
+{
+  "point": "aggressive",
+  "generated_at": "2026-07-29T19:47:09.472126-07:00",
+  "kv_recomputed": true,
+  "dense_kv_bytes": 268435456,
+  "uniform_kv": {
+    "batch": 1,
+    "seqlen": 2048,
+    "bytes_per_elem": 2,
+    "n_layers": 32,
+    "total_rank_sum": 38552,
+    "realized_kv_bytes": 157908992,
+    "dense_kv_bytes": 268435456,
+    "retained_ratio": 0.5882568359375,
+    "formula": "batch*seqlen*bytes_per_elem*sum_l(r_kq+r_v)",
+    "ranks_sha256": "32d1d95570eb76e491f7700507402a15092d7cbd6e8b7662ccc380b87ef42411",
+    "source": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/aggressive/uniform/final_model/low_rank_config.json"
+  },
+  "fdp_kv": {
+    "batch": 1,
+    "seqlen": 2048,
+    "bytes_per_elem": 2,
+    "n_layers": 32,
+    "total_rank_sum": 38600,
+    "realized_kv_bytes": 158105600,
+    "dense_kv_bytes": 268435456,
+    "retained_ratio": 0.5889892578125,
+    "formula": "batch*seqlen*bytes_per_elem*sum_l(r_kq+r_v)",
+    "ranks_sha256": "c15a0a97e423ddaf01005bf38b88cf99b5461069a52454a8185925e63b9fe7dc",
+    "source": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/aggressive/fdp/final_model/low_rank_config.json"
+  },
+  "runtime_cache_check_uniform": {},
+  "uniform_model": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/aggressive/uniform/final_model",
+  "fdp_model": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/aggressive/fdp/final_model",
+  "FORBIDDEN_UNTIL_TRIPLE_MATCH": false,
+  "manifest_path": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/aggressive/OPERATING_POINT_MANIFEST.json"
+}

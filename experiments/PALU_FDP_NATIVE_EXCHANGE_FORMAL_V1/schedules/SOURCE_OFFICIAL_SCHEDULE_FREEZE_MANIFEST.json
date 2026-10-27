@@ -1,0 +1,50 @@
+{
+  "anchor_file": "/diskF/jiaqizhang/fdp_lowrank_operator_zoo_v1/v2_runs/palu_fisher/PALU_V2_OFFICIAL_0P7_FISHER_ANCHOR.json",
+  "anchor_sha256": "b7dfa7ae39cbbee24f1095a89eadec4714c86f4ec6e6c9e60b8024e225d1829b",
+  "current_model_num_attention_heads": 32,
+  "current_model_num_key_value_heads": 32,
+  "current_wrapper_semantics_audit": {
+    "capacity_ratio_current_wrapper_to_anchor": 4.0,
+    "current_wrapper_fisher_uniform_capacity": 262144,
+    "current_wrapper_fisher_uniform_groups_per_module": 8,
+    "frozen_anchor_capacity": 65536,
+    "frozen_anchor_slots_per_module": 2,
+    "status": "NATIVE_UNIT_SEMANTICS_MISMATCH; CURRENT_WRAPPER_OUTPUTS_QUARANTINED"
+  },
+  "fisher_allocation": "official anchor proportional Fisher allocation, integer deficit completion, then block-32 rounding",
+  "historical_results_modified": false,
+  "model_config": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf/config.json",
+  "model_config_sha256": "9242e7db1bc2a17873e66084c3b1c6ed10883076e156b338fd6a7775748e2e3c",
+  "native_unit": "one persisted head_wise_ranks slot per K/V module; rank quantum 32; two slots per module; cap 512",
+  "q_SHA": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "q_lock_file": "/diskF/jiaqizhang/fdp_final_core_generalization_v1/authority/FINAL_D125_Q_LOCK.json",
+  "q_lock_file_sha256": "e51176db2b3cfaa35451f6d5dfa2d0b99dcd768aa13c8a2eb00c6956ac8c1e1d",
+  "quality_used_to_design_schedule": false,
+  "ratio_0.7_reproduction_exact": true,
+  "ratios": [
+    0.7,
+    0.5,
+    0.3
+  ],
+  "schedules": {
+    "0.3": {
+      "integer_target_rank": 19661,
+      "realized_rank_sum": 19584,
+      "schedule_sha": "31ffd70e8c64fcc08ac6fe980b18ea3bfb4af411f31ebdc44b73eb299060c10e"
+    },
+    "0.5": {
+      "integer_target_rank": 32768,
+      "realized_rank_sum": 32640,
+      "schedule_sha": "9893cc06dbfae4442b11e0e5f5620d8464c6e23921af24f85422a230d00d78a4"
+    },
+    "0.7": {
+      "integer_target_rank": 45875,
+      "realized_rank_sum": 45760,
+      "schedule_sha": "7c460aa5e48452bb98e474530993a3239042f38d2e12e991309b7fc16e1f89b4"
+    }
+  },
+  "status": "OFFICIAL_ANCHOR_SCHEMA_FROZEN; CURRENT_WRAPPER_MISMATCH_QUARANTINED",
+  "task": "PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1",
+  "total_capacity": 65536,
+  "transfer_count_policy": "TRANSFER_COUNT_POLICY_NOT_FROZEN"
+}

@@ -1,0 +1,517 @@
+{
+  "CALIBRATION_LOCK": {
+    "c4_chunks": [
+      {
+        "doc_index": 222005,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[222005]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 4836,
+        "token_end": 2048,
+        "token_ids_sha256": "c30948f978943df6a71fb84bf19279d36976562b58fcda6b5f966abbe6aeb710",
+        "token_start": 0
+      },
+      {
+        "doc_index": 222033,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[222033]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2971,
+        "token_end": 2048,
+        "token_ids_sha256": "651953a3fec3bd6978ec0fdd77a0df50984e077c89e96c60445550acf8b02021",
+        "token_start": 0
+      },
+      {
+        "doc_index": 222080,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[222080]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 4085,
+        "token_end": 2048,
+        "token_ids_sha256": "523cb57fe5f2f0e7f189020fa12aaf882c367bca0ca41bb9a04b8b2996c8866f",
+        "token_start": 0
+      },
+      {
+        "doc_index": 222086,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[222086]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 6761,
+        "token_end": 2048,
+        "token_ids_sha256": "f9d92467c5f7912de22f8cba05f4cd8df79bbc8c9bbd2c92f8faec296a2de7d8",
+        "token_start": 0
+      },
+      {
+        "doc_index": 222103,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[222103]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 10213,
+        "token_end": 2048,
+        "token_ids_sha256": "abe4c0fdcc00e511122906ab34d6d2be4a0f44b8a328765d7263b14abe82147e",
+        "token_start": 0
+      },
+      {
+        "doc_index": 222124,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[222124]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 8512,
+        "token_end": 2048,
+        "token_ids_sha256": "dc40c894da89d748d4b5df2a6ff0e5960e6b18e90c81acaf172ddd821aa23476",
+        "token_start": 0
+      },
+      {
+        "doc_index": 222132,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[222132]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 3423,
+        "token_end": 2048,
+        "token_ids_sha256": "2f1343846b6b8c035c86f68530661343d6c45b6e768f7779aea98003950e7fcc",
+        "token_start": 0
+      },
+      {
+        "doc_index": 222206,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[222206]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2106,
+        "token_end": 2048,
+        "token_ids_sha256": "34e18a66a4e9ab52ba11181da3ca7c4ce681e9a3377c8875014d2a74495b42a3",
+        "token_start": 0
+      }
+    ],
+    "wikitext_chunks": [
+      {
+        "chunk_id": "v3_lock_wiki_00",
+        "sample_id": "wiki-train-token-window:2520000:2522048",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2522048,
+        "token_ids_sha256": "ca9d84ae63a0ebea53a76fdf19a6e27dbca9cfa5ec59ba5f32e382fa51598363",
+        "token_start": 2520000
+      },
+      {
+        "chunk_id": "v3_lock_wiki_01",
+        "sample_id": "wiki-train-token-window:2528192:2530240",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2530240,
+        "token_ids_sha256": "3fa8973c92b369a1856ac36de055d79a2e500a3dbe89bf54250aa766733f5a3e",
+        "token_start": 2528192
+      },
+      {
+        "chunk_id": "v3_lock_wiki_02",
+        "sample_id": "wiki-train-token-window:2536384:2538432",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2538432,
+        "token_ids_sha256": "03fbfac1304e0674b655a76c26d8688b81102d61ebc312678e9f00ffed8f90c1",
+        "token_start": 2536384
+      },
+      {
+        "chunk_id": "v3_lock_wiki_03",
+        "sample_id": "wiki-train-token-window:2544576:2546624",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2546624,
+        "token_ids_sha256": "32a73a46e81e731c3d53d9e19c24cb75d6530c1e522b9cf91d43eda478f0bc15",
+        "token_start": 2544576
+      },
+      {
+        "chunk_id": "v3_lock_wiki_04",
+        "sample_id": "wiki-train-token-window:2552768:2554816",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2554816,
+        "token_ids_sha256": "8edf6e86ef402936e2a4706caf7e003e2cd9b0d37d255ccc5b50ce6b6321a008",
+        "token_start": 2552768
+      },
+      {
+        "chunk_id": "v3_lock_wiki_05",
+        "sample_id": "wiki-train-token-window:2560960:2563008",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2563008,
+        "token_ids_sha256": "da36230d477cb589b06d447986d3ceacdb61c15641e6bea68350712809c54ef0",
+        "token_start": 2560960
+      },
+      {
+        "chunk_id": "v3_lock_wiki_06",
+        "sample_id": "wiki-train-token-window:2569152:2571200",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2571200,
+        "token_ids_sha256": "9dbbb839444473a15d2474c0c213d41b6a4b9088aad439a6b1dfe521c8622462",
+        "token_start": 2569152
+      },
+      {
+        "chunk_id": "v3_lock_wiki_07",
+        "sample_id": "wiki-train-token-window:2577344:2579392",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2579392,
+        "token_ids_sha256": "9f1531364f305d72f647b451bfd211f69ce571d65748e9a43afc32c33aa41f2a",
+        "token_start": 2577344
+      }
+    ]
+  },
+  "CALIBRATION_TUNE": {
+    "c4_chunks": [
+      {
+        "doc_index": 216009,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[216009]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2912,
+        "token_end": 2048,
+        "token_ids_sha256": "96448dd893e0dea1d4a44706e90b7261f6b6a3a8180a3a4c6ad08ff941b0ed9f",
+        "token_start": 0
+      },
+      {
+        "doc_index": 216027,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[216027]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2164,
+        "token_end": 2048,
+        "token_ids_sha256": "661f60dd84afe010975645a0735d24ec8d5b615cc02cb89e0e0ea6868826af8c",
+        "token_start": 0
+      },
+      {
+        "doc_index": 216058,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[216058]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 3094,
+        "token_end": 2048,
+        "token_ids_sha256": "096c9d9f5359dd5627c40b13e7faa91a600481cd365c395f880b48bb88713ce4",
+        "token_start": 0
+      },
+      {
+        "doc_index": 216088,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[216088]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2360,
+        "token_end": 2048,
+        "token_ids_sha256": "da81d87b1edb233c749ee950e05a24709d20acca02c8d7f09d5ffc742f36644b",
+        "token_start": 0
+      },
+      {
+        "doc_index": 216103,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[216103]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 3497,
+        "token_end": 2048,
+        "token_ids_sha256": "aa476f6035f4fb59a384405d764db1061fe95bc3c8b0658770bd4640c13d18af",
+        "token_start": 0
+      },
+      {
+        "doc_index": 216116,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[216116]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2186,
+        "token_end": 2048,
+        "token_ids_sha256": "bfbef8edf4b1e56ad4a8a00ab532997f5c732be56e97cfc100717cf4f7cbc74c",
+        "token_start": 0
+      },
+      {
+        "doc_index": 216151,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[216151]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 4090,
+        "token_end": 2048,
+        "token_ids_sha256": "d1864723a5e8809ef6731f1e443e73abee65aad21af750fb684d795f47319aab",
+        "token_start": 0
+      },
+      {
+        "doc_index": 216192,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[216192]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2642,
+        "token_end": 2048,
+        "token_ids_sha256": "585d1fde00cbf67a943a5915fef80804c00e521563842196d125a968a00fc807",
+        "token_start": 0
+      }
+    ],
+    "wikitext_chunks": [
+      {
+        "chunk_id": "v3_tune_wiki_00",
+        "sample_id": "wiki-train-token-window:2450000:2452048",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2452048,
+        "token_ids_sha256": "979b1b492bdccf3ff0ac2740d62e889f8c6b59a36a249620d1120cd139937cf1",
+        "token_start": 2450000
+      },
+      {
+        "chunk_id": "v3_tune_wiki_01",
+        "sample_id": "wiki-train-token-window:2458192:2460240",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2460240,
+        "token_ids_sha256": "d60e2b798e640d11cd74db7c856e0449842a5fbe87db1903814d04ba89840232",
+        "token_start": 2458192
+      },
+      {
+        "chunk_id": "v3_tune_wiki_02",
+        "sample_id": "wiki-train-token-window:2466384:2468432",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2468432,
+        "token_ids_sha256": "707a31bb1fd686ba1e2a539a837260476907d952543dd2d2c6fd54edc15ae4e8",
+        "token_start": 2466384
+      },
+      {
+        "chunk_id": "v3_tune_wiki_03",
+        "sample_id": "wiki-train-token-window:2474576:2476624",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2476624,
+        "token_ids_sha256": "b88129395e0fc1dab2a435b5eb0a096889e60ccd408fb05fd17da48eb80f0438",
+        "token_start": 2474576
+      },
+      {
+        "chunk_id": "v3_tune_wiki_04",
+        "sample_id": "wiki-train-token-window:2482768:2484816",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2484816,
+        "token_ids_sha256": "b91595935eb179dccb37ae75855f85a53bfa5a39a60bc43c24771b15557585e0",
+        "token_start": 2482768
+      },
+      {
+        "chunk_id": "v3_tune_wiki_05",
+        "sample_id": "wiki-train-token-window:2490960:2493008",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2493008,
+        "token_ids_sha256": "0d525b2bda978b4dc7f0b336ce2df79aac4ad2be7d0c1cc15ff6ec17b2c680ed",
+        "token_start": 2490960
+      },
+      {
+        "chunk_id": "v3_tune_wiki_06",
+        "sample_id": "wiki-train-token-window:2499152:2501200",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2501200,
+        "token_ids_sha256": "1faccb66af5c3bd0be9afe3e5a8411e8a06b76857e3251de5f4dca88ea4d0abf",
+        "token_start": 2499152
+      },
+      {
+        "chunk_id": "v3_tune_wiki_07",
+        "sample_id": "wiki-train-token-window:2507344:2509392",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2509392,
+        "token_ids_sha256": "263bd8e6994cef82a085a1e487f68774625dccc993f44b30fa5ddc9d165ab176",
+        "token_start": 2507344
+      }
+    ]
+  },
+  "FORMAL_C4": {
+    "binding": "reuse exact official frozen chunks; calibration cannot read",
+    "formal_protocol_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+    "source": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/data/c4-validation.00000-of-00008.json.gz",
+    "source_sha256": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+    "split": "C4 validation"
+  },
+  "FORMAL_RULER": {
+    "note": "No RULER protocol/manifest was found in the current official PaLu roots; freeze separate versioned task/scorer/sample manifest before any run.",
+    "status": "DEFERRED_UNTIL_POSITIVE_LOCK_OR_FORMAL_SIGNAL"
+  },
+  "FORMAL_WIKI": {
+    "binding": "reuse exact official frozen windows; calibration cannot read",
+    "formal_protocol_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+    "source": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/data/wiki-test.hf_joined.raw",
+    "source_sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83",
+    "split": "WikiText-2 test"
+  },
+  "PROFILE": {
+    "c4_chunks": [
+      {
+        "doc_index": 210022,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[210022]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2672,
+        "token_end": 2048,
+        "token_ids_sha256": "c78060a3cb68b021fd330c0ad4274bc87d4da14c3eed5d0fa3da77b202089f53",
+        "token_start": 0
+      },
+      {
+        "doc_index": 210042,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[210042]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 4924,
+        "token_end": 2048,
+        "token_ids_sha256": "32b906a0a570138abc70c046bb36ae4dce4feb9ec289c10353c8f1631e7e0975",
+        "token_start": 0
+      },
+      {
+        "doc_index": 210094,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[210094]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2675,
+        "token_end": 2048,
+        "token_ids_sha256": "6d43117d30ef6f97535b10bd95c2f0e7da8acaf8383acf3422207c35b82f04d8",
+        "token_start": 0
+      },
+      {
+        "doc_index": 210111,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[210111]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 3527,
+        "token_end": 2048,
+        "token_ids_sha256": "c3a566ae8aa3b1285bae8fd53bc0f16fd72da3a5cd2cfd08fb5fe31f48745d4f",
+        "token_start": 0
+      },
+      {
+        "doc_index": 210123,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[210123]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2323,
+        "token_end": 2048,
+        "token_ids_sha256": "66cb4b41ea6cb2627bfbdf836ce212d72a8711d74e930fb07682b1818fff068a",
+        "token_start": 0
+      },
+      {
+        "doc_index": 210132,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[210132]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 5287,
+        "token_end": 2048,
+        "token_ids_sha256": "c8cff56b4b01af53295271d7d647d2ca7e7e5b75050bb150cbe2bd61d07796c1",
+        "token_start": 0
+      },
+      {
+        "doc_index": 210157,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[210157]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 2186,
+        "token_end": 2048,
+        "token_ids_sha256": "858ee1e90da3b5929dcf3defc74b372ada5d74c63ca2ac7795bda3e22096cc67",
+        "token_start": 0
+      },
+      {
+        "doc_index": 210230,
+        "sample_id": "c4-train.00000-of-01024.json.gz:line[210230]",
+        "scored_token_count": 2048,
+        "sequence_length": 2048,
+        "token_count": 5707,
+        "token_end": 2048,
+        "token_ids_sha256": "2f764d1e450e7aa7bd72db1abf67d2ef135017c3268431f24e288a14f99f77d2",
+        "token_start": 0
+      }
+    ],
+    "wikitext_chunks": [
+      {
+        "chunk_id": "v3_profile_wiki_00",
+        "sample_id": "wiki-train-token-window:2380000:2382048",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2382048,
+        "token_ids_sha256": "68ef32aeef4e5d0b81105de8911ac5104e3a71a70973bb0291f79d6162be4378",
+        "token_start": 2380000
+      },
+      {
+        "chunk_id": "v3_profile_wiki_01",
+        "sample_id": "wiki-train-token-window:2388192:2390240",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2390240,
+        "token_ids_sha256": "e36daa67a6abbc1132672627651e07ab6ab691789566c1d3cb4deba287846713",
+        "token_start": 2388192
+      },
+      {
+        "chunk_id": "v3_profile_wiki_02",
+        "sample_id": "wiki-train-token-window:2396384:2398432",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2398432,
+        "token_ids_sha256": "3672c90fc8c21db6abf502c9d87e0a5bfab5f5314525a6d02833eebe1aa9f777",
+        "token_start": 2396384
+      },
+      {
+        "chunk_id": "v3_profile_wiki_03",
+        "sample_id": "wiki-train-token-window:2404576:2406624",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2406624,
+        "token_ids_sha256": "a6a369fde00cb4fd7ef584563d6859186697533ea8baf4d7082d69b8517e72ce",
+        "token_start": 2404576
+      },
+      {
+        "chunk_id": "v3_profile_wiki_04",
+        "sample_id": "wiki-train-token-window:2412768:2414816",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2414816,
+        "token_ids_sha256": "4bd62694f15d987479a8360f4bb91db2d0fa3c034096dc8da682bc21d6e8e9c3",
+        "token_start": 2412768
+      },
+      {
+        "chunk_id": "v3_profile_wiki_05",
+        "sample_id": "wiki-train-token-window:2420960:2423008",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2423008,
+        "token_ids_sha256": "735083beee01d6953c0f1f48fd14205a955a1d2da92120859aa4202aaa5565e9",
+        "token_start": 2420960
+      },
+      {
+        "chunk_id": "v3_profile_wiki_06",
+        "sample_id": "wiki-train-token-window:2429152:2431200",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2431200,
+        "token_ids_sha256": "1da14e3bd7d9de5f9e91e586c09c17809fdb44291d4b3878d19921e2fddaed25",
+        "token_start": 2429152
+      },
+      {
+        "chunk_id": "v3_profile_wiki_07",
+        "sample_id": "wiki-train-token-window:2437344:2439392",
+        "sequence_length": 2048,
+        "token_count": 2048,
+        "token_end": 2439392,
+        "token_ids_sha256": "08582f90c6c8867b222b84e12d25f132cb59b76877b472e7ae60d857cdd06359",
+        "token_start": 2437344
+      }
+    ]
+  },
+  "sample_selection": "quality-blind: first 8 line-index-ordered C4 documents with >=2048 tokens in each fixed band; no quality values used.",
+  "sources": {
+    "c4_train": {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/input/c4-train.00000-of-01024.json.gz",
+      "sequence_length": 2048,
+      "sha256": "8ef8d75b0e045dec4aa5123a671b4564466b0707086a7ed1ba8721626dfffbc9",
+      "split": "C4 train shard 0"
+    },
+    "wiki_train": {
+      "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/data/wiki-train.hf_joined.raw",
+      "sequence_length": 2048,
+      "sha256": "aee724fa58bfbdeb3fc6803297fb6bab27b203d7c40b39ddef9b9770e5d52fe5",
+      "split": "WikiText-2 train"
+    }
+  },
+  "status": "V3_SPLITS_BOUND_READ_ONLY_PRE_CALIBRATION",
+  "tokenizer": {
+    "class": "LlamaTokenizerFast",
+    "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "tokenizer_config_sha256": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a",
+    "tokenizer_json_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+    "vocab_size": 32000
+  }
+}

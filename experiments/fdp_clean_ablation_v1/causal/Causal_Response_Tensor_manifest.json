@@ -1,0 +1,63 @@
+{
+  "artifact": "causal_response_tensor",
+  "pt_file": "causal/causal_response_tensor.pt",
+  "sha256": "9fb7edb5befbe23c3b05a0aa05b993e99bbbe91cf93a245ed77223b00eb851b9",
+  "shape": [
+    5,
+    32,
+    32,
+    4
+  ],
+  "dimension_meaning": [
+    "functional_components (5)",
+    "measured_layer_k (32)",
+    "intervened_layer_l (32)",
+    "operating_tier_e (4)"
+  ],
+  "components": [
+    "d1_z",
+    "d2_s",
+    "d3_v",
+    "d4_a",
+    "d5_h"
+  ],
+  "tiers": [
+    "light",
+    "medium",
+    "aggressive",
+    "ultra"
+  ],
+  "intervention_details": {
+    "method": "single_layer_eb_perturbation",
+    "delta_eb": 0.015,
+    "non_intervened_layers": "fixed_at_tier_base_uniform_eb",
+    "calibration_input": "DEFAULT_PROMPTS (2 seqs, 512 tokens)",
+    "causal_lower_triangular_property": "G[:, k, l] == 0 for k < l"
+  },
+  "layer0_emergent_analysis": {
+    "light": {
+      "S_0_tilde": 0.12229781877949218,
+      "C_0_tilde": 1.0,
+      "CHI_0_tilde": 0.7349135714819913,
+      "P_0_tilde": 1.0
+    },
+    "medium": {
+      "S_0_tilde": 0.16022626808538137,
+      "C_0_tilde": 0.0,
+      "CHI_0_tilde": 0.0,
+      "P_0_tilde": 0.0
+    },
+    "aggressive": {
+      "S_0_tilde": 0.04303711480611435,
+      "C_0_tilde": 0.08887083375481968,
+      "CHI_0_tilde": 0.05475165051457229,
+      "P_0_tilde": 0.08637390998641563
+    },
+    "ultra": {
+      "S_0_tilde": 0.0,
+      "C_0_tilde": 0.06845194286647623,
+      "CHI_0_tilde": 0.03740422967105952,
+      "P_0_tilde": 0.06457757288321161
+    }
+  }
+}

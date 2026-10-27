@@ -1,0 +1,346 @@
+{
+  "schema": "FDP125_FULL_PROFILE_RESOURCE_ROBUSTNESS_PROTOCOL_V1",
+  "classification": "NEW_RESOURCE_CONTROLLED_ROBUSTNESS_ARMS; ORIGINAL_FULL_AND_NATIVE_ABLATION_IMMUTABLE",
+  "model": {
+    "repo_id": "meta-llama/Meta-Llama-3-8B",
+    "content_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+    "max_position_embeddings": 8192
+  },
+  "method": {
+    "allocator": "TRUE_TWO_PASS_FDP_EB",
+    "component_mask": "11001",
+    "q": "MinMax(d1+d2+d5)",
+    "lambda": 1.2,
+    "rho": 0.75,
+    "only_adjustable_parameter": "global base error tolerance / operating scalar"
+  },
+  "resource_targets": {
+    "MEDIUM": {
+      "target_b_live_bytes": 196870144,
+      "original_full_b_live_bytes": 199753728
+    },
+    "AGGRESSIVE": {
+      "target_b_live_bytes": 157990912,
+      "original_full_b_live_bytes": 159416320
+    }
+  },
+  "acceptance": {
+    "max_absolute_gap_pct": 0.15,
+    "resource_metric": "actual realized B_live bytes, not basis or checkpoint size",
+    "quality_blind": true
+  },
+  "resource_search": {
+    "starting_scalar_each_tier": "existing Full scalar",
+    "upper_envelope_scalar": {
+      "MEDIUM": 0.064,
+      "AGGRESSIVE": 0.093
+    },
+    "method": "derive complete official per-layer rank threshold traces at envelope; enumerate scalar-induced rank schedule plateaus from original scalar through envelope; find first monotone B_live crossing of target; compare the two adjacent schedules, selecting minimum absolute byte gap; rerun canonical builder at selected scalar and require exact rank-schedule match",
+    "if_no_crossing": "extend envelope resource-only, no quality inspection"
+  },
+  "tie_break": {
+    "ordered_rules": [
+      "minimum absolute B_live-target gap",
+      "on exact equal gap prefer B_live >= target",
+      "then scalar plateau midpoint closest to original tier scalar",
+      "then lexicographically smallest rank SHA256"
+    ],
+    "schedule_scalar": "deterministic midpoint within scalar interval producing selected legal rank vector to avoid threshold-boundary floating ambiguity"
+  },
+  "rank_lattice": {
+    "native_builder": "official Llama Eigen basis builder",
+    "threshold_init": 1.0,
+    "threshold_floor": 0.3,
+    "threshold_step": 0.02,
+    "min_rank": 64,
+    "model_head_dim": 128,
+    "kv_heads": 8,
+    "bytes_per_rank": 4096
+  },
+  "eval": {
+    "datasets": [
+      "WikiText-2",
+      "C4"
+    ],
+    "paired_windows_expected": {
+      "WikiText-2": 141,
+      "C4": 256
+    },
+    "scorer": "frozen LEGACY_EVALUATION_PROTOCOL_LOCK",
+    "save_per_window_nll": true,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 2
+  },
+  "paired_comparisons": [
+    {
+      "tier": "MEDIUM",
+      "new_arm": "FULL_RESOURCE_MEDIUM_LOW",
+      "comparators": [
+        "DROP_D1",
+        "DROP_D5"
+      ],
+      "delta": "J(new Full-low)-J(drop); negative favors Full-low"
+    },
+    {
+      "tier": "AGGRESSIVE",
+      "new_arm": "FULL_RESOURCE_AGGRESSIVE_LOW",
+      "comparators": [
+        "DROP_D2",
+        "DROP_D5"
+      ],
+      "delta": "J(new Full-low)-J(drop); negative favors Full-low"
+    }
+  ],
+  "scope_note": "Same input windows allow paired resampling; historical drop arms are not upgraded to same-basis causal ablations because retained audit cannot verify identical underlying basis binaries.",
+  "sources": {
+    "method_lock": {
+      "path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK.json",
+      "sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f"
+    },
+    "q_builder": {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/realloc_rank_from_fragility.py",
+      "sha256": "3799526d7e0ff0e05df6d7e5f2c267e9f09b65d81551ca622985e4a4cf181a6e"
+    },
+    "rank_builder": {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336"
+    },
+    "operator": {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+      "sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7"
+    },
+    "evaluation_protocol": {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/LEGACY_EVALUATION_PROTOCOL_LOCK.json",
+      "sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+    },
+    "ppl_runner": {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/ppl_instrumented.py",
+      "sha256": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+    }
+  },
+  "tier_inputs": {
+    "MEDIUM": {
+      "tier": "MEDIUM",
+      "profile_path": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb060.json",
+      "profile_sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+      "profile_args": {
+        "base": "/diskD/jiaqizhang/Llama-3",
+        "cmp": "/diskE/jiaqizhang/llama3_8b_eigen_kv_eb060/final_model",
+        "tok": "/diskD/jiaqizhang/Llama-3",
+        "low_json": null,
+        "dtype": "bf16",
+        "seqlen": 512,
+        "num_seqs": 2,
+        "prompts_file": null,
+        "out": "/home/bai-project/jiaqizhang/step1_out/step1_llama3_8b_eb060.json",
+        "attn_implementation": "eager",
+        "gpu": 0,
+        "device_map_auto": false,
+        "max_memory_gb": "0:60",
+        "device": "cuda"
+      },
+      "q_minmax": [
+        0.0,
+        0.113587649844712,
+        0.6707352496161194,
+        0.4840854092992506,
+        0.4271258822632313,
+        1.0,
+        0.6789337784794621,
+        0.5041426325699702,
+        0.4465256986199583,
+        0.6416814206169226,
+        0.6009252621565454,
+        0.5901971842868278,
+        0.9128577095024524,
+        0.6276468421497722,
+        0.6437085255164049,
+        0.4259196809272398,
+        0.5818582056367172,
+        0.43377455730668585,
+        0.20168186793300688,
+        0.38864209021991525,
+        0.14476751331018395,
+        0.205361073645584,
+        0.21255723191802536,
+        0.31276202754302507,
+        0.21958717508803924,
+        0.05971968446269171,
+        0.08717872763183522,
+        0.33412742310325505,
+        0.2517361446338866,
+        0.15432991389704134,
+        0.24183763278046125,
+        0.14701617428321803
+      ],
+      "q_sha256": "3e29bec57d805b896e228f81ea2458efe9d5a976ac395cbf14446b1c72673986",
+      "q_sha256_round8": "33104d536d796ab0cd129e39e2c1ec9427d832c7c38229bca61391f57d9a6d65",
+      "q_component_mask": "11001",
+      "q_definition": "MinMax(raw d1+d2+d5)",
+      "component_semantics": {
+        "d1": "Z_rel_mse",
+        "d2": "score_rel_mse_causal",
+        "d5": "max(0,-entropy_diff_A)"
+      },
+      "scalar_original": 0.06,
+      "envelope_scalar": 0.064,
+      "target_b_live_bytes": 196870144,
+      "original_full_b_live_bytes": 199753728,
+      "epsilon_envelope": [
+        0.06988735958669286,
+        0.08008655684731655,
+        0.050420334557147,
+        0.05756380920895649,
+        0.060165089207835296,
+        0.04136489517229386,
+        0.05014698829117508,
+        0.056700563660587046,
+        0.059253120270180676,
+        0.051413479726971544,
+        0.05287445470968459,
+        0.05327292967065181,
+        0.04342917772963121,
+        0.05190737179176896,
+        0.05134291942698442,
+        0.060222719572949134,
+        0.05358683899735377,
+        0.0598493953903962,
+        0.07327007473554066,
+        0.062059874272013794,
+        0.07753356048044072,
+        0.07301054154106432,
+        0.0725081989156101,
+        0.06616870091090667,
+        0.07202408970350915,
+        0.08491728893807558,
+        0.08238419067501493,
+        0.06495776473093337,
+        0.06989012472388097,
+        0.07678289271354913,
+        0.07053356492996952,
+        0.07735571911856089
+      ],
+      "epsilon_envelope_sha256": "f73d1624310aa34825013f34995865bf85c569ad3eccc79f8def593ad7de5ef1",
+      "schedule_parameters": {
+        "lambda": 1.2,
+        "rho": 0.75,
+        "normalization": "mean-normalize epsilon_raw then geometric layer-0 blend; canonical builder freezes L0 to scalar",
+        "layer0_effective_envelope": 0.064
+      },
+      "epsilon_input_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/medium_epsilon_envelope.json",
+      "epsilon_input_sha256": "06f4ce7a7dda5a38b04e6b6ef1f32757af4d96dd85516441a9edf652eb880e3f"
+    },
+    "AGGRESSIVE": {
+      "tier": "AGGRESSIVE",
+      "profile_path": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb090.json",
+      "profile_sha256": "864cf9832892f8bcdcb2521604b7827bc87b9cdf0b29284fd3283e3900d180b9",
+      "profile_args": {
+        "base": "/diskD/jiaqizhang/Llama-3",
+        "cmp": "/diskE/jiaqizhang/llama3_8b_eigen_kv_eb090/final_model",
+        "tok": "/diskD/jiaqizhang/Llama-3",
+        "low_json": null,
+        "dtype": "bf16",
+        "seqlen": 512,
+        "num_seqs": 2,
+        "prompts_file": null,
+        "out": "/home/bai-project/jiaqizhang/step1_out/step1_llama3_8b_eb090.json",
+        "attn_implementation": "eager",
+        "gpu": 0,
+        "device_map_auto": false,
+        "max_memory_gb": "0:60",
+        "device": "cuda"
+      },
+      "q_minmax": [
+        0.0,
+        0.09934810279251452,
+        0.6075081732633469,
+        0.9752721858370398,
+        0.6389609243633423,
+        1.0,
+        0.5575008184054433,
+        0.4173532356240429,
+        0.5871998989680215,
+        0.5082743546664508,
+        0.4620070721516933,
+        0.5324250159682928,
+        0.8202056077201794,
+        0.8815260951208976,
+        0.4733705801008594,
+        0.24573867042437833,
+        0.30217099318441876,
+        0.3407567439816482,
+        0.2528180605614109,
+        0.42296027373297534,
+        0.18831693606872618,
+        0.22625297735647618,
+        0.427156585045688,
+        0.45623743279914747,
+        0.4900439620876926,
+        0.7486356121467445,
+        0.22897609871430127,
+        0.25487923192746303,
+        0.3008267178372512,
+        0.8472102890032591,
+        0.3196578779361667,
+        0.2308918258619768
+      ],
+      "q_sha256": "2d1480ecceecdd995a0dae34db236078ce503d67fcdff3072fc03d43f23434f5",
+      "q_sha256_round8": "f9735666901647a20299ca63bcda3aa2d237d109e7157ca699087b58265ee352",
+      "q_component_mask": "11001",
+      "q_definition": "MinMax(raw d1+d2+d5)",
+      "component_semantics": {
+        "d1": "Z_rel_mse",
+        "d2": "score_rel_mse_causal",
+        "d5": "max(0,-entropy_diff_A)"
+      },
+      "scalar_original": 0.09,
+      "envelope_scalar": 0.093,
+      "target_b_live_bytes": 157990912,
+      "original_full_b_live_bytes": 159416320,
+      "epsilon_envelope": [
+        0.1029536267779532,
+        0.12479672157117365,
+        0.08078305973689666,
+        0.06435653560992764,
+        0.07905728416063673,
+        0.06348850118116352,
+        0.08368760959262161,
+        0.09306535177381169,
+        0.08193795319397879,
+        0.08675828749336932,
+        0.0898571410309838,
+        0.08522414346455807,
+        0.07039180185538366,
+        0.06787470947616879,
+        0.08907571508904157,
+        0.10786637508291297,
+        0.10250562924383548,
+        0.09913684456390609,
+        0.10716331641524308,
+        0.09264998631220155,
+        0.11392899212655477,
+        0.10985002762353942,
+        0.09234154418980477,
+        0.09025916883016731,
+        0.08795343996117837,
+        0.07357640352635203,
+        0.10956843833575278,
+        0.10696033956463728,
+        0.10262712513870162,
+        0.06926067491004241,
+        0.10095097374648895,
+        0.1093712026004062
+      ],
+      "epsilon_envelope_sha256": "733f17592cbb9e321f8591fb8feff9bf97dc7f17a35cbb094b5203eadf788649",
+      "schedule_parameters": {
+        "lambda": 1.2,
+        "rho": 0.75,
+        "normalization": "mean-normalize epsilon_raw then geometric layer-0 blend; canonical builder freezes L0 to scalar",
+        "layer0_effective_envelope": 0.093
+      },
+      "epsilon_input_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/aggressive_epsilon_envelope.json",
+      "epsilon_input_sha256": "87d3bc37d72eb5737d7f296c95d87afee34de8757b5919c2cd9666dd63003adc"
+    }
+  },
+  "created_local": "2026-10-02"
+}

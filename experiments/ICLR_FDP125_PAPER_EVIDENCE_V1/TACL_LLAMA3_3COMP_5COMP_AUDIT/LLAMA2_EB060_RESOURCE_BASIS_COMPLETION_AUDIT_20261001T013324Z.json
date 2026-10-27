@@ -1,0 +1,65 @@
+{
+  "artifact_id": "LLAMA2_EB060_UNIFORM_RESOURCE_BASIS_COMPLETION_AUDIT",
+  "artifacts": {
+    "basis_bytes": 1935439339,
+    "basis_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_7b_uniform_pass1_e060_eb0p06.pt",
+    "basis_sha256": "ed8bcc824ddd9ad77b0e734fb96c9e5fc6a5af964eb0aefda45a5a1de2decc5a",
+    "historical_launch_record_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA2_PASS1_UNIFORM_E060_BASIS_LAUNCH.json",
+    "historical_launch_record_sha256": "194bff7443d1d83b753f18a36f5f57986e32cdc733404d504b9d94ab903f281a",
+    "report_bytes": 66967,
+    "report_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_7b_uniform_pass1_e060_report.json",
+    "report_sha256": "1282e67f0d7841cbf824193e749b0f530c29faf5f67d7cea7d161fe0058e51f6"
+  },
+  "builder": {
+    "output_mode": {
+      "freeze_layer0_eb": false,
+      "layer0_eb": null,
+      "per_layer_eb": false,
+      "per_layer_eb_json": null
+    },
+    "warning": "per_layer_eb=false describes Uniform pass-1; this report is not the final FDP q schedule.",
+    "wrapper_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline_fdp125_cpu_stage_v1.py",
+    "wrapper_sha256": "9c2d11dd46be745fde2e8d68c6ba70a8cb56827cf9ea037b3b8d57155a0e5be9"
+  },
+  "checkpoint": {
+    "content_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa5856660c691f6626d25c2cf25197",
+    "repo_id": "meta-llama/Llama-2-7b-hf",
+    "tokenizer_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf"
+  },
+  "classification": "RESOURCE_BASIS_COMPLETE_LOCK_AUDIT_PENDING",
+  "launch_authorized_quality": false,
+  "next_gates": [
+    "canonical materialization audit for Uniform EB=0.060",
+    "2x512 bf16 eager Dense-vs-Uniform profile",
+    "freeze d1+d2+d5 q and TRUE_TWO_PASS_FDP_EB schedule for EB=0.060",
+    "actual-resource lock before any formal quality"
+  ],
+  "observed_at_utc": "2026-10-01T01:33:22.678306+00:00",
+  "protocol": {
+    "attn_implementation": "eager",
+    "avg_dim": 32,
+    "dtype": "bf16",
+    "error_budget": 0.06,
+    "low_vram_cpu_staging": true,
+    "min_rank": 64,
+    "nsamples": 512,
+    "pass1": "Uniform EigenAttention",
+    "seed": 2,
+    "seqlen": 2048,
+    "threshold_floor": 0.3,
+    "threshold_init": 1.0,
+    "threshold_step": 0.02
+  },
+  "validation": {
+    "actual_materialized_B_live": null,
+    "all_layer_errors_le_0p06": true,
+    "all_rank_pairs_legal_multiple_of_32": true,
+    "layer_count": 32,
+    "max_layer_error": 0.0599897985222529,
+    "min_layer_error": 0.0047698849737224085,
+    "profile_and_q": "NOT_RUN",
+    "quality_jobs_started": false,
+    "rank_sum": 191552,
+    "resource_lock": "PENDING"
+  }
+}

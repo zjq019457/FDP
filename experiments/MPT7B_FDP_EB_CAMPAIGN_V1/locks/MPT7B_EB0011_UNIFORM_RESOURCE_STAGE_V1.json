@@ -1,0 +1,22 @@
+{
+  "avg_dim_features": 32,
+  "failure": null,
+  "gpu_free_at_start_bytes": 42956750848,
+  "gpu_physical_index": 2,
+  "gpu_total_bytes": 85094825984,
+  "gpu_visible_index": 0,
+  "layers_done": 0,
+  "layers_total": 32,
+  "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+  "model_content_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "model_dir": "/diskF/jiaqizhang/models/新建文件夹",
+  "nsamples": 512,
+  "per_process_memory_fraction": 0.4,
+  "quality_scoring": false,
+  "schema": "MPT7B_UNIFORM_STRICT_RESOURCE_STAGE_V1",
+  "seed": 2,
+  "seqlen": 2048,
+  "status": "RUNNING_QUALITY_BLIND_RESOURCE_ONLY",
+  "tier_epsilon": 0.011,
+  "token_budget": 1500000
+}

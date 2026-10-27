@@ -1,0 +1,130 @@
+---
+--:
+  PhD:
+    Albert Yu:
+      URL: https://scholar.google.com/citations?user=ZzURcb4AAAAJ&hl=en
+      ADV: Raymond Mooney and Roberto Martín-Martín
+      UNI: UT Austin
+    Huihan Liu:
+      URL: https://huihanl.github.io/
+      ADV: Yuke Zhu
+      UNI: UT Austin
+    Mark Lee:
+      URL: https://markmlee.github.io/
+      ADV: Oliver Kroemer
+      UNI: CMU
+    Seungchan Kim:
+      URL: https://seungchan-kim.github.io/
+      ADV:  Sebastian Scherer
+      UNI: CMU
+    Brendon Boldt:
+      URL: https://brendonjboldt.xyz/
+      ADV:  David Mortensen
+      UNI: CMU
+  MSR:
+    Haochen Zhang:
+      ADV: Wenshan Wang and Ji Zhang
+      URL: https://haochenz11.github.io/
+      UNI: CMU
+2025:
+  PhD:
+    Liangke Gui:
+      URL: https://scholar.google.com/citations?user=oM6Pj3MAAAAJ&hl=en
+      ADV: Alex Hauptmann
+      UNI: CMU
+    Gabe Sarch:
+      URL: https://gabesarch.me/
+      ADV:  Katerina Fragkiadaki and Mike Tarr
+      UNI: CMU
+    Nikolaos Gkanatsios:
+      URL: https://nickgkan.github.io/
+      ADV:  Katerina Fragkiadaki
+      UNI: CMU
+2024:
+  PhD:
+    Xiaoyu Zhu:
+      URL: https://zgzxy001.github.io/
+      ADV:  Alex Hauptmann
+      UNI: CMU
+    Yijun Qian:
+      URL: https://scholar.google.com/citations?user=toY-g1oAAAAJ
+      ADV: Alex Hauptmann
+      UNI: CMU
+    Jielin Qiu:
+      URL: https://www.cs.cmu.edu/~jielinq/
+      ADV: Lei Li \& Christos Faloutsos
+      UNI: CMU
+    Nikita Srivatsan:
+      URL: https://www.cs.cmu.edu/~asrivats/
+      ADV: Taylor Berg-Kirkpatrick
+      UNI: CMU
+    Lijun Yu:
+      URL: https://me.lj-y.com/
+      ADV: Alex Hauptmann
+      UNI: CMU
+2023:
+  PhD:
+    Kaixin Ma:
+      URL: https://scholar.google.com/citations?user=gDIMQp4AAAAJ&hl=en
+      ADV:  Eric Nyberg
+      UNI: CMU
+    Nicholas Botzer:
+      URL: https://scholar.google.com/citations?user=5rS0yCoAAAAJ
+      ADV:  Tim Weninger
+      UNI: Notre Dame
+    Naoki Otani:
+      URL: http://naoki.ninja/
+      ADV:  Ed Hovy
+      UNI: CMU
+    Dylan Ebert:
+      URL: https://dylanebert.com/
+      ADV:  Ellie Pavlick
+      UNI: Brown
+  MSR:
+    Mateo Guaman Castro:
+      URL: https://www.mateoguaman.com/
+      ADV:  Sebastian Scherer
+      UNI: CMU
+2022:
+  PhD:
+    Shikib Mehri:
+      URL: http://shikib.com/
+      ADV:  Maxine Eskenazi 
+      UNI: CMU
+    Shruti Palaskar:
+      URL: https://shrutijpalaskar.github.io/
+      ADV:  Alan Black and Florian Metze
+      UNI: CMU
+    Evangelia Spiliopoulou:
+      URL: https://sites.google.com/site/homepageevangeliaspiliopoulou/
+      ADV:  Ed Hovy
+      UNI: CMU
+    Dheeraj Rajagopal:
+      URL: https://dheerajrajagopal.github.io/
+      ADV:  Ed Hovy
+      UNI: CMU
+    Volkan Cirik:
+      URL: https://www.cs.cmu.edu/~vcirik
+      ADV:  Louis-Philippe Morency and Taylor Berg-Kirkpatrick
+      UNI: CMU
+  MLT:
+    Aishwarya Jadhav:
+      ADV:  Katia Sycara
+      UNI: CMU
+2021:
+  PhD:
+    Pengcheng Yin:
+      URL: http://pcyin.me/
+      ADV:  Graham Neubig
+      UNI: CMU
+  MLT:
+    Jing Wen:
+      URL: https://wenj.github.io/
+      ADV:  Katerina Fragkiadaki
+      UNI: CMU
+2020:
+  PhD:
+    Zihang Dai:
+      URL: https://zihangdai.github.io/
+      ADV:  Yiming Yang
+      UNI: CMU

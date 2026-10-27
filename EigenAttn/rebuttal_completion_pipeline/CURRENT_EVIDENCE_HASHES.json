@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-07-29T19:56:45.539322-07:00",
+  "inventory_sha256": "905f94bb8150f380edec690e45fba974fe3d2ced2f62ce6b18323f446b644227",
+  "files": {
+    "LEGACY_PROTOCOL_LOCK.json": "46045088fa3fca40321c6d59d0367e9f8921c0ba97b9492791f4abed6c2091d4",
+    "FIXED_FDP_SCHEDULE_PROTOCOL.json": "bf8bc0030f95918c425b8b3721331a27d1bfd1711b48692089c000a106b7fd9e",
+    "R6_FINAL_SUMMARY.md": "f6b00279d64e39a25f7cdd1c46ebd466697ebed8ed6036ca1eef61a42d674c5e"
+  },
+  "c4_window_audit": {
+    "per_method": {
+      "dense": {
+        "window_count": 256,
+        "unique_input_hashes": 231,
+        "first_three_hashes": [
+          "032c3eb97b721d82a993d89d2220af34a24398de054d86f6e7b7a0150d29d0af",
+          "0429eaa3e9b6b044f6755fac509d8ac8471404f556d43ac9d4b3600a032a8669",
+          "05384c7d16fdfa1b8dde9bc611ce34453e952f8d8b48133dcdf6d09409467061"
+        ]
+      },
+      "uniform_eb045": {
+        "window_count": 256,
+        "unique_input_hashes": 231,
+        "first_three_hashes": [
+          "032c3eb97b721d82a993d89d2220af34a24398de054d86f6e7b7a0150d29d0af",
+          "0429eaa3e9b6b044f6755fac509d8ac8471404f556d43ac9d4b3600a032a8669",
+          "05384c7d16fdfa1b8dde9bc611ce34453e952f8d8b48133dcdf6d09409467061"
+        ]
+      },
+      "FGeb045": {
+        "window_count": 256,
+        "unique_input_hashes": 231,
+        "first_three_hashes": [
+          "032c3eb97b721d82a993d89d2220af34a24398de054d86f6e7b7a0150d29d0af",
+          "0429eaa3e9b6b044f6755fac509d8ac8471404f556d43ac9d4b3600a032a8669",
+          "05384c7d16fdfa1b8dde9bc611ce34453e952f8d8b48133dcdf6d09409467061"
+        ]
+      }
+    },
+    "all_methods_same_windows": true
+  },
+  "long_context": {
+    "hits": [
+      {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench",
+        "type": "dir",
+        "sha256": ""
+      },
+      {
+        "path": "/diskF/jiaqizhang/combine/data/LongBench",
+        "type": "dir",
+        "sha256": ""
+      },
+      {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/slim/longbench_eval.py",
+        "type": "file",
+        "sha256": "a71ef393206539961e976bf83f90349008f01208e16944f2a9c935ea4108b243"
+      },
+      {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/slim/needle_in_haystack.py",
+        "type": "file",
+        "sha256": "d2b33c228bb9496ea14538d4627bfb683426b0da42d567d81553238c870fe354"
+      },
+      {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench",
+        "jsonl_count": 38
+      }
+    ],
+    "blocked": false,
+    "prior_block_note": "legacy BLOCKED doc was wrong; LongBench data exists locally"
+  },
+  "qwen": {
+    "local_weights": [],
+    "bundle_exists": true,
+    "blocked": true
+  }
+}

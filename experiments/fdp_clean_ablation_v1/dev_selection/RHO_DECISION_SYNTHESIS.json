@@ -1,0 +1,52 @@
+[
+  {
+    "rho": 1.0,
+    "light_J": 2.1357470713555813,
+    "medium_J": 2.2700801799073815,
+    "aggressive_J": 2.6264015743508935,
+    "ultra_J": 5.129243440926075,
+    "J_STRONG": 3.3419083983947835,
+    "delta_J_STRONG": 0.0,
+    "status": "HISTORICAL_BASELINE"
+  },
+  {
+    "rho": 0.75,
+    "light_J": 2.1357470713555813,
+    "medium_J": 2.2700801799073815,
+    "aggressive_J": 2.6195809356868267,
+    "ultra_J": 5.129243440926075,
+    "J_STRONG": 3.3396348521734276,
+    "delta_J_STRONG": -0.0022735462213558932,
+    "status": "NEUTRAL_OR_TIE"
+  },
+  {
+    "rho": 0.5,
+    "light_J": 2.1357470713555813,
+    "medium_J": 2.2700801799073815,
+    "aggressive_J": 2.6195809356868267,
+    "ultra_J": 5.172421958297491,
+    "J_STRONG": 3.354027691297233,
+    "delta_J_STRONG": 0.012119292902449619,
+    "status": "STRICTLY_WORSE"
+  },
+  {
+    "rho": 0.25,
+    "light_J": 2.1666180854663253,
+    "medium_J": 2.2700801799073815,
+    "aggressive_J": 2.6195809356868267,
+    "ultra_J": 5.172421958297491,
+    "J_STRONG": 3.354027691297233,
+    "delta_J_STRONG": 0.012119292902449619,
+    "status": "STRICTLY_WORSE"
+  },
+  {
+    "rho": 0.0,
+    "light_J": 2.1666180854663253,
+    "medium_J": 2.2700801799073815,
+    "aggressive_J": 2.6195809356868267,
+    "ultra_J": 5.172421958297491,
+    "J_STRONG": 3.354027691297233,
+    "delta_J_STRONG": 0.012119292902449619,
+    "status": "STRICTLY_WORSE"
+  }
+]

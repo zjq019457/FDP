@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-09-10T05:36:00Z",
+  "governance": "Section F: Development Data Independence Audit",
+  "audit_status": "PASSED_STRICTLY_DISJOINT",
+  "streams": {
+    "DEV_WIKI": {
+      "file": "/diskF/jiaqizhang/fdp_clean_ablation_v1/dev_selection/dev_wiki_tokens.pt",
+      "source": "/home/bai-project/jiaqizhang/wikitext2/validation-00000-of-00001.parquet",
+      "split": "validation",
+      "n_windows": 64,
+      "token_sha256": "d2d90f4440d29df8cfaa5abf06f4f2b782e4641b72b3ed571fbd90cbf987c961"
+    },
+    "FORMAL_WIKI": {
+      "source_file": "/home/bai-project/jiaqizhang/wikitext2/test-00000-of-00001.parquet",
+      "split": "test",
+      "disjoint_from_dev": true,
+      "evidence": "DEV_WIKI uses validation-00000-of-00001.parquet; FORMAL_WIKI uses test-00000-of-00001.parquet; splits are mutually exclusive in HuggingFace/Wikitext-2"
+    },
+    "PROFILE_CALIBRATION_WIKI": {
+      "source_file": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/HF_cache/dataloader_Llama_wikitext2_64.cache",
+      "split": "train",
+      "disjoint_from_dev": true,
+      "evidence": "Calibration cache was generated from wikitext2 train split (64 samples); DEV_WIKI is from validation split"
+    },
+    "DEV_C4": {
+      "file": "/diskF/jiaqizhang/fdp_clean_ablation_v1/dev_selection/dev_c4_tokens.pt",
+      "source": "/diskF/jiaqizhang/fdp_generalized_adapter_v1/v2_execution/snapkv_n256/c4_authoritative_long_candidates.jsonl",
+      "n_windows": 64,
+      "token_sha256": "71a19b85ce7155fab72e3092101195b22c1faed3076b7eb26ded1af49962aef3"
+    },
+    "FORMAL_C4": {
+      "source_file": "/diskD/jiaqizhang/llama3_8b_eb045_eval_minimal-20260502T170035Z-3-001/llama3_8b_eb045_eval_minimal/data/c4_ppl_selected_texts.jsonl",
+      "n_windows": 256,
+      "disjoint_from_dev": true,
+      "evidence": "Phase 1 verified 0 overlapping text SHAs and 0 overlapping token SHAs between the 64 DEV candidates and the 256 formal test texts"
+    },
+    "PROFILE_CALIBRATION_C4": {
+      "used_in_profiling": false,
+      "evidence": "Step 1 diagnostic profiling does not consume C4; it uses 2 generic sequences from step1_diagnose.DEFAULT_PROMPTS"
+    }
+  },
+  "invariants": {
+    "DEV_WIKI_intersect_FORMAL_WIKI_empty": true,
+    "DEV_C4_intersect_FORMAL_C4_empty": true,
+    "DEV_data_reuses_profiling_calibration_samples": false
+  }
+}

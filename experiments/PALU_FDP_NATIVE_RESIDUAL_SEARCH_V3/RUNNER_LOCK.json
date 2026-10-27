@@ -1,0 +1,13 @@
+{
+  "foreign_jobs_interrupted": 0,
+  "frozen_utc": "2026-09-23T07:40:07Z",
+  "last_addendum_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RUNNER_LOCK_ADDENDUM_003.json",
+  "last_addendum_sha256": "33575b2d996184170b5d37fa194252b8a26dfbb4d3c95b3d706303451e3ed490",
+  "manifest_sha256": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93",
+  "method_card_sha256": "dacb622d47629fc4c55215e485f50c30b9064aa3c30df2b469c950d5c4a3b07f",
+  "runner_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py",
+  "runner_sha256": "1632bab4ccac3442246f2e593068fd6393caa04a9b55834617d124b44c47fdf3",
+  "split_binding_sha256": "196adc50a6adf58af13d07d27d9fe1f1da7c1ffba9067f0ca19508138cc69505",
+  "status": "V3_RUNNER_FROZEN_PRE_CALIBRATION",
+  "updated_utc": "2026-09-23T10:10:36Z"
+}

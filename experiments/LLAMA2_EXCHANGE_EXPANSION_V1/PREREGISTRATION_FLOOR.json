@@ -1,0 +1,13 @@
+{
+ "experiment": "LLAMA2_EXCHANGE_EXPANSION_V1 / 45% rank-floor arm",
+ "written_before_any_floor_quality": true,
+ "requested_by_user": "2026-10-11 ~22:30: run the Llama-2 exchange set again with the 45% floor, autonomously",
+ "why": "the released EigenAttention code applies min_thresh=0.45 in its Llama branch (Llama-2 and Llama-3; not OPT/MPT); for Llama-2-7B (MHA, 4096 per path) the floor is 1843.2 ranks",
+ "operating_points": {"f060": "EB 0.06 with floor, B 817,496,064 (0.761x)", "f068": "EB 0.068 with floor, B 799,670,272 (0.745x)", "f090": "EB 0.09 with floor, B 771,883,008 (0.719x)"},
+ "uniform_construction": "exact replay of the historical builder traces with the upstream Llama loop condition (continue while err<eb and both ranks > 0.45*4096 for the candidate just evaluated; keep the last passing candidate); gate: the same replay without the floor reproduces all three historical Uniform schedules exactly (PASS)",
+ "arms": "identical to PREREGISTRATION.json (uniform, functional measured-NLL exchange with the frozen 61 tuning windows, FDP-guided open-loop exchange from the frozen d1/d2/d5 profile of the floored Uniform, unrestricted random) with one change: every path must stay above the floor (minimum legal rank 1856 instead of 64) in probes, donors, FDP-guided and random moves",
+ "seeds": "10 random seeds per floored operating point",
+ "K": "accepted count of the functional exchange at the same floored operating point",
+ "code_change": "l2x_lib.rmin(op) (64 for e-points, 1856 for f-points); l2x_exchange.py and l2x_plan.py use it; behaviour at e-points unchanged",
+ "evaluation": "as PREREGISTRATION.json; all results reported regardless of sign"
+}

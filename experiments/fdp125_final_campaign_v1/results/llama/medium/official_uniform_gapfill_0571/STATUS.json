@@ -1,0 +1,7 @@
+{
+  "status": "RUNNING",
+  "tier": "medium",
+  "gpu": 2,
+  "path": "official_eigenattention_uniform",
+  "at": "2026-09-17T01:08:43.324614-07:00"
+}

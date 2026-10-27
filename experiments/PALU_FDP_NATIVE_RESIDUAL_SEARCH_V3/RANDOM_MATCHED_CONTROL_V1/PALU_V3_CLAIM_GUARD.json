@@ -1,0 +1,56 @@
+{
+  "PALU_V3_FORMAL_GO": true,
+  "PALU_V3_FUNCTIONAL_SIGNAL_SUPPORTED": true,
+  "allowed_interpretation": "Functional valuation contributes beyond generic budget-neutral non-uniform reallocation, conditional on this matched-control design.",
+  "foreign_jobs_interrupted": 0,
+  "limitations": [
+    "Only three random allocations were evaluated.",
+    "The random controls exactly match V3 exchange count, rank moved, factor-byte movement and global resource, but they changed 52 distinct native units per seed whereas V3 changed 33; spatial support was not matched."
+  ],
+  "no_new_search_after_closure": true,
+  "no_v3_retuning": true,
+  "per_seed": [
+    {
+      "ci95_random_minus_v1": [
+        -0.00035893773458090173,
+        9.933149958231364e-05
+      ],
+      "ci95_v3_minus_random": [
+        -0.010205268859863281,
+        -0.008924633623605752
+      ],
+      "delta_J_random_minus_v1": -0.0001308257321277297,
+      "delta_J_v3_minus_random": -0.00953019383441971,
+      "seed": 0
+    },
+    {
+      "ci95_random_minus_v1": [
+        0.00036922133112528234,
+        0.0009799061051334243
+      ],
+      "ci95_v3_minus_random": [
+        -0.011026462876653096,
+        -0.009643761508436089
+      ],
+      "delta_J_random_minus_v1": 0.0006297927304922816,
+      "delta_J_v3_minus_random": -0.010290812297039723,
+      "seed": 1
+    },
+    {
+      "ci95_random_minus_v1": [
+        0.001521845897996282,
+        0.0020503997802734375
+      ],
+      "ci95_v3_minus_random": [
+        -0.012175054435270378,
+        -0.01075152891227998
+      ],
+      "delta_J_random_minus_v1": 0.0017728805541992188,
+      "delta_J_v3_minus_random": -0.01143390012074666,
+      "seed": 2
+    }
+  ],
+  "rule": "All three seed-level V3−Random paired point estimates <0 and paired 95% CI upper bounds <0.",
+  "schema": "PALU_V3_CLAIM_GUARD_V1",
+  "status": "FROZEN_AFTER_RANDOM_MATCHED_FORMAL"
+}

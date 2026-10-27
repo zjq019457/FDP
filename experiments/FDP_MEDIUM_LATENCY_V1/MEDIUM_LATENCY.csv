@@ -1,0 +1,11 @@
+ctx,metric,dense,uniform,fdp,fdp_vs_uniform_pct
+2048,attn_ms_per_layer_mean,0.28763,0.41603,0.42716,2.676
+2048,decode_ms_per_token_mean,20.14685,25.80822,26.38402,2.231
+2048,decode_tokens_per_s,49.63556,38.74735,37.90172,-2.182
+2048,prefill_ms,281.55289,287.99796,288.94516,0.329
+2048,peak_alloc_GiB_decode,16.69889,16.40655,16.40768,0.007
+8064,attn_ms_per_layer_mean,0.59344,0.86183,0.86453,0.313
+8064,decode_ms_per_token_mean,29.91842,38.64265,38.73827,0.247
+8064,decode_tokens_per_s,33.42423,25.87814,25.81426,-0.247
+8064,prefill_ms,2525.03540,2698.14062,2723.72314,0.948
+8064,peak_alloc_GiB_decode,35.82648,35.34038,35.33997,-0.001

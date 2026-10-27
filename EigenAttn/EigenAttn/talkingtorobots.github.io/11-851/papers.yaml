@@ -1,0 +1,530 @@
+---
+- URL: https://home.csulb.edu/~cwallis/382/readings/482/searle.minds.brains.programs.bbs.1980.pdf
+  TITLE: Minds, brains, and programs
+  YEAR: 1980
+  NOTE: Philosophy
+- URL: https://www.sciencedirect.com/science/article/pii/0167278990900876
+  TITLE: The symbol grounding problem
+  YEAR: 1990
+  NOTE: Philosophy
+- URL: https://www.taylorfrancis.com/books/mono/10.4324/9780203781036/scripts-plans-goals-understanding-roger-schank-robert-abelson
+  TITLE: Scripts, Plans, Goals, and Understanding
+  YEAR: 1977
+  NOTE: Origins
+- URL: https://aclanthology.org/2020.acl-main.463/
+  TITLE: "Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data"
+  YEAR: 2020
+  NOTE: Philosophy
+- URL: https://arxiv.org/abs/2004.10151
+  TITLE:  Experience Grounds Language
+  YEAR: 2020
+  NOTE: Philosophy
+- URL: https://www.annualreviews.org/doi/abs/10.1146/annurev-control-101119-071628
+  TITLE: Robots That Use Language
+  YEAR: 2020
+  NOTE: Philosophy
+- URL: https://www.sciencedirect.com/science/article/pii/S0885230821000620
+  TITLE: "Spoken language interaction with robots: Recommendations for future research"
+  YEAR: 2022
+  NOTE: Philosophy
+- URL: https://dspace.mit.edu/handle/1721.1/7095
+  TITLE: SHRDLU
+  VENUE: MIT Report
+  YEAR: 1971 
+  NOTE: Origins
+- URL: https://dl.acm.org/doi/10.5555/1597348.1597423
+  TITLE: "Walk the talk: connecting language, knowledge, and action in route instructions"
+  VENUE: AAAI 
+  YEAR: 2006
+  NOTE: Origins
+- URL: https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00209/43198/Weakly-Supervised-Learning-of-Semantic-Parsers-for
+  TITLE: Weakly Supervised Learning of Semantic Parsers for Mapping Instructions to Actions 
+  VENUE: TACL 
+  YEAR: 2013
+  NOTE: Origins
+- URL: https://sites.google.com/view/rlbench
+  TITLE: RLBench
+  NOTE: Simulation
+- URL: https://ai2thor.allenai.org/
+  TITLE: AI2Thor
+  NOTE: Simulation
+- URL: https://ai2thor.allenai.org/manipulathor/
+  TITLE: ManipulaThor
+  NOTE: Simulation
+- URL: https://pybullet.org/wordpress/
+  TITLE: PyBullet
+  NOTE: Simulation
+- URL: https://developer.nvidia.com/isaac-gym
+  TITLE: ISAAC Gym
+  NOTE: Simulation
+- URL: https://www.nvidia.com/en-us/omniverse/
+  TITLE: Omniverse
+  NOTE: Simulation
+- URL: https://robocasa.ai/
+  TITLE: RoboCasa
+  NOTE: Simulation
+- URL: https://www.microsoft.com/en-us/research/project/textworld/
+  TITLE: TextWorld  
+  NOTE: Simulation
+- URL: http://virtual-home.org/
+  TITLE: VirtualHome
+  NOTE: Simulation
+- URL: https://procthor.allenai.org/
+  TITLE: ProcThor
+  NOTE: Simulation
+- URL: https://ai2thor.allenai.org/robothor/
+  TITLE: RoboThor  
+  NOTE: Simulation
+- URL: https://www.microsoft.com/en-us/ai/autonomous-systems-project-airsim
+  TITLE: AirSim
+  NOTE: Simulation
+- URL: https://svl.stanford.edu/igibson/
+  TITLE: iGibson  
+  NOTE: Simulation
+- URL: https://arxiv.org/abs/2106.14405
+  TITLE: Habitat
+  NOTE: Simulation
+- URL: https://www.threedworld.org/
+  TITLE: ThreeDWorld
+  NOTE: Simulation
+- URL: https://openreview.net/forum?id=_8DoIe8G3t
+  TITLE: Behavior-1K
+  NOTE: Simulation
+- URL: https://ojs.aaai.org/index.php/AAAI/article/view/7974
+  TITLE: Learning to Interpret Natural Language Navigation Instructions from Observations 
+  VENUE: AAAI
+  YEAR: 2011
+  NOTE: Discrete
+- URL: https://arxiv.org/abs/1711.07280
+  TITLE: "Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments"
+  VENUE: CVPR
+  YEAR: 2018
+  NOTE: Discrete
+- URL: https://arxiv.org/abs/2010.07954
+  TITLE: "Room-Across-Room: Multilingual Vision-and-Language Navigation with Dense Spatiotemporal Grounding"
+  VENUE: EMNLP
+  YEAR: 2020
+  NOTE: Discrete
+- URL: https://aclanthology.org/P10-1083/
+  TITLE: Learning to Follow Navigational Directions
+  VENUE: ACL
+  YEAR: 2010
+  NOTE: Continuous
+- URL: https://jacobkrantz.github.io/vlnce/
+  TITLE: Vision and Language Navigation in Continuous Environments
+  VENUE: ECCV
+  YEAR: 2020
+  NOTE: Continuous
+- URL: https://arxiv.org/abs/1811.04179
+  TITLE: Mapping Navigation Instructions to Continuous Control Actions with Position-Visitation Prediction
+  VENUE: CoRL
+  YEAR: 2018
+  NOTE: Continuous
+- URL: https://mahis.life/clip-fields/
+  TITLE: "CLIP-Fields: Weakly Supervised Semantic Fields for Robotic Memory"
+  VENUE: RSS
+  NOTE: Continuous
+- URL: https://dspace.mit.edu/handle/1721.1/87051
+  TITLE: Learning Semantic Maps from Natural Language Descriptions
+  VENUE: RSS
+  YEAR: 2013 
+  NOTE: Mapping
+- URL: https://openreview.net/forum?id=r1GAsjC5Fm
+  TITLE: Self-Monitoring Navigation Agent via Auxiliary Progress Estimation
+  VENUE: ICLR
+  YEAR: 2019
+  NOTE: Replanning
+- URL: https://arxiv.org/abs/1903.02547
+  TITLE: "Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language Navigation"
+  VENUE: CVPR
+  YEAR: 2019
+  NOTE: Replanning
+- URL: https://wijmans.xyz/publication/eom/
+  TITLE: Emergence of Maps in the Memories of Blind Navigation Agents
+  VENUE: ICLR
+  YEAR: 2023
+  NOTE: Mapping
+- URL: https://jacobkrantz.github.io/ivln
+  TITLE: Iterative Vision-and-Language Navigation
+  VENUE: CVPR
+  YEAR: 2023
+  NOTE: Replanning
+- URL: https://arxiv.org/abs/2011.03807
+  TITLE: Sim-to-Real Transfer for Vision-and-Language Navigation
+  VENUE: CoRL
+  YEAR: 2020
+  NOTE: Sim2Real
+- URL: https://arxiv.org/abs/2104.10674
+  TITLE: Hierarchical Cross-Modal Agent for Robotics Vision-and-Language Navigation
+  VENUE: ICRA
+  YEAR: 2021
+  NOTE: Sim2Real
+- URL: https://arxiv.org/abs/1910.09664
+  TITLE: Learning to Map Natural Language Instructions to Physical Quadcopter Control using Simulated Flight
+  VENUE: CoRL
+  YEAR: 2019
+  NOTE: Continuous
+- URL: https://aclanthology.org/N16-1089/
+  TITLE: Natural Language Communication with Robots
+  VENUE: NAACL
+  YEAR: 2016
+  NOTE: Real values
+- URL: https://askforalfred.com/
+  TITLE: "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks"
+  VENUE: CVPR
+  YEAR: 2020
+  NOTE: State Tracking and Task Planning
+- URL: https://arxiv.org/abs/2107.05612
+  TITLE: A Persistent Spatial Semantic Representation for High-level Natural Language Instruction Execution
+  VENUE: CoRL
+  YEAR: 2021
+  NOTE: State Tracking and Task Planning
+- URL: https://soyeonm.github.io/FILM_webpage/
+  TITLE: "FILM: Following Instructions in Language with Modular Methods"
+  VENUE: ICLR
+  YEAR: 2022
+  NOTE: State Tracking and Task Planning
+- URL: https://wenlong.page/language-planner/
+  TITLE: "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents"
+  YEAR: 2022
+  NOTE: LM Planners
+- URL: https://progprompt.github.io/
+  TITLE: "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models"
+  YEAR: 2023 
+  NOTE: LM Planners
+- URL: https://arxiv.org/abs/2211.03267
+  TITLE: "Prompter: Utilizing Large Language Model Prompting for a Data Efficient Embodied Instruction Following"
+  YEAR: 2023
+  NOTE: LM Planners
+- URL: https://code-as-policies.github.io/
+  TITLE: "Code as Policies: Language Model Programs for Embodied Control"
+  NOTE: LM Planners
+- URL: https://say-can.github.io/
+  TITLE: "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances"
+  YEAR: 2022
+  NOTE: LM Planners
+- URL: https://vlmaps.github.io/
+  TITLE: Visual Language Maps for Robot Navigation
+  YEAR: 2023
+  NOTE: Large _____  Models 
+- URL: http://hulc2.cs.uni-freiburg.de/
+  TITLE: Grounding Language with Visual Affordances over Unstructured Data
+  YEAR: 2023 
+  NOTE: Large _____  Models 
+- URL: https://cliport.github.io/
+  TITLE: "CLIPort: What and Where Pathways for Robotic Manipulation"
+  YEAR: 2021
+  NOTE: Large _____  Models 
+- URL: https://peract.github.io/
+  TITLE: "Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation"
+  YEAR: 2022
+  NOTE: Large _____  Models 
+- URL: https://transporternets.github.io/
+  TITLE: "Transporter Networks: Rearranging the Visual World for Robotic Manipulation"
+  YEAR: 2020
+  NOTE: Manipulators & Representing Space
+- URL: http://vimalabs.github.io/
+  TITLE: "VIMA: General Robot Manipulation with Multimodal Prompts"
+  NOTE: Manipulators & Representing Space
+  VENUE: NeurIPS FMDM Workshop 
+  YEAR: 2022
+- URL: https://language-play.github.io/
+  TITLE: Language Conditioned Imitation Learning over Unstructured Data
+  YEAR: 2021
+  NOTE: Manipulators & Representing Space
+- URL: https://sites.google.com/ucsc.edu/vlmbench/home
+  TITLE: "VLMbench: A Compositional Benchmark for Vision-and-Language Manipulation"
+  VENUE: NeurIPS Datasets and Benchmarks
+  YEAR: 2022 
+  NOTE: Manipulators & Representing Space
+- URL: https://arxiv.org/abs/1907.02022
+  TITLE: "Chasing Ghosts: Instruction Following as Bayesian State Tracking"
+  VENUE: NeurIPS
+  YEAR: 2019
+  NOTE: Imagination
+- URL: https://arxiv.org/abs/1903.08309
+  TITLE: "Prospection: Interpretable Plans From Language By Predicting the Future"
+  VENUE: ICRA 
+  YEAR: 2019
+  NOTE: Imagination
+- URL: https://universal-policy.github.io/unipi/
+  TITLE: Learning Universal Policies via Text-Guided Video Generation
+  YEAR: 2023
+  NOTE: Imagination
+- URL: https://arxiv.org/abs/2301.06015
+  TITLE: Diffusion-based Generation, Optimization, and Planning in 3D Scenes
+  YEAR: 2023
+  NOTE: Imagination
+- URL: https://arxiv.org/abs/2301.04104
+  TITLE: Mastering Diverse Domains through World Models
+  YEAR: 2023
+  NOTE: Imagination
+- URL: https://www.robot-learning.uk/dall-e-bot
+  TITLE: "DALL-E-Bot: Introducing Web-Scale Diffusion Models to Robotics"
+  YEAR: 2023
+  NOTE: Imagination
+- URL: https://diffusion-rosie.github.io/
+  TITLE: Scaling Robot Learning with Semantically Imagined Experience
+  YEAR: 2023
+  NOTE: Imagination
+- URL: https://arxiv.org/abs/2002.04833
+  TITLE: "Reward-rational (implicit) choice: A unifying formalism for reward learning"
+  NOTE: Pragmatics 
+- URL: https://www.ri.cmu.edu/pub_files/2013/3/legiilitypredictabilityIEEE.pdf
+  TITLE: Legibility and Predictability of Robot Motion</a></li>
+  NOTE: Pragmatics 
+- URL: https://arxiv.org/abs/1606.02447
+  TITLE: Learning Language Games through Interaction
+  VENUE: ACL 
+  YEAR: 2016
+  NOTE: Concept Learning
+- URL: https://arxiv.org/abs/1704.06956
+  TITLE: Naturalizing a Programming Language via Interactive Learning
+  VENUE: ACL
+  YEAR: 2017
+  NOTE: Concept Learning
+- URL: https://arxiv.org/abs/2011.07384
+  TITLE: Few-shot Object Grounding and Mapping for Natural Language Robot Instruction Following
+  VENUE: CoRL
+  YEAR: 2020
+  NOTE: Concept Learning
+- URL: https://iral.cs.umbc.edu/Pubs/MatuszekAAAI2014LangPlusGesture.pdf
+  TITLE: Learning from Unscripted Deictic Gesture and Language for Human-Robot Interactions
+  VENUE: AAAI
+  YEAR: 2014 
+  NOTE: Concept Learning
+- URL: https://www.ijcai.org/Proceedings/16/Papers/491.pdf
+  TITLE: Learning Multi-Modal Grounded Linguistic Semantics by Playing “I Spy”
+  VENUE: IJCAI 
+  YEAR: 2016
+- URL: https://instructionaugmentation.github.io/
+  TITLE: Robotic Skill Acquisition via Instruction Augmentation with Vision-Language Models
+  NOTE: Concept Learning
+- URL: https://arxiv.org/abs/2204.05186
+  TITLE: Correcting Robot Plans with Natural Language Feedback</a></li>
+  NOTE: Feedback
+- URL: https://arxiv.org/abs/2210.12511
+  TITLE: "DOROTHIE: Spoken Dialogue for Handling Unexpected Situations in Interactive Autonomous Driving Agents"
+  YEAR: 2022
+  NOTE: Feedback
+- URL: https://arxiv.org/abs/2301.02555
+  TITLE: \"No, to the Right\" -- Online Language Corrections for Robotic Manipulation via Shared Autonomy
+  YEAR: 2023
+  NOTE: Feedback
+- URL: https://arxiv.org/abs/2210.06407
+  TITLE: "Interactive Language: Talking to Robots in Real Time"
+  YEAR: 2022
+  NOTE: Feedback
+- URL: https://arxiv.org/abs/1903.00122
+  TITLE: Improving Grounded Natural Language Understanding through Human-Robot Dialog
+  VENUE: ICRA
+  YEAR: 2019
+  NOTE: Feedback
+- URL: https://cs.brown.edu/people/stellex/publications/tellex14.pdf
+  TITLE: Asking for Help Using Inverse Semantics
+  VENUE: RSS
+  YEAR: 2014
+  NOTE: Feedback
+- URL: https://arxiv.org/abs/1909.01871
+  TITLE: Help, Anna! Visual Navigation with Natural Multimodal Assistance via Retrospective Curiosity-Encouraging Imitation Learning
+  VENUE: EMNLP
+  YEAR: 2019
+  NOTE: Feedback
+- URL: https://dl.acm.org/doi/abs/10.1145/3237189
+  TITLE: Miscommunication Detection and Recovery in Situated Human–Robot Dialogue
+  VENUE: ACM Transactions on Interactive Intelligent Systems
+  YEAR: 2019
+  NOTE: Feedback
+- URL: https://ronghanghu.com/speaker_follower/
+  TITLE: Speaker-Follower Models for Vision-and-Language Navigation
+  VENUE: NeurIPS
+  YEAR: 2018
+  NOTE: Feedback
+- URL: https://cvdn.dev/
+  TITLE: Cooperative Vision-and-Dialog Navigation
+  VENUE: CoRL
+  YEAR: 2019
+  NOTE: Feedback
+- URL: https://aclanthology.org/W14-4313/
+  TITLE: "Back to the Blocks World: Learning New Actions through Situated Human-Robot Dialogue"
+  VENUE: SigDial
+  YEAR: 2014
+  NOTE: Feedback
+- URL: https://teachingalfred.github.io/
+  TITLE: "TEACh: Task-driven Embodied Agents that Chat"
+  VENUE: AAAI
+  YEAR: 2022
+  NOTE: Feedback
+- URL: https://aclanthology.org/P19-1537/
+  TITLE: Collaborative Dialogue in Minecraft
+  VENUE: ACL
+  YEAR: 2019
+  NOTE: Feedback
+- URL: https://aclanthology.org/2021.emnlp-main.85/
+  TITLE: "MindCraft: Theory of Mind Modeling for Situated Dialogue in Collaborative Tasks"
+  VENUE: EMNLP
+  YEAR: 2021
+  NOTE: Feedback
+- URL: https://arxiv.org/abs/2210.12485
+  TITLE: "DANLI: Deliberative Agent for Following Natural Language Instructions"
+  VENUE: EMNLP
+  YEAR: 2022
+  NOTE: Feedback
+- URL: https://arxiv.org/abs/2210.04443
+  TITLE: "Don't Copy the Teacher: Data and Model Challenges in Embodied Dialogue"
+  VENUE: EMNLP
+  YEAR: 2022
+  NOTE: Feedback
+- TITLE: LLM Powered Autonomous Agents (blog)
+  URL: https://lilianweng.github.io/posts/2023-06-23-agent/)
+  NOTE: Planning
+- TITLE: "LaMPP: Language Models as Probabilistic Priors for Perception and Action"
+  URL: https://arxiv.org/abs/2302.02801)
+  NOTE: Planning
+- TITLE: "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency"
+  URL: https://arxiv.org/abs/2304.11477)
+  NOTE: Planning
+- TITLE: "Do Embodied Agents Dream of Pixelated Sheep?: Embodied Decision Making using Language Guided World Modelling"
+  URL: https://arxiv.org/abs/2301.12050
+  NOTE: Planning
+- TITLE: Grounding Classical Task Planners via Vision-Language Models
+  URL: https://arxiv.org/abs/2304.08587
+  NOTE: Planning
+- TITLE: Language Models as Zero-Shot Trajectory Generators
+  URL: https://www.robot-learning.uk/language-models-trajectory-generators
+  NOTE: Planning
+- TITLE: "ViNT: A Foundation Model for Visual Navigation"
+  URL: https://visualnav-transformer.github.io/
+  NOTE: Navigation
+- TITLE: "SACSoN: Scalable Autonomous Data Collection for Social Navigation"
+  URL: https://sites.google.com/view/sacson-review/home
+  NOTE: Navigation
+- TITLE: A System for Generalized 3D Multi-Object Search
+  URL: https://arxiv.org/abs/2303.03178
+  NOTE: Navigation
+- TITLE: "CoWs on Pasture: Baselines and Benchmarks for Language-Driven Zero-Shot Object Navigation"
+  URL: https://arxiv.org/abs/2203.10421
+  NOTE: Navigation
+- TITLE: Principles and Guidelines for Evaluating Social Robot Navigation Algorithms
+  URL: https://arxiv.org/abs/2306.16740
+  NOTE: Navigation
+- TITLE: "RVT: Robotic View Transformer for 3D Object Manipulation"
+  URL: https://robotic-view-transformer.github.io/
+  NOTE: Manipulation
+- TITLE: Physically Grounded Vision-Language Models for Robotic Manipulation
+  URL: https://sites.google.com/view/physically-grounded-vlms
+  NOTE: Manipulation
+- TITLE: "LATTE: LAnguage Trajectory TransformEr"
+  URL: https://arxiv.org/abs/2208.02918
+  NOTE: Manipulation
+- TITLE: "LIV: Language-Image Representations and Rewards for Robotic Control"
+  URL: https://penn-pal-lab.github.io/LIV/
+  NOTE: Manipulation
+- TITLE: Gesture-Informed Robot Assistance via Foundation Models
+  URL: https://sites.google.com/view/giraf23/home
+  NOTE: Manipulation
+- TITLE: "SPRINT: Semantic Policy Pre-training via Language Instruction Relabeling"
+  URL: https://clvrai.github.io/sprint/
+  NOTE: Manipulation
+- TITLE: Language-Driven Representation Learning for Robotics
+  URL: https://arxiv.org/abs/2302.12766
+  NOTE: Manipulation
+- TITLE: "EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought"
+  URL: https://embodiedgpt.github.io/
+  NOTE: Manipulation
+- TITLE: "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models"
+  URL: https://voxposer.github.io/
+  NOTE: Manipulation
+- TITLE: "VIMA: General Robot Manipulation with Multimodal Prompts"
+  URL: https://arxiv.org/abs/2210.03094
+  NOTE: Manipulation
+- TITLE: Using Both Demonstrations and Language Instructions to Efficiently Learn Robotic Tasks
+  URL: https://deltaco-robot.github.io/
+  NOTE: Manipulation
+- TITLE: "Grounded Decoding: Guiding Text Generation with Grounded Models for Robot Control"
+  URL: https://grounded-decoding.github.io/
+  NOTE: Mobile Manipulation
+- TITLE: Open-World Object Manipulation using Pre-Trained Vision-Language Models
+  URL: https://robot-moo.github.io/
+  NOTE: Mobile Manipulation
+- TITLE: Robotic Skill Acquisition via Instruction Augmentation with Vision-Language Models 
+  URL: https://instructionaugmentation.github.io/
+  NOTE: Mobile Manipulation
+- TITLE: "HomeRobot: Open-Vocabulary Mobile Manipulation"
+  URL: https://arxiv.org/abs/2306.11565
+  NOTE: Mobile Manipulation
+- TITLE: "LSC: Language-guided Skill Coordination for Open-Vocabulary Mobile Pick-and-Place"
+  URL: https://languageguidedskillcoordination.github.io/
+  NOTE: Mobile Manipulation
+- TITLE: Spatial-Language Attention Policies
+  URL: https://robotslap.github.io/
+  NOTE: Mobile Manipulation
+- TITLE: "TidyBot: Personalized Robot Assistance with Large Language Models"
+  URL: https://tidybot.cs.princeton.edu/
+  NOTE: Mobile Manipulation
+- TITLE: "SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Task Planning"
+  URL: https://sayplan.github.io/
+  NOTE: Mobile Manipulation
+- TITLE: Language to Reward for Robot Skill Synthesis
+  URL: https://language-to-reward.github.io/
+  NOTE: Language to Motion
+- TITLE: "Text2Motion: From Natural Language Instructions to Feasible Plans"
+  URL: https://sites.google.com/stanford.edu/text2motion
+  NOTE: Language to Motion
+- TITLE: "SayTap: Language to Quadrupedal Locomotion"
+  URL: https://saytap.github.io/
+  NOTE: Language to Motion
+- TITLE: Natural Language Can Help Bridge the Sim2Real Gap
+  URL: https://arxiv.org/abs/2405.10020)
+  NOTE: Sim2Real
+- TITLE: "ChatGPT for Robotics: Design Principles and Model Abilities"
+  URL: https://arxiv.org/abs/2306.17582)
+- TITLE: "SEAGULL: An Embodied Agent for Instruction Following through Situated Dialog"
+  URL: https://sled.eecs.umich.edu/publication/zhang-2023-simbot/
+  NOTE: Dialogue, QA, 
+- TITLE: "SQA3D: Situated Question Answering in 3D Scenes"
+  URL: https://sqa3d.github.io/
+  NOTE: Dialogue, QA, 
+- TITLE: "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners "
+  URL: https://robot-help.github.io/
+  NOTE: Dialogue, QA, 
+- TITLE: Pragmatic Instruction Following and Goal Assistance via Cooperative Language-Guided Inverse Planning
+  URL: https://arxiv.org/abs/2402.17930
+  NOTE: Dialogue, QA, 
+- TITLE: "DROC: Distilling and Retrieving Generalizable Knowledge for Robot Manipulation via Language Corrections"
+  URL: https://sites.google.com/stanford.edu/droc
+  NOTE: Dialogue, QA, 
+- TITLE: Large Language Models as General Pattern Machines
+  URL: https://general-pattern-machines.github.io/
+- TITLE: Language to Rewards for Robotic Skill Synthesis
+  URL: https://language-to-reward.github.io/
+- TITLE: Where are we in the search for an Artificial Visual Cortex for Embodied Intelligence?
+  URL: https://eai-vc.github.io/
+- TITLE: MotionGPT
+  URL: https://motion-gpt.github.io/)
+- TITLE: Modeling Dynamic Environments with Scene Graph Memory
+  URL: https://arxiv.org/abs/2305.17537
+- TITLE: Affordances from Human Videos as a Versatile Representation for Robotics
+  URL: https://robo-affordances.github.io/
+- TITLE: "RoboCat: A self-improving robotic agent"
+  URL: https://www.deepmind.com/blog/robocat-a-self-improving-robotic-agent
+- TITLE: "ImageNet-Hard: The Hardest Images Remaining from a Study of the Power of Zoom and Spatial Biases in Image Classification"
+  URL: https://zoom.taesiri.ai/
+- TITLE: "Language Is Not All You Need: Aligning Perception with Language Models"
+  URL: https://arxiv.org/abs/2302.14045
+- TITLE: "Kosmos-2: Grounding Multimodal Large Language Models to the World"
+  URL: https://arxiv.org/abs/2306.14824
+- TITLE: "Behavior Transformers: Cloning k modes with one stone"
+  URL: https://mahis.life/bet/
+- TITLE: "From Play to Policy: Conditional Behavior Generation from Uncurated Robot Data"
+  URL: https://play-to-policy.github.io/
+- TITLE: "Affordance Diffusion: Synthesizing Hand-Object Interactions"
+  URL: https://judyye.github.io/affordiffusion-www/
+- TITLE: "Robot Learning on the Job: Human-in-the-Loop Autonomy and Learning During Deployment"
+  URL: ut-austin-rpl.github.io/sirius
+- TITLE: "R3M: A Universal Visual Representation for Robot Manipulation"
+  URL: https://sites.google.com/view/robot-r3m/
+- TITLE: Keypoint Action Tokens Enable In-Context Imitation Learning in Robotics
+  URL: https://www.robot-learning.uk/keypoint-action-tokens
+- TITLE: "LangSplat: 3D Language Gaussian Splatting"
+  URL: https://arxiv.org/abs/2312.16084

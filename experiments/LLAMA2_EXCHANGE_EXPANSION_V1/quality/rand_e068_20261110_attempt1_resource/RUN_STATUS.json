@@ -1,0 +1,15 @@
+{
+ "label": "rand_e068_20261110",
+ "schedule": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/schedules/rand_e068_20261110/SCHEDULE.json",
+ "schedule_sha256": "250e8ccc148685f0a4e58025902a819f9867855a7d81b08e7ee1c37eb87d043d",
+ "rank_sha": "f5a2d57ec6664bf8647df7a86d220483a8ae4c37cb3f4101e46026d24c106877",
+ "B_live": 746323968,
+ "ratio": 0.695068359375,
+ "physical_gpu": 2,
+ "started": "2026-10-12T05:45:44.232943+00:00",
+ "script_sha256": "f475b595cd68045838085bc99300474c8e96944f910c2aeddd65dca9e244f373",
+ "status": "FAILED",
+ "error": "RuntimeError('GPU0 does not meet free-VRAM safety gate')",
+ "traceback": "Traceback (most recent call last):\n  File \"/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/code/l2x_quality.py\", line 28, in main\n    model = X.build(mod, arms, basis_meta, label, pairs)\n  File \"/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/code/l2x_lib.py\", line 84, in build\n    model, factor_calc = mod.build_model(label, basis_meta)\n  File \"/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama2_7b/medium/canonical_materialization_canary_v4_20260925T094600Z/l2_medium_canonical_materialize_canary_v4.py\", line 140, in build_model\n    if gpu_free_mib()<GPU_GATE_MIB: raise RuntimeError(\"GPU0 does not meet free-VRAM safety gate\")\nRuntimeError: GPU0 does not meet free-VRAM safety gate\n",
+ "failed": "2026-10-12T05:46:17.037886+00:00"
+}

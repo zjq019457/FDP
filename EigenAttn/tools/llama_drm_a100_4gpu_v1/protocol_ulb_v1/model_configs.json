@@ -1,0 +1,104 @@
+{
+  "common": {
+    "attention_backend": "flash_attention_2",
+    "batch_size": 1,
+    "block_size": 64,
+    "decode": {
+      "do_sample": false,
+      "num_beams": 1,
+      "samsum_additional_eos": "newline last token id",
+      "task_specific_max_new_tokens": true,
+      "temperature_effective": null,
+      "top_p_effective": null,
+      "use_cache": true
+    },
+    "dtype": "fp16",
+    "gamma": 0.9,
+    "local_query_window": 4,
+    "max_model_len": 131072,
+    "token_unit_size": 8
+  },
+  "llama31_8b_instruct": {
+    "chat_template_sha256": null,
+    "identity_gate": "Exact model/tokenizer revision and hashes must be recovered from the requested LLaMA CC artifacts before any LLaMA run.",
+    "model_family": "llama",
+    "model_fingerprint_sha256": null,
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "revision": null,
+    "schedule": {
+      "add_retained_tokens": [
+        8576,
+        4288,
+        2176
+      ],
+      "k_blocks": [
+        128,
+        64,
+        32
+      ],
+      "m_blocks": [
+        6,
+        3,
+        2
+      ],
+      "prune_layers": [
+        10,
+        20,
+        30
+      ],
+      "retained_tokens": [
+        8192,
+        4096,
+        2048
+      ]
+    },
+    "status": "BLOCKED_SOURCE_ABSENT",
+    "tokenizer_config_sha256": null,
+    "tokenizer_json_sha256": null
+  },
+  "model_specific_expected_differences": [
+    "model and tokenizer identity",
+    "chat template",
+    "prune layers",
+    "K block schedule",
+    "M block schedule",
+    "retained token schedule"
+  ],
+  "qwen25_7b_instruct": {
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "model_family": "qwen2",
+    "model_fingerprint_sha256": "251889ee76f696a1569a10de3e434d7be7315511b9ebc140d1facaa328788a24",
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "schedule": {
+      "add_retained_tokens": [
+        12928,
+        6464,
+        4288
+      ],
+      "k_blocks": [
+        192,
+        96,
+        64
+      ],
+      "m_blocks": [
+        10,
+        5,
+        3
+      ],
+      "prune_layers": [
+        9,
+        18,
+        26
+      ],
+      "retained_tokens": [
+        12288,
+        6144,
+        4096
+      ]
+    },
+    "status": "resolved",
+    "tokenizer_config_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "tokenizer_json_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+  }
+}

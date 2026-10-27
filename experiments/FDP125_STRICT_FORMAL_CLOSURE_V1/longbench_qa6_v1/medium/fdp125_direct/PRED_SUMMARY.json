@@ -1,0 +1,12 @@
+{
+  "method": "fdp125_direct",
+  "generated_at": "2026-09-21T23:18:02.730959-07:00",
+  "tasks": {
+    "narrativeqa": {
+      "n": 200,
+      "pred_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/fdp125_direct/narrativeqa.jsonl",
+      "max_gen": 128
+    }
+  },
+  "eval_executed": true
+}

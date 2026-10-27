@@ -1,0 +1,516 @@
+{
+  "accepted_transfer_count": 0,
+  "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "decisions": [
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.00012025982141494751,
+      "bootstrap_ci_low": 1.1611729860305786e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "7a1f73eed6f559f98949eb876aa4823b30a67c2aeedb5ac79a4c3ba5763ef1e8",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": 6.601214408874512e-05,
+      "donor": "model.layers.0.self_attn.k_proj::group0",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 1,
+      "ratio": 0.7,
+      "receiver": "model.layers.2.self_attn.k_proj::group0",
+      "receiver_score": 1.0,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.00011742301285266876,
+      "bootstrap_ci_low": -3.0919909477233887e-06,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "da4fc4fc5e5446bd94d498b461759a76539c0a4a99a5ba3439787e5216a63ee5",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": 5.490519106388092e-05,
+      "donor": "model.layers.0.self_attn.k_proj::group1",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 2,
+      "ratio": 0.7,
+      "receiver": "model.layers.2.self_attn.k_proj::group1",
+      "receiver_score": 1.0,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 2.9226765036582947e-05,
+      "bootstrap_ci_low": -6.917491555213928e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "13f6b1dba43c6864ce5d2a6dfc6ce16a83f6c7ad2dd61fd27717e6e15c39b779",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -1.9420869648456573e-05,
+      "donor": "model.layers.0.self_attn.k_proj::group2",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 3,
+      "ratio": 0.7,
+      "receiver": "model.layers.2.self_attn.k_proj::group2",
+      "receiver_score": 1.0,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 3.616977483034134e-05,
+      "bootstrap_ci_low": -7.364992052316666e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "dfa05f133efc4522616abb434eae85acd13e0f0f03e0624532f96af4658e8dc0",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -1.818779855966568e-05,
+      "donor": "model.layers.0.self_attn.k_proj::group3",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 4,
+      "ratio": 0.7,
+      "receiver": "model.layers.2.self_attn.k_proj::group3",
+      "receiver_score": 1.0,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 3.17990779876709e-05,
+      "bootstrap_ci_low": -7.050856947898865e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "41c217d29ed52ef5be3f1dae0c7ac75b800919007fcc31d4c264279bc07cf096",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -1.951027661561966e-05,
+      "donor": "model.layers.0.self_attn.k_proj::group4",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 5,
+      "ratio": 0.7,
+      "receiver": "model.layers.2.self_attn.k_proj::group4",
+      "receiver_score": 1.0,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 7.865577936172485e-05,
+      "bootstrap_ci_low": 8.471310138702393e-06,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "1efa803e14dbf3624b8315af6a84afc731b89592f5a7e91390e033e9121deb90",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": 4.462897777557373e-05,
+      "donor": "model.layers.0.self_attn.k_proj::group5",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 6,
+      "ratio": 0.7,
+      "receiver": "model.layers.2.self_attn.k_proj::group5",
+      "receiver_score": 1.0,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 4.8473477363586426e-05,
+      "bootstrap_ci_low": -4.611164331436157e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "a5f43b5a3b65a823b2d36b9c2372f11f5a9ab5e07d5365b0ffbde607de980c85",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -4.6566128730773926e-07,
+      "donor": "model.layers.0.self_attn.k_proj::group6",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 7,
+      "ratio": 0.7,
+      "receiver": "model.layers.2.self_attn.k_proj::group6",
+      "receiver_score": 1.0,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 6.994791328907013e-05,
+      "bootstrap_ci_low": -0.00011706165969371796,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "68614d4b378471a8c29477556b9a49d085847aa41b2db8a9496f9a60135ed2d1",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -2.4714507162570953e-05,
+      "donor": "model.layers.0.self_attn.k_proj::group7",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 8,
+      "ratio": 0.7,
+      "receiver": "model.layers.2.self_attn.k_proj::group7",
+      "receiver_score": 1.0,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 9.809061884880066e-05,
+      "bootstrap_ci_low": -2.4458393454551697e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "52538edc91246cbba24cae79c35201fedb8d5bbeb98de2ad049ea895a3c2b78b",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": 3.582146018743515e-05,
+      "donor": "model.layers.0.self_attn.v_proj::group0",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 9,
+      "ratio": 0.7,
+      "receiver": "model.layers.5.self_attn.k_proj::group0",
+      "receiver_score": 0.9750307946160874,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 3.2728537917137146e-05,
+      "bootstrap_ci_low": -5.9314072132110596e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "3ae21ccfdf6f7557625be729dd24841d3ea13153d07c62180506a756ccdd8809",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -1.2720003724098206e-05,
+      "donor": "model.layers.0.self_attn.v_proj::group1",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 10,
+      "ratio": 0.7,
+      "receiver": "model.layers.5.self_attn.k_proj::group1",
+      "receiver_score": 0.9750307946160874,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 8.398666977882385e-05,
+      "bootstrap_ci_low": -4.9933791160583496e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "eefc3a87d9f950304f17782cbcab3b182120ec61d4b1ed29196416bf6875d23a",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": 1.424551010131836e-05,
+      "donor": "model.layers.0.self_attn.v_proj::group2",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 11,
+      "ratio": 0.7,
+      "receiver": "model.layers.5.self_attn.k_proj::group2",
+      "receiver_score": 0.9750307946160874,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 7.575377821922302e-06,
+      "bootstrap_ci_low": -0.00011302158236503601,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "865078cac9cb39a7371f1aa5c20573c4b93d34e34e602ff3a3c04f58535a39e8",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -5.285628139972687e-05,
+      "donor": "model.layers.0.self_attn.v_proj::group3",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 12,
+      "ratio": 0.7,
+      "receiver": "model.layers.5.self_attn.k_proj::group3",
+      "receiver_score": 0.9750307946160874,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 2.0250678062438965e-05,
+      "bootstrap_ci_low": -6.813183426856995e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "8d4329848f16daedd697d96159b5238646fd6f6732becd6fe9851126b3f282a7",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -2.3558735847473145e-05,
+      "donor": "model.layers.0.self_attn.v_proj::group4",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 13,
+      "ratio": 0.7,
+      "receiver": "model.layers.5.self_attn.k_proj::group4",
+      "receiver_score": 0.9750307946160874,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 7.503852248191833e-05,
+      "bootstrap_ci_low": -8.513219654560089e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "bffdfd35073e10f5a0e36958939a6573fb80dfa64e7dd8c826155ab0b469cff8",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -1.8123537302017212e-06,
+      "donor": "model.layers.0.self_attn.v_proj::group5",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 14,
+      "ratio": 0.7,
+      "receiver": "model.layers.5.self_attn.k_proj::group5",
+      "receiver_score": 0.9750307946160874,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.00011571962386369705,
+      "bootstrap_ci_low": -1.8324702978134155e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "3e14b1d8971248021f5d88c543e6c1ceb2fed3f6a04a4e08702f64a1ddca714e",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": 4.836078733205795e-05,
+      "donor": "model.layers.0.self_attn.v_proj::group6",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 15,
+      "ratio": 0.7,
+      "receiver": "model.layers.5.self_attn.k_proj::group6",
+      "receiver_score": 0.9750307946160874,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 2.8429552912712097e-05,
+      "bootstrap_ci_low": -6.309431046247482e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "cf563fdacac6ac7f4604edf2c4aaae48c00a9203bc06afec2ce88fce8076e42d",
+      "current_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "delta_J": -1.7649494111537933e-05,
+      "donor": "model.layers.0.self_attn.v_proj::group7",
+      "donor_score": 0.0,
+      "native_rank_quantum": 32,
+      "proposal": 16,
+      "ratio": 0.7,
+      "receiver": "model.layers.5.self_attn.k_proj::group7",
+      "receiver_score": 0.9750307946160874,
+      "resource_after": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_before": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_prior",
+      "status": "REJECTED"
+    }
+  ],
+  "final_resource": {
+    "decode_cache_bytes": 752877568,
+    "factor_bytes_fp16": 1693974528,
+    "prefill_cache_bytes": 752877568,
+    "total_native_rank": 183808
+  },
+  "final_schedule_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+  "formal_quality_used_to_select": false,
+  "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+  "q_mapping_sha256": "6fa7d16bb6689cf88dc78ea6a72f3d630abe1d2cf1ccf2729776a3e6768ae3d3",
+  "ratio": 0.7,
+  "signal": "fdp_prior",
+  "source_fisher_schedule_sha256": "25cf3376ffe53b3960b5f76fa5df09e8dc7a2665e260095b481d18987b8121c5",
+  "status": "EXCHANGE_CALIBRATION_COMPLETE"
+}

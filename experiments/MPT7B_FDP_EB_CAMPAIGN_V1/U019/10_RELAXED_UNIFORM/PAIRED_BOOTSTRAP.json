@@ -1,0 +1,45 @@
+{
+  "delta_definition": "FDP minus relaxed Uniform",
+  "resamples": 10000,
+  "seed": 2,
+  "relaxed_uniform": {
+    "wiki_ppl": 9.22839598931256,
+    "c4_ppl": 11.661392152004229,
+    "J": 2.339284410221236,
+    "B_live": 661127168,
+    "retention": 0.61572265625,
+    "epsilon": 0.016910649572124552
+  },
+  "fdp": {
+    "wiki_ppl": 8.85479545028595,
+    "c4_ppl": 11.262839751141554,
+    "J": 2.3012339800596235,
+    "B_live": 660996096,
+    "retention": 0.6156005859375
+  },
+  "delta_log_ppl_wiki": {
+    "point": -0.041326080049786995,
+    "ci95": [
+      -0.04493947493178504,
+      -0.0378941142133304
+    ],
+    "excludes_zero": true
+  },
+  "delta_log_ppl_c4": {
+    "point": -0.0347747802734375,
+    "ci95": [
+      -0.0389556884765625,
+      -0.031005859375
+    ],
+    "excludes_zero": true
+  },
+  "delta_J": {
+    "point": -0.03805043016161225,
+    "ci95": [
+      -0.04079118506184646,
+      -0.03548777814422335
+    ],
+    "excludes_zero": true
+  },
+  "quality_used_to_select_schedule": false
+}

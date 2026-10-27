@@ -1,0 +1,261 @@
+{
+ "deleted_at": "2026-10-10T13:04:43.360541-07:00",
+ "reason": "benchmark checkpoints verified bit-identical to frozen Medium (MEDIUM_SHA_AUDIT.json); safetensors removed for disk space; configs/rank files/basis kept",
+ "checkpoints": [
+  {
+   "dir": "work/fdp_chain/uniform_parent/final_model",
+   "files": [
+    {
+     "name": "config.json",
+     "bytes": 727,
+     "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+    },
+    {
+     "name": "generation_config.json",
+     "bytes": 1291,
+     "sha256": "2d571f09f185466023c0d27bf5d8c2143d55ebc02d51967b32ac20186268b229"
+    },
+    {
+     "name": "low_rank_config.json",
+     "bytes": 838,
+     "sha256": "dacc6e99dc08ca46a55b23549e4c4c6d4311c23f0ac88a4a20231e371ee32c83"
+    },
+    {
+     "name": "low_rank_config.pt",
+     "bytes": 2145,
+     "sha256": "18babf70de22556299d734ebe2b1a8dee0189bf82fa7cf00e8672e28fa07d531"
+    },
+    {
+     "name": "model-00001-of-00004.safetensors",
+     "bytes": 4969221456,
+     "sha256": "934255ed6898f7eee859d744bb05a4d85cc5a19fe0042f5aa5dbfc5f59770754"
+    },
+    {
+     "name": "model-00002-of-00004.safetensors",
+     "bytes": 4934018528,
+     "sha256": "62821fe23e9a5369a27eb18159ea2c946417c92d947671318910f02d6660564b"
+    },
+    {
+     "name": "model-00003-of-00004.safetensors",
+     "bytes": 4824935352,
+     "sha256": "5186b1ea044550cdb625af5007a1aa2c752b930b183c45ef46241596288b728b"
+    },
+    {
+     "name": "model-00004-of-00004.safetensors",
+     "bytes": 1050673280,
+     "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+    },
+    {
+     "name": "model.safetensors.index.json",
+     "bytes": 27044,
+     "sha256": "730c582d4481f0edb39c9ab6f9b1ff78ec70aec48b7fa6d63faa2b3429858089"
+    },
+    {
+     "name": "special_tokens_map.json",
+     "bytes": 301,
+     "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+    },
+    {
+     "name": "tokenizer.json",
+     "bytes": 9085698,
+     "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+    },
+    {
+     "name": "tokenizer_config.json",
+     "bytes": 50585,
+     "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+    }
+   ]
+  },
+  {
+   "dir": "work/fdp_chain/fdp125/final_model",
+   "files": [
+    {
+     "name": "config.json",
+     "bytes": 727,
+     "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+    },
+    {
+     "name": "generation_config.json",
+     "bytes": 1289,
+     "sha256": "9ea56f95da452c016527298ba1bd3a3c20d9b1e2a847e8e776d17dea8861c409"
+    },
+    {
+     "name": "low_rank_config.json",
+     "bytes": 836,
+     "sha256": "3800ab0b3a3cefe076db21bd5be47515ec3583a21eee811985f57758ddd6f512"
+    },
+    {
+     "name": "low_rank_config.pt",
+     "bytes": 2145,
+     "sha256": "692c29c975f1769b607f8d266a9f4073777d18bbef4701a518c1b1f708986374"
+    },
+    {
+     "name": "model-00001-of-00004.safetensors",
+     "bytes": 4991006800,
+     "sha256": "45c982a8681b0cc8dd09727615196dac757ab9270a9d8d18c8b04797903da6cb"
+    },
+    {
+     "name": "model-00002-of-00004.safetensors",
+     "bytes": 4945765856,
+     "sha256": "d323944127d2f13e021833b7a30cf1d9b77ea25e1274515a4988672e48583ba4"
+    },
+    {
+     "name": "model-00003-of-00004.safetensors",
+     "bytes": 4807151792,
+     "sha256": "8dc37cf586aa0e782ce22dd667bb94440fae011cab54ab5573c2eaaa48b62706"
+    },
+    {
+     "name": "model-00004-of-00004.safetensors",
+     "bytes": 1050673280,
+     "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+    },
+    {
+     "name": "model.safetensors.index.json",
+     "bytes": 27044,
+     "sha256": "293ee90758da022a22778eed8b5ac0254466d97cf37c388ef6329bce8be1ae1d"
+    },
+    {
+     "name": "special_tokens_map.json",
+     "bytes": 301,
+     "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+    },
+    {
+     "name": "tokenizer.json",
+     "bytes": 9085698,
+     "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+    },
+    {
+     "name": "tokenizer_config.json",
+     "bytes": 50585,
+     "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+    }
+   ]
+  },
+  {
+   "dir": "work/uniform_comparator/final_model",
+   "files": [
+    {
+     "name": "config.json",
+     "bytes": 727,
+     "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+    },
+    {
+     "name": "generation_config.json",
+     "bytes": 1291,
+     "sha256": "8711cc972b6c80e9eb8ef5e4d4533c71b8898945cbd183364a2d75844643aa26"
+    },
+    {
+     "name": "low_rank_config.json",
+     "bytes": 838,
+     "sha256": "db207077467e658317a1972240a42b211212563f38b3e819210b90006a1615cb"
+    },
+    {
+     "name": "low_rank_config.pt",
+     "bytes": 2145,
+     "sha256": "c3809a9872fca1066e1af1c209ed9fd5da7964e9d429215cbae37a95c7fb70ae"
+    },
+    {
+     "name": "model-00001-of-00004.safetensors",
+     "bytes": 4974143056,
+     "sha256": "75ac9b1ad6bfdb4ac6ebdbe15d9fa5694212541e1b49a8f3c8630a0adffd4e2d"
+    },
+    {
+     "name": "model-00002-of-00004.safetensors",
+     "bytes": 4939267808,
+     "sha256": "2124034d96bb327e657beb59db732bc0bb3f7663e5a3e339be442340d297aed9"
+    },
+    {
+     "name": "model-00003-of-00004.safetensors",
+     "bytes": 4831104440,
+     "sha256": "fc5338d013b84e642ad3b70a371e6aa76e51656d33883351e88f960ac56cf954"
+    },
+    {
+     "name": "model-00004-of-00004.safetensors",
+     "bytes": 1050673280,
+     "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+    },
+    {
+     "name": "model.safetensors.index.json",
+     "bytes": 27044,
+     "sha256": "9b867dec377ea318ee0e8c3815ce27b7779d3d71f21c7d891bc99f040b5c646d"
+    },
+    {
+     "name": "special_tokens_map.json",
+     "bytes": 301,
+     "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+    },
+    {
+     "name": "tokenizer.json",
+     "bytes": 9085698,
+     "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+    },
+    {
+     "name": "tokenizer_config.json",
+     "bytes": 50585,
+     "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+    }
+   ]
+  },
+  {
+   "dir": "work/uniform_comparator/model",
+   "files": [
+    {
+     "name": "config.json",
+     "bytes": 727,
+     "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+    },
+    {
+     "name": "generation_config.json",
+     "bytes": 1291,
+     "sha256": "8711cc972b6c80e9eb8ef5e4d4533c71b8898945cbd183364a2d75844643aa26"
+    },
+    {
+     "name": "low_rank_config.pt",
+     "bytes": 1629,
+     "sha256": "28e3f7c0fadf21802446e829c710d10320b8b3814e3b63357b3d92d511be72d2"
+    },
+    {
+     "name": "model-00001-of-00004.safetensors",
+     "bytes": 4974143056,
+     "sha256": "75ac9b1ad6bfdb4ac6ebdbe15d9fa5694212541e1b49a8f3c8630a0adffd4e2d"
+    },
+    {
+     "name": "model-00002-of-00004.safetensors",
+     "bytes": 4939267808,
+     "sha256": "2124034d96bb327e657beb59db732bc0bb3f7663e5a3e339be442340d297aed9"
+    },
+    {
+     "name": "model-00003-of-00004.safetensors",
+     "bytes": 4831104440,
+     "sha256": "fc5338d013b84e642ad3b70a371e6aa76e51656d33883351e88f960ac56cf954"
+    },
+    {
+     "name": "model-00004-of-00004.safetensors",
+     "bytes": 1050673280,
+     "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+    },
+    {
+     "name": "model.safetensors.index.json",
+     "bytes": 27044,
+     "sha256": "9b867dec377ea318ee0e8c3815ce27b7779d3d71f21c7d891bc99f040b5c646d"
+    },
+    {
+     "name": "special_tokens_map.json",
+     "bytes": 301,
+     "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+    },
+    {
+     "name": "tokenizer.json",
+     "bytes": 9085698,
+     "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+    },
+    {
+     "name": "tokenizer_config.json",
+     "bytes": 50585,
+     "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+    }
+   ]
+  }
+ ]
+}

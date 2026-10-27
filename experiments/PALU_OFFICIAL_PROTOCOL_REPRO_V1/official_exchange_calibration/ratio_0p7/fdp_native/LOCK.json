@@ -1,0 +1,21 @@
+{
+  "acceptance_rule": "delta_J < 0 and bootstrap_ci_high < 0",
+  "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "bootstrap_n": 10000,
+  "exchange_manifest": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/manifest.json",
+  "exchange_manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+  "formal_quality_used_to_select": false,
+  "q_mapping_sha256": "6fa7d16bb6689cf88dc78ea6a72f3d630abe1d2cf1ccf2729776a3e6768ae3d3",
+  "rank_quantum": 32,
+  "ratio": 0.7,
+  "resource": {
+    "decode_cache_bytes": 752877568,
+    "factor_bytes_fp16": 1693974528,
+    "prefill_cache_bytes": 752877568,
+    "total_native_rank": 183808
+  },
+  "schedule_sha": "96f6cbb8a53025536edfaafc184ac20f02c89a228bc9a107fee9c0accfd10cba",
+  "signal": "fdp_native",
+  "source_fisher_schedule_sha256": "25cf3376ffe53b3960b5f76fa5df09e8dc7a2665e260095b481d18987b8121c5",
+  "status": "OFFICIAL_EXCHANGE_CALIBRATION_LOCKED"
+}

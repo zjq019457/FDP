@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-28T08:37:06.486332-07:00",
+  "phase": "waiting_mainline_R1_R6",
+  "branches": {
+    "R7_long_context": {
+      "status": "pending",
+      "jobs": 0
+    },
+    "R8_system_metrics": {
+      "status": "pending",
+      "jobs": 0
+    },
+    "R9_operating_points": {
+      "status": "pending",
+      "jobs": 0
+    },
+    "R10_kq_v_ablation": {
+      "status": "pending",
+      "jobs": 0
+    },
+    "R11_robustness": {
+      "status": "pending",
+      "jobs": 0
+    }
+  }
+}

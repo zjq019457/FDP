@@ -1,0 +1,10 @@
+# LLAMA_DRM_A100_4GPU_V1 bulky I/O root (F-disk under jiaqizhang).
+#
+# The EigenAttn repo lives on `/` which is near capacity. All large artefacts
+# (predictions, traces, logs, tmp, HF/torch caches) MUST live on /diskF.
+#
+# Unified workspace: /diskF/jiaqizhang/llama_drm_a100_4gpu_v1/
+#   results/  logs/  tmp/  cache/  exports/  workdir/
+#
+# Override at runtime with LLAMA_DRM_RESULTS_ROOT=/some/other/path.
+/diskF/jiaqizhang/llama_drm_a100_4gpu_v1/results

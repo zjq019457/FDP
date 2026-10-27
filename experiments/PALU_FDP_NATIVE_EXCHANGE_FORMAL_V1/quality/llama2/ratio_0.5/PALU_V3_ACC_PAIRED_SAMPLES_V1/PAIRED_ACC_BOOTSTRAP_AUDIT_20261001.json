@@ -1,0 +1,159 @@
+{
+  "campaign": "PALU_V3_ACC_PAIRED_SAMPLES_V1",
+  "foreign_jobs_interrupted": 0,
+  "formal_ppl_modified": false,
+  "historical_results_modified": false,
+  "macro_accuracy_percent": {
+    "delta_v3_minus_v1_percentage_points": 0.05922635359978301,
+    "v1_native": 54.833716472416825,
+    "v3_selected": 54.89294282601661
+  },
+  "manifest_payload_sha256": "6eee89c585f1db63b98f8c202f08b6fb4edb1fc8ae300d2250b2489a68afd21b",
+  "metric": "acc,none",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "model_match": true,
+  "num_fewshot": 0,
+  "paired_sample_bootstrap": {
+    "ci95_percentage_points": [
+      -0.22192555676725803,
+      0.3385495312095847
+    ],
+    "method": "Within each task, resample matched doc_id examples with replacement; calculate V3\u2212V1 accuracy difference in percentage points; average the six task differences equally per replicate; percentile CI.",
+    "replicates": 10000,
+    "seed": 20260930
+  },
+  "ratio": 0.5,
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "resource_match": "EXACT",
+  "sample_integrity": {
+    "fields_matched_in_order": [
+      "doc_id",
+      "doc_hash",
+      "prompt_hash",
+      "target_hash"
+    ],
+    "point_estimates_reproduce_saved_lm_eval_results": true,
+    "sample_scores_binary_correctness": true,
+    "status": "PASS",
+    "unique_doc_ids_per_task": true
+  },
+  "schedule_sha256": {
+    "v1": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+    "v3": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c"
+  },
+  "schema": "palu_v3_vs_v1_paired_zero_shot_acc_v1",
+  "scope": "Six-task zero-shot accuracy, ratio 0.5, all acc,none, official PaLu task configs, paired per-example sample audit; does not replace or alter formal PPL.",
+  "source_files": {
+    "sample_log_sha256": {
+      "v1": {
+        "arc_challenge": "c384405681174c1ddac441ee8ad8d5213a0b167a09a8bde6b8b9ce29cde2fba6",
+        "arc_easy": "eca87c5b1285a1ac5ab360ce049e5d64f1e4e178e7e093fc3679e8da51b62c68",
+        "hellaswag": "5e89e149f6c214efff546b9d8935281d487346991b54ebd11aec24a879521e02",
+        "openbookqa": "33d6f069560dea587bd8746c1d826f70fb660a5c6140c8f4e9a3d9e37eaa20ae",
+        "piqa": "b640a1a39da8bde12480be18e96d157eaea03373622ff932a2326374420db6bf",
+        "winogrande": "2d0a00c9941163d91845f489272329a591395b1159cb7f580987f9d7c376bdb8"
+      },
+      "v3": {
+        "arc_challenge": "a9e99016dbddec6aced26b9b78a7b4e728b4cbb710e09880bc24d80b4a37f074",
+        "arc_easy": "5e5a8c6c19a86dfde91bc66657243d744db50506405fd3957ce1e524d28ec792",
+        "hellaswag": "a5bbe0c6d296fc0a56340cec4dbc4ff1f15c58726a463bc4f39572097c7af78f",
+        "openbookqa": "86fc3b5e64f1f65f5986cf8aed2bb01df07232e8376bbc9c2cb66f4730fd50b3",
+        "piqa": "e29649c34cd4624ac08c042dc05babe846730903bd903bfcc8ed384c5cd72ee2",
+        "winogrande": "92304e2f920cf6a081e7d8b6dbe9c37124132c5152efe9bfb716a5f291ad7ea6"
+      }
+    },
+    "sample_logs": {
+      "v1": {
+        "arc_challenge": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v1/arc_challenge_localjsonl.jsonl",
+        "arc_easy": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v1/arc_easy_localjsonl.jsonl",
+        "hellaswag": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v1/hellaswag_localjsonl.jsonl",
+        "openbookqa": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v1/openbookqa_localjsonl.jsonl",
+        "piqa": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v1/piqa_localjsonl.jsonl",
+        "winogrande": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v1/winogrande_localjsonl.jsonl"
+      },
+      "v3": {
+        "arc_challenge": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v3/arc_challenge_localjsonl.jsonl",
+        "arc_easy": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v3/arc_easy_localjsonl.jsonl",
+        "hellaswag": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v3/hellaswag_localjsonl.jsonl",
+        "openbookqa": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v3/openbookqa_localjsonl.jsonl",
+        "piqa": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v3/piqa_localjsonl.jsonl",
+        "winogrande": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/samples/v3/winogrande_localjsonl.jsonl"
+      }
+    },
+    "v1_summary": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/output/v1/quality/llama2/ratio_0.5/PALU_FDP_NATIVE/zeroshot.json",
+    "v3_summary": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_ACC_PAIRED_SAMPLES_V1/output/v3/quality/llama2/ratio_0.5/PALU_FDP_NATIVE/zeroshot.json"
+  },
+  "status": "COMPLETE_VALID_PAIRED_SAMPLE_ACC",
+  "task_order": [
+    "openbookqa",
+    "hellaswag",
+    "piqa",
+    "arc_easy",
+    "arc_challenge",
+    "winogrande"
+  ],
+  "task_results": {
+    "arc_challenge": {
+      "delta_v3_minus_v1_percentage_points": 0.08532423208191253,
+      "doc_ids_order_match": "EXACT",
+      "n": 1172,
+      "paired_correctness_discordances": 25,
+      "v1_accuracy_percent": 39.419795221843,
+      "v3_accuracy_percent": 39.50511945392491
+    },
+    "arc_easy": {
+      "delta_v3_minus_v1_percentage_points": 0.2946127946127919,
+      "doc_ids_order_match": "EXACT",
+      "n": 2376,
+      "paired_correctness_discordances": 49,
+      "v1_accuracy_percent": 64.64646464646465,
+      "v3_accuracy_percent": 64.94107744107744
+    },
+    "hellaswag": {
+      "delta_v3_minus_v1_percentage_points": 0.18920533758215452,
+      "doc_ids_order_match": "EXACT",
+      "n": 10042,
+      "paired_correctness_discordances": 63,
+      "v1_accuracy_percent": 50.67715594503087,
+      "v3_accuracy_percent": 50.86636128261303
+    },
+    "openbookqa": {
+      "delta_v3_minus_v1_percentage_points": -0.20000000000000018,
+      "doc_ids_order_match": "EXACT",
+      "n": 500,
+      "paired_correctness_discordances": 5,
+      "v1_accuracy_percent": 30.8,
+      "v3_accuracy_percent": 30.599999999999998
+    },
+    "piqa": {
+      "delta_v3_minus_v1_percentage_points": 0.3808487486398282,
+      "doc_ids_order_match": "EXACT",
+      "n": 1838,
+      "paired_correctness_discordances": 13,
+      "v1_accuracy_percent": 75.89771490750816,
+      "v3_accuracy_percent": 76.278563656148
+    },
+    "winogrande": {
+      "delta_v3_minus_v1_percentage_points": -0.39463299131807794,
+      "doc_ids_order_match": "EXACT",
+      "n": 1267,
+      "paired_correctness_discordances": 39,
+      "v1_accuracy_percent": 67.5611681136543,
+      "v3_accuracy_percent": 67.16653512233623
+    }
+  },
+  "task_sample_counts": {
+    "arc_challenge": 1172,
+    "arc_easy": 2376,
+    "hellaswag": 10042,
+    "openbookqa": 500,
+    "piqa": 1838,
+    "winogrande": 1267
+  },
+  "total_samples_per_method": 17195
+}

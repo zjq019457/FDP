@@ -1,0 +1,10 @@
+{
+  "status": "FINISHED",
+  "result": {
+    "status": "DONE",
+    "phase": "PROFILE",
+    "pid": 3639079,
+    "profile_done_sha256": "3420320fa1d49e40f15a3581bbbd43e09df09bcefe394c16269b456a2aacd87a",
+    "foreign_jobs_interrupted": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "PALU_ENGINEERING_FIX_AUDIT_V1",
+  "fix_id": "APPENDIX_F3_WORKER_PYTHON_ENV_FIX_03",
+  "failure_behavior": "The isolated Appendix F.3 runner exited during imports with ModuleNotFoundError: No module named 'datasets'. It was launched using /usr/bin/python3 instead of the project-owned Python environment. No model was loaded, no GPU memory was allocated, no cell metric was computed, and no prior output was changed.",
+  "failure_type": "WRONG_PYTHON_ENV_IMPORT_ERROR",
+  "affected_cell": "APPENDIX_F3_G_LRD_GS4_AUTOMATIC_FISHER startup only; no evaluation started",
+  "repair": "Launch the unchanged official-source runner with /diskF/jiaqizhang/a1804298693/eigen/bin/python3.9, which has torch 2.8.0+cu128, transformers 4.44.2, datasets 3.3.2, lm_eval 0.4.4, evaluate 0.4.3, and loguru 0.7.3; pin CUDA_VISIBLE_DEVICES=0. Keep the run in its isolated Appendix F.3 output/state/lock namespace.",
+  "old_results_valid": true,
+  "historical_results_modified": false,
+  "official_repository_modified": false,
+  "foreign_jobs_interrupted": 0,
+  "retryable": true
+}

@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-07-29T08:57:22.001925-07:00",
+  "controls": [
+    {
+      "control": "uniform_matched",
+      "target_kv_bytes": 396754944,
+      "realized_kv_bytes_est": 396754944,
+      "abs_byte_gap": 0,
+      "rel_gap": 0.0
+    },
+    {
+      "control": "random_seed0",
+      "target_kv_bytes": 396754944,
+      "realized_kv_bytes_est": 138797056,
+      "abs_byte_gap": -257957888,
+      "rel_gap": -0.6501693095474067
+    },
+    {
+      "control": "random_seed1",
+      "target_kv_bytes": 396754944,
+      "realized_kv_bytes_est": 143376384,
+      "abs_byte_gap": -253378560,
+      "rel_gap": -0.638627353815659
+    },
+    {
+      "control": "random_seed2",
+      "target_kv_bytes": 396754944,
+      "realized_kv_bytes_est": 161177600,
+      "abs_byte_gap": -235577344,
+      "rel_gap": -0.5937603237528907
+    },
+    {
+      "control": "spectral_tail",
+      "target_kv_bytes": 396754944,
+      "realized_kv_bytes_est": 396492800,
+      "abs_byte_gap": -262144,
+      "rel_gap": -0.0006607201850016518
+    },
+    {
+      "control": "middle_layer",
+      "target_kv_bytes": 396754944,
+      "realized_kv_bytes_est": 396402688,
+      "abs_byte_gap": -352256,
+      "rel_gap": -0.0008878427485959696
+    },
+    {
+      "control": "depth_front",
+      "target_kv_bytes": 396754944,
+      "realized_kv_bytes_est": 396533760,
+      "abs_byte_gap": -221184,
+      "rel_gap": -0.0005574826560951437
+    },
+    {
+      "control": "depth_back",
+      "target_kv_bytes": 396754944,
+      "realized_kv_bytes_est": 396517376,
+      "abs_byte_gap": -237568,
+      "rel_gap": -0.0005987776676577469
+    },
+    {
+      "control": "reconstruction_slope",
+      "target_kv_bytes": 396754944,
+      "realized_kv_bytes_est": 301678592,
+      "abs_byte_gap": -95076352,
+      "rel_gap": -0.2396349520977866
+    }
+  ]
+}

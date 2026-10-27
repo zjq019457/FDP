@@ -1,0 +1,65 @@
+{
+ "label": "rand_e068_20261111",
+ "schedule": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/schedules/rand_e068_20261111/SCHEDULE.json",
+ "schedule_sha256": "1b5063d65ea4fddfac94e43e1caf04bb3fb4be332dc9a76881d574e9f0ab296d",
+ "rank_sha": "3e909d3bef3c5670bb718aa706e196700e2accf80d81790da8ab2110b81b0bde",
+ "B_live": 746323968,
+ "ratio": 0.695068359375,
+ "physical_gpu": 1,
+ "started": "2026-10-12T06:21:16.862091+00:00",
+ "script_sha256": "f475b595cd68045838085bc99300474c8e96944f910c2aeddd65dca9e244f373",
+ "operator_parity": [
+  {
+   "layer": 0,
+   "rank_kq": 4096,
+   "rank_v": 4096,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 1.0,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  },
+  {
+   "layer": 16,
+   "rank_kq": 2432,
+   "rank_v": 3744,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 1.0,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  },
+  {
+   "layer": 31,
+   "rank_kq": 1184,
+   "rank_v": 3328,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 1.0,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  }
+ ],
+ "status": "FAILED",
+ "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 485.62 MiB is free. Process 187251 has 15.13 GiB memory in use. Process 187851 has 21.72 GiB memory in use. Process 205533 has 14.33 GiB memory in use. Process 205649 has 14.77 GiB memory in use. Including non-PyTorch memory, this process has 12.78 GiB memory in use. 31.70 GiB allowed; Of the allocated memory 12.20 GiB is allocated by PyTorch, and 85.80 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)')",
+ "traceback": "Traceback (most recent call last):\n  File \"/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/code/l2x_quality.py\", line 34, in main\n    ppl, agg = runner.eval_windows_legacy_llama(model, wins, device=torch.device(\"cuda:0\"), seqlen=2048, dataset=ds,\n  File \"/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/ppl_instrumented.py\", line 179, in eval_windows_legacy_llama\n    logits = model(input_ids=batch, use_cache=False).logits\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1773, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1784, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py\", line 1189, in forward\n    outputs = self.model(\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1773, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1784, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py\", line 1001, in forward\n    layer_outputs = decoder_layer(\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1773, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1784, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/models/decompose_modules.py\", line 791, in forward\n    hidden_states, self_attn_weights, present_key_value = self.self_attn(\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1773, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py\", line 1784, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/models/decompose_modules.py\", line 704, in forward\n    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)\n  File \"/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/functional.py\", line 2139, in softmax\n    ret = input.softmax(dim, dtype=dtype)\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 485.62 MiB is free. Process 187251 has 15.13 GiB memory in use. Process 187851 has 21.72 GiB memory in use. Process 205533 has 14.33 GiB memory in use. Process 205649 has 14.77 GiB memory in use. Including non-PyTorch memory, this process has 12.78 GiB memory in use. 31.70 GiB allowed; Of the allocated memory 12.20 GiB is allocated by PyTorch, and 85.80 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+ "failed": "2026-10-12T06:23:37.643591+00:00"
+}

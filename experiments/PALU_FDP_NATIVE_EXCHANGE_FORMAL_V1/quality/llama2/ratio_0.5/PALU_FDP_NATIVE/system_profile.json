@@ -1,0 +1,46 @@
+{
+  "cost_audit": {
+    "exchange_calibration_cost": "see frozen calibration logs; not rerun here",
+    "formal_quality_runtime_overhead": "see formal quality cell logs; model/evaluator load included in wall time",
+    "profile_cost_measured": true
+  },
+  "gpu_visible_index": 0,
+  "historical_results_modified": false,
+  "measurement": {
+    "decode_definition": "one-token forward proxy, use_cache=false; not a persistent-cache kernel benchmark",
+    "decode_proxy_latency_ms": [
+      20.964351654052734,
+      27.802623748779297,
+      21.377023696899414,
+      22.753280639648438,
+      28.031999588012695,
+      20.579328536987305,
+      25.032703399658203,
+      25.997312545776367,
+      22.92838478088379,
+      25.11974334716797
+    ],
+    "decode_proxy_latency_ms_mean": 24.05867519378662,
+    "peak_memory_allocated_bytes": 11953283584,
+    "peak_memory_reserved_bytes": 14042529792,
+    "prefill_definition": "one 2048-token forward, use_cache=false, official model forward path",
+    "prefill_latency_ms": [
+      372.45953369140625,
+      372.1164855957031,
+      371.6894836425781,
+      371.6515808105469,
+      363.0940246582031
+    ],
+    "prefill_latency_ms_mean": 370.2022216796875,
+    "wall_seconds": 12.725529670715332
+  },
+  "method": "PALU_FDP_NATIVE",
+  "ratio": 0.5,
+  "resource": {
+    "decode_cache_bytes": 133693440,
+    "prefill_cache_bytes": 133693440,
+    "total_native_rank": 32640
+  },
+  "schedule_sha": "74b779ae20c128f28a5588b5907906d593148a4d2be7cc6ad0fe519d312c9907",
+  "status": "SYSTEM_PROFILE_COMPLETE"
+}

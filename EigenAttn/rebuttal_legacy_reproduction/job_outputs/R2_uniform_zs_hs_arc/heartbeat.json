@@ -1,0 +1,18 @@
+{
+  "job_id": "R2_uniform_zs_hs_arc",
+  "status": "RUNNING",
+  "pid": 1672312,
+  "gpu": {
+    "job_id": "R2_uniform_zs_hs_arc",
+    "gpu_index": 2,
+    "gpu_uuid": "GPU-48dea052-92d1-8022-92eb-09172e488520",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 81153,
+    "holder_pid": 1669165,
+    "cuda_visible_devices": "2",
+    "acquired_at": "2026-07-28T10:04:27.165051-07:00"
+  },
+  "running_for_sec": 2523.3371329307556,
+  "updated_at": "2026-07-28T10:46:30.510988-07:00"
+}

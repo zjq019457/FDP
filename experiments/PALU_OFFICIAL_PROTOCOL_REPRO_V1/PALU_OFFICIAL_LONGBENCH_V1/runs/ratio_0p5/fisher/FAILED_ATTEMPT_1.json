@@ -1,0 +1,29 @@
+{
+  "status": "FAILED",
+  "campaign": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+  "lane": "PALU_OFFICIAL_LONGBENCH_V1",
+  "method": "fisher",
+  "ratio": 0.5,
+  "gpu": 1,
+  "pid": 3104203,
+  "manifest_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/PALU_OFFICIAL_LONGBENCH_V1_MANIFEST.json",
+  "manifest_sha256": "bd4c78a772b194b574284c68fc9d74223bcbade83ae55bb7aa70f84540fe1518",
+  "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/results/fisher_0p5_ratio_0.5_fisher_uniform.json",
+  "schedule_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+  "resource": {
+    "total_native_rank": 131072,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "decode_cache_bytes": 536870912
+  },
+  "started_utc": "2026-09-21T17:54:20Z",
+  "completed_tasks": [],
+  "failed_tasks": [],
+  "foreign_jobs_interrupted": 0,
+  "failure_type": "ENGINEERING_IMPORT",
+  "retryable": true,
+  "old_result_invalidated": false,
+  "failed_utc": "2026-09-21T18:00:00Z",
+  "error": "ValueError: fast_hadamard_transform.__spec__ is None during transformers dependency probe",
+  "next_step": "retry after runner import-spec fallback patch"
+}

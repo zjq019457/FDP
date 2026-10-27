@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "job_id": "R1_dense_zs_wg_piqa",
+  "returncode": 0,
+  "ended_at": "2026-07-28T08:40:46.631600-07:00",
+  "gpu": {
+    "job_id": "R1_dense_zs_wg_piqa",
+    "gpu_index": 3,
+    "gpu_uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 81153,
+    "holder_pid": 1641236,
+    "cuda_visible_devices": "3",
+    "acquired_at": "2026-07-28T08:37:16.415754-07:00"
+  },
+  "elapsed_sec": 210.2118113040924
+}

@@ -1,0 +1,7 @@
+attn_backend,decode_median_ms,decode_steps,flash_sdp,median_decode_ms,median_prefill_ms,method,p95_decode_ms,p95_prefill_ms,peak_allocated_mb,peak_memory_mb,peak_reserved_mb,prefill_len,prefill_median_ms,prefill_tokens_per_sec,tokens_per_sec,ttft_ms
+eager,24.56,128,False,24.56,334.18,Dense,,,18357.7,18357.7,,2048,334.18,6128.4,6128.4,334.18
+eager,40.07,128,False,40.07,3143.11,Dense,,,42376.9,42376.9,,8192,3143.11,2606.3,2606.3,3143.11
+eager,27.19,128,False,27.19,342.28,Uniform_eb045,,,18098.9,18098.9,,2048,342.28,5983.4,5983.4,342.28
+eager,47.75,128,False,47.75,3249.95,Uniform_eb045,,,41824.9,41824.9,,8192,3249.95,2520.7,2520.7,3249.95
+eager,27.14,128,False,27.14,343.11,FGeb045_FDP,,,18109.1,18109.1,,2048,343.11,5969.0,5969.0,343.11
+eager,47.73,128,False,47.73,3251.49,FGeb045_FDP,,,41839.5,41839.5,,8192,3251.49,2519.5,2519.5,3251.49

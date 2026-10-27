@@ -1,0 +1,6 @@
+ablated_component,j_strong,delta_j_strong_vs_opt,delta_j_light_vs_opt,is_essential
+d1_z,3.339635,+0.000000,+0.000000,False
+d2_s,3.339635,+0.000000,+0.000000,False
+d3_v,3.339635,+0.000000,+0.000000,False
+d4_a,3.375420,+0.035786,+0.003362,True
+d5_h,3.340577,+0.000942,+0.003362,True

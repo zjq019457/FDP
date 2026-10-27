@@ -1,0 +1,19 @@
+task: hellaswag_localjsonl
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    train: /diskF/jiaqizhang/a1804298693/offline_datasets/hellaswag-train-dev/train_labeled.jsonl
+    validation: /diskF/jiaqizhang/a1804298693/offline_datasets/hellaswag-train-dev/valid_labeled.jsonl
+training_split: train
+validation_split: validation
+output_type: multiple_choice
+doc_to_text: |
+  {% if ctx is defined %}
+  {{ ctx }}
+  {% else %}
+  {{ ctx_a ~ " " ~ ctx_b }}
+  {% endif %}
+doc_to_choice: "{{ ending_options }}"
+doc_to_target: "{{ label }}"
+metric_list:
+  - metric: acc

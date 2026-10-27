@@ -1,0 +1,24 @@
+{
+  "allocation_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+  "foreign_jobs_interrupted": 0,
+  "manifest_sha256": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93",
+  "phi_minus_count": 504,
+  "phi_plus_count": 412,
+  "phi_plus_stability": {
+    "eligible_units": 412,
+    "finite_fraction": 1.0,
+    "finite_fraction_threshold": 0.95,
+    "spearman_rho": 0.3690688369844212,
+    "stable": false,
+    "threshold": 0.8
+  },
+  "profile_marginals_sha256": "d48c9bb9a4cf73961284c90b57a083e81458bd1290e73174de17af954b6d1d3b",
+  "receiver_rule": "RECEIVER_RULE_CONTROLLED_VARIANT_PHI_MINUS_DESCENDING",
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "status": "PROFILE_COMPLETE"
+}

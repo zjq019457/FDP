@@ -1,0 +1,30 @@
+{
+  "J": 2.233450503860201,
+  "arm": "relaxed_uniform",
+  "c4": {
+    "dataset": "c4",
+    "log_ppl": 2.3440704345703125,
+    "ppl": 10.423579216003418,
+    "token_count_sum": 524288,
+    "total_nll_sum": 1228968.0,
+    "used_windows": 256
+  },
+  "experiment": "RELAXED_UNIFORM_ABOVE_FDP",
+  "formal_matched_quality": false,
+  "gpu_free_at_start_bytes": 63804080128,
+  "gpu_total_bytes": 85094825984,
+  "quality_used_to_select_schedule": false,
+  "rank_schedule_sha256": "7141ac4016a4fd216f5d5289c3b3f2c42db1ddba7fdcd40fd8c3bbd87f1788cf",
+  "resource_note": "frozen FDP versus its original Uniform; relaxed Uniform is a separate higher-resource schedule",
+  "schema": "MPT7B_U015_DIAGNOSTIC_PPL_V1",
+  "status": "PPL_COMPLETE",
+  "tier": "U015",
+  "wiki": {
+    "dataset": "wikitext2",
+    "log_ppl": 2.1228305731500896,
+    "ppl": 8.354753494262695,
+    "token_count_sum": 286720,
+    "total_nll_sum": 608657.9819335938,
+    "used_windows": 140
+  }
+}

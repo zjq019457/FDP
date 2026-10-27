@@ -1,0 +1,14 @@
+{
+  "seed": 20261007,
+  "replicates": 10000,
+  "rng": "NumPy PCG64",
+  "accuracy": "batch32; task order ARC-C,ARC-E,Hella,PIQA,Wino; paired within-task items; equal-task macro",
+  "ppl": "batch128; Wiki draws then C4 draws in each batch; equal dataset mean NLL",
+  "metric_contract": {
+    "arc_challenge_localjsonl": "acc_norm",
+    "arc_easy_localjsonl": "acc_norm",
+    "hellaswag_localjsonl": "acc",
+    "piqa_localjsonl": "acc",
+    "winogrande_localjsonl": "acc"
+  }
+}

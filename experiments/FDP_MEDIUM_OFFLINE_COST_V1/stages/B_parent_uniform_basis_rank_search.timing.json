@@ -1,0 +1,61 @@
+{
+ "stage": "B_parent_uniform_basis_rank_search",
+ "cmd": [
+  "/home/bai-project/anaconda3/envs/eigen/bin/python",
+  "-u",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/code/cost_launch.py",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/stages/B_parent_uniform_basis_rank_search.torchpeak.json",
+  "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+  "--model",
+  "/diskD/jiaqizhang/Llama-3",
+  "--data_dir",
+  "/home/bai-project/jiaqizhang/wikitext2",
+  "--out_dir",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/fdp_chain/uniform_parent/basis",
+  "--out_prefix",
+  "fdp125_llama_medium_uniform",
+  "--per_layer_eb_json",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/fdp_chain/uniform_parent/per_layer_eb.json",
+  "--freeze_layer0_eb",
+  "--layer0_eb",
+  "0.06",
+  "--nsamples",
+  "512",
+  "--seqlen",
+  "2048",
+  "--dtype",
+  "bf16",
+  "--attn_implementation",
+  "eager",
+  "--device",
+  "cuda:0",
+  "--seed",
+  "2"
+ ],
+ "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+ "rc": 0,
+ "start_epoch": 1791656222.7696302,
+ "wall_s": 2644.71610279195,
+ "peak_cpu_rss_bytes": 15608770560,
+ "peak_nvml_gpu_bytes_process_tree": 44465913856,
+ "peak_nvml_gpu_bytes_per_device": {
+  "1": 44465913856
+ },
+ "marker_offsets_s": {
+  "\\[per_layer_eb\\] loaded": 30.77473632595502,
+  "\\[layer 00\\]\\[eb=": 49.88720380794257,
+  "\\[layer 31\\] done": 2641.667249771999,
+  "\\[saved\\]": 2641.7958155528177
+ },
+ "log": "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/stages/B_parent_uniform_basis_rank_search.log",
+ "torch": {
+  "script": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+  "t_start": 1791656222.7960517,
+  "t_end": 1791658864.6175315,
+  "torch_peak_allocated_bytes": 41890359296,
+  "torch_peak_reserved_bytes": 43893391360
+ },
+ "disk_bytes_after_stage": {
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/fdp_chain/uniform_parent/basis": 119596753
+ }
+}

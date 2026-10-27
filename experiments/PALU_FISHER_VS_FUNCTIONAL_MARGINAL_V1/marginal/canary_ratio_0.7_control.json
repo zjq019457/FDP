@@ -1,0 +1,21 @@
+{
+  "J": 2.3842269234035323,
+  "arm": "control",
+  "c4_nll": 2.5323262403345597,
+  "c4_ppl": 12.58274260132098,
+  "change": null,
+  "manifest_path": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/marginal/calibration_manifest.json",
+  "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+  "native_conversion": "official HeadwiseLowRankModule.from_linear_whiten via official decomposition.compress_model",
+  "quality_used_to_design_selection": false,
+  "ratio": 0.7,
+  "schedule_sha": "7c460aa5e48452bb98e474530993a3239042f38d2e12e991309b7fc16e1f89b4",
+  "selection_rank": 45760,
+  "status": "MARGINAL_CONVERSION_CANARY_COMPLETE",
+  "token_counts": {
+    "c4": 16376,
+    "wiki": 16376
+  },
+  "wiki_nll": 2.2361276064725053,
+  "wiki_ppl": 9.357026949871182
+}

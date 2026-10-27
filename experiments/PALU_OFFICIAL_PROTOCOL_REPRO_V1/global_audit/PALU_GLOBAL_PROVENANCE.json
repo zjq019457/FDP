@@ -1,0 +1,260 @@
+{
+  "audit_mode": "READ_ONLY_EVIDENCE_AUDIT",
+  "classification_rules": {
+    "historical_anchor": "All old 2-slot/module anchor-schema rows are quarantined and not current official claims.",
+    "longbench": "Raw historical LongBench task outputs are supplemental only until aggregate/scorer closure.",
+    "missing": "Missing data stays blank/PENDING; no values are imputed from nominal ratios.",
+    "official_current": "Only official 8-group/native-action-space artifacts can be CURRENT_OFFICIAL_*."
+  },
+  "generated_at_utc": "2026-09-21T04:57:37.928646+00:00",
+  "inputs": {
+    "formal_manifest": {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/formal_protocol/FORMAL_QUALITY_PROTOCOL_MANIFEST.json",
+      "sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010"
+    },
+    "historical_longbench_manifest": {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/LONGBENCH_MANIFEST.json",
+      "sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990"
+    },
+    "historical_master": {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/PALU_FORMAL_UNIFIED_TABLE.csv",
+      "sha256": "dd8fac937f58acd375620d83c2d2db8710c301fe493e4bdd789245cfdc172915"
+    },
+    "historical_root": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+    "official_action_space": {
+      "path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_NATIVE_ACTION_SPACE.json",
+      "sha256": "4750f56f217c6b1643c04d57805340e6dbb2ce1f9abf9def8ab90f1430aa1887"
+    },
+    "official_protocol_lock": {
+      "path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_PROTOCOL_LOCK.json",
+      "sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284"
+    },
+    "official_q_group_mapping": {
+      "path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_Q_GROUP_MAPPING.json",
+      "sha256": "612359292eb09bb5a7bf67716148b35ccc149bc2b7708359357c8e4cd089567c"
+    },
+    "official_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1"
+  },
+  "invariants": {
+    "foreign_jobs_interrupted": 0,
+    "frozen_results_modified": false,
+    "gpu1_used": false,
+    "new_large_experiment_started": false,
+    "old_anchor_schema_mixed_into_official": false
+  },
+  "live_audit_snapshot": {
+    "filtered_processes": "a180429+ 1989318 S     1-20:43:05  0.0  0.0 /home/bai-project/jiaqizhang/.venv/bin/python /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_xkv_iclr_pipeline.py\na180429+ 2014846 S     1-16:20:06  0.0  0.0 /home/bai-project/jiaqizhang/.venv/bin/python /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/watch_xkv_official_longbench.py\na180429+ 2035402 S     1-11:59:57  0.0  0.0 bash /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_xkv_official_longbench_gpu3.sh\na180429+ 2035407 S     1-11:59:57  0.0  0.0 tee /home/bai-project/jiaqizhang/XKV_PAPER_REPRO_FDP_V1_RUNTIME_V2/logs/longbench/official_xkv_baseline_parallel_gpu0.log\na180429+ 2247298 T     1-01:11:41  0.0  0.0 /home/bai-project/jiaqizhang/.venv/bin/python /diskE/jiaqizhang/SNAPKV_OFFICIAL_PROTOCOL_REPRO_V1/audit/run_fixed_official_suite.py --root /diskE/jiaqizhang/SNAPKV_OFFICIAL_PROTOCOL_REPRO_V1 --runner /diskE/jiaqizhang/SNAPKV_OFFICIAL_PROTOCOL_REPRO_V1/audit/run_snapkv_longbench_formal_fixed_v1.py --python /home/bai-project/jiaqizhang/.venv/bin/python --gpu 2 --capacities 1024 2048 4096\na180429+ 2291351 S       23:03:39  0.0  0.0 bash /diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/code/run_official_phi_chain.sh\na180429+ 2310243 S       22:10:52  0.0  0.0 bash -c cd /diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1 && nohup /home/bai-project/anaconda3/envs/eigen/bin/python -u code/official_tier_dispatch.py > logs/official_tier_dispatch.log 2>&1 </dev/null & echo DISPATCH_PID=\\$!\na180429+ 2335253 S       20:24:21  0.0  0.0 /home/bai-project/anaconda3/envs/eigen/bin/python -u /diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/code/throughput_first_dispatch.py\na180429+ 2878805 Ss      04:31:38  0.0  0.0 bash /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/launch_snapkv_longbench_batch.sh SNAPKV_FDP_PRIOR_EXCHANGE 2048 3\na180429+ 2894423 Ss+     03:30:42  0.0  0.0 bash -c mkdir -p /diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_formal_v1/medium; sed 's/export CUDA_VISIBLE_DEVICES=1/export CUDA_VISIBLE_DEVICES=3/' /diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/FDP125_LONGBENCH_MEDIUM_LAUNCH.sh | bash > /diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_formal_v1/medium/launch_gpu3.log 2>&1\na180429+ 2894492 Rl+     03:30:39  100  0.2 /home/bai-project/anaconda3/envs/eigen/bin/python -u /home/bai-project/jiaqizhang/EigenAttn/rebuttal_completion_pipeline/runners/wave2_longbench_eigen.py --method official_uniform --model /diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/materialized_formal_checkpoints/medium/official_uniform/final_model --tok /diskD/jiaqizhang/Llama-3 --data_dir /home/bai-project/jiaqizhang/EigenAttn/data/LongBench --max_len 8192 --limit_per_task 100000 --tasks passage_retrieval_en,qasper,multifieldqa_en,hotpotqa,2wikimqa,musique,gov_report,qmsum,multi_news,vcsum,passage_count,trec,triviaqa,samsum,lsht,lcc,repobench-p --out_dir /diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_formal_v1/medium/official_uniform\na180429+ 2903108 S       02:50:23  0.0  0.0 bash -c cd /diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1 && nohup /home/bai-project/anaconda3/envs/eigen/bin/python -u code/official_zero_shot_dispatch.py > logs/official_zero_shot_dispatch.log 2>&1 < /dev/null & echo OFFICIAL_ZERO_SHOT_DISPATCH_PID=\\$!\na180429+ 2903109 S       02:50:23  0.0  0.0 /home/bai-project/anaconda3/envs/eigen/bin/python -u code/official_zero_shot_dispatch.py\na180429+ 2919585 Rl      01:35:21 95.1  0.3 /home/bai-project/jiaqizhang/.venv/bin/python /home/bai-project/jiaqizhang/SNAPKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/run_snapkv_longbench_formal_v1.py --method SNAPKV_FDP_PRIOR_EXCHANGE --capacity 2048 --task gov_report --gpu 3\na180429+ 2929943 Rsl        49:02  107  0.8 /home/bai-project/anaconda3/envs/eigen/bin/python /diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/code/run_official_zero_shot.py --ratio 0.7 --method fdp_native --device cuda\na180429+ 2941992 Ss         00:00 30.7  0.0 python3 /diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/code/palu_global_audit.py\n",
+    "gpu": "0, 58999, 22155, 81920, 100\n1, 4131, 77022, 81920, 4\n2, 51203, 29951, 81920, 100\n3, 66186, 14967, 81920, 100\n"
+  },
+  "output_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/global_audit",
+  "prior_equivalence_audit": {
+    "fdp_native": {
+      "accepted_transfer_count": 7,
+      "diagnostic_details": [
+        "candidate=/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p7/fdp_native/decisions.json:7",
+        "candidate=/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p7/fdp_native/final_schedule.json:7"
+      ],
+      "fisher_reference_rank_signature_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "rank_signature_equal_to_fisher": false,
+      "rank_signature_sha": "96f6cbb8a53025536edfaafc184ac20f02c89a228bc9a107fee9c0accfd10cba",
+      "schedule_sha": "771a10486413bac476aa30122781a82f1e097101c2f99731008e936dd1af9d33"
+    },
+    "fdp_prior": {
+      "accepted_transfer_count": 0,
+      "diagnostic_details": [
+        "candidate=/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p7/fdp_prior/decisions.json:0",
+        "candidate=/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p7/fdp_prior/final_schedule.json:0"
+      ],
+      "fisher_reference_rank_signature_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "rank_signature_equal_to_fisher": true,
+      "rank_signature_sha": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+      "schedule_sha": "c6c45c735a459954cfc312a8be9360ef164c88407027fb1ab21ea0631eba64af"
+    }
+  },
+  "row_counts": {
+    "historical_or_diagnostic": 30,
+    "official": 18,
+    "total": 48
+  },
+  "state_snapshots": {
+    "official": {
+      "active_profile_worker": null,
+      "campaign": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+      "foreign_jobs_interrupted": 0,
+      "gpu1_used": false,
+      "identity": "PASS",
+      "last_state_sync_utc": "2026-09-20T04:18:34.550259+00:00",
+      "official_fisher": {
+        "0.3": "COMPLETE",
+        "0.5": "COMPLETE",
+        "0.7": "COMPLETE"
+      },
+      "official_native_action_space": "COMPLETE",
+      "official_native_fdp": "TIER_READY_AUTO_DISPATCH",
+      "official_native_phi": "RATIO_0.7_FROZEN",
+      "official_protocol_lock": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_PROTOCOL_LOCK.json",
+      "official_q_group_mapping": "COMPLETE",
+      "official_tier_dispatcher": "ACTIVE",
+      "official_tier_status": {
+        "0.3": {
+          "calibration": {
+            "fdp_native": "WAIT_PHI",
+            "fdp_prior": "WAIT_PHI"
+          },
+          "formal": {
+            "fdp_native": "WAIT_PHI",
+            "fdp_prior": "WAIT_PHI"
+          },
+          "phi": "PENDING"
+        },
+        "0.5": {
+          "calibration": {
+            "fdp_native": "WAIT_PHI",
+            "fdp_prior": "WAIT_PHI",
+            "random_0": "WAIT_PHI",
+            "random_1": "WAIT_PHI",
+            "random_2": "WAIT_PHI"
+          },
+          "formal": {
+            "fdp_native": "WAIT_PHI",
+            "fdp_prior": "WAIT_PHI",
+            "random_0": "WAIT_PHI",
+            "random_1": "WAIT_PHI",
+            "random_2": "WAIT_PHI"
+          },
+          "phi": "PENDING"
+        },
+        "0.7": {
+          "calibration": {
+            "fdp_native": "EXCHANGE_CALIBRATION_COMPLETE",
+            "fdp_prior": "EXCHANGE_CALIBRATION_COMPLETE"
+          },
+          "formal": {
+            "fdp_native": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+            "fdp_prior": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+            "fisher": "IMPORTED_COMPLETE"
+          },
+          "phi": "FROZEN"
+        }
+      },
+      "official_uniform": {
+        "0.3": "COMPLETE",
+        "0.5": "COMPLETE",
+        "0.7": "COMPLETE"
+      },
+      "official_zero_shot": {
+        "cache_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/zero_shot_cache",
+        "old_anchor_schema_mixed": false,
+        "output_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot",
+        "ratio_0p3": "WAIT_PHI",
+        "ratio_0p5": "WAIT_PHI",
+        "ratio_0p7": {
+          "active": "fisher",
+          "gpu": 2,
+          "pending": [
+            "fdp_prior",
+            "fdp_native"
+          ],
+          "pid": 2903616
+        },
+        "status": "RUNNING"
+      },
+      "official_zero_shot_dispatcher": "ACTIVE",
+      "old_branch": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+      "old_branch_preserved": true,
+      "old_phi_status": "VALID_FOR_OLD_ANCHOR_SCHEMA_ONLY",
+      "source_dependency_repair": "fast_hadamard_transform import fallback only",
+      "status": "OFFICIAL_FISHER_REPRODUCTION_COMPLETE",
+      "zero_shot": "WAIT_REPRODUCTION_GATE"
+    },
+    "tier": {
+      "foreign_jobs_interrupted": 0,
+      "gpu1_used": false,
+      "gpu_policy": {
+        "mode": "THROUGHPUT_FIRST_MEMORY_SAFE",
+        "reserved_margin_mib": 12288,
+        "utilization_hard_block": false,
+        "worker_peak_mib": 28672
+      },
+      "last_reason": "waiting for tier dependency or safe GPU",
+      "status": "ACTIVE",
+      "tiers": {
+        "0.3": {
+          "calibration": {
+            "fdp_native": "WAIT_PHI",
+            "fdp_prior": "WAIT_PHI"
+          },
+          "formal": {
+            "fdp_native": "WAIT_PHI",
+            "fdp_prior": "WAIT_PHI"
+          },
+          "phi": "PENDING"
+        },
+        "0.5": {
+          "calibration": {
+            "fdp_native": "WAIT_PHI",
+            "fdp_prior": "WAIT_PHI",
+            "random_0": "WAIT_PHI",
+            "random_1": "WAIT_PHI",
+            "random_2": "WAIT_PHI"
+          },
+          "formal": {
+            "fdp_native": "WAIT_PHI",
+            "fdp_prior": "WAIT_PHI",
+            "random_0": "WAIT_PHI",
+            "random_1": "WAIT_PHI",
+            "random_2": "WAIT_PHI"
+          },
+          "phi": "PENDING"
+        },
+        "0.7": {
+          "calibration": {
+            "fdp_native": "EXCHANGE_CALIBRATION_COMPLETE",
+            "fdp_prior": "EXCHANGE_CALIBRATION_COMPLETE"
+          },
+          "formal": {
+            "fdp_native": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+            "fdp_prior": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+            "fisher": "IMPORTED_COMPLETE"
+          },
+          "phi": "FROZEN"
+        }
+      },
+      "updated_epoch": 1789966654.6327639
+    },
+    "zero_shot": {
+      "active": null,
+      "completed": [
+        "0.7/fisher",
+        "0.7/fdp_prior"
+      ],
+      "foreign_jobs_interrupted": 0,
+      "gpu1_excluded": true,
+      "old_anchor_schema_mixed": false,
+      "pending": [
+        "0.7/fdp_native"
+      ],
+      "ratios": {
+        "0.3": {
+          "methods": [],
+          "phi": "WAIT_PHI"
+        },
+        "0.5": {
+          "methods": [],
+          "phi": "WAIT_PHI"
+        },
+        "0.7": {
+          "methods": [
+            "fisher",
+            "fdp_prior",
+            "fdp_native"
+          ],
+          "phi": "READY"
+        }
+      },
+      "reserved_margin_mib": 4096,
+      "status": "WAIT_PHI_OR_SAFE_GPU",
+      "worker_peak_mib": 28672
+    }
+  }
+}

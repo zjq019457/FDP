@@ -1,0 +1,432 @@
+{
+  "schema": "MPT7B_U011_FDP_EFFECT_AUDIT_V1",
+  "question": "Did the frozen FDP mapping change the U011 rank schedule relative to Uniform?",
+  "allocation_effect": true,
+  "layers_changed": 23,
+  "layers_unchanged": 9,
+  "uniform_rank_sha256": "d84d591008fbbd7968514b171d2fd79ed8daf1df0deb00833c2e0fcc67679d98",
+  "fdp_rank_sha256": "27614fe9062625031866a42e2829f855b52a7a3113a87a8fa4a8772a0b7aaad0",
+  "uniform_b_live": 851705856,
+  "fdp_b_live": 889323520,
+  "relative_resource_gap": 0.04416743613419514,
+  "net_rank_sum_delta": 9184,
+  "quality_used_to_select": false,
+  "per_layer": [
+    {
+      "layer": 0,
+      "uniform": [
+        4096,
+        4096
+      ],
+      "fdp": [
+        4096,
+        4096
+      ],
+      "rank_sum_delta": 0,
+      "changed": false
+    },
+    {
+      "layer": 1,
+      "uniform": [
+        3616,
+        3776
+      ],
+      "fdp": [
+        3456,
+        3648
+      ],
+      "rank_sum_delta": -288,
+      "changed": true
+    },
+    {
+      "layer": 2,
+      "uniform": [
+        2656,
+        3168
+      ],
+      "fdp": [
+        2496,
+        3040
+      ],
+      "rank_sum_delta": -288,
+      "changed": true
+    },
+    {
+      "layer": 3,
+      "uniform": [
+        2240,
+        2976
+      ],
+      "fdp": [
+        2080,
+        2880
+      ],
+      "rank_sum_delta": -256,
+      "changed": true
+    },
+    {
+      "layer": 4,
+      "uniform": [
+        3136,
+        3520
+      ],
+      "fdp": [
+        2976,
+        3392
+      ],
+      "rank_sum_delta": -288,
+      "changed": true
+    },
+    {
+      "layer": 5,
+      "uniform": [
+        3488,
+        3808
+      ],
+      "fdp": [
+        3232,
+        3680
+      ],
+      "rank_sum_delta": -384,
+      "changed": true
+    },
+    {
+      "layer": 6,
+      "uniform": [
+        3616,
+        3808
+      ],
+      "fdp": [
+        3200,
+        3584
+      ],
+      "rank_sum_delta": -640,
+      "changed": true
+    },
+    {
+      "layer": 7,
+      "uniform": [
+        3584,
+        3808
+      ],
+      "fdp": [
+        3584,
+        3808
+      ],
+      "rank_sum_delta": 0,
+      "changed": false
+    },
+    {
+      "layer": 8,
+      "uniform": [
+        3840,
+        3968
+      ],
+      "fdp": [
+        3648,
+        3840
+      ],
+      "rank_sum_delta": -320,
+      "changed": true
+    },
+    {
+      "layer": 9,
+      "uniform": [
+        3840,
+        3936
+      ],
+      "fdp": [
+        3840,
+        3936
+      ],
+      "rank_sum_delta": 0,
+      "changed": false
+    },
+    {
+      "layer": 10,
+      "uniform": [
+        4096,
+        4096
+      ],
+      "fdp": [
+        3872,
+        3968
+      ],
+      "rank_sum_delta": -352,
+      "changed": true
+    },
+    {
+      "layer": 11,
+      "uniform": [
+        3872,
+        3968
+      ],
+      "fdp": [
+        3872,
+        3968
+      ],
+      "rank_sum_delta": 0,
+      "changed": false
+    },
+    {
+      "layer": 12,
+      "uniform": [
+        3840,
+        3936
+      ],
+      "fdp": [
+        3840,
+        3936
+      ],
+      "rank_sum_delta": 0,
+      "changed": false
+    },
+    {
+      "layer": 13,
+      "uniform": [
+        3840,
+        3968
+      ],
+      "fdp": [
+        3648,
+        3840
+      ],
+      "rank_sum_delta": -320,
+      "changed": true
+    },
+    {
+      "layer": 14,
+      "uniform": [
+        3872,
+        3968
+      ],
+      "fdp": [
+        3648,
+        3840
+      ],
+      "rank_sum_delta": -352,
+      "changed": true
+    },
+    {
+      "layer": 15,
+      "uniform": [
+        3872,
+        3968
+      ],
+      "fdp": [
+        3648,
+        3840
+      ],
+      "rank_sum_delta": -352,
+      "changed": true
+    },
+    {
+      "layer": 16,
+      "uniform": [
+        3680,
+        3840
+      ],
+      "fdp": [
+        3488,
+        3744
+      ],
+      "rank_sum_delta": -288,
+      "changed": true
+    },
+    {
+      "layer": 17,
+      "uniform": [
+        3520,
+        3744
+      ],
+      "fdp": [
+        3520,
+        3744
+      ],
+      "rank_sum_delta": 0,
+      "changed": false
+    },
+    {
+      "layer": 18,
+      "uniform": [
+        3296,
+        3616
+      ],
+      "fdp": [
+        3296,
+        3616
+      ],
+      "rank_sum_delta": 0,
+      "changed": false
+    },
+    {
+      "layer": 19,
+      "uniform": [
+        3168,
+        3520
+      ],
+      "fdp": [
+        3168,
+        3520
+      ],
+      "rank_sum_delta": 0,
+      "changed": false
+    },
+    {
+      "layer": 20,
+      "uniform": [
+        2848,
+        3328
+      ],
+      "fdp": [
+        3008,
+        3424
+      ],
+      "rank_sum_delta": 256,
+      "changed": true
+    },
+    {
+      "layer": 21,
+      "uniform": [
+        2688,
+        3200
+      ],
+      "fdp": [
+        3520,
+        3744
+      ],
+      "rank_sum_delta": 1376,
+      "changed": true
+    },
+    {
+      "layer": 22,
+      "uniform": [
+        2464,
+        3008
+      ],
+      "fdp": [
+        3392,
+        3616
+      ],
+      "rank_sum_delta": 1536,
+      "changed": true
+    },
+    {
+      "layer": 23,
+      "uniform": [
+        2592,
+        3104
+      ],
+      "fdp": [
+        2880,
+        3296
+      ],
+      "rank_sum_delta": 480,
+      "changed": true
+    },
+    {
+      "layer": 24,
+      "uniform": [
+        2240,
+        2880
+      ],
+      "fdp": [
+        2688,
+        3200
+      ],
+      "rank_sum_delta": 768,
+      "changed": true
+    },
+    {
+      "layer": 25,
+      "uniform": [
+        2208,
+        2784
+      ],
+      "fdp": [
+        2624,
+        3104
+      ],
+      "rank_sum_delta": 736,
+      "changed": true
+    },
+    {
+      "layer": 26,
+      "uniform": [
+        1728,
+        2464
+      ],
+      "fdp": [
+        3552,
+        3744
+      ],
+      "rank_sum_delta": 3104,
+      "changed": true
+    },
+    {
+      "layer": 27,
+      "uniform": [
+        2144,
+        2784
+      ],
+      "fdp": [
+        3200,
+        3520
+      ],
+      "rank_sum_delta": 1792,
+      "changed": true
+    },
+    {
+      "layer": 28,
+      "uniform": [
+        2304,
+        2912
+      ],
+      "fdp": [
+        3392,
+        3616
+      ],
+      "rank_sum_delta": 1792,
+      "changed": true
+    },
+    {
+      "layer": 29,
+      "uniform": [
+        3008,
+        3328
+      ],
+      "fdp": [
+        3296,
+        3552
+      ],
+      "rank_sum_delta": 512,
+      "changed": true
+    },
+    {
+      "layer": 30,
+      "uniform": [
+        2752,
+        3136
+      ],
+      "fdp": [
+        3296,
+        3552
+      ],
+      "rank_sum_delta": 960,
+      "changed": true
+    },
+    {
+      "layer": 31,
+      "uniform": [
+        96,
+        1280
+      ],
+      "fdp": [
+        96,
+        1280
+      ],
+      "rank_sum_delta": 0,
+      "changed": false
+    }
+  ]
+}

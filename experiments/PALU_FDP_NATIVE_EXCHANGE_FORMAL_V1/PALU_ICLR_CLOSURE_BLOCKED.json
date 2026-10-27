@@ -1,0 +1,51 @@
+{
+  "blocker": {
+    "exception": "ConnectionError: Couldn't reach 'allenai/openbookqa' on the Hub (LocalEntryNotFoundError)",
+    "failure_type": "RESOLVED_BY_LOCAL_BINDING",
+    "first_failure_task": "openbookqa",
+    "historical_results_modified": false,
+    "historical_status_before_local_audit": "BLOCKED_EXTERNAL_DATASET_UNAVAILABLE",
+    "independent_cells_completed": [
+      "main formal PPL 12/12",
+      "random ratio 0.5 seeds 0/1/2",
+      "system profile ratio 0.5 Fisher/FDP_NATIVE"
+    ],
+    "local_binding_audit": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/PALU_ZERO_SHOT_LOCAL_DATASET_BINDING.json",
+    "model_or_schedule_changed": false,
+    "next_action_required": "run missing ratio-0.5 zero-shot cells with frozen protocol and local bindings",
+    "protocol_changed": false,
+    "remote_network_probe": "curl to huggingface.co reset by peer",
+    "sample_manifest_changed": false,
+    "scorer_changed": false,
+    "stage": "ratio_0.5 official zero-shot downstream",
+    "status": "LOCAL_DATA_BOUND_PENDING_EXECUTION",
+    "task_status": {
+      "arc_challenge": "FOUND_AND_BOUND",
+      "arc_easy": "FOUND_AND_BOUND",
+      "hellaswag": "FOUND_AND_BOUND",
+      "openbookqa": "FOUND_AND_BOUND",
+      "piqa": "FOUND_AND_BOUND",
+      "winogrande": "FOUND_AND_BOUND"
+    },
+    "tasks": [
+      "openbookqa",
+      "hellaswag",
+      "piqa",
+      "arc_easy",
+      "arc_challenge",
+      "winogrande"
+    ]
+  },
+  "completed": {
+    "cross_compressor_reporting": true,
+    "formal_main": "12/12",
+    "random_050": "3/3",
+    "system_050": "2/2"
+  },
+  "historical_results_modified": false,
+  "not_completed": [
+    "official zero-shot downstream 0.5 four methods"
+  ],
+  "requirement_matrix": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/PALU_ICLR_REQUIREMENT_MATRIX.json",
+  "status": "LOCAL_DATA_BOUND_PENDING_EXECUTION"
+}

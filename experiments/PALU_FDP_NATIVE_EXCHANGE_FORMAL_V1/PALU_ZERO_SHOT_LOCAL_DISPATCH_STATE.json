@@ -1,0 +1,21 @@
+{
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "completed_methods": [
+    "uniform",
+    "fisher",
+    "fdp_prior",
+    "fdp_native"
+  ],
+  "foreign_jobs_interrupted": 0,
+  "gpu1_excluded": true,
+  "methods": [
+    "uniform",
+    "fisher",
+    "fdp_prior",
+    "fdp_native"
+  ],
+  "pending_methods": [],
+  "reserved_margin_mib": 12288,
+  "status": "ALL_METHODS_COMPLETE",
+  "worker_peak_mib": 28672
+}

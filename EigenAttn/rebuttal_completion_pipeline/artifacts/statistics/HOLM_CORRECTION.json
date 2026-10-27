@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "test": "hellaswag_localjsonl",
+      "p_raw": 1.0,
+      "p_holm": 1.0,
+      "reject_at_05": false
+    },
+    {
+      "test": "arc_challenge_localjsonl",
+      "p_raw": 1.0,
+      "p_holm": 1.0,
+      "reject_at_05": false
+    },
+    {
+      "test": "arc_easy_localjsonl",
+      "p_raw": 1.0,
+      "p_holm": 1.0,
+      "reject_at_05": false
+    },
+    {
+      "test": "winogrande_localjsonl",
+      "p_raw": 1.0,
+      "p_holm": 1.0,
+      "reject_at_05": false
+    },
+    {
+      "test": "piqa_localjsonl",
+      "p_raw": 1.0,
+      "p_holm": 1.0,
+      "reject_at_05": false
+    }
+  ]
+}

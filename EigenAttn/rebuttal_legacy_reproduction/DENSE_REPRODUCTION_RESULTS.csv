@@ -1,0 +1,8 @@
+lm_eval,metric,n,source,value
+,wikitext2_ppl,,/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/R1_dense_wikitext_ppl/ppl_aggregate.json,6.138120287244493
+,c4_ppl,,/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/R1_dense_c4_ppl/ppl_aggregate.json,8.59711311681018
+0.5846444931288588,hellaswag_localjsonl_acc_from_correct,10042,hellaswag_localjsonl,0.5846444931288588
+0.5008532423208191,arc_challenge_localjsonl_acc_from_correct,1172,arc_challenge_localjsonl,0.5008532423208191
+0.7756734006734006,arc_easy_localjsonl_acc_from_correct,2376,arc_easy_localjsonl,0.7756734006734006
+0.794885745375408,piqa_localjsonl_acc_from_correct,1838,piqa_localjsonl,0.794885745375408
+0.7324388318863457,winogrande_localjsonl_acc_from_correct,1267,winogrande_localjsonl,0.7324388318863457

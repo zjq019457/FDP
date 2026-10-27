@@ -1,0 +1,83 @@
+{
+  "experiment": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1_LONGBENCH_SUPPLEMENTAL",
+  "progress": {
+    "status": "ACTIVE",
+    "run_id": "RATIO0P5_FDP_NATIVE_LCC_GPU2_20260924T0612Z",
+    "pid": 185069,
+    "gpu": 2,
+    "n_samples_completed": 93,
+    "n_samples_expected": 500,
+    "unique_sample_ids": 93,
+    "partial_records_valid": true,
+    "native_rank": 32640,
+    "prefill_cache_bytes": 133693440,
+    "decode_cache_bytes": 133693440,
+    "manifest_sha": "65c0304ee4e7059fb8eabd621edc9e4f8bf374f8a76594cf3642783456fe76c4",
+    "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+    "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+    "schedule_sha": "74b779ae20c128f28a5588b5907906d593148a4d2be7cc6ad0fe519d312c9907",
+    "provenance": "longbench_supplemental_4096/logs/ratio0p5_fdp_native_lcc_gpu2_20260924T0612Z.log",
+    "foreign_jobs_interrupted": 0,
+    "formal_results_modified": false,
+    "worker_active": true,
+    "started_utc": "2026-09-24T06:12:37Z",
+    "last_progress_utc": "2026-09-24T06:43:41Z",
+    "runtime_warning": "transformers warned prompt plus generation can exceed configured 4096 positions; frozen manifest/protocol unchanged"
+  },
+  "last_audited_utc": "2026-09-24T08:18:50.249312+00:00",
+  "live_raw_audit": {
+    "exists": true,
+    "raw_rows": 406,
+    "parse_errors": 0,
+    "valid_rows": 406,
+    "valid_unique_ids": 406,
+    "duplicate_valid_ids": 0,
+    "valid_mean_score_so_far": 0.005566502463054187,
+    "q_sha_values": [
+      "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1"
+    ],
+    "schedule_sha_values": [
+      "74b779ae20c128f28a5588b5907906d593148a4d2be7cc6ad0fe519d312c9907"
+    ]
+  },
+  "uniform_reference_raw_audit": {
+    "exists": true,
+    "raw_rows": 500,
+    "parse_errors": 0,
+    "valid_rows": 500,
+    "valid_unique_ids": 500,
+    "duplicate_valid_ids": 0,
+    "valid_mean_score_so_far": 0.00184,
+    "q_sha_values": [
+      "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1"
+    ],
+    "schedule_sha_values": [
+      "3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834"
+    ]
+  },
+  "uniform_reference_summary_json": {
+    "validity": "VALID",
+    "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1_LONGBENCH_SUPPLEMENTAL",
+    "method": "PALU_UNIFORM",
+    "ratio": 0.5,
+    "task": "lcc",
+    "score": 0.18,
+    "n_samples": 500,
+    "manifest_sha": "65c0304ee4e7059fb8eabd621edc9e4f8bf374f8a76594cf3642783456fe76c4",
+    "schedule_sha": "3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834",
+    "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+    "native_rank": 32640,
+    "formal_cache_bytes": 133693440,
+    "gpu": 0
+  },
+  "score_reconciliation_status": "CONFIRMED_PERCENT_SCALE",
+  "protocol_warning": "The runner emitted the frozen 4096-position warning; protocol was not changed.",
+  "uniform_score_reconciliation": {
+    "uniform_n": 500,
+    "uniform_unique_ids": 500,
+    "uniform_summary_score_percent": 0.18,
+    "uniform_raw_mean_fraction": 0.00184,
+    "scale_reconciliation": "confirmed: summary score is 100 * row-score mean, rounded to 2 decimals",
+    "score_consistent": true
+  }
+}

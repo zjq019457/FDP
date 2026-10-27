@@ -1,0 +1,37 @@
+{
+  "foreign_jobs_interrupted": 0,
+  "formal_results_modified": false,
+  "results": {
+    "lcc": {
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20260924,
+      "fdp_native_raw_sha256": "2418d5ef7a0876907e54bf5fc90112c36f5bc274c1f0602019ab596771ad1d2e",
+      "interpretation": "exploratory supplemental paired bootstrap; not formal PPL or preregistered V3 test",
+      "mean_delta_native_minus_uniform_score_points": 0.372,
+      "paired_percentile_bootstrap_95_ci_score_points": [
+        0.032,
+        0.742
+      ],
+      "paired_valid_sample_ids": 500,
+      "pairing_key": "sample_id",
+      "raw_scores_scaled_by_100": true,
+      "uniform_raw_sha256": "15a42b834d4ce37112ea3cb0d157e28031c90282c662559a483efb3a42d29c89"
+    },
+    "repobench-p": {
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 20260924,
+      "fdp_native_raw_sha256": "e6cf1d652ce0a1b4460c500ca81f14b31b948ab3ca7c58a41942e4d280d333a6",
+      "interpretation": "exploratory supplemental paired bootstrap; not formal PPL or preregistered V3 test",
+      "mean_delta_native_minus_uniform_score_points": -1.372,
+      "paired_percentile_bootstrap_95_ci_score_points": [
+        -2.198,
+        -0.598
+      ],
+      "paired_valid_sample_ids": 500,
+      "pairing_key": "sample_id",
+      "raw_scores_scaled_by_100": true,
+      "uniform_raw_sha256": "59a3390da7483af6b003b8fdfaa6fa3c9eadabfd7d66d7b3260abb87ca26c4b4"
+    }
+  },
+  "utc": "2026-09-24T18:31:37.707995+00:00"
+}

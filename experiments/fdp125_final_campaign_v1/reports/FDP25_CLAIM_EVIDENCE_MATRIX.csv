@@ -1,0 +1,10 @@
+claim_id,claim,evidence,status,limitation_or_next_step
+C1,"Current primary FDP25 method is d1+d2+d5 with lambda=1.2, rho=0.75, eta=0",FDP125_PRIMARY_METHOD_AUTHORITY plus source authority JSON,PASS,bind to every future dispatch
+C2,Llama FDP25/D125 is complete at Light/Medium/Aggressive on paired WikiText-2/C4,"three FDP25_D125 registry rows; full windows, skipped=0, common runner hash",PASS_DEVELOPMENT,not yet untouched confirmatory evidence
+C3,Llama FDP25/D125 has lower recorded PPL than Parent_5COMP in all three tiers and both datasets,registry comparison of paired rows,PASS_DEVELOPMENT,resource gaps are small but not identical in every row; report exact bytes
+C4,Official EigenAttention Uniform comparator is on the official basis/materializer/evaluator path,"official Uniform provenance and common evaluator hash; complete Light v4, Aggressive v4, Medium v5/confirmation",PASS_WITH_RESOURCE_CAVEAT,strict matched-resource closure remains open
+C5,FDP25 component/causal mechanism is established,no current control/ablation/causal artifacts found,MISSING,run frozen controls/ablations after space gate
+C6,Long-context/LongBench generalization is established,3 historical candidate artifacts found by CPU binding audit; compatibility not yet proven,MISSING,bind existing repaired outputs if protocol matches; otherwise queue minimum run
+C7,Cross-model transfer to Qwen and OPT is established,Qwen Dense only; 20 OPT historical candidates found but authority binding is incomplete,MISSING_OR_BLOCKED,Qwen provenance/space gate; OPT authority audit
+C8,System-level latency/memory advantage is established,no current system benchmark artifact found,MISSING,quiet-GPU benchmark after core/control gates
+C9,Reproduction is fully source-commit pinned,four critical script SHA256 values recorded; source tree has no usable Git commit,PARTIAL,retain hashes; obtain commit identity if repository owner supplies it

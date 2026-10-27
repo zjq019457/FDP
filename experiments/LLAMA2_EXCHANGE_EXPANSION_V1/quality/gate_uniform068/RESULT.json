@@ -1,0 +1,87 @@
+{
+ "label": "gate_uniform068",
+ "schedule": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/schedules/uniform_e068/SCHEDULE.json",
+ "schedule_sha256": "8a686cc2e5fb7368bd8cdf563943b88c2d87a34e3e239e12990c97d81515a245",
+ "rank_sha": "c566c93a731e1ba3241513d6544ff6eedf007aa989e81d01a1fcceb82d686c6c",
+ "B_live": 746323968,
+ "ratio": 0.695068359375,
+ "physical_gpu": 0,
+ "started": "2026-10-12T02:59:35.473874+00:00",
+ "script_sha256": "f475b595cd68045838085bc99300474c8e96944f910c2aeddd65dca9e244f373",
+ "operator_parity": [
+  {
+   "layer": 0,
+   "rank_kq": 4096,
+   "rank_v": 4096,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 1.0,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  },
+  {
+   "layer": 16,
+   "rank_kq": 2400,
+   "rank_v": 3744,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 0.9999999999999999,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  },
+  {
+   "layer": 31,
+   "rank_kq": 1152,
+   "rank_v": 3360,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 0.9999999999999997,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  }
+ ],
+ "ppl": {
+  "wikitext2": {
+   "ppl": 9.795438969870675,
+   "used": 166,
+   "skipped": 0
+  },
+  "c4": {
+   "ppl": 12.718677802902194,
+   "used": 256,
+   "skipped": 0
+  }
+ },
+ "J": 2.4124942361489388,
+ "zs": {
+  "macro": 0.5363070620340193,
+  "tasks": {
+   "piqa_localjsonl": 0.720892274211099,
+   "winogrande_localjsonl": 0.5911602209944752,
+   "arc_easy_localjsonl": 0.6026936026936027,
+   "arc_challenge_localjsonl": 0.3199658703071672,
+   "hellaswag_localjsonl": 0.44682334196375223
+  },
+  "samples_dir": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/quality/gate_uniform068/zs/gate_uniform068/zero_shot_samples"
+ },
+ "status": "COMPLETE",
+ "finished": "2026-10-12T03:20:34.340195+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "artifact_id": "LLAMA2_PORT_PROGRESS",
+  "observed_at_utc": "2026-10-01T00:31:48.461030+00:00",
+  "llama3_replay_gate": {
+    "schedule_replay": "EXACT_PASS_FROM_FROZEN_RAW_PROFILE_AND_SAVED_THRESHOLD_TRACES",
+    "full_pass1_reacquisition": "NOT_DONE_original_compressed_pass1_checkpoint_absent",
+    "formal_Llama2_quality_started": false
+  },
+  "llama2_pass1_uniform_e060_basis_job": {
+    "pid": 1643395,
+    "status": "RUNNING_RESOURCE_ONLY",
+    "ps_snapshot": "Rsl        01:33  485",
+    "gpu_physical": 2,
+    "gpu_snapshot": [
+      {
+        "index": 0,
+        "free_mib": 49050,
+        "used_mib": 32103,
+        "util_pct": 44
+      },
+      {
+        "index": 1,
+        "free_mib": 49052,
+        "used_mib": 32101,
+        "util_pct": 45
+      },
+      {
+        "index": 2,
+        "free_mib": 54772,
+        "used_mib": 26381,
+        "util_pct": 100
+      }
+    ],
+    "log_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/basis_builder.log",
+    "log_bytes": 1290,
+    "latest_log_tail": "layer 00 complete at e=0.06; rank_k=4096 rank_v=4096; threshold 1.0000; first threshold below 1.00 error 0.0826444870 > 0.06.",
+    "quality_launched": false,
+    "foreign_jobs_interrupted": 0
+  },
+  "storage": {
+    "E_free_bytes": 14220599296,
+    "F_free_bytes": 69747560448
+  },
+  "next_gate": "finish 32-layer Uniform(e=.060) basis/rank report; then validate the canonical materialization/export path for a 2-prompt x 512-token Pass1 profile. No Wiki/C4/ZS until the exact 3COMP schedule is realized and locked on Llama-2."
+}

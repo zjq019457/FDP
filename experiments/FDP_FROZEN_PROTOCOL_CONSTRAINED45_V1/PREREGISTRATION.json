@@ -1,0 +1,139 @@
+{
+ "experiment": "FDP_FROZEN_PROTOCOL_CONSTRAINED45_V1",
+ "written_at": "2026-10-09T02:14:44.078247-07:00",
+ "quality_scores_read": false,
+ "protocol": {
+  "model": "/diskD/jiaqizhang/Llama-3 (Llama-3-8B base)",
+  "calibration": "WikiText-2 train, 512x2048, seed 2 (frozen builder sampler)",
+  "avg_dim": 32,
+  "dtype": "bf16",
+  "builder": "frozen offline builder sha e2329411... + C45 adapter (official 45% loop condition only)",
+  "error": "frozen builder relative error",
+  "threshold_step": 0.02,
+  "threshold_floor": 0.3,
+  "rank_lattice": "multiples of 8 (num_kv_heads), frozen finalize",
+  "fdp": {
+   "signal": "step1_diagnose_llama Dense vs Uniform+45 parent",
+   "components": [
+    "d1",
+    "d2",
+    "d5"
+   ],
+   "weights": [
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "lambda": 1.2,
+   "normalisation": "mean-normalised to base_e",
+   "layer0": "rho=0.75 geometric then builder --freeze_layer0_eb at base_e (frozen)"
+  },
+  "materializer": "main_eigen_attn.py --compress_only, avg_dim 4096, nsamples 64, c4, bf16 (frozen)",
+  "eval": {
+   "ppl": "ppl_instrumented.py sha ffe4e52e (141 Wiki / 256 C4 windows, bf16)",
+   "zs": "zero_shot_instrumented.py sha aa2e2101, 5 tasks, bf16, batch 8",
+   "longbench": "QA-6 frozen manifest (1150 samples) wave2_longbench_eigen.py sha 37ca6cf7, max_len 8192, Aggressive only"
+  }
+ },
+ "official_45_rule": "upstream 8bd0d3fa decompose/eigen_attn.py min_thresh=0.45: evaluate candidate, continue while err<eb and rank_kq>460.8 and rank_v>460.8; final = last accepted candidate (step-back). No rank clamp.",
+ "tiers_base_e": {
+  "light": 0.045,
+  "medium": 0.06,
+  "aggressive": 0.09
+ },
+ "resource_rule": "FDP+45 B is determined by its schedule; Uniform+45 EB = Uniform+45 lattice point minimising |B_u - B_fdp|. |gap|<=0.15% MATCHED, <=1% NEAR_MATCHED, else NOT_SAME_RESOURCE (no same-resource claim).",
+ "aggressive_degeneracy_rule": {
+  "definition": "DEGENERATE if the real FDP+45 ranks differ from the Uniform+45 parent ranks in <=4 layers, OR no Uniform+45 lattice point lies within 1% of B_fdp.",
+  "alternates_in_order": [
+   0.08,
+   0.075
+  ],
+  "procedure": "if DEGENERATE at base_e 0.090, rebuild parent/profiling at the next alternate base_e; choice uses ranks/bytes only."
+ },
+ "preregistered_optional_ablation": {
+  "NoD2": {
+   "weights": [
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "run_if": "main pipeline complete and GPU/disk available",
+   "adoption_never_based_on_scores": true
+  }
+ },
+ "optional_control": {
+  "spectral_tail_same_resource": "only if resources allow; never used to select resource points"
+ },
+ "pairing": "per-window PPL NLL and per-item ACC kept; paired bootstrap FDP vs Uniform within tier",
+ "proxy_resource_audit_using_historical_eb_shapes": {
+  "light@0.045": {
+   "fdp45_B": 219381760,
+   "parent45_B": 217612288,
+   "fdp_layers_differing_from_parent": 20,
+   "fdp_stops": {
+    "error_budget": 27,
+    "min_thresh_45": 1,
+    "both": 4,
+    "floor": 0
+   },
+   "uniform45_nearest_gap_pct": 0.05974607916355489,
+   "fdp45_minus_uniform45_min_pct": 24.373026193572358
+  },
+  "medium@0.06": {
+   "fdp45_B": 204111872,
+   "parent45_B": 199589888,
+   "fdp_layers_differing_from_parent": 19,
+   "fdp_stops": {
+    "error_budget": 19,
+    "min_thresh_45": 9,
+    "both": 4,
+    "floor": 0
+   },
+   "uniform45_nearest_gap_pct": 0.09632364745545031,
+   "fdp45_minus_uniform45_min_pct": 15.716143414452906
+  },
+  "aggressive@0.09": {
+   "fdp45_B": 184549376,
+   "parent45_B": 179339264,
+   "fdp_layers_differing_from_parent": 7,
+   "fdp_stops": {
+    "error_budget": 9,
+    "min_thresh_45": 19,
+    "both": 4,
+    "floor": 0
+   },
+   "uniform45_nearest_gap_pct": 0.08877840909090909,
+   "fdp45_minus_uniform45_min_pct": 4.625673416310607
+  },
+  "aggressive@0.08": {
+   "fdp45_B": 188514304,
+   "parent45_B": 182681600,
+   "fdp_layers_differing_from_parent": 13,
+   "fdp_stops": {
+    "error_budget": 14,
+    "min_thresh_45": 17,
+    "both": 1,
+    "floor": 0
+   },
+   "uniform45_nearest_gap_pct": 0.10429341213280027,
+   "fdp45_minus_uniform45_min_pct": 6.873490618614156
+  },
+  "aggressive@0.075": {
+   "fdp45_B": 190185472,
+   "parent45_B": 186613760,
+   "fdp_layers_differing_from_parent": 11,
+   "fdp_stops": {
+    "error_budget": 15,
+    "min_thresh_45": 14,
+    "both": 3,
+    "floor": 0
+   },
+   "uniform45_nearest_gap_pct": 0.0,
+   "fdp45_minus_uniform45_min_pct": 7.820917703882594
+  }
+ }
+}

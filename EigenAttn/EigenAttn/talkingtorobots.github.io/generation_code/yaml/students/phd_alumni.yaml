@@ -1,0 +1,40 @@
+- NAME: Vidhi Jain
+  NATIVE: विधि जैन
+  URL: https://vidhijain.github.io/
+  PIC: vidhijain.webp
+  X: viddivj
+  PRON: she/her
+  WS: 4
+  DEPT: RI
+  SPICY: "Life is multimodal, your robot instructions better be too"
+  POS: RS @ OpenAI
+  YEAR:  2025
+  Thesis: Lowering Barriers in Human-Robot Communication 
+- NAME: So Yeon Min
+  NATIVE: 민소연
+  URL: http://soyeonm.github.io/
+  PIC: soyeonmin.webp
+  X: SoYeonTiffMin
+  PRON: she/her
+  WS: 4
+  DEPT: MLD
+  CO: Rus Salakhutdinov
+  CO-URL: https://www.cs.cmu.edu/~rsalakhu/
+  SPICY: "Models don't know what they don't know"
+  POS: RS @ Anthropic
+  YEAR:  2025
+  Thesis: Situated Instruction Following
+- NAME: Hao Zhu
+  NATIVE: 朱昊
+  YEAR: 2024
+  ROLE: PhD
+  DEPT: LTI
+  X: _Hao_Zhu
+  POS: Postdoc @ Stanford
+  URL: http://www.zhuhao.me/
+  WS: 5
+  PIC: 'haozhu.jpg'
+  YEAR: 2024
+  Thesis: 'Artificial Social Intelligence: Challenges, Environments, and Mechanisms'
+  CO: Graham Neubig
+  CO-URL: https://phontron.com

@@ -1,0 +1,97 @@
+{
+  "schema": "FDP125_ULTRA_AGGRESSIVE_DS_DIAGNOSTIC_PROTOCOL_LOCK_V1",
+  "status": "USER_FROZEN_RESOURCE_TARGET_QUALITY_BLIND_SCHEDULE_SELECTION_PENDING",
+  "scope": "One stronger-compression diagnostic tier for the Llama-3-8B final FDP-EB ablation line; not a redesign of FDP and not a change to existing tiers.",
+  "source_instruction": {
+    "path_on_origin": "C:/Users/dell/.codex/attachments/3ead55ca-549a-49ff-81bf-50711b3074c5/已粘贴的文本.txt",
+    "sha256": "cc90205039fa128252ad91be96fa60596760dc9b1603448ff1cab86f44f85520"
+  },
+  "model": {
+    "repo_id": "meta-llama/Meta-Llama-3-8B",
+    "content_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+    "max_position_embeddings": 8192
+  },
+  "method": {
+    "profile_line": "final FDP-EB Llama-3 ablation; existing frozen component definitions and TRUE_TWO_PASS_FDP_EB mapping",
+    "lambda": 1.2,
+    "rho": 0.75,
+    "q_full": "MinMax_layers(d1+d2+d5)",
+    "q_no_s": "MinMax_layers(d1+d5)",
+    "d1": "Z_rel_mse",
+    "d2": "score_rel_mse_causal",
+    "d5": "max(0,-entropy_diff_A)",
+    "epsilon_raw": "epsilon_base/(1+1.2*q_l)",
+    "normalization": "existing mean normalization followed by frozen canonical layer-0 rule",
+    "only_arm_difference": "whether d2 is included in the component sum",
+    "calibration_profile_path": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb090.json",
+    "calibration_profile_sha256": "864cf9832892f8bcdcb2521604b7827bc87b9cdf0b29284fd3283e3900d180b9",
+    "full_q_replay_max_abs_error": 0.0
+  },
+  "resource_target": {
+    "anchor_tier": "Aggressive Full",
+    "anchor_B_live_bytes": 159416320,
+    "target_fraction": 0.9,
+    "ultra_B_target_bytes": 143474688,
+    "tolerance_abs_fraction": 0.0015,
+    "search_objective": "resource-only nearest legal rank schedule to the frozen target",
+    "if_no_schedule_within_tolerance": "select the closest legal schedule and report exact gap; never move target after quality"
+  },
+  "arms": [
+    {
+      "name": "U-FULL",
+      "components": ["d1", "d2", "d5"]
+    },
+    {
+      "name": "U-NO-S",
+      "components": ["d1", "d5"]
+    }
+  ],
+  "same_epsilon_native_diagnostic": {
+    "definition": "Apply frozen U-FULL epsilon_base to U-NO-S without retuning; report B_live and per-layer QK/V rank deltas.",
+    "quality_evaluation": "not run unless schedule exactly equals a resource-controlled primary arm"
+  },
+  "rank_lattice": {
+    "builder_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+    "builder_sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+    "threshold_init": 1.0,
+    "threshold_floor": 0.3,
+    "threshold_step": 0.02,
+    "min_rank_per_projection": 64,
+    "kv_heads": 8,
+    "bytes_per_rank": 4096,
+    "resource_formula": "sum_l((rank_kq_l+rank_v_l)*4096)"
+  },
+  "quality_protocol": {
+    "datasets": ["WikiText-2", "C4"],
+    "expected_paired_windows": {
+      "WikiText-2": 141,
+      "C4": 256
+    },
+    "evaluation_protocol_sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+    "per_window_nll_required": true,
+    "J_definition": "0.5*(ln(PPL_WikiText-2)+ln(PPL_C4))",
+    "paired_bootstrap": {
+      "replicates": 10000,
+      "rng": "PCG64",
+      "ci": "percentile 95%",
+      "unit": "paired evaluation window/chunk within each dataset",
+      "joint_J": "independent resampling across Wiki/C4, preserving within-dataset paired indices",
+      "wiki_seed": 20261012,
+      "c4_seed": 20261013,
+      "reference_provenance_sha256": "9db1d002cb38e9aa6817c6958d6c28ac6d4e7f1e48aa057339cbd6f9434df87f"
+    }
+  },
+  "anti_tuning": {
+    "quality_blind_schedule_selection": true,
+    "no_quality_inputs_to_schedule_generator": true,
+    "no_other_targets": true,
+    "no_changes_to_components_lambda_calibration_operator_or_existing_tiers": true,
+    "no_manuscript_update": true
+  },
+  "audit_note": {
+    "preselection_read_deviation": "A broad read-only inventory initially displayed a pre-existing result summary containing quality fields before Ultra schedule selection. Those values are excluded from candidate generation and selection; selection uses only frozen profile components, rank traces, target, and deterministic resource-gap tie-breaks.",
+    "attempt1": "ENGINEERING_PATH_BINDING_FAILURE; preserved in ULTRA_ATTEMPT1_INVALIDATION.json; no quality or GPU computation occurred."
+  },
+  "source_protocol_lock_sha256": "85c840f6c5053d3a8734b1c1e173d3d6b649271a9e7b72eaf640bcd8b1e60d99",
+  "source_method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f"
+}

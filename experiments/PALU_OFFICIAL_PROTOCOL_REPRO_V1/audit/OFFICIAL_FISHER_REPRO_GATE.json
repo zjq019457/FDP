@@ -1,0 +1,49 @@
+{
+  "current_results": {
+    "0.3": {
+      "decode_cache_bytes": 322961408,
+      "fisher_c4_ppl": 15.014420078529556,
+      "fisher_wiki_ppl": 8.620355030908927,
+      "native_rank": 78848,
+      "prefill_cache_bytes": 322961408,
+      "result": "fisher_0p3_ratio_0.3_fisher_uniform.json"
+    },
+    "0.5": {
+      "decode_cache_bytes": 536870912,
+      "fisher_c4_ppl": 8.718134429294908,
+      "fisher_wiki_ppl": 6.0204564227043535,
+      "native_rank": 131072,
+      "prefill_cache_bytes": 536870912,
+      "result": "fisher_0p5_ratio_0.5_fisher_uniform.json"
+    },
+    "0.7": {
+      "decode_cache_bytes": 752877568,
+      "fisher_c4_ppl": 7.589037624732983,
+      "fisher_wiki_ppl": 5.616388762199244,
+      "native_rank": 183808,
+      "prefill_cache_bytes": 752877568,
+      "result": "fisher_0p7_ratio_0.7_fisher_uniform.json"
+    }
+  },
+  "foreign_jobs_interrupted": 0,
+  "gpu1_used": false,
+  "identity_gate": "PASS",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "old_branch_modified": false,
+  "paper_wiki_reference": {
+    "0.3": 8.59,
+    "0.5": 6.02,
+    "0.7": 5.62
+  },
+  "protocol": {
+    "c4_chunks": 256,
+    "c4_docs_scanned": 1100,
+    "fisher_samples": 2048,
+    "fisher_seqlen": 1024,
+    "quality_sequence_length": 2048,
+    "wiki_chunks": 166
+  },
+  "status": "OFFICIAL_FISHER_REPRODUCTION_COMPLETE",
+  "uniform_gate": "PASS"
+}

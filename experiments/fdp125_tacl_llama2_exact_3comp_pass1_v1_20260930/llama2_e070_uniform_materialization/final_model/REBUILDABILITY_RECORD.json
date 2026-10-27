@@ -1,0 +1,31 @@
+{
+  "basis_durable_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/eb070_eb090_shared_decomp/llama2_7b_uniform_pass1_eb070_eb090_eb0p07.pt",
+  "basis_original_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/eb070_eb090_shared_decomp/llama2_7b_uniform_pass1_eb070_eb090_eb0p07.pt",
+  "basis_sha256": "3e5f964fd8c3dc4ed829252ae2a0a0843f3d310793a9127492bae89eaf675648",
+  "candidate": "llama2_uniform_eb070",
+  "materialization_log": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e070_uniform_materialization/log_rank0_1790828250.txt",
+  "model_dir": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e070_uniform_materialization/final_model",
+  "model_index_retained": true,
+  "note": "Only derived weight shards removed by user authorization. Rank/config/tokenizer/logs/results and exact basis retained; rebuild uses the matching base checkpoint and materialization provenance.",
+  "quality_artifact_pointer": null,
+  "rank_config_sha256": "7dc368a098c28d719416355bf9b247cf1a9b3c675f61c7791dfd148531645363",
+  "removed_at_utc": "2026-10-02T17:42:01.820134+00:00",
+  "removed_bytes": 12669987000,
+  "removed_shards": [
+    {
+      "bytes": 4989279368,
+      "name": "model-00001-of-00003.safetensors"
+    },
+    {
+      "bytes": 4957852240,
+      "name": "model-00002-of-00003.safetensors"
+    },
+    {
+      "bytes": 2722855392,
+      "name": "model-00003-of-00003.safetensors"
+    }
+  ],
+  "retained_model_config": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e070_uniform_materialization/final_model/config.json",
+  "retained_rank_config": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e070_uniform_materialization/final_model/low_rank_config.json",
+  "status": "MODEL_WEIGHTS_REMOVED_REBUILDABLE"
+}

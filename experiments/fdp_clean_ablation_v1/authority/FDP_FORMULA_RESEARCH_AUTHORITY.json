@@ -1,0 +1,317 @@
+{
+  "project": "FDP FORMULA RESEARCH V1: CAUSAL PROPAGATION-AWARE FUNCTIONAL FRAGILITY",
+  "timestamp": "2026-09-10T11:48:28Z",
+  "status": "FORMAL_RESOURCE_AUDIT_PASS",
+  "current_dev_parent": {
+    "formula": "F_CURRENT",
+    "rho": 0.75,
+    "lambda": 1.2,
+    "weights": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "j_strong": 3.3396348521734276,
+    "light_j": 2.135747
+  },
+  "historical_fallback": {
+    "formula": "F0_HISTORICAL",
+    "rho": 1.0,
+    "lambda": 1.2,
+    "weights": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "j_strong": 3.3419083983947835,
+    "light_j": 2.135747
+  },
+  "step_a_component_loo_results": {
+    "summary": "All 5 diagnostic components tested under F_CURRENT across 4 tiers (20 evaluations). Every component exhibits positive DEV degradation when ablated (delta_J_strong > 0). Zero components improve quality when removed. All 5 components are empirically confirmed and provisionally frozen.",
+    "candidates": [
+      {
+        "cid": "minus_d1_z",
+        "desc": "Drop d1 (delta_z)",
+        "j_light": 2.1422203914262354,
+        "delta_light": 0.006473320070654154,
+        "guard_pass": false,
+        "j_medium": 2.2846074402332306,
+        "j_aggressive": 2.6297062477096915,
+        "j_ultra": 5.25222297385335,
+        "j_strong": 3.3888455539320907,
+        "delta_strong": 0.049210701758663156
+      },
+      {
+        "cid": "minus_d2_s",
+        "desc": "Drop d2 (delta_score)",
+        "j_light": 2.1357470713555813,
+        "delta_light": 0.0,
+        "guard_pass": true,
+        "j_medium": 2.2700801799073815,
+        "j_aggressive": 2.629284583032131,
+        "j_ultra": 5.129243440926075,
+        "j_strong": 3.3428694012885294,
+        "delta_strong": 0.0032345491151017924
+      },
+      {
+        "cid": "minus_d3_v",
+        "desc": "Drop d3 (delta_v)",
+        "j_light": 2.1406241510994732,
+        "delta_light": 0.004877079743891954,
+        "guard_pass": false,
+        "j_medium": 2.280984573997557,
+        "j_aggressive": 2.6691471552476287,
+        "j_ultra": 5.147946298122406,
+        "j_strong": 3.3660260091225305,
+        "delta_strong": 0.02639115694910288
+      },
+      {
+        "cid": "minus_d4_a",
+        "desc": "Drop d4 (attn_entropy)",
+        "j_light": 2.144381151534617,
+        "delta_light": 0.008634080179035664,
+        "guard_pass": false,
+        "j_medium": 2.291073054075241,
+        "j_aggressive": 2.7050086790695786,
+        "j_ultra": 5.480156764388084,
+        "j_strong": 3.4920794991776347,
+        "delta_strong": 0.15244464700420712
+      },
+      {
+        "cid": "minus_d5_h",
+        "desc": "Drop d5 (attn_energy)",
+        "j_light": 2.147301313467324,
+        "delta_light": 0.011554242111742496,
+        "guard_pass": false,
+        "j_medium": 2.2890237607061863,
+        "j_aggressive": 2.621189712546766,
+        "j_ultra": 5.163329686969519,
+        "j_strong": 3.3578477200741568,
+        "delta_strong": 0.01821286790072918
+      }
+    ]
+  },
+  "provisional_retained_components": [
+    {
+      "id": "d1_z",
+      "name": "delta_z",
+      "raw_metric": "Z_rel_mse",
+      "ablation_delta_strong": 0.049211,
+      "status": "RETAINED"
+    },
+    {
+      "id": "d2_s",
+      "name": "delta_score",
+      "raw_metric": "score_rel_mse_causal",
+      "ablation_delta_strong": 0.003235,
+      "status": "RETAINED"
+    },
+    {
+      "id": "d3_v",
+      "name": "delta_v",
+      "raw_metric": "value_only_Z_rel_mse",
+      "ablation_delta_strong": 0.026391,
+      "status": "RETAINED"
+    },
+    {
+      "id": "d4_a",
+      "name": "attn_entropy_distortion",
+      "raw_metric": "score_only_AV_rel_mse",
+      "ablation_delta_strong": 0.152445,
+      "status": "CRITICAL_RETAINED"
+    },
+    {
+      "id": "d5_h",
+      "name": "entropy_collapse_penalty",
+      "raw_metric": "entropy_penalty",
+      "ablation_delta_strong": 0.018213,
+      "status": "RETAINED"
+    }
+  ],
+  "provisional_weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "provisional_fragility_score": "S_l(e) = sum_j w_j * d_j,l",
+  "next_phase": "STEP_B_CAUSAL_EB_PROPAGATION_AUDIT",
+  "promoted_dev_optimum": {
+    "status": "DEV_LOCAL_FORMULA_OPTIMUM",
+    "method_identity_preserved": true,
+    "control_variable": "layer_wise_error_budget",
+    "fragility_formulation": "prop",
+    "parameters": {
+      "eta": 0.0,
+      "alpha_s": null,
+      "alpha_r": null,
+      "alpha_p": null,
+      "rho": 0.5,
+      "lambda": 0.9,
+      "weights": {
+        "d1_z": 0.5,
+        "d2_s": 1.0,
+        "d3_v": 1.0,
+        "d4_a": 0.5,
+        "d5_h": 0.5
+      }
+    },
+    "layer0_internalized": false,
+    "nesting_pass": true,
+    "performance": {
+      "j_strong": 3.3396348521734276,
+      "delta_j_strong_vs_current": 1.8550676106343644e-07,
+      "delta_j_strong_vs_hist": -0.0022735462213558932,
+      "delta_j_light": 7.135558144355514e-08,
+      "light_guard_pass": true,
+      "tiers": {
+        "light": {
+          "sha": "7ecf6eda0d60b4a4d01c7838f0736b47167320cd7640254816cd4101f417ad59",
+          "tot_rank": 53464,
+          "target_rank": 53464,
+          "gap_pct": 0.0,
+          "wiki_nll": 1.8740809354931116,
+          "c4_nll": 2.397413207218051,
+          "j_tier": 2.1357470713555813
+        },
+        "medium": {
+          "sha": "870786eb6b8e5ca5c196ae0a421e384686a011e80a8be7a95f1fd6b0fd1a6064",
+          "tot_rank": 48432,
+          "target_rank": 48432,
+          "gap_pct": 0.0,
+          "wiki_nll": 1.9454936124384403,
+          "c4_nll": 2.5946667473763227,
+          "j_tier": 2.2700801799073815
+        },
+        "aggressive": {
+          "sha": "b80472cc8c06d424e41788a5271f5f8f89a64feb91aa8cac45b3d54c978a4b53",
+          "tot_rank": 38416,
+          "target_rank": 38600,
+          "gap_pct": 0.47668393782383417,
+          "wiki_nll": 2.3043786864727736,
+          "c4_nll": 2.93478318490088,
+          "j_tier": 2.6195809356868267
+        },
+        "ultra": {
+          "sha": "58ed4bf50c1632c9922904c41b0d425b2f1fa4a7b61541c207c02b17ac4c7676",
+          "tot_rank": 30328,
+          "target_rank": 30328,
+          "gap_pct": 0.0,
+          "wiki_nll": 5.135043993592262,
+          "c4_nll": 5.123442888259888,
+          "j_tier": 5.129243440926075
+        }
+      }
+    },
+    "bootstrap_vs_current": {
+      "light": {
+        "vs_current": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "vs_hist": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        }
+      },
+      "medium": {
+        "vs_current": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "vs_hist": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        }
+      },
+      "aggressive": {
+        "vs_current": {
+          "mean": -0.0068206386640667915,
+          "ci": [
+            -0.015554017690010368,
+            0.0006561290007084607
+          ],
+          "p": 0.0389
+        },
+        "vs_hist": {
+          "mean": -0.0068206386640667915,
+          "ci": [
+            -0.015554017690010368,
+            0.0006561290007084607
+          ],
+          "p": 0.0389
+        }
+      },
+      "ultra": {
+        "vs_current": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "vs_hist": {
+          "mean": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        }
+      }
+    }
+  },
+  "promoted_formula": {
+    "formula_name": "F_PARENT_CONSERVATIVE",
+    "status": "BEST_DEV_FDP_FORMULA_LOCKED",
+    "weights": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "lambda": 1.2,
+    "rho": 0.75,
+    "eta": 0.0,
+    "j_strong": 3.339635,
+    "j_dev": {
+      "light": 2.135747,
+      "medium": 2.27008,
+      "aggressive": 2.619581,
+      "ultra": 5.129243
+    },
+    "natural_compliance": {
+      "light_gap_pct": 0.0,
+      "medium_gap_pct": 0.0,
+      "aggressive_gap_pct": 0.477,
+      "ultra_gap_pct": 0.0,
+      "all_within_1pct": true
+    },
+    "tie_breaker_resolution": "Candidate B rejected due to natural-state resource violations (1.803% on Aggressive, 1.451% on Ultra) and Light guard failure (+0.0061 NLL). Candidate A confirmed as simpler canonical winner."
+  },
+  "formal_audit_file": "/diskF/jiaqizhang/fdp_clean_ablation_v1/formal_ablation/FORMAL_RESOURCE_AUDIT.json",
+  "last_updated": "2026-09-10T20:23:14Z"
+}

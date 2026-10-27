@@ -1,0 +1,30 @@
+{
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "exact_resource_fields": [
+    "total_native_rank",
+    "prefill_cache_bytes",
+    "decode_cache_bytes"
+  ],
+  "foreign_jobs_interrupted": 0,
+  "formal_manifest_declared_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+  "formal_manifest_observed_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+  "frozen_source_schedule_hashes": {},
+  "gpu1_used": false,
+  "historical_results_modified": false,
+  "methods": [
+    "PALU_UNIFORM",
+    "PALU_FISHER",
+    "PALU_FDP_PRIOR",
+    "PALU_FDP_NATIVE"
+  ],
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "q_SHA": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "quality_driven_retuning": false,
+  "rank_quantum": 32,
+  "ratios": [
+    0.7,
+    0.5,
+    0.3
+  ],
+  "status": "PALU_FORMAL_METHOD_LOCK_FROZEN"
+}

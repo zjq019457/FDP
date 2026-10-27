@@ -1,0 +1,38 @@
+{
+  "schema": "LLAMA3_FULL_RESOURCE_ROBUSTNESS_BASELINE_SCALAR_REPLAY_V1",
+  "status": "PASS",
+  "model_repo_id": "meta-llama/Meta-Llama-3-8B",
+  "model_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+  "tier_replays": {
+    "MEDIUM": {
+      "profile_path": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb060.json",
+      "profile_sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+      "q_sha256": "3e29bec57d805b896e228f81ea2458efe9d5a976ac395cbf14446b1c72673986",
+      "q_sha256_round8": "33104d536d796ab0cd129e39e2c1ec9427d832c7c38229bca61391f57d9a6d65",
+      "base_scalar": 0.06,
+      "effective_epsilon_round8_sha256": "56fec59611ff979940d3b2b4350cc22550760976f0d1e02c265300e4b9708144",
+      "expected_rank_sha256": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+      "replayed_rank_sha256": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+      "rank_vector_exact_match": true,
+      "expected_B_live_bytes": 199753728,
+      "replayed_B_live_bytes": 199753728,
+      "basis_report_sha256": "bc91269c1deed44ab1fbf973e66e90417145c327b5a6db5d679a1c69eb3c585e",
+      "source_provenance_sha256": "f63af76b4259c35af36351e4fa289cdf18ebf6c44edffb5f04f132f14f0e93da"
+    },
+    "AGGRESSIVE": {
+      "profile_path": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb090.json",
+      "profile_sha256": "864cf9832892f8bcdcb2521604b7827bc87b9cdf0b29284fd3283e3900d180b9",
+      "q_sha256": "2d1480ecceecdd995a0dae34db236078ce503d67fcdff3072fc03d43f23434f5",
+      "q_sha256_round8": "f9735666901647a20299ca63bcda3aa2d237d109e7157ca699087b58265ee352",
+      "base_scalar": 0.09,
+      "effective_epsilon_round8_sha256": "fa8c7864d270adf20dff8362e475296cb4bf710da52a7d81e0f466c473ca4f5e",
+      "expected_rank_sha256": "9045f56846a48839411b8a1526ec624d5af16ca256d7d1a570b00e545663e7ad",
+      "replayed_rank_sha256": "9045f56846a48839411b8a1526ec624d5af16ca256d7d1a570b00e545663e7ad",
+      "rank_vector_exact_match": true,
+      "expected_B_live_bytes": 159416320,
+      "replayed_B_live_bytes": 159416320,
+      "basis_report_sha256": "9a644f5be3a9643364058b22dc6aefa96df354b1bc9dbb2ab8173a1c70671312",
+      "source_provenance_sha256": "f7a06104c977994b327dd7133c3d58288593b42bffe93b99afad8d4babae1f6b"
+    }
+  }
+}

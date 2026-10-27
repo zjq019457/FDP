@@ -1,0 +1,50 @@
+{
+  "schema": "PALU_TABLE1_REPRO_READONLY_SNAPSHOT_V1",
+  "captured_utc": "2026-09-29T19:07:53.680182+00:00",
+  "host": "ecs-bai-quad.fullerton.edu",
+  "gpu": [
+    {
+      "index": 0,
+      "model": "NVIDIA A100 80GB PCIe",
+      "used_mib": 8583,
+      "free_mib": 72571,
+      "util_pct": 77,
+      "foreign_pids": [
+        1251770,
+        1253176
+      ]
+    },
+    {
+      "index": 1,
+      "model": "NVIDIA A100 80GB PCIe",
+      "used_mib": 12875,
+      "free_mib": 68279,
+      "util_pct": 6,
+      "foreign_pids": [
+        1244531,
+        1249228,
+        1250815
+      ]
+    },
+    {
+      "index": 2,
+      "model": "NVIDIA A100 80GB PCIe",
+      "used_mib": 12875,
+      "free_mib": 68279,
+      "util_pct": 16,
+      "foreign_pids": [
+        1244883,
+        1253781,
+        1253995
+      ]
+    }
+  ],
+  "foreign_process_owner": "tjl_0516",
+  "foreign_command_prefix": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py",
+  "campaign_pids_active": [],
+  "stale_locks_archived": true,
+  "diskE_free_gib": 26,
+  "diskF_free_gib": 94,
+  "foreign_jobs_interrupted": 0,
+  "decision": "one sequential campaign worker may use GPU0 if rechecked memory margin remains safe; no foreign process touched"
+}

@@ -1,0 +1,1373 @@
+[
+  {
+    "band": "U011",
+    "epsilon": 0.009740064786566967,
+    "matched_layers": 32,
+    "per_layer": [
+      {
+        "layer": 0,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          4096,
+          4096
+        ],
+        "stored_rank": [
+          4096,
+          4096
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 1,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3808,
+          3936
+        ],
+        "stored_rank": [
+          3808,
+          3936
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 2,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          2816,
+          3296
+        ],
+        "stored_rank": [
+          2816,
+          3296
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 3,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          2400,
+          3104
+        ],
+        "stored_rank": [
+          2400,
+          3104
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 4,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3328,
+          3616
+        ],
+        "stored_rank": [
+          3328,
+          3616
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 5,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3488,
+          3808
+        ],
+        "stored_rank": [
+          3488,
+          3808
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 6,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3616,
+          3808
+        ],
+        "stored_rank": [
+          3616,
+          3808
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 7,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3808,
+          3936
+        ],
+        "stored_rank": [
+          3808,
+          3936
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 8,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3840,
+          3968
+        ],
+        "stored_rank": [
+          3840,
+          3968
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 9,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          4096,
+          4096
+        ],
+        "stored_rank": [
+          4096,
+          4096
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 10,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          4096,
+          4096
+        ],
+        "stored_rank": [
+          4096,
+          4096
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 11,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3872,
+          3968
+        ],
+        "stored_rank": [
+          3872,
+          3968
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 12,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3840,
+          3936
+        ],
+        "stored_rank": [
+          3840,
+          3936
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 13,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3840,
+          3968
+        ],
+        "stored_rank": [
+          3840,
+          3968
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 14,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3872,
+          3968
+        ],
+        "stored_rank": [
+          3872,
+          3968
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 15,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3872,
+          3968
+        ],
+        "stored_rank": [
+          3872,
+          3968
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 16,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3872,
+          3968
+        ],
+        "stored_rank": [
+          3872,
+          3968
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 17,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3680,
+          3840
+        ],
+        "stored_rank": [
+          3680,
+          3840
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 18,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3488,
+          3744
+        ],
+        "stored_rank": [
+          3488,
+          3744
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 19,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3328,
+          3616
+        ],
+        "stored_rank": [
+          3328,
+          3616
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 20,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3168,
+          3520
+        ],
+        "stored_rank": [
+          3168,
+          3520
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 21,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3008,
+          3424
+        ],
+        "stored_rank": [
+          3008,
+          3424
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 22,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          2752,
+          3200
+        ],
+        "stored_rank": [
+          2752,
+          3200
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 23,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          2880,
+          3296
+        ],
+        "stored_rank": [
+          2880,
+          3296
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 24,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          2528,
+          3104
+        ],
+        "stored_rank": [
+          2528,
+          3104
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 25,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          2496,
+          2976
+        ],
+        "stored_rank": [
+          2496,
+          2976
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 26,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          2144,
+          2784
+        ],
+        "stored_rank": [
+          2144,
+          2784
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 27,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          2592,
+          3104
+        ],
+        "stored_rank": [
+          2592,
+          3104
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 28,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          2624,
+          3104
+        ],
+        "stored_rank": [
+          2624,
+          3104
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 29,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3296,
+          3552
+        ],
+        "stored_rank": [
+          3296,
+          3552
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 30,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          3008,
+          3328
+        ],
+        "stored_rank": [
+          3008,
+          3328
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 31,
+        "epsilon": 0.009740064786566967,
+        "replayed_rank": [
+          128,
+          1344
+        ],
+        "stored_rank": [
+          128,
+          1344
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      }
+    ],
+    "generation_code_recovered": false,
+    "note": "Replay is independently computed; it does not prove the original historical generation procedure."
+  },
+  {
+    "band": "U015",
+    "epsilon": 0.013021865027912114,
+    "matched_layers": 32,
+    "per_layer": [
+      {
+        "layer": 0,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2112,
+          3808
+        ],
+        "stored_rank": [
+          2112,
+          3808
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 1,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3456,
+          3648
+        ],
+        "stored_rank": [
+          3456,
+          3648
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 2,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2368,
+          2912
+        ],
+        "stored_rank": [
+          2368,
+          2912
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 3,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2080,
+          2880
+        ],
+        "stored_rank": [
+          2080,
+          2880
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 4,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2976,
+          3392
+        ],
+        "stored_rank": [
+          2976,
+          3392
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 5,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3232,
+          3680
+        ],
+        "stored_rank": [
+          3232,
+          3680
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 6,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3200,
+          3584
+        ],
+        "stored_rank": [
+          3200,
+          3584
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 7,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3392,
+          3680
+        ],
+        "stored_rank": [
+          3392,
+          3680
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 8,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3648,
+          3840
+        ],
+        "stored_rank": [
+          3648,
+          3840
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 9,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3840,
+          3936
+        ],
+        "stored_rank": [
+          3840,
+          3936
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 10,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3872,
+          3968
+        ],
+        "stored_rank": [
+          3872,
+          3968
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 11,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3680,
+          3840
+        ],
+        "stored_rank": [
+          3680,
+          3840
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 12,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3840,
+          3936
+        ],
+        "stored_rank": [
+          3840,
+          3936
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 13,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3648,
+          3840
+        ],
+        "stored_rank": [
+          3648,
+          3840
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 14,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3648,
+          3840
+        ],
+        "stored_rank": [
+          3648,
+          3840
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 15,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3648,
+          3840
+        ],
+        "stored_rank": [
+          3648,
+          3840
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 16,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3488,
+          3744
+        ],
+        "stored_rank": [
+          3488,
+          3744
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 17,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          3328,
+          3616
+        ],
+        "stored_rank": [
+          3328,
+          3616
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 18,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2944,
+          3392
+        ],
+        "stored_rank": [
+          2944,
+          3392
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 19,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2848,
+          3296
+        ],
+        "stored_rank": [
+          2848,
+          3296
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 20,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2528,
+          3104
+        ],
+        "stored_rank": [
+          2528,
+          3104
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 21,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2400,
+          3008
+        ],
+        "stored_rank": [
+          2400,
+          3008
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 22,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2016,
+          2688
+        ],
+        "stored_rank": [
+          2016,
+          2688
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 23,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2016,
+          2688
+        ],
+        "stored_rank": [
+          2016,
+          2688
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 24,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          1664,
+          2496
+        ],
+        "stored_rank": [
+          1664,
+          2496
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 25,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          1504,
+          2304
+        ],
+        "stored_rank": [
+          1504,
+          2304
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 26,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          1088,
+          2016
+        ],
+        "stored_rank": [
+          1088,
+          2016
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 27,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          1568,
+          2400
+        ],
+        "stored_rank": [
+          1568,
+          2400
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 28,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          1760,
+          2496
+        ],
+        "stored_rank": [
+          1760,
+          2496
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 29,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2592,
+          3040
+        ],
+        "stored_rank": [
+          2592,
+          3040
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 30,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          2368,
+          2848
+        ],
+        "stored_rank": [
+          2368,
+          2848
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 31,
+        "epsilon": 0.013021865027912114,
+        "replayed_rank": [
+          64,
+          928
+        ],
+        "stored_rank": [
+          64,
+          928
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      }
+    ],
+    "generation_code_recovered": false,
+    "note": "Replay is independently computed; it does not prove the original historical generation procedure."
+  },
+  {
+    "band": "U019",
+    "epsilon": 0.016910649572124552,
+    "matched_layers": 32,
+    "per_layer": [
+      {
+        "layer": 0,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          2112,
+          3808
+        ],
+        "stored_rank": [
+          2112,
+          3808
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 1,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3264,
+          3488
+        ],
+        "stored_rank": [
+          3264,
+          3488
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 2,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          2080,
+          2656
+        ],
+        "stored_rank": [
+          2080,
+          2656
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 3,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          1760,
+          2624
+        ],
+        "stored_rank": [
+          1760,
+          2624
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 4,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          2496,
+          3072
+        ],
+        "stored_rank": [
+          2496,
+          3072
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 5,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          2816,
+          3456
+        ],
+        "stored_rank": [
+          2816,
+          3456
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 6,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3008,
+          3456
+        ],
+        "stored_rank": [
+          3008,
+          3456
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 7,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3168,
+          3552
+        ],
+        "stored_rank": [
+          3168,
+          3552
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 8,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3488,
+          3712
+        ],
+        "stored_rank": [
+          3488,
+          3712
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 9,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3616,
+          3808
+        ],
+        "stored_rank": [
+          3616,
+          3808
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 10,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3712,
+          3840
+        ],
+        "stored_rank": [
+          3712,
+          3840
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 11,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3488,
+          3744
+        ],
+        "stored_rank": [
+          3488,
+          3744
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 12,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3424,
+          3680
+        ],
+        "stored_rank": [
+          3424,
+          3680
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 13,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3264,
+          3616
+        ],
+        "stored_rank": [
+          3264,
+          3616
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 14,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3264,
+          3584
+        ],
+        "stored_rank": [
+          3264,
+          3584
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 15,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          3072,
+          3488
+        ],
+        "stored_rank": [
+          3072,
+          3488
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 16,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          2976,
+          3392
+        ],
+        "stored_rank": [
+          2976,
+          3392
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 17,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          2816,
+          3296
+        ],
+        "stored_rank": [
+          2816,
+          3296
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 18,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          2304,
+          2976
+        ],
+        "stored_rank": [
+          2304,
+          2976
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 19,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          2240,
+          2880
+        ],
+        "stored_rank": [
+          2240,
+          2880
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 20,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          1696,
+          2528
+        ],
+        "stored_rank": [
+          1696,
+          2528
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 21,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          1536,
+          2432
+        ],
+        "stored_rank": [
+          1536,
+          2432
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 22,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          1504,
+          2336
+        ],
+        "stored_rank": [
+          1504,
+          2336
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 23,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          1216,
+          2112
+        ],
+        "stored_rank": [
+          1216,
+          2112
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 24,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          800,
+          1824
+        ],
+        "stored_rank": [
+          800,
+          1824
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 25,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          576,
+          1568
+        ],
+        "stored_rank": [
+          576,
+          1568
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 26,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          224,
+          1216
+        ],
+        "stored_rank": [
+          224,
+          1216
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 27,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          480,
+          1472
+        ],
+        "stored_rank": [
+          480,
+          1472
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 28,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          736,
+          1760
+        ],
+        "stored_rank": [
+          736,
+          1760
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 29,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          1792,
+          2432
+        ],
+        "stored_rank": [
+          1792,
+          2432
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 30,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          1728,
+          2336
+        ],
+        "stored_rank": [
+          1728,
+          2336
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      },
+      {
+        "layer": 31,
+        "epsilon": 0.016910649572124552,
+        "replayed_rank": [
+          64,
+          544
+        ],
+        "stored_rank": [
+          64,
+          544
+        ],
+        "match": true,
+        "candidate_source": "preserved native threshold/error trials; first-failure stopping"
+      }
+    ],
+    "generation_code_recovered": false,
+    "note": "Replay is independently computed; it does not prove the original historical generation procedure."
+  }
+]

@@ -1,0 +1,146 @@
+{
+  "artifact_id": "LLAMA2_3COMP_PROFILE_PROTOCOL_BINDING_V1",
+  "status": "PROFILE_PROTOCOL_BOUND_NOT_RUN",
+  "created_at_utc": "2026-10-01T00:41:46.579679+00:00",
+  "authority": "User-provided canonical Llama-2 port instructions; historical Llama-3 three-component profile args and shared profiler implementation",
+  "method_binding": {
+    "components": "d1+d2+d5",
+    "mask": "11001",
+    "q": "MinMax(raw d1+d2+d5)",
+    "allocator": "TRUE_TWO_PASS_FDP_EB",
+    "method_lock_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK.json",
+    "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f"
+  },
+  "llama3_profile_anchor": {
+    "path": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb060.json",
+    "sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+    "args": {
+      "base": "/diskD/jiaqizhang/Llama-3",
+      "cmp": "/diskE/jiaqizhang/llama3_8b_eigen_kv_eb060/final_model",
+      "tok": "/diskD/jiaqizhang/Llama-3",
+      "low_json": null,
+      "dtype": "bf16",
+      "seqlen": 512,
+      "num_seqs": 2,
+      "prompts_file": null,
+      "out": "/home/bai-project/jiaqizhang/step1_out/step1_llama3_8b_eb060.json",
+      "attn_implementation": "eager",
+      "gpu": 0,
+      "device_map_auto": false,
+      "max_memory_gb": "0:60",
+      "device": "cuda"
+    },
+    "raw_profile_only": true,
+    "default_prompt_hashes_sha256": [
+      "34ea97dcdb47e045aa5eb6025b80180281920012c50cf6056c9173f7c95703b5",
+      "a578409cad160126be42b47b1a653542ed1e9c6ab7b56418e2f38ce15ddc2e21"
+    ],
+    "default_prompt_lengths_chars": [
+      457,
+      533
+    ]
+  },
+  "llama2_checkpoint": {
+    "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "repo_id": "meta-llama/Llama-2-7b-hf",
+    "content_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa5856660c691f6626d25c2cf25197",
+    "config": {
+      "_name_or_path": "meta-llama/Llama-2-7b-hf",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM"
+      ],
+      "hidden_size": 4096,
+      "num_hidden_layers": 32,
+      "num_attention_heads": 32,
+      "num_key_value_heads": 32,
+      "max_position_embeddings": 4096,
+      "rope_scaling": null
+    },
+    "files": [
+      {
+        "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf/config.json",
+        "exists": true,
+        "sha256": "9242e7db1bc2a17873e66084c3b1c6ed10883076e156b338fd6a7775748e2e3c",
+        "bytes": 609
+      },
+      {
+        "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf/tokenizer_config.json",
+        "exists": true,
+        "sha256": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a",
+        "bytes": 776
+      },
+      {
+        "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf/tokenizer.json",
+        "exists": true,
+        "sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "bytes": 1842767
+      },
+      {
+        "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf/special_tokens_map.json",
+        "exists": true,
+        "sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "bytes": 414
+      },
+      {
+        "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf/generation_config.json",
+        "exists": true,
+        "sha256": "11e70f5fd0a1a47346b5a941ff0049d226b353a1647735d9ec171a2b1521e881",
+        "bytes": 188
+      }
+    ]
+  },
+  "profiler_sources": [
+    {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/step1_diagnose_llama.py",
+      "exists": true,
+      "sha256": "df5273a707fcc6006eaee00dfc0e7848bf3b29eee122a20115af7c74ba0ab75a",
+      "bytes": 23928
+    },
+    {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/step1_diagnose.py",
+      "exists": true,
+      "sha256": "bcfd32255ecf7723b431abdb8ff4f4b53ea0cd6fc3b19b27df58540f50efc1f0",
+      "bytes": 403
+    },
+    {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/diagnose/step1.py",
+      "exists": true,
+      "sha256": "1fae83d86a66fce80e1ca523bec91c77a480010387bc6732c329bc1109d9ac97",
+      "bytes": 39076
+    }
+  ],
+  "legacy_llama2_profile": {
+    "path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/unified_protocol_closure_v1/runs/LLAMA2_MEDIUM_NATIVE_PROFILE_V1_20260924T_ATTEMPT2/FDP125_MODEL_NATIVE_D1_D2_D5_PROFILE_V1.json",
+    "exists": true,
+    "sha256": "3846296b86e6b8a6cf95d195d89a9d560a828f963a51dc4f3273efd0a0ad281d",
+    "bytes": 85225,
+    "classification": "LEGACY_UNBOUND_FOR_CANONICAL_PORT",
+    "reason": "512 windows x 2048 tokens, seed=2 protocol; not the historical Llama-3 2-prompt x 512-token diagnostic"
+  },
+  "current_uniform_resource_stage": {
+    "pid": 1643395,
+    "output_root": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930",
+    "status": "RUNNING_RESOURCE_ONLY",
+    "quality_launched": false
+  },
+  "next_gates": [
+    "finish_and_hash_uniform_e060_basis_report",
+    "verify_all_32_layers_and_deterministic_threshold_trace",
+    "canonical_materialize_uniform_e060_model",
+    "run_same_step1_diagnose_llama.py with --seqlen 512 --num_seqs 2 --dtype bf16 --attn_implementation eager, default prompts, no prompt override",
+    "generate_and_hash_raw_profile_and_q3",
+    "replay_TRUE_TWO_PASS_FDP_EB_from_frozen_method_lock",
+    "actual_resource_lock",
+    "materialization/direct_parity/canary",
+    "authorize formal quality only after all required gates"
+  ],
+  "not_authorized_yet": [
+    "Wiki/C4 formal PPL",
+    "zero-shot accuracy",
+    "any quality-based schedule changes"
+  ],
+  "scientific_parameters_modified": false,
+  "historical_llama3_quality_rerun": false,
+  "foreign_jobs_interrupted": 0
+}

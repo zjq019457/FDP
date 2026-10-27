@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-29T07:29:29.897442-07:00",
+  "hits": [
+    {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench",
+      "type": "dir",
+      "jsonl_count": 38,
+      "sample_files": [
+        "narrativeqa.jsonl",
+        "samsum.jsonl",
+        "passage_retrieval_en_e.jsonl",
+        "comprehension_and_reasoning.jsonl",
+        "triviaqa.jsonl",
+        "multiple_information_retrieval.jsonl",
+        "lsht.jsonl",
+        "trec_e.jsonl",
+        "qasper.jsonl",
+        "passage_count_e.jsonl"
+      ]
+    },
+    {
+      "path": "/diskF/jiaqizhang/combine/data/LongBench",
+      "type": "dir",
+      "jsonl_count": 38,
+      "sample_files": [
+        "narrativeqa.jsonl",
+        "samsum.jsonl",
+        "passage_retrieval_en_e.jsonl",
+        "comprehension_and_reasoning.jsonl",
+        "triviaqa.jsonl",
+        "multiple_information_retrieval.jsonl",
+        "lsht.jsonl",
+        "trec_e.jsonl",
+        "qasper.jsonl",
+        "passage_count_e.jsonl"
+      ]
+    },
+    {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/slim/longbench_eval.py",
+      "type": "file",
+      "sha256": "a71ef393206539961e976bf83f90349008f01208e16944f2a9c935ea4108b243"
+    },
+    {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/slim/needle_in_haystack.py",
+      "type": "file",
+      "sha256": "d2b33c228bb9496ea14538d4627bfb683426b0da42d567d81553238c870fe354"
+    }
+  ],
+  "blocked": false,
+  "license_note": "LongBench data under original dataset license; verify before publication"
+}

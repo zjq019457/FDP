@@ -1,0 +1,147 @@
+{
+  "breakpoint_stage_sha256": "0e50bb2e576cba1827e7df3b46995bfa211af4c92867268c78852eae9ecb0321",
+  "epsilon_base": 0.011,
+  "lambda": 1.2,
+  "layer0_effective_epsilon": 0.011,
+  "predicted_kv_cache_bytes": 889323520,
+  "predicted_minus_uniform_bytes": 37617664,
+  "predicted_relative_gap": 0.04416743613419514,
+  "profile_file_sha256": "43fcd1ad06b25e81c20015975dbc71944a65e7c12d1864adf3be6a84dc7cf4fd",
+  "q_epsilon_sha256": "8ac2310cd6a093d84b045130fff3bb25c6f5edc1768bca7f5f7db8907b5331e3",
+  "quality_used_to_select": false,
+  "rank_schedule": [
+    [
+      4096,
+      4096
+    ],
+    [
+      3456,
+      3648
+    ],
+    [
+      2496,
+      3040
+    ],
+    [
+      2080,
+      2880
+    ],
+    [
+      2976,
+      3392
+    ],
+    [
+      3232,
+      3680
+    ],
+    [
+      3200,
+      3584
+    ],
+    [
+      3584,
+      3808
+    ],
+    [
+      3648,
+      3840
+    ],
+    [
+      3840,
+      3936
+    ],
+    [
+      3872,
+      3968
+    ],
+    [
+      3872,
+      3968
+    ],
+    [
+      3840,
+      3936
+    ],
+    [
+      3648,
+      3840
+    ],
+    [
+      3648,
+      3840
+    ],
+    [
+      3648,
+      3840
+    ],
+    [
+      3488,
+      3744
+    ],
+    [
+      3520,
+      3744
+    ],
+    [
+      3296,
+      3616
+    ],
+    [
+      3168,
+      3520
+    ],
+    [
+      3008,
+      3424
+    ],
+    [
+      3520,
+      3744
+    ],
+    [
+      3392,
+      3616
+    ],
+    [
+      2880,
+      3296
+    ],
+    [
+      2688,
+      3200
+    ],
+    [
+      2624,
+      3104
+    ],
+    [
+      3552,
+      3744
+    ],
+    [
+      3200,
+      3520
+    ],
+    [
+      3392,
+      3616
+    ],
+    [
+      3296,
+      3552
+    ],
+    [
+      3296,
+      3552
+    ],
+    [
+      96,
+      1280
+    ]
+  ],
+  "rank_schedule_sha256": "27614fe9062625031866a42e2829f855b52a7a3113a87a8fa4a8772a0b7aaad0",
+  "resource_rule": "Frozen epsilon_base mapping only. No global-scalar retune. MPT locks do not preregister a 0.15% hard gate; the gap is reported and actual census is still required before quality.",
+  "schema": "MPT7B_U011_FDP_RANK_LOCK_V1",
+  "status": "SCHEDULE_ASSEMBLED_CENSUS_PENDING",
+  "uniform_b_live_bytes": 851705856
+}

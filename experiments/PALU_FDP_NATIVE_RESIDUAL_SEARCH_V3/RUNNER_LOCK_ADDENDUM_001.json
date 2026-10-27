@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-23T07:43:38Z",
+  "experimental_outputs_written": false,
+  "foreign_jobs_interrupted": 0,
+  "new_runner_sha256": "37fc000450646c8cfc1281b26644badd92e788c795dc0b810edcd9c9c4a3aa5b",
+  "old_results_valid": true,
+  "old_runner_sha256": "364e99338776c2800f3c9dd957ed91c4c8c315a22568c40c0b344af0b93af63d",
+  "reason": "CPU-only preflight engineering fixes; no calibration/formal evaluation or eval cache existed.",
+  "status": "RUNNER_LOCK_REBOUND_BEFORE_CALIBRATION"
+}

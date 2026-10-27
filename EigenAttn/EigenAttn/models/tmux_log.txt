@@ -1,0 +1,26 @@
+a1804298693@ecs-bai-quad:~/jiaqizhang$ source /home/bai-project/anaconda3/etc/profile.d/conda.sh
+a1804298693@ecs-bai-quad:~/jiaqizhang$ conda activate eigen
+(eigen) a1804298693@ecs-bai-quad:~/jiaqizhang$ cd EigenAttn
+(eigen) a1804298693@ecs-bai-quad:~/jiaqizhang/EigenAttn$ cd EigenAttn
+(eigen) a1804298693@ecs-bai-quad:~/jiaqizhang/EigenAttn/EigenAttn$ CUDA_VISIBLE_DEVICES=0,1 OMP_
+NUM_THREADS=1 HF_DATASETS_OFFLINE=1 PYTHONPATH=$(pwd):$PYTHONPATH python sanity_AB_opt30b_v2.py
+  --base /diskE/opt-30b   --cmp  /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_cal
+ibUP_lora128_all48_v5_vscaleLS_v3_clip005   --low_json ./low_rank_config_layerwise_5712_opt30b.j
+son   --tok /diskE/opt-30b   --dtype bf16   --base_device cuda:0 --cmp_device cuda:1   --data_di
+r /diskE/jiaqizhang/c4-en/en   --c4_glob "c4-validation.*.json.gz"   --c4_scan_docs 1500000   --
+c4_pool_docs 120000   --c4_val_chunks 2048   --c4_val_seed 0   --add_special_tokens 0   --ppl_mo
+de stride   --stride 256   --save_testenc /diskD/testenc_c4val_2048x2048_seed0.pt
+/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/tokenization_uti
+ls_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `T
+rue` by default. This behavior will be depracted in transformers v4.45, and will be then set to
+`False` by default. For more details check this issue: https://github.com/huggingface/transforme
+rs/issues/31884
+  warnings.warn(
+[Load] BASE...
+Loading checkpoint shards: 100%|███████████████████████████| 7/7 [00:58<00:00,  8.34s/it]
+[Load] CMP...
+Loading checkpoint shards: 100%|█████████████████████████| 13/13 [00:54<00:00,  4.19s/it]
+[C4-Pool] {'seen_docs': 45576, 'pool_docs': 45576, 'file0': '/diskE/jiaqizhang/c4-en/en/c4-valid
+ation.00000-of-00008.json.gz', 'nfiles': 1}
+[Data] Saving testenc: /diskD/testenc_c4val_2048x2048_seed0.pt
+^[[A^[[B^[[A^[[B

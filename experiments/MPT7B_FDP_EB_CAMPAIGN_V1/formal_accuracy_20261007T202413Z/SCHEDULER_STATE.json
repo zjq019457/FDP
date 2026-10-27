@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-07T21:47:34.250551+00:00",
+  "foreign_jobs_interrupted": 0,
+  "active": [],
+  "states": {
+    "U011_relaxed_uniform": "DONE",
+    "U011_fdp": "DONE",
+    "U015_relaxed_uniform": "DONE",
+    "U015_fdp": "DONE",
+    "U019_relaxed_uniform": "DONE",
+    "U019_fdp": "DONE"
+  },
+  "gpu_snapshot": {
+    "0": {
+      "uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "free_MiB": 61270,
+      "total_MiB": 81920,
+      "util": 100,
+      "effective_free_MiB": 61270
+    },
+    "1": {
+      "uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+      "free_MiB": 61270,
+      "total_MiB": 81920,
+      "util": 95,
+      "effective_free_MiB": 61270
+    },
+    "2": {
+      "uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+      "free_MiB": 49433,
+      "total_MiB": 81920,
+      "util": 99,
+      "effective_free_MiB": 28497
+    }
+  }
+}

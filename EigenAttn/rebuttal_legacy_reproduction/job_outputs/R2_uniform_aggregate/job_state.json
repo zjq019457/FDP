@@ -1,0 +1,8 @@
+{
+  "status": "DONE",
+  "job_id": "R2_uniform_aggregate",
+  "returncode": 0,
+  "ended_at": "2026-07-28T10:46:40.564689-07:00",
+  "gpu": null,
+  "elapsed_sec": 10.00652551651001
+}

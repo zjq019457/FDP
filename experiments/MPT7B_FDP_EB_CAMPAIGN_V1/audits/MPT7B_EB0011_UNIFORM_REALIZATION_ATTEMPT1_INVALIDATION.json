@@ -1,0 +1,22 @@
+{
+  "schema": "MPT7B_UNIFORM_REALIZATION_ATTEMPT_INVALIDATION_V1",
+  "tier": "EB0011_UNIFORM",
+  "attempt": 1,
+  "classification": "ENGINEERING_PREFLIGHT_PATH_BUG_NO_MODEL_LOAD_NO_QUALITY",
+  "finished_at_remote": "2026-10-05T23:40:14-07:00",
+  "error_type": "FileNotFoundError",
+  "error": "The audit looked for MPT7B_CHECKPOINT_CONTENT_MANIFEST_V1.json.sha256; the frozen sidecar is MPT7B_CHECKPOINT_CONTENT_MANIFEST_V1.sha256.",
+  "failed_sidecar_path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/identity/MPT7B_CHECKPOINT_CONTENT_MANIFEST_V1.json.sha256",
+  "correct_sidecar_path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/identity/MPT7B_CHECKPOINT_CONTENT_MANIFEST_V1.sha256",
+  "checkpoint_content_manifest_sha256": "8fd59bc340a43f13b250c77d118cc8e479993ecdee1a839bcee5cd7bc1f51db9",
+  "worker_exit_code": 1,
+  "worker_log_path": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/realization/EB0011_UNIFORM_ATTEMPT1/worker.log",
+  "worker_log_sha256": "6db30debc246b4163563fb139f7988ff7280a09fdd50ae51f9bb8a0780e492fb",
+  "buggy_audit_script_sha256": "6e718eacdbb45ca36d575ac947129fd6bc20db95590ae156dcac89dbeed8c443",
+  "model_weights_loaded": false,
+  "gpu_model_forward_started": false,
+  "formal_quality_result": false,
+  "scientific_protocol_modified": false,
+  "recovery": "Corrected sidecar suffix only; retry in a new attempt directory to preserve this failure evidence.",
+  "replacement_audit_script_sha256": "9a8cbaa262496f7461bb03aacb5fb245597672c6a761a47c80c1590bebdfe814"
+}

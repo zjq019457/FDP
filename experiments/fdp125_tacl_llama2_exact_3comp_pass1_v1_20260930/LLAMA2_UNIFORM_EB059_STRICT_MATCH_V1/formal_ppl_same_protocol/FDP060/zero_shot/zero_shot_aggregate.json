@@ -1,0 +1,66 @@
+{
+  "artifact_id": "LLAMA2_EB059_VS_FDP060_ZERO_SHOT_PAIR_DIAGNOSTIC_V1",
+  "status": "PASS",
+  "classification": "PAIRED_RESOURCE_MATCH_DIAGNOSTIC_NOT_FORMAL_CELL_AUTHORIZATION",
+  "arm": "fdp060",
+  "model_repo_id": "meta-llama/Llama-2-7b-hf",
+  "model_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa585660c691f6626d25c2cf25197",
+  "B_live_bytes": 788922368,
+  "rank_sha256": "56b904be040e2002a580fbd22cada28db2727ec8c696fb7548e44c7d654f8d00",
+  "basis_sha256": "8163de5e2b3499556a84b31c7e6218a07bd98200f47056a401aa10b000e8165b",
+  "sample_count": 16695,
+  "task_count": 5,
+  "zero_shot_macro_accuracy": 0.564680635131983,
+  "aggregation": "equal task macro acc,none; ARC acc_norm excluded",
+  "tasks": {
+    "piqa_localjsonl": {
+      "n": 1838,
+      "correct": 1372,
+      "accuracy": 0.7464635473340587,
+      "data_sha256": "a574189accfc2ce3ddf797a491540afbe7543b0b70411c798d5fabffcf14bb58",
+      "yaml_sha256": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1",
+      "ordered_sample_ids_sha256": "ee7274c6dbab1e1c17f3688e7c74df8c9ee9590768a11901b3ad9836966b8fb7"
+    },
+    "winogrande_localjsonl": {
+      "n": 1267,
+      "correct": 792,
+      "accuracy": 0.6250986582478295,
+      "data_sha256": "1aeac79cf46a3dcbe59a71ca7e5372a1490cde2b4ae2387dc56f00378104d2e8",
+      "yaml_sha256": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999",
+      "ordered_sample_ids_sha256": "7104cc8c4545ba3943022e3e22401e238680e6bcd6145a0d58973dc250e249d1"
+    },
+    "arc_easy_localjsonl": {
+      "n": 2376,
+      "correct": 1468,
+      "accuracy": 0.6178451178451179,
+      "data_sha256": "874354cf372667530bd6cbd2d78dca2d657c5e2e746f53cf01d1e9d3a90cbc3d",
+      "yaml_sha256": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15",
+      "ordered_sample_ids_sha256": "aae2bfb396a2eb5940c19dbd573fd59994fc55cdadddc2d81e276b779a937bed"
+    },
+    "arc_challenge_localjsonl": {
+      "n": 1172,
+      "correct": 410,
+      "accuracy": 0.34982935153583616,
+      "data_sha256": "03227c30fd557ad1416c2cb955eeb6dc79eeb21e0679456a1ccd42eaccc0ff87",
+      "yaml_sha256": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d",
+      "ordered_sample_ids_sha256": "e27b72037814d2c6c1e5e9eba2706103cd4b35834bb3fac12b9254c5890da01a"
+    },
+    "hellaswag_localjsonl": {
+      "n": 10042,
+      "correct": 4862,
+      "accuracy": 0.4841665006970723,
+      "data_sha256": "c92843707204769d8b656a9c4bbe71fb5b897f98b0cac73bd4d8e925e2419686",
+      "yaml_sha256": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815",
+      "ordered_sample_ids_sha256": "a16da1e47e2f97f6fe5650f3e2f3459288f5727ad09171b79c795f3623731c8d"
+    }
+  },
+  "sample_manifest_sha256": "9b3a28d6e11c0e4183ee752880accfcaecfdfa279056a32966ec0fff744155e4",
+  "protocol_sha256": "673f5e2de9b9d8f33d39af3b0222e89c2f4d3b0bd066fc1426fee3a0c7e7b5b4",
+  "runner_sha256": "aa2e210166ca6292123e43fc3da984f110d1c1d09b5c02fd937a2e0bc7df49ab",
+  "original_tool_sha256": "55c42cf0642e2cdb523706e6678a138d9ffc3e85fe65f4f65124c2e325086bce",
+  "physical_gpu": 2,
+  "dtype": "bf16",
+  "batch_size": 8,
+  "formal_cell_authorization": "not asserted",
+  "created_at_utc": "2026-10-01T09:44:52.340488+00:00"
+}

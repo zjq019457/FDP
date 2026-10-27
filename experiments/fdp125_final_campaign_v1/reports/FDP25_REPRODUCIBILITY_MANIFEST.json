@@ -1,0 +1,83 @@
+{
+  "authority": {
+    "audit_generated_at": "2026-09-17T15:33:42",
+    "audit_scope": "existing current-campaign artifacts only",
+    "campaign": "FDP25",
+    "code_provenance": {
+      "files": {
+        "EigenAttn/main_eigen_attn.py": {
+          "sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7",
+          "size": 202559
+        },
+        "EigenAttn/step1_diagnose_llama.py": {
+          "sha256": "df5273a707fcc6006eaee00dfc0e7848bf3b29eee122a20115af7c74ba0ab75a",
+          "size": 23928
+        },
+        "EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py": {
+          "sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+          "size": 28002
+        },
+        "rebuttal_legacy_reproduction/runners/ppl_instrumented.py": {
+          "sha256": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+          "size": 16645
+        }
+      },
+      "git_commit": "",
+      "git_status_short": "",
+      "repo": "/home/bai-project/jiaqizhang/EigenAttn"
+    },
+    "frozen_formula": {
+      "components": [
+        "d1",
+        "d2",
+        "d5"
+      ],
+      "eta": 0,
+      "lambda": 1.2,
+      "rho": 0.75,
+      "weights": [
+        1,
+        1,
+        1
+      ]
+    },
+    "no_new_experiment_launched": true,
+    "operating_points_source": "/diskF/jiaqizhang/fdp125_final_campaign_v1/authority/FDP125_OPERATING_POINTS.json",
+    "protocol_sha": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+    "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+    "selection_policy": "RESOURCE_ONLY_NO_QUALITY",
+    "source_authority": "/diskF/jiaqizhang/fdp125_final_campaign_v1/authority/FDP125_MODEL_AUTHORITIES.json",
+    "write_policy": "compact authority/results on diskF; heavy scratch on diskE; no new diskD writes"
+  },
+  "code_provenance": {
+    "files": {
+      "EigenAttn/main_eigen_attn.py": {
+        "sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7",
+        "size": 202559
+      },
+      "EigenAttn/step1_diagnose_llama.py": {
+        "sha256": "df5273a707fcc6006eaee00dfc0e7848bf3b29eee122a20115af7c74ba0ab75a",
+        "size": 23928
+      },
+      "EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py": {
+        "sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+        "size": 28002
+      },
+      "rebuttal_legacy_reproduction/runners/ppl_instrumented.py": {
+        "sha256": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+        "size": 16645
+      }
+    },
+    "git_commit": "",
+    "git_status_short": "",
+    "repo": "/home/bai-project/jiaqizhang/EigenAttn"
+  },
+  "evaluation_protocol_sha": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+  "evaluator_runner_sha": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+  "generated_at": "2026-09-17T15:33:42",
+  "manifest_version": "FDP25_REPRODUCIBILITY_V1",
+  "new_experiment_launched_by_audit": false,
+  "registry": "FDP25_MASTER_RESULT_REGISTRY.csv",
+  "result_record_count": 25,
+  "storage_policy": "compact authority/results on diskF; heavy scratch on diskE; no new diskD writes"
+}

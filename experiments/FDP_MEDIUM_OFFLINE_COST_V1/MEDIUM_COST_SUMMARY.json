@@ -1,0 +1,21 @@
+{
+ "summary": {
+  "uniform_total_min": 44.71826423789996,
+  "fdp_total_min": 94.11326924854657,
+  "fdp_extra_min": 49.395005010646614,
+  "overhead_ratio": 2.104582341297205,
+  "profiling_min_C_D_E": 4.347867878316902,
+  "profiling_share_of_fdp_total": 0.046198245083108165,
+  "step1_only_min": 1.376110119469619,
+  "step1_share_of_fdp_total": 0.014621850143526608,
+  "pass2_search_and_materialize_min_F_G": 45.6867996570305,
+  "parent_build_min_B": 44.07860171319917
+ },
+ "audit_pass": {
+  "parent_uniform": true,
+  "step1_profile": true,
+  "fdp_eb_vector": true,
+  "fdp": true,
+  "uniform_comparator": true
+ }
+}

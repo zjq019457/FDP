@@ -1,0 +1,604 @@
+{
+  "artifact_id": "LLAMA2_MEDIUM_E060_TRUE_TWO_PASS_SCHEDULE_CANDIDATE_NEWBASIS_V1",
+  "status": "RANK_SCHEDULE_CANDIDATE_READY_FOR_CANONICAL_MATERIALIZATION_AND_ACTUAL_BYTE_CENSUS",
+  "protocol": "TRUE_TWO_PASS_FDP_EB replay per frozen Llama3 method lock; layer0 epsilon exactly e (confirmed by locked Llama3 effective-Eb SHA)",
+  "model": "meta-llama/Llama-2-7b-hf",
+  "checkpoint_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa5856660cc691f6626d25c2cf25197",
+  "tokenizer_fingerprint": "bound by LLAMA2_3COMP_PROFILE_INPUT_MANIFEST_V1",
+  "components": [
+    "d1",
+    "d2",
+    "d5"
+  ],
+  "q_formula": "MinMax(raw d1+d2+d5)",
+  "q_sha256_round8": "731af943d4db35c65d0e3d47c69253b0fc9082da3e384b6f1999afc67fdf3e4b",
+  "effective_eb": [
+    0.06,
+    0.06600837628826382,
+    0.06411860191012159,
+    0.06059235088898211,
+    0.058850929950980374,
+    0.058193758553141205,
+    0.05900472654089976,
+    0.058746787056619024,
+    0.05922427272730772,
+    0.058942374703595514,
+    0.05924995344981512,
+    0.05800567536099429,
+    0.058954778126251293,
+    0.0641897944437501,
+    0.060489896382971094,
+    0.060900380613540625,
+    0.06144177022562511,
+    0.06160371293942853,
+    0.061910807224575384,
+    0.06077698712217139,
+    0.061957958565192824,
+    0.06210249748056246,
+    0.061212094658606664,
+    0.062403227607656014,
+    0.06142660078763798,
+    0.059939442672584525,
+    0.0609319321568077,
+    0.06041140544434647,
+    0.060328274385692,
+    0.059970775114435625,
+    0.062095773976620756,
+    0.030004400825257016
+  ],
+  "effective_eb_sha256_round8": "3034b167a1aa928c4ed55498d39a743ee3df475356f9a5f0f6b981f495747f71",
+  "rank_schedule": [
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ],
+    [
+      1184,
+      3488
+    ],
+    [
+      864,
+      3072
+    ],
+    [
+      864,
+      3104
+    ],
+    [
+      1408,
+      3488
+    ],
+    [
+      1632,
+      3520
+    ],
+    [
+      2016,
+      3616
+    ],
+    [
+      2400,
+      3712
+    ],
+    [
+      2464,
+      3744
+    ],
+    [
+      2848,
+      3840
+    ],
+    [
+      2368,
+      3712
+    ],
+    [
+      2432,
+      3712
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2848,
+      3840
+    ],
+    [
+      2816,
+      3840
+    ],
+    [
+      2880,
+      3840
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2368,
+      3744
+    ],
+    [
+      2400,
+      3744
+    ],
+    [
+      1952,
+      3648
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      1952,
+      3648
+    ],
+    [
+      1728,
+      3552
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      2176,
+      3648
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      4064,
+      4096
+    ],
+    [
+      2496,
+      3776
+    ]
+  ],
+  "rank_sha256": "56b904be040e2002a580fbd22cada28db2727ec8c696fb7548e44c7d654f8d00",
+  "allocation_sha256": "23af907470c6dce70cefb84ed231e0284015659e80e9f5ab52a7f8d5666825b5",
+  "selected_threshold_and_error": [
+    {
+      "layer": 0,
+      "effective_eb": 0.06,
+      "threshold": 1.0,
+      "relative_error": 0.005024601011635782,
+      "rank_kq": 4096,
+      "rank_v": 4096
+    },
+    {
+      "layer": 1,
+      "effective_eb": 0.06600837628826382,
+      "threshold": 1.0,
+      "relative_error": 0.0047698849737224085,
+      "rank_kq": 4096,
+      "rank_v": 4096
+    },
+    {
+      "layer": 2,
+      "effective_eb": 0.06411860191012159,
+      "threshold": 0.8999999999999999,
+      "relative_error": 0.055483186573630806,
+      "rank_kq": 1184,
+      "rank_v": 3488
+    },
+    {
+      "layer": 3,
+      "effective_eb": 0.06059235088898211,
+      "threshold": 0.8199999999999998,
+      "relative_error": 0.06036971746516291,
+      "rank_kq": 864,
+      "rank_v": 3072
+    },
+    {
+      "layer": 4,
+      "effective_eb": 0.058850929950980374,
+      "threshold": 0.8199999999999998,
+      "relative_error": 0.05809528086991738,
+      "rank_kq": 864,
+      "rank_v": 3104
+    },
+    {
+      "layer": 5,
+      "effective_eb": 0.058193758553141205,
+      "threshold": 0.8999999999999999,
+      "relative_error": 0.05257564550200829,
+      "rank_kq": 1408,
+      "rank_v": 3488
+    },
+    {
+      "layer": 6,
+      "effective_eb": 0.05900472654089976,
+      "threshold": 0.8999999999999999,
+      "relative_error": 0.055335566330516575,
+      "rank_kq": 1632,
+      "rank_v": 3520
+    },
+    {
+      "layer": 7,
+      "effective_eb": 0.058746787056619024,
+      "threshold": 0.9199999999999999,
+      "relative_error": 0.052569094841114786,
+      "rank_kq": 2016,
+      "rank_v": 3616
+    },
+    {
+      "layer": 8,
+      "effective_eb": 0.05922427272730772,
+      "threshold": 0.94,
+      "relative_error": 0.0504085640967948,
+      "rank_kq": 2400,
+      "rank_v": 3712
+    },
+    {
+      "layer": 9,
+      "effective_eb": 0.058942374703595514,
+      "threshold": 0.94,
+      "relative_error": 0.050637885715971755,
+      "rank_kq": 2464,
+      "rank_v": 3744
+    },
+    {
+      "layer": 10,
+      "effective_eb": 0.05924995344981512,
+      "threshold": 0.96,
+      "relative_error": 0.05906372729864808,
+      "rank_kq": 2848,
+      "rank_v": 3840
+    },
+    {
+      "layer": 11,
+      "effective_eb": 0.05800567536099429,
+      "threshold": 0.94,
+      "relative_error": 0.04911328410326596,
+      "rank_kq": 2368,
+      "rank_v": 3712
+    },
+    {
+      "layer": 12,
+      "effective_eb": 0.058954778126251293,
+      "threshold": 0.94,
+      "relative_error": 0.05128666936048852,
+      "rank_kq": 2432,
+      "rank_v": 3712
+    },
+    {
+      "layer": 13,
+      "effective_eb": 0.0641897944437501,
+      "threshold": 0.94,
+      "relative_error": 0.055307066469107415,
+      "rank_kq": 2432,
+      "rank_v": 3744
+    },
+    {
+      "layer": 14,
+      "effective_eb": 0.060489896382971094,
+      "threshold": 0.94,
+      "relative_error": 0.055797750570512894,
+      "rank_kq": 2432,
+      "rank_v": 3744
+    },
+    {
+      "layer": 15,
+      "effective_eb": 0.060900380613540625,
+      "threshold": 0.96,
+      "relative_error": 0.05170195673991275,
+      "rank_kq": 2848,
+      "rank_v": 3840
+    },
+    {
+      "layer": 16,
+      "effective_eb": 0.06144177022562511,
+      "threshold": 0.96,
+      "relative_error": 0.05132706024724431,
+      "rank_kq": 2816,
+      "rank_v": 3840
+    },
+    {
+      "layer": 17,
+      "effective_eb": 0.06160371293942853,
+      "threshold": 0.96,
+      "relative_error": 0.05235830476227304,
+      "rank_kq": 2880,
+      "rank_v": 3840
+    },
+    {
+      "layer": 18,
+      "effective_eb": 0.061910807224575384,
+      "threshold": 0.94,
+      "relative_error": 0.056859151491382376,
+      "rank_kq": 2432,
+      "rank_v": 3744
+    },
+    {
+      "layer": 19,
+      "effective_eb": 0.06077698712217139,
+      "threshold": 0.94,
+      "relative_error": 0.055054820842333686,
+      "rank_kq": 2368,
+      "rank_v": 3744
+    },
+    {
+      "layer": 20,
+      "effective_eb": 0.061957958565192824,
+      "threshold": 0.94,
+      "relative_error": 0.05225714201759528,
+      "rank_kq": 2400,
+      "rank_v": 3744
+    },
+    {
+      "layer": 21,
+      "effective_eb": 0.06210249748056246,
+      "threshold": 0.9199999999999999,
+      "relative_error": 0.06040483170328495,
+      "rank_kq": 1952,
+      "rank_v": 3648
+    },
+    {
+      "layer": 22,
+      "effective_eb": 0.061212094658606664,
+      "threshold": 0.94,
+      "relative_error": 0.050663943736528785,
+      "rank_kq": 2432,
+      "rank_v": 3744
+    },
+    {
+      "layer": 23,
+      "effective_eb": 0.062403227607656014,
+      "threshold": 0.9199999999999999,
+      "relative_error": 0.05792450172671181,
+      "rank_kq": 2112,
+      "rank_v": 3648
+    },
+    {
+      "layer": 24,
+      "effective_eb": 0.06142660078763798,
+      "threshold": 0.9199999999999999,
+      "relative_error": 0.054554961750024375,
+      "rank_kq": 1952,
+      "rank_v": 3648
+    },
+    {
+      "layer": 25,
+      "effective_eb": 0.059939442672584525,
+      "threshold": 0.8999999999999999,
+      "relative_error": 0.05968118547703034,
+      "rank_kq": 1728,
+      "rank_v": 3552
+    },
+    {
+      "layer": 26,
+      "effective_eb": 0.0609319321568077,
+      "threshold": 0.9199999999999999,
+      "relative_error": 0.05125862201395362,
+      "rank_kq": 2048,
+      "rank_v": 3680
+    },
+    {
+      "layer": 27,
+      "effective_eb": 0.06041140544434647,
+      "threshold": 0.9199999999999999,
+      "relative_error": 0.05460491489345347,
+      "rank_kq": 2176,
+      "rank_v": 3648
+    },
+    {
+      "layer": 28,
+      "effective_eb": 0.060328274385692,
+      "threshold": 0.9199999999999999,
+      "relative_error": 0.057255339922286964,
+      "rank_kq": 2112,
+      "rank_v": 3648
+    },
+    {
+      "layer": 29,
+      "effective_eb": 0.059970775114435625,
+      "threshold": 0.9199999999999999,
+      "relative_error": 0.049189005102755305,
+      "rank_kq": 2048,
+      "rank_v": 3680
+    },
+    {
+      "layer": 30,
+      "effective_eb": 0.062095773976620756,
+      "threshold": 1.0,
+      "relative_error": 0.018082710036790517,
+      "rank_kq": 4064,
+      "rank_v": 4096
+    },
+    {
+      "layer": 31,
+      "effective_eb": 0.030004400825257016,
+      "threshold": 0.94,
+      "relative_error": 0.029006422488533797,
+      "rank_kq": 2496,
+      "rank_v": 3776
+    }
+  ],
+  "resource_forecast_proxy_only": {
+    "baseline_rank_sum": 191552,
+    "candidate_rank_sum": 192608,
+    "rank_delta": 1056,
+    "bytes_per_rank_proxy": 4096,
+    "baseline_bytes_proxy": 784596992,
+    "candidate_bytes_proxy": 788922368,
+    "gap_bytes_proxy": 4325376,
+    "gap_percent_proxy": 0.5512863347811561
+  },
+  "baseline_uniform_rank_schedule": [
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ],
+    [
+      1184,
+      3488
+    ],
+    [
+      992,
+      3264
+    ],
+    [
+      832,
+      3008
+    ],
+    [
+      1120,
+      3392
+    ],
+    [
+      1632,
+      3520
+    ],
+    [
+      2016,
+      3616
+    ],
+    [
+      2400,
+      3712
+    ],
+    [
+      2464,
+      3744
+    ],
+    [
+      2848,
+      3840
+    ],
+    [
+      2368,
+      3712
+    ],
+    [
+      2432,
+      3712
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2848,
+      3840
+    ],
+    [
+      2816,
+      3840
+    ],
+    [
+      2880,
+      3840
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2368,
+      3744
+    ],
+    [
+      2400,
+      3744
+    ],
+    [
+      2368,
+      3744
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      1952,
+      3648
+    ],
+    [
+      1728,
+      3552
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      2176,
+      3648
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      4064,
+      4096
+    ],
+    [
+      1440,
+      3456
+    ]
+  ],
+  "inputs": {
+    "new_profile": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/step1_profile_2x512_newbasis.json",
+    "new_profile_sha256": "dcd72dc1e7df1cfb80006a617a8fb15f55621fc4a15febf5083058838f87014c",
+    "method_lock": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK.json",
+    "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+    "full_capacity_basis_sha256": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+    "rank_error_curve_report": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/eb070_eb090_shared_decomp/llama2_7b_uniform_pass1_eb070_eb090_report.json",
+    "rank_error_curve_report_sha256": "791debf977d4aaf989e0396306e5639d78854bf4f18c04d8ffcf943318038cd5",
+    "full_capacity_rank_curve_report": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_full_capacity_basis_only_v1/llama2_e060_full_basis_capacity_only_report.json",
+    "full_capacity_rank_curve_report_sha256": "3c06fd6f30d01e5343c581f362f806362ed4eaf9d1abc36ea5468a820cf06827",
+    "official_uniform_low_rank_config_sha256": "d57412730ed7fa2798c81aea9940572b4a61c3a9e92c9567030bdeb93e1aae96"
+  },
+  "curve_consistency": {
+    "old_e060_vs_new_eb090_shared_threshold_points": 177,
+    "rank_or_error_mismatch_count": 0,
+    "full_capacity_vs_eb090_shared_threshold_points": 274,
+    "raw_rank_mismatch_count": 0,
+    "full_capacity_report_limit": "min_rank=4096 clamps measured error; raw_rank fields remain usable for rank-vs-threshold only",
+    "singular_value_spectrum": "not explicitly serialized by these reports; basis/operator equivalence tested separately using invariant projectors and direct reconstruction"
+  },
+  "formal_actual_B_live": null,
+  "resource_lock": "PENDING_CANONICAL_MATERIALIZATION_AND_BYTE_CENSUS",
+  "cell_launch_authorized": false,
+  "foreign_jobs_interrupted": 0
+}

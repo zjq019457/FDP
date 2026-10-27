@@ -1,0 +1,158 @@
+{
+  "captured_at": "2026-07-20T20:30:55-07:00",
+  "conda_default_env": "base",
+  "conda_info": {
+    "GID": 1000,
+    "UID": 1000,
+    "active_prefix": "/home/yu-bai/miniconda3",
+    "active_prefix_name": "base",
+    "av_data_dir": "/home/yu-bai/miniconda3/etc/conda",
+    "av_metadata_url_base": null,
+    "channels": [
+      "https://repo.anaconda.com/pkgs/main/linux-64",
+      "https://repo.anaconda.com/pkgs/main/noarch",
+      "https://repo.anaconda.com/pkgs/r/linux-64",
+      "https://repo.anaconda.com/pkgs/r/noarch"
+    ],
+    "conda_build_version": "not installed",
+    "conda_env_version": "26.1.1",
+    "conda_location": "/home/yu-bai/miniconda3/lib/python3.13/site-packages/conda",
+    "conda_prefix": "/home/yu-bai/miniconda3",
+    "conda_shlvl": 1,
+    "conda_version": "26.1.1",
+    "config_files": [
+      "/home/yu-bai/miniconda3/.condarc",
+      "/home/yu-bai/miniconda3/condarc.d/anaconda-auth.yml"
+    ],
+    "default_prefix": "/home/yu-bai/miniconda3",
+    "envs": [
+      "/home/yu-bai/Desktop/jiaqizhang/SlimInfer/.venv",
+      "/home/yu-bai/miniconda3",
+      "/home/yu-bai/miniconda3/envs/brain-tumor-yolo",
+      "/home/yu-bai/miniconda3/envs/eigenattn",
+      "/home/yu-bai/miniconda3/envs/fdp_snapkv"
+    ],
+    "envs_details": {
+      "/home/yu-bai/Desktop/jiaqizhang/SlimInfer/.venv": {
+        "active": false,
+        "base": false,
+        "created": "2026-05-13T18:20:14.136553+00:00",
+        "frozen": false,
+        "last_modified": "2026-05-13T18:39:04.395540+00:00",
+        "name": "",
+        "writable": true
+      },
+      "/home/yu-bai/miniconda3": {
+        "active": true,
+        "base": true,
+        "created": null,
+        "frozen": false,
+        "last_modified": "2026-06-20T13:46:25.259482+00:00",
+        "name": "base",
+        "writable": true
+      },
+      "/home/yu-bai/miniconda3/envs/brain-tumor-yolo": {
+        "active": false,
+        "base": false,
+        "created": "2026-04-23T21:13:39.165854+00:00",
+        "frozen": false,
+        "last_modified": "2026-04-23T21:13:39.166406+00:00",
+        "name": "brain-tumor-yolo",
+        "writable": true
+      },
+      "/home/yu-bai/miniconda3/envs/eigenattn": {
+        "active": false,
+        "base": false,
+        "created": "2026-05-02T04:54:29.975180+00:00",
+        "frozen": false,
+        "last_modified": "2026-05-02T04:54:29.975313+00:00",
+        "name": "eigenattn",
+        "writable": true
+      },
+      "/home/yu-bai/miniconda3/envs/fdp_snapkv": {
+        "active": false,
+        "base": false,
+        "created": "2026-05-08T22:00:28.763595+00:00",
+        "frozen": false,
+        "last_modified": "2026-05-08T22:00:28.763725+00:00",
+        "name": "fdp_snapkv",
+        "writable": true
+      }
+    },
+    "envs_dirs": [
+      "/home/yu-bai/miniconda3/envs",
+      "/home/yu-bai/.conda/envs"
+    ],
+    "netrc_file": null,
+    "offline": false,
+    "pkgs_dirs": [
+      "/home/yu-bai/miniconda3/pkgs",
+      "/home/yu-bai/.conda/pkgs"
+    ],
+    "platform": "linux-64",
+    "python_version": "3.13.12.final.0",
+    "rc_path": "/home/yu-bai/.condarc",
+    "requests_version": "2.32.5",
+    "root_prefix": "/home/yu-bai/miniconda3",
+    "root_writable": true,
+    "site_dirs": [],
+    "solver": {
+      "default": true,
+      "name": "libmamba",
+      "user_agent": "solver/libmamba conda-libmamba-solver/25.11.0 libmambapy/2.3.2"
+    },
+    "sys.executable": "/home/yu-bai/miniconda3/bin/python",
+    "sys.prefix": "/home/yu-bai/miniconda3",
+    "sys.version": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+    "sys_rc_path": "/home/yu-bai/miniconda3/.condarc",
+    "tmp_dir": "/tmp",
+    "user_rc_path": "/home/yu-bai/.condarc",
+    "virtual_pkgs": [
+      [
+        "__archspec",
+        "1",
+        "zen5"
+      ],
+      [
+        "__conda",
+        "26.1.1",
+        "0"
+      ],
+      [
+        "__cuda",
+        "13.0",
+        "0"
+      ],
+      [
+        "__glibc",
+        "2.39",
+        "0"
+      ],
+      [
+        "__linux",
+        "6.17.0",
+        "0"
+      ],
+      [
+        "__unix",
+        "0",
+        "0"
+      ]
+    ]
+  },
+  "conda_prefix": "/home/yu-bai/miniconda3",
+  "cuda_available": true,
+  "cuda_device_count": 1,
+  "flash_attn": "2.7.4.post1",
+  "hostname": "yu-bai-3090",
+  "nvidia_smi_query": {
+    "output": "0, NVIDIA GeForce RTX 3090 Ti, GPU-d9b64e56-9314-b1d2-28eb-21955999eb98, 580.159.03, 24564 MiB, 766 MiB, 24 %, P5",
+    "returncode": 0
+  },
+  "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+  "python_executable": "/home/yu-bai/Desktop/jiaqizhang/SlimInfer/.venv/bin/python",
+  "python_version": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+  "torch": "2.6.0+cu124",
+  "torch_cuda_runtime": "12.4",
+  "transformers": "4.53.0"
+}

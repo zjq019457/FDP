@@ -1,0 +1,79 @@
+{
+  "artifact_id": "LLAMA2_E068_NATIVE_ADD_BENEFIT_RUN_STATUS_V1",
+  "status": "ADD_BENEFIT_PROBES_COMPLETE_ANALYZED",
+  "protocol_lock_sha256": "b85c02610e1f6a1e19df1ca069d5d5bb1c837583938e725f3f0429435f71bb5e",
+  "gpu_preflight": [
+    {
+      "index": 0,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "utilization_pct": 0
+    },
+    {
+      "index": 1,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "utilization_pct": 0
+    },
+    {
+      "index": 2,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "utilization_pct": 0
+    }
+  ],
+  "worker_count": 3,
+  "started_utc": "2026-10-02T03:49:43.217776+00:00",
+  "final_quality_started": false,
+  "worker_pids": {
+    "0": 2102905,
+    "1": 2102906,
+    "2": 2102907
+  },
+  "worker_logs": [
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_ADD_BENEFIT_V1_ATTEMPT1_20261001/worker_gpu0.log",
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_ADD_BENEFIT_V1_ATTEMPT1_20261001/worker_gpu1.log",
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_ADD_BENEFIT_V1_ATTEMPT1_20261001/worker_gpu2.log"
+  ],
+  "workers": {
+    "0": {
+      "pid": 2102905,
+      "returncode": 0
+    },
+    "1": {
+      "pid": 2102906,
+      "returncode": 0
+    },
+    "2": {
+      "pid": 2102907,
+      "returncode": 0
+    }
+  },
+  "latest_gpu_snapshot": [
+    {
+      "index": 0,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "utilization_pct": 0
+    },
+    {
+      "index": 1,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "utilization_pct": 0
+    },
+    {
+      "index": 2,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "utilization_pct": 0
+    }
+  ],
+  "updated_utc": "2026-10-02T03:56:49.221180+00:00"
+}

@@ -1,0 +1,10 @@
+Metric,Uniform,FDP-EB,Measurement
+Total offline construction time (min),44.7,94.1,MEASURED (sum of measured stages)
+Additional functional profiling time (min),-,4.3,MEASURED (C+D+E)
+Additional rank allocation/search time (min),-,45.7,MEASURED (F+G)
+"Peak GPU memory, NVML process tree (GiB)",41.4,41.4,MEASURED
+"Peak GPU memory, torch allocated (GiB)",39.0,39.0,MEASURED
+Peak CPU RSS (GiB),31.2,31.2,MEASURED
+Offline overhead ratio,1.00x,2.10x,DERIVED from measured totals
+Absolute extra time (min),-,49.4,DERIVED
+Profiling share of FDP total,-,4.6% (Step 1 alone 1.5%),DERIVED

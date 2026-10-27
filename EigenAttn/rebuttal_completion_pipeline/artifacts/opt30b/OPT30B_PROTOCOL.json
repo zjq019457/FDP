@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-07-29T07:29:26.231103-07:00",
+  "model": "/diskE/jiaqizhang/opt-30b",
+  "model_exists": true,
+  "basis_reports": 10,
+  "fixed_schedule": "aggressive matched point: Uniform + single FDP schedule",
+  "status": "pending_gpu"
+}

@@ -1,0 +1,263 @@
+{
+  "schema": "LLAMA3_FULL_PROFILE_RESOURCE_ROBUSTNESS_RESULTS_V1",
+  "protocol_lock_sha256": "85c840f6c5053d3a8734b1c1e173d3d6b649271a9e7b72eaf640bcd8b1e60d99",
+  "bootstrap": {
+    "replicates": 10000,
+    "ci": "percentile 95%",
+    "unit": "paired evaluation window/chunk within dataset",
+    "joint_J": "independent resampling between Wiki/C4 preserving within-dataset paired indices",
+    "rng_kind": "numpy_pcg64",
+    "seeds": {
+      "wikitext2": 20261012,
+      "c4": 20261013
+    },
+    "reference_protocol_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/14_paired_uncertainty/LLAMA3_PALU_PPL_PAIRED_BOOTSTRAP_V1_20261002/PROVENANCE.json",
+    "reference_protocol_sha256": "9db1d002cb38e9aa6817c6958d6c28ac6d4e7f1e48aa057339cbd6f9434df87f"
+  },
+  "tiers": {
+    "MEDIUM": {
+      "arm": "FULL_RESOURCE_MEDIUM_LOW",
+      "tier_resource_lock_sha256": "7a07bc112b62a2acebc7a09c40794b07cdcab139b1be1f1cfcad75e1ab932930",
+      "realization_sha256": "16536ea86b595e20ad6d51bee6b0ed8c0cdccae7cdac7ba675e61c1dde099156",
+      "rank_sha256": "7f55912710453b6c59b099926b28bf6e3713e9ea65cad00b003c0c4ee2c55a4d",
+      "allocation_sha256": "c7ca26f9de5926e0c0a4e89fc38c30bcf1780c25911b53893c19412f7382e9c3",
+      "target_B_live_bytes": 196870144,
+      "actual_B_live_bytes": 196640768,
+      "resource_gap_bytes": -229376,
+      "resource_gap_pct": -0.11651131824234354,
+      "original_full_B_live_bytes": 199753728,
+      "new_ppl": {
+        "wiki": {
+          "ppl": 7.236141571771375,
+          "total_nll": 571497.3217773438,
+          "token_count": 288768,
+          "windows": 141,
+          "skipped": 0
+        },
+        "c4": {
+          "ppl": 12.211209510890775,
+          "total_nll": 1311954.3533935547,
+          "token_count": 524288,
+          "windows": 256,
+          "skipped": 0
+        }
+      },
+      "new_J": 2.2407212372603396,
+      "original_full_PPL": {
+        "wiki": {
+          "ppl": 7.1594697724543135,
+          "total_nll": 568421.3049316406,
+          "token_count": 288768,
+          "windows": 141,
+          "skipped": 0
+        },
+        "c4": {
+          "ppl": 11.99871051780785,
+          "total_nll": 1302750.3962402344,
+          "token_count": 524288,
+          "windows": 256,
+          "skipped": 0
+        }
+      },
+      "original_full_J_locked_value": 2.226618,
+      "original_full_recomputed_J": 2.226617555634337,
+      "new_minus_original_full": {
+        "B_live_reduction_bytes": 3112960,
+        "B_live_reduction_pct": 1.5583989501312336,
+        "wiki_delta_ppl": 0.07667179931706158,
+        "c4_delta_ppl": 0.21249899308292441,
+        "J_original_recomputed": 2.226617555634337,
+        "J_new": 2.2407212372603396,
+        "delta_J": 0.014103681626002729
+      },
+      "original_full_window_paths": {
+        "wiki": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/fdp125/wiki/ppl_windows.jsonl",
+        "c4": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/fdp125/c4/ppl_windows.jsonl"
+      },
+      "original_full_window_sha256": {
+        "wiki": "a062a7da001781b4d1f301ffcc4cef4c7c3cc45dd6621dd0542935430f65661e",
+        "c4": "efc4bbf65b390844668f5f19ae0bb1463335ac7c5f3b8e209bc75186bebcd7c2"
+      },
+      "new_window_sha256": {
+        "wiki": "9463106edca056d4025cba91fe7fdfcbb6588e51c798c3d2f6a6ec06fad481db",
+        "c4": "78d8e18ef192c4a21e174c8e8e1bf6425d3e6ecc85aa6f8f09ed6592360aeea0"
+      },
+      "new_window_binding_to_original_full": {
+        "wiki": true,
+        "c4": true
+      },
+      "paired_comparisons": {
+        "DROP_D1": {
+          "delta_definition": "J(new Full-low)-J(drop); negative favors Full-low",
+          "delta_J": 0.017623885462873003,
+          "paired_95_ci": [
+            0.013648502170731618,
+            0.021952103198207052
+          ],
+          "bootstrap_replicates": 10000,
+          "paired_windows": {
+            "wikitext2": 141,
+            "c4": 256
+          },
+          "exact_sample_binding": true,
+          "comparator_mask": "01001",
+          "comparator_paths": {
+            "wiki": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/01001/wiki/ppl_windows.jsonl",
+            "c4": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/01001/c4/ppl_windows.jsonl"
+          },
+          "comparator_file_sha256": {
+            "wiki": "969039a021fcb050a9fcd169e1cc1d5063ce8c7eda4ce4695b6258e14b4e787d",
+            "c4": "db90184a6f6d896861733c8d351f96c0936e4ed5300034c6926bdebc596936f1"
+          }
+        },
+        "DROP_D5": {
+          "delta_definition": "J(new Full-low)-J(drop); negative favors Full-low",
+          "delta_J": -0.032211567335497876,
+          "paired_95_ci": [
+            -0.038917612054542944,
+            -0.025854428151972485
+          ],
+          "bootstrap_replicates": 10000,
+          "paired_windows": {
+            "wikitext2": 141,
+            "c4": 256
+          },
+          "exact_sample_binding": true,
+          "comparator_mask": "11000",
+          "comparator_paths": {
+            "wiki": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/11000/wiki/ppl_windows.jsonl",
+            "c4": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/11000/c4/ppl_windows.jsonl"
+          },
+          "comparator_file_sha256": {
+            "wiki": "4dfece46582c5c4306844b479e5385b347a6eead0809db68506a87e2b80d7b63",
+            "c4": "03e8583f41911a43aabc5f37826c4778cb329fd6b22f45148baa8bfd6b246b75"
+          }
+        }
+      },
+      "status": "QUALITY_COMPLETE_BOOTSTRAP_COMPLETE"
+    },
+    "AGGRESSIVE": {
+      "arm": "FULL_RESOURCE_AGGRESSIVE_LOW",
+      "tier_resource_lock_sha256": "86176af332a1ca4028169367a1148449a0d5771fcc984d3494b719d55b63536e",
+      "realization_sha256": "dbce9e54eadc800b75a4814049b20f8743744179a4f24b1299e84000c87b734d",
+      "rank_sha256": "48df5bfebfb9c733938e6f1c6f10d88b49169991baabb68ac4c03e5db505f4f9",
+      "allocation_sha256": "6b3631b488a42a99db768490d9f23256e2cf5709efee4c8246d1538dcdb3a769",
+      "target_B_live_bytes": 157990912,
+      "actual_B_live_bytes": 157908992,
+      "resource_gap_bytes": -81920,
+      "resource_gap_pct": -0.05185108368764907,
+      "original_full_B_live_bytes": 159416320,
+      "new_ppl": {
+        "wiki": {
+          "ppl": 10.246410618319402,
+          "total_nll": 671942.1889648438,
+          "token_count": 288768,
+          "windows": 141,
+          "skipped": 0
+        },
+        "c4": {
+          "ppl": 17.96079444906268,
+          "total_nll": 1514244.0383300781,
+          "token_count": 524288,
+          "windows": 256,
+          "skipped": 0
+        }
+      },
+      "new_J": 2.607559378465294,
+      "original_full_PPL": {
+        "wiki": {
+          "ppl": 10.157443283195123,
+          "total_nll": 669423.9311523438,
+          "token_count": 288768,
+          "windows": 141,
+          "skipped": 0
+        },
+        "c4": {
+          "ppl": 17.757530416687768,
+          "total_nll": 1508276.7907714844,
+          "token_count": 524288,
+          "windows": 256,
+          "skipped": 0
+        }
+      },
+      "original_full_J_locked_value": 2.596042,
+      "original_full_recomputed_J": 2.597508219954168,
+      "new_minus_original_full": {
+        "B_live_reduction_bytes": 1507328,
+        "B_live_reduction_pct": 0.9455292908530318,
+        "wiki_delta_ppl": 0.08896733512427879,
+        "c4_delta_ppl": 0.20326403237491064,
+        "J_original_recomputed": 2.597508219954168,
+        "J_new": 2.607559378465294,
+        "delta_J": 0.010051158511125813
+      },
+      "original_full_window_paths": {
+        "wiki": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/aggressive/fdp125/wiki/ppl_windows.jsonl",
+        "c4": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/aggressive/fdp125/c4/ppl_windows.jsonl"
+      },
+      "original_full_window_sha256": {
+        "wiki": "e6c0f3abec889d626b4814b70388f59b6d3b70871e80d28bd5974293f4e7f7a3",
+        "c4": "d47a466c7e8a04a67d315e4621c02cf72896e2c2c72972db4c50a81fe425b586"
+      },
+      "new_window_sha256": {
+        "wiki": "389b565a40251ca41ce99763393e73677fab2297e7772935e7ee33b0f0b26c21",
+        "c4": "8500c61e131fe95825a5399b11d2abcf4817a63c19425a1299c9312d810c8dec"
+      },
+      "new_window_binding_to_original_full": {
+        "wiki": true,
+        "c4": true
+      },
+      "paired_comparisons": {
+        "DROP_D2": {
+          "delta_definition": "J(new Full-low)-J(drop); negative favors Full-low",
+          "delta_J": -5.943026122841853e-05,
+          "paired_95_ci": [
+            -0.0007825791832069529,
+            0.0006584094105790364
+          ],
+          "bootstrap_replicates": 10000,
+          "paired_windows": {
+            "wikitext2": 141,
+            "c4": 256
+          },
+          "exact_sample_binding": true,
+          "comparator_mask": "10001",
+          "comparator_paths": {
+            "wiki": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/aggressive/10001/wiki/ppl_windows.jsonl",
+            "c4": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/aggressive/10001/c4/ppl_windows.jsonl"
+          },
+          "comparator_file_sha256": {
+            "wiki": "85fd5eb6af59151b6fb3d3c674ac2f2cf772dd4242d995b8d16c86c25cc7f698",
+            "c4": "237ba8af4c7fddb9e1bbcbe9d0701dfda9b22952915d1ff474debf835fb35078"
+          }
+        },
+        "DROP_D5": {
+          "delta_definition": "J(new Full-low)-J(drop); negative favors Full-low",
+          "delta_J": 0.003880372016644436,
+          "paired_95_ci": [
+            0.0029018860811067097,
+            0.004918387208665648
+          ],
+          "bootstrap_replicates": 10000,
+          "paired_windows": {
+            "wikitext2": 141,
+            "c4": 256
+          },
+          "exact_sample_binding": true,
+          "comparator_mask": "11000",
+          "comparator_paths": {
+            "wiki": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/aggressive/11000/wiki/ppl_windows.jsonl",
+            "c4": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/aggressive/11000/c4/ppl_windows.jsonl"
+          },
+          "comparator_file_sha256": {
+            "wiki": "35bfaef3803e079e3a6558e6980c570351d9a2a35c4f0bde0c972b0beea99449",
+            "c4": "8f95e0d578285207b58e08c29ea6956cafcd332b9458a2a2ede3b54520bf1288"
+          }
+        }
+      },
+      "status": "QUALITY_COMPLETE_BOOTSTRAP_COMPLETE"
+    }
+  },
+  "scope_note": "Same input windows allow paired resampling; historical drop arms are not upgraded to same-basis causal ablations because retained audit cannot verify identical underlying basis binaries.",
+  "quality_selection_used": false
+}

@@ -1,0 +1,2188 @@
+---
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: "RobotArena $\\infty$: Scalable Robot Benchmarking via Real-to-Sim Translation"
+  STUDENT: Yash Jangir 
+  AUTHORS:
+    - Yash Jangir
+    - Yidi Zhang
+    - Kashu Yamazaki
+    - Chenyu Zhang
+    - Kuan-Hsun Tu
+    - Tsung-Wei Ke
+    - Lei Ke
+    - Yonatan Bisk
+    - Katerina Fragkiadaki
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2510.23571"
+  CUTE: '25-RobotArena'
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "REM: Evaluating LLM Embodied Spatial Reasoning through Multi-Frame Trajectories"
+  STUDENT: Jacob Thompson
+  AUTHORS:
+    - Jacob Thompson
+    - Emiliano Garcia-Lopez
+    - Yonatan Bisk
+  VENUE: "Second Conference on Language Modeling"
+  VENUE-ACR: "CoLM"
+  YEAR: '2025'
+  URL: "https://openreview.net/forum?id=qbWpEufkqk"
+  CUTE: '25-REM'
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: "RAVEN: Resilient Aerial Navigation via Open-Set Semantic Memory and Behavior Adaptation"
+  AUTHORS:
+    - Seungchan Kim
+    - Omar Alama
+    - Dmytro Kurdydyk
+    - John Keller
+    - Nikhil Keetha
+    - Wenshan Wang
+    - Yonatan Bisk
+    - Sebastian Scherer
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  YEAR: '2025'
+- FIELD: O
+  TYPE: Conference
+  TITLE: "MolErr2Fix: Benchmarking LLM Trustworthiness in Chemistry via Modular Error Detection, Localization, Explanation, and Correction"
+  AUTHORS:
+    - Yuyang Wu
+    - Jinhui Ye
+    - Shuhao Zhang
+    - Lu Dai
+    - Yonatan Bisk
+    - Olexandr Isayev
+  VENUE: "Conference on Empirical Methods in Natural Language Processing"
+  VENUE-ACR: "EMNLP"
+  YEAR: '2025'
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "Position: You Can't Manufacture a NeRF"
+  AUTHORS:
+    - Ani Kimmel
+    - Mueed Ur Rehman
+    - Yonatan Bisk
+    - Gary K. Fedder
+  VENUE: "Forty-second International Conference on Machine Learning Position Paper Track"
+  VENUE-ACR: "ICML"
+  YEAR: '2025'
+  URL: "https://openreview.net/forum?id=kJzB6lQmcb"
+- FIELD: WS2
+  TYPE: Preprint
+  TITLE: "Looking beyond the next token"
+  STUDENT: Abitha Thankaraj
+  AUTHORS:
+    - Abitha Thankaraj
+    - Yiding Jiang
+    - J. Zico Kolter
+    - Yonatan Bisk
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2504.11336"
+  CUTE: "25-lookingbeyond"
+- FIELD: O
+  TYPE: Preprint
+  TITLE: "Model Successor Functions"
+  STUDENT: Yingshan Chang
+  AUTHORS:
+    - Yingshan Chang 
+    - Yonatan Bisk
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2502.00197"
+  CUTE: "25-SuccessorFunctions"
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: 'Casper: Inferring Diverse Intents for Assistive Teleoperation with Vision Language Models'
+  AUTHORS:
+    - Huihan Liu
+    - Rutav Shah
+    - Shuijing Liu
+    - Jack Pittenger
+    - Mingyo Seo
+    - Yuchen Cui
+    - Yonatan Bisk
+    - Roberto Martín-Martín
+    - Yuke Zhu
+  VENUE: "Conference on Robot Learning"
+  VENUE-ACR: "CoRL"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2506.14727"
+- FIELD: O
+  TYPE: Conference
+  TITLE: "Energy Considerations of Large Language Model Inference and Efficiency Optimizations"
+  STUDENT: Jared Fernandez
+  AUTHORS:
+    - Jared Fernandez
+    - Clara Na
+    - Vashisth Tiwari
+    - Yonatan Bisk
+    - Sasha Luccioni
+    - Emma Strubell
+  VENUE: "The 63rd Annual Meeting of the Association for Computational Linguistics"
+  VENUE-ACR: "ACL"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2504.17674"
+  CUTE: "25-energy"
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: "Self-Regulation and Requesting Interventions"
+  ALUMN: So Yeon Min
+  AUTHORS:
+    - So Yeon Min
+    - Yue Wu
+    - Jimin Sun
+    - Max Kaufmann
+    - Fahim Tajwar
+    - Yonatan Bisk
+    - Ruslan Salakhutdinov
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2502.04576"
+  CUTE: "25-SelfRegulation"
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "Re-thinking Temporal Search for Long-Form Video Understanding"
+  AUTHORS:
+    - Jinhui Ye
+    - Zihan Wang
+    - Haosen Sun
+    - Keshigeyan Chandrasegaran
+    - Zane Durante
+    - Cristobal Eyzaguirre
+    - Yonatan Bisk
+    - Juan Carlos Niebles
+    - Ehsan Adeli
+    - Li Fei-Fei
+    - Jiajun Wu
+    - Manling Li 
+  VENUE: "The IEEE/CVF Conference on Computer Vision and Pattern Recognition"
+  VENUE-ACR: "CVPR"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2504.02259"
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: "Explore Theory-of-Mind: Program-Guided Adversarial Data Generation for Theory of Mind Reasoning"
+  AUTHORS:
+    - Melanie Sclar
+    - Jane Yu
+    - Maryam Fazel-Zarandi
+    - Yulia Tsvetkov
+    - Yonatan Bisk
+    - Yejin Choi
+    - Asli Celikyilmaz
+  VENUE: "The Thirteenth International Conference on Learning Representations"
+  VENUE-ACR: "ICLR"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2412.12175"
+  EXTRAS: 
+    Meta: "https://ai.meta.com/research/publications/explore-theory-of-mind-program-guided-adversarial-data-generation-for-theory-of-mind-reasoning/"
+  CUTE: "25-ExploreToM"
+- FIELD: O
+  TYPE: Journal
+  TITLE: "Efficient Hardware Scaling and Diminishing Returns in Large-Scale Training of Language Models"
+  STUDENT: Jared Fernandez
+  AUTHORS:
+    - Jared Fernandez
+    - Luca Wehrstedt
+    - Leonid Shamis
+    - Mostafa Elhoushi
+    - Kalyan Saladi
+    - Yonatan Bisk
+    - Emma Strubell
+    - Jacob Kahn
+  VENUE: "Transactions on Machine Learning Research"
+  VENUE-ACR: "TMLR"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2411.13055"
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: "Embodied-RAG: General non-parametric Embodied Memory for Retrieval and Generation"
+  STUDENT: Quanting Xie
+  AUTHORS:
+    - Quanting Xie
+    - So Yeon Min
+    - Tianyi Zhang
+    - Aarav Bajaj
+    - Ruslan Salakhutdinov
+    - Matthew Johnson-Roberson
+    - Yonatan Bisk
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2409.18313"
+  EXTRAS:
+      Website: https://quanting-xie.github.io/Embodied-RAG-web/
+  CUTE: "24-EmbodiedRAG"
+- FIELD: WS4
+  TYPE: Journal
+  TITLE: "MotIF: Motion Instruction Fine-tuning"
+  AUTHORS:
+    - Minyoung Hwang
+    - Joey Hejna 
+    - Dorsa Sadigh 
+    - Yonatan Bisk
+  VENUE: "IEEE Robotics and Automation Letters"
+  VENUE-ACR: "RA-L"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2409.10683"
+  EXTRAS:
+    Website: https://motif-1k.github.io/
+  CUTE: "25-MotIF"
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "ANAVI: Audio Noise Awareness using Visuals of Indoor environments for NAVIgation"
+  ALUMN: Vidhi Jain
+  AUTHORS:
+    - Vidhi Jain
+    - Rishi Veerapaneni
+    - Yonatan Bisk
+  VENUE: "Conference on Robot Learning"
+  VENUE-ACR: "CoRL"
+  YEAR: '2024'
+  URL: 'https://arxiv.org/abs/2410.18932'
+  EXTRAS:
+    Website: https://anavi-corl24.github.io/
+  CUTE: "24-ANAVI"
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "Situated Instruction Following"
+  ALUMN: So Yeon Min
+  AUTHORS:
+    - So Yeon Min
+    - Xavi Puig
+    - Devendra Singh Chaplot
+    - Tsung-Yen Yang
+    - Akshara Rai
+    - Priyam Parashar
+    - Ruslan Salakhutdinov
+    - Yonatan Bisk
+    - Roozbeh Mottaghi
+  VENUE: "European Conference on Computer Vision"
+  VENUE-ACR: "ECCV"
+  YEAR: '2024'
+  URL: 'https://arxiv.org/abs/2407.12061'
+  EXTRAS:
+    Website: https://soyeonm.github.io/SIF_webpage/
+  CUTE: "24-SIF"
+- FIELD: O
+  TYPE: Conference
+  TITLE: "Gradient Localization Improves Lifelong Pretraining of Language Models"
+  STUDENT: Jared Fernandez
+  AUTHORS:
+    - Jared Fernandez
+    - Yonatan Bisk
+    - Emma Strubell
+  VENUE: "Findings of the Conference on Empirical Methods in Natural Language Processing"
+  VENUE-ACR: "EMNLP Findings"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2411.04448"
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "How to Train Your Fact Verifier: Knowledge Transfer with Multimodal Open Models"
+  AUTHORS:
+    - Jaeyoung Lee
+    - Ximing Lu
+    - Jack Hessel
+    - Faeze Brahman
+    - Youngjae Yu
+    - Yonatan Bisk
+    - Yejin Choi
+    - Saadia Gabriel
+  VENUE: "Findings of the Conference on Empirical Methods in Natural Language Processing "
+  VENUE-ACR: "EMNLP Findings"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2407.00369"
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "Tools Fail: Detecting Silent Errors in Faulty Tools"
+  STUDENT: Jimin Sun
+  AUTHORS:
+    - Jimin Sun
+    - So Yeon Min
+    - Yingshan Chang
+    - Yonatan Bisk
+  VENUE: "Conference on Empirical Methods in Natural Language Processing "
+  VENUE-ACR: "EMNLP"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2406.19228"
+  CUTE: "24-ToolsFail"
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: "DegustaBot: Zero-Shot Visual Preference Estimation for Personalized Multi-Object Rearrangement"
+  AUTHORS:
+    - Benjamin A. Newman
+    - Pranay Gupta
+    - Kris Kitani
+    - Yonatan Bisk
+    - Henny Admoni
+    - Chris Paxton
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2407.08876"
+- FIELD: O
+  TYPE: Conference
+  TITLE: "Language Models Need Inductive Biases to Count Inductively"
+  STUDENT: Yingshan Chang
+  AUTHORS:
+    - Yingshan Chang
+    - Yonatan Bisk
+  VENUE: "The Thirteenth International Conference on Learning Representations"
+  VENUE-ACR: "ICLR"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2405.20131"
+  CUTE: "25-Counting"
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "DiffusionPID: Interpreting Diffusion via Partial Information Decomposition"
+  STUDENT: Yingshan Chang
+  AUTHORS:
+    - Shaurya Dewan
+    - Rushikesh Zawar
+    - Prakanshul Saxena
+    - Yingshan Chang 
+    - Andrew Luo
+    - Yonatan Bisk
+  VENUE: "Thirty-Eighth Annual Conference on Neural Information Processing Systems"
+  VENUE-ACR: "NeurIPS"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2406.05191"
+  CUTE: "24-DiffusionPID"
+- FIELD: O
+  TYPE: Preprint
+  TITLE: "Dialogue with Robots: Proposals for Broadening Participation and Research in the SLIVAR Community"
+  AUTHORS:
+    - Casey Kennington
+    - Malihe Alikhani
+    - Heather Pon-Barry
+    - Katherine Atwell
+    - Yonatan Bisk
+    - Daniel Fried
+    - Felix Gervits
+    - Zhao Han
+    - Mert Inan
+    - Michael Johnston
+    - Raj Korpan
+    - Diane Litman
+    - Matthew Marge
+    - Cynthia Matuszek
+    - Ross Mead
+    - Shiwali Mohan
+    - Raymond Mooney
+    - Natalie Parde
+    - Jivko Sinapov
+    - Angela Stewart
+    - Matthew Stone
+    - Stefanie Tellex
+    - Tom Williams
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2404.01158"
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "VISREAS: Complex Visual Reasoning with Unanswerable Questions"
+  STUDENT: Yingshan Chang
+  AUTHORS:
+    - Syeda Nahida Akter
+    - Sangwu Lee
+    - Yingshan Chang
+    - Yonatan Bisk
+    - Eric Nyberg
+  VENUE: "Findings of the 62nd Annual Meeting of the Association for Computational Linguistics"
+  VENUE-ACR: "ACL Findings"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2403.10534"
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "AgentKit: Flow Engineering with Graphs, not Coding"
+  AUTHORS:
+    - Yue Wu
+    - Yewen Fan
+    - So Yeon Min
+    - Shrimai Prabhumoye
+    - Stephen McAleer
+    - Yonatan Bisk
+    - Ruslan Salakhutdinov
+    - Yuanzhi Li
+    - Tom Mitchell
+  VENUE: "Conference on Language Modeling"
+  VENUE-ACR: "COLM"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2404.11483"
+  EXTRAS:
+    GitHub: https://github.com/holmeswww/AgentKit
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "Skews in the Phenomenon Space Hinder Generalization in Text-to-Image Generation"
+  STUDENT: Yingshan Chang
+  AUTHORS:
+    - Yingshan Chang
+    - Yasi Zhang
+    - Zhiyuan Fang
+    - Yingnian Wu
+    - Yonatan Bisk
+    - Feng Gao
+  VENUE: "European Conference on Computer Vision"
+  VENUE-ACR: "ECCV"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2403.16394"
+  CUTE: "24-Skews"
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "Direct Preference Optimization of Video Large Multimodal Models from Language Model Reward"
+  AUTHORS:
+   - Ruohong Zhang
+   -  Liangke Gui
+   -  Zhiqing Sun
+   -  Yihao Feng
+   -  Keyang Xu
+   -  Yuanhan Zhang
+   -  Di Fu
+   -  Chunyuan Li
+   -  Alexander Hauptmann
+   -  Yonatan Bisk
+   -  Yiming Yang
+  VENUE: "Annual Conference of the Nations of the Americas Chapter of the ACL"
+  VENUE-ACR: "NAACL"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2404.01258"
+  EXTRAS:
+    GitHub: https://github.com/RifleZhang/LLaVA-Hound-DPO
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "Vid2Robot: End-to-end Video-conditioned Policy Learning with Cross-Attention Transformers"
+  ALUMN: Vidhi Jain
+  AUTHORS:
+    - Vidhi Jain
+    - Maria Attarian
+    - Nikhil J Joshi
+    - Ayzaan Wahid
+    - Danny Driess
+    - Quan Vuong
+    - Pannag R Sanketi
+    - Pierre Sermanet
+    - Stefan Welker
+    - Christine Chan
+    - Igor Gilitschenski
+    - Yonatan Bisk
+    - Debidatta Dwibedi
+  VENUE: "Robotics: Science and Systems"
+  VENUE-ACR: "RSS"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2403.12943"
+  EXTRAS:
+    Website: "https://vid2robot.github.io/"
+  CUTE: "24-Vid2Robot"
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: "SOTOPIA-π: Interactive Learning of Socially Intelligent Language Agents"
+  ALUMN: Hao Zhu
+  AUTHORS:
+    - Ruiyi Wang
+    - Haofei Yu
+    - Wenxin Zhang
+    - Zhengyang Qi
+    - Maarten Sap
+    - Graham Neubig
+    - Yonatan Bisk
+    - Hao Zhu
+  VENUE: "The 62nd Annual Meeting of the Association for Computational Linguistics"
+  VENUE-ACR: "ACL"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2403.08715"
+  EXTRAS:
+    GitHub: "https://github.com/sotopia-lab/sotopia-pi"
+    Website: "https://www.sotopia.world/projects/sotopia-pi"
+  CUTE: "24-SotopiaPi"
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "OpenEQA: Embodied Question Answering in the Era of Foundation Models"
+  AUTHORS:
+    -  Arjun Majumdar
+    -  Anurag Ajay
+    -  Xiaohan Zhang
+    -  Pranav Putta
+    -  Sriram Yenamandra
+    -  Mikael Henaff
+    -  Sneha Silwal
+    -  Paul Mcvay
+    -  Oleksandr Maksymets
+    -  Sergio Arnaud
+    -  Karmesh Yadav
+    -  Qiyang Li
+    -  Ben Newman
+    -  Mohit Sharma
+    -  Vincent Berges
+    -  Shiqi Zhang
+    -  Pulkit Agrawal
+    -  Yonatan Bisk
+    -  Dhruv Batra
+    -  Mrinal Kalakrishnan
+    -  Franziska Meier
+    -  Chris Paxton
+    -  Sasha Sax
+    -  Aravind Rajeswaran 
+  VENUE: "Conference on Computer Vision and Pattern Recognition"
+  VENUE-ACR: "CVPR"
+  URL: "https://open-eqa.github.io/assets/pdfs/paper.pdf"
+  EXTRAS: 
+    Website: "https://open-eqa.github.io/"
+    Blog: "https://ai.meta.com/blog/openeqa-embodied-question-answering-robotics-ar-glasses/"
+  YEAR: '2024'
+- FIELD: WS4
+  TYPE: Preprint 
+  TITLE: "Toward General-Purpose Robots via Foundation Models: A Survey and Meta-Analysis"
+  STUDENT: Quanting Xie
+  AUTHORS:
+    - Yafei Hu
+    - Quanting Xie
+    - Vidhi Jain
+    - Jonathan Francis
+    - Jay Patrikar
+    - Nikhil Keetha
+    - Seungchan Kim
+    - Yaqi Xie
+    - Tianyi Zhang
+    - Shibo Zhao
+    - Yu Quan Chong
+    - Chen Wang
+    - Katia Sycara
+    - Matthew Johnson-Roberson
+    - Dhruv Batra
+    - Xiaolong Wang
+    - Sebastian Scherer
+    - Zsolt Kira
+    - Fei Xia
+    - Yonatan Bisk
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  URL: "https://arxiv.org/abs/2312.08782"
+  YEAR: '2023'
+  EXTRAS:
+    GitHub: https://github.com/JeffreyYH/robotics-fm-survey
+    Website: https://robotics-fm-survey.github.io/
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents"
+  ALUMN: Hao Zhu
+  AUTHORS:
+    - Xuhui Zhou 
+    - Hao Zhu 
+    - Leena Mathur 
+    - Ruohong Zhang 
+    - Haofei Yu 
+    - Zhengyang Qi 
+    - Louis-Philippe Morency 
+    - Yonatan Bisk 
+    - Daniel Fried 
+    - Graham Neubig 
+    - Maarten Sap
+  VENUE: "The Twelfth International Conference on Learning Representations"
+  VENUE-ACR: "ICLR"
+  PRES: Spotlight
+  URL: "http://arxiv.org/abs/2310.11667"
+  YEAR: '2024'
+  CUTE: "24-Sotopia"
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "Open X-Embodiment: Robotic Learning Datasets and RT-X Models: Open X-Embodiment Collaboration"
+  ALUMN: Vidhi Jain
+  AUTHORS:
+    - about 300 people... including me and Vidhi
+    #-  Abby O’Neill
+    #-  Abdul Rehman
+    #-  Abhiram Maddukuri
+    #-  Abhishek Gupta
+    #-  Abhishek Padalkar
+    #-  Abraham Lee
+    #-  Acorn Pooley
+    #-  Agrim Gupta
+    #-  Ajay Mandlekar
+    #-  Ajinkya Jain
+    #-  Albert Tung
+    #-  Alex Bewley
+    #-  Alex Herzog
+    #-  Alex Irpan
+    #-  Alexander Khazatsky
+    #-  Anant Rai
+    #-  Anchit Gupta
+    #-  Andrew Wang
+    #-  Anikait Singh
+    #-  Animesh Garg
+    #-  Aniruddha Kembhavi
+    #-  Annie Xie
+    #-  Anthony Brohan
+    #-  Antonin Raffin
+    #-  Archit Sharma
+    #-  Arefeh Yavary
+    #-  Arhan Jain
+    #-  Ashwin Balakrishna
+    #-  Ayzaan Wahid
+    #-  Ben Burgess-Limerick
+    #-  Beomjoon Kim
+    #-  Bernhard Schölkopf
+    #-  Blake Wulfe
+    #-  Brian Ichter
+    #-  Cewu Lu
+    #-  Charles Xu
+    #-  Charlotte Le
+    #-  Chelsea Finn
+    #-  Chen Wang
+    #-  Chenfeng Xu
+    #-  Cheng Chi
+    #-  Chenguang Huang
+    #-  Christine Chan
+    #-  Christopher Agia
+    #-  Chuer Pan
+    #-  Chuyuan Fu
+    #-  Coline Devin
+    #-  Danfei Xu
+    #-  Daniel Morton
+    #-  Danny  Driess
+    #-  Daphne Chen
+    #-  Deepak Pathak
+    #-  Dhruv Shah
+    #-  Dieter Büchler
+    #-  Dinesh Jayaraman
+    #-  Dmitry Kalashnikov
+    #-  Dorsa Sadigh
+    #-  Edward Johns
+    #-  Ethan Foster
+    #-  Fangchen Liu
+    #-  Federico   Ceola
+    #-  Fei  Xia
+    #-  Feiyu  Zhao
+    #-  Freek  Stulp
+    #-  Gaoyue Zhou
+    #-  Gaurav S.  Sukhatme
+    #-  Gautam Salhotra
+    #-  Ge   Yan
+    #-  Gilbert    Feng
+    #-  Giulio   Schiavi
+    #-  Glen Berseth
+    #-  Gregory    Kahn
+    #-  Guanzhi    Wang
+    #-  Hao  Su
+    #-  Hao-Shu    Fang
+    #-  Haochen  Shi
+    #-  Henghui  Bao
+    #-  Heni   Ben Amor
+    #-  Henrik I Christensen
+    #-  Hiroki   Furuta
+    #-  Homer  Walke
+    #-  Hongjie    Fang
+    #-  Huy  Ha
+    #-  Igor   Mordatch
+    #-  Ilija    Radosavovic
+    #-  Isabel Leal
+    #-  Jacky  Liang
+    #-  Jad  Abou-Chakra
+    #-  Jaehyung Kim
+    #-  Jaimyn Drake
+    #-  Jan  Peters
+    #-  Jan    Schneider
+    #-  Jasmine  Hsu
+    #-  Jeannette  Bohg
+    #-  Jeffrey  Bingham
+    #-  Jeffrey  Wu
+    #-  Jensen   Gao
+    #-  Jiaheng  Hu
+    #-  Jiajun   Wu
+    #-  Jialin   Wu
+    #-  Jiankai  Sun
+    #-  Jianlan  Luo
+    #-  Jiayuan  Gu
+    #-  Jie  Tan
+    #-  Jihoon   Oh
+    #-  Jimmy    Wu
+    #-  Jingpei  Lu
+    #-  Jingyun    Yang
+    #-  Jitendra   Malik
+    #-  João   Silvério
+    #-  Joey   Hejna
+    #-  Jonathan Booher
+    #-  Jonathan Tompson
+    #-  Jonathan   Yang
+    #-  Jordi  Salvador
+    #-  Joseph J.    Lim
+    #-  Junhyek  Han
+    #-  Kaiyuan    Wang
+    #-  Kanishka Rao
+    #-  Karl Pertsch
+    #-  Karol    Hausman
+    #-  Keegan   Go
+    #-  Keerthana    Gopalakrishnan
+    #-  Ken    Goldberg
+    #-  Kendra Byrne
+    #-  Kenneth  Oslund
+    #-  Kento  Kawaharazuka
+    #-  Kevin  Black
+    #-  Kevin    Lin
+    #-  Kevin  Zhang
+    #-  Kiana    Ehsani
+    #-  Kiran    Lekkala
+    #-  Kirsty Ellis
+    #-  Krishan    Rana
+    #-  Krishnan Srinivasan
+    #-  Kuan   Fang
+    #-  Kunal Pratap   Singh
+    #-  Kuo-Hao    Zeng
+    #-  Kyle   Hatch
+    #-  Kyle Hsu
+    #-  Laurent    Itti
+    #-  Lawrence Yunliang  Chen
+    #-  Lerrel Pinto
+    #-  Li   Fei-Fei
+    #-  Liam Tan
+    #-  Linxi Jim    Fan
+    #-  Lionel   Ott
+    #-  Lisa Lee
+    #-  Luca   Weihs
+    #-  Magnum Chen
+    #-  Marion   Lepert
+    #-  Marius   Memmel
+    #-  Masayoshi  Tomizuka
+    #-  Masha    Itkina
+    #-  Mateo Guaman Castro
+    #-  Max    Spero
+    #-  Maximilian   Du
+    #-  Michael  Ahn
+    #-  Michael C.   Yip
+    #-  Mingtong   Zhang
+    #-  Mingyu Ding
+    #-  Minho    Heo
+    #-  Mohan Kumar  Srirama
+    #-  Mohit    Sharma
+    #-  Moo Jin  Kim
+    #-  Naoaki Kanazawa
+    #-  Nicklas  Hansen
+    #-  Nicolas    Heess
+    #-  Nikhil J   Joshi
+    #-  Niko Suenderhauf
+    #-  Ning Liu
+    #-  Norman   Di Palo
+    #-  Nur Muhammad MahiShafiullah
+    #-  Oier   Mees
+    #-  Oliver   Kroemer
+    #-  Osbert   Bastani
+    #-  Pannag R Sanketi
+    #-  Patrick Tree Miller
+    #-  Patrick  Yin
+    #-  Paul   Wohlhart
+    #-  Peng Xu
+    #-  Peter David    Fagan
+    #-  Peter    Mitrano
+    #-  Pierre Sermanet
+    #-  Pieter   Abbeel
+    #-  Priya    Sundaresan
+    #-  Qiuyu  Chen
+    #-  Quan   Vuong
+    #-  Rafael Rafailov
+    #-  Ran    Tian
+    #-  Ria    Doshi
+    #-  Roberto    Martín-Martín
+    #-  Rohan    Baijal
+    #-  Rosario  Scalise
+    #-  Rose Hendrix
+    #-  Roy  Lin
+    #-  Runjia Qian
+    #-  Ruohan Zhang
+    #-  Russell    Mendonca
+    #-  Rutav  Shah
+    #-  Ryan   Hoque
+    #-  Ryan Julian
+    #-  Samuel   Bustamante
+    #-  Sean Kirmani
+    #-  Sergey   Levine
+    #-  Shan Lin
+    #-  Sherry Moore
+    #-  Shikhar    Bahl
+    #-  Shivin Dass
+    #-  Shubham    Sonawani
+    #-  Shuran Song
+    #-  Sichun   Xu
+    #-  Siddhant Haldar
+    #-  Siddharth    Karamcheti
+    #-  Simeon   Adebola
+    #-  Simon  Guist
+    #-  Soroush    Nasiriany
+    #-  Stefan   Schaal
+    #-  Stefan   Welker
+    #-  Stephen    Tian
+    #-  Subramanian  Ramamoorthy
+    #-  Sudeep   Dasari
+    #-  Suneel Belkhale
+    #-  Sungjae    Park
+    #-  Suraj  Nair
+    #-  Suvir    Mirchandani
+    #-  Takayuki Osa
+    #-  Tanmay Gupta
+    #-  Tatsuya  Harada
+    #-  Tatsuya  Matsushima
+    #-  Ted    Xiao
+    #-  Thomas   Kollar
+    #-  Tianhe   Yu
+    #-  Tianli Ding
+    #-  Todor    Davchev
+    #-  Tony Z.    Zhao
+    #-  Travis Armstrong
+    #-  Trevor   Darrell
+    #-  Trinity    Chung
+    #-  Vidhi  Jain
+    #-  Vincent    Vanhoucke
+    #-  Wei    Zhan
+    #-  Wenxuan    Zhou
+    #-  Wolfram  Burgard
+    #-  Xi Chen
+    #-  Xiaolong   Wang
+    #-  Xinghao  Zhu
+    #-  Xinyang    Geng
+    #-  Xiyuan   Liu
+    #-  Xu Liangwei
+    #-  Xuanlin  Li
+    #-  Yao  Lu
+    #-  Yecheng Jason    Ma
+    #-  Yejin    Kim
+    #-  Yevgen Chebotar
+    #-  Yifan  Zhou
+    #-  Yifeng   Zhu
+    #-  Yilin    Wu
+    #-  Ying Xu
+    #-  Yixuan Wang
+    #-  Yonatan    Bisk
+    #-  Yoonyoung    Cho
+    #-  Youngwoon    Lee
+    #-  Yuchen   Cui
+    #-  Yue  Cao
+    #-  Yueh-Hua Wu
+    #-  Yujin  Tang
+    #-  Yuke Zhu
+    #-  Yunchu Zhang
+    #-  Yunfan Jiang
+    #-  Yunshuang    Li
+    #-  Yunzhu   Li
+    #-  Yusuke   Iwasawa
+    #-  Yutaka   Matsuo
+    #-  Zehan    Ma
+    #-  Zhuo Xu
+    #-  Zichen Jeff  Cui
+    #-  Zichen Zhang
+    #-  Zipeng   Lin
+  VENUE: "IEEE International Conference on Robotics and Automation (ICRA)"
+  VENUE-ACR: "ICRA"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2310.08864"
+  EXTRAS:
+    Website: https://robotics-transformer-x.github.io
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: "Reasoning about the Unseen for Efficient Outdoor Object Navigation"
+  STUDENT: Quanting Xie
+  AUTHORS:
+    - Quanting Xie
+    - Tianyi Zhang
+    - Kedi Xu
+    - Matthew Johnson-Roberson
+    - Yonatan Bisk
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  URL: "https://arxiv.org/abs/2309.10103"
+  YEAR: '2023'
+  EXTRAS:
+    GitHub: https://github.com/quantingxie/ReasonedExplorer
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "MOSAIC: Learning Unified Multi-Sensory Object Property Representations for Robot Perception"
+  AUTHORS:
+    - Gyan Tatiya
+    - Jonathan Francis
+    - Ho-Hsiang Wu
+    - Yonatan Bisk
+    - Jivko Sinapov
+  VENUE: "IEEE International Conference on Robotics and Automation" 
+  VENUE-ACR: "ICRA"
+  URL: "https://arxiv.org/abs/2309.08508"
+  YEAR: '2024'
+  EXTRAS:
+    GitHub: https://github.com/gtatiya/MOSAIC
+  CUTE: "24-Mosaic"
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "WebArena: A Realistic Web Environment for Building Autonomous Agents"
+  ALUMN: Hao Zhu
+  AUTHORS:
+    - Shuyan Zhou
+    - Frank F. Xu
+    - Hao Zhu
+    - Xuhui Zhou
+    - Robert Lo
+    - Abishek Sridhar
+    - Xianyi Cheng
+    - Tianyue Ou
+    - Yonatan Bisk
+    - Daniel Fried
+    - Uri Alon
+    - Graham Neubig
+  VENUE: "The Twelfth International Conference on Learning Representations"
+  VENUE-ACR: "ICLR"
+  URL: "https://arxiv.org/abs/2307.13854"
+  YEAR: '2024'
+  EXTRAS:
+    GitHub: https://github.com/web-arena-x/webarena
+    Website: https://webarena.dev/
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "Spatial-Language Attention Policies for Efficient Robot Learning"
+  ALUMN: Vidhi Jain
+  AUTHORS:
+    - Priyam Parashar
+    - Vidhi Jain
+    - Xiaohan Zhang
+    - Jay Vakil
+    - Sam Powers
+    - Yonatan Bisk
+    - Chris Paxton
+  VENUE: "Conference on Robot Learning"
+  VENUE-ACR: "CoRL"
+  URL: "https://arxiv.org/abs/2304.11235"
+  YEAR: '2023'
+  EXTRAS:
+    GitHub: https://github.com/facebookresearch/home-robot/tree/main/projects/slap_manipulation
+    Website: "https://robotslap.github.io/"
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "SPAE: Semantic Pyramid AutoEncoder for Multimodal Generation with Frozen LLMs"
+  AUTHORS:
+    - Lijun Yu
+    - Yong Cheng
+    - Zhiruo Wang
+    - Vivek Kumar
+    - Wolfgang Macherey
+    - Yanping Huang
+    - David A. Ross
+    - Irfan Essa
+    - Yonatan Bisk
+    - Ming-Hsuan Yang
+    - Kevin Murphy
+    - Alexander Hauptmann
+    - Lu Jiang
+  VENUE: "Thirty-seventh Conference on Neural Information Processing Systems "
+  VENUE-ACR: "NeurIPS"
+  URL: "https://arxiv.org/abs/2306.17842"
+  YEAR: '2023'
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "HomeRobot: Open-Vocabulary Mobile Manipulation"
+  ALUMN: Vidhi Jain
+  AUTHORS:
+    - Sriram Yenamandra
+    - Arun Ramachandran
+    - Karmesh Yadav
+    - Austin Wang
+    - Mukul Khanna
+    - Theophile Gervet
+    - Tsung-Yen Yang
+    - Vidhi Jain
+    - Alexander William Clegg
+    - John Turner
+    - Zsolt Kira
+    - Manolis Savva
+    - Angel Chang
+    - Devendra Singh Chaplot
+    - Dhruv Batra
+    - Roozbeh Mottaghi
+    - Yonatan Bisk
+    - Chris Paxton
+  VENUE: "Conference on Robot Learning"
+  VENUE-ACR: "CoRL"
+  URL: "https://arxiv.org/abs/2306.11565"
+  YEAR: '2023'
+  EXTRAS:
+    GitHub: https://github.com/facebookresearch/home-robot
+    Website: https://ovmm.github.io/
+    Video: https://www.youtube.com/watch?v=EA8HEzopkc0
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "SPRING: GPT-4 Out-performs RL Algorithms by Studying Papers and Reasoning"
+  ALUMN: So Yeon Min
+  AUTHORS: 
+    - Yue Wu
+    - Shrimai Prabhumoye
+    - So Yeon Min 
+    - Yonatan Bisk 
+    - Ruslan Salakhutdinov
+    - Amos Azaria
+    - Tom Mitchell
+    - Yuanzhi Li 
+  VENUE: "Thirty-seventh Conference on Neural Information Processing Systems "
+  VENUE-ACR: "NeurIPS"
+  URL: "https://arxiv.org/abs/2305.15486"
+  YEAR: '2023'
+  EXTRAS:
+    GitHub: https://github.com/Holmeswww/SPRING
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: "Plan, Eliminate, and Track -- Language Models are Good Teachers for Embodied Agents"
+  ALUMN: So Yeon Min
+  AUTHORS: 
+    - Yue Wu
+    - So Yeon Min 
+    - Yonatan Bisk 
+    - Ruslan Salakhutdinov
+    - Amos Azaria
+    - Yuanzhi Li 
+    - Tom Mitchell
+    - Shrimai Prabhumoye
+  VENUE: "ArXiv"
+  VENUE-ACR: "ArXiv"
+  URL: "https://arxiv.org/abs/2305.02412"
+  YEAR: '2023'
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "Towards Open-World Mobile Manipulation in Homes: Lessons from the Neurips 2023 HomeRobot Open Vocabulary Mobile Manipulation Challenge"
+  ALUMN: Vidhi Jain
+  AUTHORS: 
+    - Sriram Yenamandra
+    - Arun Ramachandran
+    - Mukul Khanna
+    - Karmesh Yadav
+    - Jay Vakil
+    - Andrew Melnik
+    - Michael Büttner
+    - Leon Harz
+    - Lyon Brown
+    - Gora Chand Nandi
+    - Arjun PS
+    - Gaurav Kumar Yadav
+    - Rahul Kala
+    - Robert Haschke
+    - Yang Luo
+    - Jinxin Zhu
+    - Yansen Han
+    - Bingyi Lu
+    - Xuan Gu
+    - Qinyuan Liu
+    - Yaping Zhao
+    - Qiting Ye
+    - Chenxiao Dou
+    - Yansong Chua
+    - Volodymyr Kuzma
+    - Vladyslav Humennyy
+    - Ruslan Partsey
+    - Jonathan Francis
+    - Devendra Singh Chaplot
+    - Gunjan Chhablani
+    - Alexander Clegg
+    - Theophile Gervet
+    - Vidhi Jain
+    - Ram Ramrakhya
+    - Andrew Szot
+    - Austin Wang
+    - Tsung-Yen Yang
+    - Aaron Edsinger
+    - Charlie Kemp
+    - Binit Shah
+    - Zsolt Kira
+    - Dhruv Batra
+    - Roozbeh Mottaghi
+    - Yonatan Bisk
+    - Chris Paxton
+  VENUE: "Thirty-seventh Conference on Neural Information Processing Systems: Competition Track"
+  VENUE-ACR: NeurIPS Challenge
+  URL: https://arxiv.org/abs/2407.06939
+  EXTRAS:
+    Website: https://aihabitat.org/challenge/2023_homerobot_ovmm/
+  YEAR: '2023'
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "EXCALIBUR: Encouraging and Evaluating Embodied Exploration"
+  YEAR: '2023'
+  ALUMN: Hao Zhu
+  AUTHORS: 
+    - Hao Zhu
+    - Raghav Kapoor
+    - So Yeon Min
+    - Winson Han
+    - Jiatai Li
+    - Kaiwen Geng
+    - Graham Neubig 
+    - Yonatan Bisk
+    - Aniruddha Kembhavi
+    - Luca Weihs
+  VENUE: Conference on Computer Vision and Pattern Recognition
+  VENUE-ACR: CVPR
+  URL: 'https://openaccess.thecvf.com/content/CVPR2023/html/Zhu_EXCALIBUR_Encouraging_and_Evaluating_Embodied_Exploration_CVPR_2023_paper.html'
+  EXTRAS:
+    Video: https://www.youtube.com/watch?v=SboNjVuIUJA
+    Tasks: https://www.youtube.com/watch?v=X6Bdz4p1io8
+- FIELD: O
+  TYPE: Conference
+  TITLE: "The Framework Tax: Disparities Between Inference Efficiency in Research and Deployment"
+  YEAR: '2023'
+  STUDENT: Jared Fernandez
+  AUTHORS:
+    - Jared Fernandez
+    - Jacob Kahn
+    - Clara Na 
+    - Yonatan Bisk
+    - Emma Strubell
+  VENUE: "The 2023 Conference on Empirical Methods in Natural Language Processing "
+  VENUE-ACR: "EMNLP"
+  PRES: Oral
+  URL: 'https://arxiv.org/abs/2302.06117'
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: "Computational Language Acquisition with Theory of Mind"
+  YEAR: '2023'
+  ALUMN: Hao Zhu
+  AUTHORS:
+    - Andy Liu
+    - Hao Zhu
+    - Emmy Liu 
+    - Yonatan Bisk
+    - Graham Neubig
+  VENUE: The Eleventh International Conference on Learning Representations
+  VENUE-ACR: ICLR
+  EXTRAS:
+    GitHub: https://github.com/neulab/ToM-Language-Acquisition
+  URL: 'https://openreview.net/forum?id=C2ulri4duIs'
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "Self-Supervised Object Goal Navigation with In-Situ Finetuning"
+  YEAR: '2023'
+  ALUMN: So Yeon Min
+  AUTHORS:
+    - So Yeon Min
+    - Yao-Hung Hubert Tsai
+    - Wei Ding
+    - Ali Farhadi
+    - Ruslan Salakhutdinov
+    - Yonatan Bisk
+    - Jian Zhang
+  VENUE: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  VENUE-ACR: IROS
+  URL: 'https://arxiv.org/abs/2212.05923'
+  EXTRAS:
+    Video: https://www.youtube.com/watch?v=LXsZst5ZUpU
+- FIELD: WS4
+  TYPE: Workshop
+  TITLE: "MAEA: Multimodal Attribution for Embodied AI"
+  YEAR: '2022'
+  ALUMN: Vidhi Jain
+  AUTHORS:
+    - Vidhi Jain
+    - Jayant Sravan Tamarapalli
+    - Sahiti Yerramilli
+    - Yonatan Bisk
+  VENUE: "Progress and Challenges in Building Trustworthy Embodied AI at NeurIPS 2022"
+  VENUE-ACR: TEA Wksp
+  URL: 'https://openreview.net/pdf?id=OUs2us5Xhx'
+- FIELD: WS4
+  TYPE: Workshop
+  TITLE: "Tackling AlfWorld with Action Attention and Common Sense from Language Models"
+  YEAR: '2022'
+  URL: 'https://openreview.net/forum?id=AqkPRUZ-YkO'
+  ALUMN: So Yeon Min
+  AUTHORS:
+    - Yue Wu
+    - So Yeon Min
+    - Yonatan Bisk
+    - Ruslan Salakhutdinov
+    - Shrimai Prabhumoye
+  VENUE: "Language and Reinforcement Learning Workshop at NeurIPS 2022"
+  VENUE-ACR: LaReL Wksp
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: "Retrospectives on the Embodied AI Workshop"
+  YEAR: '2022'
+  URL: 'https://arxiv.org/abs/2210.06849'
+  AUTHORS: 
+   - Matt Deitke
+   - Dhruv Batra
+   - Yonatan Bisk
+   - Tommaso Campari
+   - Angel X. Chang
+   - Devendra Singh Chaplot
+   - Changan Chen
+   - Claudia Pérez D'Arpino
+   - Kiana Ehsani
+   - Ali Farhadi
+   - Li Fei-Fei
+   - Anthony Francis
+   - Chuang Gan
+   - Kristen Grauman
+   - David Hall
+   - Winson Han
+   - Unnat Jain
+   - Aniruddha Kembhavi
+   - Jacob Krantz
+   - Stefan Lee
+   - Chengshu Li
+   - Sagnik Majumder
+   - Oleksandr Maksymets
+   - Roberto Martín-Martín
+   - Roozbeh Mottaghi
+   - Sonia Raychaudhuri
+   - Mike Roberts
+   - Silvio Savarese
+   - Manolis Savva
+   - Mohit Shridhar
+   - Niko Sünderhauf
+   - Andrew Szot
+   - Ben Talbot
+   - Joshua B. Tenenbaum
+   - Jesse Thomason
+   - Alexander Toshev
+   - Joanne Truong
+   - Luca Weihs
+   - Jiajun Wu
+  VENUE: ArXiv
+  VENUE-ACR: ArXiv
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: "Don't Copy the Teacher: Data and Model Challenges in Embodied Dialogue"
+  YEAR: '2022'
+  URL: 'https://arxiv.org/abs/2210.04443'
+  ALUMN: So Yeon Min
+  AUTHORS:
+    - So Yeon Min
+    - Hao Zhu
+    - Ruslan Salakhutdinov 
+    - Yonatan Bisk
+  VENUE:  Conference on Empirical Methods in Natural Language Processing
+  VENUE-ACR: EMNLP
+  EXTRAS:
+    Video: https://www.youtube.com/watch?v=qGPC65BDJw4
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: "EvEntS ReaLM: Event Reasoning of Entity States via Language Models"
+  YEAR: '2022'
+  URL: 'https://arxiv.org/abs/2211.05392'
+  AUTHORS:
+    - Evangelia Spiliopoulou
+    - Artidoro Pagnoni
+    - Yonatan Bisk 
+    - Eduard Hovy
+  VENUE:  Conference on Empirical Methods in Natural Language Processing
+  VENUE-ACR: EMNLP
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "On Advances in Text Generation from Images Beyond Captioning: A Case Study in Self-Rationalization"
+  YEAR: '2022'
+  URL: 'https://arxiv.org/abs/2205.11686'
+  AUTHORS:
+    - Shruti Palaskar
+    - Akshita Bhagia 
+    - Yonatan Bisk 
+    - Florian Metze
+    - Alan W Black
+    - Ana Marasovic
+  VENUE:  Findings of the Conference on Empirical Methods in Natural Language Processing
+  VENUE-ACR: EMNLP Findings
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: 'Transformers are Adaptable Task Planners'
+  YEAR: '2022'
+  URL: 'https://arxiv.org/abs/2207.02442'
+  ALUMN: Vidhi Jain
+  AUTHORS:
+    - Vidhi Jain
+    - Yixin Lin
+    - Eric Undersander
+    - Yonatan Bisk
+    - Akshara Rai
+  VENUE: Conference on Robot Learning
+  VENUE-ACR: CoRL
+  EXTRAS:
+    Video: https://www.youtube.com/watch?v=ivLdlMQekME
+- FIELD: WS3
+  TYPE: Journal
+  TITLE: 'Training Vision-Language Transformers from Captions'
+  YEAR: '2023'
+  URL: 'https://arxiv.org/abs/2205.09256'
+  STUDENT: Yingshan Chang
+  AUTHORS:
+    - Liangke Gui
+    - Yingshan Chang
+    - Qiuyuan Huang
+    - Subhojit Som
+    - Alexander Hauptmann
+    - Jianfeng Gao
+    - Yonatan Bisk
+  VENUE: Transactions on Machine Learning Research
+  VENUE-ACR: TMLR
+  EXTRAS:
+    GitHub: https://github.com/guilk/VLC
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: 'Symmetric Machine Theory of Mind'
+  YEAR: '2022'
+  URL: 'https://proceedings.mlr.press/v162/sclar22a.html'
+  AUTHORS:
+  - Melanie Sclar
+  - Graham Neubig
+  - Yonatan Bisk
+  VENUE: 39th International Conference on Machine Learning
+  VENUE-ACR: ICML
+  EXTRAS:
+    GitHub: https://github.com/msclar/symmtom
+    Video: "https://slideslive.com/38983255"
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: 'A Framework for Learning to Request Rich and Contextually Useful Information from Humans'
+  YEAR: '2022'
+  URL: 'http://arxiv.org/abs/2110.08258'
+  AUTHORS:
+  - Khanh Nguyen
+  - Yonatan Bisk
+  - Hal Daume III
+  VENUE: 39th International Conference on Machine Learning,
+  VENUE-ACR: ICML
+  EXTRAS:
+    Video: "https://slideslive.com/38983532"
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: 'Simulated Language Learning from Communicative Goals and Linguistic Input'
+  YEAR: '2022'
+  URL: 'https://escholarship.org/uc/item/7p65n371'
+  ALUMN: Hao Zhu
+  AUTHORS:
+  - Hao Zhu
+  - Yonatan Bisk
+  - Graham Neubig
+  VENUE: 'Annual Meeting of the Cognitive Science Society'
+  PRES: Oral
+  VENUE-ACR: 'CogSci'
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: 'HEAR 2021: Holistic Evaluation of Audio Representations'
+  YEAR: '2022'
+  URL: 'http://arxiv.org/abs/2203.03022'
+  AUTHORS:
+  - Joseph Turian
+  - Jordie Shier
+  - Humair Raj Khan
+  - Bhiksha Raj
+  - Björn W. Schuller
+  - Christian J. Steinmetz
+  - Colin Malloy
+  - George Tzanetakis
+  - Gissel Velarde
+  - Kirk McNally
+  - Max Henry
+  - Nicolas Pinto
+  - Camille Noufi
+  - Christian Clough
+  - Dorien Herremans
+  - Eduardo Fonseca
+  - Jesse Engel
+  - Justin Salamon
+  - Philippe Esling
+  - Pranay Manocha
+  - Shinji Watanabe
+  - Zeyu Jin
+  - Yonatan Bisk
+  VENUE: 'Proceedings of Machine Learning Research (PMLR): NeurIPS 2021 Competition Track'
+  VENUE-ACR: 'PMLR'
+  EXTRAS:
+    Website: https://hearbenchmark.com/
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: 'KAT: A Knowledge Augmented Transformer for Vision-and-Language'
+  YEAR: '2022'
+  URL: 'https://arxiv.org/abs/2112.08614'
+  AUTHORS:
+  - Liangke Gui
+  - Borui Wang
+  - Qiuyuan Huang
+  - Alexander Hauptmann
+  - Yonatan Bisk
+  - Jianfeng Gao
+  VENUE: 'Annual Conference of the North American Chapter of the Association for Computational Linguistics'
+  VENUE-ACR: NAACL 
+  PRES: Oral
+  EXTRAS:
+    GitHub: https://github.com/guilk/KAT
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: 'FILM: Following Instructions in Language with Modular Methods'
+  YEAR: '2022'
+  ALUMN: So Yeon Min
+  URL: "https://arxiv.org/abs/2110.07342"
+  AUTHORS:
+  - So Yeon Min
+  - Devendra Singh Chaplot
+  - Pradeep Ravikumar
+  - Yonatan Bisk
+  - Ruslan Salakhutdinov
+  VENUE: The Tenth International Conference on Learning Representations
+  VENUE-ACR: ICLR
+  EXTRAS:
+    GitHub: https://github.com/soyeonm/FILM
+    Website: 'https://soyeonm.github.io/FILM_webpage/'
+    Video: https://www.youtube.com/watch?v=Ufh1Os51FY4
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: 'WebQA: Multihop and Multimodal QA'
+  YEAR: '2022'
+  URL: 'https://arxiv.org/abs/2109.00590'
+  STUDENT: Yingshan Chang
+  AUTHORS:
+  - Yingshan Chang
+  - Mridu Narang
+  - Hisami Suzuki
+  - Guihong Cao
+  - Jianfeng Gao
+  - Yonatan Bisk
+  VENUE: Conference on Computer Vision and Pattern Recognition 
+  VENUE-ACR: CVPR 
+  PRES: Oral
+  EXTRAS:
+    Project: https://webqna.github.io/
+    Leaderboard: https://eval.ai/challenge/1255/overview
+    "Challenge Summary": https://proceedings.mlr.press/v176/chang22a
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: 'Dependency Induction Through the Lens of Visual Perception'
+  YEAR: '2021'
+  URL: 'https://arxiv.org/abs/2109.09790'
+  ALUMN: Hao Zhu
+  AUTHORS:
+  - Ruisi Su
+  - Shruti Rijhwani
+  - Hao Zhu
+  - Junxian He
+  - Xinyu Wang
+  - Yonatan Bisk
+  - Graham Neubig
+  VENUE: The SIGNLL Conference on Computational Natural Language Learning
+  VENUE-ACR: CoNLL
+  EXTRAS:
+    GitHub: https://github.com/ruisi-su/concrete_dep
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: 'Language Grounding with 3D Objects'
+  YEAR: '2021'
+  URL: 'https://arxiv.org/abs/2107.12514'
+  AUTHORS:
+  - Jesse Thomason
+  - Mohit Shridhar
+  - Yonatan Bisk
+  - Chris Paxton
+  - Luke Zettlemoyer
+  VENUE: Conference on Robot Learning 
+  VENUE-ACR: CoRL
+  EXTRAS:
+    GitHub: https://github.com/snaredataset/snare
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "TACo: Token-aware Cascade Contrastive Learning for Video-Text Alignment"
+  YEAR: '2021'
+  URL: 'https://arxiv.org/abs/2108.09980'
+  AUTHORS:
+  - Jianwei Yang
+  - Yonatan Bisk
+  - Jianfeng Gao
+  VENUE: "International Conference on Computer Vision"
+  VENUE-ACR: ICCV
+- FIELD: WS3
+  TYPE: Workshop
+  TITLE: 'Worst of Both Worlds: Biases Compound in Pre-trained Vision-and-Language Models'
+  YEAR: '2022'
+  URL: https://arxiv.org/abs/2104.08666
+  AUTHORS:
+  - Tejas Srinivasan
+  - Yonatan Bisk
+  VENUE: '4th Workshop on Gender Bias in Natural Language Processing'
+  VENUE-ACR: GeBNLP Wksp
+- FIELD: WS3
+  TYPE: Workshop
+  TITLE: "KB-VLP: Knowledge Based Vision and Language Pretraining"
+  YEAR: '2021'
+  URL: 'https://www.microsoft.com/en-us/research/publication/kb-vlp-knowledge-based-vision-and-language-pretraining-2/'
+  AUTHORS:
+  - Kezhen Chen
+  - Qiuyuan Huang
+  - Yonatan Bisk
+  - Daniel McDuff
+  - Jianfeng Gao
+  VENUE: "ICML21 Workshop on Self-Supervised Learning"
+  VENUE-ACR: "SSL Wksp"
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: "Few-shot Language Coordination by Modeling Theory of Mind"
+  YEAR: '2021'
+  URL: 'http://proceedings.mlr.press/v139/zhu21d.html'
+  ALUMN: Hao Zhu
+  AUTHORS:
+  - Hao Zhu
+  - Graham Neubig
+  - Yonatan Bisk
+  VENUE: 'The Thirty-eighth International Conference on Machine Learning'
+  VENUE-ACR: ICML
+  EXTRAS:
+    GitHub: https://github.com/CLAW-Lab/ToM
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: "Grounding `Grounding' in NLP"
+  YEAR: '2021'
+  URL: https://arxiv.org/abs/2106.02192
+  AUTHORS:
+  - Khyathi Raghavi Chandu
+  - Yonatan Bisk
+  - Alan W Black
+  VENUE: 'Findings of The 2021 Conference of the Association for Computational Linguistics'
+  VENUE-ACR: ACL Findings 
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: 'An Empirical Study on the Generalization Power of Neural Representations Learned via Visual Guessing Games'
+  YEAR: '2021'
+  URL: https://arxiv.org/abs/2102.00424
+  AUTHORS:
+  - Alessandro Suglia
+  - Yonatan Bisk
+  - Ioannis Konstas
+  - Antonio Vergari
+  - Emanuele Bastianelli
+  - Andrea Vanzo
+  - Oliver Lemon
+  VENUE: 'The 2021 Conference of the European Chapter of the Association for Computational Linguistics'
+  VENUE-ACR: EACL 
+  PRES: Oral
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: 'Knowledge-driven Data Construction for Zero-shot Evaluation in Commonsense Question Answering'
+  YEAR: '2021'
+  URL: https://arxiv.org/abs/2011.03863
+  AUTHORS:
+  - Kaixin Ma
+  - Filip Ilievski
+  - Jonathan Francis
+  - Yonatan Bisk
+  - Eric Nyberg
+  - Alessandro Oltramari
+  VENUE: 35th AAAI Conference on Artificial Intelligence
+  VENUE-ACR: AAAI
+  EXTRAS:
+    GitHub: https://github.com/Mayer123/HyKAS-CSKG
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: 'ALFWorld: Aligning Text and Embodied Environments for Interactive Learning'
+  YEAR: '2021'
+  URL: "https://arxiv.org/abs/2010.03768"
+  AUTHORS:
+  - Mohit Shridhar
+  - Xingdi Yuan
+  - Marc-Alexandre C{\^o}t{\'e}
+  - Yonatan Bisk
+  - Adam Trischler
+  - Matthew Hausknecht
+  VENUE: International Conference on Learning Representations
+  VENUE-ACR: ICLR
+  EXTRAS:
+    GitHub: https://github.com/alfworld/alfworld
+    Website: https://alfworld.github.io/
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: Imagining Grounded Conceptual Representations from Perceptual Information
+    in Situated Guessing Games
+  YEAR: '2020'
+  URL: "https://arxiv.org/abs/2011.02917"
+  AUTHORS:
+  - Alessandro Suglia
+  - Antonio Vergari
+  - Ioannis Konstas
+  - Yonatan Bisk
+  - Emanuele Bastianelli
+  - Andrea Vanzo
+  - Oliver Lemon
+  VENUE: The 28th International Conference on Computational Linguistics 
+  VENUE-ACR: Coling 
+  PRES: Oral
+- FIELD: WS2
+  TYPE: Journal
+  TITLE: 'The Return of Lexical Dependencies: Neural Lexicalized PCFGs'
+  YEAR: '2020'
+  URL: http://arxiv.org/abs/2007.15135
+  ALUMN: Hao Zhu
+  AUTHORS:
+  - Hao Zhu
+  - Yonatan Bisk
+  - Graham Neubig
+  VENUE: Transactions of the Association for Computational Linguistics
+  VENUE-ACR: TACL
+  EXTRAS:
+    GitHub: https://github.com/neulab/neural-lpcfg
+- FIELD: O
+  TYPE: Conference
+  TITLE: Experience Grounds Language
+  YEAR: '2020'
+  URL: https://arxiv.org/abs/2004.10151
+  AUTHORS:
+  - Yonatan Bisk
+  - Ari Holtzman
+  - Jesse Thomason
+  - Jacob Andreas
+  - Yoshua Bengio
+  - Joyce Chai
+  - Mirella Lapata
+  - Angeliki Lazaridou
+  - Jonathan May
+  - Aleksandr Nisnevich
+  - Nicolas Pinto
+  - Joseph Turian
+  VENUE: Conference on Empirical Methods in Natural Language Processing 
+  VENUE-ACR: EMNLP 
+  PRES: Oral
+  EXTRAS:
+    Video: https://youtu.be/cQasYLUC_00
+    Slides: https://talkingtorobots.com/papers/2020-EMNLP.pdf
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: 'RMM: A Recursive Mental Model for Dialog Navigation'
+  YEAR: '2020'
+  URL: https://arxiv.org/abs/2005.00728
+  AUTHORS:
+  - Homero Roman Roman
+  - Yonatan Bisk
+  - Jesse Thomason
+  - Asli Celikyilmaz
+  - Jianfeng Gao
+  VENUE: "Conference on Empirical Methods in Natural Language 
+    Processing: Findings"
+  VENUE-ACR: EMNLP Findings
+  EXTRAS:
+    GitHub: https://github.com/HomeroRR/rmm
+- FIELD: WS3
+  TYPE: Workshop
+  TITLE: A Benchmark for Structured Procedural Knowledge Extraction from Cooking Videos
+  YEAR: '2020'
+  URL: https://arxiv.org/abs/2005.00706
+  AUTHORS:
+  - Frank F. Xu
+  - Lei Ji
+  - Botian Shi
+  - Junyi Du
+  - Graham Neubig
+  - Yonatan Bisk
+  - Nan Duan
+  VENUE: Workshop on NLP Beyond Text
+  VENUE-ACR: NLPBT Wksp
+  EXTRAS:
+    GitHub: https://github.com/frankxu2004/cooking-procedural-extraction
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: Multi-View Learning for Vision-and-Language Navigation
+  YEAR: '2020'
+  URL: https://arxiv.org/abs/2003.00857
+  AUTHORS:
+  - Qiaolin Xia
+  - Xiujun Li
+  - Chunyuan Li
+  - Yonatan Bisk
+  - Zhifang Sui
+  - Jianfeng Gao
+  - Yejin Choi
+  - Noah A. Smith
+  VENUE: ArXiv
+  VENUE-ACR: ArXiv
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: 'ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday
+    Tasks'
+  YEAR: '2020'
+  URL: "https://arxiv.org/abs/1912.01734"
+  AUTHORS:
+  - Mohit Shridhar
+  - Jesse Thomason
+  - Daniel Gordon
+  - Yonatan Bisk
+  - Winson Han
+  - Roozbeh Mottaghi
+  - Luke Zettlemoyer
+  - Dieter Fox
+  VENUE: The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)
+  VENUE-ACR: CVPR
+  EXTRAS:
+    GitHub: https://github.com/askforalfred/alfred
+    Website: https://askforalfred.com/
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: 'PIQA: Reasoning about Physical Commonsense in Natural Language'
+  YEAR: '2020'
+  URL: https://arxiv.org/abs/1911.11641
+  AUTHORS:
+  - Yonatan Bisk
+  - Rowan Zellers
+  - Ronan Le Bras
+  - Jianfeng Gao
+  - Yejin Choi
+  VENUE: Thirty-Fourth AAAI Conference on Artificial Intelligence 
+  VENUE-ACR: AAAI 
+  PRES: Oral
+  EXTRAS:
+    Slides: papers/2020-AAAI-PIQA-Slides.pdf
+    Leaderboard: https://leaderboard.allenai.org/physicaliqa/submissions/public
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: Robust Navigation with Language Pretraining and Stochastic Sampling
+  YEAR: '2019'
+  URL: https://arxiv.org/abs/1909.02244
+  AUTHORS:
+  - Xiujun Li
+  - Chunyuan Li
+  - Qiaolin Xia
+  - Yonatan Bisk
+  - Asli Celikyilmaz
+  - Jianfeng Gao
+  - Noah A. Smith
+  - Yejin Choi
+  VENUE: Conference on Empirical Methods in Natural Language Processing and 9th International
+    Joint Conference on Natural Language Processing
+  VENUE-ACR: EMNLP-IJCNLP
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: Defending Against Neural Fake News
+  YEAR: '2019'
+  URL: https://arxiv.org/abs/1905.12616
+  AUTHORS:
+  - Rowan Zellers
+  - Ari Holtzman
+  - Hannah Rashkin
+  - Yonatan Bisk
+  - Ali Farhadi
+  - Franziska Roesner
+  - Yejin Choi
+  VENUE: Thirty-third Conference on Neural Information Processing Systems
+  VENUE-ACR: NeurIPS
+  EXTRAS:
+    Demo: http://rowanzellers.com/grover/
+    Models: https://docs.google.com/forms/d/e/1FAIpQLSfPMUXH1fdUxI3TchRS9RaEJ_W-W-adZhQ-_MymHnGkGOlBkA/viewform
+- FIELD: O
+  TYPE: Preprint
+  TITLE: 'FIND: Identifying Functionally and Structurally Important Features in Protein
+    Sequences with Deep Neural Networks'
+  YEAR: '2019'
+  URL: https://www.biorxiv.org/content/10.1101/592808v1
+  AUTHORS:
+  - Ranjani Murali
+  - James Hemp
+  - Victoria Orphan
+  - Yonatan Bisk
+  VENUE: bioRxiv
+  VENUE-ACR: bioRxiv
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: Improving Robot Success Detection using Static Object Data
+  YEAR: '2019'
+  URL: https://arxiv.org/abs/1904.01650
+  AUTHORS:
+  - Rosario Scalise
+  - Jesse Thomason
+  - Yonatan Bisk
+  - Siddhartha Srinivasa
+  VENUE: IEEE/RSJ International Conference on Intelligent
+    Robots and Systems
+  VENUE-ACR: IROS
+  EXTRAS:
+    GitHub: https://github.com/thomason-jesse/YCBLanguage
+    Video: https://www.youtube.com/watch?v=0uk_1yP9hqM
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: Early Fusion for Goal Directed Robotic Vision
+  YEAR: '2019'
+  URL: https://arxiv.org/abs/1811.08824
+  AUTHORS:
+  - Aaron Walsman
+  - Yonatan Bisk
+  - Saadia Gabriel
+  - Dipendra Misra
+  - Yoav Artzi
+  - Yejin Choi
+  - Dieter Fox
+  VENUE: 2019 IEEE/RSJ International Conference on Intelligent
+    Robots and Systems
+  VENUE-ACR: IROS
+  NOTE: "RoboCup Best Paper Award finalist"
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: 'HellaSwag: Can a Machine Really Finish Your Sentence? '
+  YEAR: '2019'
+  URL: https://arxiv.org/abs/1905.07830
+  AUTHORS:
+  - Rowan Zellers
+  - Ari Holtzman
+  - Yonatan Bisk
+  - Ali Farhadi
+  - Yejin Choi
+  VENUE: Association for Computational Linguistics
+  VENUE-ACR: ACL
+  EXTRAS:
+    GitHub: https://github.com/rowanz/hellaswag
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: 'From Recognition to Cognition: Visual Commonsense Reasoning'
+  YEAR: '2019'
+  URL: "https://arxiv.org/abs/1811.10830"
+  AUTHORS:
+  - Rowan Zellers
+  - Yonatan Bisk
+  - Ali Farhadi
+  - Yejin Choi
+  VENUE: The IEEE Conference on Computer Vision and Pattern Recognition 
+  VENUE-ACR: CVPR 
+  PRES: Oral
+  EXTRAS:
+    GitHub: https://github.com/rowanz/r2c/
+    URL: http://visualcommonsense.com/
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: 'Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language
+    Navigation'
+  YEAR: '2019'
+  URL: https://arxiv.org/abs/1903.02547
+  AUTHORS:
+  - Liyiming Ke
+  - Xiujun Li
+  - Yonatan Bisk
+  - Ari Holtzman
+  - Zhe Gan
+  - Jingjing Liu
+  - Jianfeng Gao
+  - Yejin Choi
+  - Siddhartha Srinivasa
+  VENUE: The IEEE Conference on Computer Vision and Pattern Recognition 
+  VENUE-ACR: CVPR 
+  PRES: Oral
+  EXTRAS:
+    GitHub: https://github.com/Kelym/FAST
+    Video: https://youtu.be/AD9TNohXoPA
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: 'Prospection: Interpretable Plans From Language By Predicting the Future'
+  YEAR: '2019'
+  URL: https://arxiv.org/abs/1903.08309
+  AUTHORS:
+  - Chris Paxton
+  - Yonatan Bisk
+  - Jesse Thomason
+  - Arunkumar Byravan
+  - Dieter Fox
+  VENUE: International Conference on Robotics and Automation (ICRA)
+  VENUE-ACR: ICRA
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: 'Shifting the Baseline: Single Modality Performance on Visual Navigation
+    & QA'
+  YEAR: '2019'
+  URL: https://arxiv.org/abs/1811.00613
+  AUTHORS:
+  - Jesse Thomason
+  - Daniel Gordon
+  - Yonatan Bisk
+  VENUE: Annual Conference of the North American Chapter of the
+    Association for Computational Linguistics
+  VENUE-ACR: NAACL Short
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: Benchmarking Hierarchical Script Knowledge
+  YEAR: '2019'
+  URL: https://www.aclweb.org/anthology/N19-1412
+  AUTHORS:
+  - Yonatan Bisk
+  - Jan Buys
+  - Karl Pichotta
+  - Yejin Choi
+  VENUE: Annual Conference of the North American Chapter of the
+    Association for Computational Linguistics 
+  VENUE-ACR: NAACL Short 
+  PRES: Oral
+  EXTRAS:
+    GitHub: https://github.com/janmbuys/ScriptTransduction/
+- FIELD: O
+  TYPE: Conference
+  TITLE: Character-based Surprisal as a Model of Reading Difficulty in the Presence
+    of Errors
+  YEAR: '2019'
+  URL: https://psyarxiv.com/zcwgn/
+  AUTHORS:
+  - Michael Hahn
+  - Frank Keller
+  - Yonatan Bisk
+  - Yonatan Belinkov
+  VENUE: The 41st Annual Meeting of the Cognitive Science Society 
+  VENUE-ACR: CogSci 
+  PRES: Oral
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: 'SWAG: A Large-Scale Adversarial Dataset for Grounded Commonsense Inference'
+  YEAR: '2018'
+  URL: "https://arxiv.org/abs/1808.05326"
+  AUTHORS:
+  - Rowan Zellers
+  - Yonatan Bisk
+  - Roy Schwartz
+  - Yejin Choi
+  VENUE: Conference on Empirical Methods in Natural Language Processing 
+  VENUE-ACR: EMNLP 
+  PRES: Oral
+  EXTRAS:
+    Website: http://rowanzellers.com/swag/
+    Video: https://vimeo.com/305195438
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: "Balancing Shared Autonomy with Human-Robot Communication"
+  YEAR: '2018'
+  URL: https://arxiv.org/abs/1805.07719
+  AUTHORS:
+    - Rosario Scalise
+    - Yonatan Bisk
+    - Maxwell Forbes
+    - Daqing Yi
+    - Yejin Choi
+    - Siddhartha Srinivasa
+  VENUE: ArXiv
+  VENUE-ACR: ArXiv
+- FIELD: WS1
+  TYPE: Workshop
+  TITLE: Inducing Grammars with and for Neural Machine Translation
+  YEAR: '2018'
+  URL: https://arxiv.org/abs/1805.10850
+  AUTHORS:
+  - Ke Tran
+  - Yonatan Bisk
+  VENUE: 2nd Workshop on Neural Machine Translation
+  VENUE-ACR: NMT Wksp
+  PRES: Best Paper
+- FIELD: O
+  TYPE: Workshop
+  TITLE: Bridging HMMs and RNNs through Architectural Transformations
+  YEAR: '2018'
+  URL: https://openreview.net/pdf?id=rJxEso0osm
+  AUTHORS:
+  - Jan Buys
+  - Yonatan Bisk
+  - Yejin Choi
+  VENUE: 32nd Conference on Neural Information Processing Systems (NIPS 2018), IRASL
+    workshop
+  VENUE-ACR: IRASL Wksp 
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: 'Synthetic and Natural Noise Both Break Neural Machine Translation '
+  YEAR: '2018'
+  URL: https://arxiv.org/abs/1711.02173
+  AUTHORS:
+  - Yonatan Belinkov
+  - Yonatan Bisk
+  VENUE: 6th International Conference on Learning Representations 
+  VENUE-ACR: ICLR 
+  PRES: Oral
+- FIELD: WS4
+  TYPE: Preprint
+  TITLE: 'CHALET: Cornell House Agent Learning Environment '
+  YEAR: '2018'
+  URL: https://arxiv.org/abs/1801.07357
+  AUTHORS:
+  - Claudia Yan
+  - Dipendra Misra
+  - Andrew Bennett
+  - Aaron Walsman
+  - Yonatan Bisk
+  - Yoav Artzi
+  VENUE: ArXiv Preprint 1801.07357
+  VENUE-ACR: ArXiv
+  EXTRAS:
+    Simulator: https://github.com/lil-lab/chalet
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: Learning Interpretable Spatial Operations in a Rich 3D Blocks World 
+  YEAR: '2018'
+  URL: https://arxiv.org/abs/1712.03463
+  AUTHORS:
+  - Yonatan Bisk
+  - Kevin Shih
+  - Yejin Choi
+  - Daniel Marcu
+  VENUE: Thirty-Second Conference on Artificial Intelligence (AAAI-18)
+  VENUE-ACR: AAAI
+  EXTRAS:
+    Data: https://groundedlanguage.github.io/
+    Poster: "http://talkingtorobots.com/papers/2018-AAAI-Poster.pdf"
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: Natural Language Inference from Multiple Premises
+  YEAR: '2017'
+  URL: https://arxiv.org/abs/1710.02925
+  AUTHORS:
+  - Alice Lai
+  - Yonatan Bisk
+  - Julia Hockenmaier
+  VENUE: Eighth International Joint Conference on Natural Language Processing 
+  VENUE-ACR: IJCNLP 
+  PRES: Oral
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: 'Natural Language Communication with Robots '
+  YEAR: '2016'
+  URL: https://www.aclweb.org/anthology/N16-1089/
+  AUTHORS:
+  - Yonatan Bisk
+  - Deniz Yuret
+  - Daniel Marcu
+  VENUE: 15th Annual Conference of the North American Chapter of
+    the Association for Computational Linguistics 
+  VENUE-ACR: NAACL 
+  PRES: Oral
+  EXTRAS:
+    Data: https://groundedlanguage.github.io/
+    Slides: "http://talkingtorobots.com/papers/2016-NAACL-Slides.pdf"
+- FIELD: WS1
+  TYPE: Conference
+  TITLE: Supertagging with LSTMs
+  YEAR: '2016'
+  URL: https://www.aclweb.org/anthology/N16-1027/
+  AUTHORS:
+  - Ashish Vaswani
+  - Yonatan Bisk
+  - Kenji Sagae
+  - Ryan Musa
+  VENUE: 15th Annual Conference of the North American Chapter of
+    the Association for Computational Linguistics (Short Papers) 
+  VENUE-ACR: NAACL Short 
+  PRES: Oral
+- FIELD: WS4
+  TYPE: Workshop
+  TITLE: 'Towards a Dataset for Human Computer Communication via Grounded Language
+    Acquisition'
+  YEAR: '2016'
+  URL: "http://talkingtorobots.com/papers/2016-AAAI-Wksp.pdf"
+  AUTHORS:
+  - Yonatan Bisk
+  - Daniel Marcu
+  - William Wong
+  VENUE: AAAI 2016 Workshop on Symbiotic Cognitive Systems
+  VENUE-ACR: Symbolic Cognitive Systems Wksp
+- FIELD: WS1
+  TYPE: Workshop
+  TITLE: 'Unsupervised Neural Hidden Markov Models  '
+  YEAR: '2016'
+  URL: "https://www.aclweb.org/anthology/W16-5907/"
+  AUTHORS:
+  - Ke Tran
+  - Yonatan Bisk
+  - Ashish Vaswani
+  - Daniel Marcu
+  - Kevin Knight
+  VENUE: Workshop on Structured Prediction for NLP 
+  VENUE-ACR: Struc. Pred Wksp 
+  PRES: Oral
+  EXTRAS:
+    Slides: "http://talkingtorobots.com/papers/2016-EMNLP-StrcPred-Slides.pdf"
+- FIELD: WS1
+  TYPE: Conference
+  TITLE: 'Evaluating Induced CCG Parsers on Grounded Semantic Parsing '
+  YEAR: '2016'
+  URL: http://sivareddy.in/papers/bisk2016evaluating.pdf
+  AUTHORS:
+  - Yonatan Bisk
+  - Siva Reddy
+  - John Blitzer
+  - Julia Hockenmaier
+  - Mark Steedman
+  VENUE: 2016 Conference on Empirical Methods in Natural Language
+    Processing
+  VENUE-ACR: EMNLP
+- FIELD: WS1
+  TYPE: Conference
+  TITLE: Probing the Linguistic Strengths and Limitations of Unsupervised Grammar
+    Induction
+  YEAR: '2015'
+  URL: "https://www.aclweb.org/anthology/P15-1135/"
+  AUTHORS:
+  - Yonatan Bisk
+  - Julia Hockenmaier
+  VENUE: '53rd Annual Meeting of the Association for Computational
+    Linguistics and the 7th International Joint Conference on Natural Language Processing
+    (Volume 1: Long Papers) '
+  VENUE-ACR: ACL 
+  PRES: Oral
+- FIELD: WS1
+  TYPE: Conference
+  TITLE: 'Labeled Grammar Induction with Minimal Supervision  '
+  YEAR: '2015'
+  URL: "http://talkingtorobots.com/papers/2015-ACLShort-Fixed.pdf"
+  AUTHORS:
+  - Yonatan Bisk
+  - Christos Christodoulopoulos
+  - Julia Hockenmaier
+  VENUE: '53rd Annual Meeting of the Association for Computational
+    Linguistics and the 7th International Joint Conference on Natural Language Processing
+    (Volume 2: Short Papers)'
+  VENUE-ACR: ACL Short
+  EXTRAS:
+    Poster: "http://talkingtorobots.com/papers/2015_ACLShort_Poster.pdf"
+- FIELD: WS1
+  TYPE: Journal
+  TITLE: An HDP Model for Inducing Combinatory Categorial Grammars
+  YEAR: '2013'
+  URL: "https://www.aclweb.org/anthology/Q13-1007/"
+  AUTHORS:
+  - Yonatan Bisk
+  - Julia Hockenmaier
+  VENUE: Transactions of the Association for Computational Linguistics
+  VENUE-ACR: TACL
+  EXTRAS:
+    Slides: "http://talkingtorobots.com/papers/2013-TACL-Slides.pdf"
+- FIELD: WS1
+  TYPE: Conference
+  TITLE: 'Simple Robust Grammar Induction with Combinatory Categorial Grammar '
+  YEAR: '2012'
+  URL: "https://www.aaai.org/ocs/index.php/AAAI/AAAI12/paper/view/5130"
+  AUTHORS:
+  - Yonatan Bisk
+  - Julia Hockenmaier
+  VENUE: Twenty-Sixth Conference on Artificial Intelligence (AAAI-12)
+  VENUE-ACR: AAAI
+- FIELD: WS1
+  TYPE: Conference
+  TITLE: 'Document-Topic Hierarchies from Document Graphs '
+  YEAR: '2012'
+  URL: "https://dl.acm.org/doi/10.1145/2396761.2396843"
+  AUTHORS:
+  - Tim Weninger
+  - Yonatan Bisk
+  - Jiawei Han
+  VENUE: 21st ACM international conference on Information and knowledge
+    management (CIKM 2012)
+  VENUE-ACR: CIKM
+- FIELD: WS1
+  TYPE: Workshop
+  TITLE: 'Induction of Linguistic Structure with Combinatory Categorial Grammars '
+  YEAR: '2012'
+  URL: "http://talkingtorobots.com/papers/2012-NAACL-WILS.pdf"
+  AUTHORS:
+  - Yonatan Bisk
+  - Julia Hockenmaier
+  VENUE: NAACL HLT Workshop on Induction of Linguistic Structure
+  VENUE-ACR: Inducing Ling Structure Wksp
+- FIELD: WS1
+  TYPE: Conference
+  TITLE: Normal-form parsing for CCGs with generalized composition and type-raising
+  YEAR: '2010'
+  URL: "https://www.aclweb.org/anthology/C10-1053/"
+  AUTHORS:
+  - Julia Hockenmaier
+  - Yonatan Bisk
+  VENUE: 23rd International Conference on Computational Linguistics
+    (Coling 2010)
+  VENUE-ACR: Coling
+

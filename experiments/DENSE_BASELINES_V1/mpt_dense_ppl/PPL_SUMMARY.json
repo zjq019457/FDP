@@ -1,0 +1,23 @@
+{
+  "schema": "MPT7B_DENSE_PPL_V1",
+  "arm": "dense",
+  "binding": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/input_bindings/MPT7B_EVAL_INPUT_BINDING_V1.json",
+  "model": "/diskF/jiaqizhang/models/\u65b0\u5efa\u6587\u4ef6\u5939",
+  "wiki": {
+    "dataset": "wikitext2",
+    "ppl": 7.6999125480651855,
+    "total_nll_sum": 585255.4296875,
+    "token_count_sum": 286720,
+    "used_windows": 140,
+    "log_ppl": 2.041208948407854
+  },
+  "c4": {
+    "dataset": "c4",
+    "ppl": 9.383694648742676,
+    "total_nll_sum": 1173867.0,
+    "token_count_sum": 524288,
+    "used_windows": 256,
+    "log_ppl": 2.238973617553711
+  },
+  "J": 2.1400912829807828
+}

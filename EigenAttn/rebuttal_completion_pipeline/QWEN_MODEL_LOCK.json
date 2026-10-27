@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-07-29T22:30:37.463163-07:00",
+  "model_required": "Qwen2.5-7B base (NOT Instruct)",
+  "local_hits": [
+    "/diskE/jiaqizhang/Qwen2.5-7B"
+  ],
+  "blocked": true,
+  "wave2": {
+    "generated_at": "2026-07-29T22:30:37.449238-07:00",
+    "weights_path": "/diskE/jiaqizhang/Qwen2.5-7B",
+    "weights_present": true,
+    "hf_config_loadable": true,
+    "hf_config_error": null,
+    "eigenattn_qwen_model_files": [],
+    "main_eigen_attn_mentions_qwen2": true,
+    "compress_eval_executed": false,
+    "blocked_reason": "EigenAttn lacks Qwen2 modelling + net_choices wiring; cannot honestly run FDP compress/eval yet. Weights are local.",
+    "next_engineering": [
+      "Add modelling_qwen2_eigen_attn.py (or equivalent)",
+      "Extend LMClass + main_eigen_attn net_choices",
+      "Build eigen basis on wikitext2/c4",
+      "compress_only to diskF then ppl/zs"
+    ]
+  }
+}

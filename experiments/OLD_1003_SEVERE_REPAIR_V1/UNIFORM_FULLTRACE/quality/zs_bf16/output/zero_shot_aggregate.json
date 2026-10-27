@@ -1,0 +1,71 @@
+{
+  "tasks": {
+    "piqa_localjsonl": {
+      "n": 1838,
+      "correct": 1338,
+      "accuracy_from_correct": 0.7279651795429815,
+      "lm_eval_primary": 0.7279651795429815,
+      "lm_eval_row": {
+        "acc,none": 0.7279651795429815,
+        "acc_stderr,none": 0.010382763786247385,
+        "alias": "piqa_localjsonl"
+      },
+      "task_definition_hash": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1"
+    },
+    "winogrande_localjsonl": {
+      "n": 1267,
+      "correct": 723,
+      "accuracy_from_correct": 0.5706393054459353,
+      "lm_eval_primary": 0.5706393054459353,
+      "lm_eval_row": {
+        "acc,none": 0.5706393054459353,
+        "acc_stderr,none": 0.013911537499969161,
+        "alias": "winogrande_localjsonl"
+      },
+      "task_definition_hash": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999"
+    },
+    "arc_easy_localjsonl": {
+      "n": 2376,
+      "correct": 1559,
+      "accuracy_from_correct": 0.6561447811447811,
+      "lm_eval_primary": 0.6561447811447811,
+      "lm_eval_row": {
+        "acc,none": 0.6561447811447811,
+        "acc_stderr,none": 0.00974666058485245,
+        "acc_norm,none": 0.5446127946127947,
+        "acc_norm_stderr,none": 0.010218861787618732,
+        "alias": "arc_easy_localjsonl"
+      },
+      "task_definition_hash": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15"
+    },
+    "arc_challenge_localjsonl": {
+      "n": 1172,
+      "correct": 438,
+      "accuracy_from_correct": 0.37372013651877134,
+      "lm_eval_primary": 0.37372013651877134,
+      "lm_eval_row": {
+        "acc,none": 0.37372013651877134,
+        "acc_stderr,none": 0.014137708601759091,
+        "acc_norm,none": 0.39761092150170646,
+        "acc_norm_stderr,none": 0.014301752223279536,
+        "alias": "arc_challenge_localjsonl"
+      },
+      "task_definition_hash": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d"
+    },
+    "hellaswag_localjsonl": {
+      "n": 10042,
+      "correct": 4262,
+      "accuracy_from_correct": 0.4244174467237602,
+      "lm_eval_primary": 0.4244174467237602,
+      "lm_eval_row": {
+        "acc,none": 0.4244174467237602,
+        "acc_stderr,none": 0.00493244147966553,
+        "alias": "hellaswag_localjsonl"
+      },
+      "task_definition_hash": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815"
+    }
+  },
+  "method": "OLD1003_REPAIR_UNIFORM_FULLTRACE",
+  "model_hash": "b9304496f0a24c8a7f3368147fb5063d7907db92006c8dddd93abd87e322103a",
+  "runner_hash": "aa2e210166ca6292123e43fc3da984f110d1c1d09b5c02fd937a2e0bc7df49ab"
+}

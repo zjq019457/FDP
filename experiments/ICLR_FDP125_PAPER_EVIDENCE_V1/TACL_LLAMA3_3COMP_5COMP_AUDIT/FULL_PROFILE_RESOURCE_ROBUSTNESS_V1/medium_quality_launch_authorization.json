@@ -1,0 +1,35 @@
+{
+  "schema": "LLAMA3_FULL_RESOURCE_ROBUSTNESS_QUALITY_AUTHORIZATION_V1",
+  "arm": "FULL_RESOURCE_MEDIUM_LOW",
+  "status": "CELL_LAUNCH_AUTHORIZED",
+  "cell_launch_authorized": true,
+  "schedule_lock_sha256": "7a07bc112b62a2acebc7a09c40794b07cdcab139b1be1f1cfcad75e1ab932930",
+  "realization_sha256": "16536ea86b595e20ad6d51bee6b0ed8c0cdccae7cdac7ba675e61c1dde099156",
+  "resource_lock_pass": true,
+  "materialization_pass": true,
+  "runtime_rank_config_matches_schedule": true,
+  "tensor_shape_checks_passed": 128,
+  "canary_pass": true,
+  "canary": {
+    "dataset": "wikitext2",
+    "windows": 1,
+    "repeat_nll_exact": true,
+    "nll": 3674.794677734375,
+    "ppl_diagnostic_only": 6.015463108531711,
+    "same_sample_inputs_as_original_full": true,
+    "window_id": "wiki_00000",
+    "input_ids_sha256": "6468cba9f1c6d19f8b6b0e806cc79e6641ed0ec8bc478582b920a5bc4f9e7736",
+    "attention_mask_sha256": "cb2e11fedd12f4d071ad1edc3f599facdc66038037c8d93521cd04c5bd369baf",
+    "protocol_sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+  },
+  "authorized_quality": [
+    "WikiText-2 PPL",
+    "C4 PPL",
+    "J"
+  ],
+  "full_result_not_yet_available": true,
+  "paired_bootstrap_after_result_only": true,
+  "gpu": 0,
+  "created_utc": "2026-10-02T21:35:02.010707+00:00",
+  "authorization_payload_sha256": "d057d555da324d3d5751468b7a9a9d3f17a5399820704f4348ea30fcac2668d1"
+}

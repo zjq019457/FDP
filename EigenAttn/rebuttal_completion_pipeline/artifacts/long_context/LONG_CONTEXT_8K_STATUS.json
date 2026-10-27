@@ -1,0 +1,15 @@
+{
+  "profile": "8k",
+  "generated_at": "2026-07-30T00:38:04.720981-07:00",
+  "eval_executed": true,
+  "subset": true,
+  "limit_per_task": 20,
+  "max_len": 8192,
+  "methods": [
+    "dense",
+    "fdp",
+    "uniform"
+  ],
+  "scores_path": "/diskF/jiaqizhang/wave2_artifacts/longbench/scores/LONGBENCH_WAVE2_SCORES.json",
+  "note": "WAVE2 real EigenAttn generate+score; English subset with limit_per_task=20"
+}

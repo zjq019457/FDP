@@ -1,0 +1,189 @@
+{
+  "argv": [
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/unified_protocol_closure_v1/llama2_clean_redesign_profile_uniform068_v5.py",
+    "--manifest",
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/unified_protocol_closure_v1/FDP125_SAMPLE_MANIFEST_V1.json",
+    "--model-key",
+    "llama2_7b",
+    "--base",
+    "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "--data-dir",
+    "/home/bai-project/jiaqizhang/wikitext2",
+    "--basis",
+    "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_full_capacity_basis_only_v1/llama2_e060_full_basis_capacity_only_eb0p06.pt",
+    "--rank-csv",
+    "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/f060/inputs/UNIFORM_f060_PER_LAYER.csv",
+    "--resource-manifest",
+    "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/f060/inputs/UNIFORM_f060_RESOURCE_MANIFEST.json",
+    "--expected-b-live-bytes",
+    "817496064",
+    "--expected-basis-sha256",
+    "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+    "--out-dir",
+    "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/f060/run",
+    "--gpu",
+    "0",
+    "--memory-fraction",
+    "0.34",
+    "--torch-threads",
+    "8"
+  ],
+  "basis_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_full_capacity_basis_only_v1/llama2_e060_full_basis_capacity_only_eb0p06.pt",
+  "basis_sha256": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+  "checkpoint_content_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa585660c691f6626d25c2cf25197",
+  "checkpoint_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "comparator": {
+    "B_live_rank_implied_bytes": 817496064,
+    "accounting_formula": "sum_l((QK_rank_l+V_rank_l)*4096 bytes)",
+    "name": "Uniform EB=0.068",
+    "rank_csv_path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/f060/inputs/UNIFORM_f060_PER_LAYER.csv",
+    "rank_csv_sha256": "11f46684ac5f6d37dadc83df3d22aae04bf6da082fa976de45514a89180a9ea8",
+    "rank_schedule": [
+      [
+        4096,
+        4096
+      ],
+      [
+        4096,
+        4096
+      ],
+      [
+        1984,
+        3712
+      ],
+      [
+        2240,
+        3712
+      ],
+      [
+        2208,
+        3744
+      ],
+      [
+        2240,
+        3712
+      ],
+      [
+        1984,
+        3616
+      ],
+      [
+        2016,
+        3616
+      ],
+      [
+        2400,
+        3712
+      ],
+      [
+        2464,
+        3744
+      ],
+      [
+        2848,
+        3840
+      ],
+      [
+        2368,
+        3712
+      ],
+      [
+        2432,
+        3712
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2848,
+        3840
+      ],
+      [
+        2816,
+        3840
+      ],
+      [
+        2880,
+        3840
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2368,
+        3744
+      ],
+      [
+        2400,
+        3744
+      ],
+      [
+        2368,
+        3744
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2112,
+        3648
+      ],
+      [
+        1952,
+        3648
+      ],
+      [
+        2080,
+        3648
+      ],
+      [
+        2048,
+        3680
+      ],
+      [
+        2176,
+        3648
+      ],
+      [
+        2112,
+        3648
+      ],
+      [
+        2048,
+        3680
+      ],
+      [
+        4064,
+        4096
+      ],
+      [
+        2112,
+        3648
+      ]
+    ],
+    "rank_schedule_sha256": "167e51ff7503886397711120d8b430f879f1ca47bd904f5d8fff85cc27f035c6",
+    "resource_manifest_path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/f060/inputs/UNIFORM_f060_RESOURCE_MANIFEST.json",
+    "resource_manifest_sha256": "d2d818e7a2c18a2c61b5459600a564f80e34d333d190ba97048f929ab72546fe"
+  },
+  "gpu_index": 0,
+  "memory_fraction_cap": 0.34,
+  "model_key": "llama2_7b",
+  "profile_protocol_lock_path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/f060/run/PROFILE_PROTOCOL_LOCK.json",
+  "profile_protocol_lock_sha256": "ff74bf7a11c4104c280152b5d3516ac41eed1a52d12611b46ea9bfe79d8494d4",
+  "runner_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/unified_protocol_closure_v1/llama2_clean_redesign_profile_uniform068_v5.py",
+  "runner_sha256": "d6bb4d33b12aeaafc789848463b0286779756f733998be764446a3f5d42063e5",
+  "sample_count": 512,
+  "sample_manifest_file_sha256": "82cf192e5cd24aca50093b2d11a33ae352ca4cbe50b13eb84887d455c37e6293",
+  "sample_manifest_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/unified_protocol_closure_v1/FDP125_SAMPLE_MANIFEST_V1.json",
+  "seed": 2,
+  "sequence_length": 2048,
+  "started_utc": "2026-10-12T05:28:10Z",
+  "status": "RUNNING_PROFILE_ONLY"
+}

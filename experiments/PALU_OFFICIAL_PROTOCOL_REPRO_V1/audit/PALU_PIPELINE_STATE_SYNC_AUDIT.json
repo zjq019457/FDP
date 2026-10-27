@@ -1,0 +1,52 @@
+{
+  "audit_type": "ENGINEERING_STATE_SYNCHRONIZATION",
+  "timestamp_utc": "2026-09-21T17:42:38.293699+00:00",
+  "state_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_PIPELINE_STATE.json",
+  "dispatcher_state_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/OFFICIAL_ZERO_SHOT_DISPATCH_STATE.json",
+  "reason": "Top-level state had stale 0.7 zero-shot active/pid fields while dispatcher and all result artifacts were complete.",
+  "before": {
+    "status": "OFFICIAL_FISHER_REPRODUCTION_COMPLETE",
+    "zero_shot": "WAIT_REPRODUCTION_GATE",
+    "official_zero_shot": {
+      "cache_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/zero_shot_cache",
+      "old_anchor_schema_mixed": false,
+      "output_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot",
+      "ratio_0p3": "WAIT_PHI",
+      "ratio_0p5": "WAIT_PHI",
+      "ratio_0p7": {
+        "active": "fisher",
+        "gpu": 2,
+        "pending": [
+          "fdp_prior",
+          "fdp_native"
+        ],
+        "pid": 2903616
+      },
+      "status": "RUNNING"
+    },
+    "official_native_phi": "RATIO_0.7_FROZEN",
+    "last_state_sync_utc": "2026-09-20T04:18:34.550259+00:00"
+  },
+  "after": {
+    "status": "OFFICIAL_FORMAL_AND_ZERO_SHOT_COMPLETE",
+    "zero_shot": "OFFICIAL_ALL_TIERS_COMPLETE",
+    "official_zero_shot": {
+      "cache_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/zero_shot_cache",
+      "old_anchor_schema_mixed": false,
+      "output_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot",
+      "ratio_0p3": "COMPLETE",
+      "ratio_0p5": "COMPLETE",
+      "ratio_0p7": "COMPLETE",
+      "active": null,
+      "pending": [],
+      "status": "ALL_READY_OFFICIAL_ZERO_SHOT_COMPLETE",
+      "dispatcher_state": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/OFFICIAL_ZERO_SHOT_DISPATCH_STATE.json"
+    },
+    "official_native_phi": "RATIOS_0.7_0.5_0.3_FROZEN",
+    "last_state_sync_utc": "2026-09-21T17:42:38.293464+00:00"
+  },
+  "scientific_results_modified": false,
+  "frozen_protocol_modified": false,
+  "foreign_jobs_interrupted": 0,
+  "gpu1_used": false
+}

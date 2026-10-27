@@ -1,0 +1,354 @@
+{
+  "status": "PASS",
+  "model": "llama3_8b",
+  "regime": "medium",
+  "method": "parent",
+  "base_e": 0.06,
+  "lambda": 1.2,
+  "rho": 0.75,
+  "components": [
+    "d1",
+    "d2",
+    "d3",
+    "d4",
+    "d5"
+  ],
+  "eb_vector": [
+    0.06523675344784684,
+    0.07368495123640723,
+    0.04936185891391047,
+    0.0487407651422083,
+    0.05428611932454865,
+    0.038114737035121415,
+    0.044121390432043946,
+    0.05532226829652569,
+    0.05682929308063137,
+    0.0505209936564291,
+    0.05377445905596407,
+    0.05315069281442118,
+    0.04581825087213398,
+    0.05212261451907704,
+    0.05158443397142155,
+    0.05979237222351498,
+    0.05557245689173981,
+    0.058085145576017426,
+    0.06634747941966253,
+    0.05673989381021113,
+    0.07161745646026653,
+    0.06800795318081433,
+    0.0666739242096165,
+    0.05892426910747003,
+    0.06495443185182503,
+    0.07800372667548165,
+    0.07450393036773126,
+    0.06365638369511585,
+    0.06525393581679942,
+    0.0677139270848143,
+    0.06214067741953628,
+    0.07072678638127143
+  ],
+  "eb_sha": "c81d46fbd3d3649dc393566d1af424e4bd64108b01ab6eade11afc528eed056b",
+  "basis_sha": "b576a87dd8eb87e16ad9da16158ab488e294920a3e65b6725eb644df76cf9df0",
+  "ranks": [
+    [
+      808,
+      992
+    ],
+    [
+      384,
+      872
+    ],
+    [
+      400,
+      776
+    ],
+    [
+      712,
+      936
+    ],
+    [
+      680,
+      928
+    ],
+    [
+      776,
+      952
+    ],
+    [
+      792,
+      960
+    ],
+    [
+      712,
+      920
+    ],
+    [
+      624,
+      904
+    ],
+    [
+      704,
+      928
+    ],
+    [
+      624,
+      896
+    ],
+    [
+      648,
+      896
+    ],
+    [
+      792,
+      960
+    ],
+    [
+      688,
+      936
+    ],
+    [
+      776,
+      960
+    ],
+    [
+      624,
+      912
+    ],
+    [
+      688,
+      936
+    ],
+    [
+      632,
+      904
+    ],
+    [
+      504,
+      840
+    ],
+    [
+      448,
+      824
+    ],
+    [
+      392,
+      800
+    ],
+    [
+      496,
+      856
+    ],
+    [
+      440,
+      824
+    ],
+    [
+      432,
+      832
+    ],
+    [
+      400,
+      824
+    ],
+    [
+      400,
+      824
+    ],
+    [
+      416,
+      840
+    ],
+    [
+      488,
+      856
+    ],
+    [
+      504,
+      856
+    ],
+    [
+      1016,
+      1024
+    ],
+    [
+      1016,
+      1024
+    ],
+    [
+      696,
+      928
+    ]
+  ],
+  "rank_sha": "870786eb6b8e5ca5c196ae0a421e384686a011e80a8be7a95f1fd6b0fd1a6064",
+  "B_live": 198377472,
+  "full_resource_bytes": 268435456,
+  "retained_ratio": 0.739013671875,
+  "target_B_live": 198377472,
+  "resource_gap_pct": 0.0,
+  "quality": {
+    "wiki": {
+      "dataset": "wikitext2",
+      "ppl": 7.161075194201872,
+      "total_nll_sum": 568486.0502929688,
+      "token_count_sum": 288768,
+      "used_windows": 141,
+      "skipped_windows": 0,
+      "n_windows_considered": 141,
+      "seqlen": 2048,
+      "method": "FDP125_LLAMA_medium_parent",
+      "model_hash": "2ba906d155cd85908190a73ce496e7ac3b80eb2219cd9a02e93fb88939b40dfc",
+      "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+      "recomputed_from": "exp(sum(total_nll)/sum(token_count))",
+      "timestamp": "2026-09-16T02:01:37.588084-07:00"
+    },
+    "c4": {
+      "dataset": "c4",
+      "ppl": 12.074390587688276,
+      "total_nll_sum": 1306046.8791503906,
+      "token_count_sum": 524288,
+      "used_windows": 256,
+      "skipped_windows": 0,
+      "n_windows_considered": 256,
+      "seqlen": 2048,
+      "method": "FDP125_LLAMA_medium_parent",
+      "model_hash": "2ba906d155cd85908190a73ce496e7ac3b80eb2219cd9a02e93fb88939b40dfc",
+      "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+      "recomputed_from": "exp(sum(total_nll)/sum(token_count))",
+      "timestamp": "2026-09-16T02:03:18.791280-07:00"
+    }
+  },
+  "commands": [
+    {
+      "name": "parent_basis",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+        "--model",
+        "/diskD/jiaqizhang/Llama-3",
+        "--data_dir",
+        "/home/bai-project/jiaqizhang/wikitext2",
+        "--out_dir",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/parent/basis",
+        "--out_prefix",
+        "fdp125_llama_medium_parent",
+        "--per_layer_eb_json",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/parent/per_layer_eb.json",
+        "--freeze_layer0_eb",
+        "--layer0_eb",
+        "0.06",
+        "--nsamples",
+        "512",
+        "--seqlen",
+        "2048",
+        "--dtype",
+        "bf16",
+        "--attn_implementation",
+        "eager",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "2"
+      ],
+      "started_at": "2026-09-16T01:08:09.440737-07:00",
+      "completed_at": "2026-09-16T01:58:24.370199-07:00",
+      "log": "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/logs/parent_basis.log"
+    },
+    {
+      "name": "parent_materialize",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+        "--model",
+        "/diskD/jiaqizhang/Llama-3",
+        "--net",
+        "Llama-3-8b",
+        "--dtype",
+        "bf16",
+        "--error_budget",
+        "0.06",
+        "--avg_dim",
+        "4096",
+        "--seqlen",
+        "2048",
+        "--nsamples",
+        "64",
+        "--seed",
+        "2",
+        "--calib_dataset",
+        "c4",
+        "--compress_only",
+        "--attn_implementation",
+        "eager",
+        "--eigen_basis_path",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/parent/basis/fdp125_llama_medium_parent_perlayer_eb.pt",
+        "--save_dir",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/parent/final_model",
+        "--output_dir",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/parent",
+        "--cache_dir",
+        "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/HF_cache"
+      ],
+      "started_at": "2026-09-16T01:58:24.466222-07:00",
+      "completed_at": "2026-09-16T02:00:24.670305-07:00",
+      "log": "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/logs/parent_materialize.log"
+    },
+    {
+      "name": "parent_wiki",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/ppl_instrumented.py",
+        "--dataset",
+        "wikitext2",
+        "--model",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/parent/final_model",
+        "--tok",
+        "/diskD/jiaqizhang/Llama-3",
+        "--out_dir",
+        "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/parent/wiki",
+        "--wikitext2_dir",
+        "/home/bai-project/jiaqizhang/wikitext2",
+        "--dtype",
+        "bf16",
+        "--method",
+        "FDP125_LLAMA_medium_parent",
+        "--evaluation_protocol_hash",
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "started_at": "2026-09-16T02:00:24.681774-07:00",
+      "completed_at": "2026-09-16T02:01:38.186173-07:00",
+      "log": "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/logs/parent_wiki.log"
+    },
+    {
+      "name": "parent_c4",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/ppl_instrumented.py",
+        "--dataset",
+        "c4",
+        "--model",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/parent/final_model",
+        "--tok",
+        "/diskD/jiaqizhang/Llama-3",
+        "--c4_texts",
+        "/diskD/jiaqizhang/llama3_8b_eb045_eval_minimal-20260502T170035Z-3-001/llama3_8b_eb045_eval_minimal/data/c4_ppl_selected_texts.jsonl",
+        "--out_dir",
+        "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/parent/c4",
+        "--dtype",
+        "bf16",
+        "--method",
+        "FDP125_LLAMA_medium_parent",
+        "--evaluation_protocol_hash",
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "started_at": "2026-09-16T02:01:38.186528-07:00",
+      "completed_at": "2026-09-16T02:03:19.316624-07:00",
+      "log": "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/llama_medium_resume/logs/parent_c4.log"
+    }
+  ],
+  "resumed_from": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/step1.json",
+  "completed_at": "2026-09-16T02:03:19.317880-07:00"
+}

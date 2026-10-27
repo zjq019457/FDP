@@ -1,0 +1,10 @@
+artifact,classification,status,notes
+/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/formal_protocol/FORMAL_QUALITY_PROTOCOL_MANIFEST.json,VALID_FORMAL,frozen,Formal Wiki/C4 protocol manifest; declared SHA and observed SHA both retained in provenance.
+/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/locks/PALU_LLAMA2_OFFICIAL_REPRO_LOCK.json,VALID_REPRODUCTION,frozen,Official anchor schedules and ratio mapping.
+/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/SOURCE_PALU_NATIVE_MARGINAL_PER_UNIT.csv,VALID_CALIBRATION,reused,Immutable Llama-2 native marginal source; no phi/q recomputation.
+/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange,VALID_CALIBRATION,frozen,Common native exchange calibration schedules for FDP_PRIOR/FDP_NATIVE.
+/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/Palu,VALID_REPRODUCTION,pinned_commit,bb22666e2ef96707e8dd21d93fc00146c2e0d615
+/diskF/jiaqizhang/FDP_NATIVE_TRANSFER_V2_WORK/FINAL_FDP_CORE_V2/reports/SNAPKV_MASTER_STATUS.csv,UNKNOWN_PROVENANCE,external_pending_audit,Not imported as PaLu evidence; central table records external status separately.
+/diskF/jiaqizhang/xkv_native_runtime_fixed_v1/reports/XKV_FIXED_MEDIUM_RESULTS.csv,UNKNOWN_PROVENANCE,external_pending_audit,Not imported as PaLu evidence; central table records external status separately.
+PALU_PPL_GUIDED_MEDIUM_ANOMALOUS_NEGATIVE_FROZEN,VALID_DIAGNOSTIC,diagnostic_only,Broken projector/native-semantics mismatch; not a current method result.
+current_wrapper_fisher_uniform_outputs,INVALID_PROTOCOL,quarantined,8 slots/module and 262144 capacity mismatch versus frozen 2-slot anchor schema.

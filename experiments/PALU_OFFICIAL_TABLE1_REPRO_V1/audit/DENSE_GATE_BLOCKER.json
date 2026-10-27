@@ -1,0 +1,14 @@
+{
+  "schema": "PALU_TABLE1_DENSE_GATE_FAILURE_V1",
+  "utc": "2026-09-29T18:34:32.796050+00:00",
+  "run_id": "TABLE1_DENSE_PPL_20260929T1128Z",
+  "model_load": "PASS",
+  "tokenizer_load": "PASS",
+  "failure_type": "DATASET_HUB_UNREACHABLE",
+  "traceback_last_line": "ConnectionError: Couldn't reach 'wikitext' on the Hub (ConnectionError)",
+  "ppl_windows_evaluated": 0,
+  "result_written": false,
+  "old_results_valid": true,
+  "foreign_jobs_interrupted": 0,
+  "next_step": "Check existing Hugging Face dataset cache; if absent, restore network access or provide the exact WikiText-2 raw-v1 and C4 validation shard files with provenance. Do not run compressed cells until Dense passes."
+}

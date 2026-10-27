@@ -1,0 +1,28 @@
+{
+  "audit_id": "FDP125_QA6_PROTOCOL_AUDIT_V1",
+  "status": "PASS",
+  "classification": "MANIFEST_METADATA_COUNT_BUG_ONLY",
+  "old_manifest_sha256": "271f4611374fc8756a5eea2d0c0c18b7ee9a236148f3d7223f91a52c6aefd132",
+  "corrected_manifest_sha256": "2d5b73583e52adea75e70521adb8811677e5c03114001abe21df7ccd13e2407e",
+  "old_total_samples": 1200,
+  "corrected_total_samples": 1150,
+  "per_task_counts": {
+    "narrativeqa": 200,
+    "qasper": 200,
+    "multifieldqa_en": 150,
+    "hotpotqa": 200,
+    "2wikimqa": 200,
+    "musique": 200
+  },
+  "task_order_unchanged": true,
+  "multifieldqa_en_150_is_frozen_intended_count": true,
+  "narrativeqa_source_prediction_ids_equal": true,
+  "reuse_all_five_existing_tasks_byte_identical": true,
+  "predictions_modified": false,
+  "formal_main_17_task_modified": false,
+  "q_modified": false,
+  "quality_driven_tuning": false,
+  "frozen_protocol_fields_unchanged": true,
+  "further_quality_run_authorized": "FDP125 NarrativeQA only after corrected manifest; no QA6 scoring before completion",
+  "global_launch_authorized_unchanged": false
+}

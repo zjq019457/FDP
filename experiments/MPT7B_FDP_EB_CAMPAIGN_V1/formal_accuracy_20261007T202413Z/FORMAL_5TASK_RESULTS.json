@@ -1,0 +1,283 @@
+{
+  "status": "FORMAL_5TASK_COMPLETE",
+  "manifest_sha256": "ec4a60cae4bbf324bd5a22d8cda9ebcc4b00fe3d970ef90ee0ea1d00011eeefe",
+  "metric_contract": {
+    "arc_challenge_localjsonl": "acc_norm",
+    "arc_easy_localjsonl": "acc_norm",
+    "hellaswag_localjsonl": "acc",
+    "piqa_localjsonl": "acc",
+    "winogrande_localjsonl": "acc"
+  },
+  "statistics": {
+    "seed": 20261007,
+    "bootstrap": 10000,
+    "aggregate": "equal-task macro",
+    "paired": "within-task item resampling",
+    "McNemar": "two-sided exact binomial; Holm across 15 tests"
+  },
+  "bands": [
+    {
+      "tier": "U011",
+      "uniform_macro": 0.5812023029968385,
+      "fdp_macro": 0.5817952248390068,
+      "delta_pp": 0.05929218421683346,
+      "paired_95_ci_pp": [
+        -0.35042767913348066,
+        0.4645504077342078
+      ],
+      "per_task": {
+        "relaxed_uniform": {
+          "arc_challenge_localjsonl": 0.4087030716723549,
+          "arc_easy_localjsonl": 0.49873737373737376,
+          "hellaswag_localjsonl": 0.5296753634734117,
+          "piqa_localjsonl": 0.7861806311207835,
+          "winogrande_localjsonl": 0.6827150749802684
+        },
+        "fdp": {
+          "arc_challenge_localjsonl": 0.4121160409556314,
+          "arc_easy_localjsonl": 0.502104377104377,
+          "hellaswag_localjsonl": 0.5276837283409679,
+          "piqa_localjsonl": 0.7867247007616975,
+          "winogrande_localjsonl": 0.6803472770323599
+        }
+      }
+    },
+    {
+      "tier": "U015",
+      "uniform_macro": 0.5751884226254635,
+      "fdp_macro": 0.5695106224421933,
+      "delta_pp": -0.5677800183270123,
+      "paired_95_ci_pp": [
+        -1.029767457538917,
+        -0.11913515561283693
+      ],
+      "per_task": {
+        "relaxed_uniform": {
+          "arc_challenge_localjsonl": 0.40273037542662116,
+          "arc_easy_localjsonl": 0.4941077441077441,
+          "hellaswag_localjsonl": 0.5175263891655049,
+          "piqa_localjsonl": 0.779651795429815,
+          "winogrande_localjsonl": 0.6819258089976322
+        },
+        "fdp": {
+          "arc_challenge_localjsonl": 0.3924914675767918,
+          "arc_easy_localjsonl": 0.49326599326599324,
+          "hellaswag_localjsonl": 0.512248556064529,
+          "piqa_localjsonl": 0.7818280739934712,
+          "winogrande_localjsonl": 0.6677190213101816
+        }
+      }
+    },
+    {
+      "tier": "U019",
+      "uniform_macro": 0.5602604196662907,
+      "fdp_macro": 0.5518238825980419,
+      "delta_pp": -0.8436537068248661,
+      "paired_95_ci_pp": [
+        -1.3415268440854107,
+        -0.3550089796994338
+      ],
+      "per_task": {
+        "relaxed_uniform": {
+          "arc_challenge_localjsonl": 0.38054607508532423,
+          "arc_easy_localjsonl": 0.4802188552188552,
+          "hellaswag_localjsonl": 0.49482174865564627,
+          "piqa_localjsonl": 0.7693144722524483,
+          "winogrande_localjsonl": 0.6764009471191792
+        },
+        "fdp": {
+          "arc_challenge_localjsonl": 0.3703071672354949,
+          "arc_easy_localjsonl": 0.4797979797979798,
+          "hellaswag_localjsonl": 0.4896434973112926,
+          "piqa_localjsonl": 0.7682263329706203,
+          "winogrande_localjsonl": 0.6511444356748224
+        }
+      }
+    }
+  ],
+  "McNemar": [
+    {
+      "tier": "U011",
+      "task": "arc_challenge_localjsonl",
+      "metric": "acc_norm",
+      "n": 1172,
+      "fdp_wins": 25,
+      "fdp_losses": 21,
+      "p": 0.6587380770236564,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U011",
+      "task": "arc_easy_localjsonl",
+      "metric": "acc_norm",
+      "n": 2376,
+      "fdp_wins": 34,
+      "fdp_losses": 26,
+      "p": 0.36629400670329104,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U011",
+      "task": "hellaswag_localjsonl",
+      "metric": "acc",
+      "n": 10042,
+      "fdp_wins": 62,
+      "fdp_losses": 82,
+      "p": 0.11303096428191342,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U011",
+      "task": "piqa_localjsonl",
+      "metric": "acc",
+      "n": 1838,
+      "fdp_wins": 19,
+      "fdp_losses": 18,
+      "p": 1.0,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U011",
+      "task": "winogrande_localjsonl",
+      "metric": "acc",
+      "n": 1267,
+      "fdp_wins": 39,
+      "fdp_losses": 42,
+      "p": 0.8243132151052083,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U015",
+      "task": "arc_challenge_localjsonl",
+      "metric": "acc_norm",
+      "n": 1172,
+      "fdp_wins": 22,
+      "fdp_losses": 34,
+      "p": 0.1408954235984807,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U015",
+      "task": "arc_easy_localjsonl",
+      "metric": "acc_norm",
+      "n": 2376,
+      "fdp_wins": 36,
+      "fdp_losses": 38,
+      "p": 0.9075606176124984,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U015",
+      "task": "hellaswag_localjsonl",
+      "metric": "acc",
+      "n": 10042,
+      "fdp_wins": 78,
+      "fdp_losses": 131,
+      "p": 0.0003010096741252342,
+      "p_holm_15": 0.0045151451118785125
+    },
+    {
+      "tier": "U015",
+      "task": "piqa_localjsonl",
+      "metric": "acc",
+      "n": 1838,
+      "fdp_wins": 25,
+      "fdp_losses": 21,
+      "p": 0.6587380770236564,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U015",
+      "task": "winogrande_localjsonl",
+      "metric": "acc",
+      "n": 1267,
+      "fdp_wins": 44,
+      "fdp_losses": 62,
+      "p": 0.09824250442243818,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U019",
+      "task": "arc_challenge_localjsonl",
+      "metric": "acc_norm",
+      "n": 1172,
+      "fdp_wins": 24,
+      "fdp_losses": 36,
+      "p": 0.1550019040032606,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U019",
+      "task": "arc_easy_localjsonl",
+      "metric": "acc_norm",
+      "n": 2376,
+      "fdp_wins": 41,
+      "fdp_losses": 42,
+      "p": 1.0,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U019",
+      "task": "hellaswag_localjsonl",
+      "metric": "acc",
+      "n": 10042,
+      "fdp_wins": 84,
+      "fdp_losses": 136,
+      "p": 0.0005548115916218469,
+      "p_holm_15": 0.007767362282705857
+    },
+    {
+      "tier": "U019",
+      "task": "piqa_localjsonl",
+      "metric": "acc",
+      "n": 1838,
+      "fdp_wins": 35,
+      "fdp_losses": 37,
+      "p": 0.906294324703081,
+      "p_holm_15": 1.0
+    },
+    {
+      "tier": "U019",
+      "task": "winogrande_localjsonl",
+      "metric": "acc",
+      "n": 1267,
+      "fdp_wins": 46,
+      "fdp_losses": 78,
+      "p": 0.005161224901988052,
+      "p_holm_15": 0.06709592372584468
+    }
+  ],
+  "raw_output_hashes": {
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/fdp/winogrande_localjsonl.json": "25549c977e0228b6d03f2672c58ae1b0f9412526d6032e011e971eab13799439",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/fdp/arc_challenge_localjsonl.json": "f3713c8268a088e0becfd510882b563406ed98693812e4cbcbad2d464cccb92a",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/fdp/piqa_localjsonl.json": "d2b61c1d7cf5d4513b85ae8429d787f396de61bd9a18b0e95d92460ff02c71ef",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/fdp/hellaswag_localjsonl.json": "83c2d0c7a0e8e83fb3a0efc5c99ace76744718d2acd6235291b1a2c566dee9c6",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/fdp/arc_easy_localjsonl.json": "39b9be9255464bd3f0d353bbc9afc17db851648e10fa40bf419ac738dced7be5",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/relaxed_uniform/winogrande_localjsonl.json": "ab6496d558cac6853000d326cdb8f668e029baac5ee8a8808fff03249b832690",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/relaxed_uniform/arc_challenge_localjsonl.json": "a30371840cdc53718012f9bf9ffc6a0cc251ff446a4105339f0c861baf1976e6",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/relaxed_uniform/piqa_localjsonl.json": "18dd3f672fee5c48c6e92f947ce6cdf065dc0f39f3ff4df0792267ed6072d1d9",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/relaxed_uniform/hellaswag_localjsonl.json": "fbdc976dcb6ad4855236ff7525406fc1a4c3e32f6a7604ab271d966c95d9fe77",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U019/relaxed_uniform/arc_easy_localjsonl.json": "d621224f33c98692eff403fdcb963ccf23fb24bfbe7c62bad4393d75ca714d05",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/fdp/winogrande_localjsonl.json": "fa4b4e85bad07629544fec239e3973b3d0b84831c6019d39a178f88d3a9038a2",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/fdp/arc_challenge_localjsonl.json": "09875f3390ea3bcc8bf303008788ab66d9968f37098c940d2228578b2561120c",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/fdp/piqa_localjsonl.json": "4e3164350b87239bb53c9590ee1f5e1d5ab7b0865b49b38aa2d41637fe8c2b6b",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/fdp/hellaswag_localjsonl.json": "239fbca4127e550f0f4c6603a0b5e890609e40f12b6b76692876b8296030ead1",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/fdp/arc_easy_localjsonl.json": "97b00799ae62c36a2ad28245073143f896e17252607f7a023edd07290c2e4e5e",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/relaxed_uniform/winogrande_localjsonl.json": "285c48657dbff64c558013cb2f32a27482dc01ece01ba376f573b6772b9bf49d",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/relaxed_uniform/arc_challenge_localjsonl.json": "65ef1205572e2e7039634708e94cfec96aef1f58eaa535a1a292f80d2985da27",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/relaxed_uniform/piqa_localjsonl.json": "473e6d6d07afd91fb6481c9445e70c7497c90587fb6e50b3b47a1e37e0163e50",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/relaxed_uniform/hellaswag_localjsonl.json": "09f9e6d7590021ed682d5557ae9f307bfc469a04a3afc655a829c080153f0cc7",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U015/relaxed_uniform/arc_easy_localjsonl.json": "c1fe9487257e9fcf0904f428d9c9703014093fd16ab375eaa9024a30c4f179eb",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/fdp/winogrande_localjsonl.json": "102e229e0130f5c7186e019f59b2c9b6744173c0011f8625d2c288048f050783",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/fdp/arc_challenge_localjsonl.json": "682065884b643fa05c3cf44d1f59d8f8ad9c52032cb3817a7ff94ea664002d5f",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/fdp/piqa_localjsonl.json": "904986058df9b1817a55b39eb9c9689f32038fb2e849e5e7d53cd4ff4ac19bd8",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/fdp/hellaswag_localjsonl.json": "38ecdf37bc425cc80db2f13879cd4ec382accbdeb9217f737d53032da9bd5a54",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/fdp/arc_easy_localjsonl.json": "081c1251c9cc822d55fadc60199df5bf966a0a26aae9394505046185a42dffcb",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/relaxed_uniform/winogrande_localjsonl.json": "30de12da4f10c3104f1b60dec32f7a837d173795e79bbca881a8582c459e6fc4",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/relaxed_uniform/arc_challenge_localjsonl.json": "cb967ba0de32045c791998cd5f98eb76e9292324e732f804ed1d0c00cd1e392d",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/relaxed_uniform/piqa_localjsonl.json": "1d7d087a6fa5f17dc0a4446442982e5d47371e77db47554acb5db81e2a53fa3d",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/relaxed_uniform/hellaswag_localjsonl.json": "522fe3f2f939a9467323010a652299d86fb1efe0cfa48ccc94f70f58fb0455ae",
+    "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/raw/U011/relaxed_uniform/arc_easy_localjsonl.json": "8567bfeb0d21935fe24b45349d8c24e88d3eb8830d51cc76943b45c010e31b1b"
+  },
+  "external_anchor_status": "FROZEN_ONLY_FOR_THESE_MPT_SCHEDULES_AND_THIS_SUITE"
+}

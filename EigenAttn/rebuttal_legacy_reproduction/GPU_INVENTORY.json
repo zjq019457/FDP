@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-07-28T08:37:07.246279-07:00",
+  "gpus": [
+    {
+      "index": 0,
+      "uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920,
+      "memory_free_mib": 81153,
+      "memory_used_mib": 0,
+      "util_gpu": 0.0,
+      "util_mem": 0.0
+    },
+    {
+      "index": 1,
+      "uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920,
+      "memory_free_mib": 81153,
+      "memory_used_mib": 0,
+      "util_gpu": 0.0,
+      "util_mem": 0.0
+    },
+    {
+      "index": 2,
+      "uuid": "GPU-48dea052-92d1-8022-92eb-09172e488520",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920,
+      "memory_free_mib": 81153,
+      "memory_used_mib": 0,
+      "util_gpu": 0.0,
+      "util_mem": 0.0
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920,
+      "memory_free_mib": 81153,
+      "memory_used_mib": 0,
+      "util_gpu": 0.0,
+      "util_mem": 0.0
+    }
+  ],
+  "compute_apps": []
+}

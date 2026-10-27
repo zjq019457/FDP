@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "job_id": "R1_dense_wikitext_ppl",
+  "returncode": 0,
+  "ended_at": "2026-07-28T08:38:46.509975-07:00",
+  "gpu": {
+    "job_id": "R1_dense_wikitext_ppl",
+    "gpu_index": 0,
+    "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 81153,
+    "holder_pid": 1641236,
+    "cuda_visible_devices": "0",
+    "acquired_at": "2026-07-28T08:37:16.396074-07:00"
+  },
+  "elapsed_sec": 90.10686469078064
+}

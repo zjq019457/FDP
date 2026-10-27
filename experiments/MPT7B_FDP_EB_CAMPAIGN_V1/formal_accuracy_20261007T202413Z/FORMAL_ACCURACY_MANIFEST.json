@@ -1,0 +1,1177 @@
+{
+  "created_utc": "2026-10-07T20:24:39.059876+00:00",
+  "purpose": "Evaluation-only rerun; six frozen schedules unchanged; no PPL rerun",
+  "status": "FROZEN_CELL_LAUNCH_AUTHORIZED",
+  "model_path": "/diskF/jiaqizhang/models/新建文件夹",
+  "checkpoint_identity": {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/identity/MPT7B_CHECKPOINT_CONTENT_MANIFEST_V1.json",
+    "sha256": "8fd59bc340a43f13b250c77d118cc8e479993ecdee1a839bcee5cd7bc1f51db9"
+  },
+  "model_files": [
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/README.md",
+      "sha256": "f5dc3061aa368c17e3a05ab6b6e2242fe312dc0cd8be105dc04de320e7741c85",
+      "bytes": 12032
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/adapt_tokenizer.py",
+      "sha256": "d68a8c8151448e949ed5ee6ffa5bd326ba76a264ea30b94908af4f5e7beb9583",
+      "bytes": 1724
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/attention.py",
+      "sha256": "96844cae928f44fd82f113f5d6f416efb2c787747ba893931f4877078166e6c4",
+      "bytes": 21611
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/blocks.py",
+      "sha256": "b1d019c0a9cc73f27e4d6dca931abb92b9201dd68d4176fe9f89065830e60800",
+      "bytes": 2836
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/config.json",
+      "sha256": "4f4a7f15b8f979b45bfddb165ce9fbbfea9ef7cb5ef05a6a085dc733f5600850",
+      "bytes": 1227
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/configuration_mpt.py",
+      "sha256": "b117d206aaaee72be88c368c12a1af9ff4d205268b4bcd6e0743cc9d7df9d36b",
+      "bytes": 11033
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/custom_embedding.py",
+      "sha256": "5959001270bc3dbc76d3ebc54dba0f81ef625a0574d11930bd35ad20c5b1cba5",
+      "bytes": 292
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/fc.py",
+      "sha256": "a2b575feebcd1891e75d2dd4263ee274dbe1aa73670b8d702bf1ef180723cd7f",
+      "bytes": 167
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/ffn.py",
+      "sha256": "a225fc3369fd033a3871f27fec02c8c21dc72f0f9938a14c187ebd89b02f9c4a",
+      "bytes": 1753
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/flash_attn_triton.py",
+      "sha256": "3f548a86236f026bab28555954ae13afd7b4bc70b6ef81059570ea74d267e63c",
+      "bytes": 28182
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/generation_config.json",
+      "sha256": "ce7e69ec19e32b6ed928941e3502b91ccd04ec1168874f7053b6d58251d7154a",
+      "bytes": 112
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/gitattributes",
+      "sha256": "db7c0371f46f0840b8f25794c1e3321c9b5820a8cb6ba9694a46fc64b8fae5a6",
+      "bytes": 1477
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/hf_prefixlm_converter.py",
+      "sha256": "733b1fbabd02afe580cbc5867a44ee5e4a5a1ce6604f472711fa80b4e040bbe6",
+      "bytes": 10486
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/meta_init_context.py",
+      "sha256": "8a053984416246791aed29a809df55625c46de8e3643ec16d44fbb16edd93a09",
+      "bytes": 3959
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/modeling_mpt.py",
+      "sha256": "aaca49e6c4d9177410845da324c5c607d290a7b560ae5062786a4dc9519029fe",
+      "bytes": 22197
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/norm.py",
+      "sha256": "c2aa062d2d89993399d9ce14d04a8b2e30aacf46ac303ebafed3dc45bf6f15bc",
+      "bytes": 3116
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/param_init_fns.py",
+      "sha256": "1729529fc244149083265e65a3f2c9de4ff9f198881dd1d689fc5469e128d070",
+      "bytes": 11860
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/pytorch_model-00001-of-00002.bin",
+      "sha256": "f5782a8714b23c6f85c9433411df36de8c2ffac0008b5fd4df20f78fe592990f",
+      "bytes": 9943040275
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/pytorch_model-00002-of-00002.bin",
+      "sha256": "89642468caaca82ffe684b4c98f3f53249c180d6c99f5895f5be9afeea656f98",
+      "bytes": 3355599187
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/pytorch_model.bin.index.json",
+      "sha256": "ec23962cbf9d95376f864a31e7c9ff326f1e62fcf163f9cee2266e428a00bf84",
+      "bytes": 16023
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/requirements.txt",
+      "sha256": "d79aabb094272d19ee4eef0f9440cee176003ffd2dd863fc1b911238d711a989",
+      "bytes": 113
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/special_tokens_map.json",
+      "sha256": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad",
+      "bytes": 99
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/tokenizer.json",
+      "sha256": "3cf430678137c8491ca82fb7092ee49e44ad38857fffe1e4a4a5ed860139a5b8",
+      "bytes": 2113738
+    },
+    {
+      "path": "/diskF/jiaqizhang/models/新建文件夹/tokenizer_config.json",
+      "sha256": "7671fbb5b3d610e6e11d4f5fc78d3a7716e8846112ac7e0f72124caedf887570",
+      "bytes": 237
+    }
+  ],
+  "sources": {
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/canonical_ppl.py": {
+      "sha256": "e67617cb677bb6fa4a9c08e2b1b7b3559ac7d1ba7e6bb3fc3fbc71bafe173cf1",
+      "original": "/home/bai-project/jiaqizhang/EigenAttn/experimental/mpt7b_fdp_eb_pipeline_v1/run_u011_diagnostic_ppl.py",
+      "original_sha256": "e67617cb677bb6fa4a9c08e2b1b7b3559ac7d1ba7e6bb3fc3fbc71bafe173cf1"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/historical_accuracy_runner.py": {
+      "sha256": "1b4452d8151635ef1abf8d6d3dc41790b06ddc2441547e4598c770a9af9f0cfa",
+      "original": "/home/bai-project/jiaqizhang/EigenAttn/experimental/mpt7b_fdp_eb_pipeline_v1/run_mpt_diagnostic_acc.py",
+      "original_sha256": "1b4452d8151635ef1abf8d6d3dc41790b06ddc2441547e4598c770a9af9f0cfa"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/decompose_modules.py": {
+      "sha256": "36051c9a70a1d2ee59cbf9ef7a8c4a455c0f2350e59fc9a949ac9494ac6d5b70",
+      "original": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/models/decompose_modules.py",
+      "original_sha256": "36051c9a70a1d2ee59cbf9ef7a8c4a455c0f2350e59fc9a949ac9494ac6d5b70"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/mpt_fdp_protocol_v1.py": {
+      "sha256": "8709466ea85c25cd0efec7b9fbeab373cfcedb50c07ad028f898f558aa80995e",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/adapters/mpt_fdp_protocol_v1.py",
+      "original_sha256": "8709466ea85c25cd0efec7b9fbeab373cfcedb50c07ad028f898f558aa80995e"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/mpt_formal_acc_runner.py": {
+      "sha256": "d8f7ec77130c90fbfcb0cb5391d9939b62a85b44bff4efd32bc5e38d47d626b1",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/mpt_formal_acc_runner.py",
+      "original_sha256": "d8f7ec77130c90fbfcb0cb5391d9939b62a85b44bff4efd32bc5e38d47d626b1"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/mpt_formal_acc_scheduler.py": {
+      "sha256": "b7baec1250a60e0852aa84758b63ec307075fcff13a895d0953fe216bbcfb1d2",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/mpt_formal_acc_scheduler.py",
+      "original_sha256": "b7baec1250a60e0852aa84758b63ec307075fcff13a895d0953fe216bbcfb1d2"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/mpt_formal_acc_statistics.py": {
+      "sha256": "720d4e7abc6c9fff962d47e25684def6d1898809e189d8cdd99aeef8b2d54bde",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/mpt_formal_acc_statistics.py",
+      "original_sha256": "720d4e7abc6c9fff962d47e25684def6d1898809e189d8cdd99aeef8b2d54bde"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/mpt_formal_acc_freeze.py": {
+      "sha256": "23d6c23797cb75897a07f53aa94ebfbcef41c1cbf55da86d9ed4b8513d7e9dc7",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/mpt_formal_acc_freeze.py",
+      "original_sha256": "23d6c23797cb75897a07f53aa94ebfbcef41c1cbf55da86d9ed4b8513d7e9dc7"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/arc_challenge_localjsonl.yaml": {
+      "sha256": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d",
+      "original": "/diskF/jiaqizhang/a1804298693/offline_datasets/arc_challenge_localjsonl.yaml",
+      "original_sha256": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/arc_easy_localjsonl.yaml": {
+      "sha256": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15",
+      "original": "/diskF/jiaqizhang/a1804298693/offline_datasets/arc_easy_localjsonl.yaml",
+      "original_sha256": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/hellaswag_localjsonl.yaml": {
+      "sha256": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815",
+      "original": "/diskF/jiaqizhang/a1804298693/offline_datasets/hellaswag_localjsonl.yaml",
+      "original_sha256": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/piqa_localjsonl.yaml": {
+      "sha256": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1",
+      "original": "/diskF/jiaqizhang/a1804298693/offline_datasets/piqa_localjsonl.yaml",
+      "original_sha256": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/winogrande_localjsonl.yaml": {
+      "sha256": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999",
+      "original": "/diskF/jiaqizhang/a1804298693/offline_datasets/winogrande_localjsonl.yaml",
+      "original_sha256": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/preprocess_winogrande_local.py": {
+      "sha256": "2c00946135f8174c386d28c3d204783ffb2c7cc6753e876db91607f1871556b7",
+      "original": "/diskF/jiaqizhang/a1804298693/offline_datasets/preprocess_winogrande_local.py",
+      "original_sha256": "2c00946135f8174c386d28c3d204783ffb2c7cc6753e876db91607f1871556b7"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U011_relaxed_uniform_ALLOCATION.json": {
+      "sha256": "c4ad9ce9042b765113679db6bc1183a66e2af107122e4cf0a97b492b11431b93",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/10_RELAXED_UNIFORM/RELAXED_UNIFORM_RANK_LOCK.json",
+      "original_sha256": "c4ad9ce9042b765113679db6bc1183a66e2af107122e4cf0a97b492b11431b93"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U011_fdp_ALLOCATION.json": {
+      "sha256": "2dd03e710f08c0f9c3e23ce77b7413de44757a71dbb90f19b7f55827248f0596",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/04_SCHEDULE/U011_FDP_RANK_LOCK.json",
+      "original_sha256": "2dd03e710f08c0f9c3e23ce77b7413de44757a71dbb90f19b7f55827248f0596"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U015_relaxed_uniform_ALLOCATION.json": {
+      "sha256": "843829726aef0b2dde7ff31f9576da7eee0c4b839f75c4a87f84f310590d5859",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/10_RELAXED_UNIFORM/RELAXED_UNIFORM_RANK_LOCK.json",
+      "original_sha256": "843829726aef0b2dde7ff31f9576da7eee0c4b839f75c4a87f84f310590d5859"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U015_fdp_ALLOCATION.json": {
+      "sha256": "096cfdd2b9dda557748c177d3e4add469affad1e9f0f0b6d121a7d16bc33a32b",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/04_SCHEDULE/U015_FDP_RANK_LOCK.json",
+      "original_sha256": "096cfdd2b9dda557748c177d3e4add469affad1e9f0f0b6d121a7d16bc33a32b"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U019_relaxed_uniform_ALLOCATION.json": {
+      "sha256": "bdb822a05998b96d27f25abc2c32fde17d181cd86f40d822d15b5fee48db139a",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/10_RELAXED_UNIFORM/RELAXED_UNIFORM_RANK_LOCK.json",
+      "original_sha256": "bdb822a05998b96d27f25abc2c32fde17d181cd86f40d822d15b5fee48db139a"
+    },
+    "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U019_fdp_ALLOCATION.json": {
+      "sha256": "2b1d174c6e91a9db95604fd022c8f622918eefb57152c5c694641927053be037",
+      "original": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/04_SCHEDULE/U019_FDP_RANK_LOCK.json",
+      "original_sha256": "2b1d174c6e91a9db95604fd022c8f622918eefb57152c5c694641927053be037"
+    }
+  },
+  "runtime_sources": {
+    "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/lm_eval/evaluator.py": "6edf1298d87080a15ba95905e792d4170d2d9faf375f87effe26d74248e12385",
+    "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/lm_eval/api/task.py": "12159352212ac374328092c7c1b70518515032495a9f529a0a205d75b1bc967b",
+    "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/lm_eval/models/huggingface.py": "dc9609464b1d21529c0dc730687c5b61a22670b706c57b01f2c64d30343fef22",
+    "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/models/mpt/modeling_mpt.py": "12a9110a4e67a99e76585af9c126cb7fb0742ff6649319e670c2e1c3255e8d9c"
+  },
+  "dataset_files": {
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Challenge/ARC-Challenge-Train.jsonl": "681628d0f2ff88f0d12e5b547088e7453b85b8b852f53025fb0e96c503e59fa7",
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Challenge/ARC-Challenge-Test.jsonl": "03227c30fd557ad1416c2cb955eeb6dc79eeb21e0679456a1ccd42eaccc0ff87",
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Easy/ARC-Easy-Train.jsonl": "d45ca96845bdc82b7797708f88d538f1e9035d296954218c0574ae6e6ed96f02",
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Easy/ARC-Easy-Test.jsonl": "874354cf372667530bd6cbd2d78dca2d657c5e2e746f53cf01d1e9d3a90cbc3d",
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/hellaswag-train-dev/train_labeled.jsonl": "caa8fd6426870037982307239fe84070b79154e38472ab86010982f236b7c145",
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/hellaswag-train-dev/valid_labeled.jsonl": "c92843707204769d8b656a9c4bbe71fb5b897f98b0cac73bd4d8e925e2419686",
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/piqa/train_labeled.jsonl": "5d7ccb2761e9ab17fa8c0672011d3e564cf9ef4bcf9a70090c95d553ccddbe3b",
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/piqa/dev_labeled.jsonl": "a574189accfc2ce3ddf797a491540afbe7543b0b70411c798d5fabffcf14bb58",
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/winogrande/train.jsonl": "5da4d7f6924348ace9e64fd0922d8a7a8e0e14f55cd08005ffb1a3a3d649e36f",
+    "/diskF/jiaqizhang/a1804298693/offline_datasets/winogrande/dev.jsonl": "1aeac79cf46a3dcbe59a71ca7e5372a1490cde2b4ae2387dc56f00378104d2e8"
+  },
+  "tasks": {
+    "arc_challenge_localjsonl": {
+      "metric": "acc_norm",
+      "n": 1172,
+      "yaml_sha256": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d",
+      "sample_manifest": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/arc_challenge_localjsonl_SAMPLE_IDS.json",
+      "sample_manifest_sha256": "cc2b206bda36e9143df524fc7ea299d8ff59240092ae630c68e7cd8c6a8cacc6",
+      "ordered_document_sha256": "0fdebd8adcefbfd8b805053e85726272ccd11dd8723bf41bce2d579bf04a548f"
+    },
+    "arc_easy_localjsonl": {
+      "metric": "acc_norm",
+      "n": 2376,
+      "yaml_sha256": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15",
+      "sample_manifest": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/arc_easy_localjsonl_SAMPLE_IDS.json",
+      "sample_manifest_sha256": "82c994bfef785e2f7a5f4dc5e33815423a7d2392a2214086c2e5a33fe0f90b77",
+      "ordered_document_sha256": "5a69fcca390cb90f1136e7e79bd2a27e3035e2534938954c9558005bd5f7f8f9"
+    },
+    "hellaswag_localjsonl": {
+      "metric": "acc",
+      "n": 10042,
+      "yaml_sha256": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815",
+      "sample_manifest": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/hellaswag_localjsonl_SAMPLE_IDS.json",
+      "sample_manifest_sha256": "2eea26d75f679d7315a6ac20fb125746b8d18f4433ddfcaddef978bbbeaa9a22",
+      "ordered_document_sha256": "f13224145fe404d4308b3be088b4ab7e6231acd4ec2e1b4c44600aa6b52110d3"
+    },
+    "piqa_localjsonl": {
+      "metric": "acc",
+      "n": 1838,
+      "yaml_sha256": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1",
+      "sample_manifest": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/piqa_localjsonl_SAMPLE_IDS.json",
+      "sample_manifest_sha256": "024b0347f90c040661a6c85df2d0397be4d1f0c993692e85b9cab925aa517586",
+      "ordered_document_sha256": "51f26aeb2e1deb713708f9f38db1d40429d22480e7e9488ae7ccbb218bbb1a93"
+    },
+    "winogrande_localjsonl": {
+      "metric": "acc",
+      "n": 1267,
+      "yaml_sha256": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999",
+      "sample_manifest": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/tasks/winogrande_localjsonl_SAMPLE_IDS.json",
+      "sample_manifest_sha256": "68bd32fcabb9a3fc07a42e3594f716f5d165b20b69d7305626d5e5edffaa4569",
+      "ordered_document_sha256": "cf59ba509b76bab74c48429cc005902b40803b121b34a2bb12666d6b419c62a0"
+    }
+  },
+  "cells": [
+    {
+      "tier": "U011",
+      "arm": "relaxed_uniform",
+      "allocation": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U011_relaxed_uniform_ALLOCATION.json",
+      "allocation_sha256": "c4ad9ce9042b765113679db6bc1183a66e2af107122e4cf0a97b492b11431b93",
+      "rank_sha256": "8016bc8d43436e5c41db59b449c18be14b4bb640f0c3f7544afa39e67f770ef5",
+      "ranks": [
+        [
+          4096,
+          4096
+        ],
+        [
+          3808,
+          3936
+        ],
+        [
+          2816,
+          3296
+        ],
+        [
+          2400,
+          3104
+        ],
+        [
+          3328,
+          3616
+        ],
+        [
+          3488,
+          3808
+        ],
+        [
+          3616,
+          3808
+        ],
+        [
+          3808,
+          3936
+        ],
+        [
+          3840,
+          3968
+        ],
+        [
+          4096,
+          4096
+        ],
+        [
+          4096,
+          4096
+        ],
+        [
+          3872,
+          3968
+        ],
+        [
+          3840,
+          3936
+        ],
+        [
+          3840,
+          3968
+        ],
+        [
+          3872,
+          3968
+        ],
+        [
+          3872,
+          3968
+        ],
+        [
+          3872,
+          3968
+        ],
+        [
+          3680,
+          3840
+        ],
+        [
+          3488,
+          3744
+        ],
+        [
+          3328,
+          3616
+        ],
+        [
+          3168,
+          3520
+        ],
+        [
+          3008,
+          3424
+        ],
+        [
+          2752,
+          3200
+        ],
+        [
+          2880,
+          3296
+        ],
+        [
+          2528,
+          3104
+        ],
+        [
+          2496,
+          2976
+        ],
+        [
+          2144,
+          2784
+        ],
+        [
+          2592,
+          3104
+        ],
+        [
+          2624,
+          3104
+        ],
+        [
+          3296,
+          3552
+        ],
+        [
+          3008,
+          3328
+        ],
+        [
+          128,
+          1344
+        ]
+      ],
+      "actual_b_live": 889454592,
+      "runtime_census": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/audits/repair_20261007T200635Z/U011_relaxed_uniform_ACTUAL_CACHE.json",
+      "runtime_census_sha256": "4e43c0577a8f142deabf0f16406abeea5ae6898013667577840b314c11934112",
+      "resource_lock_pass": true,
+      "launch_authorized": true
+    },
+    {
+      "tier": "U011",
+      "arm": "fdp",
+      "allocation": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U011_fdp_ALLOCATION.json",
+      "allocation_sha256": "2dd03e710f08c0f9c3e23ce77b7413de44757a71dbb90f19b7f55827248f0596",
+      "rank_sha256": "27614fe9062625031866a42e2829f855b52a7a3113a87a8fa4a8772a0b7aaad0",
+      "ranks": [
+        [
+          4096,
+          4096
+        ],
+        [
+          3456,
+          3648
+        ],
+        [
+          2496,
+          3040
+        ],
+        [
+          2080,
+          2880
+        ],
+        [
+          2976,
+          3392
+        ],
+        [
+          3232,
+          3680
+        ],
+        [
+          3200,
+          3584
+        ],
+        [
+          3584,
+          3808
+        ],
+        [
+          3648,
+          3840
+        ],
+        [
+          3840,
+          3936
+        ],
+        [
+          3872,
+          3968
+        ],
+        [
+          3872,
+          3968
+        ],
+        [
+          3840,
+          3936
+        ],
+        [
+          3648,
+          3840
+        ],
+        [
+          3648,
+          3840
+        ],
+        [
+          3648,
+          3840
+        ],
+        [
+          3488,
+          3744
+        ],
+        [
+          3520,
+          3744
+        ],
+        [
+          3296,
+          3616
+        ],
+        [
+          3168,
+          3520
+        ],
+        [
+          3008,
+          3424
+        ],
+        [
+          3520,
+          3744
+        ],
+        [
+          3392,
+          3616
+        ],
+        [
+          2880,
+          3296
+        ],
+        [
+          2688,
+          3200
+        ],
+        [
+          2624,
+          3104
+        ],
+        [
+          3552,
+          3744
+        ],
+        [
+          3200,
+          3520
+        ],
+        [
+          3392,
+          3616
+        ],
+        [
+          3296,
+          3552
+        ],
+        [
+          3296,
+          3552
+        ],
+        [
+          96,
+          1280
+        ]
+      ],
+      "actual_b_live": 889323520,
+      "runtime_census": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/audits/repair_20261007T200635Z/U011_fdp_ACTUAL_CACHE.json",
+      "runtime_census_sha256": "39b3a4f5cf4b9fb1dd9224a3b3642d67c7d9e0551b57f0d35bb65d58277edb37",
+      "resource_lock_pass": true,
+      "launch_authorized": true
+    },
+    {
+      "tier": "U015",
+      "arm": "relaxed_uniform",
+      "allocation": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U015_relaxed_uniform_ALLOCATION.json",
+      "allocation_sha256": "843829726aef0b2dde7ff31f9576da7eee0c4b839f75c4a87f84f310590d5859",
+      "rank_sha256": "7141ac4016a4fd216f5d5289c3b3f2c42db1ddba7fdcd40fd8c3bbd87f1788cf",
+      "ranks": [
+        [
+          2112,
+          3808
+        ],
+        [
+          3456,
+          3648
+        ],
+        [
+          2368,
+          2912
+        ],
+        [
+          2080,
+          2880
+        ],
+        [
+          2976,
+          3392
+        ],
+        [
+          3232,
+          3680
+        ],
+        [
+          3200,
+          3584
+        ],
+        [
+          3392,
+          3680
+        ],
+        [
+          3648,
+          3840
+        ],
+        [
+          3840,
+          3936
+        ],
+        [
+          3872,
+          3968
+        ],
+        [
+          3680,
+          3840
+        ],
+        [
+          3840,
+          3936
+        ],
+        [
+          3648,
+          3840
+        ],
+        [
+          3648,
+          3840
+        ],
+        [
+          3648,
+          3840
+        ],
+        [
+          3488,
+          3744
+        ],
+        [
+          3328,
+          3616
+        ],
+        [
+          2944,
+          3392
+        ],
+        [
+          2848,
+          3296
+        ],
+        [
+          2528,
+          3104
+        ],
+        [
+          2400,
+          3008
+        ],
+        [
+          2016,
+          2688
+        ],
+        [
+          2016,
+          2688
+        ],
+        [
+          1664,
+          2496
+        ],
+        [
+          1504,
+          2304
+        ],
+        [
+          1088,
+          2016
+        ],
+        [
+          1568,
+          2400
+        ],
+        [
+          1760,
+          2496
+        ],
+        [
+          2592,
+          3040
+        ],
+        [
+          2368,
+          2848
+        ],
+        [
+          64,
+          928
+        ]
+      ],
+      "actual_b_live": 776208384,
+      "runtime_census": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/audits/repair_20261007T200635Z/U015_relaxed_uniform_ACTUAL_CACHE.json",
+      "runtime_census_sha256": "83112763fbebf9cecba0747cf59694a1cf0940af7de3584b752568890a497a0c",
+      "resource_lock_pass": true,
+      "launch_authorized": true
+    },
+    {
+      "tier": "U015",
+      "arm": "fdp",
+      "allocation": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U015_fdp_ALLOCATION.json",
+      "allocation_sha256": "096cfdd2b9dda557748c177d3e4add469affad1e9f0f0b6d121a7d16bc33a32b",
+      "rank_sha256": "15128ca6148c85857a3d1c7941d920675aabb528c143250ea0d2b16bd987abb2",
+      "ranks": [
+        [
+          2112,
+          3808
+        ],
+        [
+          3264,
+          3488
+        ],
+        [
+          2080,
+          2656
+        ],
+        [
+          1760,
+          2624
+        ],
+        [
+          2336,
+          2976
+        ],
+        [
+          2816,
+          3456
+        ],
+        [
+          2848,
+          3328
+        ],
+        [
+          3168,
+          3552
+        ],
+        [
+          3488,
+          3712
+        ],
+        [
+          3424,
+          3712
+        ],
+        [
+          3712,
+          3840
+        ],
+        [
+          3488,
+          3744
+        ],
+        [
+          3424,
+          3680
+        ],
+        [
+          3264,
+          3616
+        ],
+        [
+          3456,
+          3712
+        ],
+        [
+          3264,
+          3616
+        ],
+        [
+          3136,
+          3520
+        ],
+        [
+          2976,
+          3392
+        ],
+        [
+          2624,
+          3200
+        ],
+        [
+          2688,
+          3168
+        ],
+        [
+          2400,
+          3008
+        ],
+        [
+          2848,
+          3328
+        ],
+        [
+          2464,
+          3008
+        ],
+        [
+          2304,
+          2912
+        ],
+        [
+          2080,
+          2784
+        ],
+        [
+          1920,
+          2592
+        ],
+        [
+          2720,
+          3168
+        ],
+        [
+          2880,
+          3296
+        ],
+        [
+          2752,
+          3200
+        ],
+        [
+          2720,
+          3136
+        ],
+        [
+          2368,
+          2848
+        ],
+        [
+          64,
+          544
+        ]
+      ],
+      "actual_b_live": 776077312,
+      "runtime_census": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/audits/repair_20261007T200635Z/U015_fdp_ACTUAL_CACHE.json",
+      "runtime_census_sha256": "7f5a0a4ec63607c18f73dc2b79614587ea144f2ea59bddf9fa6520769f3b2430",
+      "resource_lock_pass": true,
+      "launch_authorized": true
+    },
+    {
+      "tier": "U019",
+      "arm": "relaxed_uniform",
+      "allocation": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U019_relaxed_uniform_ALLOCATION.json",
+      "allocation_sha256": "bdb822a05998b96d27f25abc2c32fde17d181cd86f40d822d15b5fee48db139a",
+      "rank_sha256": "304e6be429d2908554f838eda4ba800b724b2592db4657907174dd23b689b30f",
+      "ranks": [
+        [
+          2112,
+          3808
+        ],
+        [
+          3264,
+          3488
+        ],
+        [
+          2080,
+          2656
+        ],
+        [
+          1760,
+          2624
+        ],
+        [
+          2496,
+          3072
+        ],
+        [
+          2816,
+          3456
+        ],
+        [
+          3008,
+          3456
+        ],
+        [
+          3168,
+          3552
+        ],
+        [
+          3488,
+          3712
+        ],
+        [
+          3616,
+          3808
+        ],
+        [
+          3712,
+          3840
+        ],
+        [
+          3488,
+          3744
+        ],
+        [
+          3424,
+          3680
+        ],
+        [
+          3264,
+          3616
+        ],
+        [
+          3264,
+          3584
+        ],
+        [
+          3072,
+          3488
+        ],
+        [
+          2976,
+          3392
+        ],
+        [
+          2816,
+          3296
+        ],
+        [
+          2304,
+          2976
+        ],
+        [
+          2240,
+          2880
+        ],
+        [
+          1696,
+          2528
+        ],
+        [
+          1536,
+          2432
+        ],
+        [
+          1504,
+          2336
+        ],
+        [
+          1216,
+          2112
+        ],
+        [
+          800,
+          1824
+        ],
+        [
+          576,
+          1568
+        ],
+        [
+          224,
+          1216
+        ],
+        [
+          480,
+          1472
+        ],
+        [
+          736,
+          1760
+        ],
+        [
+          1792,
+          2432
+        ],
+        [
+          1728,
+          2336
+        ],
+        [
+          64,
+          544
+        ]
+      ],
+      "actual_b_live": 661127168,
+      "runtime_census": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/audits/repair_20261007T200635Z/U019_relaxed_uniform_ACTUAL_CACHE.json",
+      "runtime_census_sha256": "794ebe7c59e3c2c6aab7cac3cf8640cb261a33b9d3774501b365c89caa1f2362",
+      "resource_lock_pass": true,
+      "launch_authorized": true
+    },
+    {
+      "tier": "U019",
+      "arm": "fdp",
+      "allocation": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z/sources/U019_fdp_ALLOCATION.json",
+      "allocation_sha256": "2b1d174c6e91a9db95604fd022c8f622918eefb57152c5c694641927053be037",
+      "rank_sha256": "531516326011529e45ad1ae57f37e3e7996504f7c850fad64a594ed0230756e9",
+      "ranks": [
+        [
+          1536,
+          3584
+        ],
+        [
+          2976,
+          3232
+        ],
+        [
+          1728,
+          2336
+        ],
+        [
+          1504,
+          2432
+        ],
+        [
+          2048,
+          2784
+        ],
+        [
+          2432,
+          3200
+        ],
+        [
+          2496,
+          3104
+        ],
+        [
+          2816,
+          3296
+        ],
+        [
+          3136,
+          3488
+        ],
+        [
+          3232,
+          3584
+        ],
+        [
+          3328,
+          3616
+        ],
+        [
+          3168,
+          3520
+        ],
+        [
+          3232,
+          3552
+        ],
+        [
+          2912,
+          3360
+        ],
+        [
+          2912,
+          3360
+        ],
+        [
+          2720,
+          3264
+        ],
+        [
+          2784,
+          3296
+        ],
+        [
+          2656,
+          3200
+        ],
+        [
+          2016,
+          2784
+        ],
+        [
+          2080,
+          2784
+        ],
+        [
+          1536,
+          2432
+        ],
+        [
+          1952,
+          2720
+        ],
+        [
+          1888,
+          2592
+        ],
+        [
+          1472,
+          2304
+        ],
+        [
+          1152,
+          2112
+        ],
+        [
+          1024,
+          1920
+        ],
+        [
+          1088,
+          2016
+        ],
+        [
+          2272,
+          2912
+        ],
+        [
+          1760,
+          2496
+        ],
+        [
+          2176,
+          2720
+        ],
+        [
+          2112,
+          2624
+        ],
+        [
+          64,
+          544
+        ]
+      ],
+      "actual_b_live": 660996096,
+      "runtime_census": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/audits/repair_20261007T200635Z/U019_fdp_ACTUAL_CACHE.json",
+      "runtime_census_sha256": "435f0e8951ebfdfdfa5e7ef19b1095e52ad71fc703ac8ed40a2f8fb38df77210",
+      "resource_lock_pass": true,
+      "launch_authorized": true
+    }
+  ],
+  "git_commit": "8bd0d3fac373788aa38b9e7f646cc25109661cdd",
+  "git_dirty_status_sha256": "57ffc9854dcca716cb1b5262cfe2901a95c4c4a9240f8edf80b705839a7a6cc6",
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "numpy": "2.0.1",
+    "transformers": "4.44.2",
+    "lm_eval": "unknown",
+    "datasets": "3.3.2"
+  },
+  "eval": {
+    "num_fewshot": 0,
+    "batch_size": 1,
+    "max_length": 2048,
+    "add_bos_token": false,
+    "seed": 2,
+    "logits_cache": false,
+    "full_sample_logging": true
+  },
+  "statistics": {
+    "seed": 20261007,
+    "bootstrap": 10000,
+    "aggregate": "equal-task macro",
+    "paired": "within-task item resampling",
+    "McNemar": "two-sided exact binomial; Holm across 15 tests"
+  },
+  "E_root": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z",
+  "F_root": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/formal_accuracy_20261007T202413Z",
+  "foreign_jobs_interrupted": 0,
+  "PPL_status": "PRESERVED_NO_RERUN_SOURCE_BINDING_PARTIAL_NOT_AUTO_PROMOTED"
+}

@@ -1,0 +1,20 @@
+{
+  "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "cache_bytes_fp16_seq2048": 322961408,
+  "factor_bytes_fp16": 726663168,
+  "manifest": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/marginal/calibration_manifest.json",
+  "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+  "quality": {
+    "J": 2.3104549271919463,
+    "c4_nll": 2.4345165973881366,
+    "c4_ppl": 11.410301610382772,
+    "c4_tokens": 16376,
+    "wiki_nll": 2.186393256995756,
+    "wiki_ppl": 8.903044144782232,
+    "wiki_tokens": 16376
+  },
+  "quality_used_to_design_selection": false,
+  "ratio": 0.3,
+  "status": "MARGINAL_BASELINE_COMPLETE",
+  "total_native_rank": 78848
+}

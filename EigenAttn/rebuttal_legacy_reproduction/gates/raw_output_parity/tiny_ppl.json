@@ -1,0 +1,26 @@
+{
+  "windows": [
+    {
+      "window_id": "tiny_0",
+      "total_nll": 138.2601318359375,
+      "token_count": 32
+    },
+    {
+      "window_id": "tiny_1",
+      "total_nll": 143.3797607421875,
+      "token_count": 32
+    },
+    {
+      "window_id": "tiny_2",
+      "total_nll": 142.90235900878906,
+      "token_count": 32
+    },
+    {
+      "window_id": "tiny_3",
+      "total_nll": 138.73219299316406,
+      "token_count": 32
+    }
+  ],
+  "legacy_ppl": 81.4982541285561,
+  "raw_ppl": 81.4982541285561
+}

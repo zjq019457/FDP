@@ -1,0 +1,160 @@
+{
+  "aggregation": "paired frozen windows; pooled numerator/denominator for d1/d2; arithmetic mean entropy delta for d5",
+  "artifact_id": "LLAMA2_CLEAN_REDESIGN_PROFILE_PROTOCOL_LOCK_V1",
+  "basis_sha256": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+  "checkpoint_content_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa585660c691f6626d25c2cf25197",
+  "comparator": {
+    "B_live_rank_implied_bytes": 649199616,
+    "accounting_formula": "sum_l((QK_rank_l+V_rank_l)*4096 bytes)",
+    "name": "Uniform EB=0.068",
+    "rank_csv_path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/e090/inputs/UNIFORM_e090_PER_LAYER.csv",
+    "rank_csv_sha256": "a01125cdce03a84ee0b4ac4b8fa1b683c992b4161cfd8fade5c790d73ef7c8ca",
+    "rank_schedule": [
+      [
+        2816,
+        3872
+      ],
+      [
+        4096,
+        4096
+      ],
+      [
+        704,
+        2656
+      ],
+      [
+        544,
+        2144
+      ],
+      [
+        480,
+        1920
+      ],
+      [
+        768,
+        2752
+      ],
+      [
+        928,
+        3072
+      ],
+      [
+        1152,
+        3296
+      ],
+      [
+        1664,
+        3488
+      ],
+      [
+        1760,
+        3520
+      ],
+      [
+        2400,
+        3712
+      ],
+      [
+        1696,
+        3488
+      ],
+      [
+        1728,
+        3488
+      ],
+      [
+        1728,
+        3520
+      ],
+      [
+        1760,
+        3520
+      ],
+      [
+        2048,
+        3648
+      ],
+      [
+        2016,
+        3616
+      ],
+      [
+        2016,
+        3616
+      ],
+      [
+        1696,
+        3520
+      ],
+      [
+        1632,
+        3520
+      ],
+      [
+        1664,
+        3552
+      ],
+      [
+        1280,
+        3424
+      ],
+      [
+        1344,
+        3456
+      ],
+      [
+        1088,
+        3328
+      ],
+      [
+        1280,
+        3456
+      ],
+      [
+        1088,
+        3328
+      ],
+      [
+        1088,
+        3392
+      ],
+      [
+        864,
+        3040
+      ],
+      [
+        1408,
+        3456
+      ],
+      [
+        1376,
+        3488
+      ],
+      [
+        3520,
+        3968
+      ],
+      [
+        1152,
+        3360
+      ]
+    ],
+    "rank_schedule_sha256": "80aeea44ef7affcaf8f3231a71521e52e4919f34de502022568ac10527ff9e74",
+    "resource_manifest_path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/e090/inputs/UNIFORM_e090_RESOURCE_MANIFEST.json",
+    "resource_manifest_sha256": "b2ef97897eac0bf807b23af1d148cba523188afcb28e2ffee070ab1b6b218770"
+  },
+  "metric_definitions": {
+    "d1": "pooled Z squared-error numerator / pooled dense Z squared-norm denominator",
+    "d2": "pooled causal score squared-error numerator / pooled dense causal score squared-norm denominator",
+    "d5": "max(0, -arithmetic_mean(entropy_diff_A))",
+    "q": "MinMax(d1+d2+d5) across 32 layers"
+  },
+  "model_key": "llama2_7b",
+  "runner_sha256": "d6bb4d33b12aeaafc789848463b0286779756f733998be764446a3f5d42063e5",
+  "sample_count": 512,
+  "sample_manifest_file_sha256": "82cf192e5cd24aca50093b2d11a33ae352ca4cbe50b13eb84887d455c37e6293",
+  "seed": 2,
+  "sequence_length_tokens": 2048,
+  "status": "FROZEN_PRE_PROFILE",
+  "tokenizer_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf"
+}

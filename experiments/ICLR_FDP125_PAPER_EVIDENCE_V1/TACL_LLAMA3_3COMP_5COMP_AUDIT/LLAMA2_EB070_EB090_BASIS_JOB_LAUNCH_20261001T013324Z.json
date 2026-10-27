@@ -1,0 +1,36 @@
+{
+  "artifact_id": "LLAMA2_EB070_EB090_UNIFORM_BASIS_JOB_LAUNCH",
+  "basis_decomposition_shared_across_budgets": true,
+  "builder_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline_fdp125_cpu_stage_v1.py",
+  "builder_sha256": "9c2d11dd46be745fde2e8d68c6ba70a8cb56827cf9ea037b3b8d57155a0e5be9",
+  "checkpoint_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa5856660c691f6626d25c2cf25197",
+  "cuda_visible_devices": "2",
+  "foreign_jobs_interrupted": 0,
+  "gpu_free_mib_before": 81153,
+  "gpu_physical": 2,
+  "log_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/eb070_eb090_shared_decomp/basis_builder.log",
+  "observed_at_utc": "2026-10-01T01:33:24.295847+00:00",
+  "output_dir": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/eb070_eb090_shared_decomp",
+  "pid": 1677534,
+  "protocol": {
+    "attn_implementation": "eager",
+    "avg_dim": 32,
+    "dtype": "bf16",
+    "error_budgets": [
+      0.07,
+      0.09
+    ],
+    "low_vram_cpu_staging": true,
+    "min_rank": 64,
+    "nsamples": 512,
+    "seed": 2,
+    "seqlen": 2048,
+    "threshold_floor": 0.3,
+    "threshold_init": 1.0,
+    "threshold_step": 0.02
+  },
+  "q_or_profile_shared": false,
+  "quality_started": false,
+  "single_process_memory_fraction": 0.4,
+  "status": "RUNNING_RESOURCE_ONLY"
+}

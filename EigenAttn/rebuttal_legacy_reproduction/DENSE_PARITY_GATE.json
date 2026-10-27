@@ -1,0 +1,51 @@
+{
+  "gate": "DENSE_PARITY_PASS",
+  "passed": true,
+  "timestamp": "2026-07-28T09:17:19.261557-07:00",
+  "upstream_artifact_hashes": {
+    "wiki": "9a14f2b48316c02661f1018d2a07926b4ffdc06688b1faebce2a39d14771bd76",
+    "c4": "95ad8b1c6ce68e309a849153b4b3ff942fac54885ce8af6bd2b36aa34cc3809f",
+    "zs1": "37ab2e777e3903abf6f633a9bf1da4a6ea39327525593bca63e200348f52f016",
+    "zs2": "99006fcca4e587c5512161239169c3aaca57a5a2007bc73acdeeb7d872da0b33",
+    "results_csv": "6512383fd0f0472a9f8e7ae3b1d6fa482daca673b9dfb126e8d41593464e1c2c"
+  },
+  "runner_hash": "3253491fcde3d6f0b5d6f5d5d95fec290187b0d9c40f531b8ee3a0403b81a999",
+  "protocol_hash": "46045088fa3fca40321c6d59d0367e9f8921c0ba97b9492791f4abed6c2091d4",
+  "evaluation_hash": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+  "audit_summary": "dense R1 aggregate+recompute",
+  "extra": {
+    "comparisons": [
+      {
+        "task": "hellaswag_localjsonl",
+        "current": 0.5846444931288588,
+        "historical": 0.5849432383987253,
+        "abs_diff": 0.0002987452698665072
+      },
+      {
+        "task": "arc_challenge_localjsonl",
+        "current": 0.5008532423208191,
+        "historical": 0.5017064846416383,
+        "abs_diff": 0.0008532423208191808
+      },
+      {
+        "task": "arc_easy_localjsonl",
+        "current": 0.7756734006734006,
+        "historical": 0.7756734006734006,
+        "abs_diff": 0.0
+      },
+      {
+        "task": "piqa_localjsonl",
+        "current": 0.794885745375408,
+        "historical": 0.7932535364526659,
+        "abs_diff": 0.0016322089227420733
+      },
+      {
+        "task": "winogrande_localjsonl",
+        "current": 0.7324388318863457,
+        "historical": 0.7324388318863457,
+        "abs_diff": 0.0
+      }
+    ],
+    "recompute_ok": true
+  }
+}

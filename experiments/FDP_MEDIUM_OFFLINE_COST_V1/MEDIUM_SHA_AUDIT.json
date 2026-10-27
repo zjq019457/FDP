@@ -1,0 +1,43 @@
+{
+ "parent_uniform": {
+  "rank_sha": "c922f1af71e6f7393e7d85f14f794a058a7ebe116612dd0b62de279d259a0f1d",
+  "frozen_rank_sha": "c922f1af71e6f7393e7d85f14f794a058a7ebe116612dd0b62de279d259a0f1d",
+  "B_live": 196083712,
+  "frozen_B_live": 196083712,
+  "ranks_equal": true,
+  "basis_sha": "b795263247f628b49d59db6dfc4ceb1da848539c1735c6f83a9f2a72ba6e6892",
+  "frozen_basis_sha": "b795263247f628b49d59db6dfc4ceb1da848539c1735c6f83a9f2a72ba6e6892",
+  "PASS": true
+ },
+ "step1_profile": {
+  "file_sha": "ecd6ec41bc2c121761769088cb3fb70450a64fb5850111165904351757b6ce5a",
+  "frozen_file_sha": "67780d18efcd02d353a2a43c2941cd8a7c3cc1e3ce3b282d5cb8b24dfa44c858",
+  "per_layer_keys_equal": true,
+  "max_abs_numeric_diff_per_layer": 0.0,
+  "PASS": true
+ },
+ "fdp_eb_vector": {
+  "eb_sha": "2a8f73b4f5d550be9052b0bce8f66dfcd720087d2872f1c412dbb559c5c9eaee",
+  "frozen_eb_sha": "2a8f73b4f5d550be9052b0bce8f66dfcd720087d2872f1c412dbb559c5c9eaee",
+  "max_abs_diff_vs_frozen": 0.0,
+  "PASS": true
+ },
+ "fdp": {
+  "rank_sha": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+  "frozen_rank_sha": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+  "B_live": 199753728,
+  "frozen_B_live": 199753728,
+  "ranks_equal": true,
+  "basis_sha": "0e6ac0d426cc64bc752d22f31b9b153d605e31ff150f9622d0dfaaa62f29ad5f",
+  "frozen_basis_sha": "0e6ac0d426cc64bc752d22f31b9b153d605e31ff150f9622d0dfaaa62f29ad5f",
+  "PASS": true
+ },
+ "uniform_comparator": {
+  "low_rank_config_file_sha": "db207077467e658317a1972240a42b211212563f38b3e819210b90006a1615cb",
+  "frozen_file_sha": "db207077467e658317a1972240a42b211212563f38b3e819210b90006a1615cb",
+  "B_live": 199917568,
+  "frozen_B_live": 199917568,
+  "ranks_equal": true,
+  "PASS": true
+ }
+}

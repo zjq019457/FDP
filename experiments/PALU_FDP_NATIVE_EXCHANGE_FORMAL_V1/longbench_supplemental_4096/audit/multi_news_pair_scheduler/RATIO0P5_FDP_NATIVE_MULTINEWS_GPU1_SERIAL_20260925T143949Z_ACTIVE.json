@@ -1,0 +1,18 @@
+{
+  "dataset_sha256": "f8817c00af317c2d7f81128f334bcfe5780c6c2a515d5c96811aa0ddf8b5ee6b",
+  "foreign_jobs_interrupted": 0,
+  "formal_results_modified": false,
+  "gpu": 1,
+  "log": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/logs/RATIO0P5_FDP_NATIVE_MULTINEWS_GPU1_SERIAL_20260925T143949Z.log",
+  "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+  "method": "fdp_native",
+  "n_samples_expected": 200,
+  "pid": 756716,
+  "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "ratio": 0.5,
+  "raw_output": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/multi_news.raw.jsonl",
+  "run_id": "RATIO0P5_FDP_NATIVE_MULTINEWS_GPU1_SERIAL_20260925T143949Z",
+  "started_at_utc": "2026-09-25T14:39:49.563340+00:00",
+  "status": "ACTIVE",
+  "task": "multi_news"
+}

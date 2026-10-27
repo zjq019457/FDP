@@ -1,0 +1,29 @@
+{
+  "J": 2.1826465857880457,
+  "arm": "relaxed_uniform",
+  "c4": {
+    "dataset": "c4",
+    "log_ppl": 2.2871780395507812,
+    "ppl": 9.847110748291016,
+    "token_count_sum": 524288,
+    "total_nll_sum": 1199140.0,
+    "used_windows": 256
+  },
+  "experiment": "RELAXED_UNIFORM_ABOVE_FDP",
+  "formal_matched_quality": false,
+  "gpu_free_at_start_bytes": 63804080128,
+  "gpu_total_bytes": 85094825984,
+  "quality_used_to_select_schedule": false,
+  "rank_schedule_sha256": "8016bc8d43436e5c41db59b449c18be14b4bb640f0c3f7544afa39e67f770ef5",
+  "resource_gap_relative": 0.04416743613419514,
+  "schema": "MPT7B_U011_DIAGNOSTIC_PPL_V1",
+  "status": "PPL_COMPLETE",
+  "wiki": {
+    "dataset": "wikitext2",
+    "log_ppl": 2.07811513202531,
+    "ppl": 7.989396572113037,
+    "token_count_sum": 286720,
+    "total_nll_sum": 595837.1706542969,
+    "used_windows": 140
+  }
+}

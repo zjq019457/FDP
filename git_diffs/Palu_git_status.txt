@@ -1,0 +1,5 @@
+bb22666e2ef96707e8dd21d93fc00146c2e0d615
+origin	https://github.com/shadowpa0327/Palu.git (fetch)
+origin	https://github.com/shadowpa0327/Palu.git (push)
+### status
+ ? 3rdparty/fast-hadamard-transform

@@ -1,0 +1,16 @@
+{
+  "affected_stage": "PRE_TUNE_ENGINEERING_ONLY",
+  "created_utc": "2026-09-23T10:05:45Z",
+  "experimental_outputs_written": false,
+  "foreign_jobs_interrupted": 0,
+  "formal_outputs_absent": true,
+  "lock_outputs_absent": true,
+  "new_runner_sha256": "ee0079afe568e03395eb0a36be8c0113debe258da0cd2fe961cd682943ef00b8",
+  "old_results_valid": true,
+  "old_runner_sha256": "37fc000450646c8cfc1281b26644badd92e788c795dc0b810edcd9c9c4a3aa5b",
+  "profile_marginals_sha256": "d48c9bb9a4cf73961284c90b57a083e81458bd1290e73174de17af954b6d1d3b",
+  "profile_result_sha256": "3420320fa1d49e40f15a3581bbbd43e09df09bcefe394c16269b456a2aacd87a",
+  "reason": "Engineering-only TUNE runner correction after frozen PROFILE; no TUNE, LOCK, or formal output/cache exists.",
+  "status": "RUNNER_LOCK_REBOUND_POST_PROFILE_PRE_TUNE",
+  "tune_outputs_absent": true
+}

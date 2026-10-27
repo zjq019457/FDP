@@ -1,0 +1,7 @@
+{
+ "script": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+ "t_start": 1791658867.9266524,
+ "t_end": 1791659044.26974,
+ "torch_peak_allocated_bytes": 16861699584,
+ "torch_peak_reserved_bytes": 16951279616
+}

@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-07-29T08:22:49.775492-07:00",
+  "component_variants": [
+    "full",
+    "minus_Z",
+    "minus_S",
+    "minus_V",
+    "minus_A",
+    "minus_Entropy"
+  ],
+  "calibration_domains": [
+    "wikitext",
+    "c4"
+  ],
+  "cal_sizes": [
+    16,
+    32,
+    64
+  ],
+  "lambdas": [
+    0.6,
+    1.2,
+    2.0
+  ],
+  "confirmatory_lambda": 1.2,
+  "policy": "Full FDP at lambda=1.2 is confirmatory; others sensitivity only",
+  "status": "protocol_frozen",
+  "gpu_build_pending": true
+}

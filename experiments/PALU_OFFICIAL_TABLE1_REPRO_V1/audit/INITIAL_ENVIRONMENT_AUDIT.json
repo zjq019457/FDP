@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-09-29T18:27:16.963285+00:00",
+  "official_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "source_tree_dirty_summary": "fast-hadamard-transform submodule appears untracked; lm-evaluation-harness submodule is uninitialized; do not change official repository.",
+  "environment_observations": {
+    "eigen_python": "3.9.21",
+    "torch": "2.8.0",
+    "transformers": "4.44.2",
+    "datasets": "3.3.2",
+    "lm_eval": "0.4.4",
+    "fast_hadamard_transform": "missing"
+  },
+  "dense_gate": "NOT_RUN_IN_THIS_CAMPAIGN",
+  "notes": [
+    "Model directory exists locally on diskF (13G).",
+    "Prior official-protocol Dense result exists in a separate campaign and is not being counted as this clean-root reproduction.",
+    "Table-1 and Appendix G.3 target identities remain separate."
+  ]
+}

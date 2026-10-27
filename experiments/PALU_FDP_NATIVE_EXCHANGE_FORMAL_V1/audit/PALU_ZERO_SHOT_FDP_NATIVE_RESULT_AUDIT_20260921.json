@@ -1,0 +1,30 @@
+{
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "dataset_binding_audit": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/PALU_ZERO_SHOT_LOCAL_DATASET_BINDING.json",
+  "foreign_jobs_interrupted": 0,
+  "formal_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+  "frozen_results_modified": false,
+  "gpu1_used": false,
+  "macro_accuracy": 0.3991681612776062,
+  "method": "PALU_FDP_NATIVE",
+  "protocol_unchanged": true,
+  "ratio": 0.5,
+  "resource": {
+    "decode_cache_bytes": 133693440,
+    "prefill_cache_bytes": 133693440,
+    "total_native_rank": 32640
+  },
+  "result_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_FDP_NATIVE/zeroshot.json",
+  "result_sha256": "dc92b50a511167f056c65611b9055b321809d820b5f83d942b484b07e5254a40",
+  "schedule_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/llama2_ratio_0.5_anchor_schedule.json",
+  "schedule_sha256": "9893cc06dbfae4442b11e0e5f5620d8464c6e23921af24f85422a230d00d78a4",
+  "selected_accuracy": {
+    "arc_challenge": 0.22696245733788395,
+    "arc_easy": 0.4132996632996633,
+    "hellaswag": 0.35371439952200756,
+    "openbookqa": 0.198,
+    "piqa": 0.6458106637649619,
+    "winogrande": 0.5572217837411207
+  },
+  "status": "FORMAL_ZERO_SHOT_COMPLETE"
+}

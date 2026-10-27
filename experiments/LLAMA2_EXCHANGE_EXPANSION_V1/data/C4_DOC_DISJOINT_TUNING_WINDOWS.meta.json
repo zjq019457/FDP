@@ -1,0 +1,10 @@
+{
+ "shard": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/data/c4-validation.00000-of-00008.json.gz",
+ "shard_sha256": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+ "seed": 20261015,
+ "n": 29,
+ "eval_rows": 231,
+ "gate_frozen_windows_reproduced": "29/29",
+ "file_sha256": "843695dcb97df823e18e09b88da0b870fabbbae39d27cfb334a9b4d008434eaa",
+ "at": "2026-10-12T02:59:44.439159+00:00"
+}

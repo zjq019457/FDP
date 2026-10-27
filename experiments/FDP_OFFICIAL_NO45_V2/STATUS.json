@@ -1,0 +1,14 @@
+{
+ "at": "2026-10-11T13:15:54.968974-07:00",
+ "counts": {
+  "DONE": 27,
+  "FAILED": 1,
+  "PENDING": 86
+ },
+ "running": {},
+ "failed": {
+  "gate_stage1": "GateFail: STOP: medium: FDP-EB J 2.3635 > uniform 2.2791; medium: FDP-EB avg 62.95 < uniform 64.11; medium: FDP-EB J 2.3635 > spec 2.3124; medium: FDP-EB avg 62.95 < spec 63.93"
+ },
+ "stop": true,
+ "pause": false
+}

@@ -1,0 +1,9 @@
+{
+  "artifact": "LLAMA2_EB059_IMPORT_OVERLAY_TEST_ATTEMPT3",
+  "classification": "ENGINEERING_IMPORT_COMPATIBILITY_FAILURE_NO_GPU_NO_QUALITY",
+  "failure": "NameError: Cache is not defined in an evaluated type annotation in models/decompose_modules.py; the installed Transformers exports Cache from transformers.cache_utils.",
+  "source_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/models/decompose_modules.py",
+  "source_sha256": "36051c9a70a1d2ee59cbf9ef7a8c4a455c0f2350e59fc9a949ac9494ac6d5b70",
+  "overlay_change": "Add only explicit import of transformers.cache_utils.Cache to the isolated overlay copy. Original repository unchanged.",
+  "time_utc": "2026-10-01T08:30:57.635839+00:00"
+}

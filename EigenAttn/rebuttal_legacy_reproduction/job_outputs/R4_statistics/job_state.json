@@ -1,0 +1,8 @@
+{
+  "status": "DONE",
+  "job_id": "R4_statistics",
+  "returncode": 0,
+  "ended_at": "2026-07-29T01:32:06.719920-07:00",
+  "gpu": null,
+  "elapsed_sec": 10.012678861618042
+}

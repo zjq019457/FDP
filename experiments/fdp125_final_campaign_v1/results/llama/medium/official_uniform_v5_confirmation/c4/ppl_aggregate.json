@@ -1,0 +1,15 @@
+{
+  "dataset": "c4",
+  "ppl": 10.727777142812508,
+  "total_nll_sum": 1244049.6359863281,
+  "token_count_sum": 524288,
+  "used_windows": 256,
+  "skipped_windows": 0,
+  "n_windows_considered": 256,
+  "seqlen": 2048,
+  "method": "OFFICIAL_UNIFORM_LLAMA_medium",
+  "model_hash": "f2477b9c0c2fac9506c51cc5daab2273c351276303515e4fc0083b20958bd7e4",
+  "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+  "recomputed_from": "exp(sum(total_nll)/sum(token_count))",
+  "timestamp": "2026-09-17T13:55:40.293157-07:00"
+}

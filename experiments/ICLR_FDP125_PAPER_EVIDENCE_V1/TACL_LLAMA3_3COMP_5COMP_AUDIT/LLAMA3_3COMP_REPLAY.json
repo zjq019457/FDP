@@ -1,0 +1,41 @@
+{
+  "artifact": "LLAMA3_3COMP_REPLAY",
+  "audit_created_utc": "2026-10-01T00:26:05.972556+00:00",
+  "component_mask": "11001",
+  "raw_profile_sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+  "q_formula": "MinMax(raw_d1 + raw_d2 + raw_d5)",
+  "q_audit_sha256": "3e29bec57d805b896e228f81ea2458efe9d5a976ac395cbf14446b1c72673986",
+  "q_historical_file_exists": false,
+  "epsilon_intermediate_sha256_round8": "56fec59611ff979940d3b2b4350cc22550760976f0d1e02c265300e4b9708144",
+  "effective_epsilon_sha256_round8": "36c4cf4669a0a81d5ecad3737cefd1ba40ae13f19c3ba934baf5fa7f5ae83ed8",
+  "effective_L0": 0.06,
+  "effective_epsilon_vs_basis_report_max_abs_delta": 1.3877787807814457e-17,
+  "rank_schedule_exact_match": true,
+  "rank_sha256_rederived": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+  "rank_sha256_saved": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+  "rank_sum": 48768,
+  "B_live_bytes": 199753728,
+  "rank_vs_5comp": {
+    "q_spearman": 0.9739736070381232,
+    "layers_changed": 7,
+    "changed_layer_indices_zero_based": [
+      7,
+      9,
+      10,
+      11,
+      12,
+      26,
+      30
+    ],
+    "sum_abs_rank_delta": 816,
+    "rank_sum_delta_3comp_minus_5comp": 336,
+    "B_live_delta_bytes_3comp_minus_5comp": 1376256
+  },
+  "Pass1_profile_reacquired": false,
+  "Pass1_compressed_checkpoint_currently_present": false,
+  "schedule_replay_verdict": "EXACT_PASS_FROM_FROZEN_RAW_PROFILE_AND_SAVED_THRESHOLD_TRACES",
+  "full_pass1_to_schedule_end_to_end_replay_verdict": "NOT_REACQUIRED; missing original Pass1 compressed model prevents fresh profiling",
+  "launch_L2_quality_allowed_by_this_gate": false,
+  "LLAMA3_3COMP_CANONICAL_REPLAY_PASS": true,
+  "interpretation": "PASS is scoped to exact q/e/rank-schedule replay from hashed raw profile + threshold traces. It does not assert that the original Pass1 profiling forward was rerun or that the missing Pass1 model was reacquired."
+}

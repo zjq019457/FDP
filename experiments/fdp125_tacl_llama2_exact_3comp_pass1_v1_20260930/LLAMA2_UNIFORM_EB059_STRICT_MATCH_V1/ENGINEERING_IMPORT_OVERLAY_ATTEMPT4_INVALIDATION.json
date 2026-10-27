@@ -1,0 +1,11 @@
+{
+  "artifact": "LLAMA2_EB059_MATERIALIZE_ATTEMPT4_INVALIDATION",
+  "classification": "ENGINEERING_TRANSFORMERS_EXPORT_COMPATIBILITY_FAILURE_NO_QUALITY",
+  "failure": "Runtime NameError: LlamaMLP is not bound by Transformers modeling_llama star import; LlamaRMSNorm likewise absent from overlay globals. Failure occurred during model structure construction after basis load, before checkpoint save or quality.",
+  "source_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/models/modelling_llama_eigen_attn.py",
+  "source_sha256": "85c0ef1b6b802a6c1986d222f70cfd7157e29ee41b399b828ec568ab9cd67cb2",
+  "overlay_change": "Explicit import LlamaMLP and LlamaRMSNorm from the same transformers.models.llama.modeling_llama module; original model formulas unchanged.",
+  "source_repo_modified": false,
+  "attempt_log": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/LLAMA2_UNIFORM_EB059_STRICT_MATCH_V1/attempt4/materialize.log",
+  "time_utc": "2026-10-01T08:35:28.010729+00:00"
+}

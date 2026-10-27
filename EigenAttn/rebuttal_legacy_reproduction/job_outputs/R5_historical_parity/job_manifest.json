@@ -1,0 +1,18 @@
+{
+  "job_id": "R5_historical_parity",
+  "stage": "R5",
+  "kind": "cpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/r5_historical_parity.py"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": null,
+  "depends_on": [
+    "R4_statistics"
+  ],
+  "created_at": "2026-07-29T07:28:58.256072-07:00",
+  "meta": {
+    "role": "historical_parity"
+  }
+}

@@ -1,0 +1,26 @@
+{
+ "068": {
+  "eb": 0.068,
+  "gate_no_floor_reproduces_historical": true,
+  "layers_differing_from_no_floor": 13,
+  "floor_stops": 22,
+  "B_live": 799670272,
+  "ratio": 0.7447509765625
+ },
+ "060": {
+  "eb": 0.06,
+  "gate_no_floor_reproduces_historical": true,
+  "layers_differing_from_no_floor": 7,
+  "floor_stops": 14,
+  "B_live": 817496064,
+  "ratio": 0.7613525390625
+ },
+ "090": {
+  "eb": 0.09,
+  "gate_no_floor_reproduces_historical": true,
+  "layers_differing_from_no_floor": 25,
+  "floor_stops": 28,
+  "B_live": 771883008,
+  "ratio": 0.7188720703125
+ }
+}

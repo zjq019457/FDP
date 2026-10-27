@@ -1,0 +1,242 @@
+{
+  "status": "SELECTED_BASIS_BUILT_FROM_FROZEN_EB059_SCHEDULE",
+  "rank_sha256": "3f4e59be8cf981abb5c6c272702eb42e75729f9167677e29846f957e7935eaf4",
+  "rank_sum": 192768,
+  "B_live_bytes": 789577728,
+  "verification_against_existing_EB060_selected_basis": {
+    "tensor_count": 96,
+    "mismatch_count": 0,
+    "max_abs": 0.0
+  },
+  "full_basis_sha256": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+  "source_report_sha256": "791debf977d4aaf989e0396306e5639d78854bf4f18c04d8ffcf943318038cd5",
+  "source_report": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/eb070_eb090_shared_decomp/llama2_7b_uniform_pass1_eb070_eb090_report.json",
+  "selection_rule": "for each layer, last threshold-trace row with error <= 0.059 from frozen Uniform .07/.09 decomposition report",
+  "selected_rows": [
+    {
+      "layer": 0,
+      "threshold": 1.0,
+      "error": 0.005024601011635782,
+      "rank_kq": 4096,
+      "rank_v": 4096
+    },
+    {
+      "layer": 1,
+      "threshold": 1.0,
+      "error": 0.0047698849737224085,
+      "rank_kq": 4096,
+      "rank_v": 4096
+    },
+    {
+      "layer": 2,
+      "threshold": 0.8999999999999999,
+      "error": 0.055483186573630806,
+      "rank_kq": 1184,
+      "rank_v": 3488
+    },
+    {
+      "layer": 3,
+      "threshold": 0.8599999999999999,
+      "error": 0.057729370930877356,
+      "rank_kq": 992,
+      "rank_v": 3264
+    },
+    {
+      "layer": 4,
+      "threshold": 0.8199999999999998,
+      "error": 0.05809528086991738,
+      "rank_kq": 864,
+      "rank_v": 3104
+    },
+    {
+      "layer": 5,
+      "threshold": 0.8799999999999999,
+      "error": 0.058515354324633596,
+      "rank_kq": 1120,
+      "rank_v": 3392
+    },
+    {
+      "layer": 6,
+      "threshold": 0.8999999999999999,
+      "error": 0.055335566330516575,
+      "rank_kq": 1632,
+      "rank_v": 3520
+    },
+    {
+      "layer": 7,
+      "threshold": 0.9199999999999999,
+      "error": 0.052569094841114786,
+      "rank_kq": 2016,
+      "rank_v": 3616
+    },
+    {
+      "layer": 8,
+      "threshold": 0.94,
+      "error": 0.0504085640967948,
+      "rank_kq": 2400,
+      "rank_v": 3712
+    },
+    {
+      "layer": 9,
+      "threshold": 0.94,
+      "error": 0.050637885715971755,
+      "rank_kq": 2464,
+      "rank_v": 3744
+    },
+    {
+      "layer": 10,
+      "threshold": 0.98,
+      "error": 0.03621070839550395,
+      "rank_kq": 3360,
+      "rank_v": 3968
+    },
+    {
+      "layer": 11,
+      "threshold": 0.94,
+      "error": 0.04911328410326596,
+      "rank_kq": 2368,
+      "rank_v": 3712
+    },
+    {
+      "layer": 12,
+      "threshold": 0.94,
+      "error": 0.05128666936048852,
+      "rank_kq": 2432,
+      "rank_v": 3712
+    },
+    {
+      "layer": 13,
+      "threshold": 0.94,
+      "error": 0.055307066469107415,
+      "rank_kq": 2432,
+      "rank_v": 3744
+    },
+    {
+      "layer": 14,
+      "threshold": 0.94,
+      "error": 0.055797750570512894,
+      "rank_kq": 2432,
+      "rank_v": 3744
+    },
+    {
+      "layer": 15,
+      "threshold": 0.96,
+      "error": 0.05170195673991275,
+      "rank_kq": 2848,
+      "rank_v": 3840
+    },
+    {
+      "layer": 16,
+      "threshold": 0.96,
+      "error": 0.05132706024724431,
+      "rank_kq": 2816,
+      "rank_v": 3840
+    },
+    {
+      "layer": 17,
+      "threshold": 0.96,
+      "error": 0.05235830476227304,
+      "rank_kq": 2880,
+      "rank_v": 3840
+    },
+    {
+      "layer": 18,
+      "threshold": 0.94,
+      "error": 0.056859151491382376,
+      "rank_kq": 2432,
+      "rank_v": 3744
+    },
+    {
+      "layer": 19,
+      "threshold": 0.94,
+      "error": 0.055054820842333686,
+      "rank_kq": 2368,
+      "rank_v": 3744
+    },
+    {
+      "layer": 20,
+      "threshold": 0.94,
+      "error": 0.05225714201759528,
+      "rank_kq": 2400,
+      "rank_v": 3744
+    },
+    {
+      "layer": 21,
+      "threshold": 0.94,
+      "error": 0.0497122730063691,
+      "rank_kq": 2368,
+      "rank_v": 3744
+    },
+    {
+      "layer": 22,
+      "threshold": 0.94,
+      "error": 0.050663943736528785,
+      "rank_kq": 2432,
+      "rank_v": 3744
+    },
+    {
+      "layer": 23,
+      "threshold": 0.9199999999999999,
+      "error": 0.05792450172671181,
+      "rank_kq": 2112,
+      "rank_v": 3648
+    },
+    {
+      "layer": 24,
+      "threshold": 0.9199999999999999,
+      "error": 0.054554961750024375,
+      "rank_kq": 1952,
+      "rank_v": 3648
+    },
+    {
+      "layer": 25,
+      "threshold": 0.9199999999999999,
+      "error": 0.050599798694247,
+      "rank_kq": 2080,
+      "rank_v": 3648
+    },
+    {
+      "layer": 26,
+      "threshold": 0.9199999999999999,
+      "error": 0.05125862201395362,
+      "rank_kq": 2048,
+      "rank_v": 3680
+    },
+    {
+      "layer": 27,
+      "threshold": 0.9199999999999999,
+      "error": 0.05460491489345347,
+      "rank_kq": 2176,
+      "rank_v": 3648
+    },
+    {
+      "layer": 28,
+      "threshold": 0.9199999999999999,
+      "error": 0.057255339922286964,
+      "rank_kq": 2112,
+      "rank_v": 3648
+    },
+    {
+      "layer": 29,
+      "threshold": 0.9199999999999999,
+      "error": 0.049189005102755305,
+      "rank_kq": 2048,
+      "rank_v": 3680
+    },
+    {
+      "layer": 30,
+      "threshold": 1.0,
+      "error": 0.018082710036790517,
+      "rank_kq": 4064,
+      "rank_v": 4096
+    },
+    {
+      "layer": 31,
+      "threshold": 0.8799999999999999,
+      "error": 0.048821544838011426,
+      "rank_kq": 1440,
+      "rank_v": 3456
+    }
+  ],
+  "basis_output": "/dev/shm/llama2_uniform_e059_attempt6/selected_basis.pt"
+}

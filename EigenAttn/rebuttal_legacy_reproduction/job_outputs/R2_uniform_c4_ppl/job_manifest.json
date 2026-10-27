@@ -1,0 +1,32 @@
+{
+  "job_id": "R2_uniform_c4_ppl",
+  "stage": "R2",
+  "kind": "gpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/ppl_instrumented.py",
+    "--dataset",
+    "c4",
+    "--model",
+    "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/r2_uniform_eb045/final_model",
+    "--tok",
+    "/diskD/jiaqizhang/Llama-3",
+    "--c4_texts",
+    "/diskD/jiaqizhang/llama3_8b_eb045_eval_minimal-20260502T170035Z-3-001/llama3_8b_eb045_eval_minimal/data/c4_ppl_selected_texts.jsonl",
+    "--out_dir",
+    "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R2_uniform_c4_ppl",
+    "--dtype",
+    "bf16",
+    "--method",
+    "uniform_eb045",
+    "--evaluation_protocol_hash",
+    "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": 1,
+  "depends_on": [
+    "R2_uniform_smoke"
+  ],
+  "created_at": "2026-07-29T01:45:55.024353-07:00",
+  "meta": {}
+}

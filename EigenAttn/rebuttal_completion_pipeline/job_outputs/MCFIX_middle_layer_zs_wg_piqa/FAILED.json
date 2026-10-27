@@ -1,0 +1,20 @@
+{
+  "job_id": "MCFIX_middle_layer_zs_wg_piqa",
+  "status": "FAILED",
+  "returncode": 1,
+  "ended_at": "2026-07-29T19:50:03.864804-07:00",
+  "elapsed_sec": 4.193081378936768,
+  "gpu": {
+    "job_id": "MCFIX_middle_layer_zs_wg_piqa",
+    "gpu_index": 1,
+    "gpu_uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 81153,
+    "reserved_mib": 18000,
+    "holder_pid": 2410166,
+    "cuda_visible_devices": "1",
+    "slot_index": 3,
+    "acquired_at": "2026-07-29T19:49:59.668906-07:00"
+  }
+}

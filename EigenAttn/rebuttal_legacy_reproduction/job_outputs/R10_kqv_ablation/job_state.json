@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "job_id": "R10_kqv_ablation",
+  "returncode": 0,
+  "ended_at": "2026-07-29T01:48:39.094981-07:00",
+  "gpu": {
+    "job_id": "R10_kqv_ablation",
+    "gpu_index": 1,
+    "gpu_uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 62868,
+    "holder_pid": 2218735,
+    "cuda_visible_devices": "1",
+    "acquired_at": "2026-07-29T01:46:28.926200-07:00"
+  },
+  "elapsed_sec": 130.16390824317932
+}

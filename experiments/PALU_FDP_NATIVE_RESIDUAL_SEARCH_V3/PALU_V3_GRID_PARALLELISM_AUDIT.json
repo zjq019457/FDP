@@ -1,0 +1,277 @@
+{
+  "audit_name": "PALU_V3_GRID_PARALLELISM_AUDIT",
+  "captured_utc": "2026-09-25T01:07:12Z",
+  "experiment_root": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3",
+  "audit_type": "read_only_parallelism_and_progress_audit",
+  "frozen_inputs_sha256": {
+    "runner": "1632bab4ccac3442246f2e593068fd6393caa04a9b55834617d124b44c47fdf3",
+    "manifest": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93",
+    "split_binding": "196adc50a6adf58af13d07d27d9fe1f1da7c1ffba9067f0ca19508138cc69505",
+    "method_card": "dacb622d47629fc4c55215e485f50c30b9064aa3c30df2b469c950d5c4a3b07f"
+  },
+  "grid": {
+    "configs_by_arm": {
+      "A": 12,
+      "B": 12,
+      "C": 24,
+      "D": 24
+    },
+    "total_configs": 72,
+    "dimensions": {
+      "D_R_pairs": [
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          16
+        ]
+      ],
+      "Rmax": [
+        0.0025,
+        0.005,
+        0.01,
+        0.02
+      ],
+      "beam_width_by_arm": {
+        "A": [
+          0
+        ],
+        "B": [
+          0
+        ],
+        "C": [
+          4,
+          8
+        ],
+        "D": [
+          4,
+          8
+        ]
+      }
+    },
+    "status_by_arm": {
+      "A": {
+        "done": 12,
+        "total": 12
+      },
+      "B": {
+        "done": 1,
+        "active": 1,
+        "total": 12
+      },
+      "C": {
+        "done": 0,
+        "active": 0,
+        "total": 24
+      },
+      "D": {
+        "done": 0,
+        "active": 0,
+        "total": 24
+      }
+    },
+    "completed_configs": 13,
+    "active_configs": 1,
+    "not_started_configs": 58,
+    "estimated_remaining_config_count_including_active": 59
+  },
+  "current_B_progress": {
+    "classification": "RUNNING_NORMALLY",
+    "process_pid": 5663,
+    "process_command": "run_rs_v3.py --gpu 1 --phase tune --arm all",
+    "active_config": "armB_D4_R4_Rmax0.005_beam0",
+    "checkpoint_updated_utc": "2026-09-25T01:03:06Z",
+    "candidate_evaluated_total": 112,
+    "accepted_transfers": 7,
+    "rejected_candidates": 69,
+    "refresh_count": 8,
+    "affected_refresh_count": 7,
+    "global_refresh_count": 1,
+    "recent_profile_progress": {
+      "updated_utc": "2026-09-25T01:06:43Z",
+      "status": "RUNNING",
+      "processed_units": 16,
+      "units_in_scope": 16,
+      "allocation_sha256": "8feb98bd1bec026fb57e5228afe5b3ee9b6584a2398e0846168a236960277952"
+    },
+    "stalled_rule_result": "recent checkpoint/profile updates are within the 30-60 minute stall window"
+  },
+  "parallel_safe_configs": [],
+  "serial_only_configs": [
+    "armA_D4_R4_Rmax0.0025_beam0",
+    "armA_D4_R4_Rmax0.005_beam0",
+    "armA_D4_R4_Rmax0.01_beam0",
+    "armA_D4_R4_Rmax0.02_beam0",
+    "armA_D8_R8_Rmax0.0025_beam0",
+    "armA_D8_R8_Rmax0.005_beam0",
+    "armA_D8_R8_Rmax0.01_beam0",
+    "armA_D8_R8_Rmax0.02_beam0",
+    "armA_D16_R16_Rmax0.0025_beam0",
+    "armA_D16_R16_Rmax0.005_beam0",
+    "armA_D16_R16_Rmax0.01_beam0",
+    "armA_D16_R16_Rmax0.02_beam0",
+    "armB_D4_R4_Rmax0.0025_beam0",
+    "armB_D4_R4_Rmax0.005_beam0",
+    "armB_D4_R4_Rmax0.01_beam0",
+    "armB_D4_R4_Rmax0.02_beam0",
+    "armB_D8_R8_Rmax0.0025_beam0",
+    "armB_D8_R8_Rmax0.005_beam0",
+    "armB_D8_R8_Rmax0.01_beam0",
+    "armB_D8_R8_Rmax0.02_beam0",
+    "armB_D16_R16_Rmax0.0025_beam0",
+    "armB_D16_R16_Rmax0.005_beam0",
+    "armB_D16_R16_Rmax0.01_beam0",
+    "armB_D16_R16_Rmax0.02_beam0",
+    "armC_D4_R4_Rmax0.0025_beam4",
+    "armC_D4_R4_Rmax0.0025_beam8",
+    "armC_D4_R4_Rmax0.005_beam4",
+    "armC_D4_R4_Rmax0.005_beam8",
+    "armC_D4_R4_Rmax0.01_beam4",
+    "armC_D4_R4_Rmax0.01_beam8",
+    "armC_D4_R4_Rmax0.02_beam4",
+    "armC_D4_R4_Rmax0.02_beam8",
+    "armC_D8_R8_Rmax0.0025_beam4",
+    "armC_D8_R8_Rmax0.0025_beam8",
+    "armC_D8_R8_Rmax0.005_beam4",
+    "armC_D8_R8_Rmax0.005_beam8",
+    "armC_D8_R8_Rmax0.01_beam4",
+    "armC_D8_R8_Rmax0.01_beam8",
+    "armC_D8_R8_Rmax0.02_beam4",
+    "armC_D8_R8_Rmax0.02_beam8",
+    "armC_D16_R16_Rmax0.0025_beam4",
+    "armC_D16_R16_Rmax0.0025_beam8",
+    "armC_D16_R16_Rmax0.005_beam4",
+    "armC_D16_R16_Rmax0.005_beam8",
+    "armC_D16_R16_Rmax0.01_beam4",
+    "armC_D16_R16_Rmax0.01_beam8",
+    "armC_D16_R16_Rmax0.02_beam4",
+    "armC_D16_R16_Rmax0.02_beam8",
+    "armD_D4_R4_Rmax0.0025_beam4",
+    "armD_D4_R4_Rmax0.0025_beam8",
+    "armD_D4_R4_Rmax0.005_beam4",
+    "armD_D4_R4_Rmax0.005_beam8",
+    "armD_D4_R4_Rmax0.01_beam4",
+    "armD_D4_R4_Rmax0.01_beam8",
+    "armD_D4_R4_Rmax0.02_beam4",
+    "armD_D4_R4_Rmax0.02_beam8",
+    "armD_D8_R8_Rmax0.0025_beam4",
+    "armD_D8_R8_Rmax0.0025_beam8",
+    "armD_D8_R8_Rmax0.005_beam4",
+    "armD_D8_R8_Rmax0.005_beam8",
+    "armD_D8_R8_Rmax0.01_beam4",
+    "armD_D8_R8_Rmax0.01_beam8",
+    "armD_D8_R8_Rmax0.02_beam4",
+    "armD_D8_R8_Rmax0.02_beam8",
+    "armD_D16_R16_Rmax0.0025_beam4",
+    "armD_D16_R16_Rmax0.0025_beam8",
+    "armD_D16_R16_Rmax0.005_beam4",
+    "armD_D16_R16_Rmax0.005_beam8",
+    "armD_D16_R16_Rmax0.01_beam4",
+    "armD_D16_R16_Rmax0.01_beam8",
+    "armD_D16_R16_Rmax0.02_beam4",
+    "armD_D16_R16_Rmax0.02_beam8"
+  ],
+  "isolation_audit": {
+    "frozen_inputs_read_only_shared": [
+      "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3_MANIFEST.json",
+      "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/V3_SPLIT_BINDING.json",
+      "shared starting allocation/profile"
+    ],
+    "per_config_output_and_checkpoint": "yes; CALIBRATION_TUNE/<config_id>/DONE.json and CHECKPOINT.json",
+    "shared_mutable_state": [
+      "root STATE.json updated by set_state",
+      "root .v3_worker.lock uses nonblocking exclusive flock and rejects a second runner",
+      "profile/PROFILE_progress.json is a shared mutable progress file",
+      "profile/<split>_marginals_<allocation_sha>.json is shared/content-addressed across configs",
+      "eval_cache/<split>/<allocation_sha>.json is shared across configs; temp name is the same <cache-file>.tmp, so concurrent writes to an identical key can race",
+      "ARM_*_SELECTED.json and TUNE_DONE.json are emitted by the single all-arm coordinator after its loops"
+    ],
+    "per_comparison_bootstrap_seed": "deterministic config-specific seed derived from config_id + allocation state SHA + candidate pair; this does not isolate shared cache/progress/state",
+    "config_sharding_interface": "none; CLI accepts --arm, not an individual config id",
+    "decision": "not safe to run any of the 72 configs concurrently under the current shared V3 root"
+  },
+  "gpu_snapshot": {
+    "gpu0": {
+      "used_mib": 35963,
+      "free_mib": 45191,
+      "utilization_pct": 100,
+      "processes": [
+        {
+          "pid": 246278,
+          "owner": "a180429+",
+          "used_mib": 15882,
+          "job": "PaLu LongBench ratio0.5 QMSum Uniform"
+        },
+        {
+          "pid": 470010,
+          "owner": "tjl_0516",
+          "used_mib": 20064,
+          "job": "foreign Jialin Mammography training"
+        }
+      ]
+    },
+    "gpu1": {
+      "used_mib": 50524,
+      "free_mib": 30629,
+      "utilization_pct": 100,
+      "processes": [
+        {
+          "pid": 5663,
+          "owner": "a180429+",
+          "used_mib": 15828,
+          "job": "unique PaLu V3 Tune worker"
+        },
+        {
+          "pid": 373854,
+          "owner": "a180429+",
+          "used_mib": 17844,
+          "job": "PaLu LongBench ratio0.5 MultiNews Uniform"
+        },
+        {
+          "pid": 479560,
+          "owner": "tjl_0516",
+          "used_mib": 16832,
+          "job": "foreign Jialin Mammography training"
+        }
+      ]
+    },
+    "gpu2": {
+      "used_mib": 56412,
+      "free_mib": 24741,
+      "utilization_pct": 100,
+      "processes": [
+        {
+          "pid": 246362,
+          "owner": "a180429+",
+          "used_mib": 15896,
+          "job": "PaLu LongBench ratio0.5 QMSum FDP-Native"
+        },
+        {
+          "pid": 426789,
+          "owner": "a180429+",
+          "used_mib": 20432,
+          "job": "PaLu V2 MIE recovery worker"
+        },
+        {
+          "pid": 473446,
+          "owner": "tjl_0516",
+          "used_mib": 20064,
+          "job": "foreign Jialin Mammography training"
+        }
+      ]
+    }
+  },
+  "transition_markers": {
+    "tune_done_present": false,
+    "calibration_lock_present": false,
+    "formal_done_present": false,
+    "foreign_jobs_interrupted": 0
+  },
+  "action_taken": "kept PID 5663 as sole shared-state V3 worker; no parallel config worker launched"
+}

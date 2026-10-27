@@ -1,0 +1,33 @@
+{
+  "aggregate_J": 2.4912336878029695,
+  "c4": {
+    "mean_token_nll": 2.7797012329101562,
+    "ppl": 16.114205834382336
+  },
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "compression_ratio": 0.3017578125,
+  "decode_bytes": 187432960,
+  "gates": {
+    "foreign_jobs_interrupted": 0,
+    "formal_manifest_present": true,
+    "gpu1_used": false,
+    "native_conversion_census_present": true,
+    "rank_bytes_exact_internal": true
+  },
+  "manifest_sha256_declared": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+  "manifest_sha256_observed": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+  "method": "PALU_FDP_PRIOR",
+  "native_rank": 45760,
+  "note": "Observed manifest SHA is recorded separately because the frozen JSON contains a pre-write self-reference; frozen file was not modified after quality began.",
+  "prefill_bytes": 187432960,
+  "provenance": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.7/PALU_FDP_PRIOR/quality.json",
+  "ratio": 0.7,
+  "resource_lock_sha256": "1f19306461515e061dd801925d0d51fee3b3b35f088e11a798a940c3864c9d62",
+  "schedule_sha": "a08d259cf6f56e428c0b6a7408d5bd2231bca0248af4af7663f5fbc04948b122",
+  "status": "VERIFIED_FORMAL_CELL",
+  "verified_at_utc": "2026-09-19T08:14:44.540090+00:00",
+  "wiki": {
+    "mean_token_nll": 2.202766142695783,
+    "ppl": 9.050012534113414
+  }
+}

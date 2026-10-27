@@ -1,0 +1,2 @@
+# Unified F-disk workspace for LLAMA_DRM_A100_4GPU_V1 (all bulky I/O).
+/diskF/jiaqizhang/llama_drm_a100_4gpu_v1

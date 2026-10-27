@@ -1,0 +1,27 @@
+{
+  "dispatcher_state": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/OFFICIAL_TIER_DISPATCH_STATE.json",
+  "foreign_jobs_interrupted": 0,
+  "formal_quality_used_for_selection": false,
+  "generated_epoch": 1789886866.6275792,
+  "gpu1_used": false,
+  "notes": "Dispatcher waits for per-ratio official phi status.json, then freezes a per-ratio phi lock and launches the official 8-group exchange/formal workers only on a safe non-GPU1 slot.",
+  "official_action_space": "PRESERVED",
+  "official_fisher_reproduction": "PRESERVED",
+  "official_q_mapping": "PRESERVED",
+  "old_anchor_schema_results": "PRESERVED",
+  "scripts": {
+    "code/official_tier_dispatch.py": {
+      "path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/code/official_tier_dispatch.py",
+      "sha256": "d14185e494aa177ed5a8bc334f5ba12d4859a348f70a1d98e4f7280aad6fadf4"
+    },
+    "code/run_official_exchange_calibration.py": {
+      "path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/code/run_official_exchange_calibration.py",
+      "sha256": "37f05ed6689a13fac13f6441d3c6a3b1b4d68ed94ac5961f0889aa39f0716be4"
+    },
+    "code/run_official_formal_quality.py": {
+      "path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/code/run_official_formal_quality.py",
+      "sha256": "f9fba64c28a5b9fe9b3b3de179e397fcdb985e795b271173e79bf583eefd1137"
+    }
+  },
+  "status": "OFFICIAL_TIER_READY_AUTO_DISPATCH_ACTIVE"
+}

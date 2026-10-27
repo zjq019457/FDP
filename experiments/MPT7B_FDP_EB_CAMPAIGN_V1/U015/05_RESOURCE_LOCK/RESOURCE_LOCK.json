@@ -1,0 +1,12 @@
+{
+  "MPT_U015_RESOURCE_MATCH_PASS": false,
+  "absolute_difference_bytes": 58982400,
+  "diagnostic_reference_pm_0_15_percent": "NOT_PRE_REGISTERED_FOR_MPT",
+  "fdp_b_live_bytes": 776077312,
+  "preregistered_mpt_resource_criterion": null,
+  "quality_used_to_select": false,
+  "reason": "Frozen epsilon_base=0.015 mapping realizes 776077312 B against Uniform 717094912 B, relative gap 8.2252%. No MPT preregistered numeric resource criterion was found. The +/-0.15% figure is a Llama diagnostic reference only and is not an MPT pass rule. Quality was not started.",
+  "relative_gap": 0.08225187351489673,
+  "schema": "MPT7B_U015_RESOURCE_LOCK_V1",
+  "uniform_b_live_bytes": 717094912
+}

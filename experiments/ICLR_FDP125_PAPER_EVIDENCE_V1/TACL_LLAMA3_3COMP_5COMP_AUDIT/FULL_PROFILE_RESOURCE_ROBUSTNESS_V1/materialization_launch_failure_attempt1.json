@@ -1,0 +1,8 @@
+{
+  "schema": "LLAMA3_FULL_RESOURCE_MATERIALIZATION_LAUNCH_FAILURE_V1",
+  "timestamp_utc": "2026-10-02T21:26:50.757765+00:00",
+  "classification": "ENGINEERING_OUTPUT_DIRECTORY_NOT_CREATED",
+  "failure": "tmux command exited before process start because redirected log parent directory did not exist; no GPU process started and no model output was written.",
+  "repair": "Create dedicated F materialization output directories before starting unchanged official command.",
+  "quality_outputs": false
+}

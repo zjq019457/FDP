@@ -1,0 +1,611 @@
+{
+  "status": "OFFICIAL_ZERO_SHOT_AGGREGATE_PASS",
+  "campaign": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+  "generated_utc": "2026-09-22T19:48:07.867222Z",
+  "branch_identity": "OFFICIAL_8_GROUP_NATIVE",
+  "old_anchor_schema_mixed": false,
+  "tasks": [
+    "openbookqa",
+    "hellaswag",
+    "piqa",
+    "arc_easy",
+    "arc_challenge",
+    "winogrande"
+  ],
+  "ratios": {
+    "0.7": {
+      "methods": {
+        "fisher": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.5755237811947204,
+          "task_accuracy": {
+            "openbookqa": 0.328,
+            "hellaswag": 0.5339573790081658,
+            "piqa": 0.7752992383025027,
+            "arc_easy": 0.6999158249158249,
+            "arc_challenge": 0.4308873720136519,
+            "winogrande": 0.6850828729281768
+          },
+          "resource": {
+            "decode_cache_bytes": 752877568,
+            "factor_bytes_fp16": 1693974528,
+            "prefill_cache_bytes": 752877568,
+            "total_native_rank": 183808
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": null,
+          "allocation_semantics_sha256": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/results/fisher_0p7_ratio_0.7_fisher_uniform.json",
+          "schedule_sha256": "25cf3376ffe53b3960b5f76fa5df09e8dc7a2665e260095b481d18987b8121c5",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p7/fisher/zeroshot.json",
+          "result_sha256": "1dd4c403f99cebce41fc3f28b8c61c54f8c52ff59569ebb2b52075d5f4647ef0",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": 0.0
+        },
+        "fdp_prior": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.5755237811947204,
+          "task_accuracy": {
+            "openbookqa": 0.328,
+            "hellaswag": 0.5339573790081658,
+            "piqa": 0.7752992383025027,
+            "arc_easy": 0.6999158249158249,
+            "arc_challenge": 0.4308873720136519,
+            "winogrande": 0.6850828729281768
+          },
+          "resource": {
+            "decode_cache_bytes": 752877568,
+            "factor_bytes_fp16": 1693974528,
+            "prefill_cache_bytes": 752877568,
+            "total_native_rank": 183808
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": 0,
+          "allocation_semantics_sha256": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p7/fdp_prior/final_schedule.json",
+          "schedule_sha256": "c6c45c735a459954cfc312a8be9360ef164c88407027fb1ab21ea0631eba64af",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p7/fdp_prior/zeroshot.json",
+          "result_sha256": "30571f965c5a5d664bcec8e87eae329dcb318043ef21b3661c8747ef63801185",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": 0.0
+        },
+        "fdp_native": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.5754277130164857,
+          "task_accuracy": {
+            "openbookqa": 0.324,
+            "hellaswag": 0.5345548695478988,
+            "piqa": 0.7774755168661589,
+            "arc_easy": 0.7007575757575758,
+            "arc_challenge": 0.4283276450511945,
+            "winogrande": 0.6874506708760852
+          },
+          "resource": {
+            "decode_cache_bytes": 752877568,
+            "factor_bytes_fp16": 1693974528,
+            "prefill_cache_bytes": 752877568,
+            "total_native_rank": 183808
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": 7,
+          "allocation_semantics_sha256": "96f6cbb8a53025536edfaafc184ac20f02c89a228bc9a107fee9c0accfd10cba",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p7/fdp_native/final_schedule.json",
+          "schedule_sha256": "771a10486413bac476aa30122781a82f1e097101c2f99731008e936dd1af9d33",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p7/fdp_native/zeroshot.json",
+          "result_sha256": "2ea46028e5fad215de7d2919072ffd74310f3d8d622fd39ffc9e47b8de32b1b5",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": -9.606817823470948e-05
+        },
+        "prior_equivalence": {
+          "status": "PRIOR_EQUIVALENT_TO_FISHER",
+          "classification": "EQUIVALENT_NO_ACTION",
+          "accepted_transfer_count": 0,
+          "allocation_identical": true,
+          "allocation_semantics_sha256_fisher": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+          "allocation_semantics_sha256_prior": "0a49ee949ae0e86e1b08beeea08fab1632b178c4b0f39dfe3c33bd6bc58b82c6",
+          "schedule_file_sha_equal": false,
+          "same_runtime_evaluator_dataset_seed": true
+        }
+      },
+      "resource": {
+        "decode_cache_bytes": 752877568,
+        "factor_bytes_fp16": 1693974528,
+        "prefill_cache_bytes": 752877568,
+        "total_native_rank": 183808
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "task_order": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "uncertainty": "POINT_ESTIMATE_ONLY_NO_PAIRED_SAMPLE_PREDICTIONS"
+    },
+    "0.5": {
+      "methods": {
+        "fisher": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.5491213689702027,
+          "task_accuracy": {
+            "openbookqa": 0.308,
+            "hellaswag": 0.5064728141804421,
+            "piqa": 0.7600652883569097,
+            "arc_easy": 0.6502525252525253,
+            "arc_challenge": 0.39590443686006827,
+            "winogrande": 0.6740331491712708
+          },
+          "resource": {
+            "decode_cache_bytes": 536870912,
+            "factor_bytes_fp16": 1207959552,
+            "prefill_cache_bytes": 536870912,
+            "total_native_rank": 131072
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": null,
+          "allocation_semantics_sha256": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/results/fisher_0p5_ratio_0.5_fisher_uniform.json",
+          "schedule_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/fisher/zeroshot.json",
+          "result_sha256": "3110a39ee244c1801b1ba47d531a638d899648c786f8c579807bdf4be0ff0766",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": 0.0
+        },
+        "fdp_prior": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.5497334167565495,
+          "task_accuracy": {
+            "openbookqa": 0.308,
+            "hellaswag": 0.5072694682334197,
+            "piqa": 0.7600652883569097,
+            "arc_easy": 0.648989898989899,
+            "arc_challenge": 0.3984641638225256,
+            "winogrande": 0.675611681136543
+          },
+          "resource": {
+            "decode_cache_bytes": 536870912,
+            "factor_bytes_fp16": 1207959552,
+            "prefill_cache_bytes": 536870912,
+            "total_native_rank": 131072
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": 5,
+          "allocation_semantics_sha256": "f617e8b82c252b2cc978f48ad68c4f306a6f4c549e661dfcad28430e54d62b9d",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/fdp_prior/final_schedule.json",
+          "schedule_sha256": "3cc98560d77a69ff9db7ebfb14daf67088b729deca7b1ed8c013253c6df35b22",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/fdp_prior/zeroshot.json",
+          "result_sha256": "cb811398cc4643d1451cdbbdc5b1c44fde1e7010a17cf0f557ad57d0c1ee41b8",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": 0.0006120477863468254
+        },
+        "fdp_native": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.5485299301367295,
+          "task_accuracy": {
+            "openbookqa": 0.308,
+            "hellaswag": 0.5064728141804421,
+            "piqa": 0.7584330794341676,
+            "arc_easy": 0.6468855218855218,
+            "arc_challenge": 0.39419795221843,
+            "winogrande": 0.6771902131018153
+          },
+          "resource": {
+            "decode_cache_bytes": 536870912,
+            "factor_bytes_fp16": 1207959552,
+            "prefill_cache_bytes": 536870912,
+            "total_native_rank": 131072
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": 10,
+          "allocation_semantics_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/fdp_native/final_schedule.json",
+          "schedule_sha256": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/fdp_native/zeroshot.json",
+          "result_sha256": "3d162040fac27e4523791dbc9110d46ca4e24ba44a309eaa7db958d15b286c8e",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": -0.0005914388334732346
+        },
+        "random_0": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.5504191187399766,
+          "task_accuracy": {
+            "openbookqa": 0.308,
+            "hellaswag": 0.506970722963553,
+            "piqa": 0.7595212187159956,
+            "arc_easy": 0.6515151515151515,
+            "arc_challenge": 0.3993174061433447,
+            "winogrande": 0.6771902131018153
+          },
+          "resource": {
+            "decode_cache_bytes": 536870912,
+            "factor_bytes_fp16": 1207959552,
+            "prefill_cache_bytes": 536870912,
+            "total_native_rank": 131072
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": 1,
+          "allocation_semantics_sha256": "ee363f86653ca99ef42cf3bc15dab1b77b2c2fc495fedbf1e571c10733db494a",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/random_0/final_schedule.json",
+          "schedule_sha256": "287cbd4fe9091afa60c9dd9578cc4b1e8df7d782c6f0662f0161189ebacd70d3",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/random_0/zeroshot.json",
+          "result_sha256": "b9e66b8315700a423d57bb843a2e425200dd67ec83aff4d169b84d73300ae823",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": 0.001297749769773926
+        },
+        "random_1": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.548795101304249,
+          "task_accuracy": {
+            "openbookqa": 0.308,
+            "hellaswag": 0.5073690499900418,
+            "piqa": 0.7584330794341676,
+            "arc_easy": 0.6506734006734006,
+            "arc_challenge": 0.39505119453924914,
+            "winogrande": 0.6732438831886346
+          },
+          "resource": {
+            "decode_cache_bytes": 536870912,
+            "factor_bytes_fp16": 1207959552,
+            "prefill_cache_bytes": 536870912,
+            "total_native_rank": 131072
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": 3,
+          "allocation_semantics_sha256": "490e13ab65feec288857a5ca91a0eb616143427f7441e37e314224efb806d10b",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/random_1/final_schedule.json",
+          "schedule_sha256": "4091d75a03ef8160b6d25d11b9102d1600e0766066046eda1ea981ad09f72013",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/random_1/zeroshot.json",
+          "result_sha256": "dd469ecddec836d0337c819faee045ac8d32f383bdcb8daa9742040fecc19b72",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": -0.0003262676659536723
+        },
+        "random_2": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.5493601671953439,
+          "task_accuracy": {
+            "openbookqa": 0.308,
+            "hellaswag": 0.5068711412069309,
+            "piqa": 0.7595212187159956,
+            "arc_easy": 0.6502525252525253,
+            "arc_challenge": 0.39590443686006827,
+            "winogrande": 0.675611681136543
+          },
+          "resource": {
+            "decode_cache_bytes": 536870912,
+            "factor_bytes_fp16": 1207959552,
+            "prefill_cache_bytes": 536870912,
+            "total_native_rank": 131072
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": 3,
+          "allocation_semantics_sha256": "491ff7d7b15bbd1415883d3c6f2b609d12b57cb3eeb6d2986b3c453bc98a3e97",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/random_2/final_schedule.json",
+          "schedule_sha256": "0c2a92b94473f2020457b1420f6ff628c937148de0658c4420a92d72e03b1f81",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p5/random_2/zeroshot.json",
+          "result_sha256": "b0932a69368a93f37d975d502c5239619e0c214911f1a7615c0912500c08eab5",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": 0.000238798225141168
+        },
+        "prior_equivalence": {
+          "status": "ALLOCATION_CHANGED_OR_REQUIRES_REVIEW",
+          "classification": "NON_EQUIVALENT",
+          "accepted_transfer_count": 5,
+          "allocation_identical": false,
+          "allocation_semantics_sha256_fisher": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+          "allocation_semantics_sha256_prior": "f617e8b82c252b2cc978f48ad68c4f306a6f4c549e661dfcad28430e54d62b9d",
+          "schedule_file_sha_equal": false,
+          "same_runtime_evaluator_dataset_seed": true
+        },
+        "random_summary": {
+          "mean_macro": 0.5495247957465231,
+          "min_macro": 0.548795101304249,
+          "max_macro": 0.5504191187399766,
+          "individual_macros": [
+            0.5504191187399766,
+            0.548795101304249,
+            0.5493601671953439
+          ],
+          "scope": "THREE_SEED_POINT_ESTIMATES_NO_SAMPLE_LEVEL_CI"
+        }
+      },
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "task_order": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "uncertainty": "POINT_ESTIMATE_ONLY_NO_PAIRED_SAMPLE_PREDICTIONS"
+    },
+    "0.3": {
+      "methods": {
+        "fisher": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.449637458931458,
+          "task_accuracy": {
+            "openbookqa": 0.216,
+            "hellaswag": 0.3980282812188807,
+            "piqa": 0.6822633297062024,
+            "arc_easy": 0.5105218855218855,
+            "arc_challenge": 0.2832764505119454,
+            "winogrande": 0.6077348066298343
+          },
+          "resource": {
+            "decode_cache_bytes": 322961408,
+            "factor_bytes_fp16": 726663168,
+            "prefill_cache_bytes": 322961408,
+            "total_native_rank": 78848
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": null,
+          "allocation_semantics_sha256": "37b7c0029391543b610f8069fd01b2b34545ccf079c40e7fba102eb13f5dde1f",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/results/fisher_0p3_ratio_0.3_fisher_uniform.json",
+          "schedule_sha256": "ab3a9941e71947adc0623972c4f7b6f6226b3e664cfe6529a73af05f9ec596c6",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p3/fisher/zeroshot.json",
+          "result_sha256": "a8d3e9504767fa3c6e4480fb4a90cf0437443be676d1e5e2c4afdf425c637ede",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": 0.0
+        },
+        "fdp_prior": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.44889264426504516,
+          "task_accuracy": {
+            "openbookqa": 0.21,
+            "hellaswag": 0.40061740689105757,
+            "piqa": 0.6838955386289445,
+            "arc_easy": 0.5075757575757576,
+            "arc_challenge": 0.28668941979522183,
+            "winogrande": 0.6045777426992897
+          },
+          "resource": {
+            "decode_cache_bytes": 322961408,
+            "factor_bytes_fp16": 726663168,
+            "prefill_cache_bytes": 322961408,
+            "total_native_rank": 78848
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": 8,
+          "allocation_semantics_sha256": "0de95ff201019ffd6be714bf6d4169100085d53149c1381e9b0f41dfd9b21483",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p3/fdp_prior/final_schedule.json",
+          "schedule_sha256": "4e2c61952642c92b1683f6ad02329d5566f5299c66de12d2951ad71d32275b51",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p3/fdp_prior/zeroshot.json",
+          "result_sha256": "90b530ebdf97539b5a5eb7271ced4f294486478e75cc0593bcded06bc307abae",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": -0.0007448146664128519
+        },
+        "fdp_native": {
+          "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+          "macro_accuracy": 0.45201671314741726,
+          "task_accuracy": {
+            "openbookqa": 0.208,
+            "hellaswag": 0.40509858593905596,
+            "piqa": 0.6898803046789989,
+            "arc_easy": 0.5109427609427609,
+            "arc_challenge": 0.2841296928327645,
+            "winogrande": 0.6140489344909235
+          },
+          "resource": {
+            "decode_cache_bytes": 322961408,
+            "factor_bytes_fp16": 726663168,
+            "prefill_cache_bytes": 322961408,
+            "total_native_rank": 78848
+          },
+          "resource_match": "EXACT",
+          "accepted_transfer_count": 15,
+          "allocation_semantics_sha256": "6c7ee97a1b4210782db59519a23ea6bc0857f24dc3167bc8f9f2953a2e7aef27",
+          "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p3/fdp_native/final_schedule.json",
+          "schedule_sha256": "4dbfa812a8bc3932995c6b82385932b486d03f96a786f9d370210de1ac500d14",
+          "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot/ratio_0p3/fdp_native/zeroshot.json",
+          "result_sha256": "780d05311e4833bdd2f5c0671ff9b2e1d107c82c5ea61174bdba99eeaac7ca86",
+          "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+          "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+          "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+          "old_anchor_schema_zero_shot_used": false,
+          "delta_vs_fisher": 0.002379254215959248
+        },
+        "prior_equivalence": {
+          "status": "ALLOCATION_CHANGED_OR_REQUIRES_REVIEW",
+          "classification": "NON_EQUIVALENT",
+          "accepted_transfer_count": 8,
+          "allocation_identical": false,
+          "allocation_semantics_sha256_fisher": "37b7c0029391543b610f8069fd01b2b34545ccf079c40e7fba102eb13f5dde1f",
+          "allocation_semantics_sha256_prior": "0de95ff201019ffd6be714bf6d4169100085d53149c1381e9b0f41dfd9b21483",
+          "schedule_file_sha_equal": false,
+          "same_runtime_evaluator_dataset_seed": true
+        }
+      },
+      "resource": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_match": "ACTUAL_RUNTIME_EXACT",
+      "task_order": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ],
+      "uncertainty": "POINT_ESTIMATE_ONLY_NO_PAIRED_SAMPLE_PREDICTIONS"
+    }
+  },
+  "protocol_lock_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_PROTOCOL_LOCK.json",
+  "protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+  "action_space_sha256": "4750f56f217c6b1643c04d57805340e6dbb2ce1f9abf9def8ab90f1430aa1887",
+  "action_space_semantic_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "q_group_mapping_sha256": "612359292eb09bb5a7bf67716148b35ccc149bc2b7708359357c8e4cd089567c",
+  "frozen_q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "formal_uncertainty": "POINT_ESTIMATE_ONLY_NO_PAIRED_CI",
+  "checks": [
+    {
+      "check": "0.7/fisher_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.7/fisher_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.7/fdp_prior_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.7/fdp_prior_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.7/fdp_native_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.7/fdp_native_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.7/prior_equivalence_audit",
+      "pass": true,
+      "equivalent": true
+    },
+    {
+      "check": "0.7/official_lineage_no_anchor_mixing",
+      "pass": true
+    },
+    {
+      "check": "0.5/fisher_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.5/fisher_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.5/fdp_prior_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.5/fdp_prior_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.5/fdp_native_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.5/fdp_native_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.5/random_0_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.5/random_0_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.5/random_1_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.5/random_1_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.5/random_2_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.5/random_2_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.5/prior_equivalence_audit",
+      "pass": true,
+      "equivalent": false
+    },
+    {
+      "check": "0.5/official_lineage_no_anchor_mixing",
+      "pass": true
+    },
+    {
+      "check": "0.3/fisher_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.3/fisher_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.3/fdp_prior_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.3/fdp_prior_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.3/fdp_native_macro_recomputed",
+      "pass": true
+    },
+    {
+      "check": "0.3/fdp_native_schedule_sha",
+      "pass": true
+    },
+    {
+      "check": "0.3/prior_equivalence_audit",
+      "pass": true,
+      "equivalent": false
+    },
+    {
+      "check": "0.3/official_lineage_no_anchor_mixing",
+      "pass": true
+    }
+  ],
+  "foreign_jobs_interrupted": 0
+}

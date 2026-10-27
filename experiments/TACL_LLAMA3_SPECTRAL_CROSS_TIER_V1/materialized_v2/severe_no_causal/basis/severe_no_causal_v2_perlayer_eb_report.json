@@ -1,0 +1,3993 @@
+{
+  "model": "/diskD/jiaqizhang/Llama-3",
+  "data_dir": "/home/bai-project/jiaqizhang/wikitext2",
+  "budgets": [
+    0.09305876924047846,
+    0.11803973288923454,
+    0.06101404092375882,
+    0.08196793567680997,
+    0.08779080200283705,
+    0.06293703499516008,
+    0.07417593488916928,
+    0.07806658146307342,
+    0.07794375350811378,
+    0.07697354741324555,
+    0.07514078815580189,
+    0.08020024687606664,
+    0.06464337052112205,
+    0.0866982023794301,
+    0.08777748199418905,
+    0.08279610093582326,
+    0.0793317031777925,
+    0.08398404235356188,
+    0.1008716280732831,
+    0.09408306718506833,
+    0.12062200872690819,
+    0.10961792981447283,
+    0.1113899540644602,
+    0.11053187248708808,
+    0.10872169660825735,
+    0.12280974323386842,
+    0.11425425904819633,
+    0.10552605240674678,
+    0.11087658757039473,
+    0.11819356794186683,
+    0.11547365734204565,
+    0.1152949842121259
+  ],
+  "arch": "llama",
+  "mode": {
+    "per_layer_eb": true,
+    "freeze_layer0_eb": true,
+    "layer0_eb": 0.09305876924047846,
+    "per_layer_eb_json": "/diskF/jiaqizhang/fdp_v2_fulltrace_scratch/severe_no_causal_eb.json"
+  },
+  "num_attention_heads": 32,
+  "num_key_value_heads": 8,
+  "head_dim_attn": 128,
+  "head_dim_kv": 512,
+  "attn_implementation": "eager",
+  "device_map": "single",
+  "attention_mask_cached_dim": [
+    1,
+    1,
+    2048,
+    2048
+  ],
+  "search_config": {
+    "svd_threshold_init": 1.0,
+    "svd_threshold_floor": 0.3,
+    "threshold_step": 0.02,
+    "min_rank": 64,
+    "nsamples": 512,
+    "seqlen": 2048
+  },
+  "layers": [
+    {
+      "layer": 0,
+      "runs": [
+        {
+          "error_budget": 0.09305876924047846,
+          "threshold_final": 0.98,
+          "rank_kq_final": 808,
+          "rank_v_final": 992,
+          "layer_error": 0.056111811815547925,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.015028193465595033,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 808,
+              "raw_rank_v": 992,
+              "rank_kq": 808,
+              "rank_v": 992,
+              "err": 0.056111811815547925,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 656,
+              "raw_rank_v": 960,
+              "rank_kq": 656,
+              "rank_v": 960,
+              "err": 0.09310511428860502,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 101,
+            "energy_approx": 0.9798479676246643
+          }
+        }
+      ]
+    },
+    {
+      "layer": 1,
+      "runs": [
+        {
+          "error_budget": 0.11803973288923454,
+          "threshold_final": 0.8999999999999999,
+          "rank_kq_final": 384,
+          "rank_v_final": 872,
+          "layer_error": 0.05367862341436627,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.004408403932243669,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 816,
+              "raw_rank_v": 992,
+              "rank_kq": 816,
+              "rank_v": 992,
+              "err": 0.020875408492826403,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 680,
+              "raw_rank_v": 960,
+              "rank_kq": 680,
+              "rank_v": 960,
+              "err": 0.024867951706020592,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 568,
+              "raw_rank_v": 928,
+              "rank_kq": 568,
+              "rank_v": 928,
+              "err": 0.02729496828742197,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 472,
+              "raw_rank_v": 896,
+              "rank_kq": 472,
+              "rank_v": 896,
+              "err": 0.04121132289647006,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 384,
+              "raw_rank_v": 872,
+              "rank_kq": 384,
+              "rank_v": 872,
+              "err": 0.05367862341436627,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 304,
+              "raw_rank_v": 840,
+              "rank_kq": 304,
+              "rank_v": 840,
+              "err": 0.12438422204055502,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 48,
+            "energy_approx": 0.8995918035507202
+          }
+        }
+      ]
+    },
+    {
+      "layer": 2,
+      "runs": [
+        {
+          "error_budget": 0.06101404092375882,
+          "threshold_final": 0.7399999999999998,
+          "rank_kq_final": 160,
+          "rank_v_final": 640,
+          "layer_error": 0.060401140198108896,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1016,
+              "rank_kq": 1016,
+              "rank_v": 1016,
+              "err": 0.005090102939157021,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 984,
+              "rank_kq": 896,
+              "rank_v": 984,
+              "err": 0.010837103123204817,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 800,
+              "raw_rank_v": 952,
+              "rank_kq": 800,
+              "rank_v": 952,
+              "err": 0.018248116060478308,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 720,
+              "raw_rank_v": 920,
+              "rank_kq": 720,
+              "rank_v": 920,
+              "err": 0.025663127771375558,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 648,
+              "raw_rank_v": 888,
+              "rank_kq": 648,
+              "rank_v": 888,
+              "err": 0.029163772915306273,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 576,
+              "raw_rank_v": 864,
+              "rank_kq": 576,
+              "rank_v": 864,
+              "err": 0.032416370516123706,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 520,
+              "raw_rank_v": 832,
+              "rank_kq": 520,
+              "rank_v": 832,
+              "err": 0.03779958019232683,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 456,
+              "raw_rank_v": 800,
+              "rank_kq": 456,
+              "rank_v": 800,
+              "err": 0.041158164962691327,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 400,
+              "raw_rank_v": 776,
+              "rank_kq": 400,
+              "rank_v": 776,
+              "err": 0.04587437282646425,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 344,
+              "raw_rank_v": 744,
+              "rank_kq": 344,
+              "rank_v": 744,
+              "err": 0.049506670706517375,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 296,
+              "raw_rank_v": 720,
+              "rank_kq": 296,
+              "rank_v": 720,
+              "err": 0.05212990094053806,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 248,
+              "raw_rank_v": 688,
+              "rank_kq": 248,
+              "rank_v": 688,
+              "err": 0.05591356761586236,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 200,
+              "raw_rank_v": 664,
+              "rank_kq": 200,
+              "rank_v": 664,
+              "err": 0.058497796880489186,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 160,
+              "raw_rank_v": 640,
+              "rank_kq": 160,
+              "rank_v": 640,
+              "err": 0.060401140198108896,
+              "reused_err": false
+            },
+            {
+              "iter": 14,
+              "threshold": 0.7199999999999998,
+              "raw_rank_k": 120,
+              "raw_rank_v": 608,
+              "rank_kq": 120,
+              "rank_v": 608,
+              "err": 0.06281316887146092,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 20,
+            "energy_approx": 0.7392783761024475
+          }
+        }
+      ]
+    },
+    {
+      "layer": 3,
+      "runs": [
+        {
+          "error_budget": 0.08196793567680997,
+          "threshold_final": 0.8599999999999999,
+          "rank_kq_final": 408,
+          "rank_v_final": 824,
+          "layer_error": 0.07813431711916137,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.0027662772190286096,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.019301936024023397,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 800,
+              "raw_rank_v": 960,
+              "rank_kq": 800,
+              "rank_v": 960,
+              "err": 0.033063063415078094,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 712,
+              "raw_rank_v": 936,
+              "rank_kq": 712,
+              "rank_v": 936,
+              "err": 0.04688908940051013,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 632,
+              "raw_rank_v": 904,
+              "rank_kq": 632,
+              "rank_v": 904,
+              "err": 0.05470002961484878,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 552,
+              "raw_rank_v": 880,
+              "rank_kq": 552,
+              "rank_v": 880,
+              "err": 0.06319614629582591,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 480,
+              "raw_rank_v": 848,
+              "rank_kq": 480,
+              "rank_v": 848,
+              "err": 0.07145780820445327,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 408,
+              "raw_rank_v": 824,
+              "rank_kq": 408,
+              "rank_v": 824,
+              "err": 0.07813431711916137,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 344,
+              "raw_rank_v": 792,
+              "rank_kq": 344,
+              "rank_v": 792,
+              "err": 0.0880277695493045,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 51,
+            "energy_approx": 0.8585776090621948
+          }
+        }
+      ]
+    },
+    {
+      "layer": 4,
+      "runs": [
+        {
+          "error_budget": 0.08779080200283705,
+          "threshold_final": 0.8999999999999999,
+          "rank_kq_final": 520,
+          "rank_v_final": 872,
+          "layer_error": 0.07187651955783787,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1024,
+              "raw_rank_v": 1024,
+              "rank_kq": 1024,
+              "rank_v": 1024,
+              "err": 0.0023970742976343567,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 880,
+              "raw_rank_v": 992,
+              "rank_kq": 880,
+              "rank_v": 992,
+              "err": 0.01957386442653934,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 776,
+              "raw_rank_v": 960,
+              "rank_kq": 776,
+              "rank_v": 960,
+              "err": 0.03278841775415325,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 680,
+              "raw_rank_v": 928,
+              "rank_kq": 680,
+              "rank_v": 928,
+              "err": 0.04635379587615743,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 600,
+              "raw_rank_v": 904,
+              "rank_kq": 600,
+              "rank_v": 904,
+              "err": 0.058781203046146195,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 520,
+              "raw_rank_v": 872,
+              "rank_kq": 520,
+              "rank_v": 872,
+              "err": 0.07187651955783787,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 448,
+              "raw_rank_v": 840,
+              "rank_kq": 448,
+              "rank_v": 840,
+              "err": 0.08779659743477017,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 65,
+            "energy_approx": 0.8985253572463989
+          }
+        }
+      ]
+    },
+    {
+      "layer": 5,
+      "runs": [
+        {
+          "error_budget": 0.06293703499516008,
+          "threshold_final": 0.9199999999999999,
+          "rank_kq_final": 608,
+          "rank_v_final": 880,
+          "layer_error": 0.053606423533764845,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1024,
+              "raw_rank_v": 1024,
+              "rank_kq": 1024,
+              "rank_v": 1024,
+              "err": 0.0024317614654384913,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 872,
+              "raw_rank_v": 984,
+              "rank_kq": 872,
+              "rank_v": 984,
+              "err": 0.02082628854465617,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 776,
+              "raw_rank_v": 952,
+              "rank_kq": 776,
+              "rank_v": 952,
+              "err": 0.03051402031844119,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 688,
+              "raw_rank_v": 912,
+              "rank_kq": 688,
+              "rank_v": 912,
+              "err": 0.041311799792338184,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 608,
+              "raw_rank_v": 880,
+              "rank_kq": 608,
+              "rank_v": 880,
+              "err": 0.053606423533764845,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 544,
+              "raw_rank_v": 848,
+              "rank_kq": 544,
+              "rank_v": 848,
+              "err": 0.06401077079687044,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 76,
+            "energy_approx": 0.9180527329444885
+          }
+        }
+      ]
+    },
+    {
+      "layer": 6,
+      "runs": [
+        {
+          "error_budget": 0.07417593488916928,
+          "threshold_final": 0.9199999999999999,
+          "rank_kq_final": 624,
+          "rank_v_final": 904,
+          "layer_error": 0.06511518101471395,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.004034076148280603,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.022836777040039242,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 960,
+              "rank_kq": 792,
+              "rank_v": 960,
+              "err": 0.03861489050885058,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 704,
+              "raw_rank_v": 936,
+              "rank_kq": 704,
+              "rank_v": 936,
+              "err": 0.05233991501506189,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 624,
+              "raw_rank_v": 904,
+              "rank_kq": 624,
+              "rank_v": 904,
+              "err": 0.06511518101471395,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 552,
+              "raw_rank_v": 880,
+              "rank_kq": 552,
+              "rank_v": 880,
+              "err": 0.07516146666401398,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 78,
+            "energy_approx": 0.9186334013938904
+          }
+        }
+      ]
+    },
+    {
+      "layer": 7,
+      "runs": [
+        {
+          "error_budget": 0.07806658146307342,
+          "threshold_final": 0.8999999999999999,
+          "rank_kq_final": 560,
+          "rank_v_final": 864,
+          "layer_error": 0.07420742105935865,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.005155876894555145,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 984,
+              "rank_kq": 896,
+              "rank_v": 984,
+              "err": 0.02639697532658728,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 952,
+              "rank_kq": 792,
+              "rank_v": 952,
+              "err": 0.042253294944422704,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 712,
+              "raw_rank_v": 920,
+              "rank_kq": 712,
+              "rank_v": 920,
+              "err": 0.0551903292369868,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 632,
+              "raw_rank_v": 888,
+              "rank_kq": 632,
+              "rank_v": 888,
+              "err": 0.065701688126381,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 560,
+              "raw_rank_v": 864,
+              "rank_kq": 560,
+              "rank_v": 864,
+              "err": 0.07420742105935865,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 488,
+              "raw_rank_v": 832,
+              "rank_kq": 488,
+              "rank_v": 832,
+              "err": 0.08186504555482729,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 70,
+            "energy_approx": 0.8990438580513
+          }
+        }
+      ]
+    },
+    {
+      "layer": 8,
+      "runs": [
+        {
+          "error_budget": 0.07794375350811378,
+          "threshold_final": 0.8799999999999999,
+          "rank_kq_final": 488,
+          "rank_v_final": 848,
+          "layer_error": 0.07063051905929507,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1024,
+              "raw_rank_v": 1024,
+              "rank_kq": 1024,
+              "rank_v": 1024,
+              "err": 0.003109591626524535,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 880,
+              "raw_rank_v": 992,
+              "rank_kq": 880,
+              "rank_v": 992,
+              "err": 0.020362038943852478,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 784,
+              "raw_rank_v": 960,
+              "rank_kq": 784,
+              "rank_v": 960,
+              "err": 0.03138257796702342,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 696,
+              "raw_rank_v": 928,
+              "rank_kq": 696,
+              "rank_v": 928,
+              "err": 0.0411709590275267,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 624,
+              "raw_rank_v": 904,
+              "rank_kq": 624,
+              "rank_v": 904,
+              "err": 0.051499687508125676,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 552,
+              "raw_rank_v": 872,
+              "rank_kq": 552,
+              "rank_v": 872,
+              "err": 0.06040770397793729,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 488,
+              "raw_rank_v": 848,
+              "rank_kq": 488,
+              "rank_v": 848,
+              "err": 0.07063051905929507,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 432,
+              "raw_rank_v": 816,
+              "rank_kq": 432,
+              "rank_v": 816,
+              "err": 0.07823414945332956,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 61,
+            "energy_approx": 0.8778036236763
+          }
+        }
+      ]
+    },
+    {
+      "layer": 9,
+      "runs": [
+        {
+          "error_budget": 0.07697354741324555,
+          "threshold_final": 0.8999999999999999,
+          "rank_kq_final": 560,
+          "rank_v_final": 864,
+          "layer_error": 0.06980716845774199,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.004379862423658295,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 888,
+              "raw_rank_v": 992,
+              "rank_kq": 888,
+              "rank_v": 992,
+              "err": 0.02524417824875456,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 960,
+              "rank_kq": 792,
+              "rank_v": 960,
+              "err": 0.03729340726251694,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 704,
+              "raw_rank_v": 928,
+              "rank_kq": 704,
+              "rank_v": 928,
+              "err": 0.048347812495790655,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 632,
+              "raw_rank_v": 896,
+              "rank_kq": 632,
+              "rank_v": 896,
+              "err": 0.05794491718335135,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 560,
+              "raw_rank_v": 864,
+              "rank_kq": 560,
+              "rank_v": 864,
+              "err": 0.06980716845774199,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 496,
+              "raw_rank_v": 840,
+              "rank_kq": 496,
+              "rank_v": 840,
+              "err": 0.07816690542189712,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 70,
+            "energy_approx": 0.8983749747276306
+          }
+        }
+      ]
+    },
+    {
+      "layer": 10,
+      "runs": [
+        {
+          "error_budget": 0.07514078815580189,
+          "threshold_final": 0.8799999999999999,
+          "rank_kq_final": 496,
+          "rank_v_final": 840,
+          "layer_error": 0.07001657586929311,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.0041004619813452105,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 888,
+              "raw_rank_v": 984,
+              "rank_kq": 888,
+              "rank_v": 984,
+              "err": 0.02273902677951098,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 784,
+              "raw_rank_v": 960,
+              "rank_kq": 784,
+              "rank_v": 960,
+              "err": 0.03282847131760839,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 696,
+              "raw_rank_v": 928,
+              "rank_kq": 696,
+              "rank_v": 928,
+              "err": 0.04276971354293834,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 624,
+              "raw_rank_v": 896,
+              "rank_kq": 624,
+              "rank_v": 896,
+              "err": 0.051492668394033256,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 560,
+              "raw_rank_v": 864,
+              "rank_kq": 560,
+              "rank_v": 864,
+              "err": 0.06193332104553172,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 496,
+              "raw_rank_v": 840,
+              "rank_kq": 496,
+              "rank_v": 840,
+              "err": 0.07001657586929311,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 448,
+              "raw_rank_v": 808,
+              "rank_kq": 448,
+              "rank_v": 808,
+              "err": 0.07704885755011996,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 62,
+            "energy_approx": 0.8773895502090454
+          }
+        }
+      ]
+    },
+    {
+      "layer": 11,
+      "runs": [
+        {
+          "error_budget": 0.08020024687606664,
+          "threshold_final": 0.8599999999999999,
+          "rank_kq_final": 464,
+          "rank_v_final": 808,
+          "layer_error": 0.07798721554770796,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1024,
+              "raw_rank_v": 1024,
+              "rank_kq": 1024,
+              "rank_v": 1024,
+              "err": 0.0032473309574602397,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 888,
+              "raw_rank_v": 984,
+              "rank_kq": 888,
+              "rank_v": 984,
+              "err": 0.02219395292899455,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 800,
+              "raw_rank_v": 952,
+              "rank_kq": 800,
+              "rank_v": 952,
+              "err": 0.0322576022066797,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 720,
+              "raw_rank_v": 928,
+              "rank_kq": 720,
+              "rank_v": 928,
+              "err": 0.0420152800741481,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 648,
+              "raw_rank_v": 896,
+              "rank_kq": 648,
+              "rank_v": 896,
+              "err": 0.05173344281544725,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 576,
+              "raw_rank_v": 864,
+              "rank_kq": 576,
+              "rank_v": 864,
+              "err": 0.06225823062229005,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 520,
+              "raw_rank_v": 840,
+              "rank_kq": 520,
+              "rank_v": 840,
+              "err": 0.06942106968711839,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 464,
+              "raw_rank_v": 808,
+              "rank_kq": 464,
+              "rank_v": 808,
+              "err": 0.07798721554770796,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 408,
+              "raw_rank_v": 784,
+              "rank_kq": 408,
+              "rank_v": 784,
+              "err": 0.08757226263686121,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 58,
+            "energy_approx": 0.859798014163971
+          }
+        }
+      ]
+    },
+    {
+      "layer": 12,
+      "runs": [
+        {
+          "error_budget": 0.06464337052112205,
+          "threshold_final": 0.94,
+          "rank_kq_final": 704,
+          "rank_v_final": 928,
+          "layer_error": 0.05554985326786408,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.004699049927382085,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.026610754915865835,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 960,
+              "rank_kq": 792,
+              "rank_v": 960,
+              "err": 0.04410188413658608,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 704,
+              "raw_rank_v": 928,
+              "rank_kq": 704,
+              "rank_v": 928,
+              "err": 0.05554985326786408,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 624,
+              "raw_rank_v": 904,
+              "rank_kq": 624,
+              "rank_v": 904,
+              "err": 0.06520453994610907,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 88,
+            "energy_approx": 0.9385159015655518
+          }
+        }
+      ]
+    },
+    {
+      "layer": 13,
+      "runs": [
+        {
+          "error_budget": 0.0866982023794301,
+          "threshold_final": 0.8599999999999999,
+          "rank_kq_final": 448,
+          "rank_v_final": 832,
+          "layer_error": 0.07955378449841759,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1024,
+              "raw_rank_v": 1024,
+              "rank_kq": 1024,
+              "rank_v": 1024,
+              "err": 0.0033064644605575576,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 872,
+              "raw_rank_v": 992,
+              "rank_kq": 872,
+              "rank_v": 992,
+              "err": 0.023245766378703285,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 776,
+              "raw_rank_v": 960,
+              "rank_kq": 776,
+              "rank_v": 960,
+              "err": 0.03427134913615346,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 688,
+              "raw_rank_v": 936,
+              "rank_kq": 688,
+              "rank_v": 936,
+              "err": 0.043683065216807905,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 616,
+              "raw_rank_v": 912,
+              "rank_kq": 616,
+              "rank_v": 912,
+              "err": 0.053269112647740265,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 552,
+              "raw_rank_v": 880,
+              "rank_kq": 552,
+              "rank_v": 880,
+              "err": 0.062043275918752624,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 496,
+              "raw_rank_v": 856,
+              "rank_kq": 496,
+              "rank_v": 856,
+              "err": 0.07155470629378122,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 448,
+              "raw_rank_v": 832,
+              "rank_kq": 448,
+              "rank_v": 832,
+              "err": 0.07955378449841759,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 400,
+              "raw_rank_v": 808,
+              "rank_kq": 400,
+              "rank_v": 808,
+              "err": 0.08836141010938933,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 56,
+            "energy_approx": 0.8590547442436218
+          }
+        }
+      ]
+    },
+    {
+      "layer": 14,
+      "runs": [
+        {
+          "error_budget": 0.08777748199418905,
+          "threshold_final": 0.8999999999999999,
+          "rank_kq_final": 552,
+          "rank_v_final": 872,
+          "layer_error": 0.07827803778996509,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.008750611257095336,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 880,
+              "raw_rank_v": 992,
+              "rank_kq": 880,
+              "rank_v": 992,
+              "err": 0.02691222343129889,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 776,
+              "raw_rank_v": 960,
+              "rank_kq": 776,
+              "rank_v": 960,
+              "err": 0.03975898857504708,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 696,
+              "raw_rank_v": 928,
+              "rank_kq": 696,
+              "rank_v": 928,
+              "err": 0.05297583752519073,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 616,
+              "raw_rank_v": 904,
+              "rank_kq": 616,
+              "rank_v": 904,
+              "err": 0.06667880975888546,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 552,
+              "raw_rank_v": 872,
+              "rank_kq": 552,
+              "rank_v": 872,
+              "err": 0.07827803778996509,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 488,
+              "raw_rank_v": 848,
+              "rank_kq": 488,
+              "rank_v": 848,
+              "err": 0.08934262846497527,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 69,
+            "energy_approx": 0.8989343047142029
+          }
+        }
+      ]
+    },
+    {
+      "layer": 15,
+      "runs": [
+        {
+          "error_budget": 0.08279610093582326,
+          "threshold_final": 0.8799999999999999,
+          "rank_kq_final": 496,
+          "rank_v_final": 856,
+          "layer_error": 0.07471573313260885,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.004622203653211653,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 888,
+              "raw_rank_v": 992,
+              "rank_kq": 888,
+              "rank_v": 992,
+              "err": 0.025186620680243858,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 960,
+              "rank_kq": 792,
+              "rank_v": 960,
+              "err": 0.03761334793379978,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 704,
+              "raw_rank_v": 936,
+              "rank_kq": 704,
+              "rank_v": 936,
+              "err": 0.04718113677140724,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 624,
+              "raw_rank_v": 912,
+              "rank_kq": 624,
+              "rank_v": 912,
+              "err": 0.05626504295797326,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 560,
+              "raw_rank_v": 880,
+              "rank_kq": 560,
+              "rank_v": 880,
+              "err": 0.06573933207975313,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 496,
+              "raw_rank_v": 856,
+              "rank_kq": 496,
+              "rank_v": 856,
+              "err": 0.07471573313260885,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 440,
+              "raw_rank_v": 832,
+              "rank_kq": 440,
+              "rank_v": 832,
+              "err": 0.08413376622963006,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 62,
+            "energy_approx": 0.878920316696167
+          }
+        }
+      ]
+    },
+    {
+      "layer": 16,
+      "runs": [
+        {
+          "error_budget": 0.0793317031777925,
+          "threshold_final": 0.8799999999999999,
+          "rank_kq_final": 472,
+          "rank_v_final": 848,
+          "layer_error": 0.07891694687971873,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.004429458372800088,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 880,
+              "raw_rank_v": 992,
+              "rank_kq": 880,
+              "rank_v": 992,
+              "err": 0.024562840979687642,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 776,
+              "raw_rank_v": 960,
+              "rank_kq": 776,
+              "rank_v": 960,
+              "err": 0.03639246564383482,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 688,
+              "raw_rank_v": 936,
+              "rank_kq": 688,
+              "rank_v": 936,
+              "err": 0.04605624125917146,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 608,
+              "raw_rank_v": 904,
+              "rank_kq": 608,
+              "rank_v": 904,
+              "err": 0.05679574016735713,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 536,
+              "raw_rank_v": 880,
+              "rank_kq": 536,
+              "rank_v": 880,
+              "err": 0.06984501783857382,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 472,
+              "raw_rank_v": 848,
+              "rank_kq": 472,
+              "rank_v": 848,
+              "err": 0.07891694687971873,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 416,
+              "raw_rank_v": 824,
+              "rank_kq": 416,
+              "rank_v": 824,
+              "err": 0.08709621033767677,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 59,
+            "energy_approx": 0.8786329030990601
+          }
+        }
+      ]
+    },
+    {
+      "layer": 17,
+      "runs": [
+        {
+          "error_budget": 0.08398404235356188,
+          "threshold_final": 0.8599999999999999,
+          "rank_kq_final": 448,
+          "rank_v_final": 824,
+          "layer_error": 0.07659762143493704,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1024,
+              "raw_rank_v": 1024,
+              "rank_kq": 1024,
+              "rank_v": 1024,
+              "err": 0.003378663054008092,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.020946564220312273,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 800,
+              "raw_rank_v": 960,
+              "rank_kq": 800,
+              "rank_v": 960,
+              "err": 0.03265644159852029,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 712,
+              "raw_rank_v": 936,
+              "rank_kq": 712,
+              "rank_v": 936,
+              "err": 0.041297184281386554,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 632,
+              "raw_rank_v": 904,
+              "rank_kq": 632,
+              "rank_v": 904,
+              "err": 0.049593175307880454,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 568,
+              "raw_rank_v": 880,
+              "rank_kq": 568,
+              "rank_v": 880,
+              "err": 0.05936960906654192,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 504,
+              "raw_rank_v": 856,
+              "rank_kq": 504,
+              "rank_v": 856,
+              "err": 0.06868222122383978,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 448,
+              "raw_rank_v": 824,
+              "rank_kq": 448,
+              "rank_v": 824,
+              "err": 0.07659762143493704,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 392,
+              "raw_rank_v": 800,
+              "rank_kq": 392,
+              "rank_v": 800,
+              "err": 0.08528196828488767,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 56,
+            "energy_approx": 0.8597487807273865
+          }
+        }
+      ]
+    },
+    {
+      "layer": 18,
+      "runs": [
+        {
+          "error_budget": 0.1008716280732831,
+          "threshold_final": 0.7999999999999998,
+          "rank_kq_final": 304,
+          "rank_v_final": 736,
+          "layer_error": 0.09442271935891008,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.0033634615825139887,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.017234561267935447,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 960,
+              "rank_kq": 792,
+              "rank_v": 960,
+              "err": 0.027134870055765883,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 712,
+              "raw_rank_v": 928,
+              "rank_kq": 712,
+              "rank_v": 928,
+              "err": 0.03585413294159419,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 632,
+              "raw_rank_v": 896,
+              "rank_kq": 632,
+              "rank_v": 896,
+              "err": 0.044393071224115795,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 568,
+              "raw_rank_v": 872,
+              "rank_kq": 568,
+              "rank_v": 872,
+              "err": 0.053021735914843,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 504,
+              "raw_rank_v": 840,
+              "rank_kq": 504,
+              "rank_v": 840,
+              "err": 0.06365082245302353,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 448,
+              "raw_rank_v": 816,
+              "rank_kq": 448,
+              "rank_v": 816,
+              "err": 0.0735863669782032,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 400,
+              "raw_rank_v": 792,
+              "rank_kq": 400,
+              "rank_v": 792,
+              "err": 0.08369515713842891,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 344,
+              "raw_rank_v": 760,
+              "rank_kq": 344,
+              "rank_v": 760,
+              "err": 0.09006773788455275,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 304,
+              "raw_rank_v": 736,
+              "rank_kq": 304,
+              "rank_v": 736,
+              "err": 0.09442271935891008,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 256,
+              "raw_rank_v": 712,
+              "rank_kq": 256,
+              "rank_v": 712,
+              "err": 0.10137223617606615,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 38,
+            "energy_approx": 0.7994672656059265
+          }
+        }
+      ]
+    },
+    {
+      "layer": 19,
+      "runs": [
+        {
+          "error_budget": 0.09408306718506833,
+          "threshold_final": 0.7599999999999998,
+          "rank_kq_final": 200,
+          "rank_v_final": 696,
+          "layer_error": 0.09316157219178675,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.0033564264237756925,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.015818242207237806,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 800,
+              "raw_rank_v": 960,
+              "rank_kq": 800,
+              "rank_v": 960,
+              "err": 0.024271758151334977,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 712,
+              "raw_rank_v": 936,
+              "rank_kq": 712,
+              "rank_v": 936,
+              "err": 0.03200260984619796,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 640,
+              "raw_rank_v": 904,
+              "rank_kq": 640,
+              "rank_v": 904,
+              "err": 0.03796234231214801,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 568,
+              "raw_rank_v": 880,
+              "rank_kq": 568,
+              "rank_v": 880,
+              "err": 0.04424611123860528,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 504,
+              "raw_rank_v": 848,
+              "rank_kq": 504,
+              "rank_v": 848,
+              "err": 0.04972496134632523,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 448,
+              "raw_rank_v": 824,
+              "rank_kq": 448,
+              "rank_v": 824,
+              "err": 0.05650378773449341,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 392,
+              "raw_rank_v": 800,
+              "rank_kq": 392,
+              "rank_v": 800,
+              "err": 0.06340419460201156,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 336,
+              "raw_rank_v": 768,
+              "rank_kq": 336,
+              "rank_v": 768,
+              "err": 0.0709681033283661,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 288,
+              "raw_rank_v": 744,
+              "rank_kq": 288,
+              "rank_v": 744,
+              "err": 0.07787120308568345,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 240,
+              "raw_rank_v": 720,
+              "rank_kq": 240,
+              "rank_v": 720,
+              "err": 0.08687387644992307,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 200,
+              "raw_rank_v": 696,
+              "rank_kq": 200,
+              "rank_v": 696,
+              "err": 0.09316157219178675,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 160,
+              "raw_rank_v": 672,
+              "rank_kq": 160,
+              "rank_v": 672,
+              "err": 0.10158978462503404,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 25,
+            "energy_approx": 0.7577986717224121
+          }
+        }
+      ]
+    },
+    {
+      "layer": 20,
+      "runs": [
+        {
+          "error_budget": 0.12062200872690819,
+          "threshold_final": 0.6799999999999997,
+          "rank_kq_final": 72,
+          "rank_v_final": 600,
+          "layer_error": 0.11299621570952259,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.0036997187891527807,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.015231646822356544,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 800,
+              "raw_rank_v": 960,
+              "rank_kq": 800,
+              "rank_v": 960,
+              "err": 0.022538517371295926,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 712,
+              "raw_rank_v": 936,
+              "rank_kq": 712,
+              "rank_v": 936,
+              "err": 0.028340950676425638,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 632,
+              "raw_rank_v": 904,
+              "rank_kq": 632,
+              "rank_v": 904,
+              "err": 0.03495439536728768,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 568,
+              "raw_rank_v": 880,
+              "rank_kq": 568,
+              "rank_v": 880,
+              "err": 0.04212378660621333,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 504,
+              "raw_rank_v": 856,
+              "rank_kq": 504,
+              "rank_v": 856,
+              "err": 0.05161012157402812,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 448,
+              "raw_rank_v": 824,
+              "rank_kq": 448,
+              "rank_v": 824,
+              "err": 0.05840108611184666,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 392,
+              "raw_rank_v": 800,
+              "rank_kq": 392,
+              "rank_v": 800,
+              "err": 0.06512575330065025,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 344,
+              "raw_rank_v": 776,
+              "rank_kq": 344,
+              "rank_v": 776,
+              "err": 0.07440153061059256,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 296,
+              "raw_rank_v": 752,
+              "rank_kq": 296,
+              "rank_v": 752,
+              "err": 0.08692413324601486,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 256,
+              "raw_rank_v": 728,
+              "rank_kq": 256,
+              "rank_v": 728,
+              "err": 0.09046038003992304,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 208,
+              "raw_rank_v": 696,
+              "rank_kq": 208,
+              "rank_v": 696,
+              "err": 0.09111793050780245,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 176,
+              "raw_rank_v": 672,
+              "rank_kq": 176,
+              "rank_v": 672,
+              "err": 0.09326194946621397,
+              "reused_err": false
+            },
+            {
+              "iter": 14,
+              "threshold": 0.7199999999999998,
+              "raw_rank_k": 136,
+              "raw_rank_v": 648,
+              "rank_kq": 136,
+              "rank_v": 648,
+              "err": 0.09882387028522378,
+              "reused_err": false
+            },
+            {
+              "iter": 15,
+              "threshold": 0.6999999999999997,
+              "raw_rank_k": 104,
+              "raw_rank_v": 624,
+              "rank_kq": 104,
+              "rank_v": 624,
+              "err": 0.1037880104759409,
+              "reused_err": false
+            },
+            {
+              "iter": 16,
+              "threshold": 0.6799999999999997,
+              "raw_rank_k": 72,
+              "raw_rank_v": 600,
+              "rank_kq": 72,
+              "rank_v": 600,
+              "err": 0.11299621570952259,
+              "reused_err": false
+            },
+            {
+              "iter": 17,
+              "threshold": 0.6599999999999997,
+              "raw_rank_k": 56,
+              "raw_rank_v": 576,
+              "rank_kq": 56,
+              "rank_v": 576,
+              "err": 0.15374639809631022,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 9,
+            "energy_approx": 0.678118884563446
+          }
+        }
+      ]
+    },
+    {
+      "layer": 21,
+      "runs": [
+        {
+          "error_budget": 0.10961792981447283,
+          "threshold_final": 0.7199999999999998,
+          "rank_kq_final": 120,
+          "rank_v_final": 656,
+          "layer_error": 0.1083937967389567,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.00421769715402239,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.018805047963587715,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 800,
+              "raw_rank_v": 960,
+              "rank_kq": 800,
+              "rank_v": 960,
+              "err": 0.028253126529605925,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 712,
+              "raw_rank_v": 936,
+              "rank_kq": 712,
+              "rank_v": 936,
+              "err": 0.03659469432492994,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 632,
+              "raw_rank_v": 912,
+              "rank_kq": 632,
+              "rank_v": 912,
+              "err": 0.04570895452090271,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 568,
+              "raw_rank_v": 880,
+              "rank_kq": 568,
+              "rank_v": 880,
+              "err": 0.05116121267224613,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 496,
+              "raw_rank_v": 856,
+              "rank_kq": 496,
+              "rank_v": 856,
+              "err": 0.058807811182969384,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 440,
+              "raw_rank_v": 832,
+              "rank_kq": 440,
+              "rank_v": 832,
+              "err": 0.06989892181611543,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 384,
+              "raw_rank_v": 800,
+              "rank_kq": 384,
+              "rank_v": 800,
+              "err": 0.07527518698190327,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 336,
+              "raw_rank_v": 776,
+              "rank_kq": 336,
+              "rank_v": 776,
+              "err": 0.08013124695190081,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 288,
+              "raw_rank_v": 752,
+              "rank_kq": 288,
+              "rank_v": 752,
+              "err": 0.08627018374611516,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 240,
+              "raw_rank_v": 728,
+              "rank_kq": 240,
+              "rank_v": 728,
+              "err": 0.09059468399127457,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 200,
+              "raw_rank_v": 704,
+              "rank_kq": 200,
+              "rank_v": 704,
+              "err": 0.09660685988678791,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 160,
+              "raw_rank_v": 680,
+              "rank_kq": 160,
+              "rank_v": 680,
+              "err": 0.10523928643862834,
+              "reused_err": false
+            },
+            {
+              "iter": 14,
+              "threshold": 0.7199999999999998,
+              "raw_rank_k": 120,
+              "raw_rank_v": 656,
+              "rank_kq": 120,
+              "rank_v": 656,
+              "err": 0.1083937967389567,
+              "reused_err": false
+            },
+            {
+              "iter": 15,
+              "threshold": 0.6999999999999997,
+              "raw_rank_k": 88,
+              "raw_rank_v": 632,
+              "rank_kq": 88,
+              "rank_v": 632,
+              "err": 0.1179988363320129,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 15,
+            "energy_approx": 0.7173796892166138
+          }
+        }
+      ]
+    },
+    {
+      "layer": 22,
+      "runs": [
+        {
+          "error_budget": 0.1113899540644602,
+          "threshold_final": 0.6999999999999997,
+          "rank_kq_final": 88,
+          "rank_v_final": 624,
+          "layer_error": 0.10611651182940582,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1016,
+              "rank_kq": 1016,
+              "rank_v": 1016,
+              "err": 0.007157394998859319,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.015614126575532874,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 960,
+              "rank_kq": 792,
+              "rank_v": 960,
+              "err": 0.023678315587858427,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 704,
+              "raw_rank_v": 936,
+              "rank_kq": 704,
+              "rank_v": 936,
+              "err": 0.02944502229830544,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 632,
+              "raw_rank_v": 904,
+              "rank_kq": 632,
+              "rank_v": 904,
+              "err": 0.03627817673660343,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 560,
+              "raw_rank_v": 880,
+              "rank_kq": 560,
+              "rank_v": 880,
+              "err": 0.04392169176548039,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 496,
+              "raw_rank_v": 856,
+              "rank_kq": 496,
+              "rank_v": 856,
+              "err": 0.051405786349886004,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 440,
+              "raw_rank_v": 824,
+              "rank_kq": 440,
+              "rank_v": 824,
+              "err": 0.06282959239642504,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 384,
+              "raw_rank_v": 800,
+              "rank_kq": 384,
+              "rank_v": 800,
+              "err": 0.07295204343857918,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 336,
+              "raw_rank_v": 776,
+              "rank_kq": 336,
+              "rank_v": 776,
+              "err": 0.07932949168065663,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 288,
+              "raw_rank_v": 752,
+              "rank_kq": 288,
+              "rank_v": 752,
+              "err": 0.08684332035525374,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 240,
+              "raw_rank_v": 720,
+              "rank_kq": 240,
+              "rank_v": 720,
+              "err": 0.08938516111999052,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 200,
+              "raw_rank_v": 696,
+              "rank_kq": 200,
+              "rank_v": 696,
+              "err": 0.09370856918524564,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 160,
+              "raw_rank_v": 672,
+              "rank_kq": 160,
+              "rank_v": 672,
+              "err": 0.09879795883481517,
+              "reused_err": false
+            },
+            {
+              "iter": 14,
+              "threshold": 0.7199999999999998,
+              "raw_rank_k": 120,
+              "raw_rank_v": 648,
+              "rank_kq": 120,
+              "rank_v": 648,
+              "err": 0.10295770608162493,
+              "reused_err": false
+            },
+            {
+              "iter": 15,
+              "threshold": 0.6999999999999997,
+              "raw_rank_k": 88,
+              "raw_rank_v": 624,
+              "rank_kq": 88,
+              "rank_v": 624,
+              "err": 0.10611651182940582,
+              "reused_err": false
+            },
+            {
+              "iter": 16,
+              "threshold": 0.6799999999999997,
+              "raw_rank_k": 56,
+              "raw_rank_v": 600,
+              "rank_kq": 56,
+              "rank_v": 600,
+              "err": 0.11485392152864472,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 11,
+            "energy_approx": 0.6973759531974792
+          }
+        }
+      ]
+    },
+    {
+      "layer": 23,
+      "runs": [
+        {
+          "error_budget": 0.11053187248708808,
+          "threshold_final": 0.6999999999999997,
+          "rank_kq_final": 64,
+          "rank_v_final": 632,
+          "layer_error": 0.10132707378126876,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.003550216100633053,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 904,
+              "raw_rank_v": 992,
+              "rank_kq": 904,
+              "rank_v": 992,
+              "err": 0.01631463483843921,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 800,
+              "raw_rank_v": 960,
+              "rank_kq": 800,
+              "rank_v": 960,
+              "err": 0.024458172524891755,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 712,
+              "raw_rank_v": 936,
+              "rank_kq": 712,
+              "rank_v": 936,
+              "err": 0.030537138505188067,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 632,
+              "raw_rank_v": 912,
+              "rank_kq": 632,
+              "rank_v": 912,
+              "err": 0.0380678851530347,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 560,
+              "raw_rank_v": 880,
+              "rank_kq": 560,
+              "rank_v": 880,
+              "err": 0.04573436340867756,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 496,
+              "raw_rank_v": 856,
+              "rank_kq": 496,
+              "rank_v": 856,
+              "err": 0.05132835548728779,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 432,
+              "raw_rank_v": 832,
+              "rank_kq": 432,
+              "rank_v": 832,
+              "err": 0.05706702923954058,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 376,
+              "raw_rank_v": 808,
+              "rank_kq": 376,
+              "rank_v": 808,
+              "err": 0.0625439339895698,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 320,
+              "raw_rank_v": 784,
+              "rank_kq": 320,
+              "rank_v": 784,
+              "err": 0.06750440557121272,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 272,
+              "raw_rank_v": 752,
+              "rank_kq": 272,
+              "rank_v": 752,
+              "err": 0.07370887820113071,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 224,
+              "raw_rank_v": 728,
+              "rank_kq": 224,
+              "rank_v": 728,
+              "err": 0.0756175863661525,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 184,
+              "raw_rank_v": 704,
+              "rank_kq": 184,
+              "rank_v": 704,
+              "err": 0.0790754182324641,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 136,
+              "raw_rank_v": 680,
+              "rank_kq": 136,
+              "rank_v": 680,
+              "err": 0.08242816204151047,
+              "reused_err": false
+            },
+            {
+              "iter": 14,
+              "threshold": 0.7199999999999998,
+              "raw_rank_k": 104,
+              "raw_rank_v": 656,
+              "rank_kq": 104,
+              "rank_v": 656,
+              "err": 0.08917929126745427,
+              "reused_err": false
+            },
+            {
+              "iter": 15,
+              "threshold": 0.6999999999999997,
+              "raw_rank_k": 64,
+              "raw_rank_v": 632,
+              "rank_kq": 64,
+              "rank_v": 632,
+              "err": 0.10132707378126876,
+              "reused_err": false
+            },
+            {
+              "iter": 16,
+              "threshold": 0.6799999999999997,
+              "raw_rank_k": 56,
+              "raw_rank_v": 608,
+              "rank_kq": 56,
+              "rank_v": 608,
+              "err": 0.18134113496774354,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 8,
+            "energy_approx": 0.6954702734947205
+          }
+        }
+      ]
+    },
+    {
+      "layer": 24,
+      "runs": [
+        {
+          "error_budget": 0.10872169660825735,
+          "threshold_final": 0.7199999999999998,
+          "rank_kq_final": 72,
+          "rank_v_final": 656,
+          "layer_error": 0.09591417542373505,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1016,
+              "rank_kq": 1016,
+              "rank_v": 1016,
+              "err": 0.0076666186996182505,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 888,
+              "raw_rank_v": 992,
+              "rank_kq": 888,
+              "rank_v": 992,
+              "err": 0.016309017766159076,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 776,
+              "raw_rank_v": 960,
+              "rank_kq": 776,
+              "rank_v": 960,
+              "err": 0.023790274637154392,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 688,
+              "raw_rank_v": 936,
+              "rank_kq": 688,
+              "rank_v": 936,
+              "err": 0.030295164583035404,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 608,
+              "raw_rank_v": 904,
+              "rank_kq": 608,
+              "rank_v": 904,
+              "err": 0.03890980531950236,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 528,
+              "raw_rank_v": 880,
+              "rank_kq": 528,
+              "rank_v": 880,
+              "err": 0.04535801070566777,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 464,
+              "raw_rank_v": 856,
+              "rank_kq": 464,
+              "rank_v": 856,
+              "err": 0.050841364172974794,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 400,
+              "raw_rank_v": 824,
+              "rank_kq": 400,
+              "rank_v": 824,
+              "err": 0.06112644820531724,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 344,
+              "raw_rank_v": 800,
+              "rank_kq": 344,
+              "rank_v": 800,
+              "err": 0.06784064161800796,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 296,
+              "raw_rank_v": 776,
+              "rank_kq": 296,
+              "rank_v": 776,
+              "err": 0.0717166067989117,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 240,
+              "raw_rank_v": 752,
+              "rank_kq": 240,
+              "rank_v": 752,
+              "err": 0.07649196065390995,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 200,
+              "raw_rank_v": 728,
+              "rank_kq": 200,
+              "rank_v": 728,
+              "err": 0.08046809722254175,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 152,
+              "raw_rank_v": 704,
+              "rank_kq": 152,
+              "rank_v": 704,
+              "err": 0.0851615683221082,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 112,
+              "raw_rank_v": 680,
+              "rank_kq": 112,
+              "rank_v": 680,
+              "err": 0.08833299808988022,
+              "reused_err": false
+            },
+            {
+              "iter": 14,
+              "threshold": 0.7199999999999998,
+              "raw_rank_k": 72,
+              "raw_rank_v": 656,
+              "rank_kq": 72,
+              "rank_v": 656,
+              "err": 0.09591417542373505,
+              "reused_err": false
+            },
+            {
+              "iter": 15,
+              "threshold": 0.6999999999999997,
+              "raw_rank_k": 56,
+              "raw_rank_v": 632,
+              "rank_kq": 56,
+              "rank_v": 632,
+              "err": 0.11613791785379741,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 9,
+            "energy_approx": 0.7151281833648682
+          }
+        }
+      ]
+    },
+    {
+      "layer": 25,
+      "runs": [
+        {
+          "error_budget": 0.12280974323386842,
+          "threshold_final": 0.7199999999999998,
+          "rank_kq_final": 56,
+          "rank_v_final": 648,
+          "layer_error": 0.12280163605758805,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.004093611437039695,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.019405395328091667,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 960,
+              "rank_kq": 792,
+              "rank_v": 960,
+              "err": 0.028222820396523237,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 696,
+              "raw_rank_v": 936,
+              "rank_kq": 696,
+              "rank_v": 936,
+              "err": 0.035953858546819824,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 616,
+              "raw_rank_v": 904,
+              "rank_kq": 616,
+              "rank_v": 904,
+              "err": 0.04265352526935659,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 536,
+              "raw_rank_v": 880,
+              "rank_kq": 536,
+              "rank_v": 880,
+              "err": 0.054017070370211855,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 464,
+              "raw_rank_v": 848,
+              "rank_kq": 464,
+              "rank_v": 848,
+              "err": 0.0627270750640318,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 400,
+              "raw_rank_v": 824,
+              "rank_kq": 400,
+              "rank_v": 824,
+              "err": 0.06979254991463514,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 336,
+              "raw_rank_v": 800,
+              "rank_kq": 336,
+              "rank_v": 800,
+              "err": 0.080645449420242,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 280,
+              "raw_rank_v": 768,
+              "rank_kq": 280,
+              "rank_v": 768,
+              "err": 0.09194826101590815,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 232,
+              "raw_rank_v": 744,
+              "rank_kq": 232,
+              "rank_v": 744,
+              "err": 0.09461166742315963,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 176,
+              "raw_rank_v": 720,
+              "rank_kq": 176,
+              "rank_v": 720,
+              "err": 0.0978067819035963,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 136,
+              "raw_rank_v": 696,
+              "rank_kq": 136,
+              "rank_v": 696,
+              "err": 0.10433274176931903,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 88,
+              "raw_rank_v": 672,
+              "rank_kq": 88,
+              "rank_v": 672,
+              "err": 0.10561027940256079,
+              "reused_err": false
+            },
+            {
+              "iter": 14,
+              "threshold": 0.7199999999999998,
+              "raw_rank_k": 56,
+              "raw_rank_v": 648,
+              "rank_kq": 56,
+              "rank_v": 648,
+              "err": 0.12280163605758805,
+              "reused_err": false
+            },
+            {
+              "iter": 15,
+              "threshold": 0.6999999999999997,
+              "raw_rank_k": 56,
+              "raw_rank_v": 624,
+              "rank_kq": 56,
+              "rank_v": 624,
+              "err": 0.12299165402382405,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 7,
+            "energy_approx": 0.6632431745529175
+          }
+        }
+      ]
+    },
+    {
+      "layer": 26,
+      "runs": [
+        {
+          "error_budget": 0.11425425904819633,
+          "threshold_final": 0.7399999999999998,
+          "rank_kq_final": 136,
+          "rank_v_final": 696,
+          "layer_error": 0.11348331433760371,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.003683478571369227,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 888,
+              "raw_rank_v": 992,
+              "rank_kq": 888,
+              "rank_v": 992,
+              "err": 0.03462293567294499,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 784,
+              "raw_rank_v": 968,
+              "rank_kq": 784,
+              "rank_v": 968,
+              "err": 0.038675900011466154,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 688,
+              "raw_rank_v": 944,
+              "rank_kq": 688,
+              "rank_v": 944,
+              "err": 0.04395525093687308,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 608,
+              "raw_rank_v": 912,
+              "rank_kq": 608,
+              "rank_v": 912,
+              "err": 0.049636634601926105,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 544,
+              "raw_rank_v": 888,
+              "rank_kq": 544,
+              "rank_v": 888,
+              "err": 0.05486077902031193,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 480,
+              "raw_rank_v": 864,
+              "rank_kq": 480,
+              "rank_v": 864,
+              "err": 0.06250771619425581,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 416,
+              "raw_rank_v": 840,
+              "rank_kq": 416,
+              "rank_v": 840,
+              "err": 0.07081899428288324,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 360,
+              "raw_rank_v": 816,
+              "rank_kq": 360,
+              "rank_v": 816,
+              "err": 0.0771776695896145,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 312,
+              "raw_rank_v": 792,
+              "rank_kq": 312,
+              "rank_v": 792,
+              "err": 0.08962776634712938,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 264,
+              "raw_rank_v": 768,
+              "rank_kq": 264,
+              "rank_v": 768,
+              "err": 0.09543807430452317,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 224,
+              "raw_rank_v": 744,
+              "rank_kq": 224,
+              "rank_v": 744,
+              "err": 0.10072880036212321,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 176,
+              "raw_rank_v": 720,
+              "rank_kq": 176,
+              "rank_v": 720,
+              "err": 0.10679327393286779,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 136,
+              "raw_rank_v": 696,
+              "rank_kq": 136,
+              "rank_v": 696,
+              "err": 0.11348331433760371,
+              "reused_err": false
+            },
+            {
+              "iter": 14,
+              "threshold": 0.7199999999999998,
+              "raw_rank_k": 104,
+              "raw_rank_v": 672,
+              "rank_kq": 104,
+              "rank_v": 672,
+              "err": 0.1198095166633587,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 17,
+            "energy_approx": 0.7357919812202454
+          }
+        }
+      ]
+    },
+    {
+      "layer": 27,
+      "runs": [
+        {
+          "error_budget": 0.10552605240674678,
+          "threshold_final": 0.7799999999999998,
+          "rank_kq_final": 232,
+          "rank_v_final": 728,
+          "layer_error": 0.1038374565299854,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1024,
+              "raw_rank_v": 1024,
+              "rank_kq": 1024,
+              "rank_v": 1024,
+              "err": 0.003618335169574879,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.018675557760035388,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 960,
+              "rank_kq": 792,
+              "rank_v": 960,
+              "err": 0.026448140607281085,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 704,
+              "raw_rank_v": 936,
+              "rank_kq": 704,
+              "rank_v": 936,
+              "err": 0.0334574795820185,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 624,
+              "raw_rank_v": 912,
+              "rank_kq": 624,
+              "rank_v": 912,
+              "err": 0.04098567504371299,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 552,
+              "raw_rank_v": 880,
+              "rank_kq": 552,
+              "rank_v": 880,
+              "err": 0.05039604814167407,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 488,
+              "raw_rank_v": 856,
+              "rank_kq": 488,
+              "rank_v": 856,
+              "err": 0.058256531416761216,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 432,
+              "raw_rank_v": 832,
+              "rank_kq": 432,
+              "rank_v": 832,
+              "err": 0.06813312162810306,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 376,
+              "raw_rank_v": 808,
+              "rank_kq": 376,
+              "rank_v": 808,
+              "err": 0.07988375464569897,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 328,
+              "raw_rank_v": 776,
+              "rank_kq": 328,
+              "rank_v": 776,
+              "err": 0.08862060503003649,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 272,
+              "raw_rank_v": 752,
+              "rank_kq": 272,
+              "rank_v": 752,
+              "err": 0.09589040096606644,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 232,
+              "raw_rank_v": 728,
+              "rank_kq": 232,
+              "rank_v": 728,
+              "err": 0.1038374565299854,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 184,
+              "raw_rank_v": 704,
+              "rank_kq": 184,
+              "rank_v": 704,
+              "err": 0.10879977040110902,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 29,
+            "energy_approx": 0.779390275478363
+          }
+        }
+      ]
+    },
+    {
+      "layer": 28,
+      "runs": [
+        {
+          "error_budget": 0.11087658757039473,
+          "threshold_final": 0.7199999999999998,
+          "rank_kq_final": 104,
+          "rank_v_final": 656,
+          "layer_error": 0.10422877341556996,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1024,
+              "raw_rank_v": 1024,
+              "rank_kq": 1024,
+              "rank_v": 1024,
+              "err": 0.00373194800224393,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 904,
+              "raw_rank_v": 992,
+              "rank_kq": 904,
+              "rank_v": 992,
+              "err": 0.022952582684715877,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 808,
+              "raw_rank_v": 968,
+              "rank_kq": 808,
+              "rank_v": 968,
+              "err": 0.03205149645446568,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 720,
+              "raw_rank_v": 936,
+              "rank_kq": 720,
+              "rank_v": 936,
+              "err": 0.04054558546752211,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 640,
+              "raw_rank_v": 912,
+              "rank_kq": 640,
+              "rank_v": 912,
+              "err": 0.049353768794822624,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 568,
+              "raw_rank_v": 888,
+              "rank_kq": 568,
+              "rank_v": 888,
+              "err": 0.056911426022226576,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 504,
+              "raw_rank_v": 856,
+              "rank_kq": 504,
+              "rank_v": 856,
+              "err": 0.06378513156333791,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 440,
+              "raw_rank_v": 832,
+              "rank_kq": 440,
+              "rank_v": 832,
+              "err": 0.07182289353705797,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 384,
+              "raw_rank_v": 808,
+              "rank_kq": 384,
+              "rank_v": 808,
+              "err": 0.07613679686404788,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 328,
+              "raw_rank_v": 784,
+              "rank_kq": 328,
+              "rank_v": 784,
+              "err": 0.08357225201344304,
+              "reused_err": false
+            },
+            {
+              "iter": 10,
+              "threshold": 0.7999999999999998,
+              "raw_rank_k": 280,
+              "raw_rank_v": 760,
+              "rank_kq": 280,
+              "rank_v": 760,
+              "err": 0.0872290521355903,
+              "reused_err": false
+            },
+            {
+              "iter": 11,
+              "threshold": 0.7799999999999998,
+              "raw_rank_k": 232,
+              "raw_rank_v": 728,
+              "rank_kq": 232,
+              "rank_v": 728,
+              "err": 0.09258122456813941,
+              "reused_err": false
+            },
+            {
+              "iter": 12,
+              "threshold": 0.7599999999999998,
+              "raw_rank_k": 184,
+              "raw_rank_v": 704,
+              "rank_kq": 184,
+              "rank_v": 704,
+              "err": 0.09664833735148923,
+              "reused_err": false
+            },
+            {
+              "iter": 13,
+              "threshold": 0.7399999999999998,
+              "raw_rank_k": 144,
+              "raw_rank_v": 680,
+              "rank_kq": 144,
+              "rank_v": 680,
+              "err": 0.10043589828956545,
+              "reused_err": false
+            },
+            {
+              "iter": 14,
+              "threshold": 0.7199999999999998,
+              "raw_rank_k": 104,
+              "raw_rank_v": 656,
+              "rank_kq": 104,
+              "rank_v": 656,
+              "err": 0.10422877341556996,
+              "reused_err": false
+            },
+            {
+              "iter": 15,
+              "threshold": 0.6999999999999997,
+              "raw_rank_k": 72,
+              "raw_rank_v": 632,
+              "rank_kq": 72,
+              "rank_v": 632,
+              "err": 0.11153112289082051,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 13,
+            "energy_approx": 0.7169923782348633
+          }
+        }
+      ]
+    },
+    {
+      "layer": 29,
+      "runs": [
+        {
+          "error_budget": 0.11819356794186683,
+          "threshold_final": 0.8799999999999999,
+          "rank_kq_final": 472,
+          "rank_v_final": 864,
+          "layer_error": 0.10958819012963043,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.005492763714143256,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.07529735896205254,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 968,
+              "rank_kq": 792,
+              "rank_v": 968,
+              "err": 0.07935983426408148,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 704,
+              "raw_rank_v": 936,
+              "rank_kq": 704,
+              "rank_v": 936,
+              "err": 0.08606862528640193,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 616,
+              "raw_rank_v": 912,
+              "rank_kq": 616,
+              "rank_v": 912,
+              "err": 0.09505143789903053,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 544,
+              "raw_rank_v": 888,
+              "rank_kq": 544,
+              "rank_v": 888,
+              "err": 0.10227107762594304,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 472,
+              "raw_rank_v": 864,
+              "rank_kq": 472,
+              "rank_v": 864,
+              "err": 0.10958819012963043,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 400,
+              "raw_rank_v": 840,
+              "rank_kq": 400,
+              "rank_v": 840,
+              "err": 0.11917983493137387,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 59,
+            "energy_approx": 0.8792955279350281
+          }
+        }
+      ]
+    },
+    {
+      "layer": 30,
+      "runs": [
+        {
+          "error_budget": 0.11547365734204565,
+          "threshold_final": 0.8599999999999999,
+          "rank_kq_final": 432,
+          "rank_v_final": 840,
+          "layer_error": 0.11007922611614385,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.005116333407615253,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 888,
+              "raw_rank_v": 992,
+              "rank_kq": 888,
+              "rank_v": 992,
+              "err": 0.06216262736910389,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 784,
+              "raw_rank_v": 968,
+              "rank_kq": 784,
+              "rank_v": 968,
+              "err": 0.06751199371503995,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 696,
+              "raw_rank_v": 944,
+              "rank_kq": 696,
+              "rank_v": 944,
+              "err": 0.0734180255557257,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 616,
+              "raw_rank_v": 920,
+              "rank_kq": 616,
+              "rank_v": 920,
+              "err": 0.0801166489823175,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 552,
+              "raw_rank_v": 888,
+              "rank_kq": 552,
+              "rank_v": 888,
+              "err": 0.08744143811949777,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 488,
+              "raw_rank_v": 864,
+              "rank_kq": 488,
+              "rank_v": 864,
+              "err": 0.0979483996788844,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 432,
+              "raw_rank_v": 840,
+              "rank_kq": 432,
+              "rank_v": 840,
+              "err": 0.11007922611614385,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 384,
+              "raw_rank_v": 816,
+              "rank_kq": 384,
+              "rank_v": 816,
+              "err": 0.12045457861819855,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 54,
+            "energy_approx": 0.8582916259765625
+          }
+        }
+      ]
+    },
+    {
+      "layer": 31,
+      "runs": [
+        {
+          "error_budget": 0.1152949842121259,
+          "threshold_final": 0.8399999999999999,
+          "rank_kq_final": 328,
+          "rank_v_final": 792,
+          "layer_error": 0.10697838199117614,
+          "threshold_trace": [
+            {
+              "iter": 0,
+              "threshold": 1.0,
+              "raw_rank_k": 1016,
+              "raw_rank_v": 1024,
+              "rank_kq": 1016,
+              "rank_v": 1024,
+              "err": 0.007596697227355502,
+              "reused_err": false
+            },
+            {
+              "iter": 1,
+              "threshold": 0.98,
+              "raw_rank_k": 896,
+              "raw_rank_v": 992,
+              "rank_kq": 896,
+              "rank_v": 992,
+              "err": 0.03800961446274805,
+              "reused_err": false
+            },
+            {
+              "iter": 2,
+              "threshold": 0.96,
+              "raw_rank_k": 792,
+              "raw_rank_v": 960,
+              "rank_kq": 792,
+              "rank_v": 960,
+              "err": 0.052182900924120375,
+              "reused_err": false
+            },
+            {
+              "iter": 3,
+              "threshold": 0.94,
+              "raw_rank_k": 696,
+              "raw_rank_v": 928,
+              "rank_kq": 696,
+              "rank_v": 928,
+              "err": 0.06112891087764803,
+              "reused_err": false
+            },
+            {
+              "iter": 4,
+              "threshold": 0.9199999999999999,
+              "raw_rank_k": 608,
+              "raw_rank_v": 896,
+              "rank_kq": 608,
+              "rank_v": 896,
+              "err": 0.07546319831393936,
+              "reused_err": false
+            },
+            {
+              "iter": 5,
+              "threshold": 0.8999999999999999,
+              "raw_rank_k": 528,
+              "raw_rank_v": 872,
+              "rank_kq": 528,
+              "rank_v": 872,
+              "err": 0.08510546897478692,
+              "reused_err": false
+            },
+            {
+              "iter": 6,
+              "threshold": 0.8799999999999999,
+              "raw_rank_k": 456,
+              "raw_rank_v": 840,
+              "rank_kq": 456,
+              "rank_v": 840,
+              "err": 0.0930124241923519,
+              "reused_err": false
+            },
+            {
+              "iter": 7,
+              "threshold": 0.8599999999999999,
+              "raw_rank_k": 392,
+              "raw_rank_v": 816,
+              "rank_kq": 392,
+              "rank_v": 816,
+              "err": 0.10148646200259029,
+              "reused_err": false
+            },
+            {
+              "iter": 8,
+              "threshold": 0.8399999999999999,
+              "raw_rank_k": 328,
+              "raw_rank_v": 792,
+              "rank_kq": 328,
+              "rank_v": 792,
+              "err": 0.10697838199117614,
+              "reused_err": false
+            },
+            {
+              "iter": 9,
+              "threshold": 0.8199999999999998,
+              "raw_rank_k": 272,
+              "raw_rank_v": 760,
+              "rank_kq": 272,
+              "rank_v": 760,
+              "err": 0.12222838278788128,
+              "reused_err": false
+            }
+          ],
+          "energy_k_approx": {
+            "retained_to_col": 41,
+            "energy_approx": 0.8389387726783752
+          }
+        }
+      ]
+    }
+  ]
+}

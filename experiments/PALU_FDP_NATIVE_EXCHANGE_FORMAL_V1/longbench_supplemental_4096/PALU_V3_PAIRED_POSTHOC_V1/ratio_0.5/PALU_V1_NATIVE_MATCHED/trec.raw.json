@@ -1,0 +1,15 @@
+{
+  "validity": "VALID",
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1_LONGBENCH_SUPPLEMENTAL",
+  "method": "PALU_V1_NATIVE_MATCHED",
+  "ratio": 0.5,
+  "task": "trec",
+  "score": 37.83,
+  "n_samples": 200,
+  "manifest_sha": "02b55f781e4f358b74b327195385a588bfa653ae35ca400d3e14b57642996dfa",
+  "schedule_sha": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+  "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "native_rank": 131072,
+  "formal_cache_bytes": 536870912,
+  "gpu": 0
+}

@@ -1,0 +1,30 @@
+{
+  "J_calibration_tune": 1.8814673125743866,
+  "R_exact": 0.005615234375,
+  "accepted": 23,
+  "changed_group_entries": 28,
+  "checkpoint": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D16_R16_Rmax0.01_beam0/CHECKPOINT.json",
+  "checkpoint_sha256": "7cbb6d935d346cf7c0633a6297bdbae0f7965350a7c3eeed1341893edc825484",
+  "checkpoint_status": "TUNE_CONFIG_CHECKPOINT",
+  "config_id": "armA_D16_R16_Rmax0.01_beam0",
+  "delta_vs_calibration_start_J": -0.00864238291978836,
+  "evaluated": 5888,
+  "experiment": "PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3",
+  "foreign_jobs_interrupted": 0,
+  "formal_ppl_started": false,
+  "formal_results_modified": false,
+  "frozen_v1_schedule_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+  "gross_accepted_transfer_rank": 736,
+  "l1_rank_distance": 1472,
+  "rejected": 4304,
+  "resource_total_rank": 131072,
+  "tune_done_configs": 10,
+  "tune_expected_grid_configs": 12,
+  "tune_pending_configs": [
+    "armA_D16_R16_Rmax0.01_beam0 (checkpoint present; DONE not yet written)",
+    "armA_D16_R16_Rmax0.02_beam0 (not yet materialized)"
+  ],
+  "utc": "2026-09-24T18:32:19.874307+00:00",
+  "worker_alive": true,
+  "worker_pid": 5663
+}

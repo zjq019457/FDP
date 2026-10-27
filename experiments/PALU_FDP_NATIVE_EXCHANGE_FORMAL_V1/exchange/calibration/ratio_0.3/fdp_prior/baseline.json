@@ -1,0 +1,15 @@
+{
+  "J": 3.4601332172751427,
+  "c4_mean_nll": 3.7135359048843384,
+  "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+  "ratio": 0.3,
+  "resource": {
+    "decode_cache_bytes": 80216064,
+    "prefill_cache_bytes": 80216064,
+    "total_native_rank": 19584
+  },
+  "schedule_sha": "31ffd70e8c64fcc08ac6fe980b18ea3bfb4af411f31ebdc44b73eb299060c10e",
+  "signal": "fdp_prior",
+  "status": "EXCHANGE_BASELINE_COMPLETE",
+  "wiki_mean_nll": 3.206730529665947
+}

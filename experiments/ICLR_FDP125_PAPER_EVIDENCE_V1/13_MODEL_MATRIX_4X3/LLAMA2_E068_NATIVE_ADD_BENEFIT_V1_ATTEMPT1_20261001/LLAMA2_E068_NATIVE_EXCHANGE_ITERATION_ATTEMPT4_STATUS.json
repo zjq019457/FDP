@@ -1,0 +1,8 @@
+{
+  "status": "FROZEN_AFTER_TUNING",
+  "iteration_lock_sha256": "dd92fd48f07f91d594f39587a51f8b8c31117a956dc4a602401dced59cfb8697",
+  "summary_sha256": "e629d858aef90a49b44f877eb8ba41602eeb92044dfc359c6d61d89c9044079f",
+  "accepted_count": 9,
+  "stop_reason": "JOINT_EXCHANGE_FAILED_FULL_OR_SPLIT_ACCEPTANCE",
+  "updated_utc": "2026-10-02T04:52:09.603335+00:00"
+}

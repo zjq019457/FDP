@@ -1,0 +1,31 @@
+{
+  "schema": "RESOURCE_PLATEAU_SCAN_ENGINEERING_FAILURE_V1",
+  "timestamp_utc": "2026-10-02T20:03:47.422089+00:00",
+  "stage": "CPU scalar plateau scan CSV serialization",
+  "classification": "ENGINEERING_SCHEMA_FIELD_BUG",
+  "script_sha256": "d085e51738fad1fdcff5e96456ba4efb469529863e28091514e917f6ada93ef3",
+  "failure": "KeyError: 'rank_sha256' while writing adjacent-candidate CSV flag; segment objects store hash under key 'sha'. Medium intermediate files from failed attempt preserved separately; no quality job launched.",
+  "preserved_partial_outputs": [
+    {
+      "source": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/FULL_PROFILE_RESOURCE_ROBUSTNESS_V1/medium_resource_plateau_scan.json",
+      "preserved_as": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/FULL_PROFILE_RESOURCE_ROBUSTNESS_V1/medium_resource_plateau_scan_attempt2_partial.json",
+      "bytes": 44834
+    },
+    {
+      "source": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/FULL_PROFILE_RESOURCE_ROBUSTNESS_V1/medium_resource_plateau_scan.csv",
+      "preserved_as": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/FULL_PROFILE_RESOURCE_ROBUSTNESS_V1/medium_resource_plateau_scan_attempt2_partial.csv",
+      "bytes": 94
+    },
+    {
+      "source": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/FULL_PROFILE_RESOURCE_ROBUSTNESS_V1/medium_selected_resource_schedule_candidate.json",
+      "preserved_as": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/FULL_PROFILE_RESOURCE_ROBUSTNESS_V1/medium_selected_resource_schedule_candidate_attempt2_partial.json",
+      "bytes": 2100
+    },
+    {
+      "source": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/medium/medium_selected_epsilon.json",
+      "preserved_as": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/medium/medium_selected_epsilon_attempt2_partial.json",
+      "bytes": 1108
+    }
+  ],
+  "repair": "Use segment key sha for adjacent membership in a new versioned scan script; rerun full deterministic scan."
+}

@@ -1,0 +1,255 @@
+{
+  "b1_stopping_attribution": {
+    "accepted_transfers": 6,
+    "depth2_used": false,
+    "final_profile_state_after_accepted": 6,
+    "final_state_candidate_set_size": 16,
+    "final_state_candidates_evaluated": 16,
+    "final_state_strict_accepts": 0,
+    "four_v1_accepted_moves_after_step_6": [
+      {
+        "attribution": "CANDIDATE_SET_EXCLUDED",
+        "donor": "model.layers.10.self_attn.v_proj::group1",
+        "donor_in_B1_candidate_universe": false,
+        "receiver": "model.layers.16.self_attn.v_proj::group1",
+        "receiver_in_B1_candidate_universe": false,
+        "v1_proposal": 7
+      },
+      {
+        "attribution": "CANDIDATE_SET_EXCLUDED",
+        "donor": "model.layers.14.self_attn.v_proj::group1",
+        "donor_in_B1_candidate_universe": false,
+        "receiver": "model.layers.1.self_attn.k_proj::group5",
+        "receiver_in_B1_candidate_universe": false,
+        "v1_proposal": 8
+      },
+      {
+        "attribution": "CANDIDATE_SET_EXCLUDED",
+        "donor": "model.layers.4.self_attn.v_proj::group5",
+        "donor_in_B1_candidate_universe": false,
+        "receiver": "model.layers.21.self_attn.k_proj::group0",
+        "receiver_in_B1_candidate_universe": false,
+        "v1_proposal": 9
+      },
+      {
+        "attribution": "CANDIDATE_SET_EXCLUDED",
+        "donor": "model.layers.11.self_attn.k_proj::group2",
+        "donor_in_B1_candidate_universe": false,
+        "receiver": "model.layers.31.self_attn.k_proj::group1",
+        "receiver_in_B1_candidate_universe": false,
+        "v1_proposal": 13
+      }
+    ],
+    "interpretation": "The four V1 moves were not proposed by B1 because both endpoints of each pair were outside B1\u2019s 64-unit candidate universe. This does not establish that these pairs would pass B1\u2019s gate from B1\u2019s own terminal allocation.",
+    "rank_bound_exhaustion": false,
+    "resource_mismatch": false,
+    "stop_reason": "STOPPING_RULE_ZERO_ACCEPTED_IN_FULL_CANDIDATE_PASS"
+  },
+  "definitions": {
+    "candidate_rank": "position in reconstructed candidate pair ordering for that search round",
+    "candidate_set_size": "reconstructed engine.pairs output size, cap=16",
+    "predicted_gain_proxy": "donor_phi - receiver_phi (derived proxy, not directly serialized predicted J)"
+  },
+  "fisher_semantic_allocation_sha256": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+  "fisher_source_file_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+  "foreign_jobs_interrupted": 0,
+  "limitations": [
+    "V2 B1/B2/B4 start from Fisher, not V1 final; hence not a controlled V1-start residual-search comparison.",
+    "V1 proposal list is frozen once and not refreshed; V2 refresh settings differ.",
+    "All rows are calibration evidence, not formal test evidence."
+  ],
+  "rank_quantum": 32,
+  "ratio": 0.5,
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "source_artifact_sha256": {
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/CANDIDATE_UNIVERSE.json": "5e18d5fefa2b7680e270c70048b8df7f2f928d46957c708e820dcccccf6f283a",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_0P5_MANIFEST.json": "373a3285d2993d3ff43c488f8c65cac59d689ba5bc82c4b1d580d6f1e0865132",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_0P5_METHOD_CARD.md": "369ea5e37c7a2bf8b80a99afd7dece641dab8581f609547c5a56bae7b0c00ec9",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/PROFILE_MANIFEST.json": "0f74f0944c0f43ae48c83274a780080793c911173f082b02a6a424a0cafcfd4b",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/PROFILE_PREP_AUDIT.json": "e75214fc0b3885c5e69d6cf2c50044545496f8d3df418fd0666e2266456082f6",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/allocations/FDP_NATIVE_REFRESH_B1.json": "e2c54241c27488233a525419a03a6215e460030aa43e4c5ce91a11b34cecc574",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/allocations/FDP_NATIVE_REFRESH_B2.json": "0fa621504a291d6b5e79dd01501e4f1843afd7b331d84d7eacb42647dd270c8e",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/allocations/FDP_NATIVE_REFRESH_B4.json": "e8ebb903321706b9a139cf9779d08cb983920883eeff6d3b48d4e89a3f942d6d",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/calibration/FDP_NATIVE_REFRESH_B1/LOCK.json": "6e89b14fbf00a52d4477bef41f5bb264a2d99b3fc28bb039f0ada86e51dba351",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/calibration/FDP_NATIVE_REFRESH_B2/LOCK.json": "9e2457a6e1b386cbdfbe3c2e775c82816443ea5d7d89061e9017ee7709573794",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/calibration/FDP_NATIVE_REFRESH_B4/LOCK.json": "7088dde0b806f6019e12cc760b9c57c0323d1191e9020dd44d7481c2dcd292c4",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/calibration/FROZEN_INPUTS.json": "6a0a00475db1b1a73700b0d265a41130b4c412cd641c2bfd9063f0cf4ae1c7f5",
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_V2_REFRESH_ABLATION_RATIO_0P5_V1/calibration/INITIAL_REFRESH_PHI.json": "5c39aa27b1b483b9486d23fa9bba2a4306c0e3e667e187921f89a07e43670ada",
+    "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/fdp_native/candidate_order.json": "771541aab410b1662fa7b268307912a4021306b406dee48198031fab7acc2aff",
+    "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/fdp_native/decisions.json": "1cb0fc29ca0d5f9521f4648c34d885537f63259cd0418f8974b416a4fdca8b2a",
+    "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/fdp_native/final_schedule.json": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+    "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/results/fisher_0p5_ratio_0.5_fisher_uniform.json": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38"
+  },
+  "status": "READ_ONLY_TRAJECTORY_RECONSTRUCTION_COMPLETE",
+  "v1": {
+    "R_vs_fisher": 0.00244140625,
+    "accepted_moves_after_proposal_6": [
+      {
+        "attribution": "CANDIDATE_SET_EXCLUDED",
+        "donor": "model.layers.10.self_attn.v_proj::group1",
+        "donor_in_B1_candidate_universe": false,
+        "receiver": "model.layers.16.self_attn.v_proj::group1",
+        "receiver_in_B1_candidate_universe": false,
+        "v1_proposal": 7
+      },
+      {
+        "attribution": "CANDIDATE_SET_EXCLUDED",
+        "donor": "model.layers.14.self_attn.v_proj::group1",
+        "donor_in_B1_candidate_universe": false,
+        "receiver": "model.layers.1.self_attn.k_proj::group5",
+        "receiver_in_B1_candidate_universe": false,
+        "v1_proposal": 8
+      },
+      {
+        "attribution": "CANDIDATE_SET_EXCLUDED",
+        "donor": "model.layers.4.self_attn.v_proj::group5",
+        "donor_in_B1_candidate_universe": false,
+        "receiver": "model.layers.21.self_attn.k_proj::group0",
+        "receiver_in_B1_candidate_universe": false,
+        "v1_proposal": 9
+      },
+      {
+        "attribution": "CANDIDATE_SET_EXCLUDED",
+        "donor": "model.layers.11.self_attn.k_proj::group2",
+        "donor_in_B1_candidate_universe": false,
+        "receiver": "model.layers.31.self_attn.k_proj::group1",
+        "receiver_in_B1_candidate_universe": false,
+        "v1_proposal": 13
+      }
+    ],
+    "accepted_proposals": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      13
+    ],
+    "accepted_transfer_count": 10,
+    "changed_units_vs_fisher": 20,
+    "evaluated_pairs": 16,
+    "half_l1_moved_rank_vs_fisher": 320,
+    "rejected_proposals": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16
+    ],
+    "stop_reason": "FROZEN_16_PAIR_ORDER_EXHAUSTED_NOT_OPTIMUM_PROOF"
+  },
+  "v2": {
+    "B1": {
+      "R_vs_fisher": 0.00146484375,
+      "accepted_proposals": [
+        3,
+        8,
+        13,
+        18,
+        27,
+        40
+      ],
+      "accepted_transfers": 6,
+      "allocation_file_sha256": "e2c54241c27488233a525419a03a6215e460030aa43e4c5ce91a11b34cecc574",
+      "candidate_set_sizes": [
+        16
+      ],
+      "changed_units_vs_fisher": 10,
+      "decision_rows": 56,
+      "final_resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "final_schedule_sha256": "4a3a2e6974f4717bc32fbe67d09ba5bad19533f3b1d5aa3c462c431568e2b1c5",
+      "half_l1_moved_rank_vs_fisher": 192,
+      "profile_refresh_at_accepted": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "profile_refresh_count": 6,
+      "rejected": 50,
+      "rejection_reasons": {
+        "CI_UPPER_NOT_BELOW_ZERO": 34,
+        "DELTA_NONNEGATIVE": 16
+      }
+    },
+    "B2": {
+      "R_vs_fisher": 0.000732421875,
+      "accepted_proposals": [
+        3,
+        6,
+        13
+      ],
+      "accepted_transfers": 3,
+      "allocation_file_sha256": "0fa621504a291d6b5e79dd01501e4f1843afd7b331d84d7eacb42647dd270c8e",
+      "candidate_set_sizes": [
+        16
+      ],
+      "changed_units_vs_fisher": 6,
+      "decision_rows": 22,
+      "final_resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "final_schedule_sha256": "ce96830691adc0f7bdf95792c3f79af4eebecac2205ab3ddc29601617e143f79",
+      "half_l1_moved_rank_vs_fisher": 96,
+      "profile_refresh_at_accepted": [
+        2
+      ],
+      "profile_refresh_count": 1,
+      "rejected": 19,
+      "rejection_reasons": {
+        "CI_UPPER_NOT_BELOW_ZERO": 12,
+        "DELTA_NONNEGATIVE": 7
+      }
+    },
+    "B4": {
+      "R_vs_fisher": 0.000732421875,
+      "accepted_proposals": [
+        3,
+        6,
+        8
+      ],
+      "accepted_transfers": 3,
+      "allocation_file_sha256": "e8ebb903321706b9a139cf9779d08cb983920883eeff6d3b48d4e89a3f942d6d",
+      "candidate_set_sizes": [
+        16
+      ],
+      "changed_units_vs_fisher": 6,
+      "decision_rows": 16,
+      "final_resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "final_schedule_sha256": "f0b1b81c5b87642b18823aafbb5b3a88c476534044c7f84b1075220f4deafbe7",
+      "half_l1_moved_rank_vs_fisher": 96,
+      "profile_refresh_at_accepted": [],
+      "profile_refresh_count": 0,
+      "rejected": 13,
+      "rejection_reasons": {
+        "CI_UPPER_NOT_BELOW_ZERO": 8,
+        "DELTA_NONNEGATIVE": 5
+      }
+    }
+  }
+}

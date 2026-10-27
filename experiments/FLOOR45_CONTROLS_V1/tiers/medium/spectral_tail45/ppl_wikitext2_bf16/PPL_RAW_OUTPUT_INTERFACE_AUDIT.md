@@ -1,0 +1,16 @@
+# PPL Raw Output Interface Audit
+
+- generated_at: `2026-10-12T15:52:00.940269-07:00`
+- runner_hash: `ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852`
+- dataset: `wikitext2`
+- ppl: `7.143834562497613`
+- used_windows: `141`
+- token_count_sum: `288768`
+- total_nll_sum: `567789.9892578125`
+
+## Invariants
+
+- Aggregate recomputable as `exp(sum(total_nll)/sum(token_count))`.
+- Original EigenAttn scorer source files were not modified.
+- Per-window atomic write: `.tmp` → fsync → rename → `.DONE`.
+

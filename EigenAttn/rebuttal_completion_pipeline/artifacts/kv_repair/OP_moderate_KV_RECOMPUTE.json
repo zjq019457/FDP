@@ -1,0 +1,43 @@
+{
+  "point": "moderate",
+  "generated_at": "2026-07-29T19:47:09.466130-07:00",
+  "kv_recomputed": true,
+  "dense_kv_bytes": 268435456,
+  "uniform_kv": {
+    "batch": 1,
+    "seqlen": 2048,
+    "bytes_per_elem": 2,
+    "n_layers": 32,
+    "total_rank_sum": 47872,
+    "realized_kv_bytes": 196083712,
+    "dense_kv_bytes": 268435456,
+    "retained_ratio": 0.73046875,
+    "formula": "batch*seqlen*bytes_per_elem*sum_l(r_kq+r_v)",
+    "ranks_sha256": "c922f1af71e6f7393e7d85f14f794a058a7ebe116612dd0b62de279d259a0f1d",
+    "source": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/moderate/uniform/final_model/low_rank_config.json"
+  },
+  "fdp_kv": {
+    "batch": 1,
+    "seqlen": 2048,
+    "bytes_per_elem": 2,
+    "n_layers": 32,
+    "total_rank_sum": 48432,
+    "realized_kv_bytes": 198377472,
+    "dense_kv_bytes": 268435456,
+    "retained_ratio": 0.739013671875,
+    "formula": "batch*seqlen*bytes_per_elem*sum_l(r_kq+r_v)",
+    "ranks_sha256": "870786eb6b8e5ca5c196ae0a421e384686a011e80a8be7a95f1fd6b0fd1a6064",
+    "source": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/moderate/fdp/final_model/low_rank_config.json"
+  },
+  "runtime_cache_check_uniform": {
+    "static_gb": 0.1826171875,
+    "runtime_cache_gb": 0.1826171875,
+    "abs_diff_gb": 0.0,
+    "match": true,
+    "log_line": "[2026-07-29 08:14:09 root](main_eigen_attn.py 3033): INFO Compressed model KV Cache Size : 0.1826171875 GB for batch size of 1"
+  },
+  "uniform_model": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/moderate/uniform/final_model",
+  "fdp_model": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/moderate/fdp/final_model",
+  "FORBIDDEN_UNTIL_TRIPLE_MATCH": false,
+  "manifest_path": "/diskF/jiaqizhang/rebuttal_completion_op_artifacts/operating_points/moderate/OPERATING_POINT_MANIFEST.json"
+}

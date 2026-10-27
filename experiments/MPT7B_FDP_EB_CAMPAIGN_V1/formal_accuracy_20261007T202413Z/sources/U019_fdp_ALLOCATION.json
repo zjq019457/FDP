@@ -1,0 +1,148 @@
+{
+  "breakpoint_stage_sha256": "48d72b08a5be4ceab602bcad0dd0ce75ad1e80147f0ee30c78caf2e8ad331822",
+  "epsilon_base": 0.019,
+  "lambda": 1.2,
+  "layer0_effective_epsilon": 0.019,
+  "predicted_kv_cache_bytes": 660996096,
+  "predicted_minus_uniform_bytes": 52953088,
+  "predicted_relative_gap": 0.08708773442552274,
+  "profile_file_sha256": "5fa9e5adfffcffd4ef5200a836591517b36a0e205363e45de3dea6650c010f7e",
+  "q_epsilon_sha256": "c87aac387457057e4dc72443e0321738665dbd5f5b7fb9735cb772414b9882fb",
+  "quality_used_to_select": false,
+  "rank_schedule": [
+    [
+      1536,
+      3584
+    ],
+    [
+      2976,
+      3232
+    ],
+    [
+      1728,
+      2336
+    ],
+    [
+      1504,
+      2432
+    ],
+    [
+      2048,
+      2784
+    ],
+    [
+      2432,
+      3200
+    ],
+    [
+      2496,
+      3104
+    ],
+    [
+      2816,
+      3296
+    ],
+    [
+      3136,
+      3488
+    ],
+    [
+      3232,
+      3584
+    ],
+    [
+      3328,
+      3616
+    ],
+    [
+      3168,
+      3520
+    ],
+    [
+      3232,
+      3552
+    ],
+    [
+      2912,
+      3360
+    ],
+    [
+      2912,
+      3360
+    ],
+    [
+      2720,
+      3264
+    ],
+    [
+      2784,
+      3296
+    ],
+    [
+      2656,
+      3200
+    ],
+    [
+      2016,
+      2784
+    ],
+    [
+      2080,
+      2784
+    ],
+    [
+      1536,
+      2432
+    ],
+    [
+      1952,
+      2720
+    ],
+    [
+      1888,
+      2592
+    ],
+    [
+      1472,
+      2304
+    ],
+    [
+      1152,
+      2112
+    ],
+    [
+      1024,
+      1920
+    ],
+    [
+      1088,
+      2016
+    ],
+    [
+      2272,
+      2912
+    ],
+    [
+      1760,
+      2496
+    ],
+    [
+      2176,
+      2720
+    ],
+    [
+      2112,
+      2624
+    ],
+    [
+      64,
+      544
+    ]
+  ],
+  "rank_schedule_sha256": "531516326011529e45ad1ae57f37e3e7996504f7c850fad64a594ed0230756e9",
+  "resource_rule": "Frozen epsilon_base mapping only. No global-scalar retune. No MPT numeric resource tolerance is declared here. Actual census is still required.",
+  "schema": "MPT7B_U019_FDP_RANK_LOCK_V1",
+  "status": "SCHEDULE_ASSEMBLED_CENSUS_PENDING",
+  "uniform_b_live_bytes": 608043008,
+  "uniform_rank_schedule_sha256": "4b8e28bee2cca663ef68bf26e4a772b9666c2f6f1821a83697c3bd62978f93d0"
+}

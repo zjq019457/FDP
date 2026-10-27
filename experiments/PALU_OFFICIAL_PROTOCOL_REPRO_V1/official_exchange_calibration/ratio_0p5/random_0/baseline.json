@@ -1,0 +1,18 @@
+{
+  "J": 1.9157371446490288,
+  "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "c4_mean_token_nll": 2.0243586376309395,
+  "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+  "q_mapping_sha256": "6fa7d16bb6689cf88dc78ea6a72f3d630abe1d2cf1ccf2729776a3e6768ae3d3",
+  "ratio": 0.5,
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "signal": "random_0",
+  "source_fisher_schedule_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+  "status": "EXCHANGE_BASELINE_COMPLETE",
+  "wiki_mean_token_nll": 1.807115651667118
+}

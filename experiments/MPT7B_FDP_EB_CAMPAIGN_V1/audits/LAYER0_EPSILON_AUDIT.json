@@ -1,0 +1,155 @@
+{
+  "schema": "MPT7B_LAYER0_EPSILON_SEMANTICS_AUDIT_V1",
+  "status": "READ_ONLY_REPLAY",
+  "quality_used": false,
+  "mpt_fdp_schedule_emitted": false,
+  "verdict_name": "NO_METHOD_CONFLICT",
+  "interpretation": "The provenance value 0.06553740122290536 is the post-mean-normalization, post-rho, pre-builder-override Layer-0 epsilon. The canonical builder then replaces it with e before rank search. The lock sentence describes that post-override effective epsilon. The two numbers are successive stages of one execution, not two competing methods.",
+  "flags": {
+    "RAW_EPS0_EQUALS_E": true,
+    "FINAL_EPS0_EQUALS_E": true,
+    "FINAL_EPS0_EQUALS_0P0655374": false,
+    "FORMAL_LLAMA3_RANK_SHA_REPRODUCED": false,
+    "LOCK_TEXT_IS_PRENORM_SEMANTICS": false,
+    "REAL_METHOD_CONFLICT": false,
+    "MPT_FDP_SCHEDULE_AUTHORIZED": true
+  },
+  "epsilon_final_definition": "Value consumed by the rank-search loop after build_eigen_basis_llama_error_budget_offline.py applies --freeze_layer0_eb. For layer 0 this is e. It is not the provenance eb_vector entry.",
+  "why_raw_equals_e": "q_0 is 0 after layerwise min-max on this formal profile, so epsilon_raw_0 = e/(1+1.2*0) = e. This is a consequence of q_0, not a separate raw-stage override.",
+  "formal_execution": {
+    "model": "llama3_8b",
+    "regime": "medium",
+    "method": "fdp125",
+    "components": [
+      "d1",
+      "d2",
+      "d5"
+    ],
+    "weights_wz_ws_wv_wa_wh": [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "zscore_norm": false,
+    "base_e": 0.06,
+    "lambda": 1.2,
+    "rho": 0.75,
+    "q0": 0.0,
+    "epsilon_raw_0": 0.06,
+    "normalization_factor": 1.4234816173646598,
+    "epsilon_mean_normalized_0": 0.08540889704187958,
+    "epsilon_after_rho_pre_override_0": 0.06553740122290536,
+    "epsilon_rank_search_0": 0.06,
+    "max_abs_stored_schedule_vs_provenance": 2.7755575615628914e-17,
+    "stored_eb_sha256": "2a8f73b4f5d550be9052b0bce8f66dfcd720087d2872f1c412dbb559c5c9eaee",
+    "provenance_eb_sha256": "2a8f73b4f5d550be9052b0bce8f66dfcd720087d2872f1c412dbb559c5c9eaee",
+    "stored_schedule_sha_match": true
+  },
+  "answers": {
+    "A_lock_layer0_epsilon_equals_e_refers_to": "rank-search effective epsilon after the canonical builder override, not epsilon_raw and not the stored provenance value",
+    "B_0p0655374_is": "post-mean-normalization and post-rho Layer-0 value written into provenance eb_vector, before --freeze_layer0_eb replaces it",
+    "C_rho_0p75_participates_in": "only the Layer-0 geometric interpolation inside derive_eb, after global mean normalization and before the builder override. Not used in q construction, the normalization scalar, or rank projection. Its Layer-0 output is discarded by the builder."
+  },
+  "rho_formula": "eps[0] = exp(0.75*log(e) + 0.25*log(epsilon_mean_normalized[0]))",
+  "sources": {
+    "derive_eb": "/diskF/jiaqizhang/fdp125_final_campaign_v1/llama_fdp125_tier_worker.py",
+    "derive_eb_sha256": "faf753daf33e92f4f89a23c08d2bc0d45a0c837e0aac836cf0e078e93232cbba",
+    "resume_driver": "/diskF/jiaqizhang/fdp125_final_campaign_v1/resume_llama_medium.py",
+    "resume_driver_sha256": "609ed9cff3db3e3b9949d2a7a4868348ccbc670482a43bce8a4b8c1e04bb5f91",
+    "basis_builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+    "basis_builder_sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+    "basis_builder_sha_matches_method_lock": true,
+    "basis_builder_mtime": "2026-07-31T19:31:31-0700",
+    "fragility_code": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/realloc_rank_from_fragility.py",
+    "fragility_code_sha256": "3799526d7e0ff0e05df6d7e5f2c267e9f09b65d81551ca622985e4a4cf181a6e",
+    "method_lock": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK.json",
+    "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+    "executed_step1": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/step1.json",
+    "executed_step1_sha256": "67780d18efcd02d353a2a43c2941cd8a7c3cc1e3ce3b282d5cb8b24dfa44c858",
+    "lock_pinned_clean_step1": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb060.json",
+    "lock_pinned_clean_step1_sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+    "clean_step1_does_not_reproduce_provenance_eb": true,
+    "clean_step1_max_abs_rho_schedule_vs_provenance": 0.0001938098836674687,
+    "provenance": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/fdp125/provenance.json",
+    "provenance_file_sha256": "ae4a490dcee2ca4dbd68275e5526b857bd7e6cb7b63bc0eaa8783310ae2c9e7e",
+    "fdp125_basis_command_contains_freeze_layer0_eb": true,
+    "fdp125_basis_layer0_eb_argument": "0.06",
+    "fdp125_basis_log": "deleted with scratch after success; command retained in provenance",
+    "sibling_parent_basis_log_line": "[freeze_layer0_eb] layer0 EB 0.065237 -> 0.060000",
+    "sibling_parent_basis_log": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/failure_logs/parent_basis.log"
+  },
+  "rank_evidence": {
+    "stored_rank_sha256": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+    "method_lock_rank_sha256": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+    "stored_rank_sha_matches_lock": true,
+    "layer0_stored_ranks": [
+      808,
+      992
+    ],
+    "rank_search_reexecuted": false,
+    "reason": "Successful fdp125 threshold traces were deleted with the basis directory. This audit did not rerun the GPU builder. Artifact identity is not a fresh rank replay."
+  },
+  "rejected_hypothesis": {
+    "claim": "epsilon_final_0 equals 0.0655374 solely because Layer 0 joins global mean normalization, and the builder must not clamp it back to e",
+    "result": "REJECTED",
+    "mean_normalized_layer0": 0.08540889704187958,
+    "reason": "Mean normalization alone yields about 0.08541. The value 0.0655374 is the subsequent rho interpolation. The executed builder then sets the rank-search epsilon back to 0.06."
+  },
+  "prior_audit_not_modified": {
+    "path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LAYER0_EPSILON_SEMANTICS_AUDIT_V1/LAYER0_EPSILON_AUDIT.json",
+    "disagreement": "That audit labeled the rho intermediate as epsilon_final and set LOCK_TEXT_IS_PRENORM_SEMANTICS=true. It did not account for the builder override that the successful provenance command requested."
+  },
+  "historical_lock_and_provenance_modified": false,
+  "mpt_reproduction_rule": {
+    "authority": "llama_fdp125_tier_worker.derive_eb followed by the canonical builder --freeze_layer0_eb --layer0_eb e",
+    "q": "minmax across layers of the raw sum dZ + dS + entropy penalty; not component-wise minmax",
+    "lambda": 1.2,
+    "epsilon_raw": "e/(1+1.2*q)",
+    "mean_normalization": "multiply by e/mean(epsilon_raw), including layer 0",
+    "rho": "computed in the Llama derive_eb and stored, then discarded for layer 0 by the builder; do not leave 0.0655374 as the MPT rank-search epsilon",
+    "rank_search_epsilon_0": "e",
+    "do_not_tune_for_mpt_quality": true,
+    "profile_scope": "Llama profiles each tier at that tier's own Uniform operating point. MPT must do the same. The U011 2x512 profile is valid for U011 only."
+  },
+  "u011_profile": {
+    "valid_for_u011_reuse": true,
+    "rerun": false,
+    "path": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/profiles/EB0011_UNIFORM_ATTEMPT2/MPT7B_EB0011_UNIFORM_STEP1_PROFILE_V1.json",
+    "file_sha256": "43fcd1ad06b25e81c20015975dbc71944a65e7c12d1864adf3be6a84dc7cf4fd",
+    "layers": 32,
+    "nonfinite_components": 0,
+    "n_prompts": 2,
+    "seqlen": 512,
+    "quality_scoring": false,
+    "formal_quality_result": false,
+    "layer0_q": 0.0,
+    "components": [
+      "Z_rel_mse",
+      "score_rel_mse_causal",
+      "max(0,-entropy_diff_A)"
+    ],
+    "schedule_not_emitted_reason": "Saved Uniform EB0011 traces stop at the first failure for epsilon=0.011. At the frozen mapping, 12 of 32 layers have a looser rank-search epsilon than that failure error, so their legal breakpoint is not in the saved trace. Ranks were not extrapolated."
+  },
+  "mpt_identity": {
+    "checkpoint": "/diskF/jiaqizhang/models/新建文件夹",
+    "content_fingerprint_sha256": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+    "architecture": "MPTForCausalLM",
+    "layers": 32,
+    "hidden_size": 4096,
+    "attention_heads": 32,
+    "kv_heads": 32,
+    "attention": "multihead_attention, not grouped-query",
+    "head_dim": 128,
+    "fused_qkv": "Wqkv [12288, 4096]",
+    "positional": "learned wpe absolute embedding plus ALiBi attention bias, alibi_bias_max=8; not RoPE",
+    "low_rank_space": "Wqkv_low width is 2*rank_kq+rank_v; Q and K each use rank_kq split across 32 heads; V uses rank_v split across 32 heads",
+    "cache_geometry": "[batch, 32, seq, rank/32] separately for K and V, BF16",
+    "dense_cache_bytes_seq2048_bf16": 1073741824,
+    "tokenizer_class": "GPTNeoXTokenizerFast",
+    "tokenizer_name": "EleutherAI/gpt-neox-20b",
+    "eos_token_id": 0,
+    "model_vocab_size": 50432
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "MPT7B_PROFILE_ATTEMPT_INVALIDATION_V1",
+  "attempt": 1,
+  "classification": "ENGINEERING_PREFLIGHT_MANIFEST_FIELD_NAME_MISMATCH",
+  "status": "INVALIDATED_BEFORE_MODEL_LOAD; NO_PROFILE_OR_QUALITY_RESULT",
+  "failure": {
+    "stage": "checkpoint_content_manifest_binding",
+    "expected_field": "content_fingerprint",
+    "actual_field": "content_fingerprint_sha256",
+    "expected_value": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+    "model_loaded": false,
+    "profile_started": false,
+    "quality_scoring": false
+  },
+  "preserved_artifacts": {
+    "worker_log_path": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/profiles/EB0011_UNIFORM_STEP1_PROFILE_ATTEMPT1.worker.log",
+    "worker_log_sha256": "dc91eb46d9574914b09b40dbf941d3f0f865f63f3697f726fce0ca5ebb6c70c3",
+    "worker_exit_code": 1,
+    "profile_runner_sha256": "831d24e709dd2f7e0f36940e66fdd8863b156a5a06c3dd8bd1b3bbc2e14bdb4d",
+    "profile_launcher_sha256": "75e1ace79908b62a8d0400abc9749ecace2a1057c36c57c0bfab93d874701de6",
+    "official_step1_sha256": "1fae83d86a66fce80e1ca523bec91c77a480010387bc6732c329bc1109d9ac97",
+    "attempt_directories_created_empty": true
+  },
+  "repair": "Read the actual content_fingerprint_sha256 manifest field and make attempts append-only; retry only this preflight/profile node under attempt 2.",
+  "model_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f"
+}

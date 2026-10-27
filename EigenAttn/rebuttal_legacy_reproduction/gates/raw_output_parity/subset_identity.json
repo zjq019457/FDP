@@ -1,0 +1,17 @@
+{
+  "legacy_ppl": 145.87170866121136,
+  "raw_ppl": 145.87170866121136,
+  "rows": [
+    {
+      "window_id": "sub_0",
+      "total_nll": 320.8357849121094,
+      "token_count": 64
+    },
+    {
+      "window_id": "sub_1",
+      "total_nll": 316.9533386230469,
+      "token_count": 64
+    }
+  ],
+  "ids_match": true
+}

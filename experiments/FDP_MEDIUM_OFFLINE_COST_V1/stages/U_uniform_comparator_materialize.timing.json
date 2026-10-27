@@ -1,0 +1,64 @@
+{
+ "stage": "U_uniform_comparator_materialize",
+ "cmd": [
+  "/home/bai-project/anaconda3/envs/eigen/bin/python",
+  "-u",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/code/cost_launch.py",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/stages/U_uniform_comparator_materialize.torchpeak.json",
+  "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+  "--model",
+  "/diskD/jiaqizhang/Llama-3",
+  "--net",
+  "Llama-3-8b",
+  "--dtype",
+  "bf16",
+  "--error_budget",
+  "0.0567",
+  "--avg_dim",
+  "4096",
+  "--seqlen",
+  "2048",
+  "--nsamples",
+  "64",
+  "--seed",
+  "2",
+  "--calib_dataset",
+  "c4",
+  "--compress_only",
+  "--attn_implementation",
+  "eager",
+  "--eigen_basis_path",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/uniform_comparator/basis/official_uniform_medium_eb_0p0567_retry_gpu2_perlayer_eb.pt",
+  "--save_dir",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/uniform_comparator/model",
+  "--output_dir",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/uniform_comparator",
+  "--cache_dir",
+  "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/HF_cache"
+ ],
+ "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+ "rc": 0,
+ "start_epoch": 1791658763.5555649,
+ "wall_s": 142.68475098605268,
+ "peak_cpu_rss_bytes": 33477038080,
+ "peak_nvml_gpu_bytes_process_tree": 17509122048,
+ "peak_nvml_gpu_bytes_per_device": {
+  "2": 17509122048
+ },
+ "marker_offsets_s": {
+  "Loading checkpoint shards": 3.796255016932264,
+  "(?i)saving|save_pretrained|saved": 116.16964101791382
+ },
+ "log": "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/stages/U_uniform_comparator_materialize.log",
+ "torch": {
+  "script": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+  "t_start": 1791658763.5835145,
+  "t_end": 1791658904.5282469,
+  "torch_peak_allocated_bytes": 16877449728,
+  "torch_peak_reserved_bytes": 16993222656
+ },
+ "disk_bytes_after_stage": {
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/uniform_comparator/model": 15804355859,
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/uniform_comparator/final_model": 15804357213
+ }
+}

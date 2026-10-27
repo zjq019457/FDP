@@ -1,0 +1,67 @@
+{
+ "A": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_DIRECT_EXCHANGE_ZERO_SHOT_V2_ATTEMPT2_20261003/workers/uniform068/official/zero_shot_samples",
+ "B": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_DIRECT_EXCHANGE_ZERO_SHOT_V2_ATTEMPT2_20261003/workers/direct_exchange068/fdp125/zero_shot_samples",
+ "reps": 10000,
+ "seed": 20261014,
+ "tasks": {
+  "arc_challenge_localjsonl": {
+   "n": 1172,
+   "A": 31.99658703071672,
+   "B": 33.020477815699664,
+   "delta": 1.0238907849829393,
+   "ci95": [
+    -0.08532423208191253,
+    2.1331058020477855
+   ]
+  },
+  "arc_easy_localjsonl": {
+   "n": 2376,
+   "A": 60.26936026936027,
+   "B": 61.57407407407407,
+   "delta": 1.3047138047137974,
+   "ci95": [
+    0.5050505050504972,
+    2.1043771043771087
+   ]
+  },
+  "hellaswag_localjsonl": {
+   "n": 10042,
+   "A": 44.68233419637522,
+   "B": 46.0565624377614,
+   "delta": 1.3742282413861773,
+   "ci95": [
+    1.1153156741684878,
+    1.6430989842660837
+   ]
+  },
+  "piqa_localjsonl": {
+   "n": 1838,
+   "A": 72.0892274211099,
+   "B": 72.85092491838955,
+   "delta": 0.7616974972796564,
+   "ci95": [
+    -0.054406964091413546,
+    1.5778019586507042
+   ]
+  },
+  "winogrande_localjsonl": {
+   "n": 1267,
+   "A": 59.11602209944752,
+   "B": 59.905288082083665,
+   "delta": 0.7892659826361448,
+   "ci95": [
+    -0.8681925808997626,
+    2.4467245461720633
+   ]
+  }
+ },
+ "macro": {
+  "A": 53.63070620340193,
+  "B": 54.681465465601676,
+  "delta": 1.0507592621997432,
+  "ci95": [
+   0.5763958853598641,
+   1.5241126984450148
+  ]
+ }
+}

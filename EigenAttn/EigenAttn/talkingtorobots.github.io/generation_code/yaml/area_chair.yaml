@@ -1,0 +1,100 @@
+---
+2025:
+  Robo:
+    AC:
+      - IEEE International Conference on Robotics and Automation (ICRA)
+      - Conference on Robot Learning (CoRL)
+      - 'Robotics: Science and Systems (RSS)'
+  NLP:
+    AC:
+      - Conference on Language Modeling (COLM)
+    SAE:
+      - ACL Rolling Review (ARR/EMNLP)
+  AI/ML:
+    AC:
+      - International Conference on Machine Learning (ICML)
+    AE:
+      - Transactions on Machine Learning Research (TMLR)
+2024:
+  Robo:
+    AC:
+      - Conference on Robot Learning (CoRL)
+  CV:
+    AC:
+      - Conference on Computer Vision and Pattern Recognition (CVPR)
+  AI/ML:
+    AC:
+      - International Conference on Learning Representations (ICLR)
+    AE:
+      - Transactions on Machine Learning Research (TMLR)
+  NLP:
+    AC:
+      - European Chapter of the Association for Computational Linguistics (EACL)
+    SAE:
+      - ACL Rolling Review (ARR)
+2023:
+  AI/ML:
+    AC:
+      - Neural Information Processing Systems (NeurIPS)
+      - International Conference on Machine Learning (ICML)
+    AE:
+      - Transactions on Machine Learning Research (TMLR)
+  NLP:
+    SAE:
+      - ACL Rolling Review (ARR)
+    Ethics Co-Chair:
+      - Association for Computational Linguistics (ACL)
+    SAC:
+      - Empirical Methods in Natural Language Proc (EMNLP)
+      # NOTE: Language Grounding to Vision, Robotics and Beyond track
+2022:
+  AI/ML:
+    AC:
+      - International Conference on Learning Representations (ICLR)
+      - Neural Information Processing Systems (NeurIPS)
+    Senior MR:
+      - Association for the Advancement of Artificial Intelligence (AAAI)
+    AE:
+      - Transactions on Machine Learning Research (TMLR)
+  NLP:
+    SAC:
+      - Empirical Methods in Natural Language Proc (EMNLP)
+      #NOTE: Speech, Vision, Robotics, Multimodal Grounding
+    Senior AE:
+      - ACL Rolling Review (ARR)
+2021:
+  AI/ML:
+    AC:
+      - International Conference on Learning Representations (ICLR)
+      - Neural Information Processing Systems (NeurIPS)
+  NLP:
+    AC:
+      - Association for Computational Linguistics (ACL)
+      # NOTE: Machine Learning
+      - Empirical Methods in Natural Language Proc (EMNLP)
+      # NOTE: Speech, Vision, Robotics, Multimodal Grounding
+    AE:
+      - ACL Rolling Review (ARR)
+2020:
+  NLP:
+    AC:
+      - Association for Computational Linguistics (ACL)
+      #NOTE: Language Grounding to Vision, Robotics and Beyond
+      - Asia-Pacific chapter of the Assoc. for Computational Linguistics (AACL)
+  AI/ML:
+    AC:
+      - Neural Information Processing Systems (NeurIPS)
+2019:
+  NLP: 
+    AC:
+      - Association for Computational Linguistics (ACL)
+      #NOTE: Vision, Robotics, Multimodal Grounding, and Speech
+2018:
+  NLP: 
+    AC:
+      - International Conference on Computational Linguistics
+2016:
+  NLP: 
+    AC:
+      - Conference on Lexical and Computational Semantics (*SEM)
+      #NOTE: Sem. Parsing and Role Labeling

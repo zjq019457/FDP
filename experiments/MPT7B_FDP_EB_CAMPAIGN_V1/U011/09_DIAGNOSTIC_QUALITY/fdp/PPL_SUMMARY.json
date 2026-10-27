@@ -1,0 +1,29 @@
+{
+  "J": 2.176184707028525,
+  "arm": "fdp",
+  "c4": {
+    "dataset": "c4",
+    "log_ppl": 2.280820846557617,
+    "ppl": 9.784708976745605,
+    "token_count_sum": 524288,
+    "total_nll_sum": 1195807.0,
+    "used_windows": 256
+  },
+  "experiment": "UNMATCHED_RESOURCE_DIAGNOSTIC",
+  "formal_matched_quality": false,
+  "gpu_free_at_start_bytes": 63804080128,
+  "gpu_total_bytes": 85094825984,
+  "quality_used_to_select_schedule": false,
+  "rank_schedule_sha256": "27614fe9062625031866a42e2829f855b52a7a3113a87a8fa4a8772a0b7aaad0",
+  "resource_gap_relative": 0.04416743613419514,
+  "schema": "MPT7B_U011_DIAGNOSTIC_PPL_V1",
+  "status": "PPL_COMPLETE",
+  "wiki": {
+    "dataset": "wikitext2",
+    "log_ppl": 2.071548567499433,
+    "ppl": 7.937103748321533,
+    "token_count_sum": 286720,
+    "total_nll_sum": 593954.4052734375,
+    "used_windows": 140
+  }
+}

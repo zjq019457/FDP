@@ -1,0 +1,13 @@
+{
+  "delta_J_tune_vs_v1": -0.009082093834877014,
+  "final_J_tune": 1.881027601659298,
+  "foreign_jobs_interrupted": 0,
+  "paired_ci95_tune_vs_v1": [
+    -0.01027362048625946,
+    -0.007850654423236847
+  ],
+  "selected_config_id": "armA_D16_R16_Rmax0.01_beam0",
+  "selection_rule": "minimum final TUNE J among strict candidates; if none, minimum final TUNE J and lock will decide",
+  "status": "ARM_TUNE_CONFIG_SELECTED",
+  "tune_strict_vs_v1": true
+}

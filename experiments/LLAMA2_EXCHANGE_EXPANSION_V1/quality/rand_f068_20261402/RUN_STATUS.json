@@ -1,0 +1,87 @@
+{
+ "label": "rand_f068_20261402",
+ "schedule": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/schedules/rand_f068_20261402/SCHEDULE.json",
+ "schedule_sha256": "cfc8cda11c9cbb3f14921298f28e4eab462c9e70ffe0b3357dd118bb6e96e2b1",
+ "rank_sha": "ee24831a738e0cf3026aa4d02a32b801c45a4f167759df430520e5a66f185f0e",
+ "B_live": 799670272,
+ "ratio": 0.7447509765625,
+ "physical_gpu": 1,
+ "started": "2026-10-12T12:05:37.866532+00:00",
+ "script_sha256": "f475b595cd68045838085bc99300474c8e96944f910c2aeddd65dca9e244f373",
+ "operator_parity": [
+  {
+   "layer": 0,
+   "rank_kq": 4096,
+   "rank_v": 4096,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 1.0,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  },
+  {
+   "layer": 16,
+   "rank_kq": 2400,
+   "rank_v": 3744,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 0.9999999999999999,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  },
+  {
+   "layer": 31,
+   "rank_kq": 2112,
+   "rank_v": 3648,
+   "shape": [
+    1,
+    4,
+    4096
+   ],
+   "dtype": "torch.bfloat16",
+   "max_abs": 0.0,
+   "relative_l2": 0.0,
+   "cosine": 0.9999999999999999,
+   "pass_rel_l2_le_1e-3": true,
+   "method": "runtime module vs explicit functional factorized K-up, causal attention, V-low, O-up path"
+  }
+ ],
+ "ppl": {
+  "wikitext2": {
+   "ppl": 6.352274591170734,
+   "used": 166,
+   "skipped": 0
+  },
+  "c4": {
+   "ppl": 7.842897874236958,
+   "used": 256,
+   "skipped": 0
+  }
+ },
+ "J": 1.9542106724910842,
+ "zs": {
+  "macro": 0.5888651214327641,
+  "tasks": {
+   "piqa_localjsonl": 0.7611534276387377,
+   "winogrande_localjsonl": 0.6495659037095501,
+   "arc_easy_localjsonl": 0.6325757575757576,
+   "arc_challenge_localjsonl": 0.38310580204778155,
+   "hellaswag_localjsonl": 0.5179247161919937
+  },
+  "samples_dir": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/quality/rand_f068_20261402/zs/rand_f068_20261402/zero_shot_samples"
+ },
+ "status": "COMPLETE",
+ "finished": "2026-10-12T12:19:48.395009+00:00"
+}

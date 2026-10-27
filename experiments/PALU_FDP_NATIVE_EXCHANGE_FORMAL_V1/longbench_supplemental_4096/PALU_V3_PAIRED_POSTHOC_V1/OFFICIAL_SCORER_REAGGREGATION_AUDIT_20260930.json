@@ -1,0 +1,181 @@
+{
+  "created_at_utc": "2026-10-01T03:47:03.782383+00:00",
+  "dataset_manifest_sha": "e7a5c5f4d3f85536abfdb93108a0f67228eceb8a91f81ed591f631e0a151e572",
+  "foreign_jobs_interrupted": 0,
+  "manifest_sha256": "02b55f781e4f358b74b327195385a588bfa653ae35ca400d3e14b57642996dfa",
+  "metrics_sha": "f02c7b124587c5dda2be234ba50da3952b8d1c384f288f214364806e7c8683f5",
+  "n_samples_per_method": 2200,
+  "official_scoring_rule": "official PaLu longbench score_task: for TREC/TriviaQA/SAMSum/LSHT, strip leading newlines and score first output line; then max over references; official dataset2metric.",
+  "official_source_protocol_manifest": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/PALU_OFFICIAL_LONGBENCH_V1_MANIFEST.json",
+  "paired_sample_bootstrap": {
+    "ci95": [
+      0.03443569305578179,
+      0.9202401231724355
+    ],
+    "replicates": 10000,
+    "seed": 20260930,
+    "statistic": "unweighted 8-task macro of within-task paired sample mean deltas after official scorer postprocessing",
+    "status": "PROVISIONAL_SAMSUM_GENERATION_MISMATCH"
+  },
+  "prompt_sha": "8d406345f1cb48755e39a3fc1829b106aa8379270c4a094bf97be33ff39da6fa",
+  "protocol_caveat": "SAMSum generation did not use the official newline token as an EOS stop; rescoring fixes aggregation but cannot repair generation. Final official-protocol V1/V3 LongBench comparison requires rerunning only SAMSum for both methods with the frozen original decode rule.",
+  "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "remaining_scope": "7 tasks score-reaggregated from existing predictions; SAMSum listed as exploratory provisional until generation rerun. Sample bootstrap shown is provisional and includes current SAMSum outputs.",
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "resource_match": "EXACT",
+  "schema": "palu_longbench_official_scorer_reaggregation_v1",
+  "scope": "CPU-only rescore of frozen paired V1/V3 prediction JSONL; no model inference or schedule edits",
+  "scorer_sha": "85a6352e88c909aba956d85acc14db2938f2ff7fb87ca3001a6a7c91912db24c",
+  "scores": {
+    "delta_v3_minus_v1": 0.4825458228227717,
+    "v1_native_macro": 37.81819445234517,
+    "v3_macro": 38.30074027516794
+  },
+  "source_prediction_hashes": {
+    "v1": {
+      "lcc": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/lcc.raw.jsonl",
+        "sha256": "f212a63066f43fd07509bb59739d8bef8d15b80f104333dbabd8e7eed57c3b11"
+      },
+      "multi_news": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/multi_news.raw.jsonl",
+        "sha256": "088df721c6cc883af623aa48ab79481ee9ad4562e833d8a9c01b6fffbf27a567"
+      },
+      "qasper": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/qasper.raw.jsonl",
+        "sha256": "596ee333b00af154a931cf2c54694f222033f583a37f57aa754df3325d755607"
+      },
+      "qmsum": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/qmsum.raw.jsonl",
+        "sha256": "b61787d66a5383023fbcfc572a2062e6cf9515dfd7ed95f5a699000d8ef649dd"
+      },
+      "repobench-p": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/repobench-p.raw.jsonl",
+        "sha256": "a990d58237386b839827aab41df26eaab6eb3e20aa539d74c13b086df83cc722"
+      },
+      "samsum": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/samsum.raw.jsonl",
+        "sha256": "6f47e6de1dd0ec894ef9ccc22d9564431a17e79f2b8828e4494bfea575529ab0"
+      },
+      "trec": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/trec.raw.jsonl",
+        "sha256": "bfc3231d5a45e8a8c778727b3fa2bfdb108bcdc9226459c7c15f08c11ce60ec0"
+      },
+      "triviaqa": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/triviaqa.raw.jsonl",
+        "sha256": "268188c9c3645c04e0c04e1cf67eb98ce1149592f819ed66f51318e955b6fb2d"
+      }
+    },
+    "v3": {
+      "lcc": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/lcc.raw.jsonl",
+        "sha256": "799526c1866f77d743a9d7ccc3974b799c285e5c504d327b363f7c1c2e2d8bbf"
+      },
+      "multi_news": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/multi_news.raw.jsonl",
+        "sha256": "002c143bc79a0e229a2d5e5ad38a555b18542299363043a16a4375766697574e"
+      },
+      "qasper": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/qasper.raw.jsonl",
+        "sha256": "6aff3ef5bc5401acc91826f982c0ace78f1256b17732496cfbb80c08f87c90ae"
+      },
+      "qmsum": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/qmsum.raw.jsonl",
+        "sha256": "1feb8a4107471fd517fd6accb3d3722fa87c541be5ed656912e3607a73723e78"
+      },
+      "repobench-p": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/repobench-p.raw.jsonl",
+        "sha256": "44b34dda838d270508beea79c519fedb76f19d304915bc897416487f99d78a99"
+      },
+      "samsum": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/samsum.raw.jsonl",
+        "sha256": "b37ce15390d1b2cc65f7294563645074871563ef7fac0f8edb6a9ff35dcfe0bb"
+      },
+      "trec": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/trec.raw.jsonl",
+        "sha256": "d131de6222bcdf6f775fd76a35575a59f729be45ccd1e8c38d756c3b93180ca3"
+      },
+      "triviaqa": {
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/triviaqa.raw.jsonl",
+        "sha256": "edc1ac4913773310c9e0156ca674d9df04b2f3d606da87ba32a7a79252abf862"
+      }
+    }
+  },
+  "status": "PARTIAL_OFFICIAL_SCORE_REAGGREGATION_PENDING_SAMSUM_DECODE_RERUN",
+  "supersedes": "Old FINAL_PAIRED_AUDIT_20260930 score aggregates for TREC/TriviaQA/SAMSum only; original raw predictions and old audit retained unchanged",
+  "task_n": {
+    "lcc": 500,
+    "multi_news": 200,
+    "qasper": 200,
+    "qmsum": 200,
+    "repobench-p": 500,
+    "samsum": 200,
+    "trec": 200,
+    "triviaqa": 200
+  },
+  "task_results": {
+    "lcc": {
+      "delta_v3_minus_v1": 2.21,
+      "n": 500,
+      "sample_id_order_match": "EXACT",
+      "v1_native_official_score": 53.478,
+      "v3_official_score": 55.688
+    },
+    "multi_news": {
+      "delta_v3_minus_v1": -0.3502,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native_official_score": 1.3952,
+      "v3_official_score": 1.045
+    },
+    "qasper": {
+      "delta_v3_minus_v1": -0.1483,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native_official_score": 8.1984,
+      "v3_official_score": 8.0501
+    },
+    "qmsum": {
+      "delta_v3_minus_v1": 0.2792,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native_official_score": 19.019,
+      "v3_official_score": 19.2982
+    },
+    "repobench-p": {
+      "delta_v3_minus_v1": 1.4,
+      "n": 500,
+      "sample_id_order_match": "EXACT",
+      "v1_native_official_score": 50.398,
+      "v3_official_score": 51.798
+    },
+    "samsum": {
+      "delta_v3_minus_v1": 0.0947,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native_official_score": 25.9953,
+      "v3_official_score": 26.09
+    },
+    "trec": {
+      "delta_v3_minus_v1": -1.5,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native_official_score": 62.0,
+      "v3_official_score": 60.5
+    },
+    "triviaqa": {
+      "delta_v3_minus_v1": 1.875,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native_official_score": 82.0617,
+      "v3_official_score": 83.9367
+    }
+  },
+  "v1_schedule_sha": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+  "v3_allocation_sha": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c"
+}

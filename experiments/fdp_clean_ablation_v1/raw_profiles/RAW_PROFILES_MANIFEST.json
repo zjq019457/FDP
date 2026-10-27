@@ -1,0 +1,27 @@
+{
+  "045": {
+    "source": "/home/bai-project/jiaqizhang/step1_out/step1_llama3_8b_eb045.json",
+    "destination": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb045.json",
+    "size_bytes": 27161,
+    "sha256": "ff5f5bf292e631f6d7214221b6530549b073eca9d62614d687b698eaad0d1926"
+  },
+  "060": {
+    "source": "/home/bai-project/jiaqizhang/step1_out/step1_llama3_8b_eb060.json",
+    "destination": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb060.json",
+    "size_bytes": 27055,
+    "sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4"
+  },
+  "090": {
+    "source": "/home/bai-project/jiaqizhang/step1_out/step1_llama3_8b_eb090.json",
+    "destination": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb090.json",
+    "size_bytes": 27023,
+    "sha256": "864cf9832892f8bcdcb2521604b7827bc87b9cdf0b29284fd3283e3900d180b9"
+  },
+  "120": {
+    "tier": "ultra",
+    "source": "fresh_pass1_diagnostic_gpu3",
+    "destination": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb120.json",
+    "size_bytes": 27048,
+    "sha256": "b7c29115d87a21d7b54dc08e3eee439492a2aa2fbb7910625827c148096c4d69"
+  }
+}

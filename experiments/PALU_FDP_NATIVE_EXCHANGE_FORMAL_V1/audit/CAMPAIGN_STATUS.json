@@ -1,0 +1,15 @@
+{
+  "active_quality_cell": null,
+  "blocker": null,
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "exchange_calibration_manifest_frozen": true,
+  "foreign_jobs_interrupted": 0,
+  "formal_quality_manifest": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/formal_protocol/FORMAL_QUALITY_PROTOCOL_MANIFEST.json",
+  "formal_quality_manifest_frozen": true,
+  "formal_quality_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+  "gpu1_used": false,
+  "last_quality_error": "AttributeError(\"'ModuleList' object has no attribute 'weight'\")",
+  "official_schedules_frozen": true,
+  "quality_started": true,
+  "status": "FORMAL_QUALITY_CELL_COMPLETE"
+}

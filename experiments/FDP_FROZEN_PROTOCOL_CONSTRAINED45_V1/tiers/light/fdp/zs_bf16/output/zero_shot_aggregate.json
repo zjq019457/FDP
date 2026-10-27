@@ -1,0 +1,71 @@
+{
+  "tasks": {
+    "piqa_localjsonl": {
+      "n": 1838,
+      "correct": 1453,
+      "accuracy_from_correct": 0.7905331882480957,
+      "lm_eval_primary": 0.7905331882480957,
+      "lm_eval_row": {
+        "acc,none": 0.7905331882480957,
+        "acc_stderr,none": 0.009494302979819796,
+        "alias": "piqa_localjsonl"
+      },
+      "task_definition_hash": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1"
+    },
+    "winogrande_localjsonl": {
+      "n": 1267,
+      "correct": 923,
+      "accuracy_from_correct": 0.728492501973165,
+      "lm_eval_primary": 0.728492501973165,
+      "lm_eval_row": {
+        "acc,none": 0.728492501973165,
+        "acc_stderr,none": 0.012499326254893127,
+        "alias": "winogrande_localjsonl"
+      },
+      "task_definition_hash": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999"
+    },
+    "arc_easy_localjsonl": {
+      "n": 2376,
+      "correct": 1827,
+      "accuracy_from_correct": 0.7689393939393939,
+      "lm_eval_primary": 0.7689393939393939,
+      "lm_eval_row": {
+        "acc,none": 0.7689393939393939,
+        "acc_stderr,none": 0.008649225152700625,
+        "acc_norm,none": 0.6734006734006734,
+        "acc_norm_stderr,none": 0.009623047038267647,
+        "alias": "arc_easy_localjsonl"
+      },
+      "task_definition_hash": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15"
+    },
+    "arc_challenge_localjsonl": {
+      "n": 1172,
+      "correct": 556,
+      "accuracy_from_correct": 0.47440273037542663,
+      "lm_eval_primary": 0.47440273037542663,
+      "lm_eval_row": {
+        "acc,none": 0.47440273037542663,
+        "acc_stderr,none": 0.014592230885298964,
+        "acc_norm,none": 0.5281569965870307,
+        "acc_norm_stderr,none": 0.014588204105102203,
+        "alias": "arc_challenge_localjsonl"
+      },
+      "task_definition_hash": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d"
+    },
+    "hellaswag_localjsonl": {
+      "n": 10042,
+      "correct": 5659,
+      "accuracy_from_correct": 0.5635331607249552,
+      "lm_eval_primary": 0.5635331607249552,
+      "lm_eval_row": {
+        "acc,none": 0.5635331607249552,
+        "acc_stderr,none": 0.004949335356881831,
+        "alias": "hellaswag_localjsonl"
+      },
+      "task_definition_hash": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815"
+    }
+  },
+  "method": "C45_light_fdp",
+  "model_hash": "2a32c0d014110ccc4a3d9585323687f1c44eb4be509a2db3d6d1682a3c385cc5",
+  "runner_hash": "aa2e210166ca6292123e43fc3da984f110d1c1d09b5c02fd937a2e0bc7df49ab"
+}

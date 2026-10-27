@@ -1,0 +1,70 @@
+{
+  "current_branch": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "differences": [
+    {
+      "classification": "PROTOCOL_MISMATCH",
+      "current": {
+        "first_selection": [
+          "model.layers.0.self_attn.k_proj",
+          [
+            64,
+            64
+          ]
+        ],
+        "modules": 64,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/llama2_ratio_0.5_anchor_schedule.json",
+        "rank_slots_per_module": [
+          2
+        ],
+        "realized_rank": 32640,
+        "schedule_sha256": "d969a428aec03d48df6dc2e18a307e829b482ecdf199fd400343d797d4936766",
+        "status": "PRESENT"
+      },
+      "item": "native group cardinality",
+      "official": "8 groups per K/V projection for Llama-2-7B G-LRD group size 4"
+    },
+    {
+      "classification": "PROTOCOL_MISMATCH",
+      "current": "manual reconstruction from precomputed anchor factor cache",
+      "item": "factorization path",
+      "official": "official compress_model -> HeadwiseLowRankModule.from_linear_whiten"
+    },
+    {
+      "classification": "PROTOCOL_MISMATCH",
+      "current": "32-sample anchor calibration in current method card",
+      "item": "Fisher calibration",
+      "official": "official rank_search loads 2048 WikiText-2 samples at seqlen 1024"
+    },
+    {
+      "classification": "PENDING_OFFICIAL_NATIVE_PORT",
+      "current": {
+        "first_selection": [
+          "model.layers.0.self_attn.k_proj",
+          [
+            64,
+            32
+          ]
+        ],
+        "modules": 64,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange/calibration/ratio_0.5/fdp_native/final_schedule.json",
+        "rank_slots_per_module": [
+          2
+        ],
+        "realized_rank": 32640,
+        "schedule_sha256": "f5e2a9ef5d0072c85aeb584d17675e0432d174295adf002807bafcecb7feff88",
+        "status": "PRESENT"
+      },
+      "item": "FDP current schedule shape",
+      "official": "not yet ported; must use official 8-group native action space"
+    },
+    {
+      "classification": "ENGINEERING_REPAIR_ONLY",
+      "current": "official import failed: fast_hadamard_transform_cuda unavailable",
+      "item": "optional CUDA dependency",
+      "official": "non-quantized FP16 path does not call Hadamard; runner uses a pure-Python import fallback"
+    }
+  ],
+  "official_branch": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+  "old_results": "preserved as CURRENT_ANCHOR_SCHEMA_BRANCH and VALID_INTERNAL_COMPARISON only",
+  "status": "CURRENT_VS_OFFICIAL_PROTOCOL_DIFF_IDENTIFIED"
+}

@@ -1,0 +1,51 @@
+{
+  "foreign_jobs_interrupted": 0,
+  "gpu1_used": false,
+  "last_reason": "waiting for tier dependency or safe GPU",
+  "status": "ACTIVE",
+  "tiers": {
+    "0.3": {
+      "calibration": {
+        "fdp_native": "EXCHANGE_CALIBRATION_COMPLETE",
+        "fdp_prior": "EXCHANGE_CALIBRATION_COMPLETE"
+      },
+      "formal": {
+        "fdp_native": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fdp_prior": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fisher": "IMPORTED_COMPLETE"
+      },
+      "phi": "FROZEN"
+    },
+    "0.5": {
+      "calibration": {
+        "fdp_native": "EXCHANGE_CALIBRATION_COMPLETE",
+        "fdp_prior": "EXCHANGE_CALIBRATION_COMPLETE",
+        "random_0": "EXCHANGE_CALIBRATION_COMPLETE",
+        "random_1": "EXCHANGE_CALIBRATION_COMPLETE",
+        "random_2": "EXCHANGE_CALIBRATION_COMPLETE"
+      },
+      "formal": {
+        "fdp_native": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fdp_prior": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fisher": "IMPORTED_COMPLETE",
+        "random_0": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "random_1": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "random_2": "OFFICIAL_FORMAL_QUALITY_COMPLETE"
+      },
+      "phi": "FROZEN"
+    },
+    "0.7": {
+      "calibration": {
+        "fdp_native": "EXCHANGE_CALIBRATION_COMPLETE",
+        "fdp_prior": "EXCHANGE_CALIBRATION_COMPLETE"
+      },
+      "formal": {
+        "fdp_native": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fdp_prior": "OFFICIAL_FORMAL_QUALITY_COMPLETE",
+        "fisher": "IMPORTED_COMPLETE"
+      },
+      "phi": "FROZEN"
+    }
+  },
+  "updated_epoch": 1790180147.5225575
+}

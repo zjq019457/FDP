@@ -1,0 +1,41 @@
+{
+  "foreign_jobs_interrupted": 0,
+  "gpu_free_mib": "0, 13095 MiB\n1, 33507 MiB\n2, 30231 MiB",
+  "relevant_processes": [
+    "   5663 Rsl     14:25:00  167 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all",
+    " 185069 Rl      02:29:18  100 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task lcc --gpu 2",
+    " 246278 Rsl        31:00  104 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task qmsum --gpu 0",
+    " 246362 Rsl        30:56  104 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task qmsum --gpu 2",
+    " 254484 Rsl        14:54  122 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task repobench-p --gpu 0",
+    " 254485 Rsl        14:54  122 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task repobench-p --gpu 1",
+    " 257856 Rl         09:52  126 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 0 --arm A --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/A_Q256_RMAX_0p5_20260924",
+    " 257857 Rl         09:52  127 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 2 --arm B --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/B_Q256_RMAX_0p5_20260924"
+  ],
+  "v3": {
+    "R_exact": 0.003662109375,
+    "accepted": 15,
+    "calibration_start_J": 1.890109695494175,
+    "changed_native_units": 22,
+    "checkpoint_mtime_utc": "2026-09-24T06:46:45.736578+00:00",
+    "checkpoint_sha256": "775a08494b74fc9f678b89253a4a2ad152e3c42a5cb46e9693f7857c7ba87fbb",
+    "checkpoint_status": "TUNE_CONFIG_CHECKPOINT",
+    "config_id": "armA_D16_R16_Rmax0.005_beam0",
+    "current_allocation_sha256": "41737b2ef75ee203d8f1339e8d116a63f6ee3c6248f617557974f4328072d40a",
+    "current_calibration_J": 1.8831734582781792,
+    "delta_vs_calibration_start_J": -0.006936237215995789,
+    "evaluated": 3840,
+    "foreign_jobs_interrupted": 0,
+    "formal_done": false,
+    "gross_accepted_transfer_rank": 480,
+    "l1_rank_distance_to_frozen_V1_allocation": 960,
+    "lock_status": null,
+    "observed_utc": "2026-09-24T08:44:47.032053+00:00",
+    "redistribution_definition": "R=0.5*L1_rank_distance/131072",
+    "rejected": 2419,
+    "start_allocation_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+    "start_schedule_sha256_actual": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+    "start_schedule_sha256_manifest": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+    "state_status": "V3_TUNE_RUNNING",
+    "tune_grid_done": false
+  }
+}

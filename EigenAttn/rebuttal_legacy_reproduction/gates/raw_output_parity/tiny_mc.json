@@ -1,0 +1,101 @@
+{
+  "samples": [
+    {
+      "sample_id": "0",
+      "gold": 0,
+      "choice_loglikelihoods": [
+        -0.1,
+        -0.2,
+        -0.30000000000000004,
+        -0.4
+      ],
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "sample_id": "1",
+      "gold": 1,
+      "choice_loglikelihoods": [
+        -0.2,
+        -0.30000000000000004,
+        -0.4,
+        -0.5
+      ],
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "sample_id": "2",
+      "gold": 2,
+      "choice_loglikelihoods": [
+        -0.30000000000000004,
+        -0.4,
+        -0.5,
+        -0.6000000000000001
+      ],
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "sample_id": "3",
+      "gold": 3,
+      "choice_loglikelihoods": [
+        -0.4,
+        -0.5,
+        -0.6000000000000001,
+        -0.7000000000000001
+      ],
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "sample_id": "4",
+      "gold": 0,
+      "choice_loglikelihoods": [
+        -0.5,
+        -0.6000000000000001,
+        -0.7000000000000001,
+        -0.8
+      ],
+      "prediction": 0,
+      "correct": true
+    },
+    {
+      "sample_id": "5",
+      "gold": 1,
+      "choice_loglikelihoods": [
+        -0.6000000000000001,
+        -0.7000000000000001,
+        -0.8,
+        -0.9
+      ],
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "sample_id": "6",
+      "gold": 2,
+      "choice_loglikelihoods": [
+        -0.7000000000000001,
+        -0.8,
+        -0.9,
+        -1.0
+      ],
+      "prediction": 0,
+      "correct": false
+    },
+    {
+      "sample_id": "7",
+      "gold": 3,
+      "choice_loglikelihoods": [
+        -0.8,
+        -0.9,
+        -1.0,
+        -1.1
+      ],
+      "prediction": 0,
+      "correct": false
+    }
+  ],
+  "acc": 0.25
+}

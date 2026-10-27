@@ -1,0 +1,53 @@
+{
+  "attempt": 2,
+  "checkpoint_manifest_file_sha256": "8fd59bc340a43f13b250c77d118cc8e479993ecdee1a839bcee5cd7bc1f51db9",
+  "eval_input_binding_file_sha256": "c28e98c14e082167f7c7389832a7f1807128003049a8ab2b2e3c076a3725da84",
+  "expected_architecture": {
+    "alibi": true,
+    "attention_heads": 32,
+    "attn_type": "multihead_attention",
+    "head_dim": 128,
+    "hidden_size": 4096,
+    "layers": 32,
+    "max_seq_len": 2048,
+    "model_type": "mpt"
+  },
+  "manifest_sha256": "9a545f1aa0a2150d78c3871714aa171b972242e154edd9383c0627c4d06320b8",
+  "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+  "model_content_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "mpt_protocol_adapter_sha256": "8709466ea85c25cd0efec7b9fbeab373cfcedb50c07ad028f898f558aa80995e",
+  "official_materializer_sha256": "36051c9a70a1d2ee59cbf9ef7a8c4a455c0f2350e59fc9a949ac9494ac6d5b70",
+  "official_step1_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/diagnose/step1.py",
+  "official_step1_sha256": "1fae83d86a66fce80e1ca523bec91c77a480010387bc6732c329bc1109d9ac97",
+  "profile_launcher_sha256": "7190166491ba7afacb9b6f9667a2fc137c9cb3de63add3410e37fd7b5340f222",
+  "profile_protocol": "official EigenAttention_base/diagnose/step1.py; forward-replace; 2 frozen default prompts; 512 tokens; eager/math SDP; BF16; no scoring/quality selection",
+  "profile_runner_sha256": "ae4f65c66addd45d2abc5ebec22f1e6b2d90d2e84e63fd2376c65df81b16173c",
+  "prompts_sha256": "7f6bb0f6b6b7324bbd5d628319407a0057ff4480ab8e2041978c7c60b7b52c75",
+  "sample_ids": [
+    {
+      "input_ids_sha256": "62cb7b2fe9771ca66612ef4f80aad627d08ff5a6ee1809efa9254df8bddac92b",
+      "padded_length": 512,
+      "prompt_sha256": "b347da92fbdea17a25b7af8c1ed6bd2e0525164cddaff4b9bfa5e00aeedac4d9",
+      "sample_id": "mpt_step1_fixed_prompt_0_seqlen512",
+      "unpadded_token_count": 82
+    },
+    {
+      "input_ids_sha256": "c07df7e06c84e3d846fa9b1430da5ed824907aed6d943e55487879ed646adc7b",
+      "padded_length": 512,
+      "prompt_sha256": "09287027eb4530bc12f84a612ca9509137c34376b1ee472ae9967762367bcaff",
+      "sample_id": "mpt_step1_fixed_prompt_1_seqlen512",
+      "unpadded_token_count": 93
+    }
+  ],
+  "sample_ids_sha256": "eb64f3264dc10f934297356161d552dbdf5b6bccb96f8d637877fa2e86106071",
+  "schema": "MPT7B_EB0011_UNIFORM_STEP1_PROFILE_INPUT_BINDING_V1",
+  "status": "FROZEN_BEFORE_PROFILE_EXECUTION",
+  "step1_pad_id_expression_result": 1,
+  "tokenizer_class": "GPTNeoXTokenizerFast",
+  "tokenizer_eos_token_id": 0,
+  "tokenizer_pad_token_id": null,
+  "tokenizer_use_fast": true,
+  "uniform_rank_schedule_sha256": "d84d591008fbbd7968514b171d2fd79ed8daf1df0deb00833c2e0fcc67679d98",
+  "uniform_realization_audit_file_sha256": "2205cdd070e2fdba25fe42e72c65156c106399bc5e87ceb2419df715dc10f117",
+  "uniform_schedule_manifest_sha256": "c1ffa167ad3534fd4b01defa0c77fb591be8d414b702ff67e82a3890b91e6ed5"
+}

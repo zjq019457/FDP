@@ -1,0 +1,23 @@
+{
+  "sha": "b80472cc8c06d424e41788a5271f5f8f89a64feb91aa8cac45b3d54c978a4b53",
+  "status": "DONE_VALID_EVALUATED",
+  "tier": "aggressive",
+  "tot_rank": 38416,
+  "b_live": 157351936,
+  "wiki_ppl": 10.318369519877693,
+  "wiki_nll": 2.3339257553114114,
+  "wiki_windows": 141,
+  "c4_ppl": 18.069218416678243,
+  "c4_nll": 2.8942098505795,
+  "c4_windows": 256,
+  "zero_shot_tasks": {
+    "hellaswag_localjsonl": 0.4627564230233021,
+    "arc_challenge_localjsonl": 0.4180887372013652,
+    "arc_easy_localjsonl": 0.6965488215488216,
+    "winogrande_localjsonl": 0.6022099447513812,
+    "piqa_localjsonl": 0.7448313384113167
+  },
+  "zero_shot_macro": 0.5848870529872374,
+  "scorer_authority": "lm_eval_primary",
+  "completed_at": "2026-09-10T21:42:14Z"
+}

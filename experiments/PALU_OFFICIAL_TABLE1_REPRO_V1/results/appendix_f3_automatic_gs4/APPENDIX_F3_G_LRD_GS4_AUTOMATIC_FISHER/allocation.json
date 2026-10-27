@@ -1,0 +1,691 @@
+{
+  "allocation_file_sha256": "252841cbd034f35b0517cca0155bf2223daab20486677159bdce8030a31c4b0d",
+  "allocator": "official fisher_uniform",
+  "cell": "APPENDIX_F3_G_LRD_GS4_AUTOMATIC_FISHER",
+  "created_utc": "2026-09-30T17:34:33.912367+00:00",
+  "fisher_samples": 2048,
+  "fisher_seqlen": 1024,
+  "group_size": 4,
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "rank_quantum": 32,
+  "ranks": {
+    "model.layers.0.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.0.self_attn.v_proj": [
+      224,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224
+    ],
+    "model.layers.1.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.1.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.10.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.10.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.11.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.11.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.12.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.12.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.13.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.13.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.14.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.14.self_attn.v_proj": [
+      448,
+      448,
+      448,
+      448,
+      448,
+      448,
+      448,
+      448
+    ],
+    "model.layers.15.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.15.self_attn.v_proj": [
+      448,
+      448,
+      448,
+      448,
+      448,
+      448,
+      448,
+      448
+    ],
+    "model.layers.16.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.16.self_attn.v_proj": [
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "model.layers.17.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.17.self_attn.v_proj": [
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "model.layers.18.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.18.self_attn.v_proj": [
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      320
+    ],
+    "model.layers.19.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.19.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.2.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.2.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.20.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.20.self_attn.v_proj": [
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      320
+    ],
+    "model.layers.21.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.21.self_attn.v_proj": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.22.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.22.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.23.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.23.self_attn.v_proj": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.24.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.24.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.25.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.25.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.26.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.26.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.27.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.27.self_attn.v_proj": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.28.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.28.self_attn.v_proj": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.29.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.29.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.3.self_attn.k_proj": [
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192
+    ],
+    "model.layers.3.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.30.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.30.self_attn.v_proj": [
+      224,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224
+    ],
+    "model.layers.31.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.31.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.4.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.4.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.5.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.5.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.6.self_attn.k_proj": [
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192
+    ],
+    "model.layers.6.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.7.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.7.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.8.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.8.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.9.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.9.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ]
+  },
+  "resource": {
+    "allocation_integrity_pass": true,
+    "allocation_sha256": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+    "cache_bytes_per_token_fp16": 262144,
+    "compression_fraction": 0.5,
+    "decode_cache_bytes_at_2048_fp16": 536870912,
+    "factor_bytes": 1207959552,
+    "low_rank_module_count": 64,
+    "nominal_50pct_rank_target": 131072,
+    "nominal_50pct_target_exact": true,
+    "prefill_cache_bytes_at_2048_fp16": 536870912,
+    "rank_delta_from_nominal_target": 0,
+    "rank_histogram": {
+      "128": 80,
+      "160": 56,
+      "192": 16,
+      "224": 16,
+      "256": 32,
+      "288": 56,
+      "32": 8,
+      "320": 16,
+      "384": 16,
+      "448": 16,
+      "512": 104,
+      "64": 8,
+      "96": 88
+    },
+    "rank_quantized_to_32": true,
+    "rank_quantum": 32,
+    "rank_sum": 131072,
+    "rank_sum_matches_selection": true,
+    "ranks_within_native_group_dimensions": true,
+    "realization_sha256": "ba1afffdbf3b94599efc8d8e50500ccbadcd16729cc9a5c278f4c535ce42d824",
+    "resource_policy": "report official per-unit 32-rank rounding as realized; do not manually adjust ranks to force the nominal total",
+    "uncompressed_rank": 262144
+  },
+  "schema": "PALU_APPENDIX_F3_AUTOMATIC_ALLOCATION_V1",
+  "seed": 42
+}

@@ -1,0 +1,16 @@
+{
+  "fixes": [
+    {
+      "affected_cell": "SAMSum / V1 Native official-decode repair; no samples/results written",
+      "attempt": 1,
+      "failure_behavior": "SAMSum V1 worker stopped before inference at an exact-dict assertion because q.resource(selection) omits factor_bytes_fp16; rank and prefill/decode cache bytes were present and matched frozen census.",
+      "failure_type": "ENGINEERING_ASSERTION_SCHEMA_MISMATCH",
+      "frozen_manifest_modified": false,
+      "next_step": "Rerun isolated SAMSum V1 then V3 under frozen official decode and score_task; no other task rerun.",
+      "old_results_valid": true,
+      "repair": "Compare runtime-returned resource keys that the helper actually supplies (rank and both caches), then bind factor_bytes_fp16 from the frozen resource manifest; keep official generation/scoring unchanged. Also correct escaped newline handling in per-row score logger.",
+      "retryable": true
+    }
+  ],
+  "schema": "palu_engineering_fix_log_v1"
+}

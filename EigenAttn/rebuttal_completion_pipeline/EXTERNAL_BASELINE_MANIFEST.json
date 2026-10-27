@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-07-29T22:30:36.320336-07:00",
+  "hits": [],
+  "official_xkv_recalkv_found": false,
+  "eval_executed": false,
+  "policy": "official implementations only; matched Llama-3 + matched KV bytes",
+  "blocked_reason": "No official xKV/ReCalKV codebase located under slim/external_assets/MatryoshkaKV-cache. RescueKV results exist but are a different method and must not be relabeled."
+}

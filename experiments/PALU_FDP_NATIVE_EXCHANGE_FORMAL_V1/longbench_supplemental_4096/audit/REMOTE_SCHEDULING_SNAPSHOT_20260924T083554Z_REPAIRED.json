@@ -1,0 +1,14 @@
+{
+  "accepted": 15,
+  "checkpoint_sha256": "775a08494b74fc9f678b89253a4a2ad152e3c42a5cb46e9693f7857c7ba87fbb",
+  "evaluated": 3840,
+  "foreign_jobs_interrupted": 0,
+  "formal_done_exists": false,
+  "gpu": "0, GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, NVIDIA A100 80GB PCIe, 100 %, 81920 MiB, 68059 MiB, 13095 MiB\n1, GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806, NVIDIA A100 80GB PCIe, 100 %, 81920 MiB, 48635 MiB, 32519 MiB\n2, GPU-90f68475-4077-7c12-4d66-1cc9092e85c5, NVIDIA A100 80GB PCIe, 100 %, 81920 MiB, 71236 MiB, 9918 MiB\n",
+  "lock_exists": false,
+  "observed_utc": "2026-09-24T08:35:54.664052+00:00",
+  "rejected": 2419,
+  "tune_done_exists": false,
+  "v3_pid": 5663,
+  "v3_state_status": "V3_TUNE_RUNNING"
+}\n

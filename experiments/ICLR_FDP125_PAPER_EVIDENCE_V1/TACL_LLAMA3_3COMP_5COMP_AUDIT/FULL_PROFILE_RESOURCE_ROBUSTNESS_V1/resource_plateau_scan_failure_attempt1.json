@@ -1,0 +1,11 @@
+{
+  "schema": "RESOURCE_PLATEAU_SCAN_ENGINEERING_FAILURE_V1",
+  "timestamp_utc": "2026-10-02T20:03:15.079390+00:00",
+  "stage": "CPU scalar plateau scan output write",
+  "classification": "ENGINEERING_PATH_BUG",
+  "script_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/FULL_PROFILE_RESOURCE_ROBUSTNESS_V1/resource_trace_plateau_scan_v1.py",
+  "script_sha256": "d085e51738fad1fdcff5e96456ba4efb469529863e28091514e917f6ada93ef3",
+  "failure": "FileNotFoundError writing /diskF/jiaqizhang/llama3_full_resource_robustness_v1/medium/medium_selected_epsilon.json because tier output directory did not exist. Builders were successful; scan failed before producing a final candidate; no quality job launched.",
+  "preserved_original_script": true,
+  "repair": "Create dedicated /diskF/.../{medium,aggressive} output directories; rerun unchanged deterministic CPU scan."
+}

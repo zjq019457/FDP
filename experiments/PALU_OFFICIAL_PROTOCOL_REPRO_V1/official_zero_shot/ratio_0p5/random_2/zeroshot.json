@@ -1,0 +1,141 @@
+{
+  "batch_size": 1,
+  "bound_tasks": [
+    "openbookqa_localjsonl",
+    "hellaswag_localjsonl",
+    "piqa_localjsonl",
+    "arc_easy_localjsonl",
+    "arc_challenge_localjsonl",
+    "winogrande_localjsonl"
+  ],
+  "cache_environment": {
+    "HF_DATASETS_CACHE": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/zero_shot_cache/datasets",
+    "HF_HOME": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/zero_shot_cache/hf_home",
+    "TMPDIR": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/zero_shot_cache/tmp",
+    "TRANSFORMERS_CACHE": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/zero_shot_cache/transformers"
+  },
+  "campaign": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+  "dataset_binding_audit_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/PALU_ZERO_SHOT_LOCAL_DATASET_BINDING.json",
+  "dataset_binding_audit_sha256": "8125e65a09b1d73203b7b16689857bc6711486b2c84c2c0194934259f844c0c1",
+  "dataset_bindings": {},
+  "fisher_reference_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/results/fisher_0p5_ratio_0.5_fisher_uniform.json",
+  "fisher_reference_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+  "historical_results_modified": false,
+  "limit": null,
+  "lineage": "OFFICIAL_NATIVE_8_GROUP",
+  "lm_eval_results": {
+    "arc_challenge_localjsonl": {
+      "acc,none": 0.39590443686006827,
+      "acc_norm,none": 0.42150170648464164,
+      "acc_norm_stderr,none": 0.014430197069326025,
+      "acc_stderr,none": 0.014291228393536588,
+      "alias": "arc_challenge_localjsonl"
+    },
+    "arc_easy_localjsonl": {
+      "acc,none": 0.6502525252525253,
+      "acc_norm,none": 0.507996632996633,
+      "acc_norm_stderr,none": 0.010258471289841978,
+      "acc_stderr,none": 0.009785578618940728,
+      "alias": "arc_easy_localjsonl"
+    },
+    "hellaswag_localjsonl": {
+      "acc,none": 0.5068711412069309,
+      "acc_stderr,none": 0.004989310228276109,
+      "alias": "hellaswag_localjsonl"
+    },
+    "openbookqa_localjsonl": {
+      "acc,none": 0.308,
+      "acc_norm,none": 0.434,
+      "acc_norm_stderr,none": 0.022187215803029004,
+      "acc_stderr,none": 0.0206670329874661,
+      "alias": "openbookqa_localjsonl"
+    },
+    "piqa_localjsonl": {
+      "acc,none": 0.7595212187159956,
+      "acc_stderr,none": 0.009971345364651074,
+      "alias": "piqa_localjsonl"
+    },
+    "winogrande_localjsonl": {
+      "acc,none": 0.675611681136543,
+      "acc_stderr,none": 0.013157225726641644,
+      "alias": "winogrande_localjsonl"
+    }
+  },
+  "macro_accuracy": 0.5493601671953439,
+  "method": "random_2",
+  "method_key": "random_2",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "num_fewshot": 0,
+  "official_action_space_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_NATIVE_ACTION_SPACE.json",
+  "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "official_protocol_lock_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_PROTOCOL_LOCK.json",
+  "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+  "old_anchor_schema_results_mixed": false,
+  "old_anchor_schema_zero_shot_used": false,
+  "protocol": "official PaLu six-task zero-shot protocol; common HFLM wrapper; batch_size=1; local offline bindings",
+  "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "ratio": 0.5,
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "resource_control_fisher": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "resource_match": "EXACT",
+  "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/random_2/final_schedule.json",
+  "schedule_sha256": "0c2a92b94473f2020457b1420f6ff628c937148de0658c4420a92d72e03b1f81",
+  "schedule_status": "EXCHANGE_SCHEDULE_FROZEN_PRE_FORMAL_QUALITY",
+  "seed": {
+    "fewshot_random_seed": 1234,
+    "numpy_random_seed": 1234,
+    "random_seed": 0,
+    "torch_random_seed": 1234
+  },
+  "selected_accuracy": {
+    "arc_challenge": {
+      "accuracy": 0.39590443686006827,
+      "bound_task": "arc_challenge_localjsonl",
+      "metric": "acc,none"
+    },
+    "arc_easy": {
+      "accuracy": 0.6502525252525253,
+      "bound_task": "arc_easy_localjsonl",
+      "metric": "acc,none"
+    },
+    "hellaswag": {
+      "accuracy": 0.5068711412069309,
+      "bound_task": "hellaswag_localjsonl",
+      "metric": "acc,none"
+    },
+    "openbookqa": {
+      "accuracy": 0.308,
+      "bound_task": "openbookqa_localjsonl",
+      "metric": "acc,none"
+    },
+    "piqa": {
+      "accuracy": 0.7595212187159956,
+      "bound_task": "piqa_localjsonl",
+      "metric": "acc,none"
+    },
+    "winogrande": {
+      "accuracy": 0.675611681136543,
+      "bound_task": "winogrande_localjsonl",
+      "metric": "acc,none"
+    }
+  },
+  "status": "OFFICIAL_ZERO_SHOT_COMPLETE",
+  "tasks": [
+    "openbookqa",
+    "hellaswag",
+    "piqa",
+    "arc_easy",
+    "arc_challenge",
+    "winogrande"
+  ]
+}

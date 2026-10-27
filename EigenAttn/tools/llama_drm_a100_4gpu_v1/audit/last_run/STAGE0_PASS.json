@@ -1,0 +1,13 @@
+{
+  "at": "2026-07-28T17:32:11+00:00",
+  "gpu_stages_allowed": true,
+  "protocol_id": "LLAMA_DRM_A100_4GPU_V1",
+  "state": "STAGE0_PASS",
+  "summary": {
+    "failed": 0,
+    "passed": 214,
+    "total": 214,
+    "warnings": 0
+  },
+  "warnings": []
+}

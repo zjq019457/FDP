@@ -1,0 +1,8 @@
+{
+  "status": "DONE",
+  "job_id": "R3_bootstrap_note",
+  "returncode": 0,
+  "ended_at": "2026-07-28T10:46:50.607540-07:00",
+  "gpu": null,
+  "elapsed_sec": 10.014338254928589
+}

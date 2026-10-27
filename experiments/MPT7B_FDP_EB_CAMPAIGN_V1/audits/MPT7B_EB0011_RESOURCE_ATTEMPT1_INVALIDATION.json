@@ -1,0 +1,34 @@
+{
+  "schema": "MPT7B_RESOURCE_STAGE_ENGINEERING_INVALIDATION_V1",
+  "attempt": "EB0011_UNIFORM_RESOURCE_ATTEMPT1",
+  "status": "INVALID_ENGINEERING_DTYPE_MISMATCH_NO_RANK_RESULT",
+  "stage": "layer0_candidate_construction_before_strict_rank_search",
+  "model_content_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+  "frozen_parameters_changed": false,
+  "quality_scoring_started": false,
+  "rank_trials_completed": 0,
+  "partial_schedule_emitted": false,
+  "failure": {
+    "exception": "RuntimeError",
+    "message": "expected mat1 and mat2 to have the same dtype, but got: float != c10::BFloat16",
+    "location": "EigenAttn_base/models/decompose_modules.py:MptEigenAttention.__init__",
+    "cause": "official SVD helper returned FP32 basis tensors; checkpoint projection weights are BF16; the materializer requires dtype parity"
+  },
+  "preserved_failure_evidence": {
+    "worker_log": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT1/worker.log",
+    "worker_log_sha256": "b023dd0a8807cc58548160fc76b8625927805e2e9e7033686bc619c890f95539",
+    "worker_exit_code": 1,
+    "input_manifest": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT1/MPT7B_WIKITEXT2_PROFILE_INPUT_BINDING_V1.json",
+    "input_manifest_sha256": "a5ab33efacf9aac7b94745ef151248ebe05af2fe1776de5bdde4baca6ab5eafe",
+    "failed_builder_sha256": "5a63e7732102c784253fd3f3856ae6224f8fce6484de75e0d1627e97cf995023"
+  },
+  "remediation": {
+    "scope": "cast the full-precision SVD basis to the frozen checkpoint dtype only at materializer construction, matching the validated Llama-3 builder boundary",
+    "q_or_method_changed": false,
+    "sample_manifest_changed": false,
+    "epsilon_or_threshold_grid_changed": false,
+    "resource_target_changed": false,
+    "retry_policy": "new attempt directory; preserve attempt1 logs and artifacts"
+  }
+}

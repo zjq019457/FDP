@@ -1,0 +1,18 @@
+{
+  "job_id": "R8_system_metrics",
+  "stage": "R8",
+  "kind": "gpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/r8_system_metrics.py"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": 0,
+  "depends_on": [
+    "R6_summary"
+  ],
+  "created_at": "2026-07-29T07:04:59.783516-07:00",
+  "meta": {
+    "role": "system_metrics"
+  }
+}

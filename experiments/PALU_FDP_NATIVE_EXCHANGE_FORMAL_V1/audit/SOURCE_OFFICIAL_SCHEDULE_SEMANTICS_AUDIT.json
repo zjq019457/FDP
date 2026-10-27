@@ -1,0 +1,26 @@
+{
+  "anchor_reproduction_exact": true,
+  "current_wrapper_outputs": "DIAGNOSTIC_ONLY_NOT_OFFICIAL",
+  "historical_frozen_results_modified": false,
+  "marginal_quality_started": false,
+  "reason": "Current checked-out fisher_uniform path creates 8 slots/module and 262144 capacity, while immutable official 0.7 anchor has 2 slots/module and 65536 capacity. The anchor-schema generator reproduces the immutable 0.7 schedule SHA exactly and is used for 0.5/0.3 candidates.",
+  "schedules": {
+    "0.3": {
+      "integer_target_rank": 19661,
+      "realized_rank_sum": 19584,
+      "schedule_sha": "31ffd70e8c64fcc08ac6fe980b18ea3bfb4af411f31ebdc44b73eb299060c10e"
+    },
+    "0.5": {
+      "integer_target_rank": 32768,
+      "realized_rank_sum": 32640,
+      "schedule_sha": "9893cc06dbfae4442b11e0e5f5620d8464c6e23921af24f85422a230d00d78a4"
+    },
+    "0.7": {
+      "integer_target_rank": 45875,
+      "realized_rank_sum": 45760,
+      "schedule_sha": "7c460aa5e48452bb98e474530993a3239042f38d2e12e991309b7fc16e1f89b4"
+    }
+  },
+  "status": "OFFICIAL_BASELINE_FREEZE_GATE_PASS_FOR_ANCHOR_SCHEMA; CURRENT_WRAPPER_GATE_FAIL",
+  "transfer_count_policy": "TRANSFER_COUNT_POLICY_NOT_FROZEN"
+}

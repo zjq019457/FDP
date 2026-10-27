@@ -1,0 +1,60 @@
+{
+  "experiment": "XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "status": "CALIBRATION_COMPLETE_WAITING_OFFICIAL_BASELINE",
+  "formal_quality_started": false,
+  "marginal_audit": {
+    "experiment": "XKV_FIXED_RUNTIME_NATIVE_MARGINAL_V1",
+    "status": "COMPLETE",
+    "lock": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/XKV_NATIVE_MARGINAL_LOCK.json",
+    "spearman_rho": 0.4523809523809524,
+    "pearson_r": 0.28223714629270746,
+    "must_freeze_before_native_exchange": false
+  },
+  "official_xkv_803x": {
+    "status": "WAITING_GPU",
+    "baseline_frozen": false,
+    "ruler_required_before_claim": true,
+    "ruler_data_ready": true,
+    "ruler_missing_tasks": [],
+    "formal_results_modified": false
+  },
+  "exchange_validation": {
+    "engine": "ONE_SHOT_NATIVE_PROFILE_PLUS_BOUNDED_PAIRWISE_EXCHANGE",
+    "signals": ["q_group", "phi_xkv", "random_seed_0", "random_seed_1", "random_seed_2"],
+    "candidate_T": [0, 1, 2, 3, 4],
+    "native_quantum": {"delta_k": 32, "delta_v": 48},
+    "selection": "calibration_only_then_freeze_before_formal_quality"
+  },
+  "exchange_calibration": {
+    "status": "COMPLETE",
+    "result": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/XKV_EXCHANGE_CALIBRATION.json",
+    "decisions": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/XKV_EXCHANGE_DECISIONS.csv",
+    "manifest_sha256": "7f5b335eb9b7ea4f92256271ee7ef5ce82b766c0034a26f85190595d6fd6f8c0",
+    "selected_T": {
+      "q_prior": 2,
+      "native_phi": 3,
+      "random_seed_0": 1,
+      "random_seed_1": 3,
+      "random_seed_2": 1
+    },
+    "formal_quality_started": false
+  },
+  "calibration_data": {
+    "required": ["WikiText-2 train", "C4 train"],
+    "offline_wikitext2_train": "available",
+    "offline_c4_train": "available_and_verified",
+    "c4_sha256": "8ef8d75b0e045dec4aa5123a671b4564466b0707086a7ed1ba8721626dfffbc9",
+    "manifest": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/XKV_EXCHANGE_VALIDATION_MANIFEST.json",
+    "manifest_status": "FROZEN",
+    "reuse_formal_or_marginal_manifest": false
+  },
+  "immutable": {
+    "old_collapse_results_modified": false,
+    "repaired_runtime_medium_modified": false,
+    "native_marginal_modified": false,
+    "q_modified": false,
+    "formal_manifests_modified": false,
+    "foreign_jobs_interrupted": 0,
+    "gpu1_used": false
+  }
+}

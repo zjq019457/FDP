@@ -1,0 +1,57 @@
+{
+  "all_checkpoint_keys_bound": true,
+  "all_logits_finite": true,
+  "artifact_id": "LLAMA2_E060_FDP125_RUNTIME_FACTOR_CANARY_DIAGNOSTIC_V1",
+  "checkpoint": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/materialize/true_two_pass/final_model",
+  "checkpoint_low_rank_config_sha256": "a40a984d9805eaba20979bdd59b9c8af00178f8d539ddae49e864597c28f0aa3",
+  "classification": "DIAGNOSTIC_ONLY_NOT_FORMAL_QUALITY",
+  "foreign_jobs_interrupted": 0,
+  "formal_quality_authorized": false,
+  "input_probe_sha256": "04c652100e87183a9b00c5100ed4e01558ef1be102a8cba7036cd372339ad627",
+  "reload_logits_identical": true,
+  "resource_lock_status": "PENDING_BUDGET_MATCH",
+  "runs": [
+    {
+      "device_map": {
+        "": 0
+      },
+      "dtype": "torch.float32",
+      "finite": true,
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "logits_sha256_fp32": "d4d21c8bd6e75ae83cd6e7d3e95166629a7a5c0b5248dfdb9d97d9f15c41c7b2",
+      "max_abs_logit": 24.421875,
+      "mismatched_keys_count": 0,
+      "missing_keys": [],
+      "missing_keys_count": 0,
+      "peak_allocated_bytes": 12851028992,
+      "shape": [
+        1,
+        29,
+        32000
+      ],
+      "unexpected_keys": [],
+      "unexpected_keys_count": 0
+    },
+    {
+      "device_map": {
+        "": 0
+      },
+      "dtype": "torch.float32",
+      "finite": true,
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "logits_sha256_fp32": "d4d21c8bd6e75ae83cd6e7d3e95166629a7a5c0b5248dfdb9d97d9f15c41c7b2",
+      "max_abs_logit": 24.421875,
+      "mismatched_keys_count": 0,
+      "missing_keys": [],
+      "missing_keys_count": 0,
+      "peak_allocated_bytes": 12851028992,
+      "shape": [
+        1,
+        29,
+        32000
+      ],
+      "unexpected_keys": [],
+      "unexpected_keys_count": 0
+    }
+  ]
+}

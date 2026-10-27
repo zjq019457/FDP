@@ -1,0 +1,54 @@
+/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[Load] BASE /diskE/opt-30b -> cuda:0
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:09<00:57,  9.54s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:18<00:47,  9.47s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:28<00:37,  9.44s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:37<00:28,  9.41s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:47<00:18,  9.40s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:56<00:09,  9.40s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:57<00:00,  6.59s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:57<00:00,  8.19s/it]
+[Load] CMP /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora128_all48_v5_ns8192_s12k -> cuda:1
+Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]Loading checkpoint shards:   8%|▊         | 1/13 [00:04<00:59,  4.96s/it]Loading checkpoint shards:  15%|█▌        | 2/13 [00:09<00:51,  4.68s/it]Loading checkpoint shards:  23%|██▎       | 3/13 [00:13<00:45,  4.59s/it]Loading checkpoint shards:  31%|███       | 4/13 [00:18<00:40,  4.55s/it]Loading checkpoint shards:  38%|███▊      | 5/13 [00:22<00:36,  4.52s/it]Loading checkpoint shards:  46%|████▌     | 6/13 [00:27<00:31,  4.51s/it]Loading checkpoint shards:  54%|█████▍    | 7/13 [00:31<00:27,  4.50s/it]Loading checkpoint shards:  62%|██████▏   | 8/13 [00:36<00:22,  4.50s/it]Loading checkpoint shards:  69%|██████▉   | 9/13 [00:40<00:17,  4.49s/it]Loading checkpoint shards:  77%|███████▋  | 10/13 [00:45<00:13,  4.49s/it]Loading checkpoint shards:  85%|████████▍ | 11/13 [00:49<00:08,  4.49s/it]Loading checkpoint shards:  92%|█████████▏| 12/13 [00:54<00:04,  4.49s/it]Loading checkpoint shards: 100%|██████████| 13/13 [00:54<00:00,  3.26s/it]Loading checkpoint shards: 100%|██████████| 13/13 [00:54<00:00,  4.21s/it]
+[Model] layers = 48
+[Data] token_stream = 1946330
+[Detect][probe] ratio_mean=2.71538 -> store_log=True (~2 means linear, ~2.71828 means exp/log)
+[Data] batches=2000 seq_len=1024 batch_size=1
+[Calib] step 50/2000
+[Calib] step 100/2000
+[Calib] step 150/2000
+[Calib] step 200/2000
+[Calib] step 250/2000
+[Calib] step 300/2000
+[Calib] step 350/2000
+[Calib] step 400/2000
+[Calib] step 450/2000
+[Calib] step 500/2000
+[Calib] step 550/2000
+[Calib] step 600/2000
+[Calib] step 650/2000
+[Calib] step 700/2000
+[Calib] step 750/2000
+[Calib] step 800/2000
+[Calib] step 850/2000
+[Calib] step 900/2000
+[Calib] step 950/2000
+[Calib] step 1000/2000
+[Calib] step 1050/2000
+[Calib] step 1100/2000
+[Calib] step 1150/2000
+[Calib] step 1200/2000
+[Calib] step 1250/2000
+[Calib] step 1300/2000
+[Calib] step 1350/2000
+[Calib] step 1400/2000
+[Calib] step 1450/2000
+[Calib] step 1500/2000
+[Calib] step 1550/2000
+[Calib] step 1600/2000
+[Calib] step 1650/2000
+[Calib] step 1700/2000
+[Calib] step 1750/2000
+[Calib] step 1800/2000
+[Calib] step 1850/2000
+[Calib] step 1900/2000
+[Calib] step 1950/2000
+[Calib] step 2000/2000
+[Calib] vscale stats: min 0.6035827543443542 max 1.1644483866669568 mean 0.8052255886386391
+[Calib] clipped: at_min=0/48, at_max=0/48, clip_min=0.05, clip_max=8.0
+[Write] patch keys: 48 -> /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora128_all48_v5_vscaleLS_v3_clip005
+[Done] wrote calibrated model to: /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora128_all48_v5_vscaleLS_v3_clip005

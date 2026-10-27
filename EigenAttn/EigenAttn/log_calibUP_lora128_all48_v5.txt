@@ -1,0 +1,250 @@
+/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[Args] {'base_dir': '/diskE/opt-30b', 'cmp_dir': '/diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ', 'tok_dir': '/diskE/opt-30b', 'low_rank_json': './low_rank_config_layerwise_5712_opt30b.json', 'data_dir': '/diskE/jiaqizhang/c4-en/en', 'out_dir': '/diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora128_all48_v5_ns8192_s12k', 'dtype': 'bf16', 'base_device': 'cuda:0', 'cmp_device': 'cuda:1', 'calib_nsamples': 8192, 'calib_seed': 11, 'seq_len': 1024, 'batch_size': 1, 'steps': 12000, 'train_last_n': 48, 'lora_rank': 128, 'lr': 0.0002, 'lam': 5e-05, 'eval_ppl': 1, 'eval_nsamples': 256, 'eval_seed': 2, 'eval_seqlen': 2048, 'loss_fp32': 1, 'log_every': 100}
+[Load] BASE on cuda:0
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:09<00:58,  9.82s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:19<00:48,  9.69s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:29<00:38,  9.64s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:38<00:28,  9.62s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:48<00:19,  9.61s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:57<00:09,  9.60s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:58<00:00,  6.74s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:58<00:00,  8.37s/it]
+[Load] CMP on cuda:1
+Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]Loading checkpoint shards:   8%|▊         | 1/13 [00:04<00:58,  4.89s/it]Loading checkpoint shards:  15%|█▌        | 2/13 [00:09<00:50,  4.61s/it]Loading checkpoint shards:  23%|██▎       | 3/13 [00:13<00:45,  4.53s/it]Loading checkpoint shards:  31%|███       | 4/13 [00:18<00:40,  4.48s/it]Loading checkpoint shards:  38%|███▊      | 5/13 [00:22<00:35,  4.46s/it]Loading checkpoint shards:  46%|████▌     | 6/13 [00:26<00:31,  4.44s/it]Loading checkpoint shards:  54%|█████▍    | 7/13 [00:31<00:26,  4.43s/it]Loading checkpoint shards:  62%|██████▏   | 8/13 [00:35<00:22,  4.43s/it]Loading checkpoint shards:  69%|██████▉   | 9/13 [00:40<00:17,  4.43s/it]Loading checkpoint shards:  77%|███████▋  | 10/13 [00:44<00:13,  4.43s/it]Loading checkpoint shards:  85%|████████▍ | 11/13 [00:49<00:08,  4.42s/it]Loading checkpoint shards:  92%|█████████▏| 12/13 [00:53<00:04,  4.42s/it]Loading checkpoint shards: 100%|██████████| 13/13 [00:53<00:00,  3.21s/it]Loading checkpoint shards: 100%|██████████| 13/13 [00:53<00:00,  4.15s/it]
+[Model] layers=48 hidden=7168 calibrate_layers=0..47 (count=48)
+
+[Eval-Before] Repo-C4 PPL
+BASE PPL: 11.805902 info={'tokens': 122880, 'chunks': 60, 'bad_chunks': 0}
+CMP  PPL: 14.822454 info={'tokens': 122880, 'chunks': 60, 'bad_chunks': 0}
+ratio CMP/BASE: 1.255512
+
+[Calib] Sampling texts + building token stream
+[Calib] token_stream length = 3877788
+[Init] layer 0: r=5712 k=128
+[Init] layer 1: r=5712 k=128
+[Init] layer 2: r=5712 k=128
+[Init] layer 3: r=5712 k=128
+[Init] layer 4: r=5712 k=128
+[Init] layer 5: r=5712 k=128
+[Init] layer 6: r=5712 k=128
+[Init] layer 7: r=5712 k=128
+[Init] layer 8: r=5712 k=128
+[Init] layer 9: r=5712 k=128
+[Init] layer 10: r=5712 k=128
+[Init] layer 11: r=5712 k=128
+[Init] layer 12: r=5712 k=128
+[Init] layer 13: r=5712 k=128
+[Init] layer 14: r=5712 k=128
+[Init] layer 15: r=5712 k=128
+[Init] layer 16: r=5712 k=128
+[Init] layer 17: r=5712 k=128
+[Init] layer 18: r=5712 k=128
+[Init] layer 19: r=5712 k=128
+[Init] layer 20: r=5712 k=128
+[Init] layer 21: r=5712 k=128
+[Init] layer 22: r=5712 k=128
+[Init] layer 23: r=5712 k=128
+[Init] layer 24: r=5712 k=128
+[Init] layer 25: r=5712 k=128
+[Init] layer 26: r=5712 k=128
+[Init] layer 27: r=5712 k=128
+[Init] layer 28: r=5712 k=128
+[Init] layer 29: r=5712 k=128
+[Init] layer 30: r=5712 k=128
+[Init] layer 31: r=5712 k=128
+[Init] layer 32: r=5712 k=128
+[Init] layer 33: r=5712 k=128
+[Init] layer 34: r=5712 k=128
+[Init] layer 35: r=5712 k=128
+[Init] layer 36: r=5712 k=128
+[Init] layer 37: r=5712 k=128
+[Init] layer 38: r=5712 k=128
+[Init] layer 39: r=5712 k=128
+[Init] layer 40: r=5712 k=128
+[Init] layer 41: r=5712 k=128
+[Init] layer 42: r=5712 k=128
+[Init] layer 43: r=5712 k=128
+[Init] layer 44: r=5712 k=128
+[Init] layer 45: r=5712 k=128
+[Init] layer 46: r=5712 k=128
+[Init] layer 47: r=5712 k=128
+
+[Calib] Starting LoRA-style residual fit (hooks for X/Y0, no _last_attn_low needed)
+[Calib] step=1/12000 loss=0.855321 avg_mse=0.0178192
+[Calib] step=100/12000 loss=0.877437 avg_mse=0.0182799
+[Calib] step=200/12000 loss=0.884398 avg_mse=0.018425
+[Calib] step=300/12000 loss=0.927343 avg_mse=0.0193196
+[Calib] step=400/12000 loss=0.905745 avg_mse=0.0188697
+[Calib] step=500/12000 loss=0.801487 avg_mse=0.0166976
+[Calib] step=600/12000 loss=0.757862 avg_mse=0.0157888
+[Calib] step=700/12000 loss=0.825183 avg_mse=0.0171913
+[Calib] step=800/12000 loss=0.640004 avg_mse=0.0133334
+[Calib] step=900/12000 loss=0.660122 avg_mse=0.0137525
+[Calib] step=1000/12000 loss=0.760996 avg_mse=0.0158541
+[Calib] step=1100/12000 loss=0.636986 avg_mse=0.0132705
+[Calib] step=1200/12000 loss=0.810907 avg_mse=0.0168939
+[Calib] step=1300/12000 loss=0.685277 avg_mse=0.0142766
+[Calib] step=1400/12000 loss=1.14826 avg_mse=0.0239221
+[Calib] step=1500/12000 loss=0.816919 avg_mse=0.0170191
+[Calib] step=1600/12000 loss=0.74832 avg_mse=0.01559
+[Calib] step=1700/12000 loss=0.613355 avg_mse=0.0127782
+[Calib] step=1800/12000 loss=0.724042 avg_mse=0.0150842
+[Calib] step=1900/12000 loss=0.90732 avg_mse=0.0189025
+[Calib] step=2000/12000 loss=1.0024 avg_mse=0.0208834
+[Calib] step=2100/12000 loss=0.771115 avg_mse=0.0160649
+[Calib] step=2200/12000 loss=0.769036 avg_mse=0.0160216
+[Calib] step=2300/12000 loss=0.758608 avg_mse=0.0158043
+[Calib] step=2400/12000 loss=0.58695 avg_mse=0.0122281
+[Calib] step=2500/12000 loss=0.722663 avg_mse=0.0150555
+[Calib] step=2600/12000 loss=0.77428 avg_mse=0.0161308
+[Calib] step=2700/12000 loss=0.651923 avg_mse=0.0135817
+[Calib] step=2800/12000 loss=0.744642 avg_mse=0.0155134
+[Calib] step=2900/12000 loss=0.732985 avg_mse=0.0152705
+[Calib] step=3000/12000 loss=0.985341 avg_mse=0.0205279
+[Calib] step=3100/12000 loss=1.11076 avg_mse=0.0231409
+[Calib] step=3200/12000 loss=0.673288 avg_mse=0.0140268
+[Calib] step=3300/12000 loss=0.688289 avg_mse=0.0143393
+[Calib] step=3400/12000 loss=0.628761 avg_mse=0.0130992
+[Calib] step=3500/12000 loss=0.610038 avg_mse=0.0127091
+[Calib] step=3600/12000 loss=0.613454 avg_mse=0.0127803
+[Calib] step=3700/12000 loss=0.626357 avg_mse=0.0130491
+[Calib] step=3800/12000 loss=0.743696 avg_mse=0.0154937
+[Calib] step=3900/12000 loss=0.917233 avg_mse=0.019109
+[Calib] step=4000/12000 loss=0.658871 avg_mse=0.0137265
+[Calib] step=4100/12000 loss=0.818078 avg_mse=0.0170433
+[Calib] step=4200/12000 loss=0.642788 avg_mse=0.0133914
+[Calib] step=4300/12000 loss=0.760556 avg_mse=0.0158449
+[Calib] step=4400/12000 loss=0.654976 avg_mse=0.0136453
+[Calib] step=4500/12000 loss=0.523567 avg_mse=0.0109076
+[Calib] step=4600/12000 loss=0.83704 avg_mse=0.0174383
+[Calib] step=4700/12000 loss=0.647698 avg_mse=0.0134937
+[Calib] step=4800/12000 loss=0.956642 avg_mse=0.01993
+[Calib] step=4900/12000 loss=0.762101 avg_mse=0.0158771
+[Calib] step=5000/12000 loss=0.742884 avg_mse=0.0154767
+[Calib] step=5100/12000 loss=0.780565 avg_mse=0.0162618
+[Calib] step=5200/12000 loss=0.549752 avg_mse=0.0114531
+[Calib] step=5300/12000 loss=0.601854 avg_mse=0.0125386
+[Calib] step=5400/12000 loss=0.758825 avg_mse=0.0158088
+[Calib] step=5500/12000 loss=0.9403 avg_mse=0.0195896
+[Calib] step=5600/12000 loss=0.666215 avg_mse=0.0138795
+[Calib] step=5700/12000 loss=0.792999 avg_mse=0.0165208
+[Calib] step=5800/12000 loss=0.533774 avg_mse=0.0111203
+[Calib] step=5900/12000 loss=0.687896 avg_mse=0.0143312
+[Calib] step=6000/12000 loss=0.558493 avg_mse=0.0116353
+[Calib] step=6100/12000 loss=0.798436 avg_mse=0.0166341
+[Calib] step=6200/12000 loss=0.721168 avg_mse=0.0150243
+[Calib] step=6300/12000 loss=0.691034 avg_mse=0.0143965
+[Calib] step=6400/12000 loss=0.432355 avg_mse=0.00900738
+[Calib] step=6500/12000 loss=0.639925 avg_mse=0.0133318
+[Calib] step=6600/12000 loss=0.621053 avg_mse=0.0129386
+[Calib] step=6700/12000 loss=0.8011 avg_mse=0.0166896
+[Calib] step=6800/12000 loss=0.74599 avg_mse=0.0155414
+[Calib] step=6900/12000 loss=0.492025 avg_mse=0.0102505
+[Calib] step=7000/12000 loss=0.811769 avg_mse=0.0169118
+[Calib] step=7100/12000 loss=0.710642 avg_mse=0.014805
+[Calib] step=7200/12000 loss=0.707013 avg_mse=0.0147294
+[Calib] step=7300/12000 loss=0.877108 avg_mse=0.0182731
+[Calib] step=7400/12000 loss=0.81921 avg_mse=0.0170669
+[Calib] step=7500/12000 loss=0.689551 avg_mse=0.0143656
+[Calib] step=7600/12000 loss=0.53981 avg_mse=0.011246
+[Calib] step=7700/12000 loss=0.642395 avg_mse=0.0133832
+[Calib] step=7800/12000 loss=0.542874 avg_mse=0.0113099
+[Calib] step=7900/12000 loss=0.66988 avg_mse=0.0139558
+[Calib] step=8000/12000 loss=0.735152 avg_mse=0.0153156
+[Calib] step=8100/12000 loss=0.641622 avg_mse=0.0133671
+[Calib] step=8200/12000 loss=0.75117 avg_mse=0.0156494
+[Calib] step=8300/12000 loss=0.745591 avg_mse=0.0155331
+[Calib] step=8400/12000 loss=0.725671 avg_mse=0.0151181
+[Calib] step=8500/12000 loss=0.7067 avg_mse=0.0147229
+[Calib] step=8600/12000 loss=0.529349 avg_mse=0.0110281
+[Calib] step=8700/12000 loss=0.736372 avg_mse=0.0153411
+[Calib] step=8800/12000 loss=0.657719 avg_mse=0.0137025
+[Calib] step=8900/12000 loss=0.60908 avg_mse=0.0126892
+[Calib] step=9000/12000 loss=0.953729 avg_mse=0.0198693
+[Calib] step=9100/12000 loss=0.633721 avg_mse=0.0132025
+[Calib] step=9200/12000 loss=0.567678 avg_mse=0.0118266
+[Calib] step=9300/12000 loss=0.691645 avg_mse=0.0144093
+[Calib] step=9400/12000 loss=0.800494 avg_mse=0.0166769
+[Calib] step=9500/12000 loss=0.945893 avg_mse=0.0197061
+[Calib] step=9600/12000 loss=0.65288 avg_mse=0.0136017
+[Calib] step=9700/12000 loss=0.749887 avg_mse=0.0156226
+[Calib] step=9800/12000 loss=0.669992 avg_mse=0.0139581
+[Calib] step=9900/12000 loss=0.888449 avg_mse=0.0185093
+[Calib] step=10000/12000 loss=0.703113 avg_mse=0.0146482
+[Calib] step=10100/12000 loss=0.653683 avg_mse=0.0136184
+[Calib] step=10200/12000 loss=0.61486 avg_mse=0.0128096
+[Calib] step=10300/12000 loss=0.546767 avg_mse=0.011391
+[Calib] step=10400/12000 loss=0.812285 avg_mse=0.0169226
+[Calib] step=10500/12000 loss=0.808119 avg_mse=0.0168358
+[Calib] step=10600/12000 loss=0.582532 avg_mse=0.0121361
+[Calib] step=10700/12000 loss=0.714077 avg_mse=0.0148766
+[Calib] step=10800/12000 loss=0.776725 avg_mse=0.0161818
+[Calib] step=10900/12000 loss=0.648769 avg_mse=0.013516
+[Calib] step=11000/12000 loss=0.532353 avg_mse=0.0110907
+[Calib] step=11100/12000 loss=0.706572 avg_mse=0.0147202
+[Calib] step=11200/12000 loss=0.551868 avg_mse=0.0114972
+[Calib] step=11300/12000 loss=0.609566 avg_mse=0.0126993
+[Calib] step=11400/12000 loss=0.568316 avg_mse=0.0118399
+[Calib] step=11500/12000 loss=0.731021 avg_mse=0.0152296
+[Calib] step=11600/12000 loss=0.573697 avg_mse=0.011952
+[Calib] step=11700/12000 loss=0.598444 avg_mse=0.0124676
+[Calib] step=11800/12000 loss=0.724128 avg_mse=0.015086
+[Calib] step=11900/12000 loss=0.984661 avg_mse=0.0205138
+[Calib] step=12000/12000 loss=0.846065 avg_mse=0.0176263
+
+[Merge] Applying residual into CMP out_proj_up weights/bias
+[Merge] layer 0: |dW|_fro=15.595 |db|=0.962
+[Merge] layer 1: |dW|_fro=38.769 |db|=0.416
+[Merge] layer 2: |dW|_fro=35.958 |db|=0.431
+[Merge] layer 3: |dW|_fro=23.798 |db|=0.355
+[Merge] layer 4: |dW|_fro=23.299 |db|=0.316
+[Merge] layer 5: |dW|_fro=19.868 |db|=0.368
+[Merge] layer 6: |dW|_fro=24.414 |db|=0.300
+[Merge] layer 7: |dW|_fro=18.088 |db|=0.351
+[Merge] layer 8: |dW|_fro=14.804 |db|=0.367
+[Merge] layer 9: |dW|_fro=16.124 |db|=0.361
+[Merge] layer 10: |dW|_fro=14.082 |db|=0.390
+[Merge] layer 11: |dW|_fro=11.444 |db|=0.468
+[Merge] layer 12: |dW|_fro=8.180 |db|=0.475
+[Merge] layer 13: |dW|_fro=7.663 |db|=0.481
+[Merge] layer 14: |dW|_fro=7.521 |db|=0.417
+[Merge] layer 15: |dW|_fro=7.807 |db|=0.448
+[Merge] layer 16: |dW|_fro=8.846 |db|=0.464
+[Merge] layer 17: |dW|_fro=8.824 |db|=0.590
+[Merge] layer 18: |dW|_fro=8.847 |db|=0.560
+[Merge] layer 19: |dW|_fro=8.742 |db|=0.537
+[Merge] layer 20: |dW|_fro=9.236 |db|=0.763
+[Merge] layer 21: |dW|_fro=9.755 |db|=1.120
+[Merge] layer 22: |dW|_fro=10.411 |db|=1.313
+[Merge] layer 23: |dW|_fro=10.107 |db|=1.302
+[Merge] layer 24: |dW|_fro=10.968 |db|=1.697
+[Merge] layer 25: |dW|_fro=10.871 |db|=1.472
+[Merge] layer 26: |dW|_fro=10.936 |db|=1.675
+[Merge] layer 27: |dW|_fro=11.948 |db|=2.133
+[Merge] layer 28: |dW|_fro=12.828 |db|=2.029
+[Merge] layer 29: |dW|_fro=13.900 |db|=2.291
+[Merge] layer 30: |dW|_fro=14.313 |db|=2.358
+[Merge] layer 31: |dW|_fro=13.983 |db|=2.146
+[Merge] layer 32: |dW|_fro=16.036 |db|=2.390
+[Merge] layer 33: |dW|_fro=14.740 |db|=2.230
+[Merge] layer 34: |dW|_fro=13.651 |db|=2.126
+[Merge] layer 35: |dW|_fro=13.385 |db|=2.145
+[Merge] layer 36: |dW|_fro=13.195 |db|=2.175
+[Merge] layer 37: |dW|_fro=12.794 |db|=2.020
+[Merge] layer 38: |dW|_fro=12.874 |db|=1.860
+[Merge] layer 39: |dW|_fro=12.309 |db|=2.252
+[Merge] layer 40: |dW|_fro=12.147 |db|=1.687
+[Merge] layer 41: |dW|_fro=12.471 |db|=2.149
+[Merge] layer 42: |dW|_fro=13.168 |db|=2.343
+[Merge] layer 43: |dW|_fro=11.888 |db|=2.187
+[Merge] layer 44: |dW|_fro=12.671 |db|=2.316
+[Merge] layer 45: |dW|_fro=14.342 |db|=1.893
+[Merge] layer 46: |dW|_fro=16.259 |db|=2.029
+[Merge] layer 47: |dW|_fro=19.152 |db|=2.382
+
+[Eval-After] Repo-C4 PPL (CMP calibrated in-memory)
+CMP(calib) PPL: 12.844537 info={'tokens': 122880, 'chunks': 60, 'bad_chunks': 0}
+
+[Write] Saving calibrated model shards: /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora128_all48_v5_ns8192_s12k
+Traceback (most recent call last):
+  File "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/calibrate_out_proj_up_lora.py", line 480, in <module>
+    main()
+  File "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/calibrate_out_proj_up_lora.py", line 467, in main
+    ensure_dir_empty(args.out_dir)
+  File "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/calibrate_out_proj_up_lora.py", line 24, in ensure_dir_empty
+    raise RuntimeError(f"out_dir exists: {path}")
+RuntimeError: out_dir exists: /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora128_all48_v5_ns8192_s12k

@@ -1,0 +1,103 @@
+{
+  "base_manifest_sha256": "65c0304ee4e7059fb8eabd621edc9e4f8bf374f8a76594cf3642783456fe76c4",
+  "cache_capacity_bytes_at_4096": 1073741824,
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1_LONGBENCH_SUPPLEMENTAL",
+  "dataset_manifest_sha": "e7a5c5f4d3f85536abfdb93108a0f67228eceb8a91f81ed591f631e0a151e572",
+  "generation": {
+    "do_sample": false,
+    "num_beams": 1,
+    "seed": 42,
+    "temperature": 1.0
+  },
+  "legacy_unmatched_rank": 32640,
+  "manifest_sha": "02b55f781e4f358b74b327195385a588bfa653ae35ca400d3e14b57642996dfa",
+  "max_length": 4096,
+  "metrics_sha": "f02c7b124587c5dda2be234ba50da3952b8d1c384f288f214364806e7c8683f5",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "n_samples": 2200,
+  "n_tasks": 8,
+  "pre_frozen_v3_longbench_policy": "DO_NOT_RUN",
+  "prompt_sha": "8d406345f1cb48755e39a3fc1829b106aa8379270c4a094bf97be33ff39da6fa",
+  "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "ratio": 0.5,
+  "resource_match": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "schema": "PALU_V3_PAIRED_LONGBENCH_POSTHOC_V1",
+  "scope": "posthoc supplemental; no retune",
+  "scorer_sha": "85a6352e88c909aba956d85acc14db2938f2ff7fb87ca3001a6a7c91912db24c",
+  "status": "FROZEN_BEFORE_QUALITY_RUN",
+  "task_files": {
+    "lcc": {
+      "max_new_tokens": 64,
+      "n_samples": 500,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/lcc.jsonl",
+      "prompt": "Please complete the code given below. \n{context}Next line of code:\n",
+      "sha256": "a35809a88d899f61c116690b12f9e96d443238852cedc1a9fe48d85bff6f7aa1"
+    },
+    "multi_news": {
+      "max_new_tokens": 512,
+      "n_samples": 200,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/multi_news.jsonl",
+      "prompt": "You are given several news passages. Write a one-page summary of all news. \n\nNews:\n{context}\n\nNow, write a one-page summary of all the news.\n\nSummary:",
+      "sha256": "f8817c00af317c2d7f81128f334bcfe5780c6c2a515d5c96811aa0ddf8b5ee6b"
+    },
+    "qasper": {
+      "max_new_tokens": 128,
+      "n_samples": 200,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/qasper.jsonl",
+      "prompt": "You are given a scientific article and a question. Answer the question as concisely as you can, using a single phrase or sentence if possible. If the question cannot be answered based on the information in the article, write \"unanswerable\". If the question is a yes/no question, answer \"yes\", \"no\", or \"unanswerable\". Do not provide any explanation.\n\nArticle: {context}\n\n Answer the question based on the above article as concisely as you can, using a single phrase or sentence if possible. If the question cannot be answered based on the information in the article, write \"unanswerable\". If the question is a yes/no question, answer \"yes\", \"no\", or \"unanswerable\". Do not provide any explanation.\n\nQuestion: {input}\n\nAnswer:",
+      "sha256": "29aa07d2a63f36f4fb8e8cd200a3428ee3126d750bde6af1c8f9bc41c2366854"
+    },
+    "qmsum": {
+      "max_new_tokens": 512,
+      "n_samples": 200,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/qmsum.jsonl",
+      "prompt": "You are given a meeting transcript and a query containing a question or instruction. Answer the query in one or more sentences.\n\nTranscript:\n{context}\n\nNow, answer the query based on the above meeting transcript in one or more sentences.\n\nQuery: {input}\nAnswer:",
+      "sha256": "e992f5157679b0c1ca281d0da19d1a8b3496117630ae639c9683ed3dab029113"
+    },
+    "repobench-p": {
+      "max_new_tokens": 64,
+      "n_samples": 500,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/repobench-p.jsonl",
+      "prompt": "Please complete the code given below. \n{context}{input}Next line of code:\n",
+      "sha256": "919a4439e2a84ebb25bacc39ac3b3269a7641af6e02ae205ed78d8c53dfe3568"
+    },
+    "samsum": {
+      "max_new_tokens": 128,
+      "n_samples": 200,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/samsum.jsonl",
+      "prompt": "Summarize the dialogue into a few short sentences. The following are some examples.\n\n{context}\n\n{input}",
+      "sha256": "d435a4c7a05d2006872da8dd0c44c0a48648baa1ce4f62a4084d07aa7883f0cc"
+    },
+    "trec": {
+      "max_new_tokens": 64,
+      "n_samples": 200,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/trec.jsonl",
+      "prompt": "Please determine the type of the question below. Here are some examples of questions.\n\n{context}\n{input}",
+      "sha256": "20a88e14f7442f58a39082cdd7396f1093ea8162da0a4ea7ead7d6757514c8f4"
+    },
+    "triviaqa": {
+      "max_new_tokens": 32,
+      "n_samples": 200,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/triviaqa.jsonl",
+      "prompt": "Answer the question based on the given passage. Only give me the answer and do not output any other words. The following are some examples.\n\n{context}\n\n{input}",
+      "sha256": "ed2529de2e10b12c00f49981870c23c7c51667069cdd8d0740e1423ff337d7fa"
+    }
+  },
+  "tasks": [
+    "triviaqa",
+    "qasper",
+    "trec",
+    "samsum",
+    "lcc",
+    "repobench-p",
+    "qmsum",
+    "multi_news"
+  ],
+  "v1_schedule_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+  "v3_allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c"
+}

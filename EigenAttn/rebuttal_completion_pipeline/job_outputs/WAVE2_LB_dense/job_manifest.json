@@ -1,0 +1,23 @@
+{
+  "job_id": "WAVE2_LB_dense",
+  "cmd": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_completion_pipeline/runners/wave2_longbench_eigen.py",
+    "--method",
+    "dense",
+    "--model",
+    "/diskD/jiaqizhang/Llama-3",
+    "--tok",
+    "/diskD/jiaqizhang/Llama-3",
+    "--data_dir",
+    "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench",
+    "--max_len",
+    "8192",
+    "--limit_per_task",
+    "20",
+    "--out_dir",
+    "/diskF/jiaqizhang/wave2_artifacts/longbench/dense"
+  ],
+  "started_at": "2026-07-29T22:30:36.171958-07:00",
+  "protocol_hash": "bf8bc0030f95918c425b8b3721331a27d1bfd1711b48692089c000a106b7fd9e"
+}

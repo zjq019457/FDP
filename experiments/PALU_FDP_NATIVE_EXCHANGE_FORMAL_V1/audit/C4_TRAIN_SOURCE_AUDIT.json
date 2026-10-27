@@ -1,0 +1,12 @@
+{
+  "bytes": 319308785,
+  "gzip_jsonl_checked": true,
+  "manifest": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/manifest.json",
+  "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+  "selected_c4_chunks": 16,
+  "selected_wiki_chunks": 16,
+  "selection_quality_independent": true,
+  "sha256": "8ef8d75b0e045dec4aa5123a671b4564466b0707086a7ed1ba8721626dfffbc9",
+  "source": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/input/c4-train.00000-of-01024.json.gz",
+  "status": "C4_TRAIN_SOURCE_VALID; MANIFEST_FROZEN"
+}

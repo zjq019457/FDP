@@ -1,0 +1,4 @@
+/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[Pool] {'seen_docs': 45576, 'nfiles': 1, 'file0': '/diskE/jiaqizhang/c4-en/en/c4-validation.00000-of-00008.json.gz'} docs_in_pool= 45576
+[Saved] /diskD/testenc_c4val_stream_4.19M_seed2.pt shape= (1, 4194304) tokens= 4194304

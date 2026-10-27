@@ -1,0 +1,21 @@
+{
+  "run_id": "TABLE1_DENSE_PPL_20260929T1128Z",
+  "status": "RUNNING",
+  "source_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "source_repo": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/Palu",
+  "model_symlink": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/model_reference/Llama-2-7b-hf",
+  "model_target": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "command": "python -c <guarded runpy> run_ppl_eval.py --model_name_or_path MODEL --datasets wikitext2,c4 --seqlen 2048",
+  "env": {
+    "python": "3.10.19",
+    "torch": "2.4.0+cu121",
+    "transformers": "4.37.2",
+    "datasets": "2.19.2",
+    "lm_eval": "0.4.2",
+    "cuda_visible_devices": "0",
+    "dtype": "float16",
+    "fht_guard": "import-only; raises if called"
+  },
+  "started_utc": "2026-09-29T18:33:28.274391+00:00",
+  "gpu_free_mib_at_start": 68281
+}

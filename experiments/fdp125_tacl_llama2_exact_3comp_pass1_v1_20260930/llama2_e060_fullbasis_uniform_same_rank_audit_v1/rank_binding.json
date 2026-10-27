@@ -1,0 +1,265 @@
+{
+  "artifact": "same-rank audit basis; no schedule or method change",
+  "source_full_basis": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_full_capacity_basis_only_v1/llama2_e060_full_basis_capacity_only_eb0p06.pt",
+  "source_old_uniform_basis": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_7b_uniform_pass1_e060_eb0p06.pt",
+  "source_report": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_7b_uniform_pass1_e060_report.json",
+  "layers": [
+    {
+      "layer": 0,
+      "rank_kq": 4096,
+      "rank_v": 4096,
+      "qk_cols_per_head": 128,
+      "v_cols_per_head": 128,
+      "threshold": 1.0
+    },
+    {
+      "layer": 1,
+      "rank_kq": 4096,
+      "rank_v": 4096,
+      "qk_cols_per_head": 128,
+      "v_cols_per_head": 128,
+      "threshold": 1.0
+    },
+    {
+      "layer": 2,
+      "rank_kq": 1184,
+      "rank_v": 3488,
+      "qk_cols_per_head": 37,
+      "v_cols_per_head": 109,
+      "threshold": 0.8999999999999999
+    },
+    {
+      "layer": 3,
+      "rank_kq": 992,
+      "rank_v": 3264,
+      "qk_cols_per_head": 31,
+      "v_cols_per_head": 102,
+      "threshold": 0.8599999999999999
+    },
+    {
+      "layer": 4,
+      "rank_kq": 832,
+      "rank_v": 3008,
+      "qk_cols_per_head": 26,
+      "v_cols_per_head": 94,
+      "threshold": 0.7999999999999998
+    },
+    {
+      "layer": 5,
+      "rank_kq": 1120,
+      "rank_v": 3392,
+      "qk_cols_per_head": 35,
+      "v_cols_per_head": 106,
+      "threshold": 0.8799999999999999
+    },
+    {
+      "layer": 6,
+      "rank_kq": 1632,
+      "rank_v": 3520,
+      "qk_cols_per_head": 51,
+      "v_cols_per_head": 110,
+      "threshold": 0.8999999999999999
+    },
+    {
+      "layer": 7,
+      "rank_kq": 2016,
+      "rank_v": 3616,
+      "qk_cols_per_head": 63,
+      "v_cols_per_head": 113,
+      "threshold": 0.9199999999999999
+    },
+    {
+      "layer": 8,
+      "rank_kq": 2400,
+      "rank_v": 3712,
+      "qk_cols_per_head": 75,
+      "v_cols_per_head": 116,
+      "threshold": 0.94
+    },
+    {
+      "layer": 9,
+      "rank_kq": 2464,
+      "rank_v": 3744,
+      "qk_cols_per_head": 77,
+      "v_cols_per_head": 117,
+      "threshold": 0.94
+    },
+    {
+      "layer": 10,
+      "rank_kq": 2848,
+      "rank_v": 3840,
+      "qk_cols_per_head": 89,
+      "v_cols_per_head": 120,
+      "threshold": 0.96
+    },
+    {
+      "layer": 11,
+      "rank_kq": 2368,
+      "rank_v": 3712,
+      "qk_cols_per_head": 74,
+      "v_cols_per_head": 116,
+      "threshold": 0.94
+    },
+    {
+      "layer": 12,
+      "rank_kq": 2432,
+      "rank_v": 3712,
+      "qk_cols_per_head": 76,
+      "v_cols_per_head": 116,
+      "threshold": 0.94
+    },
+    {
+      "layer": 13,
+      "rank_kq": 2432,
+      "rank_v": 3744,
+      "qk_cols_per_head": 76,
+      "v_cols_per_head": 117,
+      "threshold": 0.94
+    },
+    {
+      "layer": 14,
+      "rank_kq": 2432,
+      "rank_v": 3744,
+      "qk_cols_per_head": 76,
+      "v_cols_per_head": 117,
+      "threshold": 0.94
+    },
+    {
+      "layer": 15,
+      "rank_kq": 2848,
+      "rank_v": 3840,
+      "qk_cols_per_head": 89,
+      "v_cols_per_head": 120,
+      "threshold": 0.96
+    },
+    {
+      "layer": 16,
+      "rank_kq": 2816,
+      "rank_v": 3840,
+      "qk_cols_per_head": 88,
+      "v_cols_per_head": 120,
+      "threshold": 0.96
+    },
+    {
+      "layer": 17,
+      "rank_kq": 2880,
+      "rank_v": 3840,
+      "qk_cols_per_head": 90,
+      "v_cols_per_head": 120,
+      "threshold": 0.96
+    },
+    {
+      "layer": 18,
+      "rank_kq": 2432,
+      "rank_v": 3744,
+      "qk_cols_per_head": 76,
+      "v_cols_per_head": 117,
+      "threshold": 0.94
+    },
+    {
+      "layer": 19,
+      "rank_kq": 2368,
+      "rank_v": 3744,
+      "qk_cols_per_head": 74,
+      "v_cols_per_head": 117,
+      "threshold": 0.94
+    },
+    {
+      "layer": 20,
+      "rank_kq": 2400,
+      "rank_v": 3744,
+      "qk_cols_per_head": 75,
+      "v_cols_per_head": 117,
+      "threshold": 0.94
+    },
+    {
+      "layer": 21,
+      "rank_kq": 2368,
+      "rank_v": 3744,
+      "qk_cols_per_head": 74,
+      "v_cols_per_head": 117,
+      "threshold": 0.94
+    },
+    {
+      "layer": 22,
+      "rank_kq": 2432,
+      "rank_v": 3744,
+      "qk_cols_per_head": 76,
+      "v_cols_per_head": 117,
+      "threshold": 0.94
+    },
+    {
+      "layer": 23,
+      "rank_kq": 2112,
+      "rank_v": 3648,
+      "qk_cols_per_head": 66,
+      "v_cols_per_head": 114,
+      "threshold": 0.9199999999999999
+    },
+    {
+      "layer": 24,
+      "rank_kq": 1952,
+      "rank_v": 3648,
+      "qk_cols_per_head": 61,
+      "v_cols_per_head": 114,
+      "threshold": 0.9199999999999999
+    },
+    {
+      "layer": 25,
+      "rank_kq": 1728,
+      "rank_v": 3552,
+      "qk_cols_per_head": 54,
+      "v_cols_per_head": 111,
+      "threshold": 0.8999999999999999
+    },
+    {
+      "layer": 26,
+      "rank_kq": 2048,
+      "rank_v": 3680,
+      "qk_cols_per_head": 64,
+      "v_cols_per_head": 115,
+      "threshold": 0.9199999999999999
+    },
+    {
+      "layer": 27,
+      "rank_kq": 2176,
+      "rank_v": 3648,
+      "qk_cols_per_head": 68,
+      "v_cols_per_head": 114,
+      "threshold": 0.9199999999999999
+    },
+    {
+      "layer": 28,
+      "rank_kq": 2112,
+      "rank_v": 3648,
+      "qk_cols_per_head": 66,
+      "v_cols_per_head": 114,
+      "threshold": 0.9199999999999999
+    },
+    {
+      "layer": 29,
+      "rank_kq": 2048,
+      "rank_v": 3680,
+      "qk_cols_per_head": 64,
+      "v_cols_per_head": 115,
+      "threshold": 0.9199999999999999
+    },
+    {
+      "layer": 30,
+      "rank_kq": 4064,
+      "rank_v": 4096,
+      "qk_cols_per_head": 127,
+      "v_cols_per_head": 128,
+      "threshold": 1.0
+    },
+    {
+      "layer": 31,
+      "rank_kq": 1440,
+      "rank_v": 3456,
+      "qk_cols_per_head": 45,
+      "v_cols_per_head": 108,
+      "threshold": 0.8799999999999999
+    }
+  ],
+  "packing": "Q/K prefix; V selected columns gathered per-head from full-capacity block layout into compact per-head layout"
+}

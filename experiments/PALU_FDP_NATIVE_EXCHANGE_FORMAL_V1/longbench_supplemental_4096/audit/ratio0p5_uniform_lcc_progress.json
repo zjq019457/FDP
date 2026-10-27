@@ -1,0 +1,28 @@
+{
+  "experiment": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1_LONGBENCH_SUPPLEMENTAL",
+  "progress": {
+    "status": "COMPLETE",
+    "run_id": "RATIO0P5_UNIFORM_LCC_GPU0_20260924T0222Z",
+    "pid": 148298,
+    "gpu": 0,
+    "n_samples_completed": 500,
+    "n_samples_expected": 500,
+    "unique_sample_ids": 500,
+    "partial_records_valid": true,
+    "native_rank": 32640,
+    "prefill_cache_bytes": 133693440,
+    "decode_cache_bytes": 133693440,
+    "manifest_sha": "65c0304ee4e7059fb8eabd621edc9e4f8bf374f8a76594cf3642783456fe76c4",
+    "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+    "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+    "schedule_sha": "3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834",
+    "provenance": "longbench_supplemental_4096/logs/ratio0p5_uniform_lcc_gpu0_20260924T0222Z.log",
+    "foreign_jobs_interrupted": 0,
+    "formal_results_modified": false,
+    "last_progress_utc": "2026-09-24T05:12:38Z",
+    "score": 0.18,
+    "result_sha256": "8f19b2d78ac224f3a944e374f77424d6a41d7529d6f0d1d618403c23499c484d",
+    "raw_jsonl_sha256": "15a42b834d4ce37112ea3cb0d157e28031c90282c662559a483efb3a42d29c89",
+    "worker_active": false
+  }
+}

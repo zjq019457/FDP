@@ -1,0 +1,28 @@
+{
+  "active_method": "fisher",
+  "active_pid": 2903616,
+  "cache_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/zero_shot_cache",
+  "campaign": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+  "dataset_binding_audit": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/PALU_ZERO_SHOT_LOCAL_DATASET_BINDING.json",
+  "dataset_binding_audit_sha256": "8125e65a09b1d73203b7b16689857bc6711486b2c84c2c0194934259f844c0c1",
+  "dispatcher_sha256": "3c6a7262f7bbce5a1c9a384f781540816e5ec4a56b1fcb3aabf89d9928afd49a",
+  "foreign_jobs_interrupted": 0,
+  "formal_manifest_or_scorer_modified": false,
+  "frozen_q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "gpu1_used": false,
+  "official_action_space": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_NATIVE_ACTION_SPACE.json",
+  "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "official_protocol_lock": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_PROTOCOL_LOCK.json",
+  "official_protocol_lock_sha256": "6a6fb22bdcb3d1d0551c274fbe696070f468937e615137566639d356451b3284",
+  "old_anchor_schema_results_modified": false,
+  "old_anchor_schema_zero_shot_mixed": false,
+  "output_root": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_zero_shot",
+  "pending_methods": [
+    "fdp_prior",
+    "fdp_native"
+  ],
+  "physical_gpu": 2,
+  "ratio": 0.7,
+  "runner_sha256": "9757e56214b1c1b3209aea2d7e8f1704f8681b6ef6812059d12b6ba22c9e72a0",
+  "status": "RUNNING"
+}

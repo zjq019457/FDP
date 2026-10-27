@@ -1,0 +1,17 @@
+{
+  "promoted_parameter": "DEV_RHO_SELECTED",
+  "selected_value": 0.75,
+  "status": "DEV_PROMOTED_FORMULA",
+  "historical_fallback": "F0_HISTORICAL_FDP (rho=1.00)",
+  "light_guard": {
+    "status": "PASSED",
+    "delta_j": 0.0,
+    "threshold": 0.003
+  },
+  "j_strong": {
+    "rho_100_baseline": 3.3419083983947835,
+    "rho_075_selected": 3.3396348521734276,
+    "delta_j_strong": -0.0022735462213558932
+  },
+  "note": "Dev selection only. Not final method. Formal statistical claims deferred to formal test on frozen candidate."
+}

@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-07-28T08:37:06.479166-07:00",
+  "status": "legacy_candidate_protocol_frozen",
+  "policy": "inferred_only fields must not be silently treated as confirmed truth",
+  "fields": {
+    "lambda_eb": {
+      "value": 1.2,
+      "provenance": "recovered_from_artifact",
+      "source": "step1_out/llama3_8b_wikitext2_frag_eb045.json meta.lambda_eb"
+    },
+    "normalize": {
+      "value": "mean",
+      "provenance": "recovered_from_artifact",
+      "source": "step1_out/...frag_eb045.json meta.normalize"
+    },
+    "weights": {
+      "value": {
+        "wz": 1.0,
+        "ws": 1.0,
+        "wv": 1.0,
+        "wa": 1.0,
+        "wh": 1.0
+      },
+      "provenance": "recovered_from_artifact",
+      "source": "frag_eb045.json meta.weights; also source defaults in per_layer_eb_from_step1.py"
+    },
+    "freeze_layers": {
+      "value": [
+        0
+      ],
+      "provenance": "recovered_from_artifact",
+      "source": "frag_eb045.json meta.freeze_layers"
+    },
+    "entropy_penalty": {
+      "value": "max(0, -entropy_diff_A)",
+      "provenance": "recovered_from_source",
+      "source": "per_layer_eb_from_step1.py / realloc_rank_from_fragility.py"
+    },
+    "fragility_formula": {
+      "value": "s_l = wz*Z_rel + ws*Score_rel + wv*Value_rel + wa*AV_rel + wh*max(0,-entropy_diff_A)",
+      "provenance": "recovered_from_source",
+      "source": "realloc_rank_from_fragility.py"
+    },
+    "per_layer_eb_map": {
+      "value": "eb_l = eb_base / (1 + lambda_eb * s_tilde_l)",
+      "provenance": "recovered_from_source",
+      "source": "per_layer_eb_from_step1.py"
+    },
+    "main_operating_point": {
+      "value": {
+        "tag": "FGeb045",
+        "uniform": "eb045",
+        "compare": "uniform_vs_FGeb045"
+      },
+      "provenance": "recovered_from_artifact",
+      "source": "llama3_8b_eb045_uniform_vs_FGeb045_distortion_summary.json"
+    },
+    "builder_script_defaults_eb_base": {
+      "value": 0.024,
+      "provenance": "recovered_from_source",
+      "source": "per_layer_eb_from_step1.py argparse default (NOT confirmed as submission operating point)",
+      "note": "Do not confuse script default with FGeb045 artifact operating point."
+    },
+    "calibration_nsamples_seqlen": {
+      "value": {
+        "nsamples": "unresolved_exact_submission",
+        "seqlen": 2048
+      },
+      "provenance": "inferred_only",
+      "source": "builder defaults nsamples=512 seqlen=2048; MANIFEST mentions 128; not hard-coded as truth"
+    },
+    "score_term_S_definition": {
+      "value": "score_rel_mse_causal (Score_rel in fragility sum)",
+      "provenance": "recovered_from_source",
+      "source": "realloc_rank_from_fragility.py / step1 diagnose fields"
+    }
+  },
+  "paths": {
+    "model": "/diskD/jiaqizhang/Llama-3",
+    "wikitext2": "/home/bai-project/jiaqizhang/wikitext2",
+    "c4_selected_texts": "/diskD/jiaqizhang/llama3_8b_eb045_eval_minimal-20260502T170035Z-3-001/llama3_8b_eb045_eval_minimal/data/c4_ppl_selected_texts.jsonl",
+    "task_yaml_dir": "/diskF/jiaqizhang/a1804298693/offline_datasets",
+    "uniform_final_model_candidate": "/diskD/jiaqizhang/llama3_8b_eigen_kv_eb045/final_model",
+    "fdp_final_model_candidate": "/diskD/jiaqizhang/FGeb045/final_model"
+  },
+  "python_bin": "/home/bai-project/anaconda3/envs/eigen/bin/python",
+  "unresolved": [
+    {
+      "field": "exact_submission_calibration_nsamples",
+      "status": "inferred_only",
+      "detail": "builder default 512 vs MANIFEST 128; not frozen as submission truth"
+    },
+    {
+      "field": "optimized_shared_basis_equivalence",
+      "status": "pending_R4",
+      "detail": "Not yet verified; extensions must use legacy builder until R4 PASS"
+    }
+  ],
+  "v1_2_policy": [
+    "simplified_exact_byte_matched_protocol",
+    "not_submission_reproduction",
+    "negative_result"
+  ]
+}

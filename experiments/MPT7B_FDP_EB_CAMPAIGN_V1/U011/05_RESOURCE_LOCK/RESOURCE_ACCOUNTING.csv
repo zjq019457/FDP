@@ -1,0 +1,3 @@
+method,b_live_bytes,predicted_bytes,census_equals_predicted,relative_gap_vs_uniform
+uniform,851705856,851705856,true,0
+fdp,889323520,889323520,true,0.04416743613419514

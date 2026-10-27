@@ -1,0 +1,27 @@
+{
+  "gate": "UNIFORM_PARITY_PASS",
+  "passed": true,
+  "timestamp": "2026-07-28T10:46:30.594016-07:00",
+  "upstream_artifact_hashes": {
+    "wiki": "98d00eb2da984c7944c4f5d9acdb72f768a30dfb4ce0ae5bb4918b8214ae08df",
+    "c4": "f5847386c765ac1b7348419c101ec1fde9af49a2de78763ffcf2d7afa0740a19",
+    "zs1": "c619eb6afd939ee8787c453460a2084957e69d2ec57ff604d3b29b38f50f36f1",
+    "zs2": "cae1b6f64501624ce3b7a7adc0e50824216170620c226aa4ffa8cd10f66b013d",
+    "rank_plan": "d0ba9c6174d915761c27e18829d7c5936c151e7775ab5e188ef5925253d636f3",
+    "memory": "3d6bacaf6977deea208f6d656b54e6d720cd6179f1fdee275bfa24f593c478e8"
+  },
+  "runner_hash": "f910c33985e583fcba0917dfc7837922cf35dd6ed4a919e0e8332c8fa4ea9c7c",
+  "protocol_hash": "46045088fa3fca40321c6d59d0367e9f8921c0ba97b9492791f4abed6c2091d4",
+  "evaluation_hash": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+  "audit_summary": "uniform R2 aggregate+recompute",
+  "extra": {
+    "memory": {
+      "seqlen": 2048,
+      "bytes_per_elem": 2,
+      "dense_kv_bytes": 268435456,
+      "realized_kv_bytes": 217219072,
+      "retained_ratio": 0.8092041015625
+    },
+    "recompute_ok": true
+  }
+}

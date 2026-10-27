@@ -1,0 +1,32 @@
+{
+  "method": "c45_fdp",
+  "generated_at": "2026-10-11T16:30:48.659871-07:00",
+  "tasks": {
+    "qasper": {
+      "n": 200,
+      "pred_path": "/diskF/jiaqizhang/FDP_FROZEN_PROTOCOL_CONSTRAINED45_V1/tiers/aggressive/fdp/longbench_qa6/lb5/qasper.jsonl",
+      "max_gen": 128
+    },
+    "multifieldqa_en": {
+      "n": 150,
+      "pred_path": "/diskF/jiaqizhang/FDP_FROZEN_PROTOCOL_CONSTRAINED45_V1/tiers/aggressive/fdp/longbench_qa6/lb5/multifieldqa_en.jsonl",
+      "max_gen": 64
+    },
+    "hotpotqa": {
+      "n": 200,
+      "pred_path": "/diskF/jiaqizhang/FDP_FROZEN_PROTOCOL_CONSTRAINED45_V1/tiers/aggressive/fdp/longbench_qa6/lb5/hotpotqa.jsonl",
+      "max_gen": 32
+    },
+    "2wikimqa": {
+      "n": 200,
+      "pred_path": "/diskF/jiaqizhang/FDP_FROZEN_PROTOCOL_CONSTRAINED45_V1/tiers/aggressive/fdp/longbench_qa6/lb5/2wikimqa.jsonl",
+      "max_gen": 32
+    },
+    "musique": {
+      "n": 200,
+      "pred_path": "/diskF/jiaqizhang/FDP_FROZEN_PROTOCOL_CONSTRAINED45_V1/tiers/aggressive/fdp/longbench_qa6/lb5/musique.jsonl",
+      "max_gen": 32
+    }
+  },
+  "eval_executed": true
+}

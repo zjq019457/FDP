@@ -1,0 +1,53 @@
+{
+  "active": null,
+  "completed": [
+    "0.7/fisher",
+    "0.7/fdp_prior",
+    "0.7/fdp_native",
+    "0.5/fisher",
+    "0.5/fdp_prior",
+    "0.5/fdp_native",
+    "0.5/random_0",
+    "0.5/random_1",
+    "0.5/random_2",
+    "0.3/fisher",
+    "0.3/fdp_prior",
+    "0.3/fdp_native"
+  ],
+  "foreign_jobs_interrupted": 0,
+  "gpu1_excluded": true,
+  "old_anchor_schema_mixed": false,
+  "pending": [],
+  "ratios": {
+    "0.3": {
+      "methods": [
+        "fisher",
+        "fdp_prior",
+        "fdp_native"
+      ],
+      "phi": "READY"
+    },
+    "0.5": {
+      "methods": [
+        "fisher",
+        "fdp_prior",
+        "fdp_native",
+        "random_0",
+        "random_1",
+        "random_2"
+      ],
+      "phi": "READY"
+    },
+    "0.7": {
+      "methods": [
+        "fisher",
+        "fdp_prior",
+        "fdp_native"
+      ],
+      "phi": "READY"
+    }
+  },
+  "reserved_margin_mib": 4096,
+  "status": "ALL_READY_OFFICIAL_ZERO_SHOT_COMPLETE",
+  "worker_peak_mib": 28672
+}

@@ -1,0 +1,12 @@
+{
+  "arm": "dense",
+  "manifest_sha256": "ec4a60cae4bbf324bd5a22d8cda9ebcc4b00fe3d970ef90ee0ea1d00011eeefe",
+  "per_task": {
+    "arc_challenge_localjsonl": 0.4189419795221843,
+    "arc_easy_localjsonl": 0.5180976430976431,
+    "hellaswag_localjsonl": 0.5373431587333201,
+    "piqa_localjsonl": 0.7867247007616975,
+    "winogrande_localjsonl": 0.6850828729281768
+  },
+  "macro": 0.5892380710086044
+}

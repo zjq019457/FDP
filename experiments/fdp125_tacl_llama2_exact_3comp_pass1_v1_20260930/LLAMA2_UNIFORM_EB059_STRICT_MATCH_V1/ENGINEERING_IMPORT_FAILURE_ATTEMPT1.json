@@ -1,0 +1,14 @@
+{
+  "artifact": "UNIFORM_EB059_ATTEMPT1_INVALIDATION",
+  "classification": "ENGINEERING_IMPORT_FAILURE_NO_QUALITY_RESULT",
+  "failure": "NameError: OptFlashAttention2 is not defined while importing models.modelling_opt_eigen_attn.py at OPT_ATTENTION_CLASSES mapping; Llama-2 eager attention never reaches materialization",
+  "source_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/models/modelling_opt_eigen_attn.py",
+  "source_sha256": "0badf9354a98f957b9fabfabfb2853c2b6b90607e0fe28b4f67ed22d6b98719b",
+  "attempt_log": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/LLAMA2_UNIFORM_EB059_STRICT_MATCH_V1/materialize.log",
+  "gpu_used_mib_at_failure": 4,
+  "scientific_inputs_modified": false,
+  "source_repo_modified": false,
+  "preserved_original_copy": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/LLAMA2_UNIFORM_EB059_STRICT_MATCH_V1/engineering_fix/original_modelling_opt_eigen_attn.py",
+  "planned_fix": "isolated import overlay; add flash-attention registry entry only if class exists; retain eager registration unchanged",
+  "time_utc": "2026-10-01T08:28:50.966281+00:00"
+}

@@ -1,0 +1,107 @@
+{
+  "schema": "LLAMA3_FULL_RESOURCE_ROBUSTNESS_REALIZATION_LOCK_V1",
+  "arm": "FULL_RESOURCE_MEDIUM_LOW",
+  "paper_label": "Full profile, resource-controlled",
+  "status": "MATERIALIZATION_PASS_CANARY_PENDING",
+  "model_repo_id": "meta-llama/Meta-Llama-3-8B",
+  "model_content_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+  "schedule_lock_sha256": "7a07bc112b62a2acebc7a09c40794b07cdcab139b1be1f1cfcad75e1ab932930",
+  "allocation_sha256": "c7ca26f9de5926e0c0a4e89fc38c30bcf1780c25911b53893c19412f7382e9c3",
+  "rank_sha256": "7f55912710453b6c59b099926b28bf6e3713e9ea65cad00b003c0c4ee2c55a4d",
+  "runtime_rank_config_sha256": "427d132a52e7175c1a990bf90c8e04e426acd57a036ed7b4c7657d233bb5f716",
+  "runtime_rank_config_matches_schedule": true,
+  "runtime_tensor_shape_audit": {
+    "layers_expected": 32,
+    "layers_checked": 32,
+    "projection_shapes_checked": 128,
+    "projection_shape_errors": 0,
+    "rank_dependent_parameter_bytes_BF16": 1331591168
+  },
+  "resource": {
+    "definition": "sum_l((rank_kq_l+rank_v_l)*4096 bytes)",
+    "target_B_live_bytes": 196870144,
+    "runtime_schedule_B_live_bytes": 196640768,
+    "gap_bytes": -229376,
+    "gap_pct": -0.11651131824234354,
+    "acceptance_abs_gap_pct_max": 0.15,
+    "resource_lock_pass": true,
+    "quality_blind": true
+  },
+  "selected_scalar": 0.06178259509322545,
+  "component_method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+  "q_sha256": "3e29bec57d805b896e228f81ea2458efe9d5a976ac395cbf14446b1c72673986",
+  "profile_sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+  "builder_report_sha256": "7afc3e5cd15752a8b3fe86423f4b043cedfef12da5b412e0bfcda9cbb18107f9",
+  "basis_sha256": "1e6eb860ecccc2c2a7fb8dd70efb70374588fb0e90a0bca429f232219360bf0b",
+  "materialized_checkpoint": {
+    "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model",
+    "total_bytes": 15790707025,
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 727,
+        "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+      },
+      {
+        "name": "generation_config.json",
+        "bytes": 1289,
+        "sha256": "2e10038a12fffc64b2867c2ad0859f4d4f98c60f0555f7b5793b56581a34f790"
+      },
+      {
+        "name": "low_rank_config.json",
+        "bytes": 836,
+        "sha256": "427d132a52e7175c1a990bf90c8e04e426acd57a036ed7b4c7657d233bb5f716"
+      },
+      {
+        "name": "low_rank_config.pt",
+        "bytes": 2145,
+        "sha256": "cbf22a0ea4a53165cc2426e7608ea1ec9caf147a6fb76364561bce04892a6b2f"
+      },
+      {
+        "name": "model-00001-of-00004.safetensors",
+        "bytes": 4987003728,
+        "sha256": "d04dbd46824e03a5550df5a6e31dd38451edd90272440c23c3f381ac56469de5"
+      },
+      {
+        "name": "model-00002-of-00004.safetensors",
+        "bytes": 4944388064,
+        "sha256": "4ab5d2c41541f8f7c26590c304c7b36e16d554fda1d2759a50312308168ab31d"
+      },
+      {
+        "name": "model-00003-of-00004.safetensors",
+        "bytes": 4799473328,
+        "sha256": "e36f9323f6ac0586bdae57cb904ddb10371aa28e0973bb42ea9e8b9d2cfc6a58"
+      },
+      {
+        "name": "model-00004-of-00004.safetensors",
+        "bytes": 1050673280,
+        "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "bytes": 27044,
+        "sha256": "de24112eaf712a3ec7d68a73e613c5796088479701787dd8d10a02890c685eb8"
+      },
+      {
+        "name": "special_tokens_map.json",
+        "bytes": 301,
+        "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+      },
+      {
+        "name": "tokenizer.json",
+        "bytes": 9085698,
+        "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 50585,
+        "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+      }
+    ]
+  },
+  "materialization_runner_sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7",
+  "evaluation_protocol_sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+  "quality_results": "NOT_RUN",
+  "canary": "PENDING",
+  "realization_sha256": "16536ea86b595e20ad6d51bee6b0ed8c0cdccae7cdac7ba675e61c1dde099156"
+}

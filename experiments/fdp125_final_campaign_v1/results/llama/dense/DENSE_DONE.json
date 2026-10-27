@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "model": "llama",
+  "method": "Dense",
+  "wiki_ppl": 6.138120287244493,
+  "c4_ppl": 8.59711311681018,
+  "wiki_windows": 141,
+  "c4_windows": 256,
+  "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+  "model_hash": "ded3d0e0db41a060004fe82ac630f6700cf7c14230643b4322a685a194245920",
+  "validated_at": "2026-09-12T23:45:20.676668-07:00"
+}

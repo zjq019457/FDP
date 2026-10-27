@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-07-29T20:05:12.841180-07:00",
+  "rows": [
+    {
+      "test": "moderate:hellaswag_localjsonl",
+      "p_raw": 1.6821495850655513e-18,
+      "p_holm": 8.410747925327757e-18,
+      "reject_at_05": true
+    },
+    {
+      "test": "moderate:winogrande_localjsonl",
+      "p_raw": 7.043833424718468e-05,
+      "p_holm": 0.0002817533369887387,
+      "reject_at_05": true
+    },
+    {
+      "test": "moderate:arc_easy_localjsonl",
+      "p_raw": 0.03992817966861636,
+      "p_holm": 0.11978453900584907,
+      "reject_at_05": false
+    },
+    {
+      "test": "moderate:piqa_localjsonl",
+      "p_raw": 0.1925264577614627,
+      "p_holm": 0.3850529155229254,
+      "reject_at_05": false
+    },
+    {
+      "test": "moderate:arc_challenge_localjsonl",
+      "p_raw": 0.7571890741424051,
+      "p_holm": 0.7571890741424051,
+      "reject_at_05": false
+    }
+  ]
+}

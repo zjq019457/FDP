@@ -1,0 +1,280 @@
+{
+  "generated_at": "2026-07-30T00:54:32.728130-07:00",
+  "mcfix_aggregate": {
+    "generated_at": "2026-07-29T22:30:36.499106-07:00",
+    "rows": [
+      {
+        "control": "uniform_matched",
+        "wikitext2_ppl": null,
+        "c4_ppl": null,
+        "hs_arc": null,
+        "wg_piqa": null,
+        "cleanup_done": true
+      },
+      {
+        "control": "random_seed0",
+        "wikitext2_ppl": null,
+        "c4_ppl": null,
+        "hs_arc": null,
+        "wg_piqa": null,
+        "cleanup_done": true
+      },
+      {
+        "control": "random_seed1",
+        "wikitext2_ppl": null,
+        "c4_ppl": null,
+        "hs_arc": null,
+        "wg_piqa": null,
+        "cleanup_done": true
+      },
+      {
+        "control": "random_seed2",
+        "wikitext2_ppl": null,
+        "c4_ppl": null,
+        "hs_arc": null,
+        "wg_piqa": null,
+        "cleanup_done": true
+      },
+      {
+        "control": "spectral_tail",
+        "wikitext2_ppl": null,
+        "c4_ppl": null,
+        "hs_arc": null,
+        "wg_piqa": null,
+        "cleanup_done": true
+      },
+      {
+        "control": "middle_layer",
+        "wikitext2_ppl": null,
+        "c4_ppl": null,
+        "hs_arc": null,
+        "wg_piqa": null,
+        "cleanup_done": true
+      },
+      {
+        "control": "reconstruction_slope",
+        "wikitext2_ppl": null,
+        "c4_ppl": null,
+        "hs_arc": null,
+        "wg_piqa": null,
+        "cleanup_done": true
+      },
+      {
+        "control": "depth_front",
+        "wikitext2_ppl": null,
+        "c4_ppl": null,
+        "hs_arc": null,
+        "wg_piqa": null,
+        "cleanup_done": true
+      },
+      {
+        "control": "depth_back",
+        "wikitext2_ppl": null,
+        "c4_ppl": null,
+        "hs_arc": null,
+        "wg_piqa": null,
+        "cleanup_done": true
+      }
+    ],
+    "note": "Real MCFIX eval artifacts; not schedule-only."
+  },
+  "longbench_scores": {
+    "generated_at": "2026-07-30T00:38:04.652457-07:00",
+    "methods": {
+      "dense": {
+        "2wikimqa": {
+          "n": 20,
+          "score": 8.13
+        },
+        "hotpotqa": {
+          "n": 20,
+          "score": 10.02
+        },
+        "multifieldqa_en": {
+          "n": 20,
+          "score": 20.41
+        },
+        "musique": {
+          "n": 20,
+          "score": 6.72
+        },
+        "narrativeqa": {
+          "n": 20,
+          "score": 6.65
+        },
+        "passage_retrieval_en": {
+          "n": 20,
+          "score": 6.25
+        },
+        "qasper": {
+          "n": 20,
+          "score": 13.6
+        },
+        "triviaqa": {
+          "n": 20,
+          "score": 91.67
+        }
+      },
+      "fdp": {
+        "2wikimqa": {
+          "n": 20,
+          "score": 1.83
+        },
+        "hotpotqa": {
+          "n": 20,
+          "score": 0.0
+        },
+        "multifieldqa_en": {
+          "n": 20,
+          "score": 6.95
+        },
+        "musique": {
+          "n": 20,
+          "score": 1.01
+        },
+        "narrativeqa": {
+          "n": 20,
+          "score": 2.85
+        },
+        "passage_retrieval_en": {
+          "n": 20,
+          "score": 10.0
+        },
+        "qasper": {
+          "n": 20,
+          "score": 0.56
+        },
+        "triviaqa": {
+          "n": 20,
+          "score": 5.47
+        }
+      },
+      "uniform": {
+        "2wikimqa": {
+          "n": 20,
+          "score": 2.87
+        },
+        "hotpotqa": {
+          "n": 20,
+          "score": 0.95
+        },
+        "multifieldqa_en": {
+          "n": 20,
+          "score": 4.94
+        },
+        "musique": {
+          "n": 20,
+          "score": 0.94
+        },
+        "narrativeqa": {
+          "n": 20,
+          "score": 3.41
+        },
+        "passage_retrieval_en": {
+          "n": 20,
+          "score": 10.0
+        },
+        "qasper": {
+          "n": 20,
+          "score": 1.01
+        },
+        "triviaqa": {
+          "n": 20,
+          "score": 0.56
+        }
+      }
+    }
+  },
+  "opt30b": {
+    "generated_at": "2026-07-29T22:30:36.460599-07:00",
+    "model": "/diskE/jiaqizhang/opt-30b",
+    "model_exists": true,
+    "cmp": "/diskE/jiaqizhang/FGeb026fpv6a/final_model",
+    "eval_executed": true,
+    "returncode": 0,
+    "cmd": [
+      "/home/bai-project/anaconda3/envs/eigen/bin/python",
+      "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/sanity_AB_opt30b.py",
+      "--cmp_only",
+      "--cmp",
+      "/diskE/jiaqizhang/FGeb026fpv6a/final_model",
+      "--low_json",
+      "/diskE/jiaqizhang/FGeb026fpv6a/final_model/low_rank_config.json",
+      "--tok",
+      "/diskE/jiaqizhang/opt-30b",
+      "--dtype",
+      "fp16",
+      "--cmp_device",
+      "cuda:0",
+      "--wikitext2"
+    ],
+    "log": "/diskF/jiaqizhang/wave2_artifacts/opt30b/sanity_AB_opt30b.log",
+    "schedule_note": "Reused FGeb026fpv6a as single fixed-schedule confirmatory point; not Ours-v2/v3/v4 cherry-pick sweep."
+  },
+  "qwen": {
+    "generated_at": "2026-07-29T22:30:37.449238-07:00",
+    "weights_path": "/diskE/jiaqizhang/Qwen2.5-7B",
+    "weights_present": true,
+    "hf_config_loadable": true,
+    "hf_config_error": null,
+    "eigenattn_qwen_model_files": [],
+    "main_eigen_attn_mentions_qwen2": true,
+    "compress_eval_executed": false,
+    "blocked_reason": "EigenAttn lacks Qwen2 modelling + net_choices wiring; cannot honestly run FDP compress/eval yet. Weights are local.",
+    "next_engineering": [
+      "Add modelling_qwen2_eigen_attn.py (or equivalent)",
+      "Extend LMClass + main_eigen_attn net_choices",
+      "Build eigen basis on wikitext2/c4",
+      "compress_only to diskF then ppl/zs"
+    ]
+  },
+  "external": {
+    "generated_at": "2026-07-29T22:30:36.320336-07:00",
+    "hits": [],
+    "official_xkv_recalkv_found": false,
+    "eval_executed": false,
+    "policy": "official implementations only; matched Llama-3 + matched KV bytes",
+    "blocked_reason": "No official xKV/ReCalKV codebase located under slim/external_assets/MatryoshkaKV-cache. RescueKV results exist but are a different method and must not be relabeled."
+  },
+  "component": {
+    "generated_at": "2026-07-29T22:30:36.794968-07:00",
+    "runs": [
+      {
+        "method": "fdp_full",
+        "returncode": 0,
+        "ppl": null,
+        "log": "/diskF/jiaqizhang/wave2_artifacts/component_ablation/fdp_full/run.log"
+      },
+      {
+        "method": "uniform_matched_anchor",
+        "returncode": 0,
+        "ppl": null,
+        "log": "/diskF/jiaqizhang/wave2_artifacts/component_ablation/uniform_matched_anchor/run.log"
+      }
+    ],
+    "eval_executed": true,
+    "minus_variants_status": {
+      "variants": [
+        "minus_Z",
+        "minus_S",
+        "minus_V",
+        "minus_A",
+        "minus_Entropy"
+      ],
+      "status": "pending_adaptive_rebuild",
+      "note": "Minus-* require re-running adaptive basis with component disabled then compress at matched KV bytes. WAVE2 executed Full FDP + Uniform confirmatory PPL anchors."
+    }
+  },
+  "summary": {
+    "executed": [
+      "MCFIX_AGGREGATE",
+      "LONGBENCH_8K_SUBSET",
+      "OPT30B_WIKI_PPL",
+      "COMPONENT_ANCHORS_PPL"
+    ],
+    "blocked_or_gated": [
+      "QWEN:EigenAttn lacks Qwen2 modelling + net_choices wiring; cannot honestly run FDP compress/eval yet. Weights are local.",
+      "EXTERNAL:No official xKV/ReCalKV codebase located under slim/external_assets/MatryoshkaKV-cache. RescueKV results exist but are a"
+    ]
+  }
+}

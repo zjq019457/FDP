@@ -1,0 +1,83 @@
+/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[Args] {'base_dir': '/diskE/opt-30b', 'cmp_dir': '/diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ', 'tok_dir': '/diskE/opt-30b', 'low_rank_json': './low_rank_config_layerwise_5712_opt30b.json', 'data_dir': '/diskE/jiaqizhang/c4-en/en', 'out_dir': '/diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora64_last16_v2', 'dtype': 'bf16', 'base_device': 'cuda:0', 'cmp_device': 'cuda:1', 'calib_nsamples': 512, 'calib_seed': 11, 'seq_len': 512, 'batch_size': 1, 'steps': 1200, 'train_last_n': 16, 'lora_rank': 64, 'lr': 0.001, 'lam': 1e-05, 'eval_ppl': 1, 'eval_nsamples': 256, 'eval_seed': 2, 'eval_seqlen': 2048, 'loss_fp32': 1, 'log_every': 50}
+[Load] BASE on cuda:0
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:09<00:58,  9.79s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:19<00:47,  9.55s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:28<00:37,  9.48s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:37<00:28,  9.44s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:47<00:18,  9.42s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:56<00:09,  9.41s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:57<00:00,  6.60s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:57<00:00,  8.22s/it]
+[Load] CMP on cuda:1
+Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]Loading checkpoint shards:   8%|▊         | 1/13 [00:04<00:58,  4.87s/it]Loading checkpoint shards:  15%|█▌        | 2/13 [00:09<00:50,  4.60s/it]Loading checkpoint shards:  23%|██▎       | 3/13 [00:13<00:45,  4.52s/it]Loading checkpoint shards:  31%|███       | 4/13 [00:18<00:40,  4.47s/it]Loading checkpoint shards:  38%|███▊      | 5/13 [00:22<00:35,  4.45s/it]Loading checkpoint shards:  46%|████▌     | 6/13 [00:26<00:31,  4.44s/it]Loading checkpoint shards:  54%|█████▍    | 7/13 [00:31<00:26,  4.43s/it]Loading checkpoint shards:  62%|██████▏   | 8/13 [00:35<00:22,  4.42s/it]Loading checkpoint shards:  69%|██████▉   | 9/13 [00:40<00:17,  4.42s/it]Loading checkpoint shards:  77%|███████▋  | 10/13 [00:44<00:13,  4.42s/it]Loading checkpoint shards:  85%|████████▍ | 11/13 [00:49<00:08,  4.42s/it]Loading checkpoint shards:  92%|█████████▏| 12/13 [00:53<00:04,  4.42s/it]Loading checkpoint shards: 100%|██████████| 13/13 [00:53<00:00,  3.21s/it]Loading checkpoint shards: 100%|██████████| 13/13 [00:53<00:00,  4.14s/it]
+[Model] layers=48 hidden=7168 calibrate_layers=32..47 (count=16)
+
+[Eval-Before] Repo-C4 PPL
+BASE PPL: 11.805902 info={'tokens': 122880, 'chunks': 60, 'bad_chunks': 0}
+CMP  PPL: 14.822454 info={'tokens': 122880, 'chunks': 60, 'bad_chunks': 0}
+ratio CMP/BASE: 1.255512
+
+[Calib] Sampling texts + building token stream
+[Calib] token_stream length = 292868
+[Init] layer 32: r=5712 k=64
+[Init] layer 33: r=5712 k=64
+[Init] layer 34: r=5712 k=64
+[Init] layer 35: r=5712 k=64
+[Init] layer 36: r=5712 k=64
+[Init] layer 37: r=5712 k=64
+[Init] layer 38: r=5712 k=64
+[Init] layer 39: r=5712 k=64
+[Init] layer 40: r=5712 k=64
+[Init] layer 41: r=5712 k=64
+[Init] layer 42: r=5712 k=64
+[Init] layer 43: r=5712 k=64
+[Init] layer 44: r=5712 k=64
+[Init] layer 45: r=5712 k=64
+[Init] layer 46: r=5712 k=64
+[Init] layer 47: r=5712 k=64
+
+[Calib] Starting LoRA-style residual fit (hooks for X/Y0, no _last_attn_low needed)
+[Calib] step=1/1200 loss=0.7774 avg_mse=0.0485875
+[Calib] step=50/1200 loss=0.84046 avg_mse=0.0525287
+[Calib] step=100/1200 loss=0.780413 avg_mse=0.0487758
+[Calib] step=150/1200 loss=0.823126 avg_mse=0.0514454
+[Calib] step=200/1200 loss=0.653133 avg_mse=0.0408208
+[Calib] step=250/1200 loss=0.623482 avg_mse=0.0389676
+[Calib] step=300/1200 loss=0.677431 avg_mse=0.0423394
+[Calib] step=350/1200 loss=2.95128 avg_mse=0.184455
+[Calib] step=400/1200 loss=1.14975 avg_mse=0.0718594
+[Calib] step=450/1200 loss=0.733878 avg_mse=0.0458674
+[Calib] step=500/1200 loss=0.861233 avg_mse=0.0538271
+[Calib] step=550/1200 loss=0.75628 avg_mse=0.0472675
+[Calib] step=600/1200 loss=0.881238 avg_mse=0.0550774
+[Calib] step=650/1200 loss=0.68626 avg_mse=0.0428913
+[Calib] step=700/1200 loss=0.691507 avg_mse=0.0432192
+[Calib] step=750/1200 loss=0.538364 avg_mse=0.0336478
+[Calib] step=800/1200 loss=0.600291 avg_mse=0.0375182
+[Calib] step=850/1200 loss=0.594212 avg_mse=0.0371382
+[Calib] step=900/1200 loss=0.814693 avg_mse=0.0509183
+[Calib] step=950/1200 loss=0.779103 avg_mse=0.0486939
+[Calib] step=1000/1200 loss=1.02242 avg_mse=0.0639012
+[Calib] step=1050/1200 loss=0.842795 avg_mse=0.0526747
+[Calib] step=1100/1200 loss=0.821016 avg_mse=0.0513135
+[Calib] step=1150/1200 loss=0.869246 avg_mse=0.0543279
+[Calib] step=1200/1200 loss=0.877715 avg_mse=0.0548572
+
+[Merge] Applying residual into CMP out_proj_up weights/bias
+[Merge] layer 32: |dW|_fro=9.400 |db|=3.765
+[Merge] layer 33: |dW|_fro=7.774 |db|=3.981
+[Merge] layer 34: |dW|_fro=8.275 |db|=3.970
+[Merge] layer 35: |dW|_fro=8.520 |db|=3.471
+[Merge] layer 36: |dW|_fro=8.740 |db|=3.652
+[Merge] layer 37: |dW|_fro=8.804 |db|=3.339
+[Merge] layer 38: |dW|_fro=9.973 |db|=2.358
+[Merge] layer 39: |dW|_fro=19.313 |db|=3.973
+[Merge] layer 40: |dW|_fro=11.447 |db|=2.703
+[Merge] layer 41: |dW|_fro=10.300 |db|=3.952
+[Merge] layer 42: |dW|_fro=7.830 |db|=3.829
+[Merge] layer 43: |dW|_fro=6.394 |db|=3.142
+[Merge] layer 44: |dW|_fro=9.749 |db|=4.327
+[Merge] layer 45: |dW|_fro=10.268 |db|=2.288
+[Merge] layer 46: |dW|_fro=9.619 |db|=2.667
+[Merge] layer 47: |dW|_fro=27.165 |db|=3.963
+
+[Eval-After] Repo-C4 PPL (CMP calibrated in-memory)
+CMP(calib) PPL: 13.527202 info={'tokens': 122880, 'chunks': 60, 'bad_chunks': 0}
+
+[Write] Saving calibrated model shards: /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora64_last16_v2
+[Done] wrote calibrated model to: /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora64_last16_v2

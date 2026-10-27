@@ -1,0 +1,16 @@
+{
+ "tier": "light",
+ "eb": 0.044,
+ "official_min_thresh": 0.0,
+ "PASS": true,
+ "B_live": 218628096,
+ "frozen_B_live": 218628096,
+ "ranks_equal": true,
+ "rank_sha_compact": "f6765b278f6a8d342cd99e78c4696c2de82f5ddf809451f705d75c7b47cb5cfa",
+ "frozen_rank_sha256": "30b9f17d90f858b667c39c192abab405aff6093152083f06033d28a703d84a57",
+ "frozen_rank_sha_candidates": {
+  "json_default": "e24e8ffef86acb3ee58503d3b9f13c4194a23b336c0f2e0111bf9747dba36e9f",
+  "json_indent2": "30b9f17d90f858b667c39c192abab405aff6093152083f06033d28a703d84a57"
+ },
+ "at": "2026-10-09T04:09:17.824185-07:00"
+}

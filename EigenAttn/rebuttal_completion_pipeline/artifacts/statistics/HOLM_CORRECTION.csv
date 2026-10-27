@@ -1,0 +1,6 @@
+p_holm,p_raw,reject_at_05,test
+1.0,1.0,False,hellaswag_localjsonl
+1.0,1.0,False,arc_challenge_localjsonl
+1.0,1.0,False,arc_easy_localjsonl
+1.0,1.0,False,winogrande_localjsonl
+1.0,1.0,False,piqa_localjsonl

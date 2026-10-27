@@ -1,0 +1,26 @@
+{
+  "schema": "PALU_ENGINEERING_FIX_AUDIT_V1",
+  "fix_id": "FISHER_SWEEP_RESOURCE_GATE_FIX_02",
+  "failure_behavior": "The isolated official fisher_uniform attempt for gs=32 completed Fisher allocation and SVD materialization, then stopped before PPL because the campaign wrapper required the sum of individually 32-rank-rounded native allocations to equal the nominal 131072 exactly. Official rank_search.py applies rounding_search_result independently to each native unit and does not back-adjust the aggregate total.",
+  "failure_type": "CAMPAIGN_GUARD_MISMATCH_WITH_OFFICIAL_ROUNDING",
+  "affected_cell": "J_LRD_GS32_FISHER_UNIFORM; no PPL metric was produced",
+  "observed_official_resource": {
+    "rank_sum": 131040,
+    "nominal_rank_sum": 131072,
+    "delta_rank": -32,
+    "uncompressed_rank": 262144,
+    "realized_compression_fraction": 0.5001220703125,
+    "rank_quantum": 32,
+    "factor_bytes": 2146959360,
+    "prefill_cache_bytes_at_2048_fp16": 536739840,
+    "decode_cache_bytes_at_2048_fp16": 536739840
+  },
+  "repair": "Do not modify or rebalance official ranks. Replace exact nominal-total equality with structural integrity checks: captured rank sum equals the returned allocation sum, all ranks are positive multiples of 32 and within group dimensions, expected model/module census is present, and actual rank/factor/cache resource totals are recorded explicitly. Run the gs=4 Appendix F.3 Automatic cell into a new, separate output/state/lock namespace; retain the prior failed attempt and its log unchanged.",
+  "retry_scope": "Only a fresh isolated Appendix F.3 Automatic G-LRD gs=4 PPL diagnostic using the already-created campaign-local Fisher cache; no completed dense or equal-rank Uniform cells are rerun.",
+  "old_results_valid": true,
+  "historical_results_modified": false,
+  "official_repository_modified": false,
+  "foreign_jobs_interrupted": 0,
+  "ppl_result_before_repair": false,
+  "fisher_cache_reused": true
+}

@@ -1,0 +1,7 @@
+{
+  "external_baseline_roots": 8,
+  "generated_at": "2026-09-17T15:27:37",
+  "long_context_artifacts": 3,
+  "opt_candidates": 20,
+  "policy": "inventory/binding only; no GPU launch; no existing result changed"
+}

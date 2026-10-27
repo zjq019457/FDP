@@ -1,0 +1,1158 @@
+{
+  "accepted_transfer_count": 15,
+  "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "decisions": [
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.004528559744358063,
+      "bootstrap_ci_low": -0.005909685045480728,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "42618c5a095ee379722bad7cd2051a0d10e9caf9fb909b6ab39580aaa977f305",
+      "current_schedule_sha": "37b7c0029391543b610f8069fd01b2b34545ccf079c40e7fba102eb13f5dde1f",
+      "delta_J": -0.005213215947151184,
+      "donor": "model.layers.26.self_attn.k_proj::group4",
+      "donor_score": -4.1122505400439024,
+      "native_rank_quantum": 32,
+      "proposal": 1,
+      "ratio": 0.3,
+      "receiver": "model.layers.2.self_attn.k_proj::group7",
+      "receiver_score": 21.402286740121667,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0028177574276924133,
+      "bootstrap_ci_low": -0.004575010389089584,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "1f5ce305c856b84041ec22e347ed538a5d080e91498afe70ed6a584bc24e071d",
+      "current_schedule_sha": "42618c5a095ee379722bad7cd2051a0d10e9caf9fb909b6ab39580aaa977f305",
+      "delta_J": -0.0036558769643306732,
+      "donor": "model.layers.8.self_attn.k_proj::group2",
+      "donor_score": -3.8935706693481786,
+      "native_rank_quantum": 32,
+      "proposal": 2,
+      "ratio": 0.3,
+      "receiver": "model.layers.2.self_attn.k_proj::group0",
+      "receiver_score": 13.56153154769086,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -3.248453140258789e-05,
+      "bootstrap_ci_low": -0.001619625836610794,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "0f93df25b16e6ee9aa134e2930d69caebdbab8b63b130adaa24b41b198cad72c",
+      "current_schedule_sha": "1f5ce305c856b84041ec22e347ed538a5d080e91498afe70ed6a584bc24e071d",
+      "delta_J": -0.0008421503007411957,
+      "donor": "model.layers.8.self_attn.k_proj::group5",
+      "donor_score": -2.418390718505421,
+      "native_rank_quantum": 32,
+      "proposal": 3,
+      "ratio": 0.3,
+      "receiver": "model.layers.11.self_attn.k_proj::group3",
+      "receiver_score": 11.340624952292416,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0007752440869808197,
+      "bootstrap_ci_low": -0.0017106086015701294,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "4859a58d92cc600446c91dfc9d6079e7af74471a83418d73771db300fe28acf0",
+      "current_schedule_sha": "0f93df25b16e6ee9aa134e2930d69caebdbab8b63b130adaa24b41b198cad72c",
+      "delta_J": -0.0012430697679519653,
+      "donor": "model.layers.9.self_attn.k_proj::group3",
+      "donor_score": -2.2065067114224775,
+      "native_rank_quantum": 32,
+      "proposal": 4,
+      "ratio": 0.3,
+      "receiver": "model.layers.30.self_attn.k_proj::group7",
+      "receiver_score": 9.931217940888473,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0010196603834629059,
+      "bootstrap_ci_low": -0.0022855959832668304,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "12a970b335054d52970ebc7166032c293cf30ab45392bf42352c12c413bc9c6a",
+      "current_schedule_sha": "4859a58d92cc600446c91dfc9d6079e7af74471a83418d73771db300fe28acf0",
+      "delta_J": -0.0016464702785015106,
+      "donor": "model.layers.24.self_attn.k_proj::group3",
+      "donor_score": -2.148190854757459,
+      "native_rank_quantum": 32,
+      "proposal": 5,
+      "ratio": 0.3,
+      "receiver": "model.layers.8.self_attn.k_proj::group6",
+      "receiver_score": 9.826671844468109,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0016847029328346252,
+      "bootstrap_ci_low": -0.002863965928554535,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "4000ce8d15c92c9a5bbc8a9c663a695198ebb06f496a7aac19b5e12ad8b3c288",
+      "current_schedule_sha": "12a970b335054d52970ebc7166032c293cf30ab45392bf42352c12c413bc9c6a",
+      "delta_J": -0.002270646393299103,
+      "donor": "model.layers.31.self_attn.k_proj::group1",
+      "donor_score": -1.852203443682768,
+      "native_rank_quantum": 32,
+      "proposal": 6,
+      "ratio": 0.3,
+      "receiver": "model.layers.2.self_attn.k_proj::group4",
+      "receiver_score": 9.096851194202088,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0008179880678653717,
+      "bootstrap_ci_low": -0.0014333613216876984,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "2b5c4cbf79b46a18a8fd49943413b76adf402bbda818a3511ee330e2fb17a2d9",
+      "current_schedule_sha": "4000ce8d15c92c9a5bbc8a9c663a695198ebb06f496a7aac19b5e12ad8b3c288",
+      "delta_J": -0.0011271387338638306,
+      "donor": "model.layers.5.self_attn.k_proj::group1",
+      "donor_score": -1.825368966017123,
+      "native_rank_quantum": 32,
+      "proposal": 7,
+      "ratio": 0.3,
+      "receiver": "model.layers.11.self_attn.k_proj::group4",
+      "receiver_score": 8.971586897364517,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0009114257991313934,
+      "bootstrap_ci_low": -0.001937728375196457,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "8c10e2a56a8e54dc5bbb88a9b9fe86ba4a2fffdb90b85b6bd104d7e46a62c78d",
+      "current_schedule_sha": "2b5c4cbf79b46a18a8fd49943413b76adf402bbda818a3511ee330e2fb17a2d9",
+      "delta_J": -0.0013714656233787537,
+      "donor": "model.layers.6.self_attn.k_proj::group1",
+      "donor_score": -1.8092976669358334,
+      "native_rank_quantum": 32,
+      "proposal": 8,
+      "ratio": 0.3,
+      "receiver": "model.layers.9.self_attn.k_proj::group4",
+      "receiver_score": 8.66389958056024,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0007156766951084137,
+      "bootstrap_ci_low": -0.0014472231268882751,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "53745c7d3d8be50c1afbcff83b7f6265e1ef6b05710f57718ddef7c80c6f1164",
+      "current_schedule_sha": "8c10e2a56a8e54dc5bbb88a9b9fe86ba4a2fffdb90b85b6bd104d7e46a62c78d",
+      "delta_J": -0.0010893382132053375,
+      "donor": "model.layers.5.self_attn.k_proj::group5",
+      "donor_score": -1.42347628579995,
+      "native_rank_quantum": 32,
+      "proposal": 9,
+      "ratio": 0.3,
+      "receiver": "model.layers.17.self_attn.k_proj::group5",
+      "receiver_score": 8.4025159723071,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0012061744928359985,
+      "bootstrap_ci_low": -0.0023250728845596313,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "cf02e29bae4c58344ab905c4054a8a4747694d610e68480ef76216312d0ccc22",
+      "current_schedule_sha": "53745c7d3d8be50c1afbcff83b7f6265e1ef6b05710f57718ddef7c80c6f1164",
+      "delta_J": -0.0017895624041557312,
+      "donor": "model.layers.29.self_attn.k_proj::group3",
+      "donor_score": -1.2431287593121283,
+      "native_rank_quantum": 32,
+      "proposal": 10,
+      "ratio": 0.3,
+      "receiver": "model.layers.5.self_attn.k_proj::group3",
+      "receiver_score": 8.058516703179151,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0022467784583568573,
+      "bootstrap_ci_low": -0.003201451152563095,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "157be5ae0a10e5518f9266f6e2a6472e951b5a6c37b5b0658dfc4e0354a6a7b8",
+      "current_schedule_sha": "cf02e29bae4c58344ab905c4054a8a4747694d610e68480ef76216312d0ccc22",
+      "delta_J": -0.002712775021791458,
+      "donor": "model.layers.17.self_attn.k_proj::group0",
+      "donor_score": -1.228012554576111,
+      "native_rank_quantum": 32,
+      "proposal": 11,
+      "ratio": 0.3,
+      "receiver": "model.layers.10.self_attn.k_proj::group7",
+      "receiver_score": 7.54901060431409,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.00048110634088516235,
+      "bootstrap_ci_low": -0.0011760890483856201,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "f7ec689ad3c765f77df9ec07329b5289f98320abfcad72d80330a2a8f2566dc7",
+      "current_schedule_sha": "157be5ae0a10e5518f9266f6e2a6472e951b5a6c37b5b0658dfc4e0354a6a7b8",
+      "delta_J": -0.0008310303092002869,
+      "donor": "model.layers.11.self_attn.k_proj::group5",
+      "donor_score": -1.064158772747561,
+      "native_rank_quantum": 32,
+      "proposal": 12,
+      "ratio": 0.3,
+      "receiver": "model.layers.11.self_attn.k_proj::group0",
+      "receiver_score": 7.284890283417766,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0007073171436786652,
+      "bootstrap_ci_low": -0.0013553015887737274,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "9c4780411a0c329ed4978ebfefe98e5aac412dd072f3d1db3f06c3419478b111",
+      "current_schedule_sha": "f7ec689ad3c765f77df9ec07329b5289f98320abfcad72d80330a2a8f2566dc7",
+      "delta_J": -0.0010262690484523773,
+      "donor": "model.layers.11.self_attn.v_proj::group1",
+      "donor_score": -0.9989368492760774,
+      "native_rank_quantum": 32,
+      "proposal": 13,
+      "ratio": 0.3,
+      "receiver": "model.layers.2.self_attn.k_proj::group1",
+      "receiver_score": 7.162674941606581,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.002679288387298584,
+      "bootstrap_ci_low": -0.004671327769756317,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "cf720680a65eec7e85751b238d32a08215c254801761745f149637695153633e",
+      "current_schedule_sha": "9c4780411a0c329ed4978ebfefe98e5aac412dd072f3d1db3f06c3419478b111",
+      "delta_J": -0.0036246739327907562,
+      "donor": "model.layers.10.self_attn.k_proj::group0",
+      "donor_score": -0.9692370885746157,
+      "native_rank_quantum": 32,
+      "proposal": 14,
+      "ratio": 0.3,
+      "receiver": "model.layers.16.self_attn.v_proj::group1",
+      "receiver_score": 7.050892168798696,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.0005326233804225922,
+      "bootstrap_ci_low": -4.182383418083191e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "035c3452d22aa3aacc42cce8b54f10ce93ac291a398fab7234e20d40d7a13ff6",
+      "current_schedule_sha": "cf720680a65eec7e85751b238d32a08215c254801761745f149637695153633e",
+      "delta_J": 0.00023011863231658936,
+      "donor": "model.layers.30.self_attn.k_proj::group2",
+      "donor_score": -0.9350740985289007,
+      "native_rank_quantum": 32,
+      "proposal": 15,
+      "ratio": 0.3,
+      "receiver": "model.layers.13.self_attn.k_proj::group7",
+      "receiver_score": 7.021431181682458,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -0.0006710700690746307,
+      "bootstrap_ci_low": -0.0011844001710414886,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "6c7ee97a1b4210782db59519a23ea6bc0857f24dc3167bc8f9f2953a2e7aef27",
+      "current_schedule_sha": "cf720680a65eec7e85751b238d32a08215c254801761745f149637695153633e",
+      "delta_J": -0.000926721841096878,
+      "donor": "model.layers.17.self_attn.v_proj::group0",
+      "donor_score": -0.9320802450993567,
+      "native_rank_quantum": 32,
+      "proposal": 16,
+      "ratio": 0.3,
+      "receiver": "model.layers.15.self_attn.k_proj::group6",
+      "receiver_score": 6.029988149579168,
+      "resource_after": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_before": {
+        "decode_cache_bytes": 322961408,
+        "factor_bytes_fp16": 726663168,
+        "prefill_cache_bytes": 322961408,
+        "total_native_rank": 78848
+      },
+      "resource_exact_match": true,
+      "signal": "fdp_native",
+      "status": "ACCEPTED"
+    }
+  ],
+  "final_resource": {
+    "decode_cache_bytes": 322961408,
+    "factor_bytes_fp16": 726663168,
+    "prefill_cache_bytes": 322961408,
+    "total_native_rank": 78848
+  },
+  "final_schedule_sha": "6c7ee97a1b4210782db59519a23ea6bc0857f24dc3167bc8f9f2953a2e7aef27",
+  "formal_quality_used_to_select": false,
+  "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+  "q_mapping_sha256": "6fa7d16bb6689cf88dc78ea6a72f3d630abe1d2cf1ccf2729776a3e6768ae3d3",
+  "ratio": 0.3,
+  "selection": {
+    "model.layers.0.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.0.self_attn.v_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.1.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.1.self_attn.v_proj": [
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "model.layers.10.self_attn.k_proj": [
+      32,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      96
+    ],
+    "model.layers.10.self_attn.v_proj": [
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352
+    ],
+    "model.layers.11.self_attn.k_proj": [
+      128,
+      96,
+      96,
+      128,
+      128,
+      64,
+      96,
+      96
+    ],
+    "model.layers.11.self_attn.v_proj": [
+      352,
+      320,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352
+    ],
+    "model.layers.12.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.12.self_attn.v_proj": [
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      320
+    ],
+    "model.layers.13.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.13.self_attn.v_proj": [
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      320
+    ],
+    "model.layers.14.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.14.self_attn.v_proj": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.15.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      96,
+      64
+    ],
+    "model.layers.15.self_attn.v_proj": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.16.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.16.self_attn.v_proj": [
+      224,
+      256,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224
+    ],
+    "model.layers.17.self_attn.k_proj": [
+      32,
+      64,
+      64,
+      64,
+      64,
+      96,
+      64,
+      64
+    ],
+    "model.layers.17.self_attn.v_proj": [
+      192,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224
+    ],
+    "model.layers.18.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.18.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.19.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.19.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.2.self_attn.k_proj": [
+      96,
+      96,
+      64,
+      64,
+      96,
+      64,
+      64,
+      96
+    ],
+    "model.layers.2.self_attn.v_proj": [
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352
+    ],
+    "model.layers.20.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.20.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.21.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.21.self_attn.v_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.22.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.22.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.23.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.23.self_attn.v_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.24.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      32,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.24.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.25.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.25.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.26.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      32,
+      64,
+      64,
+      64
+    ],
+    "model.layers.26.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.27.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.27.self_attn.v_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.28.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.28.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.29.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      32,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.29.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.3.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.3.self_attn.v_proj": [
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "model.layers.30.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      96
+    ],
+    "model.layers.30.self_attn.v_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.31.self_attn.k_proj": [
+      64,
+      32,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "model.layers.31.self_attn.v_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.4.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.4.self_attn.v_proj": [
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352
+    ],
+    "model.layers.5.self_attn.k_proj": [
+      96,
+      64,
+      96,
+      128,
+      96,
+      64,
+      96,
+      96
+    ],
+    "model.layers.5.self_attn.v_proj": [
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "model.layers.6.self_attn.k_proj": [
+      96,
+      64,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.6.self_attn.v_proj": [
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "model.layers.7.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.7.self_attn.v_proj": [
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352
+    ],
+    "model.layers.8.self_attn.k_proj": [
+      96,
+      96,
+      64,
+      96,
+      96,
+      64,
+      128,
+      96
+    ],
+    "model.layers.8.self_attn.v_proj": [
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "model.layers.9.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      32,
+      96,
+      64,
+      64,
+      64
+    ],
+    "model.layers.9.self_attn.v_proj": [
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352,
+      352
+    ]
+  },
+  "signal": "fdp_native",
+  "source_fisher_schedule_sha256": "ab3a9941e71947adc0623972c4f7b6f6226b3e664cfe6529a73af05f9ec596c6",
+  "status": "EXCHANGE_SCHEDULE_FROZEN_PRE_FORMAL_QUALITY"
+}

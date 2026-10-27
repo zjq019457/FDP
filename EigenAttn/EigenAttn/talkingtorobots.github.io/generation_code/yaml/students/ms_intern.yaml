@@ -1,0 +1,33 @@
+---
+- NAME: Soumya Teotia
+  PRON: she/her
+  CAPT: Coming soon!<br>MSR
+  URL: https://www.linkedin.com/in/soumya-teotia-3083091bb/
+  PHOTO: soumyateotia.jpg
+  NATIVE: सौम्या तेवतिया
+- NAME: Jacob Thompson
+  PRON: he/him
+  CAPT: Generalist Agents<br>MSR
+  URL: https://www.linkedin.com/in/jacob-thompson-557080194/
+  PHOTO: jacobthompson.png
+- NAME: Yash Jangir
+  PRON: he/him
+  CAPT: Robust Policies<br>MSR
+  URL: 'https://offjangir.github.io/'
+  PHOTO: yashjangir.jpg
+  NATIVE: यश जांगिड़
+- NAME: Claire Jin
+  PRON: she/her
+  CAPT: Mapping<br>5th year
+  URL: https://www.linkedin.com/in/claire-jin-a1474420a/
+  PHOTO: clairejin.jpg
+- NAME: Ani Kimmel
+  PRON: she/her
+  CAPT: 3D Manufacturing<br>ECE PhD
+  URL:  https://scholar.google.com/citations?user=lRvBcUsAAAAJ&hl=en&oi=ao
+  PHOTO: anikimmel.jpg
+#- NAME: Su Li
+#  PRON: she/her
+#  CAPT: Robot Learning
+#  URL: https://www.linkedin.com/in/suli23/
+#  PHOTO: suli.jpg

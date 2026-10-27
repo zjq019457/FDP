@@ -1,0 +1,21 @@
+{
+ "tier": "aggressive",
+ "base_e": 0.09,
+ "PASS": true,
+ "B_live": 179339264,
+ "replay_B": 179339264,
+ "stops": {
+  "error_budget": 3,
+  "min_thresh_45": 24,
+  "both": 5,
+  "floor": 0
+ },
+ "replay_stops": {
+  "error_budget": 3,
+  "min_thresh_45": 24,
+  "both": 5,
+  "floor": 0
+ },
+ "rank_sha_compact": "724a826b8eeb1ad6cea88afc6276a115f0df45146810c5e18c03fe72e4c3c047",
+ "at": "2026-10-09T05:59:25.577786-07:00"
+}

@@ -1,0 +1,92 @@
+{
+ "checkpoint": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized_v2/severe_no_z/final_model",
+ "architectures": [
+  "LlamaForCausalLM_EigenAttn"
+ ],
+ "deleted_at": "2026-10-16T11:53:05.721646-07:00",
+ "reason": "user request 2026-10-16: delete saved compressed models after all evaluations; originals kept",
+ "kept_in_place": [
+  "config.json",
+  "generation_config.json",
+  "low_rank_config.json",
+  "low_rank_config.pt",
+  "model.safetensors.index.json",
+  "special_tokens_map.json",
+  "tokenizer.json",
+  "tokenizer_config.json"
+ ],
+ "files": [
+  {
+   "name": "config.json",
+   "bytes": 727,
+   "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa",
+   "deleted": false
+  },
+  {
+   "name": "generation_config.json",
+   "bytes": 1281,
+   "sha256": "a59ff93c704735c50f8aa2082cb6f46add8c19ad5a39781ac00e576b4085e723",
+   "deleted": false
+  },
+  {
+   "name": "low_rank_config.json",
+   "bytes": 828,
+   "sha256": "275926dd8e16d0e6dffac9c568dc5079085655e8647e61589008cb6e8cc7663e",
+   "deleted": false
+  },
+  {
+   "name": "low_rank_config.pt",
+   "bytes": 2145,
+   "sha256": "059c0ba4cc230595b7c61ddf109afcd2aef88079ce395c758c31bdb8fb2f41d7",
+   "deleted": false
+  },
+  {
+   "name": "model-00001-of-00004.safetensors",
+   "bytes": 4935492688,
+   "sha256": "de1e60dee0d81022d3487f1754917cb0e3458e7e4de09f90370434a4863120f8",
+   "deleted": true
+  },
+  {
+   "name": "model-00002-of-00004.safetensors",
+   "bytes": 4887307736,
+   "sha256": "c3b0096a1b7b1e1a9bf9d23b822887a3bf71a6dbcdf73fd52f89312d1dfc7a28",
+   "deleted": true
+  },
+  {
+   "name": "model-00003-of-00004.safetensors",
+   "bytes": 4705580952,
+   "sha256": "80eea49d72b39d4b66b009adeb69aff5e8df02584948a09c854e6bb7b8bf87ac",
+   "deleted": true
+  },
+  {
+   "name": "model-00004-of-00004.safetensors",
+   "bytes": 1050673280,
+   "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989",
+   "deleted": true
+  },
+  {
+   "name": "model.safetensors.index.json",
+   "bytes": 27044,
+   "sha256": "3a1218c2719509b35e1dbc5727f059b3f073518975487abbcf23385073ec6e08",
+   "deleted": false
+  },
+  {
+   "name": "special_tokens_map.json",
+   "bytes": 301,
+   "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535",
+   "deleted": false
+  },
+  {
+   "name": "tokenizer.json",
+   "bytes": 9085698,
+   "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
+   "deleted": false
+  },
+  {
+   "name": "tokenizer_config.json",
+   "bytes": 50585,
+   "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a",
+   "deleted": false
+  }
+ ]
+}

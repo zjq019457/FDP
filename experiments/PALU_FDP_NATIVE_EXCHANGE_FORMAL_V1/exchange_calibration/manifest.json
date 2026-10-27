@@ -1,0 +1,299 @@
+{
+  "c4": {
+    "chunks": [
+      {
+        "chunk_id": "c4_train_shard0_doc_026696",
+        "doc_index": 26696,
+        "sequence_length": 2048,
+        "text_sha256": "3551bf2460f0f5b37a278bf4ea7e6571d68358ccd231159fb6f3d15a44cfbd16",
+        "token_count": 2082,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "http://www.texasayurvedic.com/wellness-therapies/"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_029211",
+        "doc_index": 29211,
+        "sequence_length": 2048,
+        "text_sha256": "552f636717445fc9d30fc4b88360d558dbceba83584d5ea451a60f7eb0d3beb7",
+        "token_count": 2142,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "http://www.playingwithflour.com/2016/11/beignets-for-breakfast.html"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_037259",
+        "doc_index": 37259,
+        "sequence_length": 2048,
+        "text_sha256": "accb8fb50a44fa5c18a6412500ed30309059f6bedc6c930de00d85d4e892ae27",
+        "token_count": 2063,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "https://waterdamagerestorationbatonrouge.com/university-hills-louisiana/"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_047319",
+        "doc_index": 47319,
+        "sequence_length": 2048,
+        "text_sha256": "4a5fef799068833a9d705b866cbbe1285cc3866e2c32505f75168256e2f537a3",
+        "token_count": 2086,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "http://navyrecognition.com/index.php/news/defence-news/year-2012-news/october.html"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_067942",
+        "doc_index": 67942,
+        "sequence_length": 2048,
+        "text_sha256": "e8ef262c7db246e48f95eb278b5009a7c1962221ee87b9d6c8b4f96da6af52cd",
+        "token_count": 2306,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "https://www.lovereading.co.uk/genreall/hor/releasedesc"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_109691",
+        "doc_index": 109691,
+        "sequence_length": 2048,
+        "text_sha256": "4513e1e6618115c4b5d0cb244644f40ba1ddc403adf9bffafe70814d2c6a1b73",
+        "token_count": 2543,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "http://jesus.reallyhim.com/2017-06-13-and-reason-reason-is-you.html"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_110697",
+        "doc_index": 110697,
+        "sequence_length": 2048,
+        "text_sha256": "e2b11a75bf1b5d9b5a42ea3b6216306018383535817d8b2aac283005d9d5fa83",
+        "token_count": 2661,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "http://artequalstext.aboutdrawing.org/annabel-daou/"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_112709",
+        "doc_index": 112709,
+        "sequence_length": 2048,
+        "text_sha256": "8952d42c0c5c2e524f075f029fff8942dd55e204d434cb17f2848347ff4f8c06",
+        "token_count": 2290,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "https://www.inuth.com/india/10-reasons-why-india-wouldnt-be-the-same-in-2017/"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_136350",
+        "doc_index": 136350,
+        "sequence_length": 2048,
+        "text_sha256": "68bb98036095a1aecc8de20d2de5fa933e5d8821bb0813e8fce883d9f1dc50e0",
+        "token_count": 3016,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "http://www.duradrusti.org/liovsc/i.ebayimg.com_thumbs_images_m_miI5dWrKjrCrc_wIdujk4HQ_s_l225.jpg-6108.shtml"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_140374",
+        "doc_index": 140374,
+        "sequence_length": 2048,
+        "text_sha256": "074af1e959edbea303eee2965e75c14d998ab950b8c97f13d803001aa777559f",
+        "token_count": 2202,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "http://rubka.org.ua/2016-audi-a8-release-date-and-concept/"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_163009",
+        "doc_index": 163009,
+        "sequence_length": 2048,
+        "text_sha256": "f66aa7a23870f3ab0a21b833a33c96cdfa809dda3d88f6ba62766bd5ee2cd30b",
+        "token_count": 2395,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "https://picante.today/international/2019/04/17/21908/action-against-hunger-u-s-a-appoints-new-ceo-to-address-rising-malnutrition-worldwide/"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_164015",
+        "doc_index": 164015,
+        "sequence_length": 2048,
+        "text_sha256": "d916365ffd9ed5536b98b2386a452901e0e3118695b87e3fb33b740836a7450c",
+        "token_count": 3157,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "http://mycreationswithmichelle.blogspot.com/2014/08/"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_167033",
+        "doc_index": 167033,
+        "sequence_length": 2048,
+        "text_sha256": "ecae19b394745bc53a443b9ecdfca5767b1777ea3dd1548204d8e089ab6212a8",
+        "token_count": 4607,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "https://maineprogressiveswarehouse.me/tag/janet-mills/"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_178099",
+        "doc_index": 178099,
+        "sequence_length": 2048,
+        "text_sha256": "717f403fd71860d6d0ad2250d9cc0f4e9f68c82bec7937c56d1ed593df05dbf3",
+        "token_count": 2217,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "https://www.jeffalytics.com/google-ads-account-audit/"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_186147",
+        "doc_index": 186147,
+        "sequence_length": 2048,
+        "text_sha256": "da726f12ee98dadc7052816e169a423e1c1c9b04907d30630b7189a1b56b5b13",
+        "token_count": 2224,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "https://bmcresnotes.biomedcentral.com/articles/10.1186/1756-0500-7-425"
+      },
+      {
+        "chunk_id": "c4_train_shard0_doc_205764",
+        "doc_index": 205764,
+        "sequence_length": 2048,
+        "text_sha256": "7644b404af52a6430521518dceafd0e8b7a180a17a4c3e772e6c6dcc290eefe6",
+        "token_count": 4091,
+        "token_end": 2048,
+        "token_start": 0,
+        "url": "http://surface.iphy.ac.cn/fbwz.asp?id=46"
+      }
+    ],
+    "shard": "c4-train.00000-of-01024.json.gz",
+    "source": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/input/c4-train.00000-of-01024.json.gz",
+    "source_sha256": "8ef8d75b0e045dec4aa5123a671b4564466b0707086a7ed1ba8721626dfffbc9",
+    "token_count": 32752
+  },
+  "disjointness": {
+    "formal_ppl": "WikiText-2 test + C4 validation; disjoint by split/source",
+    "longbench": "task datasets; disjoint source",
+    "native_phi_manifest": "wiki-test + C4 validation from PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1; disjoint by split/source",
+    "zero_shot": "task datasets; disjoint source"
+  },
+  "formal_quality_used_to_select": false,
+  "j_definition": "0.5 * mean_Wiki_NLL + 0.5 * mean_C4_NLL",
+  "quality_used_to_select": false,
+  "scorer": {
+    "cross_entropy": "torch.nn.functional.cross_entropy",
+    "finite_value_policy": "reject non-finite loss",
+    "logits_reduction_dtype": "float32",
+    "masking": "full 2048-token chunk; next-token loss excludes first target position",
+    "padding": "none"
+  },
+  "seed": 20260919,
+  "sequence_length": 2048,
+  "split": {
+    "c4": "train",
+    "wikitext": "train"
+  },
+  "status": "FROZEN_EXCHANGE_CALIBRATION_MANIFEST",
+  "task": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "wikitext": {
+    "chunks": [
+      {
+        "chunk_id": "wiki_train_00",
+        "sequence_length": 2048,
+        "token_end": 104448,
+        "token_start": 102400
+      },
+      {
+        "chunk_id": "wiki_train_01",
+        "sequence_length": 2048,
+        "token_end": 241664,
+        "token_start": 239616
+      },
+      {
+        "chunk_id": "wiki_train_02",
+        "sequence_length": 2048,
+        "token_end": 272384,
+        "token_start": 270336
+      },
+      {
+        "chunk_id": "wiki_train_03",
+        "sequence_length": 2048,
+        "token_end": 399360,
+        "token_start": 397312
+      },
+      {
+        "chunk_id": "wiki_train_04",
+        "sequence_length": 2048,
+        "token_end": 421888,
+        "token_start": 419840
+      },
+      {
+        "chunk_id": "wiki_train_05",
+        "sequence_length": 2048,
+        "token_end": 593920,
+        "token_start": 591872
+      },
+      {
+        "chunk_id": "wiki_train_06",
+        "sequence_length": 2048,
+        "token_end": 1183744,
+        "token_start": 1181696
+      },
+      {
+        "chunk_id": "wiki_train_07",
+        "sequence_length": 2048,
+        "token_end": 1343488,
+        "token_start": 1341440
+      },
+      {
+        "chunk_id": "wiki_train_08",
+        "sequence_length": 2048,
+        "token_end": 1429504,
+        "token_start": 1427456
+      },
+      {
+        "chunk_id": "wiki_train_09",
+        "sequence_length": 2048,
+        "token_end": 1480704,
+        "token_start": 1478656
+      },
+      {
+        "chunk_id": "wiki_train_10",
+        "sequence_length": 2048,
+        "token_end": 1695744,
+        "token_start": 1693696
+      },
+      {
+        "chunk_id": "wiki_train_11",
+        "sequence_length": 2048,
+        "token_end": 1804288,
+        "token_start": 1802240
+      },
+      {
+        "chunk_id": "wiki_train_12",
+        "sequence_length": 2048,
+        "token_end": 2265088,
+        "token_start": 2263040
+      },
+      {
+        "chunk_id": "wiki_train_13",
+        "sequence_length": 2048,
+        "token_end": 2359296,
+        "token_start": 2357248
+      },
+      {
+        "chunk_id": "wiki_train_14",
+        "sequence_length": 2048,
+        "token_end": 2666496,
+        "token_start": 2664448
+      },
+      {
+        "chunk_id": "wiki_train_15",
+        "sequence_length": 2048,
+        "token_end": 2756608,
+        "token_start": 2754560
+      }
+    ],
+    "source": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/data/wiki-train.hf_joined.raw",
+    "source_sha256": "aee724fa58bfbdeb3fc6803297fb6bab27b203d7c40b39ddef9b9770e5d52fe5",
+    "token_count": 32752,
+    "tokenizer_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "tokenizer_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e"
+  }
+}

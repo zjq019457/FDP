@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-07-29T20:04:22.669014-07:00",
+  "rows": [
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 10042,
+      "mean_delta_acc": 0.020613662617008352,
+      "ci95_low": 0.016530571599283006,
+      "ci95_high": 0.024895439155546706,
+      "significant_at_05": true,
+      "align": "task+sample_id(+document_hash)",
+      "task": "hellaswag_localjsonl",
+      "point": "aggressive"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 1172,
+      "mean_delta_acc": 0.02298583617747465,
+      "ci95_low": 0.004266211604095571,
+      "ci95_high": 0.04180887372013653,
+      "significant_at_05": true,
+      "align": "task+sample_id(+document_hash)",
+      "task": "arc_challenge_localjsonl",
+      "point": "aggressive"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 2376,
+      "mean_delta_acc": 0.0188199494949485,
+      "ci95_low": 0.006734006734006703,
+      "ci95_high": 0.031144781144781142,
+      "significant_at_05": true,
+      "align": "task+sample_id(+document_hash)",
+      "task": "arc_easy_localjsonl",
+      "point": "aggressive"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 1267,
+      "mean_delta_acc": 0.019682083662193716,
+      "ci95_low": -0.003946329913180779,
+      "ci95_high": 0.04419889502762431,
+      "significant_at_05": false,
+      "align": "task+sample_id(+document_hash)",
+      "task": "winogrande_localjsonl",
+      "point": "aggressive"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 1838,
+      "mean_delta_acc": 0.01033715995647432,
+      "ci95_low": 0.0,
+      "ci95_high": 0.020674646354733373,
+      "significant_at_05": false,
+      "align": "task+sample_id(+document_hash)",
+      "task": "piqa_localjsonl",
+      "point": "aggressive"
+    }
+  ],
+  "macro": {
+    "point": "aggressive",
+    "n_bootstrap": 10000,
+    "n_samples": 16695,
+    "mean_delta_acc": 0.019373087750822464,
+    "ci95_low": 0.015393830488170113,
+    "ci95_high": 0.02336028751123087,
+    "significant_at_05": true,
+    "align": "task+sample_id(+document_hash)",
+    "status": "ok"
+  }
+}

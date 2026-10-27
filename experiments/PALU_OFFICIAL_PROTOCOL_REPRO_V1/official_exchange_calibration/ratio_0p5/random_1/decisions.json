@@ -1,0 +1,516 @@
+{
+  "accepted_transfer_count": 3,
+  "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "decisions": [
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.0002683773636817932,
+      "bootstrap_ci_low": 6.18956983089447e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "5bb2afdab724cd85a198ea074892875ba0bb28c2eccc34ae71585ad0d3da56a2",
+      "current_schedule_sha": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+      "delta_J": 0.00015664100646972656,
+      "donor": "model.layers.5.self_attn.k_proj::group4",
+      "donor_score": 0.0007628107509608517,
+      "native_rank_quantum": 32,
+      "proposal": 1,
+      "ratio": 0.5,
+      "receiver": "model.layers.5.self_attn.k_proj::group1",
+      "receiver_score": 0.995559533803982,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.00012663379311561584,
+      "bootstrap_ci_low": -4.709884524345398e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "be877474aff7cc2482c7a8a17ff4c2208fd6484da0170aa512194c9034a2bcc1",
+      "current_schedule_sha": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+      "delta_J": 4.190206527709961e-05,
+      "donor": "model.layers.25.self_attn.k_proj::group3",
+      "donor_score": 0.0032742148716543573,
+      "native_rank_quantum": 32,
+      "proposal": 2,
+      "ratio": 0.5,
+      "receiver": "model.layers.18.self_attn.k_proj::group4",
+      "receiver_score": 0.9941671369299269,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.002325408160686493,
+      "bootstrap_ci_low": 8.164346218109131e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "6840eaa70e47838c06331d091567d563e8eee65699b6aaa174ca1e96dc647bf1",
+      "current_schedule_sha": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+      "delta_J": 0.001302514225244522,
+      "donor": "model.layers.6.self_attn.v_proj::group1",
+      "donor_score": 0.003547172846118718,
+      "native_rank_quantum": 32,
+      "proposal": 3,
+      "ratio": 0.5,
+      "receiver": "model.layers.13.self_attn.k_proj::group6",
+      "receiver_score": 0.9929877191491169,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 9.08970832824707e-05,
+      "bootstrap_ci_low": -0.00021046027541160583,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "08356aa6f890ca9e0204fce5781b1f6fce32e513665c05e8bfe07da5a1941591",
+      "current_schedule_sha": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+      "delta_J": -6.167590618133545e-05,
+      "donor": "model.layers.22.self_attn.v_proj::group0",
+      "donor_score": 0.006531549147411608,
+      "native_rank_quantum": 32,
+      "proposal": 4,
+      "ratio": 0.5,
+      "receiver": "model.layers.17.self_attn.v_proj::group0",
+      "receiver_score": 0.9920539312625565,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.0004217587411403656,
+      "bootstrap_ci_low": 6.898865103721619e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "d5dce10d4ed63f6ab0a3bb556dd7a90229125ffdcbfe46fd6c447e2aaa4debc1",
+      "current_schedule_sha": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+      "delta_J": 0.0002474002540111542,
+      "donor": "model.layers.20.self_attn.k_proj::group7",
+      "donor_score": 0.009612145346147183,
+      "native_rank_quantum": 32,
+      "proposal": 5,
+      "ratio": 0.5,
+      "receiver": "model.layers.7.self_attn.k_proj::group4",
+      "receiver_score": 0.9815808140226974,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.0003234073519706726,
+      "bootstrap_ci_low": -6.884336471557617e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "7457b37705169f81789e68cb39dcafa7ff1fde477936fce39f453d522516edcf",
+      "current_schedule_sha": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+      "delta_J": 0.00010849535465240479,
+      "donor": "model.layers.5.self_attn.k_proj::group0",
+      "donor_score": 0.013246422065433028,
+      "native_rank_quantum": 32,
+      "proposal": 6,
+      "ratio": 0.5,
+      "receiver": "model.layers.17.self_attn.k_proj::group0",
+      "receiver_score": 0.9801977329942663,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.0007889196276664734,
+      "bootstrap_ci_low": 0.0003217943012714386,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "1c34ca9799cbd09afbd2001da5042d707a307d5db89dc5873ddd03ed57b8ca91",
+      "current_schedule_sha": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+      "delta_J": 0.0005551688373088837,
+      "donor": "model.layers.9.self_attn.v_proj::group6",
+      "donor_score": 0.013477404629444911,
+      "native_rank_quantum": 32,
+      "proposal": 7,
+      "ratio": 0.5,
+      "receiver": "model.layers.29.self_attn.k_proj::group3",
+      "receiver_score": 0.9753510362166954,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -3.780052065849304e-05,
+      "bootstrap_ci_low": -0.0005358122289180756,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "5be959dd85a49b6e7751f4d6abf8ed005f435f4c788dcb0172baa30ab5254494",
+      "current_schedule_sha": "8a7e970f63191a22bff9b61f73f2f15596bf03ca23745b87a9bb3d43d3a2ef5b",
+      "delta_J": -0.0002256445586681366,
+      "donor": "model.layers.21.self_attn.v_proj::group4",
+      "donor_score": 0.013864550131999054,
+      "native_rank_quantum": 32,
+      "proposal": 8,
+      "ratio": 0.5,
+      "receiver": "model.layers.27.self_attn.k_proj::group4",
+      "receiver_score": 0.9735649412636411,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.00012331083416938782,
+      "bootstrap_ci_low": -2.923235297203064e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "fcd737b82367414adc0ef2752f0567ae1bedca059d792da1275d86b45b39ea70",
+      "current_schedule_sha": "5be959dd85a49b6e7751f4d6abf8ed005f435f4c788dcb0172baa30ab5254494",
+      "delta_J": 4.578009247779846e-05,
+      "donor": "model.layers.28.self_attn.v_proj::group6",
+      "donor_score": 0.01822662804518349,
+      "native_rank_quantum": 32,
+      "proposal": 9,
+      "ratio": 0.5,
+      "receiver": "model.layers.30.self_attn.v_proj::group2",
+      "receiver_score": 0.9714731927551834,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.00021506845951080322,
+      "bootstrap_ci_low": -0.00010016188025474548,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "188916fa0da275c39518e678ca129839af972fa271a8d457fbe5e3d3321e18b3",
+      "current_schedule_sha": "5be959dd85a49b6e7751f4d6abf8ed005f435f4c788dcb0172baa30ab5254494",
+      "delta_J": 4.3351203203201294e-05,
+      "donor": "model.layers.25.self_attn.v_proj::group7",
+      "donor_score": 0.021887153053930186,
+      "native_rank_quantum": 32,
+      "proposal": 10,
+      "ratio": 0.5,
+      "receiver": "model.layers.15.self_attn.v_proj::group7",
+      "receiver_score": 0.9688822284672775,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.00044584646821022034,
+      "bootstrap_ci_low": -6.146356463432312e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "fc645ff2cab78a7fa9e70009e6fa53a637eefdd75a82b1db81e958cf97a32c2a",
+      "current_schedule_sha": "5be959dd85a49b6e7751f4d6abf8ed005f435f4c788dcb0172baa30ab5254494",
+      "delta_J": 0.00017068535089492798,
+      "donor": "model.layers.11.self_attn.v_proj::group0",
+      "donor_score": 0.02314738772515801,
+      "native_rank_quantum": 32,
+      "proposal": 11,
+      "ratio": 0.5,
+      "receiver": "model.layers.8.self_attn.k_proj::group2",
+      "receiver_score": 0.9669112709199356,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -7.868930697441101e-05,
+      "bootstrap_ci_low": -0.00024419650435447693,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "4eaa906e9f8f287d8a62a502ba6212041f0c14db4714895db206bd27127b75ca",
+      "current_schedule_sha": "5be959dd85a49b6e7751f4d6abf8ed005f435f4c788dcb0172baa30ab5254494",
+      "delta_J": -0.0001605898141860962,
+      "donor": "model.layers.1.self_attn.v_proj::group0",
+      "donor_score": 0.025245237178688318,
+      "native_rank_quantum": 32,
+      "proposal": 12,
+      "ratio": 0.5,
+      "receiver": "model.layers.11.self_attn.k_proj::group0",
+      "receiver_score": 0.9660748729460304,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.00042374059557914734,
+      "bootstrap_ci_low": 8.430331945419312e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "b3b8d1fabc1cbfe96fb16e263eebb78797c9f801b256a90a9b4b9691377a684e",
+      "current_schedule_sha": "4eaa906e9f8f287d8a62a502ba6212041f0c14db4714895db206bd27127b75ca",
+      "delta_J": 0.00024602189660072327,
+      "donor": "model.layers.4.self_attn.k_proj::group4",
+      "donor_score": 0.02720992679239742,
+      "native_rank_quantum": 32,
+      "proposal": 13,
+      "ratio": 0.5,
+      "receiver": "model.layers.1.self_attn.k_proj::group3",
+      "receiver_score": 0.9544804924787227,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": true,
+      "bootstrap_ci_high": -2.1006911993026733e-05,
+      "bootstrap_ci_low": -0.00028435513377189636,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "490e13ab65feec288857a5ca91a0eb616143427f7441e37e314224efb806d10b",
+      "current_schedule_sha": "4eaa906e9f8f287d8a62a502ba6212041f0c14db4714895db206bd27127b75ca",
+      "delta_J": -0.00014841929078102112,
+      "donor": "model.layers.10.self_attn.k_proj::group7",
+      "donor_score": 0.02839555798027993,
+      "native_rank_quantum": 32,
+      "proposal": 14,
+      "ratio": 0.5,
+      "receiver": "model.layers.30.self_attn.v_proj::group6",
+      "receiver_score": 0.9460999026089769,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "ACCEPTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 0.00017304345965385437,
+      "bootstrap_ci_low": 1.9010156393051147e-05,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "520ef17488140b11870285c5743ffc98bfde0e71eb9b4ceee0e61e676de159b2",
+      "current_schedule_sha": "490e13ab65feec288857a5ca91a0eb616143427f7441e37e314224efb806d10b",
+      "delta_J": 9.719282388687134e-05,
+      "donor": "model.layers.28.self_attn.k_proj::group4",
+      "donor_score": 0.03025009463866113,
+      "native_rank_quantum": 32,
+      "proposal": 15,
+      "ratio": 0.5,
+      "receiver": "model.layers.31.self_attn.k_proj::group7",
+      "receiver_score": 0.942287461670876,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    },
+    {
+      "accepted": false,
+      "bootstrap_ci_high": 1.3772398233413696e-05,
+      "bootstrap_ci_low": -0.00037576258182525635,
+      "bootstrap_n": 10000,
+      "candidate_schedule_sha": "a08b534c81b116613a5908c8cd3d4b1fb43f33fc520591af96fa36ef2f63f074",
+      "current_schedule_sha": "490e13ab65feec288857a5ca91a0eb616143427f7441e37e314224efb806d10b",
+      "delta_J": -0.0001722201704978943,
+      "donor": "model.layers.17.self_attn.k_proj::group3",
+      "donor_score": 0.0341205401956306,
+      "native_rank_quantum": 32,
+      "proposal": 16,
+      "ratio": 0.5,
+      "receiver": "model.layers.19.self_attn.k_proj::group6",
+      "receiver_score": 0.9415530770529104,
+      "resource_after": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_before": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "resource_exact_match": true,
+      "signal": "random_1",
+      "status": "REJECTED"
+    }
+  ],
+  "final_resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "final_schedule_sha": "490e13ab65feec288857a5ca91a0eb616143427f7441e37e314224efb806d10b",
+  "formal_quality_used_to_select": false,
+  "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+  "q_mapping_sha256": "6fa7d16bb6689cf88dc78ea6a72f3d630abe1d2cf1ccf2729776a3e6768ae3d3",
+  "ratio": 0.5,
+  "signal": "random_1",
+  "source_fisher_schedule_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+  "status": "EXCHANGE_CALIBRATION_COMPLETE"
+}

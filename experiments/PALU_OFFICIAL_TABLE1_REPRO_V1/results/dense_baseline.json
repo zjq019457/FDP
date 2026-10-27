@@ -1,0 +1,44 @@
+{
+  "schema": "PALU_TABLE1_DENSE_RESULT_V1",
+  "campaign": "PALU_OFFICIAL_TABLE1_REPRO_V1",
+  "model": "Llama-2-7b-hf",
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "evaluator": "official run_ppl_eval.py::eval_ppl",
+  "dataset_revision": {
+    "wikitext": "Salesforce/wikitext commit f776294184f13b8ff2337b3841cf9269a6216d1e",
+    "c4": "allenai/c4 commit 607bd4c8450a42878aa9ddc051a65a055450ef87"
+  },
+  "wiki": {
+    "status": "CLOSE_NUMERICAL_REPRODUCTION",
+    "ppl": 5.472263336181641,
+    "reference": 5.47,
+    "absolute_error": 0.0022633361816408737,
+    "relative_error": 0.0004137726109032676,
+    "windows": 166,
+    "tokens": 339968,
+    "sequence_length": 2048,
+    "stride": 2048,
+    "tokenization": "official evaluator; raw WikiText-2 test texts joined by double newlines; tokenizer defaults; local pinned Salesforce parquet",
+    "source_sha256": "3ee89cd6a2ab912afd5d01e98867b46a67d9ec7a9eca0910e5e4c3cdd4cc1925",
+    "log_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/logs/dense_wikitext2_official_snapshot_retry2.log",
+    "log_sha256": "1cd619b2ac6f48c90c4e1dab7a93eda3eaa05a5399dc5ebb1e50b4e169863a83",
+    "classification": "CLOSE_NUMERICAL_REPRODUCTION"
+  },
+  "c4": {
+    "status": "CLOSE_NUMERICAL_REPRODUCTION",
+    "ppl": 7.2632622718811035,
+    "reference": 7.26,
+    "absolute_error": 0.003262271881103729,
+    "relative_error": 0.00044934874395368167,
+    "windows": 256,
+    "tokens": 524288,
+    "sequence_length": 2048,
+    "stride": 2048,
+    "source_sha256": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+    "log_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/logs/dense_c4_offline_retry2.log",
+    "log_sha256": "f58db84b12d8b86b20cbff841bd2f302bbdf32d6a84624465eddf61fa9507dd1",
+    "classification": "CLOSE_NUMERICAL_REPRODUCTION"
+  },
+  "foreign_jobs_interrupted": 0,
+  "historical_results_modified": false
+}

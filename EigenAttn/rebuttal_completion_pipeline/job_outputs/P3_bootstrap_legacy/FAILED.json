@@ -1,0 +1,8 @@
+{
+  "job_id": "P3_bootstrap_legacy",
+  "status": "FAILED",
+  "returncode": 1,
+  "ended_at": "2026-07-29T07:29:29.818624-07:00",
+  "elapsed_sec": 3.9435861110687256,
+  "gpu": null
+}

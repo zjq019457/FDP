@@ -1,0 +1,16 @@
+/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[Load CMP] /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora128_all48_v5_ns8192_s12k
+Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/finetune_qk_lora_opt30b_eigen.py", line 281, in <module>
+    main()
+  File "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/finetune_qk_lora_opt30b_eigen.py", line 186, in main
+    model = OPTForCausalLM_EigenAttn.from_pretrained(
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 3960, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 4414, in _load_pretrained_model
+    state_dict = load_state_dict(shard_file, is_quantized=is_quantized)
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 550, in load_state_dict
+    if metadata.get("format") not in ["pt", "tf", "flax", "mlx"]:
+AttributeError: 'NoneType' object has no attribute 'get'

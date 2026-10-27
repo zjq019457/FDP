@@ -1,0 +1,237 @@
+{
+  "artifact_id": "LLAMA2_UNIFORM_EB059_REALIZATION_AUDIT_V2",
+  "status": "FAIL",
+  "utc": "2026-10-01T09:18:27.962577+00:00",
+  "model_repo_id": "meta-llama/Llama-2-7b-hf",
+  "model_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa5856660c691f6626d25c2cf25197",
+  "checkpoint_path": "/diskD/jiaqizhang/LLAMA2_UNIFORM_EB059_STRICT_MATCH_V1/attempt6/final_model",
+  "checkpoint_shard_hashes": {
+    "model-00001-of-00003.safetensors": "84e1c9580c47607a1ab0038feccef124a79146ef484d2952088e0d9736826a13",
+    "model-00002-of-00003.safetensors": "ac54bc4734c556dded36aff30cdcf346660999802c3499bba88431860a237321",
+    "model-00003-of-00003.safetensors": "069d20fbbb9907299e3d14250995d7876dd9a4d56107aae9b31b02c00e28e11f"
+  },
+  "index_sha256": "5b5a51f1e56da4e6cbc9e192f5d4f7bc5b9ca4b63165a93ceaa5445ca8e5ab15",
+  "low_rank_config_pt_sha256": "fa1be560dcf1dc6f0f03b40bbc95ffe9dc2a2fe1ae8fa62d4bc193489f876f5e",
+  "rank_pairs": [
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ],
+    [
+      1184,
+      3488
+    ],
+    [
+      992,
+      3264
+    ],
+    [
+      864,
+      3104
+    ],
+    [
+      1120,
+      3392
+    ],
+    [
+      1632,
+      3520
+    ],
+    [
+      2016,
+      3616
+    ],
+    [
+      2400,
+      3712
+    ],
+    [
+      2464,
+      3744
+    ],
+    [
+      3360,
+      3968
+    ],
+    [
+      2368,
+      3712
+    ],
+    [
+      2432,
+      3712
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2848,
+      3840
+    ],
+    [
+      2816,
+      3840
+    ],
+    [
+      2880,
+      3840
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2368,
+      3744
+    ],
+    [
+      2400,
+      3744
+    ],
+    [
+      2368,
+      3744
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      1952,
+      3648
+    ],
+    [
+      2080,
+      3648
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      2176,
+      3648
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      4064,
+      4096
+    ],
+    [
+      1440,
+      3456
+    ]
+  ],
+  "rank_sum": 192768,
+  "rank_plan_sha256": "3f4e59be8cf981abb5c6c272702eb42e75729f9167677e29846f957e7935eaf4",
+  "B_live_bytes_formula": 789577728,
+  "basis_path": "/dev/shm/llama2_uniform_e059_attempt6/selected_basis.pt",
+  "basis_sha256": "9e85529f6927ed6cdd40fece0ec49b7e00c3500446a3118ced6951631e8ab203",
+  "basis_bytes": 1940708685,
+  "basis_manifest_sha256": "1d2d3e927bb466c2b67973b60f0bb189f89b8769d432241ff70489fcc8644d9b",
+  "factor_keys_in_safetensors_index": 128,
+  "loaded_factor_parameters": 128,
+  "factor_bundle_sha256": "bbe80a565e6e5b8ded3d495e2142c0eae1a2fce1b62c429558afc2a2ad38d233",
+  "factor_bytes": 2548897536,
+  "factor_bundle_sha256_equal_after_second_model_reload": true,
+  "direct_projection_checks": {
+    "K_low_per_layer_head": 1024,
+    "K_up_per_layer": 32,
+    "V_low_per_layer_head": 1024,
+    "O_up_per_layer_head": 1024,
+    "max_abs": {
+      "k_low": 0.00048828125,
+      "k_up": 0.0,
+      "v_low": 0.00048828125,
+      "o_up": 0.0
+    },
+    "aggregate_relative_L2": {
+      "k_low": 8.185248947036124e-06,
+      "v_low": 3.0477554616952187e-05,
+      "o_up": 0.0
+    },
+    "mean_cosine": {
+      "k_low": 0.9999999983119778,
+      "v_low": 0.9999999977299012,
+      "o_up": 1.0000000013387762
+    },
+    "all_exact_torch_equal": false,
+    "mismatch_count": 1216,
+    "mismatch_examples": [
+      [
+        0,
+        0,
+        "k_low",
+        0.000244140625,
+        2.935308102480922e-05,
+        1.0
+      ],
+      [
+        0,
+        0,
+        "v_low",
+        0.000244140625,
+        4.448086412321958e-05,
+        1.0000001192092896
+      ],
+      [
+        0,
+        1,
+        "k_low",
+        0.0001220703125,
+        1.612853469645648e-05,
+        1.0
+      ],
+      [
+        0,
+        1,
+        "v_low",
+        6.103515625e-05,
+        1.7948461324546175e-05,
+        0.9999999403953552
+      ],
+      [
+        0,
+        2,
+        "k_low",
+        6.103515625e-05,
+        9.451963943709953e-06,
+        1.0
+      ],
+      [
+        0,
+        2,
+        "v_low",
+        6.103515625e-05,
+        2.7228478532530486e-05,
+        1.0
+      ]
+    ],
+    "numerical_method": "float32 independent reconstruction followed by cast to stored bfloat16, matching canonical decompose/eigen_attn.py"
+  },
+  "factor_shapes_finiteness": "PASS",
+  "transformers_version": "4.53.0",
+  "compatibility_overlay_import_only_plus_missing_function_exports": true,
+  "gpu": "cuda:0",
+  "dtype": "bfloat16"
+}

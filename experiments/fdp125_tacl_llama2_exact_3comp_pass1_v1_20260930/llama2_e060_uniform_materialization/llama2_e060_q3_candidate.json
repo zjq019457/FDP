@@ -1,0 +1,990 @@
+{
+  "artifact_id": "LLAMA2_MEDIUM_E060_Q3_AND_TRUE_TWO_PASS_CANDIDATE_V1",
+  "status": "CPU_CANDIDATE_BASIS_CAP_AUDIT_NOT_RESOURCE_LOCK",
+  "method": "q=MinMax(raw d1+d2+d5); TRUE_TWO_PASS_FDP_EB",
+  "components": {
+    "d1": "Z_rel_mse",
+    "d2": "score_rel_mse_causal",
+    "d5": "max(0,-entropy_diff_A)"
+  },
+  "inputs": {
+    "profile": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_uniform_materialization/step1_profile_2x512.json",
+    "profile_sha256": "27400ab4cfdcabab4dd29b968c0c47fc1b1b7d83e4a633c9abb946e0ff06bc0e",
+    "uniform_report": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_7b_uniform_pass1_e060_report.json",
+    "uniform_report_sha256": "1282e67f0d7841cbf824193e749b0f530c29faf5f67d7cea7d161fe0058e51f6",
+    "uniform_basis": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_7b_uniform_pass1_e060_eb0p06.pt",
+    "uniform_basis_sha256": "ed8bcc824ddd9ad77b0e734fb96c9e5fc6a5af964eb0aefda45a5a1de2decc5a",
+    "method_lock": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK.json",
+    "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+    "q_code": "realloc_rank_from_fragility.py fragility_vector/minmax",
+    "q_code_sha256": "3799526d7e0ff0e05df6d7e5f2c267e9f09b65d81551ca622985e4a4cf181a6e",
+    "threshold_replay_code": "re_enumerate_v2.py oracle_lookup/derive_eb_schedule adapted with model-native 32 KV heads",
+    "threshold_replay_code_sha256": "123013ac73df49c312ea02e4ab562c725d5fe2d6b5bd102087a910e77572e45c"
+  },
+  "frozen_parameters": {
+    "eb": 0.06,
+    "lambda": 1.2,
+    "rho": 0.75,
+    "num_key_value_heads": 32,
+    "rank_step": 32,
+    "min_rank": 64,
+    "threshold_range": "1.00 -> 0.30 inclusive step 0.02",
+    "dtype": "bf16",
+    "profile_prompts": 2,
+    "profile_seqlen": 512,
+    "attn": "eager"
+  },
+  "q": [
+    0.0,
+    1.6481838808808074e-05,
+    0.02457788963353012,
+    0.07450515407614475,
+    0.10136843306962079,
+    0.11192384797427667,
+    0.09893212071480013,
+    0.10302541810990974,
+    0.09547618422574353,
+    0.09991831212984723,
+    0.09507361007852703,
+    0.1149888409590782,
+    0.09972196647355311,
+    0.02362638520637588,
+    0.07604280167230616,
+    0.0699133726060929,
+    0.061954481090607555,
+    0.05960096485944292,
+    0.05517177014725109,
+    0.07174720428961472,
+    0.05449559863119871,
+    0.0524292432338155,
+    0.06531371487552119,
+    0.04816062600939044,
+    0.0621755744411657,
+    0.0843940549594811,
+    0.06944565680397545,
+    0.07722432999256999,
+    0.07847905877917961,
+    0.08391457741439382,
+    0.05252515037521305,
+    1.0
+  ],
+  "q_sha256": "731af943d4db35c65d0e3d47c69253b0fc9082da3e384b6f1999afc67fdf3e4b",
+  "effective_eb": [
+    0.06144907469380756,
+    0.06600837628826382,
+    0.06411860191012159,
+    0.06059235088898211,
+    0.058850929950980374,
+    0.058193758553141205,
+    0.05900472654089976,
+    0.058746787056619024,
+    0.05922427272730772,
+    0.058942374703595514,
+    0.05924995344981512,
+    0.05800567536099429,
+    0.058954778126251293,
+    0.0641897944437501,
+    0.060489896382971094,
+    0.060900380613540625,
+    0.06144177022562511,
+    0.06160371293942853,
+    0.061910807224575384,
+    0.06077698712217139,
+    0.061957958565192824,
+    0.06210249748056246,
+    0.061212094658606664,
+    0.062403227607656014,
+    0.06142660078763798,
+    0.059939442672584525,
+    0.0609319321568077,
+    0.06041140544434647,
+    0.060328274385692,
+    0.059970775114435625,
+    0.062095773976620756,
+    0.030004400825257016
+  ],
+  "effective_eb_sha256": "d2cb6448d07db4e1ca3fa45ee7ecb2a1379e092cbc640f4f64033ea95f0c90f5",
+  "uniform_rank_schedule": [
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ],
+    [
+      1184,
+      3488
+    ],
+    [
+      992,
+      3264
+    ],
+    [
+      832,
+      3008
+    ],
+    [
+      1120,
+      3392
+    ],
+    [
+      1632,
+      3520
+    ],
+    [
+      2016,
+      3616
+    ],
+    [
+      2400,
+      3712
+    ],
+    [
+      2464,
+      3744
+    ],
+    [
+      2848,
+      3840
+    ],
+    [
+      2368,
+      3712
+    ],
+    [
+      2432,
+      3712
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2848,
+      3840
+    ],
+    [
+      2816,
+      3840
+    ],
+    [
+      2880,
+      3840
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2368,
+      3744
+    ],
+    [
+      2400,
+      3744
+    ],
+    [
+      2368,
+      3744
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      1952,
+      3648
+    ],
+    [
+      1728,
+      3552
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      2176,
+      3648
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      4064,
+      4096
+    ],
+    [
+      1440,
+      3456
+    ]
+  ],
+  "candidate_rank_schedule_clipped_to_uniform_basis": [
+    [
+      4096,
+      4096
+    ],
+    [
+      4096,
+      4096
+    ],
+    [
+      1184,
+      3488
+    ],
+    [
+      928,
+      3168
+    ],
+    [
+      832,
+      3008
+    ],
+    [
+      1120,
+      3392
+    ],
+    [
+      1632,
+      3520
+    ],
+    [
+      2016,
+      3616
+    ],
+    [
+      2400,
+      3712
+    ],
+    [
+      2464,
+      3744
+    ],
+    [
+      2848,
+      3840
+    ],
+    [
+      2368,
+      3712
+    ],
+    [
+      2432,
+      3712
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2848,
+      3840
+    ],
+    [
+      2816,
+      3840
+    ],
+    [
+      2880,
+      3840
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2368,
+      3744
+    ],
+    [
+      2400,
+      3744
+    ],
+    [
+      1952,
+      3648
+    ],
+    [
+      2432,
+      3744
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      1952,
+      3648
+    ],
+    [
+      1728,
+      3552
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      2176,
+      3648
+    ],
+    [
+      2112,
+      3648
+    ],
+    [
+      2048,
+      3680
+    ],
+    [
+      4064,
+      4096
+    ],
+    [
+      1440,
+      3456
+    ]
+  ],
+  "rank_sha256": "bdd9297230163e60caffe08bfb0fac7541033e285bcfe7f44d797c9ea4c83c76",
+  "resource": {
+    "uniform_rank_sum": 191552,
+    "candidate_rank_sum": 190880,
+    "bytes_per_rank_unit": 4096,
+    "uniform_target_bytes_proxy": 784596992,
+    "candidate_bytes_proxy": 781844480,
+    "gap_bytes": -2752512,
+    "gap_percent": -0.35081857667891747,
+    "clipped_layer_count": 3,
+    "clipped_layers": [
+      {
+        "layer": 0,
+        "target_eb": 0.06144907469380756,
+        "threshold": 1.0,
+        "trace_error_preclip": 0.005024601011635782,
+        "rank_preclip": [
+          4096,
+          4096
+        ],
+        "rank_postclip": [
+          4096,
+          4096
+        ],
+        "basis_cap": [
+          4096,
+          4096
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 1,
+        "target_eb": 0.06600837628826382,
+        "threshold": 1.0,
+        "trace_error_preclip": 0.0047698849737224085,
+        "rank_preclip": [
+          4096,
+          4096
+        ],
+        "rank_postclip": [
+          4096,
+          4096
+        ],
+        "basis_cap": [
+          4096,
+          4096
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 2,
+        "target_eb": 0.06411860191012159,
+        "threshold": 0.8999999999999999,
+        "trace_error_preclip": 0.055483186573630806,
+        "rank_preclip": [
+          1184,
+          3488
+        ],
+        "rank_postclip": [
+          1184,
+          3488
+        ],
+        "basis_cap": [
+          1184,
+          3488
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 3,
+        "target_eb": 0.06059235088898211,
+        "threshold": 0.8399999999999999,
+        "trace_error_preclip": 0.06050219070169168,
+        "rank_preclip": [
+          928,
+          3168
+        ],
+        "rank_postclip": [
+          928,
+          3168
+        ],
+        "basis_cap": [
+          992,
+          3264
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 4,
+        "target_eb": 0.058850929950980374,
+        "threshold": 0.8199999999999998,
+        "trace_error_preclip": 0.05809528086991738,
+        "rank_preclip": [
+          864,
+          3104
+        ],
+        "rank_postclip": [
+          832,
+          3008
+        ],
+        "basis_cap": [
+          832,
+          3008
+        ],
+        "was_clipped": true
+      },
+      {
+        "layer": 5,
+        "target_eb": 0.058193758553141205,
+        "threshold": 0.8999999999999999,
+        "trace_error_preclip": 0.05257564550200829,
+        "rank_preclip": [
+          1408,
+          3488
+        ],
+        "rank_postclip": [
+          1120,
+          3392
+        ],
+        "basis_cap": [
+          1120,
+          3392
+        ],
+        "was_clipped": true
+      },
+      {
+        "layer": 6,
+        "target_eb": 0.05900472654089976,
+        "threshold": 0.8999999999999999,
+        "trace_error_preclip": 0.055335566330516575,
+        "rank_preclip": [
+          1632,
+          3520
+        ],
+        "rank_postclip": [
+          1632,
+          3520
+        ],
+        "basis_cap": [
+          1632,
+          3520
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 7,
+        "target_eb": 0.058746787056619024,
+        "threshold": 0.9199999999999999,
+        "trace_error_preclip": 0.052569094841114786,
+        "rank_preclip": [
+          2016,
+          3616
+        ],
+        "rank_postclip": [
+          2016,
+          3616
+        ],
+        "basis_cap": [
+          2016,
+          3616
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 8,
+        "target_eb": 0.05922427272730772,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.0504085640967948,
+        "rank_preclip": [
+          2400,
+          3712
+        ],
+        "rank_postclip": [
+          2400,
+          3712
+        ],
+        "basis_cap": [
+          2400,
+          3712
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 9,
+        "target_eb": 0.058942374703595514,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.050637885715971755,
+        "rank_preclip": [
+          2464,
+          3744
+        ],
+        "rank_postclip": [
+          2464,
+          3744
+        ],
+        "basis_cap": [
+          2464,
+          3744
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 10,
+        "target_eb": 0.05924995344981512,
+        "threshold": 0.96,
+        "trace_error_preclip": 0.05906372729864808,
+        "rank_preclip": [
+          2848,
+          3840
+        ],
+        "rank_postclip": [
+          2848,
+          3840
+        ],
+        "basis_cap": [
+          2848,
+          3840
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 11,
+        "target_eb": 0.05800567536099429,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.04911328410326596,
+        "rank_preclip": [
+          2368,
+          3712
+        ],
+        "rank_postclip": [
+          2368,
+          3712
+        ],
+        "basis_cap": [
+          2368,
+          3712
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 12,
+        "target_eb": 0.058954778126251293,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.05128666936048852,
+        "rank_preclip": [
+          2432,
+          3712
+        ],
+        "rank_postclip": [
+          2432,
+          3712
+        ],
+        "basis_cap": [
+          2432,
+          3712
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 13,
+        "target_eb": 0.0641897944437501,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.055307066469107415,
+        "rank_preclip": [
+          2432,
+          3744
+        ],
+        "rank_postclip": [
+          2432,
+          3744
+        ],
+        "basis_cap": [
+          2432,
+          3744
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 14,
+        "target_eb": 0.060489896382971094,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.055797750570512894,
+        "rank_preclip": [
+          2432,
+          3744
+        ],
+        "rank_postclip": [
+          2432,
+          3744
+        ],
+        "basis_cap": [
+          2432,
+          3744
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 15,
+        "target_eb": 0.060900380613540625,
+        "threshold": 0.96,
+        "trace_error_preclip": 0.05170195673991275,
+        "rank_preclip": [
+          2848,
+          3840
+        ],
+        "rank_postclip": [
+          2848,
+          3840
+        ],
+        "basis_cap": [
+          2848,
+          3840
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 16,
+        "target_eb": 0.06144177022562511,
+        "threshold": 0.96,
+        "trace_error_preclip": 0.05132706024724431,
+        "rank_preclip": [
+          2816,
+          3840
+        ],
+        "rank_postclip": [
+          2816,
+          3840
+        ],
+        "basis_cap": [
+          2816,
+          3840
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 17,
+        "target_eb": 0.06160371293942853,
+        "threshold": 0.96,
+        "trace_error_preclip": 0.05235830476227304,
+        "rank_preclip": [
+          2880,
+          3840
+        ],
+        "rank_postclip": [
+          2880,
+          3840
+        ],
+        "basis_cap": [
+          2880,
+          3840
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 18,
+        "target_eb": 0.061910807224575384,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.056859151491382376,
+        "rank_preclip": [
+          2432,
+          3744
+        ],
+        "rank_postclip": [
+          2432,
+          3744
+        ],
+        "basis_cap": [
+          2432,
+          3744
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 19,
+        "target_eb": 0.06077698712217139,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.055054820842333686,
+        "rank_preclip": [
+          2368,
+          3744
+        ],
+        "rank_postclip": [
+          2368,
+          3744
+        ],
+        "basis_cap": [
+          2368,
+          3744
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 20,
+        "target_eb": 0.061957958565192824,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.05225714201759528,
+        "rank_preclip": [
+          2400,
+          3744
+        ],
+        "rank_postclip": [
+          2400,
+          3744
+        ],
+        "basis_cap": [
+          2400,
+          3744
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 21,
+        "target_eb": 0.06210249748056246,
+        "threshold": 0.9199999999999999,
+        "trace_error_preclip": 0.06040483170328495,
+        "rank_preclip": [
+          1952,
+          3648
+        ],
+        "rank_postclip": [
+          1952,
+          3648
+        ],
+        "basis_cap": [
+          2368,
+          3744
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 22,
+        "target_eb": 0.061212094658606664,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.050663943736528785,
+        "rank_preclip": [
+          2432,
+          3744
+        ],
+        "rank_postclip": [
+          2432,
+          3744
+        ],
+        "basis_cap": [
+          2432,
+          3744
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 23,
+        "target_eb": 0.062403227607656014,
+        "threshold": 0.9199999999999999,
+        "trace_error_preclip": 0.05792450172671181,
+        "rank_preclip": [
+          2112,
+          3648
+        ],
+        "rank_postclip": [
+          2112,
+          3648
+        ],
+        "basis_cap": [
+          2112,
+          3648
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 24,
+        "target_eb": 0.06142660078763798,
+        "threshold": 0.9199999999999999,
+        "trace_error_preclip": 0.054554961750024375,
+        "rank_preclip": [
+          1952,
+          3648
+        ],
+        "rank_postclip": [
+          1952,
+          3648
+        ],
+        "basis_cap": [
+          1952,
+          3648
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 25,
+        "target_eb": 0.059939442672584525,
+        "threshold": 0.8999999999999999,
+        "trace_error_preclip": 0.05968118547703034,
+        "rank_preclip": [
+          1728,
+          3552
+        ],
+        "rank_postclip": [
+          1728,
+          3552
+        ],
+        "basis_cap": [
+          1728,
+          3552
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 26,
+        "target_eb": 0.0609319321568077,
+        "threshold": 0.9199999999999999,
+        "trace_error_preclip": 0.05125862201395362,
+        "rank_preclip": [
+          2048,
+          3680
+        ],
+        "rank_postclip": [
+          2048,
+          3680
+        ],
+        "basis_cap": [
+          2048,
+          3680
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 27,
+        "target_eb": 0.06041140544434647,
+        "threshold": 0.9199999999999999,
+        "trace_error_preclip": 0.05460491489345347,
+        "rank_preclip": [
+          2176,
+          3648
+        ],
+        "rank_postclip": [
+          2176,
+          3648
+        ],
+        "basis_cap": [
+          2176,
+          3648
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 28,
+        "target_eb": 0.060328274385692,
+        "threshold": 0.9199999999999999,
+        "trace_error_preclip": 0.057255339922286964,
+        "rank_preclip": [
+          2112,
+          3648
+        ],
+        "rank_postclip": [
+          2112,
+          3648
+        ],
+        "basis_cap": [
+          2112,
+          3648
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 29,
+        "target_eb": 0.059970775114435625,
+        "threshold": 0.9199999999999999,
+        "trace_error_preclip": 0.049189005102755305,
+        "rank_preclip": [
+          2048,
+          3680
+        ],
+        "rank_postclip": [
+          2048,
+          3680
+        ],
+        "basis_cap": [
+          2048,
+          3680
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 30,
+        "target_eb": 0.062095773976620756,
+        "threshold": 1.0,
+        "trace_error_preclip": 0.018082710036790517,
+        "rank_preclip": [
+          4064,
+          4096
+        ],
+        "rank_postclip": [
+          4064,
+          4096
+        ],
+        "basis_cap": [
+          4064,
+          4096
+        ],
+        "was_clipped": false
+      },
+      {
+        "layer": 31,
+        "target_eb": 0.030004400825257016,
+        "threshold": 0.94,
+        "trace_error_preclip": 0.029006422488533797,
+        "rank_preclip": [
+          2496,
+          3776
+        ],
+        "rank_postclip": [
+          1440,
+          3456
+        ],
+        "basis_cap": [
+          1440,
+          3456
+        ],
+        "was_clipped": true
+      }
+    ],
+    "formal_actual_B_live": null
+  },
+  "provenance_warning": "Candidate B is rank-derived proxy only; actual resource lock requires canonical realization and named parameter byte census."
+}

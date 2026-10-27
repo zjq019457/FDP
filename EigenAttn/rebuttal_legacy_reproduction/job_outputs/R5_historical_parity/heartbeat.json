@@ -1,0 +1,8 @@
+{
+  "job_id": "R5_historical_parity",
+  "status": "RUNNING",
+  "pid": 2211701,
+  "gpu": null,
+  "running_for_sec": 10.011055707931519,
+  "updated_at": "2026-07-29T01:32:16.750604-07:00"
+}

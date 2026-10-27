@@ -1,0 +1,6 @@
+b01,b10,p_value,task
+0,0,1.0,hellaswag_localjsonl
+0,0,1.0,arc_challenge_localjsonl
+0,0,1.0,arc_easy_localjsonl
+0,0,1.0,winogrande_localjsonl
+0,0,1.0,piqa_localjsonl

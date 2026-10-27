@@ -1,0 +1,218 @@
+{
+  "schema": "LLAMA3_FULL_RESOURCE_ROBUSTNESS_SCHEDULE_LOCK_V1",
+  "arm_name": "FULL_RESOURCE_MEDIUM_LOW",
+  "paper_label": "Full profile, resource-controlled",
+  "status": "SCHEDULE_REPLAY_PASS_MATERIALIZATION_PENDING",
+  "model": {
+    "repo_id": "meta-llama/Meta-Llama-3-8B",
+    "local_path": "/diskD/jiaqizhang/Llama-3",
+    "content_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+    "tokenizer_file_hashes": {
+      "tokenizer.json": {
+        "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
+        "bytes": 9085698
+      },
+      "tokenizer_config.json": {
+        "sha256": "690727b4fed286383df1c7ca5e805124cb70c6eb4529f807c7b2e60ff741da7e",
+        "bytes": 50566
+      },
+      "special_tokens_map.json": {
+        "sha256": "462d91939dbc37178aa5a3eae7068d1990ccc92e09f288cc71f42cdf139d69cc",
+        "bytes": 73
+      }
+    },
+    "max_position_embeddings": 8192
+  },
+  "method": {
+    "q": "MinMax(d1+d2+d5)",
+    "components": {
+      "d1": "Z_rel_mse",
+      "d2": "score_rel_mse_causal",
+      "d5": "max(0,-entropy_diff_A)"
+    },
+    "allocator": "TRUE_TWO_PASS_FDP_EB",
+    "lambda": 1.2,
+    "rho": 0.75,
+    "only_changed_parameter": "global base error tolerance / operating scalar",
+    "layer0_frozen": true
+  },
+  "tier": "MEDIUM",
+  "original_full_preserved": true,
+  "original_full": {
+    "B_live_bytes": 199753728,
+    "J": 2.226618
+  },
+  "resource_target_B_live_bytes": 196870144,
+  "actual_schedule_B_live_bytes": 196640768,
+  "resource_gap_bytes": -229376,
+  "resource_gap_pct_vs_target": -0.11651131824234354,
+  "acceptance": {
+    "max_absolute_gap_pct": 0.15,
+    "status": "PASS",
+    "quality_blind": true
+  },
+  "rank_vector_kq_v": [
+    [
+      808,
+      992
+    ],
+    [
+      384,
+      872
+    ],
+    [
+      400,
+      776
+    ],
+    [
+      632,
+      904
+    ],
+    [
+      680,
+      928
+    ],
+    [
+      776,
+      952
+    ],
+    [
+      792,
+      960
+    ],
+    [
+      792,
+      952
+    ],
+    [
+      624,
+      904
+    ],
+    [
+      704,
+      928
+    ],
+    [
+      696,
+      928
+    ],
+    [
+      720,
+      928
+    ],
+    [
+      896,
+      992
+    ],
+    [
+      688,
+      936
+    ],
+    [
+      776,
+      960
+    ],
+    [
+      624,
+      912
+    ],
+    [
+      688,
+      936
+    ],
+    [
+      632,
+      904
+    ],
+    [
+      504,
+      840
+    ],
+    [
+      448,
+      824
+    ],
+    [
+      344,
+      776
+    ],
+    [
+      440,
+      832
+    ],
+    [
+      440,
+      824
+    ],
+    [
+      376,
+      808
+    ],
+    [
+      344,
+      800
+    ],
+    [
+      336,
+      800
+    ],
+    [
+      360,
+      816
+    ],
+    [
+      488,
+      856
+    ],
+    [
+      504,
+      856
+    ],
+    [
+      1016,
+      1024
+    ],
+    [
+      784,
+      968
+    ],
+    [
+      696,
+      928
+    ]
+  ],
+  "rank_sha256": "7f55912710453b6c59b099926b28bf6e3713e9ea65cad00b003c0c4ee2c55a4d",
+  "allocation_sha256": "c7ca26f9de5926e0c0a4e89fc38c30bcf1780c25911b53893c19412f7382e9c3",
+  "allocation_sha_definition": "SHA256 of exact selected resource schedule candidate JSON bytes",
+  "selected_scalar": 0.06178259509322545,
+  "scalar_plateau": [
+    0.061414669074550635,
+    0.062150521111900274
+  ],
+  "sources": {
+    "protocol_lock_sha256": "85c840f6c5053d3a8734b1c1e173d3d6b649271a9e7b72eaf640bcd8b1e60d99",
+    "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+    "profile_sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+    "q_sha256": "3e29bec57d805b896e228f81ea2458efe9d5a976ac395cbf14446b1c72673986",
+    "candidate_sha256": "c7ca26f9de5926e0c0a4e89fc38c30bcf1780c25911b53893c19412f7382e9c3",
+    "plateau_scan_sha256": "69e42f8d5f6a2f4b423a30d5e6d6437463b8d816a231ecd5580c0d5813614f81",
+    "epsilon_input_sha256": "d16f95e7d0f4ba29001473dbfc55d89667456127efffed6e58aee177bcd9d7ce",
+    "final_builder_report_sha256": "7afc3e5cd15752a8b3fe86423f4b043cedfef12da5b412e0bfcda9cbb18107f9",
+    "final_basis_sha256": "1e6eb860ecccc2c2a7fb8dd70efb70374588fb0e90a0bca429f232219360bf0b",
+    "official_builder_sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+    "official_operator_sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7",
+    "evaluation_lock_sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+  },
+  "final_builder": {
+    "exit_code": 0,
+    "layer_count": 32,
+    "exact_rank_vector_replay": true,
+    "report_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/llama3_medium_full_resource_low_perlayer_eb_report.json",
+    "basis_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/llama3_medium_full_resource_low_perlayer_eb.pt",
+    "basis_bytes": 119729499
+  },
+  "actual_materialized_low_rank_tensor_audit": "PENDING",
+  "realization_sha256": "PENDING",
+  "quality_authorized": false,
+  "schedule_lock_payload_sha256": "7a07bc112b62a2acebc7a09c40794b07cdcab139b1be1f1cfcad75e1ab932930"
+}

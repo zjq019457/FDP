@@ -1,0 +1,65 @@
+{
+  "lock_id": "LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK",
+  "version": "audit-derived-port-contract-v1",
+  "created_utc": "2026-10-01T00:26:05.972556+00:00",
+  "status": "FROZEN_FOR_METHOD_REPLICATION; NOT_A_PRE_REGISTRATION; DOES_NOT_SUPERSEDE_5COMP_AUTHORITY",
+  "source_authority": {
+    "original_method_family": "TRUE_TWO_PASS_FDP_EB",
+    "original_5comp_freeze_sha256": "73753c0a752e906dbaf85e2c6c26d13983d0533882420148400ed71eb600737d",
+    "3comp_selection_timing": "POST_HOC_SELECTED relative to original dev freeze",
+    "3comp_exact_schedule_replay": "PASS from frozen profile and threshold traces"
+  },
+  "components": {
+    "mask": "11001",
+    "set": [
+      "d1",
+      "d2",
+      "d5"
+    ],
+    "definitions": {
+      "d1": "Z_rel_mse",
+      "d2": "score_rel_mse_causal",
+      "d5": "max(0,-entropy_diff_A)"
+    },
+    "aggregation": "sum raw component values, then min-max normalize across layers; no component-wise normalization; zscore_norm=false"
+  },
+  "pass1": {
+    "kind": "uniform EigenAttention at e",
+    "e": 0.06,
+    "profiling_comparison": "Dense base vs Pass1 compressed at same e",
+    "profile_protocol_binding": "Llama-3 raw profile is hash-pinned; original Pass1 compressed model is not currently present"
+  },
+  "allocation": {
+    "lambda": 1.2,
+    "rho_recorded_in_subset_code": 0.75,
+    "raw": "epsilon_raw_l=e/(1+lambda*q_l)",
+    "mean_normalization": "epsilon_norm_l=epsilon_raw_l*(e/mean(epsilon_raw))",
+    "layer0": "canonical builder overrides effective epsilon_0 exactly to e after intermediate schedule generation",
+    "rank_floor": 64,
+    "rank_search": "canonical builder threshold descent 1.00 -> 0.30 inclusive at 0.02; accept relative-layer error <= effective epsilon; basis-bound clipping; KQ/V schedule pair per layer",
+    "rollback": "oracle replay takes the last in-order passing trace item and stops at the first failing item; no quality-based change"
+  },
+  "implementation": {
+    "q_and_replay_code_path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/configs/re_enumerate_v2.py",
+    "q_and_replay_code_sha256": "123013ac73df49c312ea02e4ab562c725d5fe2d6b5bd102087a910e77572e45c",
+    "component_code_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/realloc_rank_from_fragility.py",
+    "component_code_sha256": "3799526d7e0ff0e05df6d7e5f2c267e9f09b65d81551ca622985e4a4cf181a6e",
+    "basis_builder_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+    "basis_builder_sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+    "operator_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+    "operator_sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7"
+  },
+  "replay_anchor": {
+    "raw_profile_sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+    "q_sha256_audit": "3e29bec57d805b896e228f81ea2458efe9d5a976ac395cbf14446b1c72673986",
+    "effective_eb_sha256_round8": "36c4cf4669a0a81d5ecad3737cefd1ba40ae13f19c3ba934baf5fa7f5ae83ed8",
+    "rank_sha256": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+    "B_live_bytes": 199753728
+  },
+  "replication_constraints": [
+    "Do not change components, q aggregation, lambda, e, L0 override, threshold search, legal rank projection or resource rule after observing quality.",
+    "For Llama-2, generate a new model-native Uniform(e=.060) Pass1 and raw profile under the same 2 fixed prompts / seqlen512 / eager / bf16 diagnostic protocol; do not reuse the 512-window x 2048-sequence L2 profile.",
+    "Do not begin formal Llama-2 quality until resource lock, canonical materialization, direct parity and deterministic canary pass.",
+    "Keep Llama-2 V1/native_projection and Direction-Corrected V2 as historical diagnostics; no rank/schedule reuse."
+  ]
+}

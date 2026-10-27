@@ -1,0 +1,2 @@
+STOPPED 20261012T142600 by user request: arm A reduced to PPL only (no ZS/LongBench); 3 builders had run ~3 min, logs kept
+STOPPED 2026-10-12T17:03:47-07:00 by user request: LongBench QA-6 for spectral_tail45 aggressive (lb5, lbnqa) terminated; tail-under-floor will not be reported. Partial outputs and logs kept (tiers/aggressive/spectral_tail45/longbench_qa6, logs/jobs/lb*_aggressive_spectral_tail45.log). PPL+ZS for all arms complete.

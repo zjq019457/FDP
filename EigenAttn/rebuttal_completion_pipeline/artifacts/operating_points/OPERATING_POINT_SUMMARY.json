@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-07-29T08:56:04.402956-07:00",
+  "rows": [
+    {
+      "point": "mild",
+      "method": "uniform",
+      "metric": "wikitext2_ppl",
+      "value": 6.7294786479615984
+    },
+    {
+      "point": "mild",
+      "method": "uniform",
+      "metric": "c4_ppl",
+      "value": 9.83562032647886
+    },
+    {
+      "point": "mild",
+      "method": "fdp",
+      "metric": "wikitext2_ppl",
+      "value": 6.649582661740018
+    },
+    {
+      "point": "mild",
+      "method": "fdp",
+      "metric": "c4_ppl",
+      "value": 9.693687291910727
+    },
+    {
+      "point": "moderate",
+      "method": "uniform",
+      "metric": "wikitext2_ppl",
+      "value": 7.591567798924349
+    },
+    {
+      "point": "moderate",
+      "method": "uniform",
+      "metric": "c4_ppl",
+      "value": 13.14035894942186
+    },
+    {
+      "point": "moderate",
+      "method": "fdp",
+      "metric": "wikitext2_ppl",
+      "value": 7.1610500807039585
+    },
+    {
+      "point": "moderate",
+      "method": "fdp",
+      "metric": "c4_ppl",
+      "value": 12.087788014419148
+    },
+    {
+      "point": "aggressive",
+      "method": "uniform",
+      "metric": "wikitext2_ppl",
+      "value": 12.646980131106307
+    },
+    {
+      "point": "aggressive",
+      "method": "uniform",
+      "metric": "c4_ppl",
+      "value": 19.492053099590944
+    },
+    {
+      "point": "aggressive",
+      "method": "fdp",
+      "metric": "wikitext2_ppl",
+      "value": 10.320963724011435
+    },
+    {
+      "point": "aggressive",
+      "method": "fdp",
+      "metric": "c4_ppl",
+      "value": 18.118823798130908
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "FDP125_ULTRA_RESOURCE_ATTEMPT_INVALIDATION_V1",
+  "attempt": 1,
+  "classification": "ENGINEERING_PATH_BINDING_FAILURE",
+  "stage_reached": "MODEL_CHECKPOINT_LOAD_ONLY",
+  "quality_started": false,
+  "gpu_used_for_compute": false,
+  "exit_code": 1,
+  "error": "FileNotFoundError: builder could not find per_layer_eb_json at the envelope subdirectory; prepare step had written the same frozen input one directory above.",
+  "failed_log_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/ultra_aggressive_v1/envelope/builder.stderr.log",
+  "failed_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "failed_stderr_sha256": "765b924b44e4cb9f26ac9d7595cd78e42477b1df53547f13cb1239dc43404265",
+  "failed_rc_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+  "recovery": "Corrected only output-path binding; retry uses a fresh attempt2 directory. Scientific inputs, profile, seed, builder, and rank-search settings unchanged."
+}

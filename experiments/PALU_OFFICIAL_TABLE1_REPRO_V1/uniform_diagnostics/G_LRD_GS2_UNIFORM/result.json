@@ -1,0 +1,45 @@
+{
+  "allocator": "global uniform; Fisher disabled by request",
+  "campaign": "PALU_OFFICIAL_TABLE1_REPRO_V1",
+  "cell": "G_LRD_GS2_UNIFORM",
+  "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+  "completed_utc": "2026-09-29T19:41:20.118920+00:00",
+  "dataset_sha256": {
+    "c4": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+    "wiki_test": "3ee89cd6a2ab912afd5d01e98867b46a67d9ec7a9eca0910e5e4c3cdd4cc1925",
+    "wiki_train": "49280f3dd993cbdfd322186194133d5d1935f81e1c91064c239f2a70ebb02701"
+  },
+  "decomposition": "official whiten/truncation-aware SVD path",
+  "foreign_jobs_interrupted": 0,
+  "group_size": 2,
+  "historical_results_modified": false,
+  "method": "G-LRD",
+  "model_alias": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/model_reference/Llama-2-7b-hf",
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "ppl": {
+    "wikitext2": 7.895185947418213
+  },
+  "resource": {
+    "allocation_sha256": "a7ba4dc91058636fffe43a8502de9d0dff30af3b4efd6d42607587a06e2febfb",
+    "cache_bytes_per_token_fp16": 262144,
+    "compression_ratio": 0.5,
+    "decode_cache_bytes_at_2048_fp16": 536870912,
+    "factor_bytes": 1140850688,
+    "low_rank_module_count": 64,
+    "prefill_cache_bytes_at_2048_fp16": 536870912,
+    "rank_histogram": {
+      "128": 1024
+    },
+    "rank_quantum": 32,
+    "rank_sum": 131072,
+    "realization_sha256": "b89f27e9006d58a54c87351a84cd37d362e763215c5d54b80973f856c7721601",
+    "resource_pass": true,
+    "total_rank": 262144
+  },
+  "result_sha256": "93927540f6ebc8e043997de556753beeff9045e1657a40f7d79d71f8789fb289",
+  "schema": "PALU_TABLE1_USER_UNIFORM_PPL_RESULT_V1",
+  "seed": 42,
+  "sequence_length": 2048,
+  "started_utc": "2026-09-29T19:39:29.627620+00:00",
+  "stride": 2048
+}

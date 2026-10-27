@@ -1,0 +1,368 @@
+{
+  "manifest_version": "FDP125_LONGBENCH_QA6_FORMAL_MANIFEST_V1",
+  "created_at_utc": "2026-09-22T01:00:35.371549+00:00",
+  "LONGBENCH_PROTOCOL_AUDIT": "PASS",
+  "launch_authorized": true,
+  "scope": "SUPPLEMENTAL_QA6_MEDIUM",
+  "formal_results_modified": false,
+  "q_modified": false,
+  "quality_driven_tuning": false,
+  "frozen_core": {
+    "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+    "lambda": 1.2,
+    "rho": 0.75,
+    "formula": [
+      "d1",
+      "d2",
+      "d5"
+    ],
+    "seed": 2,
+    "resource_lock_sha256": "f685b2f0137cf35e6c2ea213238e2d87b2660693cbccf0d4dfdbcb4e9fec4f87",
+    "method_lock_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/FDP125_FORMAL_METHOD_LOCK.json",
+    "artifact_registry_sha256": "b6f44d073a52deabca6399f2ae33fb854410442fd32b269dd41dd578ee231b39",
+    "binding_audit_sha256": "3624e57933264aee47c3d7078d55d42337b8d8e6e913e1d6c1526ca823de9d59"
+  },
+  "model": {
+    "model_name": "Meta-Llama-3-8B base / local Llama-3",
+    "model_path": "/diskD/jiaqizhang/Llama-3",
+    "revision_status": "LOCAL_SNAPSHOT_NO_HUB_REVISION_METADATA",
+    "identity_files": {
+      "config.json": {
+        "bytes": 654,
+        "sha256": "2430cee764b6530ff8673cf9ba8561e1d5a33152d503cd0de909ff5718261441"
+      },
+      "tokenizer_config.json": {
+        "bytes": 50566,
+        "sha256": "690727b4fed286383df1c7ca5e805124cb70c6eb4529f807c7b2e60ff741da7e"
+      },
+      "tokenizer.json": {
+        "bytes": 9085698,
+        "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+      },
+      "model.safetensors.index.json": {
+        "bytes": 23950,
+        "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b"
+      },
+      "generation_config.json": {
+        "bytes": 177,
+        "sha256": "93caf96e269e32b9ee33ad78b0d76d910408d11a63a8b2c49241030836759311"
+      },
+      "special_tokens_map.json": {
+        "bytes": 73,
+        "sha256": "462d91939dbc37178aa5a3eae7068d1990ccc92e09f288cc71f42cdf139d69cc"
+      },
+      "README.md": {
+        "bytes": 36584,
+        "sha256": "3cbad75113f9c1d99d215598c624c96c8beead2852e5b3a6a3e40238c03676e9"
+      }
+    },
+    "tokenizer_path": "/diskD/jiaqizhang/Llama-3",
+    "tokenizer_loading": "AutoTokenizer local_files_only use_fast=False",
+    "chat_template": null,
+    "chat_wrapping": "NONE; raw prompt because Llama3 base has no chat_template"
+  },
+  "dataset": {
+    "source": "THUDM/LongBench v1 NarrativeQA config plus five existing frozen LongBench tasks",
+    "source_url": "https://huggingface.co/datasets/THUDM/LongBench",
+    "source_config": "narrativeqa",
+    "local_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/data/narrativeqa.jsonl",
+    "local_file_sha256": "0fb8d08ba5cdad4b74244224b0dc2e8b41ee6b850d954a13eb2d282621ce2f71",
+    "local_sample_count": 200,
+    "task_order": [
+      "narrativeqa",
+      "qasper",
+      "multifieldqa_en",
+      "hotpotqa",
+      "2wikimqa",
+      "musique"
+    ],
+    "task_count": 6,
+    "total_samples": 1200,
+    "dataset_snapshot_sha256": "75bc86a9ea08b77f819790e23cb1b222a2bf42c742c3899b5c7b6f4ead361201",
+    "task_hashes": {
+      "qasper": "29aa07d2a63f36f4fb8e8cd200a3428ee3126d750bde6af1c8f9bc41c2366854",
+      "multifieldqa_en": "0aac182fd317dcf6d74f8e1e0f3e61029407435346c2e0b3ff9fb45ae49c5c3f",
+      "hotpotqa": "a0005ab2a1bc2ac3a70352dccbf96cccc4e0aac6bb677f6a55180fa51b92ef6f",
+      "2wikimqa": "dda279cf93a99e1e5bfa3291fb199fd55978d10a1feb31822953cf77a1742e37",
+      "musique": "4ac69b91281c4ec6b21316cb7282e83fb6b4dda04fc68480bb8d8ed1e19ff7bd",
+      "narrativeqa": "0fb8d08ba5cdad4b74244224b0dc2e8b41ee6b850d954a13eb2d282621ce2f71"
+    },
+    "offline_source_provenance": {
+      "mirror_repo": "https://github.com/IsaacRe/PyramidKV.git",
+      "mirror_repo_commit": "1ca16d6ea0bc3e48fc4cc8623bc4901bc131d511",
+      "download_script": "/home/bai-project/jiaqizhang/RocketKV/scripts/dataset_prep/download_longbench.py",
+      "download_script_sha256": "11b2cfc307d08680ed244b45c4234a452ea037b70f15e7c7a260fd227e22f75c",
+      "mirror_statement": "script calls load_dataset(THUDM/LongBench, dataset, split=test)",
+      "direct_hf_download_attempt": "FAILED_NETWORK_CONNECTION_RESET; preserved as provenance evidence"
+    },
+    "task_metadata": {
+      "narrativeqa": {
+        "category": "single_document_qa",
+        "metric": "F1",
+        "sample_count": 200,
+        "max_new_tokens": 128,
+        "dataset_file_sha256": "0fb8d08ba5cdad4b74244224b0dc2e8b41ee6b850d954a13eb2d282621ce2f71"
+      },
+      "qasper": {
+        "category": "single_document_qa",
+        "metric": "existing_frozen_protocol",
+        "sample_count": 200,
+        "dataset_file_sha256": "29aa07d2a63f36f4fb8e8cd200a3428ee3126d750bde6af1c8f9bc41c2366854"
+      },
+      "multifieldqa_en": {
+        "category": "single_document_qa",
+        "metric": "existing_frozen_protocol",
+        "sample_count": 150,
+        "dataset_file_sha256": "0aac182fd317dcf6d74f8e1e0f3e61029407435346c2e0b3ff9fb45ae49c5c3f"
+      },
+      "hotpotqa": {
+        "category": "multi_document_qa",
+        "metric": "existing_frozen_protocol",
+        "sample_count": 200,
+        "dataset_file_sha256": "a0005ab2a1bc2ac3a70352dccbf96cccc4e0aac6bb677f6a55180fa51b92ef6f"
+      },
+      "2wikimqa": {
+        "category": "multi_document_qa",
+        "metric": "existing_frozen_protocol",
+        "sample_count": 200,
+        "dataset_file_sha256": "dda279cf93a99e1e5bfa3291fb199fd55978d10a1feb31822953cf77a1742e37"
+      },
+      "musique": {
+        "category": "multi_document_qa",
+        "metric": "existing_frozen_protocol",
+        "sample_count": 200,
+        "dataset_file_sha256": "4ac69b91281c4ec6b21316cb7282e83fb6b4dda04fc68480bb8d8ed1e19ff7bd"
+      }
+    }
+  },
+  "prompt": {
+    "source_path": "/home/bai-project/jiaqizhang/EigenAttn/slim/configs/dataset2prompt.json",
+    "sha256": "3c06dba9f4308375d8751a7dbf6d0f4167b4d64afc27655e6577cc4bb51f1b91",
+    "narrativeqa_template": "You are given a story, which can be either a novel or a movie script, and a question. Answer the question asconcisely as you can, using a single phrase if possible. Do not provide any explanation.\n\nStory: {context}\n\nNow, answer the question based on the story asconcisely as you can, using a single phrase if possible. Do not provide any explanation.\n\nQuestion: {input}\n\nAnswer:"
+  },
+  "input_policy": {
+    "max_input_tokens": 8192,
+    "model_max_position_embeddings": 8192,
+    "tokenization": "raw formatted prompt without truncation",
+    "overflow": "head_tail",
+    "head_tokens": 4096,
+    "tail_tokens": 4096,
+    "retokenize_after_head_tail": false
+  },
+  "generation": {
+    "max_new_tokens_by_task": {
+      "passage_retrieval_en": 32,
+      "qasper": 128,
+      "multifieldqa_en": 64,
+      "hotpotqa": 32,
+      "2wikimqa": 32,
+      "musique": 32,
+      "gov_report": 512,
+      "qmsum": 512,
+      "multi_news": 512,
+      "vcsum": 512,
+      "passage_count": 32,
+      "trec": 64,
+      "triviaqa": 32,
+      "samsum": 128,
+      "lsht": 64,
+      "lcc": 64,
+      "repobench-p": 64,
+      "narrativeqa": 128
+    },
+    "do_sample": false,
+    "num_beams": 1,
+    "temperature_argument": 1.0,
+    "temperature_effective": null,
+    "top_p_effective": null,
+    "eos_token_id": 128001,
+    "pad_token_id": 128001,
+    "use_cache": true,
+    "batch_size": 1,
+    "seed": 2,
+    "seed_effective": "no stochastic generation path"
+  },
+  "runtime": {
+    "dtype": "bf16",
+    "attn_implementation": "eager",
+    "official_runner": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_completion_pipeline/runners/wave2_longbench_eigen.py",
+    "official_runner_sha256": "37ca6cf76d8d004de8fe4ed138cc284d837a1cf1f2cf734dcb7ceb2100fad60a",
+    "scorer": "/home/bai-project/jiaqizhang/EigenAttn/slim/longbench_eval.py",
+    "scorer_sha256": "a71ef393206539961e976bf83f90349008f01208e16944f2a9c935ea4108b243",
+    "prompt_config_sha256": "3c06dba9f4308375d8751a7dbf6d0f4167b4d64afc27655e6577cc4bb51f1b91",
+    "maxlen_config_sha256": "54d1586d1116c3a72fd17af2a82357c4bff4ca79bee24fb8c3a048a3c9f00d3d",
+    "device_policy": "one GPU per process; launch with CUDA_VISIBLE_DEVICES=1"
+  },
+  "methods": {
+    "official_uniform": {
+      "checkpoint": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/materialized_formal_checkpoints/medium/official_uniform/final_model",
+      "low_rank_config_sha256": "db207077467e658317a1972240a42b211212563f38b3e819210b90006a1615cb",
+      "rank_sha256": null,
+      "actual_bytes": 199917568,
+      "checkpoint_file_manifest": {
+        "files": [
+          {
+            "path": "config.json",
+            "bytes": 727,
+            "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+          },
+          {
+            "path": "generation_config.json",
+            "bytes": 1291,
+            "sha256": "8711cc972b6c80e9eb8ef5e4d4533c71b8898945cbd183364a2d75844643aa26"
+          },
+          {
+            "path": "low_rank_config.json",
+            "bytes": 838,
+            "sha256": "db207077467e658317a1972240a42b211212563f38b3e819210b90006a1615cb"
+          },
+          {
+            "path": "low_rank_config.pt",
+            "bytes": 2145,
+            "sha256": "c3809a9872fca1066e1af1c209ed9fd5da7964e9d429215cbae37a95c7fb70ae"
+          },
+          {
+            "path": "model-00001-of-00004.safetensors",
+            "bytes": 4974143056,
+            "sha256": "75ac9b1ad6bfdb4ac6ebdbe15d9fa5694212541e1b49a8f3c8630a0adffd4e2d"
+          },
+          {
+            "path": "model-00002-of-00004.safetensors",
+            "bytes": 4939267808,
+            "sha256": "2124034d96bb327e657beb59db732bc0bb3f7663e5a3e339be442340d297aed9"
+          },
+          {
+            "path": "model-00003-of-00004.safetensors",
+            "bytes": 4831104440,
+            "sha256": "fc5338d013b84e642ad3b70a371e6aa76e51656d33883351e88f960ac56cf954"
+          },
+          {
+            "path": "model-00004-of-00004.safetensors",
+            "bytes": 1050673280,
+            "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+          },
+          {
+            "path": "model.safetensors.index.json",
+            "bytes": 27044,
+            "sha256": "9b867dec377ea318ee0e8c3815ce27b7779d3d71f21c7d891bc99f040b5c646d"
+          },
+          {
+            "path": "special_tokens_map.json",
+            "bytes": 301,
+            "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+          },
+          {
+            "path": "tokenizer.json",
+            "bytes": 9085698,
+            "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+          },
+          {
+            "path": "tokenizer_config.json",
+            "bytes": 50585,
+            "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+          }
+        ],
+        "sha256": "d1579a2b8b1d76f6819cddefe1ad1f4a3e7fa142e6ee43f464aee80171bd5b5c"
+      },
+      "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "operator": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+      "seed": 2,
+      "dtype": "bf16",
+      "attn_implementation": "eager",
+      "provenance": null
+    },
+    "fdp125_direct": {
+      "checkpoint": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/materialized_formal_checkpoints/medium/fdp125_direct/final_model",
+      "low_rank_config_sha256": "3800ab0b3a3cefe076db21bd5be47515ec3583a21eee811985f57758ddd6f512",
+      "rank_sha256": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+      "actual_bytes": 199753728,
+      "checkpoint_file_manifest": {
+        "files": [
+          {
+            "path": "config.json",
+            "bytes": 727,
+            "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+          },
+          {
+            "path": "generation_config.json",
+            "bytes": 1289,
+            "sha256": "9ea56f95da452c016527298ba1bd3a3c20d9b1e2a847e8e776d17dea8861c409"
+          },
+          {
+            "path": "low_rank_config.json",
+            "bytes": 836,
+            "sha256": "3800ab0b3a3cefe076db21bd5be47515ec3583a21eee811985f57758ddd6f512"
+          },
+          {
+            "path": "low_rank_config.pt",
+            "bytes": 2145,
+            "sha256": "692c29c975f1769b607f8d266a9f4073777d18bbef4701a518c1b1f708986374"
+          },
+          {
+            "path": "model-00001-of-00004.safetensors",
+            "bytes": 4991006800,
+            "sha256": "45c982a8681b0cc8dd09727615196dac757ab9270a9d8d18c8b04797903da6cb"
+          },
+          {
+            "path": "model-00002-of-00004.safetensors",
+            "bytes": 4945765856,
+            "sha256": "d323944127d2f13e021833b7a30cf1d9b77ea25e1274515a4988672e48583ba4"
+          },
+          {
+            "path": "model-00003-of-00004.safetensors",
+            "bytes": 4807151792,
+            "sha256": "8dc37cf586aa0e782ce22dd667bb94440fae011cab54ab5573c2eaaa48b62706"
+          },
+          {
+            "path": "model-00004-of-00004.safetensors",
+            "bytes": 1050673280,
+            "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+          },
+          {
+            "path": "model.safetensors.index.json",
+            "bytes": 27044,
+            "sha256": "293ee90758da022a22778eed8b5ac0254466d97cf37c388ef6329bce8be1ae1d"
+          },
+          {
+            "path": "special_tokens_map.json",
+            "bytes": 301,
+            "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+          },
+          {
+            "path": "tokenizer.json",
+            "bytes": 9085698,
+            "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+          },
+          {
+            "path": "tokenizer_config.json",
+            "bytes": 50585,
+            "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+          }
+        ],
+        "sha256": "01d0c676bd950d6c87c76d6452713bcec77c11d05ef09269ad2407bd186f8013"
+      },
+      "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "operator": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+      "seed": 2,
+      "dtype": "bf16",
+      "attn_implementation": "eager",
+      "provenance": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/fdp125/provenance.json"
+    }
+  },
+  "reuse_policy": {
+    "existing_tasks": [
+      "qasper",
+      "multifieldqa_en",
+      "hotpotqa",
+      "2wikimqa",
+      "musique"
+    ],
+    "new_task": [
+      "narrativeqa"
+    ],
+    "reuse_existing_predictions": true,
+    "formal_main_17_task_unchanged": true
+  },
+  "formal_guard": "QA6 is supplemental; it does not redefine the 17-task main benchmark.",
+  "manifest_sha256": "8bcf275130dfcc81cb82666acdf19630748fcfd8a44576e5dbeeba6566741633"
+}

@@ -1,0 +1,684 @@
+{
+  "schema": "MPT7B_DENSE_RUNTIME_KV_CACHE_CENSUS_V1",
+  "status": "PASS",
+  "formal_quality_result": false,
+  "formal_resource_lock": false,
+  "classification": "DENSE_TRANSFORMERS_RUNTIME_CENSUS_NOT_OFFICIAL_EIGEN_RESOURCE_LOCK",
+  "model_path": "/diskF/jiaqizhang/models/新建文件夹",
+  "model_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "model_content_manifest_sha256": "8fd59bc340a43f13b250c77d118cc8e479993ecdee1a839bcee5cd7bc1f51db9",
+  "runtime": "Transformers MPT dense checkpoint; BF16; use_cache=True",
+  "gpu_physical_index": 2,
+  "free_bytes_before": 42956750848,
+  "total_bytes": 85094825984,
+  "process_memory_fraction_cap": 0.4,
+  "batch_size": 1,
+  "sequence_length": 2048,
+  "layers": 32,
+  "hidden_size": 4096,
+  "cache_layout_per_layer_k": [
+    1,
+    32,
+    2048,
+    128
+  ],
+  "cache_layout_per_layer_v": [
+    1,
+    32,
+    2048,
+    128
+  ],
+  "cache_dtype": "torch.bfloat16",
+  "actual_kv_cache_B_live_bytes": 1073741824,
+  "geometry_crosscheck_bytes": 1073741824,
+  "per_layer_uniform_kv_bytes": 33554432,
+  "per_layer": [
+    {
+      "layer": 0,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 1,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 2,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 3,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 4,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 5,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 6,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 7,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 8,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 9,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 10,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 11,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 12,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 13,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 14,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 15,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 16,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 17,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 18,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 19,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 20,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 21,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 22,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 23,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 24,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 25,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 26,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 27,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 28,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 29,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 30,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    },
+    {
+      "layer": 31,
+      "k_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "v_shape": [
+        1,
+        32,
+        2048,
+        128
+      ],
+      "dtype_k": "torch.bfloat16",
+      "dtype_v": "torch.bfloat16",
+      "k_bytes": 16777216,
+      "v_bytes": 16777216,
+      "kv_bytes": 33554432
+    }
+  ],
+  "finite_logits": true,
+  "peak_allocated_bytes": 16314695680,
+  "peak_reserved_bytes": 16626221056,
+  "torch_version": "2.8.0+cu128",
+  "transformers_version": "4.44.2",
+  "created_unix": 1791232444.5995548,
+  "scope": "quality-blind dense checkpoint cache census only; not compressed FDP B_live, not Official EigenAttention resource lock, no PPL/C4/accuracy"
+}

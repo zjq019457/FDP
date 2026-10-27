@@ -1,0 +1,80 @@
+--- /home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py
++++ /diskF/jiaqizhang/FDP_FROZEN_PROTOCOL_CONSTRAINED45_V1/code/build_eigen_basis_llama_error_budget_offline_c45.py
+@@ -33,7 +33,7 @@
+ import torch
+ from transformers import AutoModelForCausalLM, AutoTokenizer
+ 
+-_TOOLS = Path(__file__).resolve().parent
++_TOOLS = Path("/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools")  # C45: pinned to frozen tools dir (path-only)
+ 
+ 
+ def _load_sibling_tools():
+@@ -238,6 +238,12 @@
+         default=0.045,
+         help="与 --freeze_layer0_eb 配合。",
+     )
++    ap.add_argument(
++        "--official_min_thresh",
++        type=float,
++        default=0.0,
++        help="C45: official EigenAttn Llama loop condition rank > t*max_rank for both QK and V (upstream t=0.45); 0 disables.",
++    )
+     args = ap.parse_args()
+ 
+     _h = _load_sibling_tools()
+@@ -251,7 +257,7 @@
+     random.seed(args.seed)
+     torch.manual_seed(args.seed)
+ 
+-    repo_root = Path(__file__).resolve().parents[1]
++    repo_root = _TOOLS.parent  # C45: pinned to frozen repo root (path-only)
+     base_root = repo_root.parent / "EigenAttn_base"
+     if not base_root.exists():
+         raise FileNotFoundError(base_root)
+@@ -506,7 +512,16 @@
+             best_err = None
+             skip_stream = False
+ 
+-            while err < float(eb) and th > float(args.svd_threshold_floor):
++            # C45: official 45% loop condition (upstream 8bd0d3fa); max ranks as upstream (k_proj/v_proj rows).
++            _mt45 = float(args.official_min_thresh)
++            _max_rk45 = int(layer.self_attn.k_proj.weight.shape[0])
++            _max_rv45 = int(layer.self_attn.v_proj.weight.shape[0])
++
++            def _ok45(rk, rv):
++                return _mt45 <= 0 or (int(rk) > _mt45 * _max_rk45 and int(rv) > _mt45 * _max_rv45)
++
++            _eval_rk, _eval_rv = _max_rk45, _max_rv45  # upstream initialises ranks to max before the loop
++            while err < float(eb) and th > float(args.svd_threshold_floor) and _ok45(_eval_rk, _eval_rv):
+                 reused = skip_stream
+                 if not skip_stream:
+                     err, _, _ = _relative_error_llama_streams(
+@@ -535,7 +550,8 @@
+                         flush=True,
+                     )
+ 
+-                if err <= float(eb):
++                _eval_rk, _eval_rv = int(rank_kq), int(rank_v)  # C45: ranks of the candidate just evaluated
++                if err <= float(eb) and _ok45(rank_kq, rank_v):
+                     best_th = float(th)
+                     best_rank_k = int(rank_kq)
+                     best_rank_v = int(rank_v)
+@@ -572,6 +588,9 @@
+                 skip_stream = False
+                 iter_idx += 1
+ 
++            _efail = not (err < float(eb))
++            _rfail = not _ok45(_eval_rk, _eval_rv)
++            _stop_reason = "both" if (_efail and _rfail) else ("error_budget" if _efail else ("min_thresh_45" if _rfail else "floor"))
+             th = float(best_th)
+             rank_kq = int(best_rank_k)
+             rank_v = int(best_rank_v)
+@@ -605,6 +624,8 @@
+                     "rank_v_final": int(rank_v),
+                     "layer_error": float(final_err),
+                     "threshold_trace": trace,
++                    "official_min_thresh": float(_mt45),
++                    "stop_reason": _stop_reason,
+                 }
+             if int(args.report_energy) == 1:
+                 runs["energy_k_approx"] = e_k

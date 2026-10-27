@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-07-28T09:43:17.392496-07:00",
+  "basis_path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/r2_uniform_eb045/eigen_basis_llama3_8b_wikitext2_eb0p045.pt",
+  "basis_sha256": "1186efc90a38ef353fdd6c0c05d254ee74c2d9acd8c50e74aa0ed8dac5eddee8",
+  "source_historical_basis": "/diskD/jiaqizhang/llama3_8b_eigen_basis_wikitext2_eb/eigen_basis_llama3_8b_wikitext2_eb0p045.pt",
+  "source_sha256": "1186efc90a38ef353fdd6c0c05d254ee74c2d9acd8c50e74aa0ed8dac5eddee8",
+  "n_layers": 32,
+  "error_budget": 0.045,
+  "materialization": "copy_historical_surviving_basis_into_isolation"
+}

@@ -1,0 +1,25 @@
+{
+  "phase": "WAITING",
+  "master_pid": 2455771,
+  "python": "/home/bai-project/anaconda3/envs/eigen/bin/python",
+  "gates": {},
+  "gpu_jobs": {},
+  "scheduler": "continuous_refill_packing",
+  "max_gpu_parallel": 12,
+  "max_cpu_parallel": 8,
+  "max_slots_per_gpu": 4,
+  "job_reserve_mib": 18000,
+  "generated_at": "2026-07-30T00:54:24.311234-07:00",
+  "in_flight": [
+    "WAVE2_LB_SCORE"
+  ],
+  "last_action": "finished:WAVE2_LB_SCORE",
+  "job_counts": {
+    "completed": 122,
+    "running": 0,
+    "pending": 1,
+    "blocked": 0,
+    "failed": 1,
+    "stopped": 0
+  }
+}

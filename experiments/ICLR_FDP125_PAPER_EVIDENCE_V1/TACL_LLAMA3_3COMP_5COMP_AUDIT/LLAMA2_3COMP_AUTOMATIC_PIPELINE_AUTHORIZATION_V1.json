@@ -1,0 +1,70 @@
+{
+  "artifact_id": "LLAMA2_3COMP_AUTOMATIC_PIPELINE_AUTHORIZATION_V1",
+  "status": "ACTIVE_GATED_AUTOCONTINUE",
+  "created_at_utc": "2026-10-01T00:54:02.696443+00:00",
+  "authorization_source": "Explicit user instruction: subsequent FDP generation and evaluation may proceed through the pipeline without per-stage manual confirmation.",
+  "automatic_execution_authorized": true,
+  "manual_confirmation_required_after_this_authorization": false,
+  "cell": "Llama-2-7B canonical 3-component TRUE_TWO_PASS port from Llama-3-8B",
+  "bindings": {
+    "profile_protocol_lock": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA2_3COMP_PROFILE_PROTOCOL_BINDING_V1.json",
+    "profile_protocol_lock_sha256": "99f19dd8a91e6833a3e5eebb5f92c871de68fb9c26c1fc78f31988a478369d1b",
+    "profile_input_manifest": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA2_3COMP_PROFILE_INPUT_MANIFEST_V1.json",
+    "profile_input_manifest_sha256": "394e8a5b664db60a5677cb3174807c8e350d8ebf04369364dd32495a93446d11",
+    "method_lock": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK.json",
+    "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f"
+  },
+  "stages_in_order": [
+    "wait_for_existing_uniform_e060_resource_worker_without_restart_or_duplicate",
+    "validate_32_layer_basis_report_rank_trace_integrity_model_and_tokenizer_binding_no_fallback_finite_determinism",
+    "materialize_uniform_e060_pass1_using_canonical_operator",
+    "run_exact_2_prompt_x_512_bf16_eager_profile_and_save_raw_metrics",
+    "compute_q3=minmax(d1+d2+d5), retain d3/d4 if profiler emits without method changes",
+    "run_exact_frozen_TRUE_TWO_PASS_FDP_EB_allocation_and_produce_rank_allocation_realization hashes",
+    "actual_resource_census_and_frozen_acceptance_rule",
+    "materialize_official_and_3comp_from_same_canonical_basis",
+    "direct_operator_parity_and_two_clean_process_deterministic_canary",
+    "set_cell_launch_authorized_only_after_all_prior_gates_pass",
+    "automatically_run_matched_official_and_fdp125_wiki_c4_quality_then_J_deltaJ",
+    "automatically_run_frozen_5_task_zero_shot_with_paired_5000_bootstrap_if_manifest_binding_passes"
+  ],
+  "quality_gate": "No Wiki/C4/ZS until resource lock, materialization, direct parity and deterministic canary all PASS and model/scorer/sample manifests bind. No manual confirmation is needed after all gates pass.",
+  "frozen_science": {
+    "components": "d1+d2+d5",
+    "mask": "11001",
+    "q": "MinMax(raw d1+d2+d5)",
+    "allocator": "TRUE_TWO_PASS_FDP_EB",
+    "epsilon_base": 0.06,
+    "lambda": 1.2,
+    "rho": 0.75,
+    "layer0_policy": "canonical exact epsilon_0=e override",
+    "threshold_search": "1.00 down to 0.30 inclusive in 0.02 steps",
+    "min_rank": 64,
+    "dtype": "bf16",
+    "profile_prompts": 2,
+    "profile_seqlen": 512,
+    "attention": "eager",
+    "forbidden": [
+      "V1/native_projection_v1",
+      "Direction-Corrected V2 water-filling",
+      "quality-driven retuning",
+      "reusing legacy 512x2048 seed2 profile",
+      "rerunning Llama-3 quality",
+      "overwriting historical artifacts"
+    ]
+  },
+  "failure_policy": {
+    "engineering_failure": "preserve old logs and hashes; repair only the affected engineering stage and rerun that stage",
+    "scientific_or_manifest_ambiguity": "mark NEEDS_PROTOCOL_AUDIT and stop downstream quality pending protocol resolution",
+    "resource_infeasibility": "write an infeasibility certificate; do not adjust threshold or schedule"
+  },
+  "storage_and_gpu": {
+    "heavy_outputs": "F writable; E only small locks/compact evidence; D no writes",
+    "active_uniform_pid": 1643395,
+    "active_output_root": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930",
+    "do_not_interrupt_foreign_jobs": true,
+    "system_timing_exclusive_gpu": true
+  },
+  "current_cell_launch_authorized": false,
+  "note": "This pipeline authorization does not pre-authorize the quality cell; cell authorization is a derived gate after resource lock + realization + parity + canary."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "RESOURCE_ONLY_PASS",
+  "base_e": 0.0865,
+  "B_live": 160923648,
+  "target_B_live": 159088640,
+  "resource_gap_pct": 1.153450051493306,
+  "seed": 2,
+  "gpu": 3,
+  "rank_sha256": "64730e74fbcf2aa9d40a38ffdf257d8b6fcc46bf347e782d6bc7506e1e047d9c",
+  "config_sha256": "3defb07af2552cd76f7179c65ab370a817dd411abfab950e757c95333b31fd21",
+  "basis_sha256": "6faad3cc109ec32f72953ec113de811770d71134a312a7f3b30d843930372640",
+  "updated_at": "2026-09-18T04:49:33.825775-07:00"
+}

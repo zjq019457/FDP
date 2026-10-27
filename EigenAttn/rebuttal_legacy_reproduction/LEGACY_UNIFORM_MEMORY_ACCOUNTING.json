@@ -1,0 +1,7 @@
+{
+  "seqlen": 2048,
+  "bytes_per_elem": 2,
+  "dense_kv_bytes": 268435456,
+  "realized_kv_bytes": 217219072,
+  "retained_ratio": 0.8092041015625
+}

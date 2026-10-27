@@ -1,0 +1,14 @@
+{
+  "lock": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p3/fdp_prior/LOCK.json",
+  "ratio": 0.3,
+  "resource": {
+    "decode_cache_bytes": 322961408,
+    "factor_bytes_fp16": 726663168,
+    "prefill_cache_bytes": 322961408,
+    "total_native_rank": 78848
+  },
+  "schedule": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p3/fdp_prior/final_schedule.json",
+  "schedule_sha": "0de95ff201019ffd6be714bf6d4169100085d53149c1381e9b0f41dfd9b21483",
+  "signal": "fdp_prior",
+  "status": "EXCHANGE_CALIBRATION_COMPLETE"
+}

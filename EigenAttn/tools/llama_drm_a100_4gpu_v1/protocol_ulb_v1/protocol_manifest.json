@@ -1,0 +1,68 @@
+{
+  "component_sha256": {
+    "BOOTSTRAP_POLICY.md": "f32b8fb95a5d6392dbe406d820056f1307d8c19f9eac9502879c081204c7b5aa",
+    "COMMON_VALID_POLICY.md": "85f0cf6185ab5ae0f63ad8504a603a0e853c1ae2af35832727fc839658961a8e",
+    "OOM_POLICY.md": "7ee8b290bc23db6303c6c8acb76ebf9bab738ea71b5ce12b67e165dc81262a17",
+    "RESUME_POLICY.md": "85283f458440b0d20b4d993083d02ce424d23fcc667c2fa321ae75e6c7462809",
+    "active_block_trace_schema.json": "d37141c8408d3673f60e49c68084fd82a39cfbb83f6fddec6b643d264fc4468c",
+    "code_hashes.json": "58773555f399c50b359fcbb8fdfc2300123eec5f77987ac259c796d3da83334c",
+    "dataset_hashes.json": "1f2f52c830f79e5772c7316ec5950db81360bd6fe4a1d0679431fbcc134c7149",
+    "method_configs.json": "9ac76a545e7551ee150e296b93c9aa546f7830cd20512abe175b1eae94733d0d",
+    "model_configs.json": "2ebfa8220b04119e15d8a0f66877bd8d86faf26d96e185d6822493676d69fec4",
+    "output_schema.json": "b3087ec4dcc8d33012842befb35b2ba1e7eeec81cb6becd6786cf1481941a80c",
+    "prompt_hashes.json": "fdb328dd82f7c6c8bfb1cfec1617b11b41d6e4c12a3bfa5c4d3fa06e11f9f55c",
+    "scorer_hashes.json": "b460ddcd2281ae10bb97ce393ee7477bd0899db0689781a4994412a83e4febbb",
+    "task_manifest.json": "789405f35fb123fc3c62ee61249e74c726847e5282dec87791fc243db894f709"
+  },
+  "dataset_snapshot_sha256": "7476580c04c3bcc47aeeb7cf5e5bb0c8b802d23096ab73ee5275147877edb469",
+  "identity_gate": {
+    "external_baselines": "official path audit required",
+    "llama31": "BLOCKED_SOURCE_ABSENT",
+    "qwen25": "resolved"
+  },
+  "immutability": {
+    "cross_protocol_silent_merge_forbidden": true,
+    "historical_predictions_read_only": true,
+    "posthoc_fields_require_provenance": true,
+    "unverifiable_fields_must_be_null": true
+  },
+  "name": "Unified LongBench Protocol",
+  "official_suite": "LongBench 17-task full",
+  "runtime": {
+    "batch_size": 1,
+    "block_size": 64,
+    "detached_resume_required": true,
+    "do_sample": false,
+    "gamma": 0.9,
+    "greedy": true,
+    "local_query_window": 4,
+    "oom_continue": true,
+    "single_gpu_sequential": true,
+    "token_unit_size": 8
+  },
+  "sample_count": 3950,
+  "sample_identity": {
+    "canonical_json": "UTF-8; sorted keys; compact separators; ensure_ascii=false; allow_nan=false",
+    "content_fields": [
+      "task",
+      "context",
+      "input",
+      "question",
+      "answers",
+      "all_classes",
+      "language"
+    ],
+    "format": "<task>:<zero_based_row_index>:<content_sha256_first16>"
+  },
+  "schema_version": 1,
+  "scoring": {
+    "bootstrap_seed": 0,
+    "global_common_valid": true,
+    "macro": "arithmetic mean of 17 task scores",
+    "paired_bootstrap_replicates": 10000,
+    "pairwise_common_valid": true,
+    "per_task_official_metric": true
+  },
+  "task_count": 17,
+  "version": "1.0"
+}

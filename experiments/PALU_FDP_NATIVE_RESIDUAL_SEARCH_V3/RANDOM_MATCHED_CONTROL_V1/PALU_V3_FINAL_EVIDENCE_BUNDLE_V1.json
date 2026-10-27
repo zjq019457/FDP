@@ -1,0 +1,390 @@
+{
+  "PALU_V3_FORMAL_GO": true,
+  "calibration_lock": {
+    "allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c",
+    "chosen_arm": "A",
+    "chosen_config_id": "armA_D16_R16_Rmax0.01_beam0",
+    "delta_J_vs_v1": -0.007849477231502533,
+    "lock_file_sha256": "d3d17175e8df6a8b60a8874a388b7d703f72bbf68f3bd9cb7456896f308a6764",
+    "paired_ci95_vs_v1": [
+      -0.009224772453308105,
+      -0.006671324372291565
+    ],
+    "resource": {
+      "decode_cache_bytes": 536870912,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "total_native_rank": 131072
+    },
+    "status": "V3_CALIBRATION_LOCK_FROZEN"
+  },
+  "claim_guard": {
+    "PALU_V3_FORMAL_GO": true,
+    "PALU_V3_FUNCTIONAL_SIGNAL_SUPPORTED": true,
+    "allowed_interpretation": "Functional valuation contributes beyond generic budget-neutral non-uniform reallocation, conditional on this matched-control design.",
+    "foreign_jobs_interrupted": 0,
+    "limitations": [
+      "Only three random allocations were evaluated.",
+      "The random controls exactly match V3 exchange count, rank moved, factor-byte movement and global resource, but they changed 52 distinct native units per seed whereas V3 changed 33; spatial support was not matched."
+    ],
+    "no_new_search_after_closure": true,
+    "no_v3_retuning": true,
+    "per_seed": [
+      {
+        "ci95_random_minus_v1": [
+          -0.00035893773458090173,
+          9.933149958231364e-05
+        ],
+        "ci95_v3_minus_random": [
+          -0.010205268859863281,
+          -0.008924633623605752
+        ],
+        "delta_J_random_minus_v1": -0.0001308257321277297,
+        "delta_J_v3_minus_random": -0.00953019383441971,
+        "seed": 0
+      },
+      {
+        "ci95_random_minus_v1": [
+          0.00036922133112528234,
+          0.0009799061051334243
+        ],
+        "ci95_v3_minus_random": [
+          -0.011026462876653096,
+          -0.009643761508436089
+        ],
+        "delta_J_random_minus_v1": 0.0006297927304922816,
+        "delta_J_v3_minus_random": -0.010290812297039723,
+        "seed": 1
+      },
+      {
+        "ci95_random_minus_v1": [
+          0.001521845897996282,
+          0.0020503997802734375
+        ],
+        "ci95_v3_minus_random": [
+          -0.012175054435270378,
+          -0.01075152891227998
+        ],
+        "delta_J_random_minus_v1": 0.0017728805541992188,
+        "delta_J_v3_minus_random": -0.01143390012074666,
+        "seed": 2
+      }
+    ],
+    "rule": "All three seed-level V3−Random paired point estimates <0 and paired 95% CI upper bounds <0.",
+    "schema": "PALU_V3_CLAIM_GUARD_V1",
+    "status": "FROZEN_AFTER_RANDOM_MATCHED_FORMAL"
+  },
+  "exact_resource_census": {
+    "V1": {
+      "decode_cache_bytes": 536870912,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "total_native_rank": 131072
+    },
+    "V3": {
+      "decode_cache_bytes": 536870912,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "total_native_rank": 131072
+    },
+    "all_random_seeds": {
+      "decode_cache_bytes": 536870912,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "total_native_rank": 131072
+    },
+    "resource_match": "EXACT"
+  },
+  "foreign_jobs_interrupted": 0,
+  "formal_fisher_vs_v3": {
+    "delta_J_v3_minus_fisher": -0.014786996037127024,
+    "fisher_J": 1.9802984789193396,
+    "paired_ci95": [
+      -0.016211521194641847,
+      -0.013513852314776684
+    ],
+    "v3_J": 1.9655114828822124
+  },
+  "formal_v1_vs_v3": {
+    "V1_native": {
+      "J": 1.9751725024487599,
+      "c4_chunks": 256,
+      "c4_ppl": 8.653556811139842,
+      "c4_tokens": 524288,
+      "wiki_chunks": 166,
+      "wiki_ppl": 6.003691778519385,
+      "wiki_tokens": 339968
+    },
+    "V3": {
+      "J": 1.9655114828822124,
+      "c4_chunks": 256,
+      "c4_ppl": 8.561880012787965,
+      "c4_tokens": 524288,
+      "wiki_chunks": 166,
+      "wiki_ppl": 5.951856406949347,
+      "wiki_tokens": 339968
+    },
+    "delta_J_v3_minus_v1": -0.00966101956654744,
+    "formal_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+    "formal_result_sha256": "78d22423f47c34dad8cf46c3dcc62dc0eb63eb40dbbdaf29661c54ac115bcebf",
+    "paired_ci95": [
+      -0.01024731096014919,
+      -0.009120550500341208
+    ],
+    "status": "V3_FORMAL_PPL_COMPLETE"
+  },
+  "generated_utc": "2026-09-26T21:31:21.728298+00:00",
+  "no_new_search_after_closure": true,
+  "random_matched": {
+    "V1_native_formal_J": 1.9751725024487599,
+    "V3_formal_J": 1.9655114828822124,
+    "V3_minus_V1_formal_delta_J": -0.00966101956654744,
+    "V3_minus_V1_paired_CI95": [
+      -0.01024731096014919,
+      -0.009120550500341208
+    ],
+    "aggregate_manifest_sha256": "083ab603fc69c86a74309937d0fe5c1c525085d83b17a8fff1688cc7a6cbceac",
+    "all_seed_V1_and_V3_replays_exact": true,
+    "all_seeds_exact_resource_match": true,
+    "claim_guard_caveat": {
+      "V3_changed_native_units": 33,
+      "interpretation": "Action count, rank movement, factor-byte movement and global resource are exact-matched; spatial support/number of distinct changed units is not matched (the random protocol uses disjoint once-only donor/receiver units). Report this limitation alongside the claim.",
+      "random_changed_native_units": [
+        52,
+        52,
+        52
+      ]
+    },
+    "claim_guard_rule": "true only if V3−Random_i has point estimate <0 and paired 95% CI upper bound <0 for each of seeds 0,1,2; otherwise false/not-supported (do not retune V3).",
+    "foreign_jobs_interrupted": 0,
+    "formal_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+    "functional_signal_supported": true,
+    "generated_utc": "2026-09-26T21:31:21.709211+00:00",
+    "protocol_sha256": "00c492df523ea61832da1b56a74990282f5c78584d112692a11c590284b978d6",
+    "random_mean_J_minus_V1_formal_J": 0.0007572825175212738,
+    "random_seed_metrics_mean_and_sample_std": {
+      "J": {
+        "mean": 1.9759297849662811,
+        "sample_std_ddof1": 0.0009582351697249027
+      },
+      "c4_ppl": {
+        "mean": 8.663211415519001,
+        "sample_std_ddof1": 0.010938679491593866
+      },
+      "wiki_ppl": {
+        "mean": 6.006095392912605,
+        "sample_std_ddof1": 0.005077363761783581
+      }
+    },
+    "resource_gate": "PASS",
+    "schema": "PALU_V3_RANDOM_MATCHED_AGGREGATE_RESULT_V1",
+    "seeds": [
+      {
+        "J": 1.975041676716632,
+        "action_count": 26,
+        "action_manifest_sha256": "15ec31cf7fd292dbe9a568fab9a650f6b65fdec05f9d787bbff5a328a871f4d5",
+        "action_sequence_sha256": "906343a3f76e0f95d1cb7be3e02b16444b4cec36e6e779f6a4d63e559b6892d0",
+        "allocation_sha256": "68811e2f72216d3d8705fa560ec3ec9cab7e3559bf003b89bf410bb5fcbdbca2",
+        "c4_ppl": 8.656231090941999,
+        "changed_native_units": 52,
+        "ci95_random_minus_v1": [
+          -0.00035893773458090173,
+          9.933149958231364e-05
+        ],
+        "ci95_v3_minus_random": [
+          -0.010205268859863281,
+          -0.008924633623605752
+        ],
+        "delta_J_random_minus_v1": -0.0001308257321277297,
+        "delta_J_v3_minus_random": -0.00953019383441971,
+        "final_l1_rank_vs_v1": 1664,
+        "foreign_jobs_interrupted": 0,
+        "formal_result_sha256": "0bac06a2d9e7c2677e1e47468b2d32c9eadd9d8ab270fab4e22aa5a744e78ab2",
+        "gpu": 0,
+        "resource": {
+          "decode_cache_bytes": 536870912,
+          "factor_bytes_fp16": 1207959552,
+          "prefill_cache_bytes": 536870912,
+          "total_native_rank": 131072
+        },
+        "schedule_file_sha256": "524f519b4ccf9b4363c02357af30d05236c446b770abd716426f5f8840971bc0",
+        "seed": 0,
+        "transfer_volume_rank": 832,
+        "v1_replay_exact": true,
+        "v3_replay_exact": true,
+        "wiki_ppl": 6.000266797490946
+      },
+      {
+        "J": 1.9758022951792522,
+        "action_count": 26,
+        "action_manifest_sha256": "f812b15274fcdfdb570fb4b433b1d43315217469d5fe44d9db9ecb7cd7cc7e72",
+        "action_sequence_sha256": "a9d1c09a2ac161f429e3f1f7d5a886299bb05b39f2c6c3a941971a051cae58a1",
+        "allocation_sha256": "c1ac7e4cda679d5533d4f504cedf1b4cc43101cc066e757da77633d922f8d752",
+        "c4_ppl": 8.657585053764885,
+        "changed_native_units": 52,
+        "ci95_random_minus_v1": [
+          0.00036922133112528234,
+          0.0009799061051334243
+        ],
+        "ci95_v3_minus_random": [
+          -0.011026462876653096,
+          -0.009643761508436089
+        ],
+        "delta_J_random_minus_v1": 0.0006297927304922816,
+        "delta_J_v3_minus_random": -0.010290812297039723,
+        "final_l1_rank_vs_v1": 1664,
+        "foreign_jobs_interrupted": 0,
+        "formal_result_sha256": "df8cf3e76b903ed1d2b6e2e69f5e1d0ed67d10287cbd1c38a74e07ce764d7a98",
+        "gpu": 1,
+        "resource": {
+          "decode_cache_bytes": 536870912,
+          "factor_bytes_fp16": 1207959552,
+          "prefill_cache_bytes": 536870912,
+          "total_native_rank": 131072
+        },
+        "schedule_file_sha256": "24d2dbbfe79555004e8d3becefdb8a8f3750a7a592beb1d549e05336adcb0bb7",
+        "seed": 1,
+        "transfer_volume_rank": 832,
+        "v1_replay_exact": true,
+        "v3_replay_exact": true,
+        "wiki_ppl": 6.008461758759574
+      },
+      {
+        "J": 1.976945383002959,
+        "action_count": 26,
+        "action_manifest_sha256": "13028996ed4b2e3ba7e6ffb13aa69c151dc3acb908ed112518585915bbe08b9f",
+        "action_sequence_sha256": "068154019a092ce86e42b021511a4312938b33203e09cd8e8debbdebab2e6bd0",
+        "allocation_sha256": "44e252fdc1278017907937cb45982e472e0e26778f1fba296da1d9fbc8f03422",
+        "c4_ppl": 8.675818101850117,
+        "changed_native_units": 52,
+        "ci95_random_minus_v1": [
+          0.001521845897996282,
+          0.0020503997802734375
+        ],
+        "ci95_v3_minus_random": [
+          -0.012175054435270378,
+          -0.01075152891227998
+        ],
+        "delta_J_random_minus_v1": 0.0017728805541992188,
+        "delta_J_v3_minus_random": -0.01143390012074666,
+        "final_l1_rank_vs_v1": 1664,
+        "foreign_jobs_interrupted": 0,
+        "formal_result_sha256": "a206aab1ac8cdf90e78373c1f54db5a5d6538fa09abc9d78ea26b0a27d127da0",
+        "gpu": 2,
+        "resource": {
+          "decode_cache_bytes": 536870912,
+          "factor_bytes_fp16": 1207959552,
+          "prefill_cache_bytes": 536870912,
+          "total_native_rank": 131072
+        },
+        "schedule_file_sha256": "9c64c4c83bab7990fb0dd084613b578a7ea3e65765e53ba5b1581416e4626181",
+        "seed": 2,
+        "transfer_volume_rank": 832,
+        "v1_replay_exact": true,
+        "v3_replay_exact": true,
+        "wiki_ppl": 6.0095576224872955
+      }
+    ],
+    "status": "RANDOM_MATCHED_FORMAL_COMPLETE"
+  },
+  "schema": "PALU_V3_FINAL_EVIDENCE_BUNDLE_V1",
+  "sha_provenance": {
+    "aggregate_manifest_sha256": "083ab603fc69c86a74309937d0fe5c1c525085d83b17a8fff1688cc7a6cbceac",
+    "evaluator_runner_lock_sha256": "504bd5cf045c8002b0a1d58755bfc6443c65e2ed909d018003863408f3d3ddf7",
+    "evaluator_runner_sha256": "3e02294eef7ebcf069f926b94bec9cfe192b71a421b1171de8767fa3633033d0",
+    "formal_protocol_manifest_file_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+    "formal_quality_protocol_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+    "generation_protocol_sha256": "00c492df523ea61832da1b56a74990282f5c78584d112692a11c590284b978d6",
+    "official_quality_runner_sha256": "f9fba64c28a5b9fe9b3b3de179e397fcdb985e795b271173e79bf583eefd1137",
+    "protocol_lock_sha256": "81204105556d0fb6aeca1b899819584dc0740354b726608750e27a5d298bdd7c",
+    "random_seed_artifacts": [
+      {
+        "action_manifest_sha256": "15ec31cf7fd292dbe9a568fab9a650f6b65fdec05f9d787bbff5a328a871f4d5",
+        "action_sequence_sha256": "906343a3f76e0f95d1cb7be3e02b16444b4cec36e6e779f6a4d63e559b6892d0",
+        "allocation_sha256": "68811e2f72216d3d8705fa560ec3ec9cab7e3559bf003b89bf410bb5fcbdbca2",
+        "formal_result_sha256": "0bac06a2d9e7c2677e1e47468b2d32c9eadd9d8ab270fab4e22aa5a744e78ab2",
+        "seed": 0
+      },
+      {
+        "action_manifest_sha256": "f812b15274fcdfdb570fb4b433b1d43315217469d5fe44d9db9ecb7cd7cc7e72",
+        "action_sequence_sha256": "a9d1c09a2ac161f429e3f1f7d5a886299bb05b39f2c6c3a941971a051cae58a1",
+        "allocation_sha256": "c1ac7e4cda679d5533d4f504cedf1b4cc43101cc066e757da77633d922f8d752",
+        "formal_result_sha256": "df8cf3e76b903ed1d2b6e2e69f5e1d0ed67d10287cbd1c38a74e07ce764d7a98",
+        "seed": 1
+      },
+      {
+        "action_manifest_sha256": "13028996ed4b2e3ba7e6ffb13aa69c151dc3acb908ed112518585915bbe08b9f",
+        "action_sequence_sha256": "068154019a092ce86e42b021511a4312938b33203e09cd8e8debbdebab2e6bd0",
+        "allocation_sha256": "44e252fdc1278017907937cb45982e472e0e26778f1fba296da1d9fbc8f03422",
+        "formal_result_sha256": "a206aab1ac8cdf90e78373c1f54db5a5d6538fa09abc9d78ea26b0a27d127da0",
+        "seed": 2
+      }
+    ],
+    "v1_allocation_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+    "v1_schedule_file_sha256": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+    "v3_allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c",
+    "v3_formal_result_sha256": "78d22423f47c34dad8cf46c3dcc62dc0eb63eb40dbbdaf29661c54ac115bcebf",
+    "v3_lock_sha256": "d3d17175e8df6a8b60a8874a388b7d703f72bbf68f3bd9cb7456896f308a6764",
+    "v3_manifest_sha256": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93",
+    "v3_method_card_file_sha256": "dacb622d47629fc4c55215e485f50c30b9064aa3c30df2b469c950d5c4a3b07f",
+    "v3_method_card_sha256": "dacb622d47629fc4c55215e485f50c30b9064aa3c30df2b469c950d5c4a3b07f"
+  },
+  "status": "PALU_V3_EVIDENCE_CLOSED_WITH_RANDOM_MATCHED_CONTROL",
+  "tune_selection_provenance": {
+    "arm_count": 4,
+    "arm_selection_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/ARM_A_SELECTED.json",
+    "arm_selection_sha256": "51835128a6aba182089dd53d556ff4fb176ce22ed9eeeed5804e77a112f5a159",
+    "config_count": 72,
+    "selected_arm": "A",
+    "selected_config_done_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D16_R16_Rmax0.01_beam0/DONE.json",
+    "selected_config_done_sha256": "a83bf3643b45a60dc8047c39dc1b3b0c56f29bd5e698ad21cc50cd1cf4900b62",
+    "selected_config_id": "armA_D16_R16_Rmax0.01_beam0",
+    "selected_tune_summary": {
+      "accepted_composite_count": 0,
+      "accepted_single_count": 26,
+      "allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c",
+      "candidate_coverage_evaluated": 6912,
+      "changed_native_units": 33,
+      "composite_candidate_coverage_evaluated": 0,
+      "config_id": "armA_D16_R16_Rmax0.01_beam0",
+      "delta_J_tune_vs_v1": -0.009082093834877014,
+      "final_J_tune": 1.881027601659298,
+      "moved_factor_bytes": 15335424,
+      "paired_ci95_tune_vs_v1": [
+        -0.01027362048625946,
+        -0.007850654423236847
+      ],
+      "redistribution_fraction_R": 0.00634765625,
+      "rejected_count": 5311,
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "single_candidate_coverage_evaluated": 6912,
+      "start_J_tune": 1.890109695494175,
+      "status": "TUNE_CONFIG_COMPLETE",
+      "total_moved_rank": 1664,
+      "transfer_volume_rank": 832
+    },
+    "selection_rule_record": {
+      "delta_J_tune_vs_v1": -0.009082093834877014,
+      "final_J_tune": 1.881027601659298,
+      "foreign_jobs_interrupted": 0,
+      "paired_ci95_tune_vs_v1": [
+        -0.01027362048625946,
+        -0.007850654423236847
+      ],
+      "selected_config_id": "armA_D16_R16_Rmax0.01_beam0",
+      "selection_rule": "minimum final TUNE J among strict candidates; if none, minimum final TUNE J and lock will decide",
+      "status": "ARM_TUNE_CONFIG_SELECTED",
+      "tune_strict_vs_v1": true
+    },
+    "tune_done_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/TUNE_DONE.json",
+    "tune_done_sha256": "ccdd3d3ca48531a3252e9f7d7253e4dd35a686fbc78388445a1b22ca2a6bcfe1",
+    "tune_status": "TUNE_GRID_COMPLETE",
+    "v3_manifest_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3_MANIFEST.json",
+    "v3_manifest_sha256": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93"
+  }
+}

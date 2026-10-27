@@ -1,0 +1,200 @@
+{
+  "artifact_id": "LLAMA2_E060_FDP125_DIRECT_OPERATOR_PARITY_V1",
+  "created_utc": "2026-10-01T04:01:53.348062+00:00",
+  "basis_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/llama2_e060_fullbasis_true_two_pass_fdp_basis.pt",
+  "basis_sha256": "8163de5e2b3499556a84b31c7e6218a07bd98200f47056a401aa10b000e8165b",
+  "config_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/materialize/low_rank_config_fd125.json",
+  "config_sha256": "ffd64358217592dfd19a3d5c0b46bce84a678aa30aa8cde4e06ec7d017fba24c",
+  "base_index_sha256": "217d527037a95cd5cd30384afb425987824373b94cc7206beb48ec0c9499c98f",
+  "compressed_index_sha256": "c4069011eb3d765c1145d3cac943f3cc62ca4a1a2ae6d6bbac4091a7529c6045",
+  "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+  "input_probe_seed_rule": "torch CPU generator seed=20260930+layer, shape [2,3,4096]",
+  "layers": [
+    {
+      "layer": 0,
+      "requested_ranks": {
+        "KQ": 4096,
+        "V": 4096
+      },
+      "factor_shapes": {
+        "q": [
+          4096,
+          4096
+        ],
+        "k_low": [
+          4096,
+          4096
+        ],
+        "k_up": [
+          128,
+          128
+        ],
+        "v_low": [
+          4096,
+          4096
+        ],
+        "o_up": [
+          4096,
+          4096
+        ]
+      },
+      "factor_exact_projection_checks": {
+        "q_copy_exact": true,
+        "k_low_exact_projection": true,
+        "k_up_exact_basis": true,
+        "v_low_exact_projection": true,
+        "o_up_exact_projection": true
+      },
+      "parameter_sha256": {
+        "q": "4332f4711448234b9fd895e642f0643603c52002b370a77df064de69998b5b55",
+        "k_low": "65c83edddff106889e617f4b578c81eea0e90c03ecb385714b7bd5a5174186a0",
+        "k_up": "13aad1269818dc06dcd2300c4b1098fa13acb3e0921aff90a9603f282058f711",
+        "v_low": "679df406d1c4c3f3db6396583f4c4d0b5b9b6df9b5b37c8a1ed35faa7c721760",
+        "o_up": "251c1962cb8a9e66024d2e75e340f4d7959dc11ed452aae3eaf58dc4a5d8d9ef"
+      },
+      "operator_parity_fp32": {
+        "K_factorized_vs_dense_projected": {
+          "max_abs": 0.015694141387939453,
+          "relative_l2": 0.001630117418244481,
+          "cosine": 0.9999986886978149
+        },
+        "V_factorized_vs_dense_projected": {
+          "max_abs": 0.008733212947845459,
+          "relative_l2": 0.001650230842642486,
+          "cosine": 0.9999992251396179
+        },
+        "O_factorized_vs_dense_projected_context": {
+          "max_abs": 0.010371208190917969,
+          "relative_l2": 0.0016472857678309083,
+          "cosine": 0.999998927116394
+        }
+      }
+    },
+    {
+      "layer": 16,
+      "requested_ranks": {
+        "KQ": 2816,
+        "V": 3840
+      },
+      "factor_shapes": {
+        "q": [
+          4096,
+          4096
+        ],
+        "k_low": [
+          2816,
+          4096
+        ],
+        "k_up": [
+          128,
+          88
+        ],
+        "v_low": [
+          3840,
+          4096
+        ],
+        "o_up": [
+          4096,
+          3840
+        ]
+      },
+      "factor_exact_projection_checks": {
+        "q_copy_exact": true,
+        "k_low_exact_projection": true,
+        "k_up_exact_basis": true,
+        "v_low_exact_projection": true,
+        "o_up_exact_projection": true
+      },
+      "parameter_sha256": {
+        "q": "f6d26e252a7156f8ccc635eee2bf03aff0d75ade9401758bdbd79e2181b13040",
+        "k_low": "22af1538f311efb59e1909f9e7aaf7f4716483e6cff39bca62964a3485d7e0de",
+        "k_up": "14f4efe09c35f9ae492daeb0725c75f1868cc78bb5de2274236f577fb9dd48cc",
+        "v_low": "fba12daa07d11dea7dc637e9e2b2b58cb98ea15abd8416fac7000223c6693d80",
+        "o_up": "7c51f566a9807bb4efa2f9daa0036bc5141945c11e55746b8991cea5d951dfdf"
+      },
+      "operator_parity_fp32": {
+        "K_factorized_vs_dense_projected": {
+          "max_abs": 0.012672185897827148,
+          "relative_l2": 0.0016362122260034084,
+          "cosine": 0.9999986886978149
+        },
+        "V_factorized_vs_dense_projected": {
+          "max_abs": 0.006950974464416504,
+          "relative_l2": 0.0016714166849851608,
+          "cosine": 0.9999983906745911
+        },
+        "O_factorized_vs_dense_projected_context": {
+          "max_abs": 0.012990474700927734,
+          "relative_l2": 0.00165934965480119,
+          "cosine": 0.9999989867210388
+        }
+      }
+    },
+    {
+      "layer": 31,
+      "requested_ranks": {
+        "KQ": 2496,
+        "V": 3776
+      },
+      "factor_shapes": {
+        "q": [
+          4096,
+          4096
+        ],
+        "k_low": [
+          2496,
+          4096
+        ],
+        "k_up": [
+          128,
+          78
+        ],
+        "v_low": [
+          3776,
+          4096
+        ],
+        "o_up": [
+          4096,
+          3776
+        ]
+      },
+      "factor_exact_projection_checks": {
+        "q_copy_exact": true,
+        "k_low_exact_projection": true,
+        "k_up_exact_basis": true,
+        "v_low_exact_projection": true,
+        "o_up_exact_projection": true
+      },
+      "parameter_sha256": {
+        "q": "cbbd2a752655cb89733d71ac1dac85d2b6a3fb35acbea558248a99770d7ae110",
+        "k_low": "10b9008bd59117f701a716f39948ec10c85c7c199af54f6f7e8c4a2e85c4e8e1",
+        "k_up": "3e658587a32cf725fa23bbe3144e7a0d6b22553d4ff2c2f9a98686bcd240cd46",
+        "v_low": "1bc0acc652c55f38386ebdd223dca89679d323b5011cc4aa2bfc8ad3c556b44d",
+        "o_up": "ace24bbb0b65ad9180317435338a2bea0bdd65e3242a84f21f4867ec20cc43b5"
+      },
+      "operator_parity_fp32": {
+        "K_factorized_vs_dense_projected": {
+          "max_abs": 0.011799335479736328,
+          "relative_l2": 0.0016754925018176436,
+          "cosine": 0.999998927116394
+        },
+        "V_factorized_vs_dense_projected": {
+          "max_abs": 0.009038858115673065,
+          "relative_l2": 0.0016676470404490829,
+          "cosine": 0.9999985694885254
+        },
+        "O_factorized_vs_dense_projected_context": {
+          "max_abs": 0.02198737859725952,
+          "relative_l2": 0.0016511210706084967,
+          "cosine": 0.9999987483024597
+        }
+      }
+    }
+  ],
+  "all_parameter_factor_checks_exact": true,
+  "max_operator_relative_l2": 0.0016754925018176436,
+  "pass_criterion": "all q copy and factor projection exact after checkpoint dtype cast; all K/V/O operator relative-L2 <= 1e-3",
+  "status": "DIRECT_OPERATOR_PARITY_FAIL",
+  "quality_authorization": false,
+  "note": "This is factor/operator diagnostic only; it does not establish resource-lock acceptance or authorize formal PPL/accuracy."
+}

@@ -1,0 +1,827 @@
+{
+ "light": {
+  "Uniform": {
+   "ppl_dir": {
+    "wikitext2": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/official_control/light/wiki",
+    "c4": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/official_control/light/c4"
+   },
+   "zs_dir": "/diskD/jiaqizhang/FDP125_OFFICIAL_LIGHT_AGG_ZS_20261001_V1/light/accuracy/zero_shot_samples",
+   "wiki": 6.7043897556205545,
+   "c4": 9.774651036710445,
+   "J": 2.0912774524631654,
+   "acc": {
+    "arc_challenge": 47.18430034129693,
+    "arc_easy": 77.06228956228956,
+    "hellaswag": 56.28360884285999,
+    "piqa": 78.99891186071817,
+    "winogrande": 73.16495659037095
+   },
+   "avg": 66.53881343950712
+  },
+  "Spectral-tail": {
+   "ppl_dir": {
+    "wikitext2": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized/light_spectral_tail_common_basis/formal_wikitext2_full_20261006",
+    "c4": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized/light_spectral_tail_common_basis/formal_c4_full_20261006"
+   },
+   "zs_dir": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/CROSS_TIER_DIAGNOSTIC_20261006T000542Z/06_ZERO_SHOT_EXECUTION/LIGHT_SPECTRAL_TAIL_20261006T204128Z/output/zero_shot_samples",
+   "wiki": 6.673194884871275,
+   "c4": 9.81329174855408,
+   "J": 2.0909182530425734,
+   "acc": {
+    "arc_challenge": 48.4641638225256,
+    "arc_easy": 76.64141414141415,
+    "hellaswag": 55.745867357100174,
+    "piqa": 78.29162132752992,
+    "winogrande": 72.61247040252566
+   },
+   "avg": 66.3511074102191
+  },
+  "FDP-EB": {
+   "ppl_dir": {
+    "wikitext2": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized/light_fdp_eb_common_basis/formal_wikitext2_full_20261006",
+    "c4": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized/light_fdp_eb_common_basis/formal_c4_full_20261006"
+   },
+   "zs_dir": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/CROSS_TIER_DIAGNOSTIC_20261006T000542Z/06_ZERO_SHOT_EXECUTION/LIGHT_FDP_EB_20261006T204128Z/output/zero_shot_samples",
+   "wiki": 6.633510905868963,
+   "c4": 9.679001855720134,
+   "J": 2.0810464971631943,
+   "acc": {
+    "arc_challenge": 48.29351535836178,
+    "arc_easy": 76.55723905723906,
+    "hellaswag": 56.36327424815774,
+    "piqa": 78.99891186071817,
+    "winogrande": 72.05998421468036
+   },
+   "avg": 66.45458494783142
+  },
+  "FDP_minus_Uniform": {
+   "ppl": {
+    "wikitext2": {
+     "delta": -0.010628286828386022,
+     "ci95": [
+      -0.013008960130366872,
+      -0.007758449261070144
+     ]
+    },
+    "c4": {
+     "delta": -0.009833623771555722,
+     "ci95": [
+      -0.011787654893123545,
+      -0.007917610148433596
+     ]
+    },
+    "J": {
+     "delta": -0.010230955299970871,
+     "ci95": [
+      -0.01179108884501773,
+      -0.008528484886643027
+     ],
+     "p_A_better": 1.0
+    }
+   },
+   "zs": {
+    "tasks": {
+     "arc_challenge": {
+      "delta": 1.1092150170648463,
+      "ci95": [
+       -0.4266211604095571,
+       2.6450511945392554
+      ]
+     },
+     "arc_easy": {
+      "delta": -0.5050505050505083,
+      "ci95": [
+       -1.4309764309764272,
+       0.37878787878787845
+      ]
+     },
+     "hellaswag": {
+      "delta": 0.07966540529774635,
+      "ci95": [
+       -0.20912168890658833,
+       0.36845249950209213
+      ]
+     },
+     "piqa": {
+      "delta": 0.0,
+      "ci95": [
+       -0.8161044613710589,
+       0.7616974972796564
+      ]
+     },
+     "winogrande": {
+      "delta": -1.104972375690605,
+      "ci95": [
+       -2.84135753749013,
+       0.6314127861089092
+      ]
+     }
+    },
+    "avg": {
+     "delta": -0.08422849167570412,
+     "ci95": [
+      -0.6127480096649878,
+      0.4299405803056517
+     ],
+     "p_A_better": 0.3737
+    }
+   }
+  },
+  "Spectral_minus_FDP": {
+   "ppl": {
+    "wikitext2": {
+     "delta": 0.005964526047943332,
+     "ci95": [
+      0.0018455800857949765,
+      0.00932600641926975
+     ]
+    },
+    "c4": {
+     "delta": 0.013778985710814595,
+     "ci95": [
+      0.011489262519171461,
+      0.016514002601616083
+     ]
+    },
+    "J": {
+     "delta": 0.009871755879378963,
+     "ci95": [
+      0.007508165104680444,
+      0.012022484320006166
+     ],
+     "p_A_better": 0.0
+    }
+   },
+   "zs": {
+    "tasks": {
+     "arc_challenge": {
+      "delta": 0.1706484641638195,
+      "ci95": [
+       -1.2798634812286713,
+       1.621160409556316
+      ]
+     },
+     "arc_easy": {
+      "delta": 0.08417508417508657,
+      "ci95": [
+       -0.9269781144781174,
+       1.094276094276092
+      ]
+     },
+     "hellaswag": {
+      "delta": -0.6174068910575592,
+      "ci95": [
+       -0.9261103365863388,
+       -0.32837084246166187
+      ]
+     },
+     "piqa": {
+      "delta": -0.7072905331882429,
+      "ci95": [
+       -1.4689880304678993,
+       0.05440696409140244
+      ]
+     },
+     "winogrande": {
+      "delta": 0.5524861878453025,
+      "ci95": [
+       -1.1838989739542227,
+       2.2888713496448387
+      ]
+     }
+    },
+    "avg": {
+     "delta": -0.1034775376123187,
+     "ci95": [
+      -0.6186426465208079,
+      0.4340193350940121
+     ],
+     "p_A_better": 0.3495
+    }
+   }
+  },
+  "Spectral_minus_Uniform": {
+   "ppl": {
+    "wikitext2": {
+     "delta": -0.004663760780442691,
+     "ci95": [
+      -0.0066993968072512474,
+      -0.0028115254978761605
+     ]
+    },
+    "c4": {
+     "delta": 0.0039453619392588735,
+     "ci95": [
+      0.002013823509332724,
+      0.006000095346826128
+     ]
+    },
+    "J": {
+     "delta": -0.0003591994205919087,
+     "ci95": [
+      -0.001772422788234127,
+      0.0010409027402531123
+     ],
+     "p_A_better": 0.6932
+    }
+   },
+   "zs": {
+    "tasks": {
+     "arc_challenge": {
+      "delta": 1.2798634812286658,
+      "ci95": [
+       -0.42662116040955156,
+       2.9863481228668887
+      ]
+     },
+     "arc_easy": {
+      "delta": -0.42087542087542174,
+      "ci95": [
+       -1.4730639730639705,
+       0.631313131313127
+      ]
+     },
+     "hellaswag": {
+      "delta": -0.5377414857598128,
+      "ci95": [
+       -0.8265285799641475,
+       -0.25866361282613215
+      ]
+     },
+     "piqa": {
+      "delta": -0.7072905331882429,
+      "ci95": [
+       -1.4145810663764968,
+       -0.05440696409140244
+      ]
+     },
+     "winogrande": {
+      "delta": -0.5524861878453025,
+      "ci95": [
+       -2.0520915548539853,
+       0.9471191791633804
+      ]
+     }
+    },
+    "avg": {
+     "delta": -0.18770602928802282,
+     "ci95": [
+      -0.6968407517558338,
+      0.3254656383501339
+     ],
+     "p_A_better": 0.2315
+    }
+   }
+  }
+ },
+ "medium": {
+  "Uniform": {
+   "ppl_dir": {
+    "wikitext2": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/official_control/medium/wiki",
+    "c4": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/official_control/medium/c4"
+   },
+   "zs_dir": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama3_8b/medium/accuracy/official/zero_shot_samples",
+   "wiki": 7.384357658968077,
+   "c4": 13.390468162531384,
+   "J": 2.2969535278678204,
+   "acc": {
+    "arc_challenge": 46.41638225255973,
+    "arc_easy": 76.01010101010101,
+    "hellaswag": 53.3559051981677,
+    "piqa": 77.36670293797606,
+    "winogrande": 67.16653512233623
+   },
+   "avg": 64.06312530422815
+  },
+  "Spectral-tail": {
+   "ppl_dir": {
+    "wikitext2": "/diskF/jiaqizhang/TACL_LLAMA3_MEDIUM_NONFUNCTIONAL_CONTROLS_COMMON_BASIS_V1/spectral_tail/formal_wikitext2_full_20261005",
+    "c4": "/diskF/jiaqizhang/TACL_LLAMA3_MEDIUM_NONFUNCTIONAL_CONTROLS_COMMON_BASIS_V1/spectral_tail/formal_c4_full_20261005"
+   },
+   "zs_dir": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/06_ZERO_SHOT_EXECUTION/MEDIUM_SPECTRAL_TAIL_20261006T001103Z/output/zero_shot_samples",
+   "wiki": 7.197116622893752,
+   "c4": 11.44680047342526,
+   "J": 2.2056953665430505,
+   "acc": {
+    "arc_challenge": 46.41638225255973,
+    "arc_easy": 75.71548821548821,
+    "hellaswag": 53.664608643696475,
+    "piqa": 77.14907508161045,
+    "winogrande": 70.48145224940805
+   },
+   "avg": 64.68540128855258
+  },
+  "FDP-EB": {
+   "ppl_dir": {
+    "wikitext2": "/diskF/jiaqizhang/TACL_LLAMA3_MEDIUM_NONFUNCTIONAL_CONTROLS_COMMON_BASIS_V1/FDP-EB/formal_wikitext2_full_20261005",
+    "c4": "/diskF/jiaqizhang/TACL_LLAMA3_MEDIUM_NONFUNCTIONAL_CONTROLS_COMMON_BASIS_V1/FDP-EB/formal_c4_full_20261005"
+   },
+   "zs_dir": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/06_ZERO_SHOT_EXECUTION/MEDIUM_FDP_EB_20261006T073324Z/output/zero_shot_samples",
+   "wiki": 7.159164882459964,
+   "c4": 11.993789685649523,
+   "J": 2.2263911636356357,
+   "acc": {
+    "arc_challenge": 47.44027303754266,
+    "arc_easy": 76.13636363636364,
+    "hellaswag": 54.57080262895837,
+    "piqa": 77.52992383025027,
+    "winogrande": 70.7971586424625
+   },
+   "avg": 65.2949043551155
+  },
+  "FDP_minus_Uniform": {
+   "ppl": {
+    "wikitext2": {
+     "delta": -0.03097059540714778,
+     "ci95": [
+      -0.0331660453520768,
+      -0.0288502740310439
+     ]
+    },
+    "c4": {
+     "delta": -0.11015413305722177,
+     "ci95": [
+      -0.12853422496118583,
+      -0.0928229262935929
+     ]
+    },
+    "J": {
+     "delta": -0.07056236423218477,
+     "ci95": [
+      -0.0798486259708541,
+      -0.06183929372469875
+     ],
+     "p_A_better": 1.0
+    }
+   },
+   "zs": {
+    "tasks": {
+     "arc_challenge": {
+      "delta": 1.0238907849829337,
+      "ci95": [
+       -0.5972696245733822,
+       2.6450511945392496
+      ]
+     },
+     "arc_easy": {
+      "delta": 0.12626262626262985,
+      "ci95": [
+       -0.7996632996633002,
+       1.0521885521885488
+      ]
+     },
+     "hellaswag": {
+      "delta": 1.2148974307906735,
+      "ci95": [
+       0.8862776339374601,
+       1.543517227643898
+      ]
+     },
+     "piqa": {
+      "delta": 0.16322089227420733,
+      "ci95": [
+       -0.6528835690968406,
+       0.9793253536452662
+      ]
+     },
+     "winogrande": {
+      "delta": 3.630623520126286,
+      "ci95": [
+       1.4996053670086829,
+       5.7616416732438775
+      ]
+     }
+    },
+    "avg": {
+     "delta": 1.231779050887346,
+     "ci95": [
+      0.6401837016255244,
+      1.827141763408194
+     ],
+     "p_A_better": 1.0
+    }
+   }
+  },
+  "Spectral_minus_FDP": {
+   "ppl": {
+    "wikitext2": {
+     "delta": 0.005287139128285942,
+     "ci95": [
+      0.0035124608810911786,
+      0.007078032142727087
+     ]
+    },
+    "c4": {
+     "delta": -0.04667873331345618,
+     "ci95": [
+      -0.05996196081978269,
+      -0.0338821820972953
+     ]
+    },
+    "J": {
+     "delta": -0.02069579709258512,
+     "ci95": [
+      -0.02744326291874989,
+      -0.014261326460966162
+     ],
+     "p_A_better": 1.0
+    }
+   },
+   "zs": {
+    "tasks": {
+     "arc_challenge": {
+      "delta": -1.0238907849829337,
+      "ci95": [
+       -2.6450511945392496,
+       0.5972696245733766
+      ]
+     },
+     "arc_easy": {
+      "delta": -0.42087542087542174,
+      "ci95": [
+       -1.4309764309764383,
+       0.631313131313127
+      ]
+     },
+     "hellaswag": {
+      "delta": -0.9061939852618939,
+      "ci95": [
+       -1.2447719577773353,
+       -0.5775741884086805
+      ]
+     },
+     "piqa": {
+      "delta": -0.3808487486398282,
+      "ci95": [
+       -1.2513601741022784,
+       0.4896626768226331
+      ]
+     },
+     "winogrande": {
+      "delta": -0.31570639305446013,
+      "ci95": [
+       -2.0520915548539853,
+       1.420678768745065
+      ]
+     }
+    },
+    "avg": {
+     "delta": -0.6095030665629075,
+     "ci95": [
+      -1.1491745350960305,
+      -0.06606184804813035
+     ],
+     "p_A_better": 0.015
+    }
+   }
+  },
+  "Spectral_minus_Uniform": {
+   "ppl": {
+    "wikitext2": {
+     "delta": -0.025683456278861837,
+     "ci95": [
+      -0.028132505112505972,
+      -0.02329287807992164
+     ]
+    },
+    "c4": {
+     "delta": -0.15683286637067795,
+     "ci95": [
+      -0.1785864590317942,
+      -0.13626611097715796
+     ]
+    },
+    "J": {
+     "delta": -0.0912581613247699,
+     "ci95": [
+      -0.10215968332069278,
+      -0.08087281921807453
+     ],
+     "p_A_better": 1.0
+    }
+   },
+   "zs": {
+    "tasks": {
+     "arc_challenge": {
+      "delta": 0.0,
+      "ci95": [
+       -1.4505119453924908,
+       1.5358361774743978
+      ]
+     },
+     "arc_easy": {
+      "delta": -0.2946127946127919,
+      "ci95": [
+       -1.220538720538722,
+       0.6313131313131382
+      ]
+     },
+     "hellaswag": {
+      "delta": 0.3087034455287796,
+      "ci95": [
+       -0.009958175662216906,
+       0.6273650667197761
+      ]
+     },
+     "piqa": {
+      "delta": -0.21762785636562088,
+      "ci95": [
+       -0.9793253536452662,
+       0.5440696409140355
+      ]
+     },
+     "winogrande": {
+      "delta": 3.314917127071826,
+      "ci95": [
+       1.1838989739542227,
+       5.445935280189429
+      ]
+     }
+    },
+    "avg": {
+     "delta": 0.6222759843244385,
+     "ci95": [
+      0.041686651522688814,
+      1.2083142560968372
+     ],
+     "p_A_better": 0.9813
+    }
+   }
+  }
+ },
+ "aggressive": {
+  "Uniform": {
+   "ppl_dir": {
+    "wikitext2": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/official_control/aggressive/wiki",
+    "c4": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/official_control/aggressive/c4"
+   },
+   "zs_dir": "/diskD/jiaqizhang/FDP125_OFFICIAL_LIGHT_AGG_ZS_20261001_V1/aggressive/accuracy/zero_shot_samples",
+   "wiki": 12.191719488237023,
+   "c4": 18.98618173154565,
+   "J": 2.7222342140549887,
+   "acc": {
+    "arc_challenge": 39.59044368600683,
+    "arc_easy": 68.60269360269359,
+    "hellaswag": 45.36944831706831,
+    "piqa": 73.83025027203483,
+    "winogrande": 58.879242304656664
+   },
+   "avg": 57.25441563649205
+  },
+  "Spectral-tail": {
+   "ppl_dir": {
+    "wikitext2": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized/aggressive_spectral_tail_common_basis/formal_wikitext2_full_20261006",
+    "c4": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized/aggressive_spectral_tail_common_basis/formal_c4_full_20261006"
+   },
+   "zs_dir": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/06_ZERO_SHOT_EXECUTION/AGGRESSIVE_SPECTRAL_TAIL_20261006T094703Z/output/zero_shot_samples",
+   "wiki": 11.245231016058478,
+   "c4": 19.057548331468155,
+   "J": 2.6837036950275936,
+   "acc": {
+    "arc_challenge": 38.99317406143344,
+    "arc_easy": 67.42424242424242,
+    "hellaswag": 43.467436765584544,
+    "piqa": 73.61262241566921,
+    "winogrande": 57.69534333070244
+   },
+   "avg": 56.23856379952641
+  },
+  "FDP-EB": {
+   "ppl_dir": {
+    "wikitext2": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized/aggressive_fdp_eb_common_basis/formal_wikitext2_full_20261006",
+    "c4": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized/aggressive_fdp_eb_common_basis/formal_c4_full_20261006"
+   },
+   "zs_dir": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/06_ZERO_SHOT_EXECUTION/AGGRESSIVE_FDP_EB_20261006T094703Z/output/zero_shot_samples",
+   "wiki": 10.156268085482944,
+   "c4": 17.75350627869233,
+   "J": 2.597337046747116,
+   "acc": {
+    "arc_challenge": 41.894197952218434,
+    "arc_easy": 69.4023569023569,
+    "hellaswag": 46.45488946425015,
+    "piqa": 74.70076169749727,
+    "winogrande": 61.247040252565114
+   },
+   "avg": 58.73984925377757
+  },
+  "FDP_minus_Uniform": {
+   "ppl": {
+    "wikitext2": {
+     "delta": -0.182665930572131,
+     "ci95": [
+      -0.2036668398490189,
+      -0.16244006630376723
+     ]
+    },
+    "c4": {
+     "delta": -0.06712840404361486,
+     "ci95": [
+      -0.09774302736623212,
+      -0.03736552878981458
+     ]
+    },
+    "J": {
+     "delta": -0.12489716730787294,
+     "ci95": [
+      -0.14363386120150984,
+      -0.10674721560728281
+     ],
+     "p_A_better": 1.0
+    }
+   },
+   "zs": {
+    "tasks": {
+     "arc_challenge": {
+      "delta": 2.3037542662116053,
+      "ci95": [
+       0.4266211604095571,
+       4.180887372013653
+      ]
+     },
+     "arc_easy": {
+      "delta": 0.7996632996633002,
+      "ci95": [
+       -0.37878787878787845,
+       1.9781144781144788
+      ]
+     },
+     "hellaswag": {
+      "delta": 1.085441147181837,
+      "ci95": [
+       0.6970722963553055,
+       1.473809998008363
+      ]
+     },
+     "piqa": {
+      "delta": 0.8705114254624502,
+      "ci95": [
+       -0.10881392818281599,
+       1.8498367791077275
+      ]
+     },
+     "winogrande": {
+      "delta": 2.3677979479084454,
+      "ci95": [
+       0.0,
+       4.6566692975532735
+      ]
+     }
+    },
+    "avg": {
+     "delta": 1.4854336172855276,
+     "ci95": [
+      0.8027719438531604,
+      2.158889799941306
+     ],
+     "p_A_better": 1.0
+    }
+   }
+  },
+  "Spectral_minus_FDP": {
+   "ppl": {
+    "wikitext2": {
+     "delta": 0.10185306883872823,
+     "ci95": [
+      0.09694463777626659,
+      0.10689229709459536
+     ]
+    },
+    "c4": {
+     "delta": 0.07088022772222757,
+     "ci95": [
+      0.05508441554848105,
+      0.08595513885375111
+     ]
+    },
+    "J": {
+     "delta": 0.08636664828047791,
+     "ci95": [
+      0.07806170225401032,
+      0.09434124276389579
+     ],
+     "p_A_better": 0.0
+    }
+   },
+   "zs": {
+    "tasks": {
+     "arc_challenge": {
+      "delta": -2.9010238907849875,
+      "ci95": [
+       -4.9488054607508545,
+       -0.8532423208191142
+      ]
+     },
+     "arc_easy": {
+      "delta": -1.9781144781144788,
+      "ci95": [
+       -3.2828282828282873,
+       -0.6734006734006703
+      ]
+     },
+     "hellaswag": {
+      "delta": -2.9874526986656047,
+      "ci95": [
+       -3.4258613821947814,
+       -2.549292969527983
+      ]
+     },
+     "piqa": {
+      "delta": -1.088139281828071,
+      "ci95": [
+       -2.176278563656142,
+       0.0
+      ]
+     },
+     "winogrande": {
+      "delta": -3.551696921862668,
+      "ci95": [
+       -6.1562746645619555,
+       -1.026045777426987
+      ]
+     }
+    },
+    "avg": {
+     "delta": -2.5012854542511618,
+     "ci95": [
+      -3.251132222608529,
+      -1.7657170001588482
+     ],
+     "p_A_better": 0.0
+    }
+   }
+  },
+  "Spectral_minus_Uniform": {
+   "ppl": {
+    "wikitext2": {
+     "delta": -0.08081286173340277,
+     "ci95": [
+      -0.10207075060259366,
+      -0.06059370055689034
+     ]
+    },
+    "c4": {
+     "delta": 0.003751823678612709,
+     "ci95": [
+      -0.01891048769466579,
+      0.024579104047734283
+     ]
+    },
+    "J": {
+     "delta": -0.03853051902739503,
+     "ci95": [
+      -0.054112906196172816,
+      -0.023647457258511636
+     ],
+     "p_A_better": 1.0
+    }
+   },
+   "zs": {
+    "tasks": {
+     "arc_challenge": {
+      "delta": -0.5972696245733822,
+      "ci95": [
+       -2.3037542662116053,
+       1.1092150170648463
+      ]
+     },
+     "arc_easy": {
+      "delta": -1.1784511784511786,
+      "ci95": [
+       -2.2727272727272707,
+       -0.12626262626261875
+      ]
+     },
+     "hellaswag": {
+      "delta": -1.9020115514837677,
+      "ci95": [
+       -2.300338577972516,
+       -1.5036845249950193
+      ]
+     },
+     "piqa": {
+      "delta": -0.21762785636562088,
+      "ci95": [
+       -1.2513601741022784,
+       0.7616974972796564
+      ]
+     },
+     "winogrande": {
+      "delta": -1.1838989739542227,
+      "ci95": [
+       -3.4727703235990504,
+       1.026045777426987
+      ]
+     }
+    },
+    "avg": {
+     "delta": -1.0158518369656344,
+     "ci95": [
+      -1.6606604137830143,
+      -0.3770057348410456
+     ],
+     "p_A_better": 0.0014
+    }
+   }
+  }
+ }
+}

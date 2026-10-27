@@ -1,0 +1,18 @@
+{
+  "job_id": "R10_kqv_ablation",
+  "stage": "R10",
+  "kind": "gpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/r10_kqv_ablation.py"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": 1,
+  "depends_on": [
+    "R6_summary"
+  ],
+  "created_at": "2026-07-29T07:04:59.783852-07:00",
+  "meta": {
+    "role": "kqv_ablation"
+  }
+}

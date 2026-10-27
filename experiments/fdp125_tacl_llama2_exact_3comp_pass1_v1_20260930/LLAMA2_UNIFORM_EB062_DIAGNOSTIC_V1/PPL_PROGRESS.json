@@ -1,0 +1,9 @@
+{
+  "state": "DATASET_COMPLETE",
+  "completed_dataset": "wikitext2",
+  "PPL": 8.201806993263572,
+  "completed": [
+    "wikitext2"
+  ],
+  "updated_utc": "2026-10-01T07:51:06.616752+00:00"
+}

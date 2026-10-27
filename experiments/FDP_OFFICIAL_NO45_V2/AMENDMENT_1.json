@@ -1,0 +1,4 @@
+{"amendment": 1, "at": "2026-10-11T12:16:13-07:00", "by": "user request (2026-10-11 ~12:14): use all GPUs, stage 2 may run in parallel",
+ "change": "Stage-2 jobs (Aggressive and Severe plans/builds, all ablations) no longer wait for gate_stage1. gate_stage1 is still computed after the four Light/Medium evaluations with the preregistered rule; if it triggers STOP, no new jobs are launched, running jobs finish and their results are kept and labelled as run before the gate.",
+ "unchanged": "protocol, FDP formula, layer-0 rule, matching rule, evaluation, stop rule, cleanup",
+ "quality_seen_before_amendment": "Light (FDP-EB, Spectral-tail) point estimates were read at 12:11; no plan, formula or rule was changed in response (plans are deterministic and quality-blind; Aggressive preview at 11:4x is identical to the rule)"}

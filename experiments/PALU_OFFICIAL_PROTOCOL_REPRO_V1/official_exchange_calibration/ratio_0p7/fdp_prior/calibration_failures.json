@@ -1,0 +1,24 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "error": "phi unit table is not complete: 16",
+      "failure_type": "NATIVE_UNIT_LOOKUP_COLLAPSED_LAYERS",
+      "fix": "key phi rows by full module_identity plus group_id; no scientific input or lock changed",
+      "old_results_modified": false,
+      "retryable": true,
+      "root_cause": "adapter keyed rows by short module name plus group_id and omitted layer/module identity",
+      "status": "ENGINEERING_FAILURE"
+    },
+    {
+      "attempt": 2,
+      "error": "KeyError: module_identity",
+      "failure_type": "PHI_SCHEMA_IDENTITY_COLUMN_ABSENT",
+      "fix": "parse full module identity from unit before ::group; no scientific input or lock changed",
+      "old_results_modified": false,
+      "retryable": true,
+      "root_cause": "official units.csv stores full module identity in unit prefix and only has short module column",
+      "status": "ENGINEERING_FAILURE"
+    }
+  ]
+}

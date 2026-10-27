@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-09-10T05:35:00Z",
+  "governance": "Section E: Zero-Shot Metric Authority Audit",
+  "total_question_items": 16695,
+  "total_low_level_requests": 60566,
+  "aggregation_rule": "Equal-weight unweighted mean across the 5 canonical tasks (task-level macro accuracy). Each task accuracy is the mean of binary item-level correctness (correct == true) across all items in that task.",
+  "statistical_tests": {
+    "task_level": "McNemar exact two-sided binomial test on 2x2 discordant contingency table",
+    "macro_level": "Stratified 10,000 paired bootstrap resampling within each task to obtain 95% confidence intervals and p-values"
+  },
+  "tasks": {
+    "hellaswag_localjsonl": {
+      "display_name": "HellaSwag",
+      "question_items": 10042,
+      "paper_facing_metric_key": "acc",
+      "lm_eval_key": "acc,none",
+      "sample_correctness_field": "correct",
+      "historical_source_file": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/zeroshot/zero_shot_aggregate.json",
+      "evidence": "lm_eval_primary matches accuracy_from_correct (0.5625 at EB045); item json files record binary correct"
+    },
+    "arc_challenge_localjsonl": {
+      "display_name": "ARC-Challenge",
+      "question_items": 1172,
+      "paper_facing_metric_key": "acc",
+      "lm_eval_key": "acc,none",
+      "sample_correctness_field": "correct",
+      "historical_source_file": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/zeroshot/zero_shot_aggregate.json",
+      "evidence": "lm_eval_primary matches accuracy_from_correct (0.4829 at EB045); statistical_tests.py uses row[correct]"
+    },
+    "arc_easy_localjsonl": {
+      "display_name": "ARC-Easy",
+      "question_items": 2376,
+      "paper_facing_metric_key": "acc",
+      "lm_eval_key": "acc,none",
+      "sample_correctness_field": "correct",
+      "historical_source_file": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/zeroshot/zero_shot_aggregate.json",
+      "evidence": "Paper reports ~77.0% (acc), NOT 67.9% (acc_norm); sample_id matches 2376 questions"
+    },
+    "winogrande_localjsonl": {
+      "display_name": "WinoGrande",
+      "question_items": 1267,
+      "paper_facing_metric_key": "acc",
+      "lm_eval_key": "acc,none",
+      "sample_correctness_field": "correct",
+      "historical_source_file": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/zeroshot/zero_shot_aggregate.json",
+      "evidence": "lm_eval_primary matches accuracy_from_correct (0.7238 at EB045); binary choice item-level correctness"
+    },
+    "piqa_localjsonl": {
+      "display_name": "PIQA",
+      "question_items": 1838,
+      "paper_facing_metric_key": "acc",
+      "lm_eval_key": "acc,none",
+      "sample_correctness_field": "correct",
+      "historical_source_file": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/zeroshot/zero_shot_aggregate.json",
+      "evidence": "lm_eval_primary matches accuracy_from_correct (0.7845 at EB045); binary choice item-level correctness"
+    }
+  }
+}

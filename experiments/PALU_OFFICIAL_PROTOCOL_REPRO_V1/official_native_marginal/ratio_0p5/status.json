@@ -1,0 +1,8 @@
+{
+  "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+  "quality_used_to_design_selection": false,
+  "ratio": 0.5,
+  "status": "MARGINAL_PROFILE_COMPLETE",
+  "units_csv": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_native_marginal/ratio_0p5/units.csv"
+}

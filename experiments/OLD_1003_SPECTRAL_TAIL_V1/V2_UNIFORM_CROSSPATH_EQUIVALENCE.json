@@ -1,0 +1,732 @@
+{
+ "schema": "V2_UNIFORM_VS_1003_PATH_EQUIVALENCE_V1",
+ "checkpoint": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized_v2/severe_uniform/final_model",
+ "rank_sha": "823e850e1c7a97346069562efe17e7c0931faaaf635fc38e7f5c24fe2b58c1b2",
+ "master": "/diskE/jiaqizhang/FDP_OFFICIAL_PROTOCOL_V1_SCRATCH/old1003/master/old1003_master_fullspectrum_perlayer_eb.pt",
+ "basis_equal_all_layers": true,
+ "gate3A_all_exact": false,
+ "gate3B_worst_max_ulp": 25121,
+ "gate3C_worst_relL2_K": 1.7153919543488882e-05,
+ "gate3C_worst_relL2_VO": 3.713334444910288e-05,
+ "non_attention_tensors_checked": 163,
+ "non_attention_tensors_not_equal_dense": [
+  "lm_head.weight",
+  "model.embed_tokens.weight",
+  "model.layers.0.input_layernorm.weight",
+  "model.layers.0.mlp.down_proj.weight",
+  "model.layers.0.mlp.gate_proj.weight",
+  "model.layers.0.mlp.up_proj.weight",
+  "model.layers.0.post_attention_layernorm.weight",
+  "model.layers.1.input_layernorm.weight",
+  "model.layers.1.mlp.down_proj.weight",
+  "model.layers.1.mlp.gate_proj.weight",
+  "model.layers.1.mlp.up_proj.weight",
+  "model.layers.1.post_attention_layernorm.weight",
+  "model.layers.10.mlp.down_proj.weight",
+  "model.layers.10.mlp.gate_proj.weight",
+  "model.layers.10.mlp.up_proj.weight",
+  "model.layers.11.mlp.down_proj.weight",
+  "model.layers.11.mlp.gate_proj.weight",
+  "model.layers.11.mlp.up_proj.weight",
+  "model.layers.12.mlp.down_proj.weight",
+  "model.layers.12.mlp.gate_proj.weight",
+  "model.layers.12.mlp.up_proj.weight",
+  "model.layers.13.mlp.down_proj.weight",
+  "model.layers.13.mlp.gate_proj.weight",
+  "model.layers.13.mlp.up_proj.weight",
+  "model.layers.14.mlp.down_proj.weight",
+  "model.layers.14.mlp.gate_proj.weight",
+  "model.layers.14.mlp.up_proj.weight",
+  "model.layers.15.mlp.down_proj.weight",
+  "model.layers.15.mlp.gate_proj.weight",
+  "model.layers.15.mlp.up_proj.weight",
+  "model.layers.16.mlp.down_proj.weight",
+  "model.layers.16.mlp.gate_proj.weight",
+  "model.layers.16.mlp.up_proj.weight",
+  "model.layers.17.mlp.down_proj.weight",
+  "model.layers.17.mlp.gate_proj.weight",
+  "model.layers.17.mlp.up_proj.weight",
+  "model.layers.18.mlp.down_proj.weight",
+  "model.layers.18.mlp.gate_proj.weight",
+  "model.layers.18.mlp.up_proj.weight",
+  "model.layers.19.mlp.down_proj.weight",
+  "model.layers.19.mlp.gate_proj.weight",
+  "model.layers.19.mlp.up_proj.weight",
+  "model.layers.2.input_layernorm.weight",
+  "model.layers.2.mlp.down_proj.weight",
+  "model.layers.2.mlp.gate_proj.weight",
+  "model.layers.2.mlp.up_proj.weight",
+  "model.layers.2.post_attention_layernorm.weight",
+  "model.layers.20.mlp.down_proj.weight",
+  "model.layers.20.mlp.gate_proj.weight",
+  "model.layers.20.mlp.up_proj.weight",
+  "model.layers.21.mlp.down_proj.weight",
+  "model.layers.21.mlp.gate_proj.weight",
+  "model.layers.21.mlp.up_proj.weight",
+  "model.layers.22.mlp.down_proj.weight",
+  "model.layers.22.mlp.gate_proj.weight",
+  "model.layers.22.mlp.up_proj.weight",
+  "model.layers.23.mlp.down_proj.weight",
+  "model.layers.23.mlp.gate_proj.weight",
+  "model.layers.23.mlp.up_proj.weight",
+  "model.layers.24.mlp.down_proj.weight",
+  "model.layers.24.mlp.gate_proj.weight",
+  "model.layers.24.mlp.up_proj.weight",
+  "model.layers.25.mlp.down_proj.weight",
+  "model.layers.25.mlp.gate_proj.weight",
+  "model.layers.25.mlp.up_proj.weight",
+  "model.layers.26.mlp.down_proj.weight",
+  "model.layers.26.mlp.gate_proj.weight",
+  "model.layers.26.mlp.up_proj.weight",
+  "model.layers.27.mlp.down_proj.weight",
+  "model.layers.27.mlp.gate_proj.weight",
+  "model.layers.27.mlp.up_proj.weight",
+  "model.layers.28.mlp.down_proj.weight",
+  "model.layers.28.mlp.gate_proj.weight",
+  "model.layers.28.mlp.up_proj.weight",
+  "model.layers.29.mlp.down_proj.weight",
+  "model.layers.29.mlp.gate_proj.weight",
+  "model.layers.29.mlp.up_proj.weight",
+  "model.layers.3.mlp.down_proj.weight",
+  "model.layers.3.mlp.gate_proj.weight",
+  "model.layers.3.mlp.up_proj.weight",
+  "model.layers.3.post_attention_layernorm.weight",
+  "model.layers.30.mlp.down_proj.weight",
+  "model.layers.30.mlp.gate_proj.weight",
+  "model.layers.30.mlp.up_proj.weight",
+  "model.layers.31.mlp.down_proj.weight",
+  "model.layers.31.mlp.gate_proj.weight",
+  "model.layers.31.mlp.up_proj.weight",
+  "model.layers.4.input_layernorm.weight",
+  "model.layers.4.mlp.down_proj.weight",
+  "model.layers.4.mlp.gate_proj.weight",
+  "model.layers.4.mlp.up_proj.weight",
+  "model.layers.5.mlp.down_proj.weight",
+  "model.layers.5.mlp.gate_proj.weight",
+  "model.layers.5.mlp.up_proj.weight",
+  "model.layers.6.mlp.down_proj.weight",
+  "model.layers.6.mlp.gate_proj.weight",
+  "model.layers.6.mlp.up_proj.weight",
+  "model.layers.7.mlp.down_proj.weight",
+  "model.layers.7.mlp.gate_proj.weight",
+  "model.layers.7.mlp.up_proj.weight",
+  "model.layers.8.mlp.down_proj.weight",
+  "model.layers.8.mlp.gate_proj.weight",
+  "model.layers.8.mlp.up_proj.weight",
+  "model.layers.9.mlp.down_proj.weight",
+  "model.layers.9.mlp.gate_proj.weight",
+  "model.layers.9.mlp.up_proj.weight"
+ ],
+ "per_layer": [
+  {
+   "layer": 0,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 196,
+    "v_proj_low": 106,
+    "o_proj_up": 20
+   },
+   "relL2_K": 2.3273107672139304e-06,
+   "relL2_VO": 1.9224584320909344e-05
+  },
+  {
+   "layer": 1,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 3,
+    "v_proj_low": 138,
+    "o_proj_up": 23732
+   },
+   "relL2_K": 8.909096891329682e-07,
+   "relL2_VO": 2.0634486645576544e-05
+  },
+  {
+   "layer": 2,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 53,
+    "o_proj_up": 16
+   },
+   "relL2_K": 3.1360769980892655e-07,
+   "relL2_VO": 2.8297399694565684e-05
+  },
+  {
+   "layer": 3,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 2,
+    "v_proj_low": 4,
+    "o_proj_up": 9
+   },
+   "relL2_K": 2.3711626440103828e-08,
+   "relL2_VO": 2.969073466374539e-05
+  },
+  {
+   "layer": 4,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 2,
+    "o_proj_up": 48
+   },
+   "relL2_K": 1.8276136870554183e-07,
+   "relL2_VO": 1.758242433425039e-05
+  },
+  {
+   "layer": 5,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 10,
+    "o_proj_up": 83
+   },
+   "relL2_K": 2.317013922947808e-06,
+   "relL2_VO": 3.569330510799773e-05
+  },
+  {
+   "layer": 6,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 6,
+    "o_proj_up": 20
+   },
+   "relL2_K": 1.3747249738571554e-07,
+   "relL2_VO": 2.341845720366109e-05
+  },
+  {
+   "layer": 7,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 10,
+    "o_proj_up": 146
+   },
+   "relL2_K": 2.49165239551985e-08,
+   "relL2_VO": 2.114618655468803e-05
+  },
+  {
+   "layer": 8,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 25121,
+    "o_proj_up": 16
+   },
+   "relL2_K": 1.8312928204977652e-06,
+   "relL2_VO": 2.9864158932468854e-05
+  },
+  {
+   "layer": 9,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 7,
+    "o_proj_up": 16
+   },
+   "relL2_K": 3.888001174345845e-06,
+   "relL2_VO": 1.550007436890155e-05
+  },
+  {
+   "layer": 10,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 8,
+    "o_proj_up": 10
+   },
+   "relL2_K": 1.7153919543488882e-05,
+   "relL2_VO": 2.721700548136141e-05
+  },
+  {
+   "layer": 11,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 96,
+    "v_proj_low": 8,
+    "o_proj_up": 271
+   },
+   "relL2_K": 5.443088202383706e-09,
+   "relL2_VO": 3.713334444910288e-05
+  },
+  {
+   "layer": 12,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 20,
+    "o_proj_up": 107
+   },
+   "relL2_K": 1.0318867680325639e-05,
+   "relL2_VO": 1.9151733795297332e-05
+  },
+  {
+   "layer": 13,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 4,
+    "o_proj_up": 16
+   },
+   "relL2_K": 4.27994137908172e-07,
+   "relL2_VO": 1.7043017578544095e-05
+  },
+  {
+   "layer": 14,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 2,
+    "o_proj_up": 94
+   },
+   "relL2_K": 1.238774757439387e-06,
+   "relL2_VO": 1.7686195860733278e-05
+  },
+  {
+   "layer": 15,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 3,
+    "o_proj_up": 146
+   },
+   "relL2_K": 9.447573575016577e-06,
+   "relL2_VO": 1.8716729755396955e-05
+  },
+  {
+   "layer": 16,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 49,
+    "o_proj_up": 64
+   },
+   "relL2_K": 2.499548941159446e-07,
+   "relL2_VO": 2.6903147954726592e-05
+  },
+  {
+   "layer": 17,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 6,
+    "o_proj_up": 20
+   },
+   "relL2_K": 0.0,
+   "relL2_VO": 2.3153344955062494e-05
+  },
+  {
+   "layer": 18,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 0,
+    "v_proj_low": 24,
+    "o_proj_up": 32
+   },
+   "relL2_K": 0.0,
+   "relL2_VO": 1.809643981687259e-05
+  },
+  {
+   "layer": 19,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 22,
+    "o_proj_up": 24961
+   },
+   "relL2_K": 6.552331228704134e-07,
+   "relL2_VO": 2.866488284780644e-05
+  },
+  {
+   "layer": 20,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 9,
+    "o_proj_up": 12
+   },
+   "relL2_K": 2.9433144277390966e-07,
+   "relL2_VO": 2.8827307687606663e-05
+  },
+  {
+   "layer": 21,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 2,
+    "v_proj_low": 27,
+    "o_proj_up": 105
+   },
+   "relL2_K": 1.7698200238669415e-08,
+   "relL2_VO": 2.600814877951052e-05
+  },
+  {
+   "layer": 22,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 0,
+    "v_proj_low": 24,
+    "o_proj_up": 202
+   },
+   "relL2_K": 0.0,
+   "relL2_VO": 1.8845656086341478e-05
+  },
+  {
+   "layer": 23,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 13,
+    "o_proj_up": 17
+   },
+   "relL2_K": 0.0,
+   "relL2_VO": 2.647219480422791e-05
+  },
+  {
+   "layer": 24,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 184,
+    "o_proj_up": 32
+   },
+   "relL2_K": 0.0,
+   "relL2_VO": 2.4188791940105148e-05
+  },
+  {
+   "layer": 25,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 0,
+    "v_proj_low": 25,
+    "o_proj_up": 19
+   },
+   "relL2_K": 0.0,
+   "relL2_VO": 1.1225864000152797e-05
+  },
+  {
+   "layer": 26,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 14,
+    "o_proj_up": 4
+   },
+   "relL2_K": 6.088451414143492e-07,
+   "relL2_VO": 1.9196251741959713e-05
+  },
+  {
+   "layer": 27,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 11,
+    "o_proj_up": 6
+   },
+   "relL2_K": 4.973664545104839e-06,
+   "relL2_VO": 1.9799041183432564e-05
+  },
+  {
+   "layer": 28,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 8,
+    "o_proj_up": 12
+   },
+   "relL2_K": 2.962206053780392e-06,
+   "relL2_VO": 2.313197728653904e-05
+  },
+  {
+   "layer": 29,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 1,
+    "v_proj_low": 1,
+    "o_proj_up": 6
+   },
+   "relL2_K": 4.8001261632180103e-08,
+   "relL2_VO": 1.3668452083948068e-05
+  },
+  {
+   "layer": 30,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 8,
+    "v_proj_low": 2,
+    "o_proj_up": 14
+   },
+   "relL2_K": 3.0882226553785586e-08,
+   "relL2_VO": 1.2108067494409624e-05
+  },
+  {
+   "layer": 31,
+   "basis_equal": {
+    "q": true,
+    "v": true
+   },
+   "gate3A": {
+    "q_proj": false,
+    "k_proj_up": true
+   },
+   "shapes_ok": true,
+   "gate3B_max_ulp": {
+    "k_proj_low": 2,
+    "v_proj_low": 3,
+    "o_proj_up": 8
+   },
+   "relL2_K": 1.6888445486529235e-07,
+   "relL2_VO": 9.570296242600307e-06
+  }
+ ],
+ "OPERATOR_EQUIVALENT_TO_1003_PATH": false,
+ "BIT_EXACT_TO_1003_PATH_REFERENCE": false
+}

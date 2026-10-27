@@ -1,0 +1,479 @@
+{
+  "foreign_jobs_interrupted": 0,
+  "formal_fdp_realization": "TRANSFER_COUNT_POLICY_NOT_FROZEN",
+  "historical_frozen_results_modified": false,
+  "independent_calibration_manifest": {
+    "path": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/marginal/calibration_manifest.json",
+    "sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+    "status": "FROZEN_BEFORE_MARGINAL_QUALITY"
+  },
+  "interpretation": "Pending Llama-2 unit profiles. Llama-3 frozen audit is descriptive; no equivalence claim is made without functional marginal phi_palu.",
+  "llama2_marginal_profiles": {
+    "0.3": {
+      "baseline": {
+        "J": 3.4732968507886923,
+        "c4_nll": 3.7723191284120055,
+        "c4_ppl": 43.48078552368886,
+        "latent_cache_bytes_B1_T2048_fp16": 80216064,
+        "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+        "native_conversion": "official HeadwiseLowRankModule primitives; official whiten scaling matrix",
+        "ratio": 0.3,
+        "schedule_sha": "31ffd70e8c64fcc08ac6fe980b18ea3bfb4af411f31ebdc44b73eb299060c10e",
+        "status": "MARGINAL_BASELINE_COMPLETE",
+        "tokens": 32752,
+        "total_rank": 19584,
+        "wiki_nll": 3.174274573165379,
+        "wiki_ppl": 23.909469005327203
+      },
+      "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+      "native_conversion": "official HeadwiseLowRankModule primitives; no native implementation modification",
+      "quality_used_to_design_selection": false,
+      "ratio": 0.3,
+      "schedule_sha": "31ffd70e8c64fcc08ac6fe980b18ea3bfb4af411f31ebdc44b73eb299060c10e",
+      "status": "MARGINAL_PROFILE_COMPLETE"
+    },
+    "0.5": {
+      "baseline": {
+        "J": 2.649117399438393,
+        "c4_nll": 2.837456640291051,
+        "c4_ppl": 17.07228929998198,
+        "latent_cache_bytes_B1_T2048_fp16": 133693440,
+        "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+        "native_conversion": "official HeadwiseLowRankModule primitives; official whiten scaling matrix",
+        "ratio": 0.5,
+        "schedule_sha": "9893cc06dbfae4442b11e0e5f5620d8464c6e23921af24f85422a230d00d78a4",
+        "status": "MARGINAL_BASELINE_COMPLETE",
+        "tokens": 32752,
+        "total_rank": 32640,
+        "wiki_nll": 2.460778158585735,
+        "wiki_ppl": 11.713923284306354
+      },
+      "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+      "native_conversion": "official HeadwiseLowRankModule primitives; no native implementation modification",
+      "quality_used_to_design_selection": false,
+      "ratio": 0.5,
+      "schedule_sha": "9893cc06dbfae4442b11e0e5f5620d8464c6e23921af24f85422a230d00d78a4",
+      "status": "MARGINAL_PROFILE_COMPLETE"
+    },
+    "0.7": {
+      "baseline": {
+        "J": 2.3842269234035323,
+        "c4_nll": 2.5323262403345597,
+        "c4_ppl": 12.58274260132098,
+        "latent_cache_bytes_B1_T2048_fp16": 187432960,
+        "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+        "native_conversion": "official HeadwiseLowRankModule primitives; official whiten scaling matrix",
+        "ratio": 0.7,
+        "schedule_sha": "7c460aa5e48452bb98e474530993a3239042f38d2e12e991309b7fc16e1f89b4",
+        "status": "MARGINAL_BASELINE_COMPLETE",
+        "tokens": 32752,
+        "total_rank": 45760,
+        "wiki_nll": 2.2361276064725053,
+        "wiki_ppl": 9.357026949871182
+      },
+      "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+      "native_conversion": "official HeadwiseLowRankModule primitives; no native implementation modification",
+      "quality_used_to_design_selection": false,
+      "ratio": 0.7,
+      "schedule_sha": "7c460aa5e48452bb98e474530993a3239042f38d2e12e991309b7fc16e1f89b4",
+      "status": "MARGINAL_PROFILE_COMPLETE"
+    }
+  },
+  "llama2_official_schedule_freeze": {
+    "anchor_file": "/diskF/jiaqizhang/fdp_lowrank_operator_zoo_v1/v2_runs/palu_fisher/PALU_V2_OFFICIAL_0P7_FISHER_ANCHOR.json",
+    "anchor_sha256": "b7dfa7ae39cbbee24f1095a89eadec4714c86f4ec6e6c9e60b8024e225d1829b",
+    "current_model_num_attention_heads": 32,
+    "current_model_num_key_value_heads": 32,
+    "current_wrapper_semantics_audit": {
+      "capacity_ratio_current_wrapper_to_anchor": 4.0,
+      "current_wrapper_fisher_uniform_capacity": 262144,
+      "current_wrapper_fisher_uniform_groups_per_module": 8,
+      "frozen_anchor_capacity": 65536,
+      "frozen_anchor_slots_per_module": 2,
+      "status": "NATIVE_UNIT_SEMANTICS_MISMATCH; CURRENT_WRAPPER_OUTPUTS_QUARANTINED"
+    },
+    "fisher_allocation": "official anchor proportional Fisher allocation, integer deficit completion, then block-32 rounding",
+    "historical_results_modified": false,
+    "model_config": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf/config.json",
+    "model_config_sha256": "9242e7db1bc2a17873e66084c3b1c6ed10883076e156b338fd6a7775748e2e3c",
+    "native_unit": "one persisted head_wise_ranks slot per K/V module; rank quantum 32; two slots per module; cap 512",
+    "q_SHA": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+    "q_lock_file": "/diskF/jiaqizhang/fdp_final_core_generalization_v1/authority/FINAL_D125_Q_LOCK.json",
+    "q_lock_file_sha256": "e51176db2b3cfaa35451f6d5dfa2d0b99dcd768aa13c8a2eb00c6956ac8c1e1d",
+    "quality_used_to_design_schedule": false,
+    "ratio_0.7_reproduction_exact": true,
+    "ratios": [
+      0.7,
+      0.5,
+      0.3
+    ],
+    "schedules": {
+      "0.3": {
+        "integer_target_rank": 19661,
+        "realized_rank_sum": 19584,
+        "schedule_sha": "31ffd70e8c64fcc08ac6fe980b18ea3bfb4af411f31ebdc44b73eb299060c10e"
+      },
+      "0.5": {
+        "integer_target_rank": 32768,
+        "realized_rank_sum": 32640,
+        "schedule_sha": "9893cc06dbfae4442b11e0e5f5620d8464c6e23921af24f85422a230d00d78a4"
+      },
+      "0.7": {
+        "integer_target_rank": 45875,
+        "realized_rank_sum": 45760,
+        "schedule_sha": "7c460aa5e48452bb98e474530993a3239042f38d2e12e991309b7fc16e1f89b4"
+      }
+    },
+    "status": "OFFICIAL_ANCHOR_SCHEMA_FROZEN; CURRENT_WRAPPER_MISMATCH_QUARANTINED",
+    "task": "PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1",
+    "total_capacity": 65536,
+    "transfer_count_policy": "TRANSFER_COUNT_POLICY_NOT_FROZEN"
+  },
+  "llama2_schedule_semantics_audit": {
+    "anchor_reproduction_exact": true,
+    "current_wrapper_outputs": "DIAGNOSTIC_ONLY_NOT_OFFICIAL",
+    "historical_frozen_results_modified": false,
+    "marginal_quality_started": false,
+    "reason": "Current checked-out fisher_uniform path creates 8 slots/module and 262144 capacity, while immutable official 0.7 anchor has 2 slots/module and 65536 capacity. The anchor-schema generator reproduces the immutable 0.7 schedule SHA exactly and is used for 0.5/0.3 candidates.",
+    "schedules": {
+      "0.3": {
+        "integer_target_rank": 19661,
+        "realized_rank_sum": 19584,
+        "schedule_sha": "31ffd70e8c64fcc08ac6fe980b18ea3bfb4af411f31ebdc44b73eb299060c10e"
+      },
+      "0.5": {
+        "integer_target_rank": 32768,
+        "realized_rank_sum": 32640,
+        "schedule_sha": "9893cc06dbfae4442b11e0e5f5620d8464c6e23921af24f85422a230d00d78a4"
+      },
+      "0.7": {
+        "integer_target_rank": 45875,
+        "realized_rank_sum": 45760,
+        "schedule_sha": "7c460aa5e48452bb98e474530993a3239042f38d2e12e991309b7fc16e1f89b4"
+      }
+    },
+    "status": "OFFICIAL_BASELINE_FREEZE_GATE_PASS_FOR_ANCHOR_SCHEMA; CURRENT_WRAPPER_GATE_FAIL",
+    "transfer_count_policy": "TRANSFER_COUNT_POLICY_NOT_FROZEN"
+  },
+  "llama3_existing_fixed_audit": {
+    "correlations": [
+      {
+        "N_units": 32,
+        "Pearson": -0.2372611693018343,
+        "Spearman": -0.18988269794721407,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "fisher_importance",
+        "signal_B": "phi_small",
+        "tier": "LIGHT"
+      },
+      {
+        "N_units": 32,
+        "Pearson": -0.1568043377964957,
+        "Spearman": -0.09090909090909091,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "q",
+        "signal_B": "phi_small",
+        "tier": "LIGHT"
+      },
+      {
+        "N_units": 32,
+        "Pearson": 0.3545044617063887,
+        "Spearman": 0.4274193548387097,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "fisher_importance",
+        "signal_B": "q",
+        "tier": "LIGHT"
+      },
+      {
+        "N_units": 32,
+        "Pearson": -0.24052430418063145,
+        "Spearman": -0.20124633431085043,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "fisher_importance",
+        "signal_B": "phi_medium",
+        "tier": "LIGHT"
+      },
+      {
+        "N_units": 32,
+        "Pearson": -0.14507605474233165,
+        "Spearman": -0.09347507331378299,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "q",
+        "signal_B": "phi_medium",
+        "tier": "LIGHT"
+      },
+      {
+        "N_units": 32,
+        "Pearson": -0.015388562932156125,
+        "Spearman": 0.04142228739002932,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "fisher_importance",
+        "signal_B": "phi_small",
+        "tier": "MEDIUM"
+      },
+      {
+        "N_units": 32,
+        "Pearson": 0.4005746646311398,
+        "Spearman": 0.5073313782991202,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "q",
+        "signal_B": "phi_small",
+        "tier": "MEDIUM"
+      },
+      {
+        "N_units": 32,
+        "Pearson": 0.3545044617063887,
+        "Spearman": 0.4274193548387097,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "fisher_importance",
+        "signal_B": "q",
+        "tier": "MEDIUM"
+      },
+      {
+        "N_units": 32,
+        "Pearson": -0.015084524347758366,
+        "Spearman": 0.03372434017595308,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "fisher_importance",
+        "signal_B": "phi_medium",
+        "tier": "MEDIUM"
+      },
+      {
+        "N_units": 32,
+        "Pearson": 0.3960519817389095,
+        "Spearman": 0.4934017595307918,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "q",
+        "signal_B": "phi_medium",
+        "tier": "MEDIUM"
+      },
+      {
+        "N_units": 32,
+        "Pearson": 0.5991591940534812,
+        "Spearman": 0.6118035190615836,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "fisher_importance",
+        "signal_B": "phi_small",
+        "tier": "AGGRESSIVE"
+      },
+      {
+        "N_units": 32,
+        "Pearson": 0.5718182245607415,
+        "Spearman": 0.4970674486803519,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "q",
+        "signal_B": "phi_small",
+        "tier": "AGGRESSIVE"
+      },
+      {
+        "N_units": 32,
+        "Pearson": 0.3545044617063887,
+        "Spearman": 0.4274193548387097,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "fisher_importance",
+        "signal_B": "q",
+        "tier": "AGGRESSIVE"
+      },
+      {
+        "N_units": 32,
+        "Pearson": 0.5991591940534812,
+        "Spearman": 0.6118035190615836,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "fisher_importance",
+        "signal_B": "phi_medium",
+        "tier": "AGGRESSIVE"
+      },
+      {
+        "N_units": 32,
+        "Pearson": 0.5718182245607415,
+        "Spearman": 0.4970674486803519,
+        "model": "llama3_8b",
+        "phi_primary": "phi_small",
+        "signal_A": "q",
+        "signal_B": "phi_medium",
+        "tier": "AGGRESSIVE"
+      }
+    ],
+    "fisher_aggregation": "mean of official module_fisher_means for k_proj and v_proj at each layer",
+    "foreign_jobs_interrupted": 0,
+    "historical_frozen_results_modified": false,
+    "immutable_inputs": {
+      "fisher_anchor_sha256": "b7dfa7ae39cbbee24f1095a89eadec4714c86f4ec6e6c9e60b8024e225d1829b",
+      "fragility_profile_matrix_sha256": "8d2c9a05eb33752a0911df32a39573aac6e3b12c635f4e53ae82c2d6122931fe",
+      "q_lock_sha256": "e51176db2b3cfaa35451f6d5dfa2d0b99dcd768aa13c8a2eb00c6956ac8c1e1d",
+      "q_sha_value": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1"
+    },
+    "native_unit_observation": "Frozen Llama-3 lock schedules expose duplicated two-slot K/V entries; deltas are reported per 32-rank schedule slot and at layer aggregate. No donor->receiver event-pair manifest was found in the frozen roots.",
+    "phi_primary": "phi_small; phi_medium retained as sensitivity column",
+    "status": "LLAMA3_EXISTING_FIXED_AUDIT_COMPLETE",
+    "task": "PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1",
+    "tiers": {
+      "AGGRESSIVE": {
+        "control_total_native_rank": 36224,
+        "donor_layers": [
+          0,
+          1,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fixed_total_native_rank": 36224,
+        "inferred_negative_32_quanta": 106.0,
+        "inferred_positive_32_quanta": 106.0,
+        "lock_q_SHA": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+        "lock_status": "FROZEN_DIRECTION_CORRECTED_RESOURCE_ONLY",
+        "mean_phi_donor": 0.05865541263511176,
+        "mean_phi_receiver": 0.24749573753006526,
+        "mean_phi_receiver_gt_donor": true,
+        "receiver_layers": [
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17
+        ],
+        "resource_exact": true,
+        "transfer_consistency_rate": null,
+        "transfer_consistency_status": "UNAVAILABLE_EXACT_PAIRING; receiver/donor layer-set means reported",
+        "transfer_pair_manifest": "NOT_FOUND_IN_FROZEN_ROOTS"
+      },
+      "LIGHT": {
+        "control_total_native_rank": 55744,
+        "donor_layers": [
+          0,
+          1,
+          18,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fixed_total_native_rank": 55744,
+        "inferred_negative_32_quanta": 130.0,
+        "inferred_positive_32_quanta": 130.0,
+        "lock_q_SHA": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+        "lock_status": "FROZEN_DIRECTION_CORRECTED_RESOURCE_ONLY",
+        "mean_phi_donor": 0.010212233639963235,
+        "mean_phi_receiver": 0.00932241879468627,
+        "mean_phi_receiver_gt_donor": false,
+        "receiver_layers": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "resource_exact": true,
+        "transfer_consistency_rate": null,
+        "transfer_consistency_status": "UNAVAILABLE_EXACT_PAIRING; receiver/donor layer-set means reported",
+        "transfer_pair_manifest": "NOT_FOUND_IN_FROZEN_ROOTS"
+      },
+      "MEDIUM": {
+        "control_total_native_rank": 45760,
+        "donor_layers": [
+          0,
+          1,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "fixed_total_native_rank": 45760,
+        "inferred_negative_32_quanta": 130.0,
+        "inferred_positive_32_quanta": 130.0,
+        "lock_q_SHA": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+        "lock_status": "FROZEN_DIRECTION_CORRECTED_RESOURCE_ONLY",
+        "mean_phi_donor": 0.02767569960546748,
+        "mean_phi_receiver": 0.06475416123605543,
+        "mean_phi_receiver_gt_donor": true,
+        "receiver_layers": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "resource_exact": true,
+        "transfer_consistency_rate": null,
+        "transfer_consistency_status": "UNAVAILABLE_EXACT_PAIRING; receiver/donor layer-set means reported",
+        "transfer_pair_manifest": "NOT_FOUND_IN_FROZEN_ROOTS"
+      }
+    }
+  },
+  "native_palu_implementation_modified": false,
+  "status": "PALU_FISHER_VS_FUNCTIONAL_MARGINAL_COMPLETE",
+  "task": "PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "LLAMA3_FULL_RESOURCE_ROBUSTNESS_CANARY_LOCK_V1",
+  "created_utc": "2026-10-02T21:32:32.849436+00:00",
+  "arm": "FULL_RESOURCE_AGGRESSIVE_LOW",
+  "realization_sha256": "dbce9e54eadc800b75a4814049b20f8743744179a4f24b1299e84000c87b734d",
+  "purpose": "single fixed Wiki window deterministic reload canary; not formal quality result",
+  "dataset": "wikitext2",
+  "limit_windows": 1,
+  "seed": 2,
+  "repeat_count": 2,
+  "same_model_checkpoint": true,
+  "same_tokenizer": "/diskD/jiaqizhang/Llama-3",
+  "evaluation_protocol_sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+  "gpu": 1
+}

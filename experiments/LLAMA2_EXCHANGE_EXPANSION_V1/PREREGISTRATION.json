@@ -1,0 +1,19 @@
+{
+ "experiment": "LLAMA2_EXCHANGE_EXPANSION_V1",
+ "written_before_any_new_quality": true,
+ "requested_by_user": "2026-10-11 ~20:00: run A+B+C+E of the Llama-2 exchange expansion in parallel",
+ "fixed_infrastructure": "Llama-2-7B, frozen full-capacity EigenAttention basis (sha 196863f8), frozen canonical in-memory materializer (V5 patch), frozen 166 WikiText-2 / 256 C4 evaluation windows and legacy scorer (V7), frozen 5-task zero-shot manifest and base runner, frozen tuning-window scorer; only rank schedules vary",
+ "operating_points": {"e060": "historical Uniform builder ranks at EB 0.06 (B 784,596,992; 0.731x)", "e068": "frozen Uniform068 (B 746,323,968; 0.695x)", "e090": "historical Uniform builder ranks at EB 0.09 (B 649,199,616; 0.605x)"},
+ "arms": {
+  "uniform": "the operating point's Uniform schedule",
+  "functional": "measured-NLL exchange, algorithm identical to the frozen e068 run (probes, donor/receiver eligibility, pair choice, joint acceptance on full + both halves, re-probe, <=12 accepted); e068 uses the frozen historical schedule; e060/e090 run with the frozen 61 tuning windows",
+  "functional_dd (C)": "same algorithm at e068 with document-disjoint C4 tuning windows (29 C4 validation documents not among the 256 evaluation documents; 32 WikiText-2 train windows unchanged)",
+  "fdp_guided (A)": "no loss probes, open loop: q from the frozen d1/d2/d5 profile of the operating point's Uniform model (same profile runner and environment as e068); layer 0 excluded; i-th highest-q layer receives one 32-rank quantum on its lower-rank path from the i-th lowest-q layer's higher-rank path; K steps",
+  "random_unrestricted (C)": "seeded uniform random donor (rank>64) and receiver (rank<4096) over all 64 paths, distinct layers, each path used once; K steps; 20 seeds at e068, 10 at e060 and e090",
+  "K": "number of exchanges accepted by the functional arm at the same operating point (e068: 9)"
+ },
+ "engineering_gates": ["Uniform068 PPL re-evaluated with the new runner must equal the frozen values exactly", "re-running the functional algorithm at e068 with the frozen windows is reported (probe deltas and chosen exchanges vs the frozen run)", "doc-disjoint window builder must reproduce all 29 frozen C4 tuning windows from the same shard/row indexing"],
+ "evaluation": "WikiText-2 / C4 PPL and J, 5-task zero-shot; paired bootstrap 10,000 replicates (windows PCG64 20261012/13, items 20261014); every arm reported regardless of sign",
+ "E": "Llama-2 e068 zero-shot paired CI recomputed with 10,000 replicates (was 5,000)",
+ "audit_disclosures": "historical random control drew from the functional method's pre-screened candidate set (not unrestricted); historical C4 tuning windows were token-disjoint but not document-disjoint from evaluation"
+}

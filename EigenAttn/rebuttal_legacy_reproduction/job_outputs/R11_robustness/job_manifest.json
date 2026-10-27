@@ -1,0 +1,18 @@
+{
+  "job_id": "R11_robustness",
+  "stage": "R11",
+  "kind": "gpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/r11_robustness.py"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": 2,
+  "depends_on": [
+    "R6_summary"
+  ],
+  "created_at": "2026-07-29T07:04:59.784162-07:00",
+  "meta": {
+    "role": "robustness"
+  }
+}

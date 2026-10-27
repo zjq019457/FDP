@@ -1,0 +1,51 @@
+import torch
+
+# 加载最终保存的 Q/K/V 张量
+qkv = torch.load("final_qkv1.pt")
+
+# 保存所有的基向量
+eigen_basis = {}
+r = 180  # 子空间维度，可调整
+
+for name, tensors in qkv.items():
+    # ✅ 修复空判断错误
+    if tensors is None or (isinstance(tensors, torch.Tensor) and tensors.numel() == 0):
+        print(f"⚠️ 跳过空张量: {name}")
+        continue
+
+    t = tensors[0] if isinstance(tensors, (list, tuple)) else tensors
+
+    # ✅ 标准化维度
+    if t.ndim == 3:
+        mat = t.squeeze(0)  # [1, N, 768] → [N, 768]
+    elif t.ndim == 2:
+        mat = t
+    else:
+        print(f"❌ 跳过 {name}，维度不匹配: {t.shape}")
+        continue
+
+    if mat.shape[1] != 768:
+        print(f"❌ 跳过 {name}，不是有效的特征形状: {mat.shape}")
+        continue
+
+    try:
+        # SVD 分解
+        mat_T = mat.T  # [768, N]
+        U, _, _ = torch.linalg.svd(mat_T, full_matrices=False)
+
+        # 提取前 48 个特征向量
+        basis = U[:, :180].contiguous().to(torch.float32)
+
+        if name.endswith((".q_proj", ".k_proj", ".v_proj")):
+            new_key = name + "_basis"
+            eigen_basis[new_key] = basis.cpu()
+            print(f"✔ 保存成功: {new_key} → {basis.shape}")
+        else:
+            print(f"⚠️ 跳过无关权重: {name}")
+    except Exception as e:
+        print(f"❌ 处理 {name} 时出错: {e}")
+
+# 保存所有基向量
+torch.save(eigen_basis, "eigen_basis.pt")
+print("✅ 所有 *_proj_basis 成功保存，维度应为 [768, 48]")
+

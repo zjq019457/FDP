@@ -1,0 +1,12 @@
+{
+  "method": "c45_fdp",
+  "generated_at": "2026-10-11T16:42:53.202966-07:00",
+  "tasks": {
+    "narrativeqa": {
+      "n": 200,
+      "pred_path": "/diskF/jiaqizhang/FDP_FROZEN_PROTOCOL_CONSTRAINED45_V1/tiers/aggressive/fdp/longbench_qa6/lbnqa/narrativeqa.jsonl",
+      "max_gen": 128
+    }
+  },
+  "eval_executed": true
+}

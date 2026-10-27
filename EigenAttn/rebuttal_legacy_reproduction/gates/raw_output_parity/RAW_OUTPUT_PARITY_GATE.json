@@ -1,0 +1,45 @@
+{
+  "gate": "RAW_OUTPUT_INTERFACE_PASS",
+  "passed": true,
+  "timestamp": "2026-07-28T08:37:15.760793-07:00",
+  "upstream_artifact_hashes": {
+    "parity_audit": "6f6ede505941420ae6178d77067abb0075a81ffc6034ee48acf6f08ae027f086",
+    "ppl_runner": "db6638a202c09158150aec90019d0ed4fc03fa29728808ff082817ff1db0fd84",
+    "zero_shot_runner": "d7501d546b9a7eaeba5c2f0efcbbbdb40acdf366d176c6494d7fa7d736204fa7"
+  },
+  "runner_hash": "fb9f173816bb0669111d2fa6ddbfbe18be393e8e18dd6fb8e01eb445677283af",
+  "protocol_hash": "46045088fa3fca40321c6d59d0367e9f8921c0ba97b9492791f4abed6c2091d4",
+  "evaluation_hash": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+  "audit_summary": "raw-output parity passed",
+  "extra": {
+    "tiny_ppl": {
+      "passed": true,
+      "n_windows": 4,
+      "legacy_ppl": 81.4982541285561,
+      "raw_ppl": 81.4982541285561,
+      "abs_diff": 0.0
+    },
+    "tiny_mc": {
+      "passed": true,
+      "n_samples": 8,
+      "acc": 0.25
+    },
+    "subset_identity": {
+      "passed": true,
+      "legacy_ppl": 145.87170866121136,
+      "raw_ppl": 145.87170866121136,
+      "ids_match": true
+    },
+    "llama_subset": {
+      "passed": true,
+      "skipped": false,
+      "aggregate_ppl": 6.202583101861317,
+      "recomputed_ppl": 6.202583101861317,
+      "window_ids": [
+        "c4_00000",
+        "c4_00001"
+      ],
+      "n_windows": 2
+    }
+  }
+}

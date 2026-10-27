@@ -1,0 +1,59 @@
+{
+  "analysis": {
+    "formal_outputs_modified": false,
+    "outputs_independent": true,
+    "paired_bootstrap": "recompute full 8-task paired CI after cell completes",
+    "score_rule": "official SAMSum aggregation: strip leading newlines, first generated line, official metric against references"
+  },
+  "dataset": {
+    "n_expected": 200,
+    "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/samsum.jsonl",
+    "sha256": "d435a4c7a05d2006872da8dd0c44c0a48648baa1ce4f62a4084d07aa7883f0cc"
+  },
+  "generation": {
+    "chat_wrapping": false,
+    "do_sample": false,
+    "eos_token_ids": [
+      "tokenizer.eos_token_id",
+      "tokenizer.encode(newline)[-1]"
+    ],
+    "max_context_tokens": 4096,
+    "max_new_tokens": 128,
+    "minimum_length": "context_length+1",
+    "num_beams": 1,
+    "temperature": 1.0
+  },
+  "launch_snapshot": {
+    "acc_status": "RUNNING_V1",
+    "diskE_free_bytes": 14219927552,
+    "foreign_jobs_interrupted": 0,
+    "gpu2": "2, 66568 MiB, 93 %"
+  },
+  "manifest_payload_sha256": "b9523a53471451f1664a4bd13b36992e339d9d68875f2ba05e683d174ff51410",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "official_metrics_sha256": "f02c7b124587c5dda2be234ba50da3952b8d1c384f288f214364806e7c8683f5",
+  "official_runner_sha256": "1571ca0581564e8ee27f1959ba717cb11fd7469d150c4bf4e8d8e9808b4d57b3",
+  "official_scorer_sha256": "85a6352e88c909aba956d85acc14db2938f2ff7fb87ca3001a6a7c91912db24c",
+  "parent_paired_manifest_sha256": "02b55f781e4f358b74b327195385a588bfa653ae35ca400d3e14b57642996dfa",
+  "prompt_template_file_sha256": "56d22ad4f382169c2b8a11ff4c982a4a1bea096c8152b0f0b85b64686b157c30",
+  "purpose": "rerun only SAMSum V1/V3 with official newline-EOS generation rule; no retuning",
+  "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "ratio": 0.5,
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "resources": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "schema": "palu_v3_samsum_official_decode_repair_v1",
+  "status": "FROZEN_BEFORE_RUN",
+  "task": "samsum",
+  "v1_schedule_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+  "v3_allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c"
+}

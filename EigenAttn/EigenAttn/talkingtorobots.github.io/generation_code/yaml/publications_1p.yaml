@@ -1,0 +1,120 @@
+---
+- FIELD: O
+  TYPE: Conference
+  TITLE: "Language Models Need Inductive Biases to Count Inductively"
+  STUDENT: Yingshan Chang
+  AUTHORS:
+    - Yingshan Chang
+    - Yonatan Bisk
+  VENUE: "The Thirteenth International Conference on Learning Representations"
+  VENUE-ACR: "ICLR"
+  YEAR: '2025'
+  URL: "https://arxiv.org/abs/2405.20131"
+  CUTE: "25-Counting"
+- FIELD: WS3
+  TYPE: Conference
+  TITLE: "DiffusionPID: Interpreting Diffusion via Partial Information Decomposition"
+  STUDENT: Yingshan Chang
+  AUTHORS:
+    - Shaurya Dewan
+    - Rushikesh Zawar
+    - Prakanshul Saxena
+    - Yingshan Chang 
+    - Andrew Luo
+    - Yonatan Bisk
+  VENUE: "Thirty-Eighth Annual Conference on Neural Information Processing Systems"
+  VENUE-ACR: "NeurIPS"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2406.05191"
+  CUTE: "24-DiffusionPID"
+
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "AgentKit: Flow Engineering with Graphs, not Coding"
+  AUTHORS:
+    - Yue Wu
+    - Yewen Fan
+    - So Yeon Min
+    - Shrimai Prabhumoye
+    - Stephen McAleer
+    - Yonatan Bisk
+    - Ruslan Salakhutdinov
+    - Yuanzhi Li
+    - Tom Mitchell
+  VENUE: "Conference on Language Modeling"
+  VENUE-ACR: "COLM"
+  YEAR: '2024'
+  URL: "https://arxiv.org/abs/2404.11483"
+  EXTRAS:
+    GitHub: https://github.com/holmeswww/AgentKit
+- FIELD: WS4
+  TYPE: Conference
+  TITLE: "WebArena: A Realistic Web Environment for Building Autonomous Agents"
+  ALUMN: Hao Zhu
+  AUTHORS:
+    - Shuyan Zhou
+    - Frank F. Xu
+    - Hao Zhu
+    - Xuhui Zhou
+    - Robert Lo
+    - Abishek Sridhar
+    - Xianyi Cheng
+    - Tianyue Ou
+    - Yonatan Bisk
+    - Daniel Fried
+    - Uri Alon
+    - Graham Neubig
+  VENUE: "The Twelfth International Conference on Learning Representations"
+  VENUE-ACR: "ICLR"
+  URL: "https://arxiv.org/abs/2307.13854"
+  YEAR: '2024'
+  EXTRAS:
+    GitHub: https://github.com/web-arena-x/webarena
+    Website: https://webarena.dev/
+- FIELD: WS5
+  TYPE: Conference
+  TITLE: "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents"
+  ALUMN: Hao Zhu
+  AUTHORS:
+    - Xuhui Zhou 
+    - Hao Zhu 
+    - Leena Mathur 
+    - Ruohong Zhang 
+    - Haofei Yu 
+    - Zhengyang Qi 
+    - Louis-Philippe Morency 
+    - Yonatan Bisk 
+    - Daniel Fried 
+    - Graham Neubig 
+    - Maarten Sap
+  VENUE: "The Twelfth International Conference on Learning Representations"
+  VENUE-ACR: "ICLR"
+  PRES: Spotlight
+  URL: "http://arxiv.org/abs/2310.11667"
+  YEAR: '2024'
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: 'HellaSwag: Can a Machine Really Finish Your Sentence? '
+  YEAR: '2019'
+  URL: https://arxiv.org/abs/1905.07830
+  AUTHORS:
+  - Rowan Zellers
+  - Ari Holtzman
+  - Yonatan Bisk
+  - Ali Farhadi
+  - Yejin Choi
+  VENUE: Association for Computational Linguistics
+  VENUE-ACR: ACL
+  EXTRAS:
+    GitHub: https://github.com/rowanz/hellaswag
+- FIELD: WS2
+  TYPE: Conference
+  TITLE: 'Synthetic and Natural Noise Both Break Neural Machine Translation '
+  YEAR: '2018'
+  URL: https://arxiv.org/abs/1711.02173
+  AUTHORS:
+  - Yonatan Belinkov
+  - Yonatan Bisk
+  VENUE: 6th International Conference on Learning Representations 
+  VENUE-ACR: ICLR 
+  PRES: Oral

@@ -1,0 +1,11 @@
+{
+  "evaluation_uses_v3_load_runtime_and_official_windows": true,
+  "foreign_jobs_interrupted": 0,
+  "formal_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+  "protocol_sha256": "00c492df523ea61832da1b56a74990282f5c78584d112692a11c590284b978d6",
+  "quality_evaluation_started": false,
+  "runner_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RANDOM_MATCHED_CONTROL_V1/run_random_matched_formal.py",
+  "runner_sha256": "3e02294eef7ebcf069f926b94bec9cfe192b71a421b1171de8767fa3633033d0",
+  "runs_reference_V1_and_V3_on_each_seed_gpu": true,
+  "status": "RANDOM_MATCHED_EVALUATOR_FROZEN"
+}

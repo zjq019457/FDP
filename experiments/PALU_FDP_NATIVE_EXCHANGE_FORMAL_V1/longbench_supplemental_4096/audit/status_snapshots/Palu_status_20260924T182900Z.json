@@ -1,0 +1,110 @@
+{
+  "foreign_jobs_interrupted": 0,
+  "longbench_comparisons": {
+    "lcc": {
+      "delta_native_minus_uniform": 0.38,
+      "fdp_native_schedule_sha": "74b779ae20c128f28a5588b5907906d593148a4d2be7cc6ad0fe519d312c9907",
+      "fdp_native_score": 0.56,
+      "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+      "n_each": 500,
+      "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+      "resource_exact": true,
+      "supplemental_only": true,
+      "uniform_schedule_sha": "3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834",
+      "uniform_score": 0.18
+    },
+    "repobench-p": {
+      "delta_native_minus_uniform": -1.37,
+      "fdp_native_schedule_sha": "74b779ae20c128f28a5588b5907906d593148a4d2be7cc6ad0fe519d312c9907",
+      "fdp_native_score": 0.93,
+      "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+      "n_each": 500,
+      "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+      "resource_exact": true,
+      "supplemental_only": true,
+      "uniform_schedule_sha": "3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834",
+      "uniform_score": 2.3
+    }
+  },
+  "snapshot": {
+    "compute_process_rows": [
+      "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 246278, /home/bai-project/jiaqizhang/.venv/bin/python, 15882 MiB",
+      "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 257856, /home/bai-project/jiaqizhang/.venv/bin/python3, 20518 MiB",
+      "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 368656, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4284 MiB",
+      "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 368655, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4284 MiB",
+      "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 368657, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4284 MiB",
+      "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806, 5663, /home/bai-project/jiaqizhang/.venv/bin/python, 15828 MiB",
+      "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806, 373854, /home/bai-project/jiaqizhang/.venv/bin/python, 14938 MiB",
+      "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806, 376027, /home/bai-project/jiaqizhang/.venv/bin/python, 18254 MiB",
+      "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5, 246362, /home/bai-project/jiaqizhang/.venv/bin/python, 15896 MiB",
+      "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5, 257857, /home/bai-project/jiaqizhang/.venv/bin/python3, 20518 MiB",
+      "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5, 352305, /home/bai-project/anaconda3/envs/eigen/bin/python, 22724 MiB"
+    ],
+    "diskE_free_bytes": 46839648256,
+    "foreign_jobs_interrupted": 0,
+    "formal_results_modified": false,
+    "gpu2_extra_pid_352305_identity": "EigenAttn build_eigen_basis_llama_error_budget_offline_fdp125_cpu_stage_v1.py; untouched",
+    "gpu_rows": [
+      "0, NVIDIA A100 80GB PCIe, 100 %, 49286 MiB, 31868 MiB",
+      "1, NVIDIA A100 80GB PCIe, 100 %, 49040 MiB, 32113 MiB",
+      "2, NVIDIA A100 80GB PCIe, 100 %, 59158 MiB, 21995 MiB"
+    ],
+    "observed_utc": "2026-09-24T18:29:00.927927+00:00",
+    "process_rows": [
+      "a180429+    5663       1 Rsl   1-00:09:16  171 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all",
+      "a180429+  246278       1 Rsl     10:15:15  100 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task qmsum --gpu 0",
+      "a180429+  246362       1 Rsl     10:15:11  100 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task qmsum --gpu 2",
+      "a180429+  257856       1 Rl      09:54:08  100 /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 0 --arm A --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/A_Q256_RMAX_0p5_20260924",
+      "a180429+  257857       1 Rl      09:54:08  100 /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 2 --arm B --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/B_Q256_RMAX_0p5_20260924",
+      "a180429+  352305       1 Rsl     01:04:08  170 /home/bai-project/anaconda3/envs/eigen/bin/python -c import torch,runpy,sys; torch.cuda.set_per_process_memory_fraction(0.4,device=0); p=sys.argv[1]; sys.argv=[p]+sys.argv[2:]; runpy.run_path(p,run_name='__main__') /home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline_fdp125_cpu_stage_v1.py --model /diskE/jiaqizhang/Qwen2.5-7B --tokenizer /diskE/jiaqizhang/Qwen2.5-7B --data_dir /home/bai-project/jiaqizhang/wikitext2 --out_dir /diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/qwen25_7b/medium/qwen25_medium_native_rope_resource_basis_cpu_stage_v2_20260924T172454Z --out_prefix qwen25_7b_medium_resource_basis_native_rope_v2_20260924T172454Z --error_budgets 0.0567 --nsamples 512 --seqlen 2048 --seed 2 --dtype bf16 --device cuda:0 --avg_dim 32 --strict_original_rank 1 --attn_implementation eager --low_vram",
+      "a180429+  373854  373822 Rsl        05:13  113 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task multi_news --gpu 1",
+      "a180429+  376027       1 Rl         02:07 92.6 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/XKV_FDP_NATIVE_FINE_ITERATIVE_V2/runtime/diagnostics/xkv_v2_head_causal_substitution_v1_20260924T181149Z.py"
+    ]
+  },
+  "utc": "2026-09-24T18:29:00.927927+00:00",
+  "v3_live_audit": {
+    "R_exact": 0.003662109375,
+    "accepted": 15,
+    "calibration_start_J": 1.890109695494175,
+    "changed_native_units": 22,
+    "checkpoint_mtime_utc": "2026-09-24T06:46:45.736578+00:00",
+    "checkpoint_sha256": "775a08494b74fc9f678b89253a4a2ad152e3c42a5cb46e9693f7857c7ba87fbb",
+    "checkpoint_status": "TUNE_CONFIG_CHECKPOINT",
+    "config_id": "armA_D16_R16_Rmax0.005_beam0",
+    "current_allocation_sha256": "41737b2ef75ee203d8f1339e8d116a63f6ee3c6248f617557974f4328072d40a",
+    "current_calibration_J": 1.8831734582781792,
+    "delta_vs_calibration_start_J": -0.006936237215995789,
+    "evaluated": 3840,
+    "foreign_jobs_interrupted": 0,
+    "formal_done": false,
+    "formal_ppl_started": false,
+    "gross_accepted_transfer_rank": 480,
+    "l1_rank_distance_to_frozen_V1_allocation": 960,
+    "last_audit_utc": "2026-09-24T18:29:00.927927+00:00",
+    "latest_checkpoint_J": 1.8814673125743866,
+    "latest_checkpoint_accepted": 23,
+    "latest_checkpoint_config_id": "armA_D16_R16_Rmax0.01_beam0",
+    "latest_checkpoint_evaluated": 5888,
+    "latest_checkpoint_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D16_R16_Rmax0.01_beam0/CHECKPOINT.json",
+    "latest_checkpoint_rejected": 4304,
+    "latest_checkpoint_sha256": "7cbb6d935d346cf7c0633a6297bdbae0f7965350a7c3eeed1341893edc825484",
+    "latest_checkpoint_updated_utc": "2026-09-24T16:04:15Z",
+    "lock_status": null,
+    "observed_utc": "2026-09-24T08:44:47.032053+00:00",
+    "redistribution_definition": "R=0.5*L1_rank_distance/131072",
+    "rejected": 2419,
+    "start_allocation_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+    "start_schedule_sha256_actual": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+    "start_schedule_sha256_manifest": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+    "state_status": "V3_TUNE_RUNNING",
+    "tune_config_dirs_observed": 11,
+    "tune_done_configs": 10,
+    "tune_grid_done": false,
+    "tune_pending_configs": [
+      "armA_D16_R16_Rmax0.01_beam0"
+    ],
+    "tune_state": "V3_TUNE_RUNNING",
+    "worker_alive": true,
+    "worker_pid": 5663
+  }
+}

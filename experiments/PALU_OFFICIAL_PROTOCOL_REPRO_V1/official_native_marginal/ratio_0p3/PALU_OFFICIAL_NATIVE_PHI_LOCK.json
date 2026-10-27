@@ -1,0 +1,13 @@
+{
+  "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "definition": "one legal official 32-rank decrement per K/V group; delta_J divided by relative native resource reduction",
+  "old_phi_status": "VALID_FOR_OLD_ANCHOR_SCHEMA_ONLY",
+  "profile_status_sha256": "7cf79e8ad61edd88d9a89e64b1d9321d48bbf9eb682c30356faed93f4a8fb272",
+  "profiling_manifest": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+  "q_mapping_sha256": "6fa7d16bb6689cf88dc78ea6a72f3d630abe1d2cf1ccf2729776a3e6768ae3d3",
+  "quality_used_to_select": false,
+  "ratio": 0.3,
+  "status": "OFFICIAL_NATIVE_PHI_LOCKED",
+  "units_csv": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_native_marginal/ratio_0p3/units.csv",
+  "units_sha256": "398f0fcd2cac4bc894e640ab45d1368912b3f382b98677aec736f3440fc9d219"
+}

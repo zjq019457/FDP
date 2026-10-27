@@ -1,0 +1,678 @@
+{
+  "captured_at_utc": "2026-09-24T08:08:52.942652+00:00",
+  "host": "ecs-bai-quad",
+  "gpu_query": "0, NVIDIA A100 80GB PCIe, 100 %, 45571 MiB, 35583 MiB\n1, NVIDIA A100 80GB PCIe, 100 %, 34289 MiB, 46865 MiB\n2, NVIDIA A100 80GB PCIe, 99 %, 14497 MiB, 66656 MiB",
+  "gpu_app_query": "238995, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4284 MiB\n240410, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4286 MiB\n240678, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4286 MiB\n242214, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4286 MiB\n243812, /home/bai-project/anaconda3/envs/eigen/bin/python, 26504 MiB\n243688, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 1884 MiB\n5663, /home/bai-project/jiaqizhang/.venv/bin/python, 15828 MiB\n51365, /home/bai-project/jiaqizhang/.venv/bin/python, 18446 MiB\n185069, /home/bai-project/jiaqizhang/.venv/bin/python, 14488 MiB",
+  "diskE_df": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sdd1       458G  389G   46G  90% /diskE",
+  "ps_relevant": "a180429+    5663       1    13:49:07 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all\na180429+  185069       1    01:53:25 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task lcc --gpu 2",
+  "tmux": "no server running on /tmp/tmux-1009/default",
+  "screen": "No Sockets found in /run/screen/S-a1804298693.",
+  "gpu_pid_details": {
+    "238995": "tjl_0516  238995  238994       40:55 /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/v11_op15_BCI_s0/final_online.pt --marker BCI --partition test --grid 8 --bound 0.03 --run-name fp32g8_v11_op15_BCI_s0 --gpu 0 --dump-images /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/dump_fp32g8_BCI_s0",
+    "240410": "tjl_0516  240410  240409       13:09 /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/v11_op15_PR_s17/final_online.pt --marker PR --partition validation --grid 8 --bound 0.03 --run-name fp32g8_v11_op15_PR_s17 --gpu 0",
+    "240678": "tjl_0516  240678  240677       10:44 /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/v11_op15_Ki67_s5/final_online.pt --marker Ki67 --partition validation --grid 8 --bound 0.03 --run-name fp32g8_v11_op15_Ki67_s5 --gpu 0",
+    "242214": "tjl_0516  242214  242213       05:11 /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/abl_ABLCOLOC/final_online.pt --marker HER2 --partition validation --grid 8 --bound 0.03 --run-name fp32g8_abl_ABLCOLOC --gpu 0",
+    "243812": "a180429+  243812       1       00:22 /home/bai-project/anaconda3/envs/eigen/bin/python -u -c import torch,runpy,sys; torch.cuda.set_per_process_memory_fraction(0.4,0); p=sys.argv[1]; sys.argv=[p]+sys.argv[2:]; runpy.run_path(p,run_name='__main__') /home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py --model /diskE/jiaqizhang/Qwen2.5-7B --tokenizer /diskE/jiaqizhang/Qwen2.5-7B --data_dir /home/bai-project/jiaqizhang/wikitext2 --out_dir /diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/qwen25_7b/medium/fresh_basis_calibration_v1_20260924T0100Z --out_prefix qwen25_7b_fdp125_tier_basis_v1 --error_budgets 0.0440,0.0567,0.0875 --nsamples 512 --seqlen 2048 --seed 2 --dtype bf16 --device cuda:0 --avg_dim 32 --strict_original_rank 1 --attn_implementation eager",
+    "243688": "tjl_0516  243688  243671       00:23 /diskD/jialin_tang/conda_envs/esv-ihc/bin/python /diskD/jialin_tang/he2ihc/outputs/upstream_checkpoint_evaluation/vsmt_official_checkpoint/evaluate_vsmt_folder_outputs.py --real-dir /diskD/jialin_tang/he2ihc/data/raw/BCI_dataset/IHC/test --fake-dir /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/dump_fp32g8_BCI_s17 --output-dir /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/evaluation/fp32g8_v11_op15_BCI_s17/folder_metrics --domain BCI_HER2 --expected-count 977 --device-index 0 --batch-size 8",
+    "5663": "a180429+    5663       1    13:49:07 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all",
+    "51365": "a180429+   51365   51341    11:13:22 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskF/jiaqizhang/XKV_PAPER_REPRO_FDP_V1/code/xkv_paper_entry.py --flash2 --dataset_name long_bench/passage_retrieval_en,long_bench/lcc,long_bench/repobench-p --datalen 65536 --model_name_or_path /diskF/jiaqizhang/Llama-3.1 --batch_size 1 --method xkv --merge_k --merge_v --rank_k 384 --rank_v 576 --layer_group_size 4 --start_layer_idx 0 --end_layer_idx -1 --customized_merge_config /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/formal_configs/XKV_NATIVE_PHI_EXCHANGE.yaml --result_dir /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/results/formal_resumed/XKV_NATIVE_PHI_EXCHANGE_LONGBENCH_RECOVERY_20260923T2058Z",
+    "185069": "a180429+  185069       1    01:53:25 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task lcc --gpu 2"
+  },
+  "PALU_PIPELINE_STATE.json": {
+    "sha256": "e097955e1ab21f4d197236ae09bfc58e333f78f15b2c4bf8d48e59846c24736a",
+    "bytes": 4508,
+    "data": {
+      "active_workers": "longbench supplemental LCC active on GPU0",
+      "active_zero_shot_method": null,
+      "active_zero_shot_progress": null,
+      "cross_compressor_master": "updated with PaLu, SnapKV cached-AR, and xKV MEDIUM valid report rows",
+      "downstream_ratio_0.5": "uniform, fisher, fdp_prior, fdp_native zero-shot complete; closure aggregate pending",
+      "foreign_jobs_interrupted": 0,
+      "formal_manifest_declared_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+      "formal_manifest_observed_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+      "gpu1_used": false,
+      "longbench_supplemental": {
+        "ratio_0.5": {
+          "PALU_UNIFORM": {
+            "samsum": {
+              "foreign_jobs_interrupted": 0,
+              "formal_cache_bytes": 133693440,
+              "gpu1_used": false,
+              "manifest_sha": "65c0304ee4e7059fb8eabd621edc9e4f8bf374f8a76594cf3642783456fe76c4",
+              "n_samples": 200,
+              "native_rank": 32640,
+              "provenance": "longbench_supplemental_4096/logs/ratio0p5_uniform_samsum_gpu0.log",
+              "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+              "schedule_sha": "3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834",
+              "score": 1.92,
+              "status": "COMPLETE"
+            },
+            "lcc": {
+              "status": "COMPLETE",
+              "run_id": "RATIO0P5_UNIFORM_LCC_GPU0_20260924T0222Z",
+              "pid": 148298,
+              "gpu": 0,
+              "n_samples_completed": 500,
+              "n_samples_expected": 500,
+              "unique_sample_ids": 500,
+              "partial_records_valid": true,
+              "native_rank": 32640,
+              "prefill_cache_bytes": 133693440,
+              "decode_cache_bytes": 133693440,
+              "manifest_sha": "65c0304ee4e7059fb8eabd621edc9e4f8bf374f8a76594cf3642783456fe76c4",
+              "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+              "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+              "schedule_sha": "3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834",
+              "provenance": "longbench_supplemental_4096/logs/ratio0p5_uniform_lcc_gpu0_20260924T0222Z.log",
+              "foreign_jobs_interrupted": 0,
+              "formal_results_modified": false,
+              "last_progress_utc": "2026-09-24T05:12:38Z",
+              "score": 0.18,
+              "result_sha256": "8f19b2d78ac224f3a944e374f77424d6a41d7529d6f0d1d618403c23499c484d",
+              "raw_jsonl_sha256": "15a42b834d4ce37112ea3cb0d157e28031c90282c662559a483efb3a42d29c89",
+              "worker_active": false
+            }
+          },
+          "PALU_FDP_NATIVE": {
+            "lcc": {
+              "status": "ACTIVE",
+              "run_id": "RATIO0P5_FDP_NATIVE_LCC_GPU2_20260924T0612Z",
+              "pid": 185069,
+              "gpu": 2,
+              "n_samples_completed": 93,
+              "n_samples_expected": 500,
+              "unique_sample_ids": 93,
+              "partial_records_valid": true,
+              "native_rank": 32640,
+              "prefill_cache_bytes": 133693440,
+              "decode_cache_bytes": 133693440,
+              "manifest_sha": "65c0304ee4e7059fb8eabd621edc9e4f8bf374f8a76594cf3642783456fe76c4",
+              "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+              "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+              "schedule_sha": "74b779ae20c128f28a5588b5907906d593148a4d2be7cc6ad0fe519d312c9907",
+              "provenance": "longbench_supplemental_4096/logs/ratio0p5_fdp_native_lcc_gpu2_20260924T0612Z.log",
+              "foreign_jobs_interrupted": 0,
+              "formal_results_modified": false,
+              "worker_active": true,
+              "started_utc": "2026-09-24T06:12:37Z",
+              "last_progress_utc": "2026-09-24T06:43:41Z",
+              "runtime_warning": "transformers warned prompt plus generation can exceed configured 4096 positions; frozen manifest/protocol unchanged"
+            }
+          }
+        }
+      },
+      "main_matrix": "12/12 complete",
+      "random_ablation": "3/3 complete",
+      "status": "ZERO_SHOT_LOCAL_ALL_METHODS_COMPLETE_PENDING_CLOSURE_AGGREGATE",
+      "system_overhead": "2/2 representative profiles complete",
+      "zero_shot_completed_methods": [
+        "uniform",
+        "fisher",
+        "fdp_prior",
+        "fdp_native"
+      ],
+      "zero_shot_completed_ratio_0p5": "4/4",
+      "zero_shot_dataset_binding": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/PALU_ZERO_SHOT_LOCAL_DATASET_BINDING.json",
+      "zero_shot_pending_methods": []
+    }
+  },
+  "PALU_ICLR_REQUIREMENT_MATRIX.json": {
+    "sha256": "816c917df88a3fef5a6b4b7a81da5b279d56942461055a940eb545d8c7538d54",
+    "bytes": 954,
+    "data": {
+      "ACTUAL_RESOURCE_AUDIT_COMPLETE": true,
+      "CROSS_COMPRESSOR_MASTER_UPDATED": true,
+      "FOREIGN_JOBS_INTERRUPTED": 0,
+      "FORMAL_MANIFEST_VERIFIED": true,
+      "NATIVE_MARGINAL_03_FROZEN": true,
+      "NATIVE_MARGINAL_05_FROZEN": true,
+      "NATIVE_MARGINAL_07_FROZEN": true,
+      "NO_QUALITY_DRIVEN_RETUNING": true,
+      "OFFICIAL_METHOD_CARD_FROZEN": true,
+      "OFFICIAL_PAPER_REPRODUCTION_AUDITED": true,
+      "PALU_DETAILED_TABLE_COMPLETE": true,
+      "RATIO_03_ALL_COMPLETE": true,
+      "RATIO_05_ALL_COMPLETE": true,
+      "RATIO_07_FISHER_COMPLETE": true,
+      "RATIO_07_NATIVE_COMPLETE": true,
+      "RATIO_07_PRIOR_COMPLETE": true,
+      "RATIO_07_UNIFORM_COMPLETE": true,
+      "REPRESENTATIVE_RANDOM_CONTROL_COMPLETE": true,
+      "REQUIRED_DOWNSTREAM_EVALUATION_COMPLETE": false,
+      "RUNTIME_PROVENANCE_AUDITED": true,
+      "SYSTEM_OVERHEAD_REPORTED": true,
+      "closure_status": "BLOCKED_EXTERNAL_DATASET_UNAVAILABLE_PENDING_ZERO_SHOT",
+      "generated_at_utc": "2026-09-19T08:14:44.540090+00:00"
+    }
+  },
+  "PALU_ICLR_CLOSURE_BLOCKED.json": {
+    "sha256": "4f386e000841ecc432b762b68805603b56e5fdf43890482150c23fa58eac644c",
+    "bytes": 1877,
+    "data": {
+      "blocker": {
+        "exception": "ConnectionError: Couldn't reach 'allenai/openbookqa' on the Hub (LocalEntryNotFoundError)",
+        "failure_type": "RESOLVED_BY_LOCAL_BINDING",
+        "first_failure_task": "openbookqa",
+        "historical_results_modified": false,
+        "historical_status_before_local_audit": "BLOCKED_EXTERNAL_DATASET_UNAVAILABLE",
+        "independent_cells_completed": [
+          "main formal PPL 12/12",
+          "random ratio 0.5 seeds 0/1/2",
+          "system profile ratio 0.5 Fisher/FDP_NATIVE"
+        ],
+        "local_binding_audit": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/PALU_ZERO_SHOT_LOCAL_DATASET_BINDING.json",
+        "model_or_schedule_changed": false,
+        "next_action_required": "run missing ratio-0.5 zero-shot cells with frozen protocol and local bindings",
+        "protocol_changed": false,
+        "remote_network_probe": "curl to huggingface.co reset by peer",
+        "sample_manifest_changed": false,
+        "scorer_changed": false,
+        "stage": "ratio_0.5 official zero-shot downstream",
+        "status": "LOCAL_DATA_BOUND_PENDING_EXECUTION",
+        "task_status": {
+          "arc_challenge": "FOUND_AND_BOUND",
+          "arc_easy": "FOUND_AND_BOUND",
+          "hellaswag": "FOUND_AND_BOUND",
+          "openbookqa": "FOUND_AND_BOUND",
+          "piqa": "FOUND_AND_BOUND",
+          "winogrande": "FOUND_AND_BOUND"
+        },
+        "tasks": [
+          "openbookqa",
+          "hellaswag",
+          "piqa",
+          "arc_easy",
+          "arc_challenge",
+          "winogrande"
+        ]
+      },
+      "completed": {
+        "cross_compressor_reporting": true,
+        "formal_main": "12/12",
+        "random_050": "3/3",
+        "system_050": "2/2"
+      },
+      "historical_results_modified": false,
+      "not_completed": [
+        "official zero-shot downstream 0.5 four methods"
+      ],
+      "requirement_matrix": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/PALU_ICLR_REQUIREMENT_MATRIX.json",
+      "status": "LOCAL_DATA_BOUND_PENDING_EXECUTION"
+    }
+  },
+  "manifest_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+  "manifest_matches_last_frozen_file_sha": true,
+  "manifest_keys": [
+    "status",
+    "campaign",
+    "model",
+    "ratio",
+    "tasks",
+    "n_tasks",
+    "n_samples",
+    "task_files",
+    "max_length",
+    "generation",
+    "q_sha",
+    "prompt_sha",
+    "scorer_sha",
+    "metrics_sha",
+    "dataset_manifest_sha",
+    "manifest_sha"
+  ],
+  "manifest_tasks": [
+    "triviaqa",
+    "qasper",
+    "trec",
+    "samsum",
+    "lcc",
+    "repobench-p",
+    "qmsum",
+    "multi_news"
+  ],
+  "method_output_inventory": {
+    "PALU_UNIFORM": [
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/samsum.raw.json",
+        "bytes": 524,
+        "mtime_utc": "2026-09-20T03:17:25.068096+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/qasper.raw.jsonl",
+        "bytes": 171401,
+        "mtime_utc": "2026-09-19T16:56:27.648127+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/qasper.raw.json",
+        "bytes": 523,
+        "mtime_utc": "2026-09-19T16:56:27.648127+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/trec.raw.json",
+        "bytes": 521,
+        "mtime_utc": "2026-09-19T19:49:48.980175+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/triviaqa.raw.json",
+        "bytes": 526,
+        "mtime_utc": "2026-09-19T13:49:42.930918+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/trec.raw.jsonl",
+        "bytes": 109222,
+        "mtime_utc": "2026-09-19T19:49:48.980175+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/samsum.raw.jsonl",
+        "bytes": 149398,
+        "mtime_utc": "2026-09-20T03:17:25.067096+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/triviaqa.raw.jsonl",
+        "bytes": 152589,
+        "mtime_utc": "2026-09-19T13:49:42.930918+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/lcc.raw.json",
+        "bytes": 521,
+        "mtime_utc": "2026-09-24T04:46:27.285092+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_UNIFORM/lcc.raw.jsonl",
+        "bytes": 277987,
+        "mtime_utc": "2026-09-24T04:46:27.284092+00:00"
+      }
+    ],
+    "PALU_FDP_NATIVE": [
+      {
+        "path": "ratio_0.5/PALU_FDP_NATIVE/samsum.raw.json",
+        "bytes": 527,
+        "mtime_utc": "2026-09-20T12:03:19.813113+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_FDP_NATIVE/qasper.raw.jsonl",
+        "bytes": 162897,
+        "mtime_utc": "2026-09-19T18:43:05.228472+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_FDP_NATIVE/qasper.raw.json",
+        "bytes": 527,
+        "mtime_utc": "2026-09-19T18:43:05.228472+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_FDP_NATIVE/trec.raw.json",
+        "bytes": 525,
+        "mtime_utc": "2026-09-19T21:34:37.272810+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_FDP_NATIVE/triviaqa.raw.json",
+        "bytes": 529,
+        "mtime_utc": "2026-09-19T13:48:41.390736+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_FDP_NATIVE/trec.raw.jsonl",
+        "bytes": 120082,
+        "mtime_utc": "2026-09-19T21:34:37.272810+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_FDP_NATIVE/samsum.raw.jsonl",
+        "bytes": 153963,
+        "mtime_utc": "2026-09-20T12:03:19.812113+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_FDP_NATIVE/triviaqa.raw.jsonl",
+        "bytes": 151657,
+        "mtime_utc": "2026-09-19T13:48:41.390736+00:00"
+      },
+      {
+        "path": "ratio_0.5/PALU_FDP_NATIVE/lcc.raw.jsonl",
+        "bytes": 220344,
+        "mtime_utc": "2026-09-24T08:08:51.970381+00:00"
+      }
+    ],
+    "PALU_FDP_PRIOR": [],
+    "PALU_FDP_FISHER": []
+  },
+  "lcc_audit": {
+    "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/lcc.raw.jsonl",
+    "raw_rows": 388,
+    "parse_errors": 0,
+    "valid_rows": 388,
+    "valid_rows_with_id": 388,
+    "valid_unique_ids": 388,
+    "duplicate_valid_ids": 0,
+    "record_keys": [
+      [
+        "method",
+        388
+      ],
+      [
+        "ratio",
+        388
+      ],
+      [
+        "task",
+        388
+      ],
+      [
+        "sample_id",
+        388
+      ],
+      [
+        "row_index",
+        388
+      ],
+      [
+        "prediction",
+        388
+      ],
+      [
+        "reference",
+        388
+      ],
+      [
+        "score",
+        388
+      ],
+      [
+        "valid",
+        388
+      ],
+      [
+        "q_sha",
+        388
+      ],
+      [
+        "schedule_sha",
+        388
+      ],
+      [
+        "native_rank",
+        388
+      ]
+    ],
+    "first_record": {
+      "method": "PALU_FDP_NATIVE",
+      "ratio": 0.5,
+      "task": "lcc",
+      "sample_id": "28ce5cf5e0beeb47248c6cba20ae17fa71d60d402770d464",
+      "row_index": 0,
+      "prediction": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "reference": [
+        "\t\t\t\tParticipant p = (Participant)m_Participants[i];"
+      ],
+      "score": 0.0,
+      "valid": true,
+      "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+      "schedule_sha": "74b779ae20c128f28a5588b5907906d593148a4d2be7cc6ad0fe519d312c9907",
+      "native_rank": 32640
+    }
+  },
+  "v3_process": {
+    "pid": "5663",
+    "alive": true,
+    "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all"
+  },
+  "v3_root": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3",
+  "v3_files": [
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/STATE.json",
+      "bytes": 1899,
+      "mtime_utc": "2026-09-24T06:20:28.898480+00:00",
+      "sha256": "e54aeb44bd1abfe98d5f01978d4b4df35ff0c2b57287015e22032af36676fdb5"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3_MANIFEST.json",
+      "bytes": 3006,
+      "mtime_utc": "2026-09-23T07:23:47.777430+00:00",
+      "sha256": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/profile/DONE.json",
+      "bytes": 189,
+      "mtime_utc": "2026-09-23T09:31:38.133221+00:00",
+      "sha256": "0a979252d8848adba792cd7dd3c63fead33d8d6da8fdb204493e7392cce41314"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D8_R8_Rmax0.02_beam0/CHECKPOINT.json",
+      "bytes": 599794,
+      "mtime_utc": "2026-09-23T19:55:09.882668+00:00",
+      "sha256": "afe5dc01ce86fe5f65879942c7a35541a58558c6cb97aa991b7994839f08a597"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D8_R8_Rmax0.02_beam0/DONE.json",
+      "bytes": 384249,
+      "mtime_utc": "2026-09-23T19:55:12.998568+00:00",
+      "sha256": "7a9a25532f42fcffcef78133b4d725a8268da6bfce2906acce9dbb401b6d13d6"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D8_R8_Rmax0.0025_beam0/CHECKPOINT.json",
+      "bytes": 469669,
+      "mtime_utc": "2026-09-23T18:26:14.644561+00:00",
+      "sha256": "b9638057399c9a5a20a77aa6380e19fe4538b8de6b4700bb9a6e9670d35e3e06"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D8_R8_Rmax0.0025_beam0/DONE.json",
+      "bytes": 251387,
+      "mtime_utc": "2026-09-23T18:26:14.698560+00:00",
+      "sha256": "b163ac99fe878734a5606ae0415aa8eb85589b559a0f3494ef4f238cf24c1cb3"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D4_R4_Rmax0.0025_beam0/CHECKPOINT.json",
+      "bytes": 170965,
+      "mtime_utc": "2026-09-23T11:51:16.308255+00:00",
+      "sha256": "48ed182fffe486581d79bd4637a93171b302375d4b48d50f9db9f1e876efb066"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D4_R4_Rmax0.0025_beam0/DONE.json",
+      "bytes": 48624,
+      "mtime_utc": "2026-09-23T11:53:05.455079+00:00",
+      "sha256": "3d29f977c49737af083fc771604e4573b0cdaad6ca178b6bcf02974a40dc39d7"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D16_R16_Rmax0.005_beam0/CHECKPOINT.json",
+      "bytes": 2195646,
+      "mtime_utc": "2026-09-24T06:46:45.736578+00:00",
+      "sha256": "775a08494b74fc9f678b89253a4a2ad152e3c42a5cb46e9693f7857c7ba87fbb"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D4_R4_Rmax0.01_beam0/CHECKPOINT.json",
+      "bytes": 171794,
+      "mtime_utc": "2026-09-23T11:53:16.024772+00:00",
+      "sha256": "5b23cc336b3cc3c3ebcb7c4ac57c644fa1276401e8d9f2bedd9881b949423e88"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D4_R4_Rmax0.01_beam0/DONE.json",
+      "bytes": 49232,
+      "mtime_utc": "2026-09-23T11:53:16.824748+00:00",
+      "sha256": "bdc8821bb432451bcceceb0c1f1ebc1a86b07b65d22485d1cb0ecb4eb62c33f5"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D8_R8_Rmax0.005_beam0/CHECKPOINT.json",
+      "bytes": 595667,
+      "mtime_utc": "2026-09-23T19:48:52.992424+00:00",
+      "sha256": "f1aa137e50def0177aeb3293744a256e94c5aeca655e15a104c785d6276bba78"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D8_R8_Rmax0.005_beam0/DONE.json",
+      "bytes": 381222,
+      "mtime_utc": "2026-09-23T19:53:39.248611+00:00",
+      "sha256": "685d51518d117e78c61219c84349178131cba34631b5231cd641a82e95dfbd3c"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D8_R8_Rmax0.01_beam0/CHECKPOINT.json",
+      "bytes": 597373,
+      "mtime_utc": "2026-09-23T19:54:23.165177+00:00",
+      "sha256": "6c8885592de7f7381d3814efc2636518eadde46e972606f80140bdc919ae0c02"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D8_R8_Rmax0.01_beam0/DONE.json",
+      "bytes": 382506,
+      "mtime_utc": "2026-09-23T19:54:26.281076+00:00",
+      "sha256": "854d5a6f0ce6d88d969f2b4531cd5d5f9ace07ed81e386ba430549e2c6f62c4e"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D4_R4_Rmax0.005_beam0/CHECKPOINT.json",
+      "bytes": 170958,
+      "mtime_utc": "2026-09-23T11:53:10.343937+00:00",
+      "sha256": "52193d8f85bfc1dab3609e71b79ae952a959cf2370d97a6e6bb4db76bb80b199"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D4_R4_Rmax0.005_beam0/DONE.json",
+      "bytes": 48615,
+      "mtime_utc": "2026-09-23T11:53:11.133914+00:00",
+      "sha256": "f2c4e1073c369c89c7d1989a32f2d492f00ee7227144528fd77cf7e68785e86d"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D16_R16_Rmax0.0025_beam0/CHECKPOINT.json",
+      "bytes": 1355274,
+      "mtime_utc": "2026-09-24T03:05:42.051564+00:00",
+      "sha256": "a7e5b9223de000bb9887797705a815e397dacba3a196b047a0e298cbe7d6ed7d"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D16_R16_Rmax0.0025_beam0/DONE.json",
+      "bytes": 876863,
+      "mtime_utc": "2026-09-24T03:05:42.116562+00:00",
+      "sha256": "72cab6c54891f5f8a2c99b53d83856b971ede83387ce3279ef32708a33fdfdba"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D4_R4_Rmax0.02_beam0/CHECKPOINT.json",
+      "bytes": 170961,
+      "mtime_utc": "2026-09-23T11:53:21.712606+00:00",
+      "sha256": "8401f640e1f41591c4130d6779c821f560497dc69f0c12456e5d0b01bfc4df6a"
+    },
+    {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D4_R4_Rmax0.02_beam0/DONE.json",
+      "bytes": 48614,
+      "mtime_utc": "2026-09-23T11:53:22.499583+00:00",
+      "sha256": "c58b30691a9478bb5f300e366fe851bd78d4763c28db7b41642b643476b2941f"
+    }
+  ],
+  "log_tails": {
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/logs/profile_supervisor.log": [],
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/logs/profile_gpu2_20260923T074443Z.log": [
+      "",
+      "Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.42s/it]",
+      "Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.46s/it]",
+      "Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.61s/it]",
+      "{\"foreign_jobs_interrupted\": 0, \"phase\": \"profile\", \"runner_sha256\": \"37fc000450646c8cfc1281b26644badd92e788c795dc0b810edcd9c9c4a3aa5b\", \"status\": \"V3_PROFILE_COMPLETE\"}"
+    ],
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/logs/TUNE_ALL_GPU2_ADDENDUM_002_20260923T1010Z.log": [
+      "/home/bai-project/jiaqizhang/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.",
+      "  warnings.warn(",
+      "",
+      "Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.40s/it]",
+      "Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.45s/it]",
+      "Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.59s/it]",
+      "Traceback (most recent call last):",
+      "  File \"/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py\", line 1128, in <module>",
+      "    main()",
+      "  File \"/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py\", line 1117, in main",
+      "    arm_phase(args)",
+      "  File \"/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py\", line 1088, in arm_phase",
+      "    tune_phase(engine, profile, model_parts, split_inputs['PROFILE'], split_inputs['CALIBRATION_TUNE'],",
+      "  File \"/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py\", line 799, in tune_phase",
+      "    result = arm_tune(engine, profile, model_parts, profile_inputs_tuple, tune_tuple, start, arm, cfg)",
+      "             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "  File \"/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py\", line 601, in arm_tune",
+      "    current = load_eval_cache('CALIBRATION_TUNE', selection, tid, tw, tc)",
+      "              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "  File \"/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py\", line 309, in load_eval_cache",
+      "    model_parts = load_eval_cache.model_parts",
+      "                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "AttributeError: 'function' object has no attribute 'model_parts'"
+    ],
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/logs/TUNE_ALL_GPU2_ADDENDUM_003_RETRY_1.log": [
+      "/home/bai-project/jiaqizhang/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.",
+      "  warnings.warn(",
+      "",
+      "Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.40s/it]",
+      "Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.45s/it]",
+      "Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.60s/it]"
+    ],
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/logs/v3_tune_resume_20260923T181946Z.log": [
+      "",
+      "Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]",
+      "Loading checkpoint shards:  50%|█████     | 1/2 [00:24<00:24, 24.22s/it]",
+      "Loading checkpoint shards: 100%|██████████| 2/2 [00:32<00:00, 14.96s/it]",
+      "Loading checkpoint shards: 100%|██████████| 2/2 [00:32<00:00, 16.35s/it]"
+    ],
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/logs/ratio0p5_uniform_lcc_gpu0_20260924T0222Z.log": [
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "{",
+      "  \"validity\": \"VALID\",",
+      "  \"campaign\": \"PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1_LONGBENCH_SUPPLEMENTAL\",",
+      "  \"method\": \"PALU_UNIFORM\",",
+      "  \"ratio\": 0.5,",
+      "  \"task\": \"lcc\",",
+      "  \"score\": 0.18,",
+      "  \"n_samples\": 500,",
+      "  \"manifest_sha\": \"65c0304ee4e7059fb8eabd621edc9e4f8bf374f8a76594cf3642783456fe76c4\",",
+      "  \"schedule_sha\": \"3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834\",",
+      "  \"q_sha\": \"6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1\",",
+      "  \"native_rank\": 32640,",
+      "  \"formal_cache_bytes\": 133693440,",
+      "  \"gpu\": 0",
+      "}"
+    ],
+    "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/logs/ratio0p5_fdp_native_lcc_gpu2_20260924T0612Z.log": [
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details.",
+      "The following generation flags are not valid and may be ignored: ['top_p']. Set `TRANSFORMERS_VERBOSITY=info` for more details."
+    ]
+  }
+}

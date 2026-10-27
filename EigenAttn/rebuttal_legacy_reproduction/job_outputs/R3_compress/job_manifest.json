@@ -1,0 +1,18 @@
+{
+  "job_id": "R3_compress",
+  "stage": "R3",
+  "kind": "gpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/r3_compress.py"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": 0,
+  "depends_on": [
+    "R3_adaptive_basis"
+  ],
+  "created_at": "2026-07-29T01:45:55.025180-07:00",
+  "meta": {
+    "role": "compress"
+  }
+}

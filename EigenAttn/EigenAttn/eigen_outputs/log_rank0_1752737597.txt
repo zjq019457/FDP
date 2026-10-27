@@ -1,0 +1,21 @@
+[2025-07-17 00:33:17 root] (main_eigen_attn.py 326): INFO Namespace(model='facebook/opt-125m', cache_dir='./HF_cache', resume=None, calib_dataset='wikitext2', nsamples=128, batch_size=2, seed=2, tasks='piqa,arc_e,arc_c,hellaswag,winogrande', eval_ppl=True, num_fewshot=0, limit=-1, multigpu=False, attn_implementation='eager', net='opt-125m', load_low_rank=False, load_peft_model=True, peft_model_path='./your_finetuned_model', save_dir=None, output_dir='./eigen_outputs', evaluate_baseline=False, avg_dim=48, error_budget=0.025, fine_tune=False)
+[2025-07-17 00:33:17 root] (main_eigen_attn.py 364): INFO === start low rank decomposition ===
+[2025-07-17 00:33:17 root] (main_eigen_attn.py 370): INFO load calibration from ./HF_cache/dataloader_opt_wikitext2_128.cache
+[2025-07-17 00:33:17 root] (eigen_attn.py 10): INFO Starting ...
+[2025-07-17 00:33:18 root] (eigen_attn.py 104): INFO Loading eigen_basis.pt ...
+[2025-07-17 00:33:20 root] (eigen_attn.py 138): INFO [Precomputed] layer 0 error:1.048482 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:22 root] (eigen_attn.py 138): INFO [Precomputed] layer 1 error:5.235209 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:24 root] (eigen_attn.py 138): INFO [Precomputed] layer 2 error:0.506795 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:25 root] (eigen_attn.py 138): INFO [Precomputed] layer 3 error:0.607507 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:27 root] (eigen_attn.py 138): INFO [Precomputed] layer 4 error:1.272453 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:29 root] (eigen_attn.py 138): INFO [Precomputed] layer 5 error:1.711015 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:30 root] (eigen_attn.py 138): INFO [Precomputed] layer 6 error:1.927811 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:31 root] (eigen_attn.py 138): INFO [Precomputed] layer 7 error:1.964291 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:33 root] (eigen_attn.py 138): INFO [Precomputed] layer 8 error:1.756431 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:35 root] (eigen_attn.py 138): INFO [Precomputed] layer 9 error:1.243949 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:37 root] (eigen_attn.py 138): INFO [Precomputed] layer 10 error:1.574249 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:39 root] (eigen_attn.py 138): INFO [Precomputed] layer 11 error:1.136187 rank_kq: 48 rank_v: 48
+[2025-07-17 00:33:39 root] (main_eigen_attn.py 492): INFO 22.148489236831665
+[2025-07-17 00:33:39 root] (main_eigen_attn.py 494): INFO === Evaluating compressed model ===
+[2025-07-17 00:33:39 root] (main_eigen_attn.py 496): INFO Compressed model parameters : 0.098680512 Billion
+[2025-07-17 00:33:39 root] (main_eigen_attn.py 503): INFO Compressed model KV Cache Size : 0.00439453125 GB for batch size of 1

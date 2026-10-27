@@ -1,0 +1,185 @@
+{
+  "audit_id": "FDP125_LONGBENCH_QA6_PAIRED_UNCERTAINTY_AUDIT_V1",
+  "status": "PASS_SAMPLE_PAIRED_WITHIN_FIXED_TASKS",
+  "created_at_utc": "2026-09-24T18:29:15.557473+00:00",
+  "scope": "post-hoc scoped QA-6 endpoint; conditional sample-level uncertainty, not a preregistered task-population claim",
+  "model": "Meta-Llama-3-8B base / local Llama-3",
+  "tier": "Medium",
+  "method": "Official EigenAttention vs FDP125 Direct",
+  "manifests": {
+    "corrected_qa6_manifest_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/FDP125_LONGBENCH_QA6_FORMAL_MANIFEST_CORRECTED.json",
+    "corrected_qa6_manifest_sha256": "2d5b73583e52adea75e70521adb8811677e5c03114001abe21df7ccd13e2407e",
+    "frozen_score_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/scores/FDP125_LONGBENCH_QA6_SCORES_CORRECTED.json",
+    "frozen_score_sha256": "bbcf83b66ae4e12fd7e7b424e91a77a45b5613a1a956aaba9b35892fe850db5b",
+    "source_17task_uncertainty_protocol_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_formal_v1/medium/audit/FDP125_LONGBENCH_MEDIUM_PAIRED_UNCERTAINTY_AUDIT.json",
+    "source_17task_uncertainty_protocol_sha256": "39429af2f81babbdc91343c22d27fde928e022fbbd25478608ad9a925c15d3d2"
+  },
+  "scorer": {
+    "path": "/home/bai-project/jiaqizhang/EigenAttn/slim/longbench_eval.py",
+    "sha256": "a71ef393206539961e976bf83f90349008f01208e16944f2a9c935ea4108b243",
+    "mode": "frozen scorer applied to full tasks and singleton rows; aggregation verified against frozen scores"
+  },
+  "resource": {
+    "official_B_live": 199917568,
+    "fdp125_B_live": 199753728,
+    "gap_bytes_fdp_minus_official": -163840,
+    "gap_pct_vs_official": -0.081953778069169
+  },
+  "point_estimate": {
+    "official_equal_task_macro_reported": 6.56,
+    "fdp125_equal_task_macro_reported": 7.240000000000001,
+    "reported_delta_pp": 0.6800000000000015,
+    "unrounded_equal_task_delta_from_per_sample_scores_pp": 0.6803527777777778,
+    "task_macro_rounding": "frozen scorer rounds task scores to 2 decimal places; bootstrap uses unrounded per-sample scores"
+  },
+  "primary_uncertainty": {
+    "method": "paired stratified sample bootstrap, fixed six tasks, equal task weights",
+    "resampling_unit": "within each task, resample aligned sample IDs with replacement; compute FDP125-Official task mean; average the six task means",
+    "bootstrap_reps": 5000,
+    "bootstrap_seed": 20260921,
+    "seed_reused_from_frozen_17task_paired_uncertainty_audit": true,
+    "ci95_pp": [
+      0.13060729166666668,
+      1.2337104166666664
+    ]
+  },
+  "secondary_sensitivity": {
+    "method": "bootstrap six reported task deltas with replacement",
+    "bootstrap_reps": 5000,
+    "bootstrap_seed": 20260922,
+    "ci95_pp": [
+      -0.04666666666666656,
+      1.508333333333333
+    ],
+    "warning": "six tasks were selected as a fixed post-hoc endpoint; this is task-set sensitivity only, not a generalization CI"
+  },
+  "tasks": {
+    "narrativeqa": {
+      "n": 200,
+      "official_reported_score": 2.09,
+      "fdp125_reported_score": 2.4,
+      "reported_delta_pp": 0.31000000000000005,
+      "official_unrounded_sample_mean": 2.0898,
+      "fdp125_unrounded_sample_mean": 2.403,
+      "unrounded_paired_delta_mean_pp": 0.3132,
+      "paired_sample_delta_sd_pp": 2.0583927378701525,
+      "ordered_id_sha256": "a7e296e807cd63947083c828f2e86db5922a8b060a0820e7dc66ea1c2ab1ffb4",
+      "official_prediction_sha256": "4eb6df55e5a6d7b3f53be0c9a3fa182eb31296975f8076f22ca1504735e3145a",
+      "fdp125_prediction_sha256": "4ed33f36350c6f2df3b7ebc42e592f25c53f5b27321121cf5fb2000211557307"
+    },
+    "qasper": {
+      "n": 200,
+      "official_reported_score": 9.08,
+      "fdp125_reported_score": 9.28,
+      "reported_delta_pp": 0.1999999999999993,
+      "official_unrounded_sample_mean": 9.077649999999998,
+      "fdp125_unrounded_sample_mean": 9.27985,
+      "unrounded_paired_delta_mean_pp": 0.2021999999999999,
+      "paired_sample_delta_sd_pp": 10.977341677817895,
+      "ordered_id_sha256": "94360f8f4cd624d6c4ceec783d7d9f89b3876d34a9e144398adc7e10f8a86019",
+      "official_prediction_sha256": "d971e5f4a575ab57cea8ce0632cc7f0759060ec57754a9755a575ad4abf27858",
+      "fdp125_prediction_sha256": "94c8daa1abbc8b4cbae96e0e5190ddde4d7bc4f3c9aad97ce43bde05fd3e88a1"
+    },
+    "multifieldqa_en": {
+      "n": 150,
+      "official_reported_score": 16.45,
+      "fdp125_reported_score": 18.01,
+      "reported_delta_pp": 1.5600000000000023,
+      "official_unrounded_sample_mean": 16.453599999999998,
+      "fdp125_unrounded_sample_mean": 18.005866666666666,
+      "unrounded_paired_delta_mean_pp": 1.552266666666667,
+      "paired_sample_delta_sd_pp": 13.606536188262815,
+      "ordered_id_sha256": "7550e517885a1604310d37d6feca412dd3db3e680fd1d0534f94a1e381fc3753",
+      "official_prediction_sha256": "6c0dc223807f5788cb767fe119514c9c4086ad0562a74cc45d3bba2879ac00da",
+      "fdp125_prediction_sha256": "818b843e15437f4a7168e9f4f3f1264e207fde2f9e33768230d733284095aba9"
+    },
+    "hotpotqa": {
+      "n": 200,
+      "official_reported_score": 5.05,
+      "fdp125_reported_score": 4.96,
+      "reported_delta_pp": -0.08999999999999986,
+      "official_unrounded_sample_mean": 5.05205,
+      "fdp125_unrounded_sample_mean": 4.960799999999999,
+      "unrounded_paired_delta_mean_pp": -0.09124999999999985,
+      "paired_sample_delta_sd_pp": 7.928275645501692,
+      "ordered_id_sha256": "494d8143921b2313489936c5e2cfbc0a7da8ed76da1de3fbd66c6db0230955cd",
+      "official_prediction_sha256": "306018103e48219434e75433a4f8030250d2219e958cba828dc26b526c6f007c",
+      "fdp125_prediction_sha256": "c25698a66ee75c23acfe916b7b4e837b84376146f528c1e7e7eb62f05cd1a5c8"
+    },
+    "2wikimqa": {
+      "n": 200,
+      "official_reported_score": 3.81,
+      "fdp125_reported_score": 6.27,
+      "reported_delta_pp": 2.4599999999999995,
+      "official_unrounded_sample_mean": 3.8120499999999997,
+      "fdp125_unrounded_sample_mean": 6.2715499999999995,
+      "unrounded_paired_delta_mean_pp": 2.4595,
+      "paired_sample_delta_sd_pp": 9.448101814091931,
+      "ordered_id_sha256": "2bb23050a450565484f83f5dbcb35b1cf45d925ff6093c925cd4becdc6782abb",
+      "official_prediction_sha256": "ec64fed724b5d452e227b3870021c25478316ff7399e2cca4c52e523db19aa7c",
+      "fdp125_prediction_sha256": "c07f9388a42120e88cd17c6366294d12837096935210cd143afb93f7b2c4cc09"
+    },
+    "musique": {
+      "n": 200,
+      "official_reported_score": 2.88,
+      "fdp125_reported_score": 2.52,
+      "reported_delta_pp": -0.3599999999999999,
+      "official_unrounded_sample_mean": 2.87565,
+      "fdp125_unrounded_sample_mean": 2.5218499999999997,
+      "unrounded_paired_delta_mean_pp": -0.35379999999999995,
+      "paired_sample_delta_sd_pp": 6.0878472369056285,
+      "ordered_id_sha256": "d737636150f38a3b46f2fe0de001b067d8de030471924330a7484388aef20aaa",
+      "official_prediction_sha256": "611bb2d580359eec98ff0c891921869a40d730e83144cb771b81384d3db90d88",
+      "fdp125_prediction_sha256": "3146249cc43e322339db92a61b301417aa6bd4b9c608c4206d16f579ab906dc1"
+    }
+  },
+  "integrity": {
+    "narrativeqa": {
+      "sample_count_matches_manifest": true,
+      "ids_unique_and_ordered_equal": true,
+      "answers_length_classes_dataset_language_equal": true,
+      "frozen_task_scores_reproduced": true,
+      "singleton_sample_scores_average_to_rounded_task_score_within_0.00501": true
+    },
+    "qasper": {
+      "sample_count_matches_manifest": true,
+      "ids_unique_and_ordered_equal": true,
+      "answers_length_classes_dataset_language_equal": true,
+      "frozen_task_scores_reproduced": true,
+      "singleton_sample_scores_average_to_rounded_task_score_within_0.00501": true
+    },
+    "multifieldqa_en": {
+      "sample_count_matches_manifest": true,
+      "ids_unique_and_ordered_equal": true,
+      "answers_length_classes_dataset_language_equal": true,
+      "frozen_task_scores_reproduced": true,
+      "singleton_sample_scores_average_to_rounded_task_score_within_0.00501": true
+    },
+    "hotpotqa": {
+      "sample_count_matches_manifest": true,
+      "ids_unique_and_ordered_equal": true,
+      "answers_length_classes_dataset_language_equal": true,
+      "frozen_task_scores_reproduced": true,
+      "singleton_sample_scores_average_to_rounded_task_score_within_0.00501": true
+    },
+    "2wikimqa": {
+      "sample_count_matches_manifest": true,
+      "ids_unique_and_ordered_equal": true,
+      "answers_length_classes_dataset_language_equal": true,
+      "frozen_task_scores_reproduced": true,
+      "singleton_sample_scores_average_to_rounded_task_score_within_0.00501": true
+    },
+    "musique": {
+      "sample_count_matches_manifest": true,
+      "ids_unique_and_ordered_equal": true,
+      "answers_length_classes_dataset_language_equal": true,
+      "frozen_task_scores_reproduced": true,
+      "singleton_sample_scores_average_to_rounded_task_score_within_0.00501": true
+    }
+  },
+  "registry_before_update_sha256": "7cce539000859d6e9ef7b675e6fadf2e01a968caf0d6ed43ce43ad560a45c9ac",
+  "unchanged_inputs": true,
+  "formal_predictions_or_scores_modified": false,
+  "quality_rerun": false,
+  "q_or_allocation_modified": false
+}

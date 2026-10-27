@@ -1,0 +1,8 @@
+{
+  "status": "DONE",
+  "job_id": "R1_dense_aggregate",
+  "returncode": 0,
+  "ended_at": "2026-07-28T09:17:49.258062-07:00",
+  "gpu": null,
+  "elapsed_sec": 30.035688161849976
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "PALU_OFFICIAL_REPRO_ENGINEERING_FIX_V1",
+  "timestamp_utc": "2026-09-30",
+  "failure_behavior": "The official PPL evaluator found a pre-existing /tmp WikiText-2 testloader cache for model alias TABLE1_FISHER_GS32. torch.load under PyTorch 2.8 defaulted to weights_only=True and rejected the locally cached transformers.tokenization_utils_base.BatchEncoding object. Decomposition completed, but the cell failed before producing any PPL result.",
+  "failure_type": "TORCH_SAFE_UNPICKLER_STALE_TESTLOADER_CACHE_COLLISION",
+  "affected_cell": "J_LRD_GS32_FISHER_UNIFORM",
+  "fix": "Keep the official evaluator and scoring implementation unchanged; give each run a unique evaluator model_name/cache namespace, ensuring it builds the tokenized loader from the pinned local dataset rather than loading the unrelated stale /tmp pickle.",
+  "protocol_changed": false,
+  "affected_completed_results": [],
+  "partial_allocation_and_log_preserved": true,
+  "retryable": true,
+  "retry_scope": "Only the incomplete J-LRD gs=32 PPL cell; then remaining not-yet-completed group-size cells.",
+  "foreign_jobs_interrupted": 0
+}

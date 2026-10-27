@@ -1,0 +1,1 @@
+{"cross_entropy": "float32 logits", "dataset": "wikitext2", "input_ids_sha256": "eaa2de24cb6a80527ebfd06b7d06298de0e80fa7a1bf78e6efd9ef731e7b1bde", "mean_nll": 2.363520622253418, "rank_schedule_sha256": "8016bc8d43436e5c41db59b449c18be14b4bb640f0c3f7544afa39e67f770ef5", "skipped": false, "token_count": 2048, "total_nll": 4840.490234375, "window_id": "wiki_00014"}

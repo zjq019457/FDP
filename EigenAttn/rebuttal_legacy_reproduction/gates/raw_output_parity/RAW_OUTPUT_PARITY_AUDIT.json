@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-07-28T08:37:15.754492-07:00",
+  "passed": true,
+  "results": {
+    "tiny_ppl": {
+      "passed": true,
+      "n_windows": 4,
+      "legacy_ppl": 81.4982541285561,
+      "raw_ppl": 81.4982541285561,
+      "abs_diff": 0.0
+    },
+    "tiny_mc": {
+      "passed": true,
+      "n_samples": 8,
+      "acc": 0.25
+    },
+    "subset_identity": {
+      "passed": true,
+      "legacy_ppl": 145.87170866121136,
+      "raw_ppl": 145.87170866121136,
+      "ids_match": true
+    },
+    "llama_subset": {
+      "passed": true,
+      "skipped": false,
+      "aggregate_ppl": 6.202583101861317,
+      "recomputed_ppl": 6.202583101861317,
+      "window_ids": [
+        "c4_00000",
+        "c4_00001"
+      ],
+      "n_windows": 2
+    }
+  },
+  "tolerances": {
+    "ppl": 1e-05,
+    "acc": 1e-09
+  },
+  "runner_hash": "fb9f173816bb0669111d2fa6ddbfbe18be393e8e18dd6fb8e01eb445677283af",
+  "protocol_hash": "46045088fa3fca40321c6d59d0367e9f8921c0ba97b9492791f4abed6c2091d4",
+  "evaluation_hash": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+  "python": "/home/bai-project/anaconda3/envs/eigen/bin/python"
+}

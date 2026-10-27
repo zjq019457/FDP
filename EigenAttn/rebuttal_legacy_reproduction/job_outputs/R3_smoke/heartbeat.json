@@ -1,0 +1,18 @@
+{
+  "job_id": "R3_smoke",
+  "status": "RUNNING",
+  "pid": 2187763,
+  "gpu": {
+    "job_id": "R3_smoke",
+    "gpu_index": 0,
+    "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 62894,
+    "holder_pid": 1872055,
+    "cuda_visible_devices": "0",
+    "acquired_at": "2026-07-29T00:32:47.001770-07:00"
+  },
+  "running_for_sec": 10.01208758354187,
+  "updated_at": "2026-07-29T00:32:57.020562-07:00"
+}

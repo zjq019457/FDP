@@ -1,0 +1,8 @@
+{
+  "job_id": "WAVE2_LB_SCORE",
+  "status": "FAILED",
+  "returncode": 1,
+  "ended_at": "2026-07-29T22:44:38.970482-07:00",
+  "elapsed_sec": 0.10605478286743164,
+  "gpu": null
+}

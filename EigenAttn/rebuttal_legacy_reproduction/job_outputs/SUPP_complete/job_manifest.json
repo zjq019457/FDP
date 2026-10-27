@@ -1,0 +1,20 @@
+{
+  "job_id": "SUPP_complete",
+  "stage": "SUPP",
+  "kind": "cpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/supp_complete.py"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": null,
+  "depends_on": [
+    "R8_system_metrics",
+    "R10_kqv_ablation",
+    "R11_robustness"
+  ],
+  "created_at": "2026-07-29T07:04:59.784672-07:00",
+  "meta": {
+    "role": "supplementary_complete"
+  }
+}

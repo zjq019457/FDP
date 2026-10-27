@@ -1,0 +1,15 @@
+{
+  "J": 2.649117399438393,
+  "c4_nll": 2.837456640291051,
+  "c4_ppl": 17.07228929998198,
+  "latent_cache_bytes_B1_T2048_fp16": 133693440,
+  "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+  "native_conversion": "official HeadwiseLowRankModule primitives; official whiten scaling matrix",
+  "ratio": 0.5,
+  "schedule_sha": "9893cc06dbfae4442b11e0e5f5620d8464c6e23921af24f85422a230d00d78a4",
+  "status": "MARGINAL_BASELINE_COMPLETE",
+  "tokens": 32752,
+  "total_rank": 32640,
+  "wiki_nll": 2.460778158585735,
+  "wiki_ppl": 11.713923284306354
+}

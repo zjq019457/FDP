@@ -1,0 +1,27 @@
+task: arc_easy_localjsonl
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    train: /diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Easy/ARC-Easy-Train.jsonl
+    test:  /diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Easy/ARC-Easy-Test.jsonl
+training_split: train
+test_split: test
+output_type: multiple_choice
+
+doc_to_text: |
+  Question: {{ question }}
+  Answer:
+
+# candidates = [" "+text1, " "+text2, ...]，保证 token 边界稳定
+doc_to_choice: |
+  {% set out = [] %}
+  {% for t in choices["text"] %}
+  {% set _ = out.append(" " ~ t) %}
+  {% endfor %}
+  {{ out }}
+
+doc_to_target: "{{ choices['label'].index(answerKey) }}"
+
+metric_list:
+  - metric: acc
+  - metric: acc_norm

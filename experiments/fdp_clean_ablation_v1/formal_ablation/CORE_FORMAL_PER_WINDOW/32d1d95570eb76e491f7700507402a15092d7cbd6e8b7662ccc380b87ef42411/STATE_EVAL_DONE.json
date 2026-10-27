@@ -1,0 +1,21 @@
+{
+  "sha": "32d1d95570eb76e491f7700507402a15092d7cbd6e8b7662ccc380b87ef42411",
+  "status": "DONE_VALID_HISTORICAL",
+  "source": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/evaluations/aggressive/uniform_088",
+  "wiki_ppl": 12.647091739544841,
+  "wiki_nll": 2.537427286729745,
+  "wiki_windows": 141,
+  "c4_ppl": 19.493450307102023,
+  "c4_nll": 2.9700785274617374,
+  "c4_windows": 256,
+  "zero_shot_tasks": {
+    "hellaswag_localjsonl": 0.4420434176458873,
+    "arc_challenge_localjsonl": 0.3924914675767918,
+    "arc_easy_localjsonl": 0.6788720538720538,
+    "winogrande_localjsonl": 0.584846093133386,
+    "piqa_localjsonl": 0.7366702937976061
+  },
+  "zero_shot_macro": 0.566984665205145,
+  "scorer_authority": "lm_eval_primary",
+  "completed_at": "2026-09-10T20:42:20Z"
+}

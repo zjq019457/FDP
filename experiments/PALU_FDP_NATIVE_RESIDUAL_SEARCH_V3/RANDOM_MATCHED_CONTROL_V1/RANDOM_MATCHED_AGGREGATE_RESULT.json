@@ -1,0 +1,152 @@
+{
+  "V1_native_formal_J": 1.9751725024487599,
+  "V3_formal_J": 1.9655114828822124,
+  "V3_minus_V1_formal_delta_J": -0.00966101956654744,
+  "V3_minus_V1_paired_CI95": [
+    -0.01024731096014919,
+    -0.009120550500341208
+  ],
+  "aggregate_manifest_sha256": "083ab603fc69c86a74309937d0fe5c1c525085d83b17a8fff1688cc7a6cbceac",
+  "all_seed_V1_and_V3_replays_exact": true,
+  "all_seeds_exact_resource_match": true,
+  "claim_guard_caveat": {
+    "V3_changed_native_units": 33,
+    "interpretation": "Action count, rank movement, factor-byte movement and global resource are exact-matched; spatial support/number of distinct changed units is not matched (the random protocol uses disjoint once-only donor/receiver units). Report this limitation alongside the claim.",
+    "random_changed_native_units": [
+      52,
+      52,
+      52
+    ]
+  },
+  "claim_guard_rule": "true only if V3−Random_i has point estimate <0 and paired 95% CI upper bound <0 for each of seeds 0,1,2; otherwise false/not-supported (do not retune V3).",
+  "foreign_jobs_interrupted": 0,
+  "formal_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+  "functional_signal_supported": true,
+  "generated_utc": "2026-09-26T21:31:21.709211+00:00",
+  "protocol_sha256": "00c492df523ea61832da1b56a74990282f5c78584d112692a11c590284b978d6",
+  "random_mean_J_minus_V1_formal_J": 0.0007572825175212738,
+  "random_seed_metrics_mean_and_sample_std": {
+    "J": {
+      "mean": 1.9759297849662811,
+      "sample_std_ddof1": 0.0009582351697249027
+    },
+    "c4_ppl": {
+      "mean": 8.663211415519001,
+      "sample_std_ddof1": 0.010938679491593866
+    },
+    "wiki_ppl": {
+      "mean": 6.006095392912605,
+      "sample_std_ddof1": 0.005077363761783581
+    }
+  },
+  "resource_gate": "PASS",
+  "schema": "PALU_V3_RANDOM_MATCHED_AGGREGATE_RESULT_V1",
+  "seeds": [
+    {
+      "J": 1.975041676716632,
+      "action_count": 26,
+      "action_manifest_sha256": "15ec31cf7fd292dbe9a568fab9a650f6b65fdec05f9d787bbff5a328a871f4d5",
+      "action_sequence_sha256": "906343a3f76e0f95d1cb7be3e02b16444b4cec36e6e779f6a4d63e559b6892d0",
+      "allocation_sha256": "68811e2f72216d3d8705fa560ec3ec9cab7e3559bf003b89bf410bb5fcbdbca2",
+      "c4_ppl": 8.656231090941999,
+      "changed_native_units": 52,
+      "ci95_random_minus_v1": [
+        -0.00035893773458090173,
+        9.933149958231364e-05
+      ],
+      "ci95_v3_minus_random": [
+        -0.010205268859863281,
+        -0.008924633623605752
+      ],
+      "delta_J_random_minus_v1": -0.0001308257321277297,
+      "delta_J_v3_minus_random": -0.00953019383441971,
+      "final_l1_rank_vs_v1": 1664,
+      "foreign_jobs_interrupted": 0,
+      "formal_result_sha256": "0bac06a2d9e7c2677e1e47468b2d32c9eadd9d8ab270fab4e22aa5a744e78ab2",
+      "gpu": 0,
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "schedule_file_sha256": "524f519b4ccf9b4363c02357af30d05236c446b770abd716426f5f8840971bc0",
+      "seed": 0,
+      "transfer_volume_rank": 832,
+      "v1_replay_exact": true,
+      "v3_replay_exact": true,
+      "wiki_ppl": 6.000266797490946
+    },
+    {
+      "J": 1.9758022951792522,
+      "action_count": 26,
+      "action_manifest_sha256": "f812b15274fcdfdb570fb4b433b1d43315217469d5fe44d9db9ecb7cd7cc7e72",
+      "action_sequence_sha256": "a9d1c09a2ac161f429e3f1f7d5a886299bb05b39f2c6c3a941971a051cae58a1",
+      "allocation_sha256": "c1ac7e4cda679d5533d4f504cedf1b4cc43101cc066e757da77633d922f8d752",
+      "c4_ppl": 8.657585053764885,
+      "changed_native_units": 52,
+      "ci95_random_minus_v1": [
+        0.00036922133112528234,
+        0.0009799061051334243
+      ],
+      "ci95_v3_minus_random": [
+        -0.011026462876653096,
+        -0.009643761508436089
+      ],
+      "delta_J_random_minus_v1": 0.0006297927304922816,
+      "delta_J_v3_minus_random": -0.010290812297039723,
+      "final_l1_rank_vs_v1": 1664,
+      "foreign_jobs_interrupted": 0,
+      "formal_result_sha256": "df8cf3e76b903ed1d2b6e2e69f5e1d0ed67d10287cbd1c38a74e07ce764d7a98",
+      "gpu": 1,
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "schedule_file_sha256": "24d2dbbfe79555004e8d3becefdb8a8f3750a7a592beb1d549e05336adcb0bb7",
+      "seed": 1,
+      "transfer_volume_rank": 832,
+      "v1_replay_exact": true,
+      "v3_replay_exact": true,
+      "wiki_ppl": 6.008461758759574
+    },
+    {
+      "J": 1.976945383002959,
+      "action_count": 26,
+      "action_manifest_sha256": "13028996ed4b2e3ba7e6ffb13aa69c151dc3acb908ed112518585915bbe08b9f",
+      "action_sequence_sha256": "068154019a092ce86e42b021511a4312938b33203e09cd8e8debbdebab2e6bd0",
+      "allocation_sha256": "44e252fdc1278017907937cb45982e472e0e26778f1fba296da1d9fbc8f03422",
+      "c4_ppl": 8.675818101850117,
+      "changed_native_units": 52,
+      "ci95_random_minus_v1": [
+        0.001521845897996282,
+        0.0020503997802734375
+      ],
+      "ci95_v3_minus_random": [
+        -0.012175054435270378,
+        -0.01075152891227998
+      ],
+      "delta_J_random_minus_v1": 0.0017728805541992188,
+      "delta_J_v3_minus_random": -0.01143390012074666,
+      "final_l1_rank_vs_v1": 1664,
+      "foreign_jobs_interrupted": 0,
+      "formal_result_sha256": "a206aab1ac8cdf90e78373c1f54db5a5d6538fa09abc9d78ea26b0a27d127da0",
+      "gpu": 2,
+      "resource": {
+        "decode_cache_bytes": 536870912,
+        "factor_bytes_fp16": 1207959552,
+        "prefill_cache_bytes": 536870912,
+        "total_native_rank": 131072
+      },
+      "schedule_file_sha256": "9c64c4c83bab7990fb0dd084613b578a7ea3e65765e53ba5b1581416e4626181",
+      "seed": 2,
+      "transfer_volume_rank": 832,
+      "v1_replay_exact": true,
+      "v3_replay_exact": true,
+      "wiki_ppl": 6.0095576224872955
+    }
+  ],
+  "status": "RANDOM_MATCHED_FORMAL_COMPLETE"
+}

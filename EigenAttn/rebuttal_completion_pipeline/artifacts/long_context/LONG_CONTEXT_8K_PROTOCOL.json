@@ -1,0 +1,17 @@
+{
+  "profile": "8k",
+  "generated_at": "2026-07-29T08:21:23.034085-07:00",
+  "status": "runnable",
+  "calibration": {
+    "nsamples": 16,
+    "seqlen": 8192
+  },
+  "methods": [
+    "dense",
+    "uniform",
+    "fdp_8k",
+    "spectral",
+    "middle"
+  ],
+  "note": "Full 8K eval runner binds to slim/longbench_eval.py; manifest confirms local data"
+}

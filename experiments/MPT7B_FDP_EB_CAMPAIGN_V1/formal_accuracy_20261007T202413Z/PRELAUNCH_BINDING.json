@@ -1,0 +1,816 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-07T20:25:31.946635+00:00",
+  "manifest_sha256": "ec4a60cae4bbf324bd5a22d8cda9ebcc4b00fe3d970ef90ee0ea1d00011eeefe",
+  "cells": [
+    {
+      "tier": "U011",
+      "arm": "relaxed_uniform",
+      "allocation_unchanged": true,
+      "measured_resource_binding": "PASS"
+    },
+    {
+      "tier": "U011",
+      "arm": "fdp",
+      "allocation_unchanged": true,
+      "measured_resource_binding": "PASS"
+    },
+    {
+      "tier": "U015",
+      "arm": "relaxed_uniform",
+      "allocation_unchanged": true,
+      "measured_resource_binding": "PASS"
+    },
+    {
+      "tier": "U015",
+      "arm": "fdp",
+      "allocation_unchanged": true,
+      "measured_resource_binding": "PASS"
+    },
+    {
+      "tier": "U019",
+      "arm": "relaxed_uniform",
+      "allocation_unchanged": true,
+      "measured_resource_binding": "PASS"
+    },
+    {
+      "tier": "U019",
+      "arm": "fdp",
+      "allocation_unchanged": true,
+      "measured_resource_binding": "PASS"
+    }
+  ],
+  "basis_inputs": [
+    {
+      "tier": "U011",
+      "layer": 0,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_00_basis_and_uniform_rank.pt",
+      "basis_sha256": "9120d3b4e8a08dabfdf7230c3e969751d8a164081eac7b817d53088f5817d712",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_00_resource_search.json",
+      "basis_report_sha256": "dd262faa7862264c072e58d2714f99f2146bfa5124df418a613a7ff55bbb28ef"
+    },
+    {
+      "tier": "U011",
+      "layer": 1,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_01_basis_and_uniform_rank.pt",
+      "basis_sha256": "2c01e4554e9c4ceb1d20af2eeea2bd4c89fe6b1a0bfc091d83849831ed8d92e9",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_01_resource_search.json",
+      "basis_report_sha256": "bcff0abfbe4ed46ef3a4d48a981f858d6e6674c3521ac9e66f825ceef042cacd"
+    },
+    {
+      "tier": "U011",
+      "layer": 2,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_02_basis_and_uniform_rank.pt",
+      "basis_sha256": "978a623111b5af49f9e4aeaeec5ee380a188ee4311666730a38e87c21a4c8d0b",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_02_resource_search.json",
+      "basis_report_sha256": "963c105abbefffaba4a48501066ce288d19bc241740a89d46a90d9a9009cb05f"
+    },
+    {
+      "tier": "U011",
+      "layer": 3,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_03_basis_and_uniform_rank.pt",
+      "basis_sha256": "b7290cfcfd263088a45d3087669cc25bfcc7abc17f924f783e77c206124c74d3",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_03_resource_search.json",
+      "basis_report_sha256": "0bb93bab46f992a497ce97b53f4dfb861002a5523d6c22f3e508ed10b336f5e2"
+    },
+    {
+      "tier": "U011",
+      "layer": 4,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_04_basis_and_uniform_rank.pt",
+      "basis_sha256": "0653fe0e7b5cea1de77e04d7c11b42350520685524dbd02f8a23c080a47ebcee",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_04_resource_search.json",
+      "basis_report_sha256": "97b1c9c981c4c030f92d112479489138a4637aadd468dfaef717c4b22a6446c4"
+    },
+    {
+      "tier": "U011",
+      "layer": 5,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_05_basis_and_uniform_rank.pt",
+      "basis_sha256": "80c4b1c50425eeb95574aa96555df1cb3c408e7b598e47b456652af7d8391bc8",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_05_resource_search.json",
+      "basis_report_sha256": "f587441c7497f95ec7c5ead34944fa8e921b42b3924cfb429207488d8c3a738b"
+    },
+    {
+      "tier": "U011",
+      "layer": 6,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_06_basis_and_uniform_rank.pt",
+      "basis_sha256": "097585156e039ad7b8f1b1bf57d31b027eb0b84e685259300db6bedd48a6e16e",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_06_resource_search.json",
+      "basis_report_sha256": "030bcf0a04163d492b144380c2b8bc213500ab0ce43ea9bdc6cfdfce3c2ad465"
+    },
+    {
+      "tier": "U011",
+      "layer": 7,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_07_basis_and_uniform_rank.pt",
+      "basis_sha256": "50a3de25bf60fa3134437b9687559bfe0e56019b3b99d4ea79fe1e20f04bda14",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_07_resource_search.json",
+      "basis_report_sha256": "89186793fa19928249f1b300c23d14575d6f17fa2e9b6a54ba47106aafc0e00c"
+    },
+    {
+      "tier": "U011",
+      "layer": 8,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_08_basis_and_uniform_rank.pt",
+      "basis_sha256": "0a5602fa3317453b0ca7fc5dbb063e02ed4098855286ebcf4496a9ecce2930d3",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_08_resource_search.json",
+      "basis_report_sha256": "7a19b21d8c11dffec007769b342cd35a9558df64da4f186ed03cdd39b7c0d372"
+    },
+    {
+      "tier": "U011",
+      "layer": 9,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_09_basis_and_uniform_rank.pt",
+      "basis_sha256": "2090d25429c6844788af1e7b3119b61782dd2bc11d01e296979b1667494e9f5f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_09_resource_search.json",
+      "basis_report_sha256": "78c0a4f8e5e61a5e5fb84ab3d250052b56418bfbd8f8a2a7c85237fa319ec0cf"
+    },
+    {
+      "tier": "U011",
+      "layer": 10,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_10_basis_and_uniform_rank.pt",
+      "basis_sha256": "175bc52f7a07567ec5c5213b87dae4dc7bd4127dc70d2f6c8d4e76a84689c1d1",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_10_resource_search.json",
+      "basis_report_sha256": "58500a2d53bcfcc4a947d45e440c444b025ad50f5613113f173abdd634ae5b1b"
+    },
+    {
+      "tier": "U011",
+      "layer": 11,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_11_basis_and_uniform_rank.pt",
+      "basis_sha256": "8e994bfc345ba268399c9e7e9721e824c698ca7b20f91205ccfc3d65ef0c7df5",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_11_resource_search.json",
+      "basis_report_sha256": "5a0b933122de09cad6ceac8f2d18b1c96980d99e7d8ce09e7f331433da248ee7"
+    },
+    {
+      "tier": "U011",
+      "layer": 12,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_12_basis_and_uniform_rank.pt",
+      "basis_sha256": "8687de395cef1d7136eaf855cd073e6140c46c5484e7dbd50ca6accd06504568",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_12_resource_search.json",
+      "basis_report_sha256": "ea6e94c72bf7030b81338216e88b75181f2ee4e2a092d2fd78f7e00492419973"
+    },
+    {
+      "tier": "U011",
+      "layer": 13,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_13_basis_and_uniform_rank.pt",
+      "basis_sha256": "7aa763820fabd2acb1bbe482d1cbb94960ce44d0d520407d488231b281f2922f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_13_resource_search.json",
+      "basis_report_sha256": "96f31c9b89742ae7386a2dba6324bb67d361b58e3f2d5a7243f502e1464c3c07"
+    },
+    {
+      "tier": "U011",
+      "layer": 14,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_14_basis_and_uniform_rank.pt",
+      "basis_sha256": "b27d17951a20c4c7b1074f8025b13d0c0af1bf5354fdbe1a4fbcfe8835d4d07f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_14_resource_search.json",
+      "basis_report_sha256": "9b939b7178aba67a0e791e3568fa6894b3de6a6448592aead0f5cd7b0c8a7ded"
+    },
+    {
+      "tier": "U011",
+      "layer": 15,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_15_basis_and_uniform_rank.pt",
+      "basis_sha256": "0470ee815a2395b12a81c6c0f18b01b50c3763586f442f887ac1b6a3a16ba55f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_15_resource_search.json",
+      "basis_report_sha256": "10825c7b0107537a8f749c9ff043802890e5b6de60fcb2aed81201693ed87a62"
+    },
+    {
+      "tier": "U011",
+      "layer": 16,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_16_basis_and_uniform_rank.pt",
+      "basis_sha256": "42d6a7957026a5ad4961a4191226c9c004993156d34cccff270d4ef99a0e621c",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_16_resource_search.json",
+      "basis_report_sha256": "bc04032a2ecd1f84d8052c5b450f2d3b91791ca687c3714efa56a5ef4c1d0c3e"
+    },
+    {
+      "tier": "U011",
+      "layer": 17,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_17_basis_and_uniform_rank.pt",
+      "basis_sha256": "90ecd106220c28e6b18b89d97ed008efacb7e1541df27d6b87b3c0f0f3eecced",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_17_resource_search.json",
+      "basis_report_sha256": "46b4c709aceec83ccad34f420a56a0706384126402dc96c8dcbac854b7b56c6c"
+    },
+    {
+      "tier": "U011",
+      "layer": 18,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_18_basis_and_uniform_rank.pt",
+      "basis_sha256": "d0d32de5651b4ef1e30b1303cf9e3e928a91622ad6c1e64138fc50380cc5c258",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_18_resource_search.json",
+      "basis_report_sha256": "57549ca34a8a20549ace2b95e95268a277e568a6cff550021445e1fb300874a4"
+    },
+    {
+      "tier": "U011",
+      "layer": 19,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_19_basis_and_uniform_rank.pt",
+      "basis_sha256": "e5eb5b7e991280c61baf6b6c1a448580c750588bbd0f09ec1a2d0379d4583d0c",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_19_resource_search.json",
+      "basis_report_sha256": "4c0dd6e287d2ec7e72ebc307c9afaa7c106772a158837bb3803eda4f6cc3b664"
+    },
+    {
+      "tier": "U011",
+      "layer": 20,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_20_basis_and_uniform_rank.pt",
+      "basis_sha256": "4d655fcdf3de6418421f387f39ededa65faa1b04c3285a61be7dae3fed948d77",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_20_resource_search.json",
+      "basis_report_sha256": "92aa0b73a8773c73f7416283ced719015f8dd04a4965a26d2f94e7ab0fd7e600"
+    },
+    {
+      "tier": "U011",
+      "layer": 21,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_21_basis_and_uniform_rank.pt",
+      "basis_sha256": "8cca31bf77286f9b1737f44453bd394f7b53c21f929a8115adfe4967133cf174",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_21_resource_search.json",
+      "basis_report_sha256": "313608b603c282ef269613cd7dac0e09866f1e009c86ede2e0515f81652f3805"
+    },
+    {
+      "tier": "U011",
+      "layer": 22,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_22_basis_and_uniform_rank.pt",
+      "basis_sha256": "8da428e35513e6450a63f5c289868ac5a0fc9179e43100081a9b15fa29b4682d",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_22_resource_search.json",
+      "basis_report_sha256": "e28925adc9f0b997a955d6c25589fabba5ee55fd83f6f23fd15df8fd9a82ac18"
+    },
+    {
+      "tier": "U011",
+      "layer": 23,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_23_basis_and_uniform_rank.pt",
+      "basis_sha256": "ed20cfe20260dc5e0597e5c8fc26cef1d5b1c40009b1e98396dbdff1f1fdbecf",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_23_resource_search.json",
+      "basis_report_sha256": "671094a38f1e27fa9e47f51886d841fd8221fcd35517caade3f3842c00bce51d"
+    },
+    {
+      "tier": "U011",
+      "layer": 24,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_24_basis_and_uniform_rank.pt",
+      "basis_sha256": "69362c9ae03072c9d665ae1c35bd6ae9d15715562bc931b75f2400f23593c523",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_24_resource_search.json",
+      "basis_report_sha256": "632e13af4b98c733395447681532a140308d4135ac5b15d253317ed8c74d628a"
+    },
+    {
+      "tier": "U011",
+      "layer": 25,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_25_basis_and_uniform_rank.pt",
+      "basis_sha256": "14b426104e02c34edb9cdca871615d7eaf51c08b4be99076a005bd0c507f60d0",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_25_resource_search.json",
+      "basis_report_sha256": "600f08980ff4fbb532caa4f8ec3a5f7c098256a82874443262726bf3393bdec5"
+    },
+    {
+      "tier": "U011",
+      "layer": 26,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_26_basis_and_uniform_rank.pt",
+      "basis_sha256": "21a07c09fe2338200e7e123a81d3e26621af9c51671baabd4b299c934092e684",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_26_resource_search.json",
+      "basis_report_sha256": "364e2bb3316ee3452ddf7527ce7750dd40781bb98ab63a67eb94564434f4d58e"
+    },
+    {
+      "tier": "U011",
+      "layer": 27,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_27_basis_and_uniform_rank.pt",
+      "basis_sha256": "df9dcd5a6644bce3ff8f560805bd1b91ffeaa3500c92981c7b92f89538d05ec9",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_27_resource_search.json",
+      "basis_report_sha256": "3fc26fa90d90651d4d4d825feb6600992df3cdb2cdcceebadc598577a3315613"
+    },
+    {
+      "tier": "U011",
+      "layer": 28,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_28_basis_and_uniform_rank.pt",
+      "basis_sha256": "1a9c326591c5f36c8ac33e9478b5de9e184edb32c03ff1424ca155abbad577ac",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_28_resource_search.json",
+      "basis_report_sha256": "a64a9ff1f604a3c6fd67cf4a876839c03d09ad952cca44de3ed728f5e006fbd9"
+    },
+    {
+      "tier": "U011",
+      "layer": 29,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_29_basis_and_uniform_rank.pt",
+      "basis_sha256": "326fe5fd6f6d35745a14837d4da07f8715585f1920917a9ecf2b45e761cd8b63",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_29_resource_search.json",
+      "basis_report_sha256": "fb94947e960e529fe80c198313918e3a68e87b93f1fbbd071925b8e34cb238c4"
+    },
+    {
+      "tier": "U011",
+      "layer": 30,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_30_basis_and_uniform_rank.pt",
+      "basis_sha256": "6b391d1f973a55e83363363a90e02733872c72baebcf572860506679e2a374b9",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_30_resource_search.json",
+      "basis_report_sha256": "a6324c6650e4a0b8fdb36e013db75e02f49490ff40a6e7f2159a069a2747c788"
+    },
+    {
+      "tier": "U011",
+      "layer": 31,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_31_basis_and_uniform_rank.pt",
+      "basis_sha256": "b3e254fdd320c3b4ec62c84562ff44d8afb3791269da55b77beb812db97a0d97",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2/layer_31_resource_search.json",
+      "basis_report_sha256": "f4dee9976b2617e3743e0a86287cad1e1bab1711023463d1d56b504ed9ca825f"
+    },
+    {
+      "tier": "U015",
+      "layer": 0,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_00_basis_and_uniform_rank.pt",
+      "basis_sha256": "fde229ee902b6ee0be7c85c50540769bc846c2854f8e7afd24072a11d05b4098",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_00_resource_search.json",
+      "basis_report_sha256": "335a456abe3c2bf171c59505392281a94e3408f33d33d5cee3d2cf05b3890b63"
+    },
+    {
+      "tier": "U015",
+      "layer": 1,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_01_basis_and_uniform_rank.pt",
+      "basis_sha256": "210f0dd6436c115aae297c36762bcb6668354f90dd1c30049488ffbfc7a4fe80",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_01_resource_search.json",
+      "basis_report_sha256": "64fd776293614b881627a862cdab63a0e5014b77cd6c59e909d312f7377ac13e"
+    },
+    {
+      "tier": "U015",
+      "layer": 2,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_02_basis_and_uniform_rank.pt",
+      "basis_sha256": "bc01b9c5b1a1b065d5d4ef3b0c33c4bacbbc6fc481f4a489823aa53aedc13a7b",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_02_resource_search.json",
+      "basis_report_sha256": "b9f4450385156fa293731a7553daf278509ae0579dcf3ea1349aa235013de5cd"
+    },
+    {
+      "tier": "U015",
+      "layer": 3,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_03_basis_and_uniform_rank.pt",
+      "basis_sha256": "535172dd420ce130d47339fb25a7c68c354bdf96124eb2b7acaac6464d8be083",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_03_resource_search.json",
+      "basis_report_sha256": "b7ec0b49f94e8d289274aa002957bfadeb76eb52042badd881ef245817e8e686"
+    },
+    {
+      "tier": "U015",
+      "layer": 4,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_04_basis_and_uniform_rank.pt",
+      "basis_sha256": "1af30416ab1ef0f588991c88c645a2ef99a3588a3c5262f83fae03e5da195c0f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_04_resource_search.json",
+      "basis_report_sha256": "283cc7be3c9dbac522b4411b2013fea0c8162a1d5ff506aca6e5fcdd4c9e17bd"
+    },
+    {
+      "tier": "U015",
+      "layer": 5,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_05_basis_and_uniform_rank.pt",
+      "basis_sha256": "b35676c6abb0f2517c366b50c774ec17e38838a041fd54c63bdc0e8e87a11524",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_05_resource_search.json",
+      "basis_report_sha256": "a8e94547be543823e39d32d4e9ff80f87ff3cfc0919e69724a5462a7bd41f757"
+    },
+    {
+      "tier": "U015",
+      "layer": 6,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_06_basis_and_uniform_rank.pt",
+      "basis_sha256": "89c9ff1c7e8e5c5dbedf03a2dde8450bfc032da8a7627fbc83ddba254531bf3b",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_06_resource_search.json",
+      "basis_report_sha256": "cca5025476307b056e90d3fb4b5aca620535e10c3a60c51b4b4a1e9e029735c4"
+    },
+    {
+      "tier": "U015",
+      "layer": 7,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_07_basis_and_uniform_rank.pt",
+      "basis_sha256": "128b8d4490810f622feee8477c72b08854ef1531bcde5d0325958aa0404d978f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_07_resource_search.json",
+      "basis_report_sha256": "3392b895470fe4b168fe4f2f85d05b3dcde3237b10c94e4fdf48ce4a3dedefa9"
+    },
+    {
+      "tier": "U015",
+      "layer": 8,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_08_basis_and_uniform_rank.pt",
+      "basis_sha256": "49b880cfcc351a23bc036416b244f19f80992f14efc449f745b3a8953672011f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_08_resource_search.json",
+      "basis_report_sha256": "b5e05df9b159559db7d2ff07ed59dd16834ee264c910653787cb117e5e90a514"
+    },
+    {
+      "tier": "U015",
+      "layer": 9,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_09_basis_and_uniform_rank.pt",
+      "basis_sha256": "2090d25429c6844788af1e7b3119b61782dd2bc11d01e296979b1667494e9f5f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_09_resource_search.json",
+      "basis_report_sha256": "f66548abe0b62552bce5e019fe39048dfa76f0ffbeceddd89a57e977ca4a7dd3"
+    },
+    {
+      "tier": "U015",
+      "layer": 10,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_10_basis_and_uniform_rank.pt",
+      "basis_sha256": "7c9a05206627a10549a552dcade1bd28ac595c92962f84b5a384fe8feee4ef13",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_10_resource_search.json",
+      "basis_report_sha256": "640f347a50004bf2f73c90fb67764803c546f162cbdaea099b300c25efb3c438"
+    },
+    {
+      "tier": "U015",
+      "layer": 11,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_11_basis_and_uniform_rank.pt",
+      "basis_sha256": "e3c7c7cd683adff549683e06fdadf46976b5e324f6d2e61e06c01d66c1ac19d2",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_11_resource_search.json",
+      "basis_report_sha256": "451c2937e63804775c8ecdde8f862e612c3c9d880e0dada566d92cf499f4bf36"
+    },
+    {
+      "tier": "U015",
+      "layer": 12,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_12_basis_and_uniform_rank.pt",
+      "basis_sha256": "129b654c102b5b8c81428fe7285541e3f06f28bc9b58d9330b4ddc9044b1f983",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_12_resource_search.json",
+      "basis_report_sha256": "985232eaa7c4a42b7e195add59fcd2216fc3d7f900972705d7b11a6bf34c6653"
+    },
+    {
+      "tier": "U015",
+      "layer": 13,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_13_basis_and_uniform_rank.pt",
+      "basis_sha256": "b29c51074b8547b71513ae7680634abe60f60d0462638d27be0cdd089f876983",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_13_resource_search.json",
+      "basis_report_sha256": "36690bfffc8c061d88a5c011821f2cd64c71aa3e1daa5380e5f6547247efde90"
+    },
+    {
+      "tier": "U015",
+      "layer": 14,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_14_basis_and_uniform_rank.pt",
+      "basis_sha256": "e7ee1747993018167ddb2939ef294d686c42af0e2d92821231d1ede9afbc7342",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_14_resource_search.json",
+      "basis_report_sha256": "3fa93bd980c12ea93313befa296a919dedcae782871db9658d26e104cb063c00"
+    },
+    {
+      "tier": "U015",
+      "layer": 15,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_15_basis_and_uniform_rank.pt",
+      "basis_sha256": "8184b73d970a687f1354b21ecb01d01fa821a81adc6ae36b397c64d151f8df96",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_15_resource_search.json",
+      "basis_report_sha256": "c5b55baf0429b29544b5deb1861c226ab6b11184ade72f68a5dd4df058e1391a"
+    },
+    {
+      "tier": "U015",
+      "layer": 16,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_16_basis_and_uniform_rank.pt",
+      "basis_sha256": "c06c1380827f8c3a5cd4716ed5552ff5c111f816c0dc409bb31817aa3ae79c6a",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_16_resource_search.json",
+      "basis_report_sha256": "727841d2d734fef0d43870b04a4b6d9755a8822cc5fa06a8de35349297efce9c"
+    },
+    {
+      "tier": "U015",
+      "layer": 17,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_17_basis_and_uniform_rank.pt",
+      "basis_sha256": "de55350fc97acfc9a86105fd940ba3fe47b67fb5679d7b6769c61ca3b861d08f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_17_resource_search.json",
+      "basis_report_sha256": "e19da6ee8aceb35b79393ce5f8feb903de12e35ad10269ead374c4089c450c88"
+    },
+    {
+      "tier": "U015",
+      "layer": 18,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_18_basis_and_uniform_rank.pt",
+      "basis_sha256": "0b078505731f5216faaaaf0380f4a1590ab706d9482dc3e90b4cd3c5181bae09",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_18_resource_search.json",
+      "basis_report_sha256": "7b10d28a29ac138206b7603744a9da06f9a9764f9690ee073df73125c05246f9"
+    },
+    {
+      "tier": "U015",
+      "layer": 19,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_19_basis_and_uniform_rank.pt",
+      "basis_sha256": "861aaf2cf1c8427d15a4121bcb775e620a00ddda157b750cbcdcfa001c314545",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_19_resource_search.json",
+      "basis_report_sha256": "ae8b79fd1e3cd7f2eb0e66d6784f1ac636ceffc301dc0aca50756efb889b281b"
+    },
+    {
+      "tier": "U015",
+      "layer": 20,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_20_basis_and_uniform_rank.pt",
+      "basis_sha256": "6ef004ebb5eca3b8784965bac965946595e738d42c63c81a5b3256da28988523",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_20_resource_search.json",
+      "basis_report_sha256": "982ef1a081571a33cc2e7ee6c3278dcef874453fbe95e31ef4d065e3c4f8f9fb"
+    },
+    {
+      "tier": "U015",
+      "layer": 21,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_21_basis_and_uniform_rank.pt",
+      "basis_sha256": "34fdefe376e5a73b06c11e0683bb2e407a6bd74a5f1332d89ee954c9f9ef4019",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_21_resource_search.json",
+      "basis_report_sha256": "b77c2ebd4b1bf87fd382dee42a0972b37762ec7c9012b320bb88b2097440f539"
+    },
+    {
+      "tier": "U015",
+      "layer": 22,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_22_basis_and_uniform_rank.pt",
+      "basis_sha256": "aa89e644c4f862d8351ba07cb7e2f4122b5c065ae20f7af448d1647a8e4e6e9e",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_22_resource_search.json",
+      "basis_report_sha256": "1b76181655131260e3384942e7f0813335dd6181096b1b106a7be8de3fa66b01"
+    },
+    {
+      "tier": "U015",
+      "layer": 23,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_23_basis_and_uniform_rank.pt",
+      "basis_sha256": "0d8864d11aa8d3346d9a2eeb5b2df7f8fcd74dafd6ac9f994a68af1a7a00d6f5",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_23_resource_search.json",
+      "basis_report_sha256": "7f7286ba460d556545f59852193b3267ebdbf4a8eda2385974b16cefb7abb8d4"
+    },
+    {
+      "tier": "U015",
+      "layer": 24,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_24_basis_and_uniform_rank.pt",
+      "basis_sha256": "edf40ac6c7795376fe3a02b98fb3e1d53573bcd2c1b6599e3833414c13183dcf",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_24_resource_search.json",
+      "basis_report_sha256": "d3987e6c89f5f38a3579ebba562011731607fcbc73aa0cfb7df2453de84efb4c"
+    },
+    {
+      "tier": "U015",
+      "layer": 25,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_25_basis_and_uniform_rank.pt",
+      "basis_sha256": "76aa0e5d5f957e6caa1ba8c85689bf669882d0534caafb13dedd3a4bd48ba08c",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_25_resource_search.json",
+      "basis_report_sha256": "66852e5d8a2fe587cf3e4cc3a8035d66880b773570a7d75858089d26dc81e7e7"
+    },
+    {
+      "tier": "U015",
+      "layer": 26,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_26_basis_and_uniform_rank.pt",
+      "basis_sha256": "f5d4c9b632895ba101381d84db50bc58dab98d6a581f9e02eda0475ac05fb518",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_26_resource_search.json",
+      "basis_report_sha256": "abfa58c45383c2fa507d18aa259ca197ec36e4271f8250198c9b5bbdc73c6c5d"
+    },
+    {
+      "tier": "U015",
+      "layer": 27,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_27_basis_and_uniform_rank.pt",
+      "basis_sha256": "3c5faa4c033048d19b7af0704db3784dcbbbf30da6506f20e7e332d91d8ee870",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_27_resource_search.json",
+      "basis_report_sha256": "219f19bf3a84607ebd5a87a84b117e961b9fc8b8f20ac738b7248f233caeb64d"
+    },
+    {
+      "tier": "U015",
+      "layer": 28,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_28_basis_and_uniform_rank.pt",
+      "basis_sha256": "aa30ef1224b322561b2f81b8db0d70cf2025ba09a60d10d3537582ca932d0f04",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_28_resource_search.json",
+      "basis_report_sha256": "f39a7fe7cb5a7e95210eb0d0281e7621b371b5d25787d632a859a222c4f6c363"
+    },
+    {
+      "tier": "U015",
+      "layer": 29,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_29_basis_and_uniform_rank.pt",
+      "basis_sha256": "ac2017bff7d5933f634d33813dabe16044badab871e957593e60fb06e5e68ca1",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_29_resource_search.json",
+      "basis_report_sha256": "f6b649a749f6a87a4db0378bbb19643cb5540baa067e40eb208df506a591024c"
+    },
+    {
+      "tier": "U015",
+      "layer": 30,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_30_basis_and_uniform_rank.pt",
+      "basis_sha256": "30028cf8084cfe002eed7ab268cbe08dda8beb08d07f876cf3758a97cfe6918c",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_30_resource_search.json",
+      "basis_report_sha256": "a1d16f6fee52d7f460836fa0df3bcc595379f179276f0d4eb35ee60c2cafd6b5"
+    },
+    {
+      "tier": "U015",
+      "layer": 31,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_31_basis_and_uniform_rank.pt",
+      "basis_sha256": "1f1b3600f3bffd7f1b7c3622c9e5eccbaab5bc446fd1f803d094532ca0e62b40",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0015_UNIFORM_RESOURCE_ATTEMPT1/layer_31_resource_search.json",
+      "basis_report_sha256": "9641756d7b188b5cae389557951f16e87382e80b8d1af12072ea13f659d45b9d"
+    },
+    {
+      "tier": "U019",
+      "layer": 0,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_00_basis_and_uniform_rank.pt",
+      "basis_sha256": "d9d7e32c1b3d60ca8b2e6bf2638690fdf07a939b6c848203b6daf956c802f904",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_00_resource_search.json",
+      "basis_report_sha256": "f7580a02b94d7409babffb45b13a388340de3640abb91fb55c2dfa18056fa039"
+    },
+    {
+      "tier": "U019",
+      "layer": 1,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_01_basis_and_uniform_rank.pt",
+      "basis_sha256": "b0c9c583171ff81da0320441d4b5822038cb55650c986644477552d138df6504",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_01_resource_search.json",
+      "basis_report_sha256": "db01fb6b309fa65c96ad8cc8c933261c97d0ce91a383882a30f2249edadb5dda"
+    },
+    {
+      "tier": "U019",
+      "layer": 2,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_02_basis_and_uniform_rank.pt",
+      "basis_sha256": "4f4499eabbb41f019fc8abf94042b473f0bf541aed5754db1229b7eac436d527",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_02_resource_search.json",
+      "basis_report_sha256": "0f3ad6b2563bf3560e900b23b310bef6d20a3b280276da95f269cadc9601dd84"
+    },
+    {
+      "tier": "U019",
+      "layer": 3,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_03_basis_and_uniform_rank.pt",
+      "basis_sha256": "cf96bd2ba52a3350a93c71de4e1864cf6c9ddb62d78e69e408b616efce95f474",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_03_resource_search.json",
+      "basis_report_sha256": "18535a1c5b9d0e460aa5e30d772961b9a38acbd39d54272e25ddf7ef0f4d9333"
+    },
+    {
+      "tier": "U019",
+      "layer": 4,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_04_basis_and_uniform_rank.pt",
+      "basis_sha256": "91475db18906f6b9ea5559c3efa4b2fb323d7afca0127cb4e8230b0fac3f17f7",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_04_resource_search.json",
+      "basis_report_sha256": "51ef7ae556936950d460a371310d57f12ecbe81adb251bf7761409d13713b591"
+    },
+    {
+      "tier": "U019",
+      "layer": 5,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_05_basis_and_uniform_rank.pt",
+      "basis_sha256": "6326c1c0f6c9c0e28d97edd7084609d6ddbe8401e0037346e1abf439d1dd5d47",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_05_resource_search.json",
+      "basis_report_sha256": "a8feb403731db360b317dba437daf097d64c13c2e5c77265df69a436fdbf9708"
+    },
+    {
+      "tier": "U019",
+      "layer": 6,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_06_basis_and_uniform_rank.pt",
+      "basis_sha256": "1911c0a85045f5276b86848de555e031e382ac430991ccafffd33b3377547b83",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_06_resource_search.json",
+      "basis_report_sha256": "2732649b8d504aefc55f35bd5b4c424bdd9169ef548867d6a0cc8a29e588f195"
+    },
+    {
+      "tier": "U019",
+      "layer": 7,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_07_basis_and_uniform_rank.pt",
+      "basis_sha256": "fc0227f932f605e78753314f55290d18064c130a41345e1da9f877dd56f422d0",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_07_resource_search.json",
+      "basis_report_sha256": "4311d0a940845955c7fd6006ec714be84f222a26b6817738b3b2703bb5bd7f24"
+    },
+    {
+      "tier": "U019",
+      "layer": 8,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_08_basis_and_uniform_rank.pt",
+      "basis_sha256": "b2787db78619c50ff788833e43624a7c13728ea9874daa21b0db9952f6650ece",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_08_resource_search.json",
+      "basis_report_sha256": "14338d1f17feb6a7ae7febad226ab0206b84578b9f384c1b33c0c9abfac40c06"
+    },
+    {
+      "tier": "U019",
+      "layer": 9,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_09_basis_and_uniform_rank.pt",
+      "basis_sha256": "fece18bf0fd52a4be970a5d54bb99c41d73bdd7e41def410d3d6e3fcfafb54d0",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_09_resource_search.json",
+      "basis_report_sha256": "54079a76704d76849509694f97b46d4e3bec7effdec806ab0a6e0b53044b4cd3"
+    },
+    {
+      "tier": "U019",
+      "layer": 10,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_10_basis_and_uniform_rank.pt",
+      "basis_sha256": "98b42d77744c9578e23e2f5bbe9bea8ae36ae0575bada6426eea03d57f9ca127",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_10_resource_search.json",
+      "basis_report_sha256": "891a733aaba13f730a86bf2ac8ee48733d0dafda1935ccae16c9b9d85181a8df"
+    },
+    {
+      "tier": "U019",
+      "layer": 11,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_11_basis_and_uniform_rank.pt",
+      "basis_sha256": "8df286b2786bfbd6897a0dd731eebea8d870d9cbe4f93183250f9ca6e886e82a",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_11_resource_search.json",
+      "basis_report_sha256": "de2333eb90f24e43b9f34a34fe1e665fd2c0075abcfe2350931b8581437fb8b1"
+    },
+    {
+      "tier": "U019",
+      "layer": 12,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_12_basis_and_uniform_rank.pt",
+      "basis_sha256": "8e72872f9bf55f0c03358ee9c643411c47b1a1c863cc915116453af0b18ecf58",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_12_resource_search.json",
+      "basis_report_sha256": "783d80aa59bef198460e4aa97114a2d1fdb6fa260e2cce373b50786d1f9b1206"
+    },
+    {
+      "tier": "U019",
+      "layer": 13,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_13_basis_and_uniform_rank.pt",
+      "basis_sha256": "25df8b740476bd76afc00589eff51addbc3ad60bcfb5c57cd2ef8156a94d5ef6",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_13_resource_search.json",
+      "basis_report_sha256": "d21705b04dc6bd07b451f172200a11b28fcd4a55ae8c77d661d812f685f09853"
+    },
+    {
+      "tier": "U019",
+      "layer": 14,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_14_basis_and_uniform_rank.pt",
+      "basis_sha256": "f332556a225bd533f8727412e9a990c3f85330eadaeaff68b80cc82aca7e71b3",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_14_resource_search.json",
+      "basis_report_sha256": "497076eb563f1bb6deddb730788d2472b47ff392043d9a74a783a60be2651509"
+    },
+    {
+      "tier": "U019",
+      "layer": 15,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_15_basis_and_uniform_rank.pt",
+      "basis_sha256": "80b751298a86a84f31fba9b6418cce4325f2acb4a37d2a075c1518283dc0dfd9",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_15_resource_search.json",
+      "basis_report_sha256": "b59187e959cdb81c491e0fb28e8838d79ba5b7acb30912e5ba434aeb7e7d17ea"
+    },
+    {
+      "tier": "U019",
+      "layer": 16,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_16_basis_and_uniform_rank.pt",
+      "basis_sha256": "c146cdc84dceea4a09252606799fe337a0de5136193e2b63b8850305149625aa",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_16_resource_search.json",
+      "basis_report_sha256": "309cb6c9aff3c74be0d3ae7c1602c9978b65874b04951d7d0fa5a66cccd3e6ed"
+    },
+    {
+      "tier": "U019",
+      "layer": 17,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_17_basis_and_uniform_rank.pt",
+      "basis_sha256": "b9381c93e54ab0ba7998116b45a65b44530c4476a83779bbed3e7e79924931f6",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_17_resource_search.json",
+      "basis_report_sha256": "3615c3e2fe8af0b040f6ee91163ef03ca3fffd4e2f623443ab00a002853128bd"
+    },
+    {
+      "tier": "U019",
+      "layer": 18,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_18_basis_and_uniform_rank.pt",
+      "basis_sha256": "4e82ce84c46da1cbaa387230fdd18fa07a2c7e716adba12e54447bd53bc6c2e2",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_18_resource_search.json",
+      "basis_report_sha256": "bbc1453a187817caaebf7b312b5ea082d74f928d047315e4aad540ab5b09f4af"
+    },
+    {
+      "tier": "U019",
+      "layer": 19,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_19_basis_and_uniform_rank.pt",
+      "basis_sha256": "48c416f8abc6bfc6062049730d4642e5b1227d5c19ced0589c377eb5e9d4fe20",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_19_resource_search.json",
+      "basis_report_sha256": "06531b263d174199f0386f97e973e3892b879704af91ca9eff45ac2686ac82e3"
+    },
+    {
+      "tier": "U019",
+      "layer": 20,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_20_basis_and_uniform_rank.pt",
+      "basis_sha256": "dd9ffe52fd2df359c129afa7cf1876bc3cd945bf3298f6f504239720fc0e547d",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_20_resource_search.json",
+      "basis_report_sha256": "f90165473ffb949d84522b7a3ce7ab1fe4abcabf2f67f5090089d2e23fdf803a"
+    },
+    {
+      "tier": "U019",
+      "layer": 21,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_21_basis_and_uniform_rank.pt",
+      "basis_sha256": "28978a6346c4bad5eaa34f3dc64cfb65342e2cb8f54a50fc9d5223fd464c7d3f",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_21_resource_search.json",
+      "basis_report_sha256": "41b2b81896a09ff3c9f273a1fb9221aff02f674a111a65a524a05e89b40db1e9"
+    },
+    {
+      "tier": "U019",
+      "layer": 22,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_22_basis_and_uniform_rank.pt",
+      "basis_sha256": "9a51dbe512fea2004bd2a85667f7b11d73bd517ab3b830141449cd516f5fb87c",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_22_resource_search.json",
+      "basis_report_sha256": "0627744ff1ef107a8d7047d0f51b09863ec561e6a006f3999d08c68dfc87830d"
+    },
+    {
+      "tier": "U019",
+      "layer": 23,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_23_basis_and_uniform_rank.pt",
+      "basis_sha256": "6e7bc04fdcdb1ebf573fc1f162c323398a55f960bb323f9e3114db027a812b7c",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_23_resource_search.json",
+      "basis_report_sha256": "deeadca629ce4d3693e7ed1f419ad11766b8ef180d0c8b4ef5a30fb9b7b439c1"
+    },
+    {
+      "tier": "U019",
+      "layer": 24,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_24_basis_and_uniform_rank.pt",
+      "basis_sha256": "3bfbd6079f8a57dd511458215d49ea2c2c6ff20f5da6af88ebdc5934b01e153b",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_24_resource_search.json",
+      "basis_report_sha256": "2d40b8f30b4fc71b06207deb70758fcf3550b748edcef7bc0a7062d9b6cbfb23"
+    },
+    {
+      "tier": "U019",
+      "layer": 25,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_25_basis_and_uniform_rank.pt",
+      "basis_sha256": "8fa49f39acf8ead6a62c28af2653fdd46337e01030a690cf6a7723d76fa5ab09",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_25_resource_search.json",
+      "basis_report_sha256": "fcecba24d0bc071fc1520488dcea5fd96609dee2ad52c758259d5f032c37528f"
+    },
+    {
+      "tier": "U019",
+      "layer": 26,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_26_basis_and_uniform_rank.pt",
+      "basis_sha256": "6ca2ac2df1e17e1c9ef5d7044a4ed0be4e67fb13a4491f5338daadc4e78bee4d",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_26_resource_search.json",
+      "basis_report_sha256": "78938c867f9b0901f1445ac10290eb3fae3d3ee36d30d3fec963fd807ad3fd9a"
+    },
+    {
+      "tier": "U019",
+      "layer": 27,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_27_basis_and_uniform_rank.pt",
+      "basis_sha256": "12b2d81d684575beafa6020c2f6354d27963de549154a644ffc1a6390c481c1c",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_27_resource_search.json",
+      "basis_report_sha256": "0b55dec07570ba097b197be2f5d7e472d571efdb314d0d4f1afb289eaf3ae0aa"
+    },
+    {
+      "tier": "U019",
+      "layer": 28,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_28_basis_and_uniform_rank.pt",
+      "basis_sha256": "6108942bd828c5b66fb125e7b0cbf0bf5e27cf2e65738a09d03efbe94669e4f8",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_28_resource_search.json",
+      "basis_report_sha256": "151879820f8fe4a0b58c963d845ef8c9bad2301734f25c4ed522fcd41ed7361d"
+    },
+    {
+      "tier": "U019",
+      "layer": 29,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_29_basis_and_uniform_rank.pt",
+      "basis_sha256": "c9654dee296a31acfc828a679f19a263327b0724b863679609349538cd95bca1",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_29_resource_search.json",
+      "basis_report_sha256": "cf610d5d7e8f6bdeb0e90dc14164289f847d0b87116795295b75c1c62d684b40"
+    },
+    {
+      "tier": "U019",
+      "layer": 30,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_30_basis_and_uniform_rank.pt",
+      "basis_sha256": "1c4334ab37552e1a251b4b9b754ee7892ae92ae12c75723a21bc8147b7b022a3",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_30_resource_search.json",
+      "basis_report_sha256": "e9cdd5d3d3007b010eb729b5e9988ccaa969fafcff27a5effb97273f8e6f94cd"
+    },
+    {
+      "tier": "U019",
+      "layer": 31,
+      "basis": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_31_basis_and_uniform_rank.pt",
+      "basis_sha256": "1f1b3600f3bffd7f1b7c3622c9e5eccbaab5bc446fd1f803d094532ca0e62b40",
+      "basis_report": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/layer_31_resource_search.json",
+      "basis_report_sha256": "83d45befbd74738021e4736ea9f9c08f9520938779ff5ad32b406bf355022faf"
+    }
+  ],
+  "historical_quality_modified": false,
+  "PPL_restarted": false,
+  "external_comparisons": "WAIT_FOR_NEW_FORMAL_5TASK_ANCHOR"
+}

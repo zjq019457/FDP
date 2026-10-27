@@ -1,0 +1,24 @@
+{
+  "audit_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/PAIRED_ZEROSHOT_RESULT_AUDIT.json",
+  "audit_sha256": "b1922befbf9a79c74dbea248e6c8692c09879b1515eae7341bea47249f4020dc",
+  "completed_at_utc": "2026-09-28T21:36:04.219865+00:00",
+  "foreign_jobs_interrupted": 0,
+  "manifest_sha256": "1f51401f56400d08e0d4706fc44b7c745730c8aa30381d72ac313f65752f7621",
+  "status": "COMPLETE",
+  "workers": [
+    {
+      "gpu": 0,
+      "log": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/logs/v1.log",
+      "mode": "v1",
+      "output_root": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/PALU_V1_NATIVE_FORMAL_MATCHED",
+      "pid": 984043
+    },
+    {
+      "gpu": 1,
+      "log": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/logs/v3.log",
+      "mode": "v3",
+      "output_root": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/PALU_V3_SELECTED",
+      "pid": 984044
+    }
+  ]
+}

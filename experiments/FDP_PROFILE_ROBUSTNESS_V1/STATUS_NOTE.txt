@@ -1,0 +1,1 @@
+STOPPED 2026-10-13T00:09:24-07:00 by user request (rebuild takes ~1h; not needed). Logs kept; partial basis in ../FDP_PROFILE_ROBUSTNESS_V1_SCRATCH removed.

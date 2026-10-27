@@ -1,0 +1,21 @@
+{
+  "decision": "Do not rerun V1 SAMSum: official ratio-0.5 fdp_native DONE already exists with exactly the V1 semantic schedule, q SHA, 200 samples, same resource and official runner/scorer. The attempted isolated V1 child was our own process and was stopped before any output file was written. Continue only missing V3 SAMSum official-decode cell.",
+  "foreign_jobs_interrupted": 0,
+  "official_schedule_file_sha256": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+  "official_v1_samsum_done_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/runs/ratio_0p5/fdp_native/samsum/DONE.json",
+  "official_v1_samsum_n": 200,
+  "official_v1_samsum_score": 39.12,
+  "outputs_written_by_attempt": false,
+  "own_supervisor_pid": 1750176,
+  "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "resource_exact": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "schema": "palu_longbench_samsum_dedup_audit_v1",
+  "status": "V1_REUSED_EXISTING_OFFICIAL_RESULT",
+  "stopped_own_child_pid": 1750177,
+  "v1_semantic_schedule_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf"
+}

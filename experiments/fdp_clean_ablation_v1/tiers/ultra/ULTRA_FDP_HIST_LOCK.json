@@ -1,0 +1,175 @@
+{
+  "tier": "ultra",
+  "scalar_eb": 0.12,
+  "method": "FDP-HIST",
+  "provenance": {
+    "pass1_source": "/diskF/jiaqizhang/fdp_clean_ablation_v1/tiers/ultra/pass1_uniform/final_model/pass1_meta.json",
+    "step1_diagnostic": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb120.json",
+    "eb_schedule": "/diskF/jiaqizhang/fdp_clean_ablation_v1/tiers/ultra/per_layer_eb_ultra_120.json",
+    "operator": "build_eigen_basis_llama_error_budget_offline.py",
+    "operator_config": {
+      "floor": 0.3,
+      "min_rank": 64,
+      "threshold_step": 0.02,
+      "nsamples": 64,
+      "seqlen": 2048,
+      "seed": 2,
+      "dtype": "bf16"
+    },
+    "formula_parameters": {
+      "lambda": 1.2,
+      "rho": 1.0,
+      "weights": {
+        "wz": 1.0,
+        "ws": 1.0,
+        "wv": 1.0,
+        "wa": 1.0,
+        "wh": 1.0
+      },
+      "normalization": "mean",
+      "layer0_override": 0.12
+    }
+  },
+  "metrics": {
+    "total_rank": 30328,
+    "B_live": 124223488,
+    "rank_sha": "6c5f695f4256c9c01504137b8f6ace79afd625884d8f86a07ebef2e41e1e5239",
+    "dense_rank": 65536,
+    "dense_bytes": 268435456,
+    "kv_retention_ratio": 0.4627685546875,
+    "kv_compression_ratio": 0.5372314453125,
+    "floor_count": 8,
+    "total_heads": 64,
+    "floor_percentage": 12.5
+  },
+  "ranks": [
+    [
+      656,
+      960
+    ],
+    [
+      384,
+      864
+    ],
+    [
+      32,
+      256
+    ],
+    [
+      408,
+      816
+    ],
+    [
+      448,
+      832
+    ],
+    [
+      416,
+      776
+    ],
+    [
+      408,
+      816
+    ],
+    [
+      256,
+      704
+    ],
+    [
+      280,
+      728
+    ],
+    [
+      328,
+      744
+    ],
+    [
+      296,
+      704
+    ],
+    [
+      408,
+      768
+    ],
+    [
+      480,
+      840
+    ],
+    [
+      400,
+      792
+    ],
+    [
+      384,
+      776
+    ],
+    [
+      248,
+      712
+    ],
+    [
+      216,
+      704
+    ],
+    [
+      208,
+      680
+    ],
+    [
+      96,
+      600
+    ],
+    [
+      152,
+      656
+    ],
+    [
+      64,
+      584
+    ],
+    [
+      80,
+      608
+    ],
+    [
+      48,
+      456
+    ],
+    [
+      64,
+      624
+    ],
+    [
+      48,
+      480
+    ],
+    [
+      56,
+      584
+    ],
+    [
+      56,
+      576
+    ],
+    [
+      72,
+      616
+    ],
+    [
+      56,
+      544
+    ],
+    [
+      456,
+      848
+    ],
+    [
+      424,
+      824
+    ],
+    [
+      208,
+      720
+    ]
+  ]
+}

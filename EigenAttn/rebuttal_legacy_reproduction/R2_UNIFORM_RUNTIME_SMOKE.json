@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-28T09:59:02.864364-07:00",
+  "finite_logits": true,
+  "logits_shape": [
+    1,
+    64,
+    128256
+  ],
+  "attn0_class": "LlamaEigenAttention",
+  "n_layers": 32,
+  "low_rank_config_len": 32,
+  "input_ids_sha_prefix": "[541, 97, 191, 172, 553, 604, 103, 733]",
+  "dense_fallback_suspected": false,
+  "save_dir": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/r2_uniform_eb045/final_model",
+  "model_manifest_sha": "0d61d9ab31bd53d8d769ea208b37d9ca1e048740b58f200173e502f567403375"
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "MPT7B_U011_DIAGNOSTIC_PAIRED_BOOTSTRAP_V1",
+  "experiment": "UNMATCHED_RESOURCE_DIAGNOSTIC",
+  "formal_matched_quality": false,
+  "delta_definition": "FDP minus Uniform",
+  "resamples": 10000,
+  "seed": 2,
+  "method": "paired window bootstrap; wiki and c4 resampled independently inside each J replicate",
+  "wiki_windows": 140,
+  "c4_windows": 256,
+  "uniform": {
+    "wiki_ppl": 8.106486240903346,
+    "c4_ppl": 10.03699963794637,
+    "wiki_log_ppl": 2.0926645117146627,
+    "c4_log_ppl": 2.3062782287597656,
+    "J": 2.199471370237214
+  },
+  "fdp": {
+    "wiki_ppl": 7.937104748381144,
+    "c4_ppl": 9.784708858599592,
+    "wiki_log_ppl": 2.071548567499433,
+    "c4_log_ppl": 2.280820846557617,
+    "J": 2.176184707028525
+  },
+  "delta_log_ppl_wiki": {
+    "point": -0.021115944215229554,
+    "ci95": [
+      -0.022436446930680955,
+      -0.019881783979279657
+    ],
+    "excludes_zero": true
+  },
+  "delta_log_ppl_c4": {
+    "point": -0.025457382202148438,
+    "ci95": [
+      -0.030656909942626952,
+      -0.02104182243347168
+    ],
+    "excludes_zero": true
+  },
+  "delta_J": {
+    "point": -0.023286663208688996,
+    "ci95": [
+      -0.025980016535946303,
+      -0.020971066174762593
+    ],
+    "excludes_zero": true
+  },
+  "resource": {
+    "uniform_b_live": 851705856,
+    "fdp_b_live": 889323520,
+    "relative_gap": 0.04416743613419514
+  },
+  "quality_used_to_select_schedule": false
+}

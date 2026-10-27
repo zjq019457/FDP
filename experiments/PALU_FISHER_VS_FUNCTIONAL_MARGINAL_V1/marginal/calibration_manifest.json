@@ -1,0 +1,134 @@
+{
+  "J_definition": "0.5 * mean token NLL over WikiText-2 chunks + 0.5 * mean token NLL over C4 chunks; PPL=exp(mean NLL) reported separately",
+  "c4": {
+    "chunks": [
+      {
+        "chunk_id": "c4_00",
+        "doc_index": 202,
+        "token_count_at_manifest": 13850,
+        "token_end": 2048,
+        "token_start": 0
+      },
+      {
+        "chunk_id": "c4_01",
+        "doc_index": 227,
+        "token_count_at_manifest": 2883,
+        "token_end": 2048,
+        "token_start": 0
+      },
+      {
+        "chunk_id": "c4_02",
+        "doc_index": 521,
+        "token_count_at_manifest": 3301,
+        "token_end": 2048,
+        "token_start": 0
+      },
+      {
+        "chunk_id": "c4_03",
+        "doc_index": 677,
+        "token_count_at_manifest": 7376,
+        "token_end": 2048,
+        "token_start": 0
+      },
+      {
+        "chunk_id": "c4_04",
+        "doc_index": 689,
+        "token_count_at_manifest": 2374,
+        "token_end": 2048,
+        "token_start": 0
+      },
+      {
+        "chunk_id": "c4_05",
+        "doc_index": 730,
+        "token_count_at_manifest": 2383,
+        "token_end": 2048,
+        "token_start": 0
+      },
+      {
+        "chunk_id": "c4_06",
+        "doc_index": 921,
+        "token_count_at_manifest": 3057,
+        "token_end": 2048,
+        "token_start": 0
+      },
+      {
+        "chunk_id": "c4_07",
+        "doc_index": 1019,
+        "token_count_at_manifest": 14888,
+        "token_end": 2048,
+        "token_start": 0
+      }
+    ],
+    "pool_docs": 1100,
+    "source": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/data/c4-validation.00000-of-00008.json.gz",
+    "source_sha256": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f"
+  },
+  "loss": "torch.nn.functional.cross_entropy over next-token labels; no padding; fixed full 2048-token windows; fp32 reduction from model logits",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "n_c4_chunks": 8,
+  "n_wikitext_chunks": 8,
+  "overlap_policy": "independent calibration manifest; not used for Fisher calibration; fixed across every unit and ratio",
+  "quality_parameter_search": false,
+  "seed": 20260918,
+  "sequence_length": 2048,
+  "status": "FROZEN_BEFORE_MARGINAL_QUALITY",
+  "task": "PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1",
+  "tokenizer": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "wikitext": {
+    "chunks": [
+      {
+        "chunk_id": "wiki_00",
+        "token_end": 28496,
+        "token_start": 26448
+      },
+      {
+        "chunk_id": "wiki_01",
+        "token_end": 82832,
+        "token_start": 80784
+      },
+      {
+        "chunk_id": "wiki_02",
+        "token_end": 163562,
+        "token_start": 161514
+      },
+      {
+        "chunk_id": "wiki_03",
+        "token_end": 186639,
+        "token_start": 184591
+      },
+      {
+        "chunk_id": "wiki_04",
+        "token_end": 228126,
+        "token_start": 226078
+      },
+      {
+        "chunk_id": "wiki_05",
+        "token_end": 320113,
+        "token_start": 318065
+      },
+      {
+        "chunk_id": "wiki_06",
+        "token_end": 325978,
+        "token_start": 323930
+      },
+      {
+        "chunk_id": "wiki_07",
+        "token_end": 331487,
+        "token_start": 329439
+      }
+    ],
+    "source": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/data/wiki-test.hf_joined.raw",
+    "source_sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83",
+    "token_count": 341469,
+    "token_starts": [
+      26448,
+      80784,
+      161514,
+      184591,
+      226078,
+      318065,
+      323930,
+      329439
+    ]
+  }
+}

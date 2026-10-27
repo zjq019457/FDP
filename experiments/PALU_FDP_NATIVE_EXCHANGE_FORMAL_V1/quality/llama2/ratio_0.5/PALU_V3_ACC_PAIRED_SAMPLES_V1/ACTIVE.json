@@ -1,0 +1,20 @@
+{
+  "completed_at_epoch": 1790829683.5016294,
+  "current_method": null,
+  "current_started_at_epoch": 1790827991.0946739,
+  "foreign_jobs_interrupted": 0,
+  "gpu": 2,
+  "launch_snapshot": {
+    "diskE_free_bytes": 14220382208,
+    "gpu_query": [
+      "0, 49050 MiB, 42 %",
+      "1, 28314 MiB, 47 %",
+      "2, 81153 MiB, 0 %"
+    ]
+  },
+  "launched_at_epoch": 1790826055.1838043,
+  "manifest_payload_sha256": "6eee89c585f1db63b98f8c202f08b6fb4edb1fc8ae300d2250b2489a68afd21b",
+  "started_at_epoch": 1790826055.2109592,
+  "status": "SAMPLE_LOGGING_COMPLETE",
+  "worker_pid": 1744085
+}

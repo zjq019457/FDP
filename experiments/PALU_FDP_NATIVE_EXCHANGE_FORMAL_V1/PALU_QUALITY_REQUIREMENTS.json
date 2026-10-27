@@ -1,0 +1,36 @@
+{
+  "claim_guard": "No universal FDP_NATIVE claim; retain all ratio/method outcomes.",
+  "downstream": {
+    "longbench": {
+      "required": "AUDIT_DEPENDENT",
+      "status": "SUPPORTED_BY_REPO_NOT_YET_REQUIRED_FOR_MAIN_INTRINSIC_CLOSURE"
+    },
+    "zero_shot": {
+      "reason": "official README and run_lm_eval.py support paper-faithful zero-shot evaluation",
+      "required": true,
+      "status": "PENDING_RATIO_0P5_FOUR_METHODS",
+      "tasks": [
+        "openbookqa",
+        "hellaswag",
+        "piqa",
+        "arc_easy",
+        "arc_challenge",
+        "winogrande"
+      ]
+    }
+  },
+  "intrinsic": {
+    "C4 PPL": "REQUIRED_COMPLETE_12_MAIN_CELLS",
+    "WikiText-2 PPL": "REQUIRED_COMPLETE_12_MAIN_CELLS",
+    "exact_resource": "REQUIRED_COMPLETE"
+  },
+  "statistics": {
+    "downstream": "paired bootstrap only if raw paired task-level values are available",
+    "ppl": "aggregate/per-window descriptive; no CI manufactured from aggregate-only outputs"
+  },
+  "status": "AUDITED_REQUIREMENTS_FROZEN_MAIN_INTRINSIC_COMPLETE_DOWNSTREAM_PENDING",
+  "system": {
+    "required": true,
+    "status": "PENDING_OR_ANALYTICALLY_AUDITED"
+  }
+}

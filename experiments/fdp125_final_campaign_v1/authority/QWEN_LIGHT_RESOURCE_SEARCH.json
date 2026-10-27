@@ -1,0 +1,1122 @@
+{
+  "status": "FROZEN_CLOSEST_FRONTIER",
+  "started_at": "2026-09-12T23:44:51.947971-07:00",
+  "selection_policy": "RESOURCE_ONLY_NO_QUALITY",
+  "model": "/diskE/jiaqizhang/Qwen2.5-7B",
+  "regime": "LIGHT",
+  "target_ratio": 0.816,
+  "target_bytes": 95831458,
+  "full_resource_bytes": 117440512,
+  "tested": [
+    {
+      "base_e": 0.015,
+      "started_at": "2026-09-12T23:44:52.957290-07:00",
+      "completed_at": "2026-09-12T23:50:52.089175-07:00",
+      "B_live": 96010240,
+      "full_resource_bytes": 117440512,
+      "retained_ratio": 0.8175223214285714,
+      "target_bytes": 95831458,
+      "resource_gap_pct": 0.1865587811467921,
+      "rank_sha": "1fc822305f518e1843ac5c462766a6167bbea9da79a6baeca8056fccc15fe08c",
+      "ranks": [
+        [
+          512,
+          512
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          144,
+          336
+        ],
+        [
+          184,
+          356
+        ],
+        [
+          348,
+          460
+        ],
+        [
+          340,
+          464
+        ],
+        [
+          292,
+          424
+        ],
+        [
+          300,
+          452
+        ],
+        [
+          360,
+          460
+        ],
+        [
+          328,
+          444
+        ],
+        [
+          320,
+          448
+        ],
+        [
+          300,
+          464
+        ],
+        [
+          236,
+          420
+        ],
+        [
+          304,
+          436
+        ],
+        [
+          260,
+          432
+        ],
+        [
+          300,
+          432
+        ],
+        [
+          392,
+          476
+        ],
+        [
+          352,
+          480
+        ],
+        [
+          368,
+          460
+        ],
+        [
+          440,
+          496
+        ],
+        [
+          428,
+          496
+        ],
+        [
+          444,
+          496
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          444,
+          492
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          508
+        ]
+      ],
+      "basis_sha": "87b807e4560b3b7c458b55b15bab36e60a211ad5ca036b24137c7e3f19964681",
+      "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "builder_sha": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+        "--model",
+        "/diskE/jiaqizhang/Qwen2.5-7B",
+        "--data_dir",
+        "/home/bai-project/jiaqizhang/wikitext2",
+        "--out_dir",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01500000/basis",
+        "--out_prefix",
+        "fdp125_qwen_light_e_0p01500000",
+        "--per_layer_eb_json",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01500000/per_layer_eb.json",
+        "--freeze_layer0_eb",
+        "--layer0_eb",
+        "0.06",
+        "--nsamples",
+        "64",
+        "--seqlen",
+        "2048",
+        "--dtype",
+        "bf16",
+        "--attn_implementation",
+        "eager",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "base_e": 0.018,
+      "started_at": "2026-09-12T23:50:52.115153-07:00",
+      "completed_at": "2026-09-12T23:57:47.226593-07:00",
+      "B_live": 90013696,
+      "full_resource_bytes": 117440512,
+      "retained_ratio": 0.7664620535714286,
+      "target_bytes": 95831458,
+      "resource_gap_pct": -6.070826972078417,
+      "rank_sha": "4eb3853bb331d1e2f01d76f2d85d11d33a951d11010fe35157e6822acbe0cf0b",
+      "ranks": [
+        [
+          512,
+          512
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          384,
+          496
+        ],
+        [
+          112,
+          308
+        ],
+        [
+          144,
+          324
+        ],
+        [
+          308,
+          444
+        ],
+        [
+          260,
+          436
+        ],
+        [
+          264,
+          408
+        ],
+        [
+          264,
+          436
+        ],
+        [
+          324,
+          448
+        ],
+        [
+          300,
+          428
+        ],
+        [
+          260,
+          420
+        ],
+        [
+          256,
+          448
+        ],
+        [
+          192,
+          392
+        ],
+        [
+          276,
+          420
+        ],
+        [
+          232,
+          416
+        ],
+        [
+          244,
+          400
+        ],
+        [
+          352,
+          464
+        ],
+        [
+          300,
+          464
+        ],
+        [
+          336,
+          444
+        ],
+        [
+          388,
+          480
+        ],
+        [
+          372,
+          480
+        ],
+        [
+          396,
+          480
+        ],
+        [
+          452,
+          492
+        ],
+        [
+          444,
+          492
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          508
+        ]
+      ],
+      "basis_sha": "960e9ce166dd051166e1729e395e44ff1b6d59a21de2cc8d112f97dbb2adb31e",
+      "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "builder_sha": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+        "--model",
+        "/diskE/jiaqizhang/Qwen2.5-7B",
+        "--data_dir",
+        "/home/bai-project/jiaqizhang/wikitext2",
+        "--out_dir",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01800000/basis",
+        "--out_prefix",
+        "fdp125_qwen_light_e_0p01800000",
+        "--per_layer_eb_json",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01800000/per_layer_eb.json",
+        "--freeze_layer0_eb",
+        "--layer0_eb",
+        "0.06",
+        "--nsamples",
+        "64",
+        "--seqlen",
+        "2048",
+        "--dtype",
+        "bf16",
+        "--attn_implementation",
+        "eager",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "base_e": 0.0165,
+      "started_at": "2026-09-12T23:57:47.251911-07:00",
+      "completed_at": "2026-09-13T00:04:10.386229-07:00",
+      "B_live": 92520448,
+      "full_resource_bytes": 117440512,
+      "retained_ratio": 0.7878069196428571,
+      "target_bytes": 95831458,
+      "resource_gap_pct": -3.4550345670416496,
+      "rank_sha": "4fa7dda69c43cce1622b12a5c1872280e4dabed88016ba2942be60acf56b623b",
+      "ranks": [
+        [
+          512,
+          512
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          384,
+          496
+        ],
+        [
+          128,
+          324
+        ],
+        [
+          164,
+          340
+        ],
+        [
+          348,
+          460
+        ],
+        [
+          296,
+          452
+        ],
+        [
+          264,
+          408
+        ],
+        [
+          300,
+          452
+        ],
+        [
+          360,
+          460
+        ],
+        [
+          300,
+          428
+        ],
+        [
+          288,
+          432
+        ],
+        [
+          256,
+          448
+        ],
+        [
+          212,
+          404
+        ],
+        [
+          276,
+          420
+        ],
+        [
+          260,
+          432
+        ],
+        [
+          268,
+          416
+        ],
+        [
+          352,
+          464
+        ],
+        [
+          352,
+          480
+        ],
+        [
+          368,
+          460
+        ],
+        [
+          388,
+          480
+        ],
+        [
+          372,
+          480
+        ],
+        [
+          444,
+          496
+        ],
+        [
+          452,
+          492
+        ],
+        [
+          444,
+          492
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          508
+        ]
+      ],
+      "basis_sha": "7ab31c49dd84a4f07a284b2f47eb4c43d7e9f51d4ec7210fbf51a202f938b1e3",
+      "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "builder_sha": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+        "--model",
+        "/diskE/jiaqizhang/Qwen2.5-7B",
+        "--data_dir",
+        "/home/bai-project/jiaqizhang/wikitext2",
+        "--out_dir",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01650000/basis",
+        "--out_prefix",
+        "fdp125_qwen_light_e_0p01650000",
+        "--per_layer_eb_json",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01650000/per_layer_eb.json",
+        "--freeze_layer0_eb",
+        "--layer0_eb",
+        "0.06",
+        "--nsamples",
+        "64",
+        "--seqlen",
+        "2048",
+        "--dtype",
+        "bf16",
+        "--attn_implementation",
+        "eager",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "base_e": 0.01575,
+      "started_at": "2026-09-13T00:04:10.415109-07:00",
+      "completed_at": "2026-09-13T00:10:11.487561-07:00",
+      "B_live": 95010816,
+      "full_resource_bytes": 117440512,
+      "retained_ratio": 0.8090122767857143,
+      "target_bytes": 95831458,
+      "resource_gap_pct": -0.8563388443907428,
+      "rank_sha": "9e8431f74c86e33b62c41178ba2a71183c8675cc48568fcc1df565027c083e16",
+      "ranks": [
+        [
+          512,
+          512
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          144,
+          336
+        ],
+        [
+          164,
+          340
+        ],
+        [
+          348,
+          460
+        ],
+        [
+          340,
+          464
+        ],
+        [
+          292,
+          424
+        ],
+        [
+          300,
+          452
+        ],
+        [
+          360,
+          460
+        ],
+        [
+          328,
+          444
+        ],
+        [
+          288,
+          432
+        ],
+        [
+          300,
+          464
+        ],
+        [
+          212,
+          404
+        ],
+        [
+          304,
+          436
+        ],
+        [
+          260,
+          432
+        ],
+        [
+          300,
+          432
+        ],
+        [
+          352,
+          464
+        ],
+        [
+          352,
+          480
+        ],
+        [
+          368,
+          460
+        ],
+        [
+          388,
+          480
+        ],
+        [
+          428,
+          496
+        ],
+        [
+          444,
+          496
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          444,
+          492
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          508
+        ]
+      ],
+      "basis_sha": "e25fa7d5574f0d7492eb8a7b04f47b3c413aeac4855857acb03a37386fe9046b",
+      "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "builder_sha": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+        "--model",
+        "/diskE/jiaqizhang/Qwen2.5-7B",
+        "--data_dir",
+        "/home/bai-project/jiaqizhang/wikitext2",
+        "--out_dir",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01575000/basis",
+        "--out_prefix",
+        "fdp125_qwen_light_e_0p01575000",
+        "--per_layer_eb_json",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01575000/per_layer_eb.json",
+        "--freeze_layer0_eb",
+        "--layer0_eb",
+        "0.06",
+        "--nsamples",
+        "64",
+        "--seqlen",
+        "2048",
+        "--dtype",
+        "bf16",
+        "--attn_implementation",
+        "eager",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "base_e": 0.015375,
+      "started_at": "2026-09-13T00:10:11.517701-07:00",
+      "completed_at": "2026-09-13T00:16:06.430933-07:00",
+      "B_live": 95322112,
+      "full_resource_bytes": 117440512,
+      "retained_ratio": 0.8116629464285714,
+      "target_bytes": 95831458,
+      "resource_gap_pct": -0.5315018790593795,
+      "rank_sha": "8181e7b3779b753d2f813289166899dfe9972e8a339f1272f026ba03b00de733",
+      "ranks": [
+        [
+          512,
+          512
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          144,
+          336
+        ],
+        [
+          184,
+          356
+        ],
+        [
+          348,
+          460
+        ],
+        [
+          340,
+          464
+        ],
+        [
+          292,
+          424
+        ],
+        [
+          300,
+          452
+        ],
+        [
+          360,
+          460
+        ],
+        [
+          328,
+          444
+        ],
+        [
+          288,
+          432
+        ],
+        [
+          300,
+          464
+        ],
+        [
+          236,
+          420
+        ],
+        [
+          304,
+          436
+        ],
+        [
+          260,
+          432
+        ],
+        [
+          300,
+          432
+        ],
+        [
+          352,
+          464
+        ],
+        [
+          352,
+          480
+        ],
+        [
+          368,
+          460
+        ],
+        [
+          388,
+          480
+        ],
+        [
+          428,
+          496
+        ],
+        [
+          444,
+          496
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          444,
+          492
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          508
+        ]
+      ],
+      "basis_sha": "718ffb0055f475e82eb624bbdf51254f387ce9a1054b06af8c0a7f7ac075e747",
+      "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "builder_sha": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+        "--model",
+        "/diskE/jiaqizhang/Qwen2.5-7B",
+        "--data_dir",
+        "/home/bai-project/jiaqizhang/wikitext2",
+        "--out_dir",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01537500/basis",
+        "--out_prefix",
+        "fdp125_qwen_light_e_0p01537500",
+        "--per_layer_eb_json",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01537500/per_layer_eb.json",
+        "--freeze_layer0_eb",
+        "--layer0_eb",
+        "0.06",
+        "--nsamples",
+        "64",
+        "--seqlen",
+        "2048",
+        "--dtype",
+        "bf16",
+        "--attn_implementation",
+        "eager",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "2"
+      ]
+    },
+    {
+      "base_e": 0.0151875,
+      "started_at": "2026-09-13T00:16:06.462574-07:00",
+      "completed_at": "2026-09-13T00:21:57.452215-07:00",
+      "B_live": 95600640,
+      "full_resource_bytes": 117440512,
+      "retained_ratio": 0.8140345982142857,
+      "target_bytes": 95831458,
+      "resource_gap_pct": -0.2408582784997386,
+      "rank_sha": "cd2c4fd04bf2e31d06c13679a02209a9cdacf591c8b6aaa1069ff27dc8f4765a",
+      "ranks": [
+        [
+          512,
+          512
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          144,
+          336
+        ],
+        [
+          184,
+          356
+        ],
+        [
+          348,
+          460
+        ],
+        [
+          340,
+          464
+        ],
+        [
+          292,
+          424
+        ],
+        [
+          300,
+          452
+        ],
+        [
+          360,
+          460
+        ],
+        [
+          328,
+          444
+        ],
+        [
+          288,
+          432
+        ],
+        [
+          300,
+          464
+        ],
+        [
+          236,
+          420
+        ],
+        [
+          304,
+          436
+        ],
+        [
+          260,
+          432
+        ],
+        [
+          300,
+          432
+        ],
+        [
+          352,
+          464
+        ],
+        [
+          352,
+          480
+        ],
+        [
+          368,
+          460
+        ],
+        [
+          440,
+          496
+        ],
+        [
+          428,
+          496
+        ],
+        [
+          444,
+          496
+        ],
+        [
+          508,
+          508
+        ],
+        [
+          444,
+          492
+        ],
+        [
+          508,
+          512
+        ],
+        [
+          508,
+          508
+        ]
+      ],
+      "basis_sha": "195f59c53bae6f7282992f6fd2678dba776b57ddaf6d83a54122235b78de1058",
+      "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "builder_sha": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+      "command": [
+        "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "-u",
+        "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+        "--model",
+        "/diskE/jiaqizhang/Qwen2.5-7B",
+        "--data_dir",
+        "/home/bai-project/jiaqizhang/wikitext2",
+        "--out_dir",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01518750/basis",
+        "--out_prefix",
+        "fdp125_qwen_light_e_0p01518750",
+        "--per_layer_eb_json",
+        "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01518750/per_layer_eb.json",
+        "--freeze_layer0_eb",
+        "--layer0_eb",
+        "0.06",
+        "--nsamples",
+        "64",
+        "--seqlen",
+        "2048",
+        "--dtype",
+        "bf16",
+        "--attn_implementation",
+        "eager",
+        "--device",
+        "cuda:0",
+        "--seed",
+        "2"
+      ]
+    }
+  ],
+  "updated_at": "2026-09-13T00:21:57.483438-07:00",
+  "completed_at": "2026-09-13T00:21:57.484279-07:00",
+  "selected": {
+    "base_e": 0.015,
+    "started_at": "2026-09-12T23:44:52.957290-07:00",
+    "completed_at": "2026-09-12T23:50:52.089175-07:00",
+    "B_live": 96010240,
+    "full_resource_bytes": 117440512,
+    "retained_ratio": 0.8175223214285714,
+    "target_bytes": 95831458,
+    "resource_gap_pct": 0.1865587811467921,
+    "rank_sha": "1fc822305f518e1843ac5c462766a6167bbea9da79a6baeca8056fccc15fe08c",
+    "ranks": [
+      [
+        512,
+        512
+      ],
+      [
+        508,
+        508
+      ],
+      [
+        508,
+        512
+      ],
+      [
+        508,
+        512
+      ],
+      [
+        144,
+        336
+      ],
+      [
+        184,
+        356
+      ],
+      [
+        348,
+        460
+      ],
+      [
+        340,
+        464
+      ],
+      [
+        292,
+        424
+      ],
+      [
+        300,
+        452
+      ],
+      [
+        360,
+        460
+      ],
+      [
+        328,
+        444
+      ],
+      [
+        320,
+        448
+      ],
+      [
+        300,
+        464
+      ],
+      [
+        236,
+        420
+      ],
+      [
+        304,
+        436
+      ],
+      [
+        260,
+        432
+      ],
+      [
+        300,
+        432
+      ],
+      [
+        392,
+        476
+      ],
+      [
+        352,
+        480
+      ],
+      [
+        368,
+        460
+      ],
+      [
+        440,
+        496
+      ],
+      [
+        428,
+        496
+      ],
+      [
+        444,
+        496
+      ],
+      [
+        508,
+        508
+      ],
+      [
+        444,
+        492
+      ],
+      [
+        508,
+        512
+      ],
+      [
+        508,
+        508
+      ]
+    ],
+    "basis_sha": "87b807e4560b3b7c458b55b15bab36e60a211ad5ca036b24137c7e3f19964681",
+    "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+    "builder_sha": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+    "command": [
+      "/home/bai-project/anaconda3/envs/eigen/bin/python",
+      "-u",
+      "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+      "--model",
+      "/diskE/jiaqizhang/Qwen2.5-7B",
+      "--data_dir",
+      "/home/bai-project/jiaqizhang/wikitext2",
+      "--out_dir",
+      "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01500000/basis",
+      "--out_prefix",
+      "fdp125_qwen_light_e_0p01500000",
+      "--per_layer_eb_json",
+      "/diskE/jiaqizhang/fdp125_final_campaign_v1_scratch/qwen_light_resource/e_0p01500000/per_layer_eb.json",
+      "--freeze_layer0_eb",
+      "--layer0_eb",
+      "0.06",
+      "--nsamples",
+      "64",
+      "--seqlen",
+      "2048",
+      "--dtype",
+      "bf16",
+      "--attn_implementation",
+      "eager",
+      "--device",
+      "cuda:0",
+      "--seed",
+      "2"
+    ]
+  },
+  "no_quality_observed": true,
+  "scratch_cleaned": true
+}

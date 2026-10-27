@@ -1,0 +1,11 @@
+{
+  "job_id": "P4_long_context_2k",
+  "cmd": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_completion_pipeline/runners/long_context_eval.py",
+    "--profile",
+    "2k"
+  ],
+  "started_at": "2026-07-29T08:21:22.894908-07:00",
+  "protocol_hash": "bf8bc0030f95918c425b8b3721331a27d1bfd1711b48692089c000a106b7fd9e"
+}

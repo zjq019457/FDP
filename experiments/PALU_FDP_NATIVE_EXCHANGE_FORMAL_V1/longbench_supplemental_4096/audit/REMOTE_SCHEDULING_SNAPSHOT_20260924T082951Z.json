@@ -1,0 +1,295 @@
+{
+  "compute_processes": [
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "[Errno 13] Permission denied: '/proc/240410/exe'",
+        "owner": "unresolved",
+        "pid": 240410
+      },
+      "pid": 240410,
+      "process_name": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python",
+      "used_memory": "4286 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "[Errno 13] Permission denied: '/proc/240678/exe'",
+        "owner": "unresolved",
+        "pid": 240678
+      },
+      "pid": 240678,
+      "process_name": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python",
+      "used_memory": "4286 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "[Errno 13] Permission denied: '/proc/242214/exe'",
+        "owner": "unresolved",
+        "pid": 242214
+      },
+      "pid": 242214,
+      "process_name": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python",
+      "used_memory": "4286 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "[Errno 13] Permission denied: '/proc/244793/exe'",
+        "owner": "unresolved",
+        "pid": 244793
+      },
+      "pid": 244793,
+      "process_name": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python",
+      "used_memory": "4284 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task qmsum --gpu 0",
+        "exe": "/usr/bin/python3.12",
+        "owner": "a1804298693",
+        "pid": 246278
+      },
+      "pid": 246278,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "15882 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all",
+        "exe": "/usr/bin/python3.12",
+        "owner": "a1804298693",
+        "pid": 5663
+      },
+      "pid": 5663,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "15828 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskF/jiaqizhang/XKV_PAPER_REPRO_FDP_V1/code/xkv_paper_entry.py --flash2 --dataset_name long_bench/passage_retrieval_en,long_bench/lcc,long_bench/repobench-p --datalen 65536 --model_name_or_path /diskF/jiaqizhang/Llama-3.1 --batch_size 1 --method xkv --merge_k --merge_v --rank_k 384 --rank_v 576 --layer_group_size 4 --start_layer_idx 0 --end_layer_idx -1 --customized_merge_config /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/formal_configs/XKV_NATIVE_PHI_EXCHANGE.yaml --result_dir /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/results/formal_resumed/XKV_NATIVE_PHI_EXCHANGE_LONGBENCH_RECOVERY_20260923T2058Z",
+        "exe": "/usr/bin/python3.12",
+        "owner": "a1804298693",
+        "pid": 51365
+      },
+      "pid": 51365,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "17978 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task lcc --gpu 2",
+        "exe": "/usr/bin/python3.12",
+        "owner": "a1804298693",
+        "pid": 185069
+      },
+      "pid": 185069,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "14488 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task qmsum --gpu 2",
+        "exe": "/usr/bin/python3.12",
+        "owner": "a1804298693",
+        "pid": 246362
+      },
+      "pid": 246362,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "15896 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python /diskE/jiaqizhang/XKV_FDP_NATIVE_FINE_ITERATIVE_V2/runtime/diagnostics/xkv_v2_head_causal_substitution_v1_20260924T082108Z.py",
+        "exe": "/usr/bin/python3.12",
+        "owner": "a1804298693",
+        "pid": 252426
+      },
+      "pid": 252426,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "20274 MiB"
+    }
+  ],
+  "diskE_df_h": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sdd1       458G  389G   46G  90% /diskE",
+  "foreign_jobs_interrupted": 0,
+  "formal_result_files": {
+    "formal_results_mutated": false,
+    "longbench_results_json": "/diskE/jiaqizhang/PALU_LLAMA2_LONGBENCH_17TASK_V1/RESULTS.json",
+    "v1_formal": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/results/PALU_FORMAL_RESULTS.json"
+  },
+  "gpus": [
+    {
+      "index": 0,
+      "mem_free_mib": 48096,
+      "mem_total_mib": 81920,
+      "mem_used_mib": 33058,
+      "name": "NVIDIA A100 80GB PCIe",
+      "util_pct": 100,
+      "uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07"
+    },
+    {
+      "index": 1,
+      "mem_free_mib": 47333,
+      "mem_total_mib": 81920,
+      "mem_used_mib": 33821,
+      "name": "NVIDIA A100 80GB PCIe",
+      "util_pct": 100,
+      "uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806"
+    },
+    {
+      "index": 2,
+      "mem_free_mib": 30475,
+      "mem_total_mib": 81920,
+      "mem_used_mib": 50679,
+      "name": "NVIDIA A100 80GB PCIe",
+      "util_pct": 100,
+      "uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5"
+    }
+  ],
+  "host": "ecs-bai-quad",
+  "manifest_expected_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+  "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+  "native_lcc_live": [
+    {
+      "bytes": 240679,
+      "duplicate_valid_ids": 0,
+      "exists": true,
+      "parse_errors": 0,
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/lcc.raw.jsonl",
+      "q_sha_values": [
+        "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1"
+      ],
+      "raw_rows": 424,
+      "schedule_sha_values": [
+        "74b779ae20c128f28a5588b5907906d593148a4d2be7cc6ad0fe519d312c9907"
+      ],
+      "score_mean_fraction": 0.005330188679245283,
+      "valid_rows": 424,
+      "valid_unique_ids": 424
+    }
+  ],
+  "nvidia_smi_L": "GPU 0: NVIDIA A100 80GB PCIe (UUID: GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07)\nGPU 1: NVIDIA A100 80GB PCIe (UUID: GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806)\nGPU 2: NVIDIA A100 80GB PCIe (UUID: GPU-90f68475-4077-7c12-4d66-1cc9092e85c5)",
+  "observed_utc": "2026-09-24T08:29:51.673414+00:00",
+  "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "qmsum_live": {
+    "PALU_FDP_NATIVE": {
+      "bytes": 2819,
+      "duplicate_valid_ids": 0,
+      "exists": true,
+      "parse_errors": 0,
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/qmsum.raw.jsonl",
+      "q_sha_values": [
+        "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1"
+      ],
+      "raw_rows": 1,
+      "schedule_sha_values": [
+        "74b779ae20c128f28a5588b5907906d593148a4d2be7cc6ad0fe519d312c9907"
+      ],
+      "score_mean_fraction": 0.14583333084201394,
+      "valid_rows": 1,
+      "valid_unique_ids": 1
+    },
+    "PALU_UNIFORM": {
+      "bytes": 4972,
+      "duplicate_valid_ids": 0,
+      "exists": true,
+      "parse_errors": 0,
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_UNIFORM/qmsum.raw.jsonl",
+      "q_sha_values": [
+        "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1"
+      ],
+      "raw_rows": 2,
+      "schedule_sha_values": [
+        "3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834"
+      ],
+      "score_mean_fraction": 0.09491957161711835,
+      "valid_rows": 2,
+      "valid_unique_ids": 2
+    }
+  },
+  "ratio_0p5_tasks": [
+    "triviaqa",
+    "qasper",
+    "trec",
+    "samsum",
+    "lcc",
+    "repobench-p",
+    "qmsum",
+    "multi_news"
+  ],
+  "relevant_ps": [
+    "   5663       1 Rsl     14:10:05  167  0.7 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all",
+    "  51341   51315 Ssl     11:34:22  0.3  0.0 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -m torch.distributed.run --standalone --nnodes=1 --nproc_per_node=1 /diskF/jiaqizhang/XKV_PAPER_REPRO_FDP_V1/code/xkv_paper_entry.py --flash2 --dataset_name long_bench/passage_retrieval_en,long_bench/lcc,long_bench/repobench-p --datalen 65536 --model_name_or_path /diskF/jiaqizhang/Llama-3.1 --batch_size 1 --method xkv --merge_k --merge_v --rank_k 384 --rank_v 576 --layer_group_size 4 --start_layer_idx 0 --end_layer_idx -1 --customized_merge_config /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/formal_configs/XKV_NATIVE_PHI_EXCHANGE.yaml --result_dir /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/results/formal_resumed/XKV_NATIVE_PHI_EXCHANGE_LONGBENCH_RECOVERY_20260923T2058Z",
+    "  51365   51341 Rsl     11:34:20 96.6  0.4 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskF/jiaqizhang/XKV_PAPER_REPRO_FDP_V1/code/xkv_paper_entry.py --flash2 --dataset_name long_bench/passage_retrieval_en,long_bench/lcc,long_bench/repobench-p --datalen 65536 --model_name_or_path /diskF/jiaqizhang/Llama-3.1 --batch_size 1 --method xkv --merge_k --merge_v --rank_k 384 --rank_v 576 --layer_group_size 4 --start_layer_idx 0 --end_layer_idx -1 --customized_merge_config /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/formal_configs/XKV_NATIVE_PHI_EXCHANGE.yaml --result_dir /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/results/formal_resumed/XKV_NATIVE_PHI_EXCHANGE_LONGBENCH_RECOVERY_20260923T2058Z",
+    " 185069       1 Rl      02:14:23  100  0.3 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task lcc --gpu 2",
+    " 246278       1 Rsl        16:05  109  0.3 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task qmsum --gpu 0",
+    " 246362       1 Rsl        16:01  109  0.3 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task qmsum --gpu 2",
+    " 250548  250547 Ss         08:43  0.0  0.0 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python /tmp/xkv_v2_head_causal_substitution_driver_20260924.py",
+    " 252426  250548 Rl         03:52  102  0.5 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python /diskE/jiaqizhang/XKV_FDP_NATIVE_FINE_ITERATIVE_V2/runtime/diagnostics/xkv_v2_head_causal_substitution_v1_20260924T082108Z.py"
+  ],
+  "repobench_dataset_actual_sha256": "919a4439e2a84ebb25bacc39ac3b3269a7641af6e02ae205ed78d8c53dfe3568",
+  "repobench_outputs": {
+    "PALU_FDP_NATIVE": {
+      "bytes": 0,
+      "duplicate_valid_ids": 0,
+      "exists": false,
+      "parse_errors": 0,
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/repobench-p.raw.jsonl",
+      "q_sha_values": [],
+      "raw_rows": 0,
+      "schedule_sha_values": [],
+      "score_mean_fraction": null,
+      "valid_rows": 0,
+      "valid_unique_ids": 0
+    },
+    "PALU_UNIFORM": {
+      "bytes": 0,
+      "duplicate_valid_ids": 0,
+      "exists": false,
+      "parse_errors": 0,
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_UNIFORM/repobench-p.raw.jsonl",
+      "q_sha_values": [],
+      "raw_rows": 0,
+      "schedule_sha_values": [],
+      "score_mean_fraction": null,
+      "valid_rows": 0,
+      "valid_unique_ids": 0
+    }
+  },
+  "repobench_task_manifest": {
+    "max_new_tokens": 64,
+    "n_samples": 500,
+    "path": "/home/bai-project/jiaqizhang/EigenAttn/data/LongBench/repobench-p.jsonl",
+    "prompt": "Please complete the code given below. \n{context}{input}Next line of code:\n",
+    "sha256": "919a4439e2a84ebb25bacc39ac3b3269a7641af6e02ae205ed78d8c53dfe3568"
+  },
+  "tmux": "no server running on /tmp/tmux-1009/default",
+  "v3": {
+    "TUNE_DONE": false,
+    "V3_LOCK": false,
+    "accepted": 15,
+    "accepted_delta_sum": -0.006936237215995789,
+    "active_pid": 5663,
+    "calibration_start_J_reference": 1.890109695494175,
+    "checkpoint_mtime_utc": "2026-09-24T06:46:45.736578+00:00",
+    "checkpoint_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D16_R16_Rmax0.005_beam0/CHECKPOINT.json",
+    "checkpoint_sha256": "775a08494b74fc9f678b89253a4a2ad152e3c42a5cb46e9693f7857c7ba87fbb",
+    "config_id": "armA_D16_R16_Rmax0.005_beam0",
+    "current_J_from_accepted_ledger": 1.8831734582781792,
+    "evaluated_candidates": 3840,
+    "formal_done": false,
+    "formal_ppl_started": false,
+    "movement_rank_gross": 480,
+    "redistribution_R_from_frozen_definition": 0.003662109375,
+    "rejected": 2419,
+    "selected_arms": [],
+    "state_status": "V3_TUNE_RUNNING"
+  }
+}

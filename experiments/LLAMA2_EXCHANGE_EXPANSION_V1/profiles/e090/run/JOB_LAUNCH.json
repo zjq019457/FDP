@@ -1,0 +1,189 @@
+{
+  "argv": [
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/unified_protocol_closure_v1/llama2_clean_redesign_profile_uniform068_v5.py",
+    "--manifest",
+    "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/unified_protocol_closure_v1/FDP125_SAMPLE_MANIFEST_V1.json",
+    "--model-key",
+    "llama2_7b",
+    "--base",
+    "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "--data-dir",
+    "/home/bai-project/jiaqizhang/wikitext2",
+    "--basis",
+    "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_full_capacity_basis_only_v1/llama2_e060_full_basis_capacity_only_eb0p06.pt",
+    "--rank-csv",
+    "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/e090/inputs/UNIFORM_e090_PER_LAYER.csv",
+    "--resource-manifest",
+    "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/e090/inputs/UNIFORM_e090_RESOURCE_MANIFEST.json",
+    "--expected-b-live-bytes",
+    "649199616",
+    "--expected-basis-sha256",
+    "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+    "--out-dir",
+    "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/e090/run",
+    "--gpu",
+    "0",
+    "--memory-fraction",
+    "0.34",
+    "--torch-threads",
+    "8"
+  ],
+  "basis_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_full_capacity_basis_only_v1/llama2_e060_full_basis_capacity_only_eb0p06.pt",
+  "basis_sha256": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+  "checkpoint_content_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa585660c691f6626d25c2cf25197",
+  "checkpoint_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "comparator": {
+    "B_live_rank_implied_bytes": 649199616,
+    "accounting_formula": "sum_l((QK_rank_l+V_rank_l)*4096 bytes)",
+    "name": "Uniform EB=0.068",
+    "rank_csv_path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/e090/inputs/UNIFORM_e090_PER_LAYER.csv",
+    "rank_csv_sha256": "a01125cdce03a84ee0b4ac4b8fa1b683c992b4161cfd8fade5c790d73ef7c8ca",
+    "rank_schedule": [
+      [
+        2816,
+        3872
+      ],
+      [
+        4096,
+        4096
+      ],
+      [
+        704,
+        2656
+      ],
+      [
+        544,
+        2144
+      ],
+      [
+        480,
+        1920
+      ],
+      [
+        768,
+        2752
+      ],
+      [
+        928,
+        3072
+      ],
+      [
+        1152,
+        3296
+      ],
+      [
+        1664,
+        3488
+      ],
+      [
+        1760,
+        3520
+      ],
+      [
+        2400,
+        3712
+      ],
+      [
+        1696,
+        3488
+      ],
+      [
+        1728,
+        3488
+      ],
+      [
+        1728,
+        3520
+      ],
+      [
+        1760,
+        3520
+      ],
+      [
+        2048,
+        3648
+      ],
+      [
+        2016,
+        3616
+      ],
+      [
+        2016,
+        3616
+      ],
+      [
+        1696,
+        3520
+      ],
+      [
+        1632,
+        3520
+      ],
+      [
+        1664,
+        3552
+      ],
+      [
+        1280,
+        3424
+      ],
+      [
+        1344,
+        3456
+      ],
+      [
+        1088,
+        3328
+      ],
+      [
+        1280,
+        3456
+      ],
+      [
+        1088,
+        3328
+      ],
+      [
+        1088,
+        3392
+      ],
+      [
+        864,
+        3040
+      ],
+      [
+        1408,
+        3456
+      ],
+      [
+        1376,
+        3488
+      ],
+      [
+        3520,
+        3968
+      ],
+      [
+        1152,
+        3360
+      ]
+    ],
+    "rank_schedule_sha256": "80aeea44ef7affcaf8f3231a71521e52e4919f34de502022568ac10527ff9e74",
+    "resource_manifest_path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/e090/inputs/UNIFORM_e090_RESOURCE_MANIFEST.json",
+    "resource_manifest_sha256": "b2ef97897eac0bf807b23af1d148cba523188afcb28e2ffee070ab1b6b218770"
+  },
+  "gpu_index": 0,
+  "memory_fraction_cap": 0.34,
+  "model_key": "llama2_7b",
+  "profile_protocol_lock_path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/e090/run/PROFILE_PROTOCOL_LOCK.json",
+  "profile_protocol_lock_sha256": "99c7844945080aed78e3dafffcd5cc7d0d276c836a439649ea0ec13388ac6232",
+  "runner_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/unified_protocol_closure_v1/llama2_clean_redesign_profile_uniform068_v5.py",
+  "runner_sha256": "d6bb4d33b12aeaafc789848463b0286779756f733998be764446a3f5d42063e5",
+  "sample_count": 512,
+  "sample_manifest_file_sha256": "82cf192e5cd24aca50093b2d11a33ae352ca4cbe50b13eb84887d455c37e6293",
+  "sample_manifest_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/unified_protocol_closure_v1/FDP125_SAMPLE_MANIFEST_V1.json",
+  "seed": 2,
+  "sequence_length": 2048,
+  "started_utc": "2026-10-12T03:03:54Z",
+  "status": "RUNNING_PROFILE_ONLY"
+}

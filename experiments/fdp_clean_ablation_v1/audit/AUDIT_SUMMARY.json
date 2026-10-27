@@ -1,0 +1,23 @@
+{
+  "ultra_setup_pct": 94.11764705882352,
+  "dev_status": "VALID_AND_FROZEN",
+  "active_jobs_count": 1,
+  "tiers_authorities": {
+    "light": {
+      "b_live": 218988544,
+      "rank": 53464
+    },
+    "medium": {
+      "b_live": 198377472,
+      "rank": 48432
+    },
+    "aggressive": {
+      "b_live": 158105600,
+      "rank": 38600
+    },
+    "ultra": {
+      "b_live": 124223488,
+      "rank": 30328
+    }
+  }
+}

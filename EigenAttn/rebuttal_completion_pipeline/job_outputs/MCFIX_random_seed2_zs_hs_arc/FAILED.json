@@ -1,0 +1,20 @@
+{
+  "job_id": "MCFIX_random_seed2_zs_hs_arc",
+  "status": "FAILED",
+  "returncode": 1,
+  "ended_at": "2026-07-29T19:49:54.804004-07:00",
+  "elapsed_sec": 3.9760146141052246,
+  "gpu": {
+    "job_id": "MCFIX_random_seed2_zs_hs_arc",
+    "gpu_index": 0,
+    "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 77627,
+    "reserved_mib": 18000,
+    "holder_pid": 2410166,
+    "cuda_visible_devices": "0",
+    "slot_index": 2,
+    "acquired_at": "2026-07-29T19:49:50.826431-07:00"
+  }
+}

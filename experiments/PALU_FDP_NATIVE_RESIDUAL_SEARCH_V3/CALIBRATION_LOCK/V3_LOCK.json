@@ -1,0 +1,924 @@
+{
+  "allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c",
+  "chosen_arm": "A",
+  "chosen_config_id": "armA_D16_R16_Rmax0.01_beam0",
+  "foreign_jobs_interrupted": 0,
+  "lock_ci95_vs_v1": [
+    -0.009224772453308105,
+    -0.006671324372291565
+  ],
+  "lock_delta_J_vs_v1": -0.007849477231502533,
+  "manifest_sha256": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93",
+  "method_card_sha256": "dacb622d47629fc4c55215e485f50c30b9064aa3c30df2b469c950d5c4a3b07f",
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "selection": {
+    "model.layers.0.self_attn.k_proj": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "model.layers.0.self_attn.v_proj": [
+      224,
+      224,
+      224,
+      224,
+      192,
+      224,
+      224,
+      224
+    ],
+    "model.layers.1.self_attn.k_proj": [
+      64,
+      64,
+      64,
+      64,
+      96,
+      96,
+      160,
+      64
+    ],
+    "model.layers.1.self_attn.v_proj": [
+      416,
+      512,
+      512,
+      512,
+      320,
+      512,
+      480,
+      512
+    ],
+    "model.layers.10.self_attn.k_proj": [
+      128,
+      192,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.10.self_attn.v_proj": [
+      480,
+      480,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.11.self_attn.k_proj": [
+      160,
+      160,
+      128,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.11.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.12.self_attn.k_proj": [
+      128,
+      160,
+      128,
+      128,
+      128,
+      128,
+      160,
+      128
+    ],
+    "model.layers.12.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.13.self_attn.k_proj": [
+      128,
+      128,
+      160,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.13.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      480,
+      512,
+      512
+    ],
+    "model.layers.14.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.14.self_attn.v_proj": [
+      448,
+      416,
+      448,
+      448,
+      448,
+      448,
+      448,
+      512
+    ],
+    "model.layers.15.self_attn.k_proj": [
+      128,
+      96,
+      128,
+      96,
+      96,
+      96,
+      96,
+      128
+    ],
+    "model.layers.15.self_attn.v_proj": [
+      448,
+      448,
+      448,
+      448,
+      448,
+      448,
+      480,
+      448
+    ],
+    "model.layers.16.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      160,
+      64,
+      128,
+      96
+    ],
+    "model.layers.16.self_attn.v_proj": [
+      384,
+      512,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "model.layers.17.self_attn.k_proj": [
+      64,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.17.self_attn.v_proj": [
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "model.layers.18.self_attn.k_proj": [
+      96,
+      128,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.18.self_attn.v_proj": [
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      320,
+      288
+    ],
+    "model.layers.19.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.19.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.2.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      160
+    ],
+    "model.layers.2.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      480,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.20.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      64,
+      96,
+      96,
+      160
+    ],
+    "model.layers.20.self_attn.v_proj": [
+      320,
+      320,
+      320,
+      352,
+      320,
+      320,
+      320,
+      320
+    ],
+    "model.layers.21.self_attn.k_proj": [
+      128,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.21.self_attn.v_proj": [
+      288,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.22.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.22.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.23.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.23.self_attn.v_proj": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.24.self_attn.k_proj": [
+      96,
+      96,
+      96,
+      32,
+      96,
+      96,
+      96,
+      96
+    ],
+    "model.layers.24.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.25.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.25.self_attn.v_proj": [
+      288,
+      288,
+      256,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.26.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.26.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.27.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.27.self_attn.v_proj": [
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.28.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      96,
+      160,
+      160
+    ],
+    "model.layers.28.self_attn.v_proj": [
+      256,
+      256,
+      256,
+      224,
+      256,
+      256,
+      256,
+      256
+    ],
+    "model.layers.29.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.29.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      288
+    ],
+    "model.layers.3.self_attn.k_proj": [
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192
+    ],
+    "model.layers.3.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.30.self_attn.k_proj": [
+      128,
+      128,
+      128,
+      128,
+      160,
+      128,
+      128,
+      128
+    ],
+    "model.layers.30.self_attn.v_proj": [
+      224,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224,
+      224
+    ],
+    "model.layers.31.self_attn.k_proj": [
+      128,
+      160,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128
+    ],
+    "model.layers.31.self_attn.v_proj": [
+      288,
+      288,
+      288,
+      288,
+      288,
+      288,
+      384,
+      288
+    ],
+    "model.layers.4.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.4.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      480,
+      512,
+      512
+    ],
+    "model.layers.5.self_attn.k_proj": [
+      96,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.5.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.6.self_attn.k_proj": [
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192,
+      192
+    ],
+    "model.layers.6.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      480,
+      512,
+      512,
+      512
+    ],
+    "model.layers.7.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "model.layers.7.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      512,
+      512,
+      448,
+      512,
+      512
+    ],
+    "model.layers.8.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      128,
+      160,
+      160
+    ],
+    "model.layers.8.self_attn.v_proj": [
+      512,
+      480,
+      512,
+      512,
+      512,
+      512,
+      512,
+      512
+    ],
+    "model.layers.9.self_attn.k_proj": [
+      160,
+      160,
+      160,
+      160,
+      192,
+      160,
+      160,
+      160
+    ],
+    "model.layers.9.self_attn.v_proj": [
+      512,
+      512,
+      512,
+      480,
+      512,
+      512,
+      512,
+      512
+    ]
+  },
+  "status": "V3_CALIBRATION_LOCK_FROZEN",
+  "trajectory": [
+    {
+      "allocation_sha256": "c9be36d646bd1f4474f783cd91b926dadba8d9a39bc60e0f07033f132e97cb17",
+      "pairs": [
+        {
+          "donor": "model.layers.24.self_attn.k_proj::group3",
+          "receiver": "model.layers.10.self_attn.k_proj::group1"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "0cfce9a3b2f3c947f785b74e39e5ad6ee44be140d4ab717188c475d8495ae8f5",
+      "pairs": [
+        {
+          "donor": "model.layers.17.self_attn.k_proj::group0",
+          "receiver": "model.layers.31.self_attn.v_proj::group6"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "3b4a71440c03f795ff6f7b4eff003b6ef8c46d59d855e7cd55ca7b1df318e854",
+      "pairs": [
+        {
+          "donor": "model.layers.20.self_attn.k_proj::group4",
+          "receiver": "model.layers.1.self_attn.k_proj::group6"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "510a34dae08f0ea633fac09504dbe914bde547a1915ba84423f68589969a0f32",
+      "pairs": [
+        {
+          "donor": "model.layers.8.self_attn.v_proj::group1",
+          "receiver": "model.layers.14.self_attn.v_proj::group7"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "57389231cf515603df3f4a39607c6b70b37b79a243c4c809ca83892d8caf952f",
+      "pairs": [
+        {
+          "donor": "model.layers.6.self_attn.v_proj::group4",
+          "receiver": "model.layers.14.self_attn.v_proj::group7"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "b7dc1622c46dfe5f4a1dff3fc3a7d193abd737ff9241cc68dd98fb53fc820b01",
+      "pairs": [
+        {
+          "donor": "model.layers.13.self_attn.v_proj::group5",
+          "receiver": "model.layers.2.self_attn.k_proj::group7"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "1149c4e0361a0e8de4d26a58b00f51475803768c1cc0f83c72eb9e58ce8d61ea",
+      "pairs": [
+        {
+          "donor": "model.layers.2.self_attn.v_proj::group3",
+          "receiver": "model.layers.16.self_attn.v_proj::group1"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "9082094a7172cad5ca672b14d92459b74d88cf4fa3cfbe8b4be7cf0f990c7d12",
+      "pairs": [
+        {
+          "donor": "model.layers.7.self_attn.v_proj::group5",
+          "receiver": "model.layers.16.self_attn.v_proj::group1"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "6338c8081e87cfb012f3698508d9c305f50b0031e9709b16de40e878ad97238d",
+      "pairs": [
+        {
+          "donor": "model.layers.5.self_attn.k_proj::group0",
+          "receiver": "model.layers.16.self_attn.v_proj::group1"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "e10c37c55273021e4f9f4ce3f4c338a66b1685523b977780afc4c8ab2d6c9b96",
+      "pairs": [
+        {
+          "donor": "model.layers.5.self_attn.k_proj::group0",
+          "receiver": "model.layers.31.self_attn.v_proj::group6"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "88e939544922522379a77bfa8b8e4b87aa70ebf74d7c6063108ba68f8ad29020",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group4",
+          "receiver": "model.layers.13.self_attn.k_proj::group2"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "a5da4a654604255591bca26cc2fddd6dc3e77245cefbbf0491ee3fe8efa595b8",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group4",
+          "receiver": "model.layers.15.self_attn.v_proj::group6"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "b00dfc2fb9577131c08555681f4f7e9429c3e3122e9efcd19303088374c21b4a",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group4",
+          "receiver": "model.layers.18.self_attn.k_proj::group1"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "8bfff2a20c82cc884869d45e67f0717720c775422c4febc57d4a20ddd6c9b075",
+      "pairs": [
+        {
+          "donor": "model.layers.0.self_attn.v_proj::group4",
+          "receiver": "model.layers.9.self_attn.k_proj::group4"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "41737b2ef75ee203d8f1339e8d116a63f6ee3c6248f617557974f4328072d40a",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group4",
+          "receiver": "model.layers.15.self_attn.k_proj::group2"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "3a75de47b3af147ddf89a0bb1ba5d95cc7d759134bbcdf7aa43d8a31f807c976",
+      "pairs": [
+        {
+          "donor": "model.layers.7.self_attn.v_proj::group5",
+          "receiver": "model.layers.10.self_attn.k_proj::group1"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "8da4cdc829a99d0c70895c19f95c383be1e3ddec475fd3ebab45adf522e91153",
+      "pairs": [
+        {
+          "donor": "model.layers.28.self_attn.k_proj::group5",
+          "receiver": "model.layers.20.self_attn.v_proj::group3"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "7e5fe5c53729877d52d34ff3cdfda2f3ea605f29a897c18d969cf47300e38e87",
+      "pairs": [
+        {
+          "donor": "model.layers.28.self_attn.k_proj::group5",
+          "receiver": "model.layers.1.self_attn.k_proj::group6"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "de7718593eab4bd82f04035d0acd9f195d24b8a26445f2fd02303b752f6f222b",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group4",
+          "receiver": "model.layers.12.self_attn.k_proj::group6"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "bb0f0a5f888b36f4d605a0a1d28993f3309c1fc451213a515203bbebbcc42912",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group4",
+          "receiver": "model.layers.31.self_attn.v_proj::group6"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "ada293290e8cd195b4ff57fe376a65e1e1b330727aa526420b4fdf83e7c43cd1",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group0",
+          "receiver": "model.layers.15.self_attn.k_proj::group7"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "0d982af75abbf0af2532a868d6270fe019e42b1df9f109e3ba6db7f5132ff539",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group0",
+          "receiver": "model.layers.16.self_attn.k_proj::group4"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "a254e739dee945a93086e916f885eaad904ce3134feef4dc4d944b271996833d",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group0",
+          "receiver": "model.layers.16.self_attn.k_proj::group4"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "00762e24ec274287fef976b531ec4e60992404104e1d8a7fdf335781c831d8c8",
+      "pairs": [
+        {
+          "donor": "model.layers.28.self_attn.v_proj::group3",
+          "receiver": "model.layers.15.self_attn.k_proj::group0"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "8b84ce2d314bba56a044a50f30fc1eab082b2c1add46d2ba61bb312789760cb3",
+      "pairs": [
+        {
+          "donor": "model.layers.18.self_attn.v_proj::group7",
+          "receiver": "model.layers.20.self_attn.k_proj::group7"
+        }
+      ],
+      "type": "single"
+    },
+    {
+      "allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c",
+      "pairs": [
+        {
+          "donor": "model.layers.1.self_attn.v_proj::group6",
+          "receiver": "model.layers.20.self_attn.k_proj::group7"
+        }
+      ],
+      "type": "single"
+    }
+  ]
+}

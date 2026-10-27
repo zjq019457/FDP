@@ -1,0 +1,2280 @@
+{
+  "checks": [
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/common.py",
+      "group": "A_inventory",
+      "name": "present:common.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/orchestrator.py",
+      "group": "A_inventory",
+      "name": "present:orchestrator.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/worker_entry.py",
+      "group": "A_inventory",
+      "name": "present:worker_entry.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/LLAMA_DRM_METHOD_SPEC.md",
+      "group": "A_inventory",
+      "name": "present:LLAMA_DRM_METHOD_SPEC.md",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/adapters/transformers_compat.py",
+      "group": "A_inventory",
+      "name": "present:adapters/transformers_compat.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/audit/stage0_cpu_audit.py",
+      "group": "A_inventory",
+      "name": "present:audit/stage0_cpu_audit.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/scheduler/gpu_coloc_scheduler.py",
+      "group": "A_inventory",
+      "name": "present:scheduler/gpu_coloc_scheduler.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/stages/stage7_analysis.py",
+      "group": "A_inventory",
+      "name": "present:stages/stage7_analysis.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/status_bootstrap/protocol_templates.py",
+      "group": "A_inventory",
+      "name": "present:status_bootstrap/protocol_templates.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/experiments/run_llama_sliminfer_variants.py",
+      "group": "A_inventory",
+      "name": "present:runtime/experiments/run_llama_sliminfer_variants.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/models/modeling_llama.py",
+      "group": "A_inventory",
+      "name": "present:runtime/models/modeling_llama.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/models/configuration_llama.py",
+      "group": "A_inventory",
+      "name": "present:runtime/models/configuration_llama.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/utils/cache_utils.py",
+      "group": "A_inventory",
+      "name": "present:runtime/utils/cache_utils.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/utils/processor.py",
+      "group": "A_inventory",
+      "name": "present:runtime/utils/processor.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/bridgekv/rescuekv_scoring.py",
+      "group": "A_inventory",
+      "name": "present:runtime/bridgekv/rescuekv_scoring.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/bridgekv/structured_rescue_scoring.py",
+      "group": "A_inventory",
+      "name": "present:runtime/bridgekv/structured_rescue_scoring.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/bridgekv/cc_topology_policies.py",
+      "group": "A_inventory",
+      "name": "present:runtime/bridgekv/cc_topology_policies.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/bridgekv/acc_sliminfer.py",
+      "group": "A_inventory",
+      "name": "present:runtime/bridgekv/acc_sliminfer.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/longbench_eval.py",
+      "group": "A_inventory",
+      "name": "present:runtime/longbench_eval.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/tools/qwen_pipeline_common.py",
+      "group": "A_inventory",
+      "name": "present:runtime/tools/qwen_pipeline_common.py",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/configs/dataset2prompt.json",
+      "group": "A_inventory",
+      "name": "present:runtime/configs/dataset2prompt.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/configs/dataset2maxlen.json",
+      "group": "A_inventory",
+      "name": "present:runtime/configs/dataset2maxlen.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/protocol_ulb_v1/task_manifest.json",
+      "group": "A_inventory",
+      "name": "present:protocol_ulb_v1/task_manifest.json",
+      "status": "PASS"
+    },
+    {
+      "detail": "10846 lines",
+      "group": "A_inventory",
+      "name": "cache_utils_is_authoritative_size",
+      "status": "PASS"
+    },
+    {
+      "detail": "compiles",
+      "group": "A_inventory",
+      "name": "runner_syntax_ok",
+      "status": "PASS"
+    },
+    {
+      "detail": "compiles",
+      "group": "A_inventory",
+      "name": "modeling_llama_syntax_ok",
+      "status": "PASS"
+    },
+    {
+      "detail": "2.9.1+cu128",
+      "group": "B_compat",
+      "name": "torch_present",
+      "status": "PASS"
+    },
+    {
+      "detail": "4.57.3",
+      "group": "B_compat",
+      "name": "transformers_present",
+      "status": "PASS"
+    },
+    {
+      "detail": "flash_attn=MISSING; frozen backend is sdpa",
+      "group": "B_compat",
+      "name": "flash_attn_absent_so_backend_is_sdpa",
+      "status": "PASS"
+    },
+    {
+      "detail": "PROBE_JSON:{\"compat\": {\"protocol_id\": \"LLAMA_DRM_A100_4GPU_V1\", \"transformers_version\": \"4.57.3\", \"torch_version\": \"2.9.1+cu128\", \"flash_attn_available\": false, \"recommended_backend\": \"sdpa\", \"patches\": {\"transformers.utils.LossKwargs\": \"already_present\", \"transformers.cache_utils.Cache.__init__\": \"already_patched\"}}, \"loss_kwargs_available\": true, \"modeling_llama_import\": true, \"has_sliminfer_hooks\": true, \"cache_classes_import\": true, \"cuda_available\": false, \"cuda_device_count\": 0}\n",
+      "group": "B_compat",
+      "name": "compat_probe_ran",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "flash_attn_available": false,
+        "patches": {
+          "transformers.cache_utils.Cache.__init__": "already_patched",
+          "transformers.utils.LossKwargs": "already_present"
+        },
+        "protocol_id": "LLAMA_DRM_A100_4GPU_V1",
+        "recommended_backend": "sdpa",
+        "torch_version": "2.9.1+cu128",
+        "transformers_version": "4.57.3"
+      },
+      "group": "B_compat",
+      "name": "loss_kwargs_shim_effective",
+      "status": "PASS"
+    },
+    {
+      "detail": "",
+      "group": "B_compat",
+      "name": "modeling_llama_imports",
+      "status": "PASS"
+    },
+    {
+      "detail": "SlimInferCache/HsCache/processor referenced",
+      "group": "B_compat",
+      "name": "sliminfer_drm_hooks_intact",
+      "status": "PASS"
+    },
+    {
+      "detail": "",
+      "group": "B_compat",
+      "name": "cache_utils_classes_import",
+      "status": "PASS"
+    },
+    {
+      "detail": "cuda_device_count=0",
+      "group": "B_compat",
+      "name": "audit_probe_saw_no_gpu",
+      "status": "PASS"
+    },
+    {
+      "detail": "the sdpa branch must derive is_causal from mask presence, not pin it to False",
+      "group": "B_compat",
+      "name": "sdpa_branch_does_not_hardcode_is_causal_false",
+      "status": "PASS"
+    },
+    {
+      "detail": "a None mask (prefill) must fall back to is_causal=True",
+      "group": "B_compat",
+      "name": "sdpa_prefill_uses_causal_when_mask_is_none",
+      "status": "PASS"
+    },
+    {
+      "detail": "unequal q_len/kv_len with no mask must raise rather than mis-align the causal mask",
+      "group": "B_compat",
+      "name": "sdpa_length_mismatch_fails_loudly",
+      "status": "PASS"
+    },
+    {
+      "detail": "upstream prefill behaviour retained; only the sdpa consumer was corrected",
+      "group": "B_compat",
+      "name": "prefill_still_leaves_mask_none_as_authoritative",
+      "status": "PASS"
+    },
+    {
+      "detail": "PROBE_JSON:{\"causal_flag_matches_explicit_mask\": true, \"bidirectional_differs_from_causal\": true}\n",
+      "group": "B_compat",
+      "name": "sdpa_causality_probe_ran",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "bidirectional_differs_from_causal": true,
+        "causal_flag_matches_explicit_mask": true
+      },
+      "group": "B_compat",
+      "name": "is_causal_true_equals_explicit_causal_mask",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "bidirectional_differs_from_causal": true,
+        "causal_flag_matches_explicit_mask": true
+      },
+      "group": "B_compat",
+      "name": "unmasked_sdpa_is_not_causal",
+      "status": "PASS"
+    },
+    {
+      "detail": "searched ['/mnt/d/jiaqizhang/llama3', '/data/jiaqizhang/llama3', '/d/jiaqizhang/llama3', '/home/bai-project/jiaqizhang/llama3']",
+      "group": "C_model",
+      "name": "model_snapshot_found",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "LlamaForCausalLM"
+      ],
+      "group": "C_model",
+      "name": "architecture_is_llama",
+      "status": "PASS"
+    },
+    {
+      "detail": 8192,
+      "group": "C_model",
+      "name": "max_position_embeddings_8192",
+      "status": "PASS"
+    },
+    {
+      "detail": 32,
+      "group": "C_model",
+      "name": "num_hidden_layers_32",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        10,
+        20,
+        30
+      ],
+      "group": "C_model",
+      "name": "prune_layers_within_depth",
+      "status": "PASS"
+    },
+    {
+      "detail": "7500 + 512 <= 8192",
+      "group": "C_model",
+      "name": "max_model_len_leaves_generation_headroom",
+      "status": "PASS"
+    },
+    {
+      "detail": "build_chat must pass prompts through unchanged",
+      "group": "C_model",
+      "name": "base_model_has_no_chat_template",
+      "status": "PASS"
+    },
+    {
+      "detail": "UNKNOWN_LOCAL_SNAPSHOT",
+      "group": "C_model",
+      "name": "revision_recorded_as_unknown",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ],
+      "group": "C_model",
+      "name": "weight_shards_present",
+      "status": "PASS"
+    },
+    {
+      "detail": "searched ['/home/bai-project/jiaqizhang/EigenAttn/data/LongBench', '/home/bai-project/jiaqizhang/data/LongBench', '/home/bai-project/jiaqizhang/LongBench']",
+      "group": "D_dataset",
+      "name": "longbench_dir_found",
+      "status": "PASS"
+    },
+    {
+      "detail": 17,
+      "group": "D_dataset",
+      "name": "manifest_has_17_tasks",
+      "status": "PASS"
+    },
+    {
+      "detail": 3950,
+      "group": "D_dataset",
+      "name": "manifest_total_3950",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "passage_retrieval_en",
+        "qasper",
+        "multifieldqa_en",
+        "hotpotqa",
+        "2wikimqa",
+        "musique",
+        "gov_report",
+        "qmsum",
+        "multi_news",
+        "vcsum",
+        "passage_count",
+        "trec",
+        "triviaqa",
+        "samsum",
+        "lsht",
+        "lcc",
+        "repobench-p"
+      ],
+      "group": "D_dataset",
+      "name": "manifest_task_order_matches_protocol",
+      "status": "PASS"
+    },
+    {
+      "detail": true,
+      "group": "D_dataset",
+      "name": "pooled_sample_average_forbidden",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/passage_retrieval_en.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:passage_retrieval_en",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:passage_retrieval_en",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 0f34d2955bfc9bd2..., manifest 0f34d2955bfc9bd2...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:passage_retrieval_en",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/qasper.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:qasper",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:qasper",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 29aa07d2a63f36f4..., manifest 29aa07d2a63f36f4...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:qasper",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/multifieldqa_en.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:multifieldqa_en",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 150, manifest 150",
+      "group": "D_dataset",
+      "name": "sample_count:multifieldqa_en",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 0aac182fd317dcf6..., manifest 0aac182fd317dcf6...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:multifieldqa_en",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/hotpotqa.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:hotpotqa",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:hotpotqa",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed a0005ab2a1bc2ac3..., manifest a0005ab2a1bc2ac3...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:hotpotqa",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/2wikimqa.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:2wikimqa",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:2wikimqa",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed dda279cf93a99e1e..., manifest dda279cf93a99e1e...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:2wikimqa",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/musique.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:musique",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:musique",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 4ac69b91281c4ec6..., manifest 4ac69b91281c4ec6...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:musique",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/gov_report.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:gov_report",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:gov_report",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed d28112beb3a9b41d..., manifest d28112beb3a9b41d...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:gov_report",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/qmsum.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:qmsum",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:qmsum",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed e992f5157679b0c1..., manifest e992f5157679b0c1...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:qmsum",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/multi_news.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:multi_news",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:multi_news",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed f8817c00af317c2d..., manifest f8817c00af317c2d...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:multi_news",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/vcsum.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:vcsum",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:vcsum",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed d7412361c4187946..., manifest d7412361c4187946...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:vcsum",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/passage_count.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:passage_count",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:passage_count",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 0455a8f1e8e99d63..., manifest 0455a8f1e8e99d63...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:passage_count",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/trec.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:trec",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:trec",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 20a88e14f7442f58..., manifest 20a88e14f7442f58...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:trec",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/triviaqa.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:triviaqa",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:triviaqa",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed ed2529de2e10b12c..., manifest ed2529de2e10b12c...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:triviaqa",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/samsum.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:samsum",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:samsum",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed d435a4c7a05d2006..., manifest d435a4c7a05d2006...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:samsum",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/lsht.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:lsht",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 200, manifest 200",
+      "group": "D_dataset",
+      "name": "sample_count:lsht",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed b57834ed102ce3a6..., manifest b57834ed102ce3a6...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:lsht",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/lcc.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:lcc",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 500, manifest 500",
+      "group": "D_dataset",
+      "name": "sample_count:lcc",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed a35809a88d899f61..., manifest a35809a88d899f61...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:lcc",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/HeadKV/data/LongBench/repobench-p.jsonl",
+      "group": "D_dataset",
+      "name": "file_present:repobench-p",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 500, manifest 500",
+      "group": "D_dataset",
+      "name": "sample_count:repobench-p",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 919a4439e2a84ebb..., manifest 919a4439e2a84ebb...",
+      "group": "D_dataset",
+      "name": "file_sha256_matches_manifest:repobench-p",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 3950, expected 3950",
+      "group": "D_dataset",
+      "name": "total_samples_3950",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "qasper",
+        "hotpotqa",
+        "2wikimqa",
+        "musique",
+        "gov_report",
+        "repobench-p"
+      ],
+      "group": "D_dataset",
+      "name": "six_task_subset_is_17_task_subset",
+      "status": "PASS"
+    },
+    {
+      "detail": "observed 1500, expected 1500",
+      "group": "D_dataset",
+      "name": "six_task_total_1500",
+      "status": "PASS"
+    },
+    {
+      "detail": "datasets.load_dataset removed from load_longbench_samples",
+      "group": "D_dataset",
+      "name": "runner_never_calls_load_dataset",
+      "status": "PASS"
+    },
+    {
+      "detail": "offline hard error present",
+      "group": "D_dataset",
+      "name": "runner_raises_filenotfound_when_missing",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/longbench_eval.py",
+      "group": "E_scorer",
+      "name": "scorer_function_present",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "group": "E_scorer",
+      "name": "prompt_template_for_all_17",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "group": "E_scorer",
+      "name": "max_new_tokens_for_all_17",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "group": "E_scorer",
+      "name": "max_new_tokens_matches_manifest",
+      "status": "PASS"
+    },
+    {
+      "detail": "pointer /home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/VENDORED_DEPS.txt",
+      "group": "E_scorer",
+      "name": "vendored_deps_dir_configured",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/jiaqizhang/llama_drm_a100_4gpu_v1_deps",
+      "group": "E_scorer",
+      "name": "vendored_deps_dir_exists",
+      "status": "PASS"
+    },
+    {
+      "detail": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1:/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime:/diskF/jiaqizhang/llama_drm_a100_4gpu_v1_deps",
+      "group": "E_scorer",
+      "name": "vendored_deps_on_worker_pythonpath",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/jiaqizhang/llama_drm_a100_4gpu_v1_deps/jieba/_compat.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.\n  import pkg_resources\n/diskF/jiaqizhang/llama_drm_a100_4gpu_v1_deps/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning\n  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')\n",
+      "group": "E_scorer",
+      "name": "scorer_probe_ran",
+      "status": "PASS"
+    },
+    {
+      "detail": "0.42.1",
+      "group": "E_scorer",
+      "name": "scorer_dependency_importable:jieba",
+      "status": "PASS"
+    },
+    {
+      "detail": "1.0.1",
+      "group": "E_scorer",
+      "name": "scorer_dependency_importable:rouge",
+      "status": "PASS"
+    },
+    {
+      "detail": "0.18.0",
+      "group": "E_scorer",
+      "name": "scorer_dependency_importable:fuzzywuzzy",
+      "status": "PASS"
+    },
+    {
+      "detail": "",
+      "group": "E_scorer",
+      "name": "longbench_eval_scorer_importable",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "group": "E_scorer",
+      "name": "metric_defined_for_all_17_tasks",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "none",
+        "rescue_score": "delta_o"
+      },
+      "group": "F_method_cli",
+      "name": "sliminfer_original:method",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "none",
+        "rescue_score": "delta_o"
+      },
+      "group": "F_method_cli",
+      "name": "sliminfer_original:rescue_policy",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "none",
+        "rescue_score": "delta_o"
+      },
+      "group": "F_method_cli",
+      "name": "sliminfer_original:rescue_score",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "none",
+        "rescue_score": "delta_o"
+      },
+      "group": "F_method_cli",
+      "name": "sliminfer_original:no_rescue_ratio_override",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "sliminfer_larger",
+        "rescue_score": "delta_o"
+      },
+      "group": "F_method_cli",
+      "name": "sliminfer_larger:method",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "sliminfer_larger",
+        "rescue_score": "delta_o"
+      },
+      "group": "F_method_cli",
+      "name": "sliminfer_larger:rescue_policy",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "sliminfer_larger",
+        "rescue_score": "delta_o"
+      },
+      "group": "F_method_cli",
+      "name": "sliminfer_larger:rescue_score",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "sliminfer_larger",
+        "rescue_score": "delta_o"
+      },
+      "group": "F_method_cli",
+      "name": "sliminfer_larger:no_rescue_ratio_override",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "random",
+        "seed": 0
+      },
+      "group": "F_method_cli",
+      "name": "random_add:method",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "random",
+        "seed": 0
+      },
+      "group": "F_method_cli",
+      "name": "random_add:rescue_policy",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "random",
+        "seed": 0
+      },
+      "group": "F_method_cli",
+      "name": "random_add:rescue_score",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "random",
+        "seed": 0
+      },
+      "group": "F_method_cli",
+      "name": "random_add:rescue_ratio",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "drm"
+      },
+      "group": "F_method_cli",
+      "name": "drm_add:method",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "drm"
+      },
+      "group": "F_method_cli",
+      "name": "drm_add:rescue_policy",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "drm"
+      },
+      "group": "F_method_cli",
+      "name": "drm_add:rescue_score",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "drm"
+      },
+      "group": "F_method_cli",
+      "name": "drm_add:rescue_ratio",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "budget_neutral_drm_swap",
+        "rescue_score": "drm"
+      },
+      "group": "F_method_cli",
+      "name": "drm_swap:method",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "budget_neutral_drm_swap",
+        "rescue_score": "drm"
+      },
+      "group": "F_method_cli",
+      "name": "drm_swap:rescue_policy",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "budget_neutral_drm_swap",
+        "rescue_score": "drm"
+      },
+      "group": "F_method_cli",
+      "name": "drm_swap:rescue_score",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "budget_neutral_drm_swap",
+        "rescue_score": "drm"
+      },
+      "group": "F_method_cli",
+      "name": "drm_swap:no_rescue_ratio_override",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "fullkv"
+      },
+      "group": "F_method_cli",
+      "name": "fullkv:method",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "fullkv"
+      },
+      "group": "F_method_cli",
+      "name": "fullkv:no_rescue_flags",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "drm_add": "sliminfer_original",
+        "drm_swap": "sliminfer_original",
+        "random_add": "sliminfer_original",
+        "sliminfer_larger": "sliminfer_original",
+        "sliminfer_original": "sliminfer_original"
+      },
+      "group": "F_method_cli",
+      "name": "only_fullkv_differs_in_method",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "random",
+        "seed": 0
+      },
+      "group": "F_method_cli",
+      "name": "random_needs_explicit_seed",
+      "status": "PASS"
+    },
+    {
+      "detail": ", \"max_model_len\": 7500}, \"random_add\": {\"method\": \"sliminfer_original\", \"rescue_policy\": \"add\", \"rescue_score\": \"random\", \"rescue_ratio\": 0.05, \"prune_layers\": \"10,20,30\", \"retain_tokens\": \"8192,4096,2048\", \"dtype\": \"bf16\", \"backend\": \"sdpa\", \"block_size\": 64, \"token_unit_size\": 8, \"swap_threshold\": 0.9, \"local_query_window\": 4, \"seed\": 0, \"model_family\": \"llama\", \"max_model_len\": 7500}, \"drm_add\": {\"method\": \"sliminfer_original\", \"rescue_policy\": \"add\", \"rescue_score\": \"drm\", \"rescue_ratio\": 0.05, \"prune_layers\": \"10,20,30\", \"retain_tokens\": \"8192,4096,2048\", \"dtype\": \"bf16\", \"backend\": \"sdpa\", \"block_size\": 64, \"token_unit_size\": 8, \"swap_threshold\": 0.9, \"local_query_window\": 4, \"seed\": 0, \"model_family\": \"llama\", \"max_model_len\": 7500}, \"drm_swap\": {\"method\": \"sliminfer_original\", \"rescue_policy\": \"budget_neutral_drm_swap\", \"rescue_score\": \"drm\", \"rescue_ratio\": 0.02, \"prune_layers\": \"10,20,30\", \"retain_tokens\": \"8192,4096,2048\", \"dtype\": \"bf16\", \"backend\": \"sdpa\", \"block_size\": 64, \"token_unit_size\": 8, \"swap_threshold\": 0.9, \"local_query_window\": 4, \"seed\": 0, \"model_family\": \"llama\", \"max_model_len\": 7500}, \"fullkv\": {\"method\": \"fullkv\", \"rescue_policy\": \"none\", \"rescue_score\": \"delta_o\", \"rescue_ratio\": 0.02, \"prune_layers\": \"10,20,30\", \"retain_tokens\": \"8192,4096,2048\", \"dtype\": \"bf16\", \"backend\": \"sdpa\", \"block_size\": 64, \"token_unit_size\": 8, \"swap_threshold\": 0.9, \"local_query_window\": 4, \"seed\": 0, \"model_family\": \"llama\", \"max_model_len\": 7500}}, \"errors\": {}}\n",
+      "group": "F_method_cli",
+      "name": "argparse_probe_ran",
+      "status": "PASS"
+    },
+    {
+      "detail": {},
+      "group": "F_method_cli",
+      "name": "argparse_accepts_all_arms",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "backend": "sdpa",
+        "block_size": 64,
+        "dtype": "bf16",
+        "local_query_window": 4,
+        "max_model_len": 7500,
+        "method": "sliminfer_original",
+        "model_family": "llama",
+        "prune_layers": "10,20,30",
+        "rescue_policy": "none",
+        "rescue_ratio": 0.02,
+        "rescue_score": "delta_o",
+        "retain_tokens": "8192,4096,2048",
+        "seed": 0,
+        "swap_threshold": 0.9,
+        "token_unit_size": 8
+      },
+      "group": "F_method_cli",
+      "name": "resolved_frozen_config:sliminfer_original",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "backend": "sdpa",
+        "block_size": 64,
+        "dtype": "bf16",
+        "local_query_window": 4,
+        "max_model_len": 7500,
+        "method": "sliminfer_original",
+        "model_family": "llama",
+        "prune_layers": "10,20,30",
+        "rescue_policy": "sliminfer_larger",
+        "rescue_ratio": 0.02,
+        "rescue_score": "delta_o",
+        "retain_tokens": "8192,4096,2048",
+        "seed": 0,
+        "swap_threshold": 0.9,
+        "token_unit_size": 8
+      },
+      "group": "F_method_cli",
+      "name": "resolved_frozen_config:sliminfer_larger",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "backend": "sdpa",
+        "block_size": 64,
+        "dtype": "bf16",
+        "local_query_window": 4,
+        "max_model_len": 7500,
+        "method": "sliminfer_original",
+        "model_family": "llama",
+        "prune_layers": "10,20,30",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "random",
+        "retain_tokens": "8192,4096,2048",
+        "seed": 0,
+        "swap_threshold": 0.9,
+        "token_unit_size": 8
+      },
+      "group": "F_method_cli",
+      "name": "resolved_frozen_config:random_add",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "backend": "sdpa",
+        "block_size": 64,
+        "dtype": "bf16",
+        "local_query_window": 4,
+        "max_model_len": 7500,
+        "method": "sliminfer_original",
+        "model_family": "llama",
+        "prune_layers": "10,20,30",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "drm",
+        "retain_tokens": "8192,4096,2048",
+        "seed": 0,
+        "swap_threshold": 0.9,
+        "token_unit_size": 8
+      },
+      "group": "F_method_cli",
+      "name": "resolved_frozen_config:drm_add",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "backend": "sdpa",
+        "block_size": 64,
+        "dtype": "bf16",
+        "local_query_window": 4,
+        "max_model_len": 7500,
+        "method": "sliminfer_original",
+        "model_family": "llama",
+        "prune_layers": "10,20,30",
+        "rescue_policy": "budget_neutral_drm_swap",
+        "rescue_ratio": 0.02,
+        "rescue_score": "drm",
+        "retain_tokens": "8192,4096,2048",
+        "seed": 0,
+        "swap_threshold": 0.9,
+        "token_unit_size": 8
+      },
+      "group": "F_method_cli",
+      "name": "resolved_frozen_config:drm_swap",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "rescue_score",
+        "seed"
+      ],
+      "group": "G_random",
+      "name": "random_vs_drm_differ_only_in_score_and_seed",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "add",
+        "add"
+      ],
+      "group": "G_random",
+      "name": "random_and_drm_share_rescue_policy",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        0.05,
+        0.05
+      ],
+      "group": "G_random",
+      "name": "random_and_drm_share_rescue_ratio",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "derived_M": [
+          6,
+          3,
+          2
+        ],
+        "frozen_M": [
+          6,
+          3,
+          2
+        ],
+        "pages": [
+          128,
+          64,
+          32
+        ]
+      },
+      "group": "G_random",
+      "name": "rescue_M_is_6_3_2_at_ratio_0p05",
+      "status": "PASS"
+    },
+    {
+      "detail": "M depends only on (k_active, rescue_ratio), never on rescue_score",
+      "group": "G_random",
+      "name": "M_identical_across_add_arms",
+      "status": "PASS"
+    },
+    {
+      "detail": "policy alias present",
+      "group": "G_random",
+      "name": "add_maps_to_additive_rescue",
+      "status": "PASS"
+    },
+    {
+      "detail": "K+M budget for Larger",
+      "group": "G_random",
+      "name": "larger_shares_additive_budget",
+      "status": "PASS"
+    },
+    {
+      "detail": "additive arms are K+M",
+      "group": "G_random",
+      "name": "additive_rescue_reports_K_plus_M",
+      "status": "PASS"
+    },
+    {
+      "detail": "swap arms stay at K",
+      "group": "G_random",
+      "name": "swap_reports_K_budget",
+      "status": "PASS"
+    },
+    {
+      "detail": "budget arithmetic is score-independent",
+      "group": "G_random",
+      "name": "M_formula_present_in_source",
+      "status": "PASS"
+    },
+    {
+      "detail": "random rescue scores derive from cfg['seed'] via a CPU generator",
+      "group": "G_random",
+      "name": "random_score_is_seeded",
+      "status": "PASS"
+    },
+    {
+      "detail": "random is a branch of the shared rescue-score function, not a separate path",
+      "group": "G_random",
+      "name": "random_uses_same_scoring_entrypoint",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        0,
+        1,
+        2
+      ],
+      "group": "G_random",
+      "name": "random_seeds_are_distinct",
+      "status": "PASS"
+    },
+    {
+      "detail": "the fixed-page swap path consumes the concrete SlimInfer A_K and inactive P set",
+      "group": "H_drm_rules",
+      "name": "shared_A_K_active_set",
+      "status": "PASS"
+    },
+    {
+      "detail": "Larger enlarges the retained budget by round(K*ratio)",
+      "group": "H_drm_rules",
+      "name": "sliminfer_larger_extra_budget_rule",
+      "status": "PASS"
+    },
+    {
+      "detail": "additive rescue routed through the shared policy",
+      "group": "H_drm_rules",
+      "name": "add_policy_dispatch",
+      "status": "PASS"
+    },
+    {
+      "detail": "swap policy recognised in the page path",
+      "group": "H_drm_rules",
+      "name": "budget_neutral_drm_swap_rule",
+      "status": "PASS"
+    },
+    {
+      "detail": "DRM S0 scoring invoked",
+      "group": "H_drm_rules",
+      "name": "drm_score_entrypoint",
+      "status": "PASS"
+    },
+    {
+      "detail": "drm rescue-score branch present",
+      "group": "H_drm_rules",
+      "name": "drm_rescue_score_branch",
+      "status": "PASS"
+    },
+    {
+      "detail": "residual-aware audit fields computed",
+      "group": "H_drm_rules",
+      "name": "residual_aware_proxy_fields",
+      "status": "PASS"
+    },
+    {
+      "detail": "page size 64 frozen in the DRM cache",
+      "group": "H_drm_rules",
+      "name": "block_size_64_constant",
+      "status": "PASS"
+    },
+    {
+      "detail": "token unit 8 derived from page size",
+      "group": "H_drm_rules",
+      "name": "token_unit_default_8",
+      "status": "PASS"
+    },
+    {
+      "detail": "local query window 4",
+      "group": "H_drm_rules",
+      "name": "local_pruning_window_4",
+      "status": "PASS"
+    },
+    {
+      "detail": "gamma is configurable; the run pins it to 0.9 via --swap_threshold",
+      "group": "H_drm_rules",
+      "name": "swap_threshold_default_0p8_overridden_to_0p9",
+      "status": "PASS"
+    },
+    {
+      "detail": "authoritative import block intact; CC/ACC satisfied by stub modules",
+      "group": "H_drm_rules",
+      "name": "cache_utils_unmodified_authoritative",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "expected": {
+          "10.0": 14.0,
+          "100.0": 120.0,
+          "30.0": 36.0
+        },
+        "observed": {
+          "10.0": 14.0,
+          "100.0": 120.0,
+          "30.0": 36.0
+        }
+      },
+      "group": "I_scheduler",
+      "name": "estimated_peak_rule",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "pending": 4,
+        "per_gpu": {
+          "GPU-MOCK-0": 2,
+          "GPU-MOCK-1": 2,
+          "GPU-MOCK-2": 2,
+          "GPU-MOCK-3": 2
+        },
+        "placed": 8
+      },
+      "group": "I_scheduler",
+      "name": "colocates_multiple_workers_per_gpu",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "GPU-MOCK-0": 4,
+        "GPU-MOCK-1": 4,
+        "GPU-MOCK-2": 4,
+        "GPU-MOCK-3": 4
+      },
+      "group": "I_scheduler",
+      "name": "scheduling_is_not_exclusive_only",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "GPU-MOCK-0": 4,
+        "GPU-MOCK-1": 4,
+        "GPU-MOCK-2": 4,
+        "GPU-MOCK-3": 4
+      },
+      "group": "I_scheduler",
+      "name": "max_workers_per_gpu_cap",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "free_gib": 30.0,
+        "needed_gib": 35.0,
+        "placed": 0
+      },
+      "group": "I_scheduler",
+      "name": "safety_reserve_blocks_overcommit",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "available_after_placement_gib": 28.0,
+        "placed": 2,
+        "reported_free_gib": 80.0
+      },
+      "group": "I_scheduler",
+      "name": "projected_peak_prevents_launch_burst_oversubscription",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "co_tenants": 0,
+        "gov_gpu": "GPU-MOCK-0",
+        "placement": "exclusive"
+      },
+      "group": "I_scheduler",
+      "name": "exclusive_categories_get_whole_gpu",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "exclusive": [
+          "gov_report",
+          "long_context_32k",
+          "fullkv",
+          "oom_fill",
+          "efficiency"
+        ],
+        "missing": []
+      },
+      "group": "I_scheduler",
+      "name": "exclusive_category_list_complete",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "gpus_used": 1,
+        "workers": 1
+      },
+      "group": "I_scheduler",
+      "name": "canary_is_one_gpu_one_worker",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "blocked_only_by_external": true,
+        "placed": 0,
+        "state": "WAITING_FOR_GPU_IDLE"
+      },
+      "group": "I_scheduler",
+      "name": "external_busy_yields_waiting_for_gpu_idle",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "killpg_call_sites": 1
+      },
+      "group": "I_scheduler",
+      "name": "no_code_path_signals_foreign_pids",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "cap_after": 3,
+        "cap_before": 4,
+        "retry_exclusive": true,
+        "retry_reuses_output_dir": true
+      },
+      "group": "I_scheduler",
+      "name": "oom_retries_exclusive_and_lowers_cap",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "failed": 1,
+        "queued": 0
+      },
+      "group": "I_scheduler",
+      "name": "oom_stops_after_max_attempts",
+      "status": "PASS"
+    },
+    {
+      "detail": "workers are pinned by GPU UUID, not ordinal index",
+      "group": "I_scheduler",
+      "name": "gpu_pinned_by_uuid",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "files": {
+          "CURRENT_WORKERS.json": true,
+          "GPU_STATUS.json": true,
+          "WORKER_REGISTRY.csv": true
+        },
+        "locks": [
+          "gpu.GPU-MOCK-0.lock",
+          "gpu.GPU-MOCK-1.lock",
+          "scheduler.global.lock"
+        ]
+      },
+      "group": "I_scheduler",
+      "name": "persists_status_and_locks",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "acquired_after_release": true,
+        "blocked_while_held": true
+      },
+      "group": "I_scheduler",
+      "name": "flock_is_mutually_exclusive",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "first": {
+          "a": 1
+        },
+        "second": {
+          "a": 2,
+          "b": [
+            1,
+            2,
+            3
+          ]
+        },
+        "temp_leftovers": []
+      },
+      "group": "J_resume",
+      "name": "atomic_write_json_replaces_cleanly",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "bytes": 200020
+      },
+      "group": "J_resume",
+      "name": "atomic_write_never_leaves_partial_json",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "note": "torn final line ignored; earlier records kept",
+        "records_counted": 2
+      },
+      "group": "J_resume",
+      "name": "torn_jsonl_tail_is_ignored",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "new_dir": "llama_drm_a100_4gpu_v1_20260103_000000",
+        "older_complete": true,
+        "resumable": "/tmp/stage0_resume_tojdt6m8/results/llama_drm_a100_4gpu_v1_20260102_000000"
+      },
+      "group": "J_resume",
+      "name": "resumes_newest_incomplete_result_dir",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "at_199": false,
+        "at_200": true,
+        "empty": false,
+        "progress_at_199": [
+          199,
+          200
+        ]
+      },
+      "group": "J_resume",
+      "name": "job_completion_requires_all_predictions",
+      "status": "PASS"
+    },
+    {
+      "detail": "stage markers are files",
+      "group": "J_resume",
+      "name": "stage_completion_is_a_durable_marker",
+      "status": "PASS"
+    },
+    {
+      "detail": "global flock makes the scheduler loop unique",
+      "group": "J_resume",
+      "name": "single_orchestrator_instance_enforced",
+      "status": "PASS"
+    },
+    {
+      "detail": "ALL_REQUIRED_LLAMA_DRM_A100_EXPERIMENTS_COMPLETE",
+      "group": "J_resume",
+      "name": "final_state_string_is_exact",
+      "status": "PASS"
+    },
+    {
+      "detail": "PROBE_JSON:{\"cc_methods_empty\": true, \"acc_methods_empty\": true, \"cc_raises\": true, \"acc_raises\": true}\n",
+      "group": "K_forbidden",
+      "name": "forbidden_probe_ran",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "acc_methods_empty": true,
+        "acc_raises": true,
+        "cc_methods_empty": true,
+        "cc_raises": true
+      },
+      "group": "K_forbidden",
+      "name": "cc_method_set_empty",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "acc_methods_empty": true,
+        "acc_raises": true,
+        "cc_methods_empty": true,
+        "cc_raises": true
+      },
+      "group": "K_forbidden",
+      "name": "acc_method_set_empty",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "acc_methods_empty": true,
+        "acc_raises": true,
+        "cc_methods_empty": true,
+        "cc_raises": true
+      },
+      "group": "K_forbidden",
+      "name": "cc_dispatch_raises",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "acc_methods_empty": true,
+        "acc_raises": true,
+        "cc_methods_empty": true,
+        "cc_raises": true
+      },
+      "group": "K_forbidden",
+      "name": "acc_dispatch_raises",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "methods": [
+          "fullkv",
+          "sliminfer_original"
+        ],
+        "offending": []
+      },
+      "group": "K_forbidden",
+      "name": "no_cc_or_acc_method_scheduled",
+      "status": "PASS"
+    },
+    {
+      "detail": "/diskF/jiaqizhang/llama_drm_a100_4gpu_v1_results",
+      "group": "L_storage",
+      "name": "results_root_writable",
+      "status": "PASS"
+    },
+    {
+      "detail": "60.6 GiB free at /diskF/jiaqizhang/llama_drm_a100_4gpu_v1_results; minimum 20.0 GiB",
+      "group": "L_storage",
+      "name": "results_root_has_min_free_space",
+      "status": "PASS"
+    },
+    {
+      "detail": "20.81 GiB free on the volume holding the code; results are redirected via RESULTS_ROOT.txt",
+      "group": "L_storage",
+      "name": "tool_volume_not_critically_full",
+      "status": "PASS"
+    }
+  ],
+  "environment": {
+    "captured_at": "2026-07-28T17:32:09+00:00",
+    "gpus": [
+      {
+        "index": "0",
+        "memory.free": "81153",
+        "memory.total": "81920",
+        "memory.used": "0",
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07"
+      },
+      {
+        "index": "1",
+        "memory.free": "81153",
+        "memory.total": "81920",
+        "memory.used": "0",
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806"
+      },
+      {
+        "index": "2",
+        "memory.free": "65254",
+        "memory.total": "81920",
+        "memory.used": "15899",
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-48dea052-92d1-8022-92eb-09172e488520"
+      },
+      {
+        "index": "3",
+        "memory.free": "81153",
+        "memory.total": "81920",
+        "memory.used": "0",
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5"
+      }
+    ],
+    "host": {
+      "cwd": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1",
+      "hostname": "ecs-bai-quad",
+      "pid": 1690138,
+      "user": "a1804298693"
+    },
+    "offline_flags": {
+      "HF_DATASETS_OFFLINE": "1",
+      "HF_HUB_DISABLE_TELEMETRY": "1",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "packages": {
+      "accelerate": "1.12.0",
+      "cuda_version": "12.8",
+      "datasets": "4.4.2",
+      "flash_attn": "MISSING",
+      "numpy": "2.2.6",
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.3"
+    },
+    "protocol_id": "LLAMA_DRM_A100_4GPU_V1",
+    "protocol_version": "1.0.0",
+    "python_bin": "/home/bai-project/a1804298693/.conda/envs/llamaqkv/bin/python",
+    "results_root": "/diskF/jiaqizhang/llama_drm_a100_4gpu_v1_results",
+    "results_root_free_gib": 60.59,
+    "results_root_source": "pointer:/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/RESULTS_ROOT.txt"
+  },
+  "evidence": {
+    "A_inventory": {
+      "LLAMA_DRM_METHOD_SPEC.md": "5c50017b1e42deec0a5629763479c8794ef5749f331cb2fbed1c6676d79585a8",
+      "adapters/transformers_compat.py": "4c82905664aae810f9ab054d322bf902c9423db6681f611b12bccc626408f644",
+      "audit/stage0_cpu_audit.py": "7f40bb56864c5bdb17cbb0dcf4b50d23ec2523908b827a1124759469007713be",
+      "common.py": "7dc465a07151e52f8ade8816a7d6b2251052824b78af6163f71248dc65209b4e",
+      "orchestrator.py": "1309d42f486b42c2058f126c821a56bac7ac928510b1954866aed82a1646ad90",
+      "protocol_ulb_v1/task_manifest.json": "789405f35fb123fc3c62ee61249e74c726847e5282dec87791fc243db894f709",
+      "runtime/bridgekv/acc_sliminfer.py": "d850a92c23165b96aa3827b56d17e22ce5d67af1f7ac69ec6ef87a3c2c37e985",
+      "runtime/bridgekv/cc_topology_policies.py": "bb35a82c54e295b2f7b0fa87e16b9712416045c002195df6627c25b9267343ed",
+      "runtime/bridgekv/rescuekv_scoring.py": "065f0e6fbcafb47af5707c8d705c5032ecd05e624989ba1397985e29f4a80211",
+      "runtime/bridgekv/structured_rescue_scoring.py": "193afc454b2b77277f67bde7b76f175c2fabc1030969f6fd157c424bf755b7e8",
+      "runtime/configs/dataset2maxlen.json": "54d1586d1116c3a72fd17af2a82357c4bff4ca79bee24fb8c3a048a3c9f00d3d",
+      "runtime/configs/dataset2prompt.json": "3c06dba9f4308375d8751a7dbf6d0f4167b4d64afc27655e6577cc4bb51f1b91",
+      "runtime/experiments/run_llama_sliminfer_variants.py": "f7e91782e7bc4a1154a0151f631fe32add2e6070d17f5b7013f7cbb6d5caeb3c",
+      "runtime/longbench_eval.py": "a71ef393206539961e976bf83f90349008f01208e16944f2a9c935ea4108b243",
+      "runtime/models/configuration_llama.py": "d5703a3f005b346a2eccb4e9ffc1c9e47aae831882ec76896e14f0c872e9efa2",
+      "runtime/models/modeling_llama.py": "b8fcc57718e714a2ee4832cebfffe620ca751ccd6576bd35cddcffa6730b76b9",
+      "runtime/tools/qwen_pipeline_common.py": "be894421f4e878aa23495ed6b4f570157faa1bdd9b1baeb99921f147fe5e656e",
+      "runtime/utils/cache_utils.py": "354806479c7e4f0eee468a264c4377616b7309aebc8382e8d685ff16b4d7f07d",
+      "runtime/utils/processor.py": "53b31af8bcadab20ddf34efa62e4262a5ca9de92d8e885ccfd1c6aab4684a4d3",
+      "scheduler/gpu_coloc_scheduler.py": "9c1c2e73ac599f0224abe972caca34046e4a32ae2a3655e6408938cc579e5cd6",
+      "stages/stage7_analysis.py": "8f6e796e9ace66c82a589df81e8f57f358f0d2e721d0bccdaa1dbb138102b8ed",
+      "status_bootstrap/protocol_templates.py": "e4bafe7935cea07207d51666c46e6b9f230ef1eb03282dd4bebc625af6b60772",
+      "worker_entry.py": "6bc8270707bf5693b0f4016c6859c69bc8aae034203aafc5fee9a001548bc5f5"
+    },
+    "B_compat": {
+      "packages": {
+        "accelerate": "1.12.0",
+        "cuda_version": "12.8",
+        "datasets": "4.4.2",
+        "flash_attn": "MISSING",
+        "numpy": "2.2.6",
+        "torch": "2.9.1+cu128",
+        "transformers": "4.57.3"
+      },
+      "probe": {
+        "cache_classes_import": true,
+        "compat": {
+          "flash_attn_available": false,
+          "patches": {
+            "transformers.cache_utils.Cache.__init__": "already_patched",
+            "transformers.utils.LossKwargs": "already_present"
+          },
+          "protocol_id": "LLAMA_DRM_A100_4GPU_V1",
+          "recommended_backend": "sdpa",
+          "torch_version": "2.9.1+cu128",
+          "transformers_version": "4.57.3"
+        },
+        "cuda_available": false,
+        "cuda_device_count": 0,
+        "has_sliminfer_hooks": true,
+        "loss_kwargs_available": true,
+        "modeling_llama_import": true
+      },
+      "sdpa_causality": {
+        "bidirectional_differs_from_causal": true,
+        "causal_flag_matches_explicit_mask": true
+      }
+    },
+    "C_model": {
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "attention_bias": false,
+        "attention_dropout": 0.0,
+        "bos_token_id": 128000,
+        "eos_token_id": 128001,
+        "hidden_act": "silu",
+        "hidden_size": 4096,
+        "initializer_range": 0.02,
+        "intermediate_size": 14336,
+        "max_position_embeddings": 8192,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 32,
+        "num_key_value_heads": 8,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "rope_theta": 500000.0,
+        "tie_word_embeddings": false,
+        "torch_dtype": "bfloat16",
+        "transformers_version": "4.40.0.dev0",
+        "use_cache": true,
+        "vocab_size": 128256
+      },
+      "config_sha256": "2430cee764b6530ff8673cf9ba8561e1d5a33152d503cd0de909ff5718261441",
+      "resolved_path": "/diskD/jiaqizhang/Llama-3",
+      "revision": "UNKNOWN_LOCAL_SNAPSHOT",
+      "tokenizer_config_sha256": "690727b4fed286383df1c7ca5e805124cb70c6eb4529f807c7b2e60ff741da7e",
+      "weight_shards": [
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors"
+      ]
+    },
+    "D_dataset": {
+      "manifests": {
+        "seventeen_tasks": [
+          "passage_retrieval_en",
+          "qasper",
+          "multifieldqa_en",
+          "hotpotqa",
+          "2wikimqa",
+          "musique",
+          "gov_report",
+          "qmsum",
+          "multi_news",
+          "vcsum",
+          "passage_count",
+          "trec",
+          "triviaqa",
+          "samsum",
+          "lsht",
+          "lcc",
+          "repobench-p"
+        ],
+        "six_tasks": [
+          "qasper",
+          "hotpotqa",
+          "2wikimqa",
+          "musique",
+          "gov_report",
+          "repobench-p"
+        ]
+      },
+      "per_task": {
+        "2wikimqa": {
+          "expected": 200,
+          "manifest_sha256": "dda279cf93a99e1e5bfa3291fb199fd55978d10a1feb31822953cf77a1742e37",
+          "max_new_tokens": 32,
+          "path": "/diskF/HeadKV/data/LongBench/2wikimqa.jsonl",
+          "samples": 200,
+          "sha256": "dda279cf93a99e1e5bfa3291fb199fd55978d10a1feb31822953cf77a1742e37"
+        },
+        "gov_report": {
+          "expected": 200,
+          "manifest_sha256": "d28112beb3a9b41d80aa390837fa1a31c9e3da84a5262009c97585cc49f597c4",
+          "max_new_tokens": 512,
+          "path": "/diskF/HeadKV/data/LongBench/gov_report.jsonl",
+          "samples": 200,
+          "sha256": "d28112beb3a9b41d80aa390837fa1a31c9e3da84a5262009c97585cc49f597c4"
+        },
+        "hotpotqa": {
+          "expected": 200,
+          "manifest_sha256": "a0005ab2a1bc2ac3a70352dccbf96cccc4e0aac6bb677f6a55180fa51b92ef6f",
+          "max_new_tokens": 32,
+          "path": "/diskF/HeadKV/data/LongBench/hotpotqa.jsonl",
+          "samples": 200,
+          "sha256": "a0005ab2a1bc2ac3a70352dccbf96cccc4e0aac6bb677f6a55180fa51b92ef6f"
+        },
+        "lcc": {
+          "expected": 500,
+          "manifest_sha256": "a35809a88d899f61c116690b12f9e96d443238852cedc1a9fe48d85bff6f7aa1",
+          "max_new_tokens": 64,
+          "path": "/diskF/HeadKV/data/LongBench/lcc.jsonl",
+          "samples": 500,
+          "sha256": "a35809a88d899f61c116690b12f9e96d443238852cedc1a9fe48d85bff6f7aa1"
+        },
+        "lsht": {
+          "expected": 200,
+          "manifest_sha256": "b57834ed102ce3a6dbc501f4005016b1fe883371ba48b381c1d1f698291a4bdd",
+          "max_new_tokens": 64,
+          "path": "/diskF/HeadKV/data/LongBench/lsht.jsonl",
+          "samples": 200,
+          "sha256": "b57834ed102ce3a6dbc501f4005016b1fe883371ba48b381c1d1f698291a4bdd"
+        },
+        "multi_news": {
+          "expected": 200,
+          "manifest_sha256": "f8817c00af317c2d7f81128f334bcfe5780c6c2a515d5c96811aa0ddf8b5ee6b",
+          "max_new_tokens": 512,
+          "path": "/diskF/HeadKV/data/LongBench/multi_news.jsonl",
+          "samples": 200,
+          "sha256": "f8817c00af317c2d7f81128f334bcfe5780c6c2a515d5c96811aa0ddf8b5ee6b"
+        },
+        "multifieldqa_en": {
+          "expected": 150,
+          "manifest_sha256": "0aac182fd317dcf6d74f8e1e0f3e61029407435346c2e0b3ff9fb45ae49c5c3f",
+          "max_new_tokens": 64,
+          "path": "/diskF/HeadKV/data/LongBench/multifieldqa_en.jsonl",
+          "samples": 150,
+          "sha256": "0aac182fd317dcf6d74f8e1e0f3e61029407435346c2e0b3ff9fb45ae49c5c3f"
+        },
+        "musique": {
+          "expected": 200,
+          "manifest_sha256": "4ac69b91281c4ec6b21316cb7282e83fb6b4dda04fc68480bb8d8ed1e19ff7bd",
+          "max_new_tokens": 32,
+          "path": "/diskF/HeadKV/data/LongBench/musique.jsonl",
+          "samples": 200,
+          "sha256": "4ac69b91281c4ec6b21316cb7282e83fb6b4dda04fc68480bb8d8ed1e19ff7bd"
+        },
+        "passage_count": {
+          "expected": 200,
+          "manifest_sha256": "0455a8f1e8e99d63a86bdc6bdb8b943b22509e3102bbef65ce6794045e03bbcd",
+          "max_new_tokens": 32,
+          "path": "/diskF/HeadKV/data/LongBench/passage_count.jsonl",
+          "samples": 200,
+          "sha256": "0455a8f1e8e99d63a86bdc6bdb8b943b22509e3102bbef65ce6794045e03bbcd"
+        },
+        "passage_retrieval_en": {
+          "expected": 200,
+          "manifest_sha256": "0f34d2955bfc9bd21ccaa3f4c5aa4e41263aaf83d3fb6002ff7118c134f1eabd",
+          "max_new_tokens": 32,
+          "path": "/diskF/HeadKV/data/LongBench/passage_retrieval_en.jsonl",
+          "samples": 200,
+          "sha256": "0f34d2955bfc9bd21ccaa3f4c5aa4e41263aaf83d3fb6002ff7118c134f1eabd"
+        },
+        "qasper": {
+          "expected": 200,
+          "manifest_sha256": "29aa07d2a63f36f4fb8e8cd200a3428ee3126d750bde6af1c8f9bc41c2366854",
+          "max_new_tokens": 128,
+          "path": "/diskF/HeadKV/data/LongBench/qasper.jsonl",
+          "samples": 200,
+          "sha256": "29aa07d2a63f36f4fb8e8cd200a3428ee3126d750bde6af1c8f9bc41c2366854"
+        },
+        "qmsum": {
+          "expected": 200,
+          "manifest_sha256": "e992f5157679b0c1ca281d0da19d1a8b3496117630ae639c9683ed3dab029113",
+          "max_new_tokens": 512,
+          "path": "/diskF/HeadKV/data/LongBench/qmsum.jsonl",
+          "samples": 200,
+          "sha256": "e992f5157679b0c1ca281d0da19d1a8b3496117630ae639c9683ed3dab029113"
+        },
+        "repobench-p": {
+          "expected": 500,
+          "manifest_sha256": "919a4439e2a84ebb25bacc39ac3b3269a7641af6e02ae205ed78d8c53dfe3568",
+          "max_new_tokens": 64,
+          "path": "/diskF/HeadKV/data/LongBench/repobench-p.jsonl",
+          "samples": 500,
+          "sha256": "919a4439e2a84ebb25bacc39ac3b3269a7641af6e02ae205ed78d8c53dfe3568"
+        },
+        "samsum": {
+          "expected": 200,
+          "manifest_sha256": "d435a4c7a05d2006872da8dd0c44c0a48648baa1ce4f62a4084d07aa7883f0cc",
+          "max_new_tokens": 128,
+          "path": "/diskF/HeadKV/data/LongBench/samsum.jsonl",
+          "samples": 200,
+          "sha256": "d435a4c7a05d2006872da8dd0c44c0a48648baa1ce4f62a4084d07aa7883f0cc"
+        },
+        "trec": {
+          "expected": 200,
+          "manifest_sha256": "20a88e14f7442f58a39082cdd7396f1093ea8162da0a4ea7ead7d6757514c8f4",
+          "max_new_tokens": 64,
+          "path": "/diskF/HeadKV/data/LongBench/trec.jsonl",
+          "samples": 200,
+          "sha256": "20a88e14f7442f58a39082cdd7396f1093ea8162da0a4ea7ead7d6757514c8f4"
+        },
+        "triviaqa": {
+          "expected": 200,
+          "manifest_sha256": "ed2529de2e10b12c00f49981870c23c7c51667069cdd8d0740e1423ff337d7fa",
+          "max_new_tokens": 32,
+          "path": "/diskF/HeadKV/data/LongBench/triviaqa.jsonl",
+          "samples": 200,
+          "sha256": "ed2529de2e10b12c00f49981870c23c7c51667069cdd8d0740e1423ff337d7fa"
+        },
+        "vcsum": {
+          "expected": 200,
+          "manifest_sha256": "d7412361c418794607c801067c7542254ed5220e1f3ec174dfddc6710ded0e50",
+          "max_new_tokens": 512,
+          "path": "/diskF/HeadKV/data/LongBench/vcsum.jsonl",
+          "samples": 200,
+          "sha256": "d7412361c418794607c801067c7542254ed5220e1f3ec174dfddc6710ded0e50"
+        }
+      },
+      "resolved_path": "/diskF/HeadKV/data/LongBench",
+      "six_task_total": 1500,
+      "total_samples": 3950
+    },
+    "E_scorer": {
+      "maxlen_config_sha256": "2b8a07152ad01a59456435864583f23dfcd22c8006aca06ae4bb4fefc7e24bdb",
+      "prompt_config_sha256": "f1184f81b27591aabc2a3753d647a086a239c22a63d5502869b524d6bdeab339",
+      "scorer": "/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/runtime/longbench_eval.py",
+      "scorer_dependency_versions": {
+        "fuzzywuzzy": "0.18.0",
+        "jieba": "0.42.1",
+        "rouge": "1.0.1"
+      },
+      "vendored_deps_dir": "/diskF/jiaqizhang/llama_drm_a100_4gpu_v1_deps"
+    },
+    "F_method_cli": {
+      "built_args": {
+        "drm_add": {
+          "method": "sliminfer_original",
+          "rescue_policy": "add",
+          "rescue_ratio": 0.05,
+          "rescue_score": "drm"
+        },
+        "drm_swap": {
+          "method": "sliminfer_original",
+          "rescue_policy": "budget_neutral_drm_swap",
+          "rescue_score": "drm"
+        },
+        "fullkv": {
+          "method": "fullkv"
+        },
+        "random_add": {
+          "method": "sliminfer_original",
+          "rescue_policy": "add",
+          "rescue_ratio": 0.05,
+          "rescue_score": "random",
+          "seed": 0
+        },
+        "sliminfer_larger": {
+          "method": "sliminfer_original",
+          "rescue_policy": "sliminfer_larger",
+          "rescue_score": "delta_o"
+        },
+        "sliminfer_original": {
+          "method": "sliminfer_original",
+          "rescue_policy": "none",
+          "rescue_score": "delta_o"
+        }
+      },
+      "resolved": {
+        "drm_add": {
+          "backend": "sdpa",
+          "block_size": 64,
+          "dtype": "bf16",
+          "local_query_window": 4,
+          "max_model_len": 7500,
+          "method": "sliminfer_original",
+          "model_family": "llama",
+          "prune_layers": "10,20,30",
+          "rescue_policy": "add",
+          "rescue_ratio": 0.05,
+          "rescue_score": "drm",
+          "retain_tokens": "8192,4096,2048",
+          "seed": 0,
+          "swap_threshold": 0.9,
+          "token_unit_size": 8
+        },
+        "drm_swap": {
+          "backend": "sdpa",
+          "block_size": 64,
+          "dtype": "bf16",
+          "local_query_window": 4,
+          "max_model_len": 7500,
+          "method": "sliminfer_original",
+          "model_family": "llama",
+          "prune_layers": "10,20,30",
+          "rescue_policy": "budget_neutral_drm_swap",
+          "rescue_ratio": 0.02,
+          "rescue_score": "drm",
+          "retain_tokens": "8192,4096,2048",
+          "seed": 0,
+          "swap_threshold": 0.9,
+          "token_unit_size": 8
+        },
+        "fullkv": {
+          "backend": "sdpa",
+          "block_size": 64,
+          "dtype": "bf16",
+          "local_query_window": 4,
+          "max_model_len": 7500,
+          "method": "fullkv",
+          "model_family": "llama",
+          "prune_layers": "10,20,30",
+          "rescue_policy": "none",
+          "rescue_ratio": 0.02,
+          "rescue_score": "delta_o",
+          "retain_tokens": "8192,4096,2048",
+          "seed": 0,
+          "swap_threshold": 0.9,
+          "token_unit_size": 8
+        },
+        "random_add": {
+          "backend": "sdpa",
+          "block_size": 64,
+          "dtype": "bf16",
+          "local_query_window": 4,
+          "max_model_len": 7500,
+          "method": "sliminfer_original",
+          "model_family": "llama",
+          "prune_layers": "10,20,30",
+          "rescue_policy": "add",
+          "rescue_ratio": 0.05,
+          "rescue_score": "random",
+          "retain_tokens": "8192,4096,2048",
+          "seed": 0,
+          "swap_threshold": 0.9,
+          "token_unit_size": 8
+        },
+        "sliminfer_larger": {
+          "backend": "sdpa",
+          "block_size": 64,
+          "dtype": "bf16",
+          "local_query_window": 4,
+          "max_model_len": 7500,
+          "method": "sliminfer_original",
+          "model_family": "llama",
+          "prune_layers": "10,20,30",
+          "rescue_policy": "sliminfer_larger",
+          "rescue_ratio": 0.02,
+          "rescue_score": "delta_o",
+          "retain_tokens": "8192,4096,2048",
+          "seed": 0,
+          "swap_threshold": 0.9,
+          "token_unit_size": 8
+        },
+        "sliminfer_original": {
+          "backend": "sdpa",
+          "block_size": 64,
+          "dtype": "bf16",
+          "local_query_window": 4,
+          "max_model_len": 7500,
+          "method": "sliminfer_original",
+          "model_family": "llama",
+          "prune_layers": "10,20,30",
+          "rescue_policy": "none",
+          "rescue_ratio": 0.02,
+          "rescue_score": "delta_o",
+          "retain_tokens": "8192,4096,2048",
+          "seed": 0,
+          "swap_threshold": 0.9,
+          "token_unit_size": 8
+        }
+      }
+    },
+    "G_random": {
+      "derived_M": [
+        6,
+        3,
+        2
+      ],
+      "drm_args": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "drm"
+      },
+      "random_args": {
+        "method": "sliminfer_original",
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "random",
+        "seed": 0
+      }
+    },
+    "H_drm_rules": {
+      "cache_utils_sha256": "354806479c7e4f0eee468a264c4377616b7309aebc8382e8d685ff16b4d7f07d",
+      "markers": {
+        "add_policy_dispatch": true,
+        "block_size_64_constant": true,
+        "budget_neutral_drm_swap_rule": true,
+        "drm_rescue_score_branch": true,
+        "drm_score_entrypoint": true,
+        "local_pruning_window_4": true,
+        "residual_aware_proxy_fields": true,
+        "shared_A_K_active_set": true,
+        "sliminfer_larger_extra_budget_rule": true,
+        "swap_threshold_default_0p8_overridden_to_0p9": true,
+        "token_unit_default_8": true
+      }
+    },
+    "I_scheduler": {},
+    "J_resume": {},
+    "K_forbidden": {
+      "methods_scheduled": [
+        "fullkv",
+        "sliminfer_original"
+      ]
+    },
+    "L_storage": {
+      "results_root": "/diskF/jiaqizhang/llama_drm_a100_4gpu_v1_results",
+      "results_root_free_gib": 60.59,
+      "results_root_source": "pointer:/home/bai-project/jiaqizhang/EigenAttn/tools/llama_drm_a100_4gpu_v1/RESULTS_ROOT.txt",
+      "tool_volume_free_gib": 20.81
+    }
+  },
+  "finished_at": "2026-07-28T17:32:09+00:00",
+  "frozen_config": {
+    "backend": "sdpa",
+    "backend_reason": "flash_attn is not installed in the llamaqkv environment",
+    "batch_size": 1,
+    "block_size": 64,
+    "block_strategy": "fixed",
+    "do_sample": false,
+    "dtype": "bf16",
+    "gamma_swap_threshold": 0.9,
+    "greedy": true,
+    "local_query_window": 4,
+    "max_model_len": 7500,
+    "max_position_embeddings": 8192,
+    "model_family": "llama",
+    "model_name": "Llama-3-8B",
+    "model_revision": "UNKNOWN_LOCAL_SNAPSHOT",
+    "num_beams": 1,
+    "num_hidden_layers": 32,
+    "preserve_first_block": true,
+    "prune_layers": [
+      10,
+      20,
+      30
+    ],
+    "rescue_m_per_prune_layer": [
+      6,
+      3,
+      2
+    ],
+    "rescue_ratio_main": 0.05,
+    "retain_tokens": [
+      8192,
+      4096,
+      2048
+    ],
+    "scoring": "token_unit_qk",
+    "token_unit_size": 8
+  },
+  "gpu_weights_loaded": false,
+  "protocol_id": "LLAMA_DRM_A100_4GPU_V1",
+  "protocol_version": "1.0.0",
+  "started_at": "2026-07-28T17:31:56+00:00",
+  "summary": {
+    "failed": 0,
+    "passed": 214,
+    "total": 214,
+    "warnings": 0
+  }
+}

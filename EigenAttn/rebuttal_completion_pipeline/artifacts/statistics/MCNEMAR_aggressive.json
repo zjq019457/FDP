@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-07-29T20:04:22.671104-07:00",
+  "rows": [
+    {
+      "task": "hellaswag_localjsonl",
+      "point": "aggressive",
+      "b01": 327,
+      "b10": 120,
+      "p_value": 3.12103854751831e-23,
+      "n_discordant": 447,
+      "n_common": 10042
+    },
+    {
+      "task": "arc_challenge_localjsonl",
+      "point": "aggressive",
+      "b01": 76,
+      "b10": 49,
+      "p_value": 0.019677394492865954,
+      "n_discordant": 125,
+      "n_common": 1172
+    },
+    {
+      "task": "arc_easy_localjsonl",
+      "point": "aggressive",
+      "b01": 133,
+      "b10": 88,
+      "p_value": 0.002992135105821429,
+      "n_discordant": 221,
+      "n_common": 2376
+    },
+    {
+      "task": "winogrande_localjsonl",
+      "point": "aggressive",
+      "b01": 134,
+      "b10": 109,
+      "p_value": 0.12348131946059543,
+      "n_discordant": 243,
+      "n_common": 1267
+    },
+    {
+      "task": "piqa_localjsonl",
+      "point": "aggressive",
+      "b01": 57,
+      "b10": 38,
+      "p_value": 0.064212806627131,
+      "n_discordant": 95,
+      "n_common": 1838
+    }
+  ]
+}

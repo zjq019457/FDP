@@ -1,0 +1,15 @@
+{
+  "dataset": "wikitext2",
+  "ppl": 11.82206991111223,
+  "total_nll_sum": 713247.7529296875,
+  "token_count_sum": 288768,
+  "used_windows": 141,
+  "skipped_windows": 0,
+  "n_windows_considered": 141,
+  "seqlen": 2048,
+  "method": "OFFICIAL_UNIFORM_LLAMA_aggressive",
+  "model_hash": "b98a6f5f4e3a593660e34a095709d613237cece6ae8e1b52fc005e7dc22113f3",
+  "runner_hash": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+  "recomputed_from": "exp(sum(total_nll)/sum(token_count))",
+  "timestamp": "2026-09-16T17:34:21.549087-07:00"
+}

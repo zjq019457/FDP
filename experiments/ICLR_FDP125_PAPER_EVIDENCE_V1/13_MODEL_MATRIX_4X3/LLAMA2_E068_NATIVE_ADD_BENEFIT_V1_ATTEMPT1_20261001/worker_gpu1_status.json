@@ -1,0 +1,21 @@
+{
+  "status": "RUNNING",
+  "gpu_index": 1,
+  "shard_index": 1,
+  "completed_this_attempt": 21,
+  "assigned_this_attempt": 21,
+  "completed_total": 21,
+  "reference_loss": {
+    "A": {
+      "nll_sum": 150688.09155273438,
+      "token_count": 63457,
+      "mean_nll": 2.3746488417784386
+    },
+    "B": {
+      "nll_sum": 150966.19287109375,
+      "token_count": 61410,
+      "mean_nll": 2.4583324030466334
+    }
+  },
+  "updated_utc": "2026-10-02T03:56:22.011343+00:00"
+}

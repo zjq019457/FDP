@@ -1,0 +1,112 @@
+---
+- NAME: Jared Fernandez
+  URL: https://www.jaredfern.com/
+  PIC: jaredfernandez.webp
+  X: FernJared
+  PRON: he/him
+  WS: 3
+  DEPT: LTI
+  CO: Emma Strubell
+  CO-URL: http://strubell.github.io/
+  SPICY: "You train models but don't know how computers work"
+  START: 2020
+  TOPIC: Efficiency
+- NAME: Yingshan Chang
+  NATIVE: 常影杉
+  URL: https://zdxdsw.github.io/
+  PIC: yingshanchang.jpg
+  X: _Yingshan
+  PRON: she/her
+  WS: 3
+  DEPT: LTI
+  SPICY: "Data won't save you, understand your architecture"
+  START: 2022
+  TOPIC: Generalization
+- NAME: Abitha Thankaraj
+  NATIVE: അബിത തങ്കരാജ്
+  URL: https://abitha-thankaraj.github.io/
+  PIC: abithathankaraj.jpg
+  X: abitha___
+  PRON: she/her
+  WS: 4
+  DEPT: CSD
+  SPICY: "Have you actually looked at your data?"
+  START: 2024
+  TOPIC: Planning
+# - NAME: Jimin Sun
+#   NATIVE: 선지민
+#   URL: https://jiminsun.github.io/
+#   PIC: jiminsun.jpg
+#   X: jimin__sun
+#   PRON: she/her
+#   WS: 2
+#   DEPT: LTI
+#   SPICY: "Don't trust your LLM or its tools"
+- NAME: Rosa Vitiello
+  NATIVE: Technically Rosanna
+  URL: https://rosavitiello.github.io/
+  PIC: rosavitiello.jpg
+  X: rosie_vitiello
+  PRON: she/her
+  WS: 5
+  DEPT: LTI
+  CO: Carolyn Rose
+  CO-URL: https://www.cs.cmu.edu/~cprose/
+  SPICY: "If you're not trying to help people, what's the point?"
+  START: 2024
+  TOPIC: Collaboration
+- NAME: Quanting Xie
+  NATIVE: 谢泉廷
+  URL: http://quantingxie.github.io/
+  PIC: quantingxie.jpg
+  X: DanielXieee
+  PRON: he/him
+  WS: 4
+  DEPT: RI
+  SPICY: "Dexterity is the future of robotics"
+  START: 2024
+  TOPIC: Manipulation
+- NAME: Leena Mathur
+  URL: https://l-mathur.github.io/
+  PIC: leenamathur.jpg
+  X: lmathur_
+  PRON: she/her
+  WS: 5
+  DEPT: LTI
+  CO: LP Morency
+  CO-URL: https://www.cs.cmu.edu/~morency/
+  SPICY: "You do know robots need to exist around people right?"
+  START: 2024
+  TOPIC: Social Intelligence
+- NAME: Haochen Zhang
+  NATIVE: 张皓晨
+  URL: https://haochenz11.github.io/
+  PIC: haochenzhang.jpg
+  X: haochenz_11
+  PRON: she/her
+  WS: 4
+  DEPT: RI
+  SPICY: Coming soon!
+  TOPIC: Incoming
+  START: 2025
+- NAME: Annabella Macaluso
+  URL: https://annabellamacaluso.github.io/
+  PIC: annabellamacaluso.jpg
+  X: anna_macalus
+  PRON: she/her
+  WS: 4
+  DEPT: RI
+  SPICY: Coming soon!
+  TOPIC: Incoming
+  START: 2025
+- NAME: Wenjie Li
+  NATIVE: 李文洁 
+  URL: https://wliwenjieli.github.io/
+  PIC: wenjieli.jpg
+  X: WenjieWLi
+  WS: 5
+  DEPT: NI
+  START: 2024
+  PRON: she/her
+  SPICY: Symbols, Fact or Fiction?
+  TOPIC: Incoming

@@ -1,0 +1,201 @@
+{
+  "schema": "LLAMA3_FULL_LOW_RESOURCE_OLD_COMPARATOR_WINDOW_AUDIT_V1",
+  "status": "PASS",
+  "comparators": {
+    "MEDIUM_DROP_D5_wiki": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/11000/wiki/ppl_windows.jsonl",
+      "sha256": "4dfece46582c5c4306844b479e5385b347a6eead0809db68506a87e2b80d7b63",
+      "N_windows": 141,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "46c74d5142c29b9cbbc54fb65a02fe4f031b70a228bdfd857d050253dc1b5aae"
+      ],
+      "token_count_sum": 288768,
+      "window_manifest_sha256": "e9440c44f9916889bae4d171af5cea5e0ec07893788bb6307a83686601d23f8a"
+    },
+    "MEDIUM_DROP_D5_c4": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/11000/c4/ppl_windows.jsonl",
+      "sha256": "03e8583f41911a43aabc5f37826c4778cb329fd6b22f45148baa8bfd6b246b75",
+      "N_windows": 256,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "46c74d5142c29b9cbbc54fb65a02fe4f031b70a228bdfd857d050253dc1b5aae"
+      ],
+      "token_count_sum": 524288,
+      "window_manifest_sha256": "ce9ac1e8685061b595fba55f2176ec4ac15add492c7a2625fdeaeacfdaf98d61"
+    },
+    "MEDIUM_DROP_D1_wiki": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/01001/wiki/ppl_windows.jsonl",
+      "sha256": "969039a021fcb050a9fcd169e1cc1d5063ce8c7eda4ce4695b6258e14b4e787d",
+      "N_windows": 141,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "7d9e0dfb0051d59e51cfeff74deb8e3b107ae950fc4977a9d4000f9eb3ce7309"
+      ],
+      "token_count_sum": 288768,
+      "window_manifest_sha256": "e9440c44f9916889bae4d171af5cea5e0ec07893788bb6307a83686601d23f8a"
+    },
+    "MEDIUM_DROP_D1_c4": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/01001/c4/ppl_windows.jsonl",
+      "sha256": "db90184a6f6d896861733c8d351f96c0936e4ed5300034c6926bdebc596936f1",
+      "N_windows": 256,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "7d9e0dfb0051d59e51cfeff74deb8e3b107ae950fc4977a9d4000f9eb3ce7309"
+      ],
+      "token_count_sum": 524288,
+      "window_manifest_sha256": "ce9ac1e8685061b595fba55f2176ec4ac15add492c7a2625fdeaeacfdaf98d61"
+    },
+    "MEDIUM_DROP_D2_wiki": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/10001/wiki/ppl_windows.jsonl",
+      "sha256": "a2c4a2008b8779a61312049f6c2776019969d20a1e0924e31eade319a1665435",
+      "N_windows": 141,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "319c8c39076db64e8b986daec114aa5851565d4094a0de94bafb2da5caf08fd0"
+      ],
+      "token_count_sum": 288768,
+      "window_manifest_sha256": "e9440c44f9916889bae4d171af5cea5e0ec07893788bb6307a83686601d23f8a"
+    },
+    "MEDIUM_DROP_D2_c4": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/medium/10001/c4/ppl_windows.jsonl",
+      "sha256": "aa00ef28f37b8a54f5df6906889a7876630d1be28d65e7db27d1b96b3583c05f",
+      "N_windows": 256,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "319c8c39076db64e8b986daec114aa5851565d4094a0de94bafb2da5caf08fd0"
+      ],
+      "token_count_sum": 524288,
+      "window_manifest_sha256": "ce9ac1e8685061b595fba55f2176ec4ac15add492c7a2625fdeaeacfdaf98d61"
+    },
+    "AGGRESSIVE_DROP_D2_wiki": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/aggressive/10001/wiki/ppl_windows.jsonl",
+      "sha256": "85fd5eb6af59151b6fb3d3c674ac2f2cf772dd4242d995b8d16c86c25cc7f698",
+      "N_windows": 141,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "392b6fcc0f06a0f94d691d077774f4628f98c5980df2cb2213d0b6d751c3be35"
+      ],
+      "token_count_sum": 288768,
+      "window_manifest_sha256": "e9440c44f9916889bae4d171af5cea5e0ec07893788bb6307a83686601d23f8a"
+    },
+    "AGGRESSIVE_DROP_D2_c4": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/aggressive/10001/c4/ppl_windows.jsonl",
+      "sha256": "237ba8af4c7fddb9e1bbcbe9d0701dfda9b22952915d1ff474debf835fb35078",
+      "N_windows": 256,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "392b6fcc0f06a0f94d691d077774f4628f98c5980df2cb2213d0b6d751c3be35"
+      ],
+      "token_count_sum": 524288,
+      "window_manifest_sha256": "ce9ac1e8685061b595fba55f2176ec4ac15add492c7a2625fdeaeacfdaf98d61"
+    },
+    "AGGRESSIVE_DROP_D5_wiki": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/aggressive/11000/wiki/ppl_windows.jsonl",
+      "sha256": "35bfaef3803e079e3a6558e6980c570351d9a2a35c4f0bde0c972b0beea99449",
+      "N_windows": 141,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "5835beb0808573e8fd16d4f7e9d3f4e79e2e790378f98c751a95fad955f5fb73"
+      ],
+      "token_count_sum": 288768,
+      "window_manifest_sha256": "e9440c44f9916889bae4d171af5cea5e0ec07893788bb6307a83686601d23f8a"
+    },
+    "AGGRESSIVE_DROP_D5_c4": {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/results/aggressive/11000/c4/ppl_windows.jsonl",
+      "sha256": "8f95e0d578285207b58e08c29ea6956cafcd332b9458a2a2ede3b54520bf1288",
+      "N_windows": 256,
+      "protocol_hashes": [
+        "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644"
+      ],
+      "runner_hashes": [
+        "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852"
+      ],
+      "model_hashes": [
+        "5835beb0808573e8fd16d4f7e9d3f4e79e2e790378f98c751a95fad955f5fb73"
+      ],
+      "token_count_sum": 524288,
+      "window_manifest_sha256": "ce9ac1e8685061b595fba55f2176ec4ac15add492c7a2625fdeaeacfdaf98d61"
+    }
+  },
+  "pairwise": {
+    "MEDIUM_DROP_D1_vs_DROP_D2_wiki": {
+      "sample_order_input_tokenizer_protocol_aligned": true,
+      "N_windows": 141,
+      "same_runner_hash": true
+    },
+    "MEDIUM_DROP_D1_vs_DROP_D5_wiki": {
+      "sample_order_input_tokenizer_protocol_aligned": true,
+      "N_windows": 141,
+      "same_runner_hash": true
+    },
+    "MEDIUM_DROP_D1_vs_DROP_D2_c4": {
+      "sample_order_input_tokenizer_protocol_aligned": true,
+      "N_windows": 256,
+      "same_runner_hash": true
+    },
+    "MEDIUM_DROP_D1_vs_DROP_D5_c4": {
+      "sample_order_input_tokenizer_protocol_aligned": true,
+      "N_windows": 256,
+      "same_runner_hash": true
+    },
+    "AGGRESSIVE_DROP_D2_vs_DROP_D5_wiki": {
+      "sample_order_input_tokenizer_protocol_aligned": true,
+      "N_windows": 141,
+      "same_runner_hash": true
+    },
+    "AGGRESSIVE_DROP_D2_vs_DROP_D5_c4": {
+      "sample_order_input_tokenizer_protocol_aligned": true,
+      "N_windows": 256,
+      "same_runner_hash": true
+    }
+  },
+  "limitations": [
+    "Historical component-drop basis binaries are not retained/verified as identical to Full; comparisons are resource-controlled robustness on paired evaluation inputs, not same-basis causal component ablation."
+  ]
+}

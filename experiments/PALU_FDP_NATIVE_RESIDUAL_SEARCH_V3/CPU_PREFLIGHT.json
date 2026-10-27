@@ -1,0 +1,72 @@
+{
+  "allocation_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+  "foreign_jobs_interrupted": 0,
+  "formal_split_read": false,
+  "manifest_sha256": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93",
+  "method_card_sha256": "dacb622d47629fc4c55215e485f50c30b9064aa3c30df2b469c950d5c4a3b07f",
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "runner_sha256": "1632bab4ccac3442246f2e593068fd6393caa04a9b55834617d124b44c47fdf3",
+  "split_binding_sha256": "196adc50a6adf58af13d07d27d9fe1f1da7c1ffba9067f0ca19508138cc69505",
+  "splits": {
+    "CALIBRATION_LOCK": {
+      "c4_chunks": 8,
+      "c4_doc_indices": [
+        222005,
+        222033,
+        222080,
+        222086,
+        222103,
+        222124,
+        222132,
+        222206
+      ],
+      "c4_tokens": 16384,
+      "token_bindings_verified": true,
+      "wiki_chunks": 8,
+      "wiki_tensor_tokens": 2874558,
+      "wiki_tokens": 16384
+    },
+    "CALIBRATION_TUNE": {
+      "c4_chunks": 8,
+      "c4_doc_indices": [
+        216009,
+        216027,
+        216058,
+        216088,
+        216103,
+        216116,
+        216151,
+        216192
+      ],
+      "c4_tokens": 16384,
+      "token_bindings_verified": true,
+      "wiki_chunks": 8,
+      "wiki_tensor_tokens": 2874558,
+      "wiki_tokens": 16384
+    },
+    "PROFILE": {
+      "c4_chunks": 8,
+      "c4_doc_indices": [
+        210022,
+        210042,
+        210094,
+        210111,
+        210123,
+        210132,
+        210157,
+        210230
+      ],
+      "c4_tokens": 16384,
+      "token_bindings_verified": true,
+      "wiki_chunks": 8,
+      "wiki_tensor_tokens": 2874558,
+      "wiki_tokens": 16384
+    }
+  },
+  "status": "V3_CPU_PREFLIGHT_PASS"
+}

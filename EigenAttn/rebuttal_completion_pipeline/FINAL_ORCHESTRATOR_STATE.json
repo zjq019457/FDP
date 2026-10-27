@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-07-29T19:27:03.370298-07:00",
+  "orchestrator_state": {
+    "phase": "WAITING",
+    "master_pid": 2291985,
+    "python": "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "gates": {},
+    "gpu_jobs": {},
+    "scheduler": "continuous_refill_packing",
+    "max_gpu_parallel": 12,
+    "max_cpu_parallel": 8,
+    "max_slots_per_gpu": 4,
+    "job_reserve_mib": 18000,
+    "generated_at": "2026-07-29T19:27:01.732005-07:00",
+    "in_flight": [
+      "OP_aggressive_zs"
+    ],
+    "last_action": "finished:OP_aggressive_zs",
+    "job_counts": {
+      "completed": 53,
+      "running": 0,
+      "pending": 0,
+      "blocked": 0,
+      "failed": 0,
+      "stopped": 0
+    }
+  },
+  "jobs_completed": 53,
+  "running_jobs": 0,
+  "note": "Snapshot before graceful STOP_REQUESTED",
+  "active_eval_procs": []
+}

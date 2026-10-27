@@ -1,0 +1,39 @@
+[2026-10-11 10:22:17 root] (main_eigen_attn.py 326): INFO Namespace(model='/diskD/jiaqizhang/Llama-3', cache_dir='/diskF/jiaqizhang/FDP_OFFICIAL_NO45_V2/runs/trace_part_28_31/cache', resume=None, calib_dataset='wikitext2', nsamples=512, batch_size=2, seed=2, tasks='', eval_ppl=False, num_fewshot=0, limit=-1, multigpu=False, attn_implementation='eager', net='Llama-3', load_low_rank=False, load_peft_model=False, peft_model_path=None, save_dir=None, output_dir='/diskF/jiaqizhang/FDP_OFFICIAL_NO45_V2/runs/trace_part_28_31', evaluate_baseline=False, avg_dim=4, error_budget=1000000000.0, fine_tune=False)
+[2026-10-11 10:22:19 root] (main_eigen_attn.py 364): INFO === start low rank decomposition ===
+[2026-10-11 10:22:27 root] (eigen_attn.py 16): INFO Starting ...
+[2026-10-11 10:22:56 root] (eigen_attn.py 259): INFO layer 0 error:0.0007467042305506766 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:23:24 root] (eigen_attn.py 259): INFO layer 1 error:0.00038279430009424686 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:23:51 root] (eigen_attn.py 259): INFO layer 2 error:0.00014200610166881233 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:24:18 root] (eigen_attn.py 259): INFO layer 3 error:0.00018913103849627078 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:24:46 root] (eigen_attn.py 259): INFO layer 4 error:0.00023375374439638108 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:25:13 root] (eigen_attn.py 259): INFO layer 5 error:0.00026057183276861906 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:25:44 root] (eigen_attn.py 259): INFO layer 6 error:0.0002939770056400448 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:26:20 root] (eigen_attn.py 259): INFO layer 7 error:0.00031595767359249294 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:26:56 root] (eigen_attn.py 259): INFO layer 8 error:0.0003098214219789952 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:27:35 root] (eigen_attn.py 259): INFO layer 9 error:0.00036198628367856145 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:28:11 root] (eigen_attn.py 259): INFO layer 10 error:0.0003371371713001281 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:28:48 root] (eigen_attn.py 259): INFO layer 11 error:0.0003428193158470094 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:29:26 root] (eigen_attn.py 259): INFO layer 12 error:0.00037735229125246406 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:30:02 root] (eigen_attn.py 259): INFO layer 13 error:0.0003653595340438187 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:30:39 root] (eigen_attn.py 259): INFO layer 14 error:0.0004146897990722209 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:31:17 root] (eigen_attn.py 259): INFO layer 15 error:0.00037728724419139326 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:31:53 root] (eigen_attn.py 259): INFO layer 16 error:0.00039363407995551825 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:32:31 root] (eigen_attn.py 259): INFO layer 17 error:0.000382967758923769 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:33:07 root] (eigen_attn.py 259): INFO layer 18 error:0.0003448827483225614 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:33:44 root] (eigen_attn.py 259): INFO layer 19 error:0.00033359150984324515 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:34:24 root] (eigen_attn.py 259): INFO layer 20 error:0.0003452532982919365 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:35:02 root] (eigen_attn.py 259): INFO layer 21 error:0.00037855401751585305 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:35:39 root] (eigen_attn.py 259): INFO layer 22 error:0.00033479538979008794 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:36:17 root] (eigen_attn.py 259): INFO layer 23 error:0.0003317432710900903 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:36:57 root] (eigen_attn.py 259): INFO layer 24 error:0.0003217492194380611 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:37:39 root] (eigen_attn.py 259): INFO layer 25 error:0.00037058605812489986 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:38:20 root] (eigen_attn.py 259): INFO layer 26 error:0.00034988895640708506 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:39:02 root] (eigen_attn.py 259): INFO layer 27 error:0.00035701028537005186 threshold:1.02 rank_kq: 1024 rank_v: 1024 max memory_allocated 41584.193359375 
+[2026-10-11 10:42:24 root] (eigen_attn.py 259): INFO layer 28 error:0.16037650406360626 threshold:0.33999999999999936 rank_kq: 40 rank_v: 272 max memory_allocated 42387.15966796875 
+[2026-10-11 10:45:41 root] (eigen_attn.py 259): INFO layer 29 error:0.28280407190322876 threshold:0.33999999999999936 rank_kq: 32 rank_v: 288 max memory_allocated 42399.0966796875 
+[2026-10-11 10:49:03 root] (eigen_attn.py 259): INFO layer 30 error:0.20193898677825928 threshold:0.33999999999999936 rank_kq: 40 rank_v: 296 max memory_allocated 42409.40966796875 
+[2026-10-11 10:52:17 root] (eigen_attn.py 259): INFO layer 31 error:0.2858200669288635 threshold:0.33999999999999936 rank_kq: 32 rank_v: 256 max memory_allocated 42409.40966796875 
+[2026-10-11 10:52:38 root] (main_eigen_attn.py 492): INFO 1819.0997669696808
+[2026-10-11 10:52:38 root] (main_eigen_attn.py 494): INFO === Evaluating compressed model ===
+[2026-10-11 10:52:39 root] (main_eigen_attn.py 496): INFO Compressed model parameters : 7.428086016 Billion
+[2026-10-11 10:52:39 root] (main_eigen_attn.py 503): INFO Compressed model KV Cache Size : 0.223541259765625 GB for batch size of 1

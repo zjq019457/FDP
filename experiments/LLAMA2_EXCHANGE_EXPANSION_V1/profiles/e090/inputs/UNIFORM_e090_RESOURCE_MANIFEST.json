@@ -1,0 +1,16 @@
+{
+ "note": "adapter: legacy column/field names 'uniform068_*' hold the e090 Uniform schedule",
+ "op": "e090",
+ "outputs": {
+  "per_layer_csv": {
+   "path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/e090/inputs/UNIFORM_e090_PER_LAYER.csv",
+   "sha256": "a01125cdce03a84ee0b4ac4b8fa1b683c992b4161cfd8fade5c790d73ef7c8ca"
+  }
+ },
+ "resource_accounting": {
+  "uniform068_B_live_rank_implied_bytes": 649199616
+ },
+ "schedule_sha256": {
+  "uniform068_rank_schedule": "80aeea44ef7affcaf8f3231a71521e52e4919f34de502022568ac10527ff9e74"
+ }
+}

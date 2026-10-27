@@ -1,0 +1,47 @@
+{
+  "artifact_id": "LLAMA2_E068_NATIVE_EXCHANGE_ITERATION_PROTOCOL_LOCK_V1",
+  "status": "FROZEN_BEFORE_JOINT_EXCHANGE_EVALUATION",
+  "created_utc": "2026-10-02T04:16:51.151097+00:00",
+  "method": "resource-neutral one-rank-quantum path exchange using measured add/remove marginal NLL; profile q is diagnostic only",
+  "acceptance": "accept a selected exchange only if joint 61-window full token-mean NLL decreases and both frozen halves are non-worsening; otherwise stop without accepting",
+  "stability_rule_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_ADD_BENEFIT_V1_ATTEMPT1_20261001/LLAMA2_E068_NATIVE_ADD_BENEFIT_STABILITY_RULE_ADDENDUM.json",
+  "stability_rule_sha256": "d9fcdcaab734276e77ac0f20e60ffc7e3625957ff016376e0491138f0389f97d",
+  "add_protocol_lock_sha256": "b85c02610e1f6a1e19df1ca069d5d5bb1c837583938e725f3f0429435f71bb5e",
+  "add_summary_sha256": "67fd8d5cab6ebeeb0e1ffec79c1465b730deb43b22ff5162ae13bb61e84e7912",
+  "add_csv_sha256": "6236f634a9feb8f49ab9d356eb54ef4d298c369639cd2d341269d5d2560f492b",
+  "add_runner_sha256": "e73469786ad24bd46f13a043d47f8dfb0cae116f97823bf9729672621be81229",
+  "basis_sha256": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+  "baseline_rank_schedule_sha256": "590129c5a0401474266d7652601461b52f7be452ced772dd489b25f3a744913c",
+  "baseline_rank_pairs_sha256": "c566c93a731e1ba3241513d6544ff6eedf007aa989e81d01a1fcceb82d686c6c",
+  "executor_sha256": "e9cde02feb36d46e109e72f0ed290c5bf9b5b8c29ae8be9e371f778da7ddd6eb",
+  "prior_attempt_invalidation_sha256": "ba4b9b699d1a15c8b4c325dbf11eff16c6cca4f47f7ab498a89313d261999286",
+  "baseline_B_live_bytes": 746323968,
+  "rank_quantum": 32,
+  "delta_bytes_per_quantum": 131072,
+  "max_accepted_exchanges": 12,
+  "selected_physical_gpu": 1,
+  "gpu_preflight": [
+    {
+      "index": 0,
+      "total_mib": 81920,
+      "used_mib": 29689,
+      "free_mib": 51464,
+      "util_pct": 100
+    },
+    {
+      "index": 1,
+      "total_mib": 81920,
+      "used_mib": 0,
+      "free_mib": 81153,
+      "util_pct": 0
+    },
+    {
+      "index": 2,
+      "total_mib": 81920,
+      "used_mib": 44579,
+      "free_mib": 36574,
+      "util_pct": 98
+    }
+  ],
+  "final_wiki_c4_or_accuracy_started": false
+}

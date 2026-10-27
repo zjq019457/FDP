@@ -1,0 +1,88 @@
+{
+  "datasets": {
+    "c4": "C4 validation first 1100 docs / 256 chunks",
+    "wiki": "WikiText-2 test"
+  },
+  "downstream_official_support": {
+    "longbench": "supported by repo script; requirement status audited separately",
+    "zero_shot": [
+      "openbookqa",
+      "hellaswag",
+      "piqa",
+      "arc_easy",
+      "arc_challenge",
+      "winogrande"
+    ]
+  },
+  "dtype": "FP16 model/cache accounting; common official evaluator path",
+  "fisher_data_provenance": {
+    "anchor_sha256": "b7dfa7ae39cbbee24f1095a89eadec4714c86f4ec6e6c9e60b8024e225d1829b",
+    "calibration_dataset": "WikiText-2 train",
+    "calibration_samples": 32,
+    "calibration_seed": 3,
+    "calibration_seqlen": 1024,
+    "formula": "official PaLu elementwise RMS gradient means over K/V projection weights"
+  },
+  "g_lrd_m_lrd_j_lrd": {
+    "G_LRD": "official grouped low-rank projection construction as exposed by HeadwiseLowRankModule",
+    "J_LRD": "not a separate named mode in the pinned repository; no unsupported paper-semantic expansion asserted",
+    "M_LRD": "module-local K/V projection factorization"
+  },
+  "generated_token_cache_accounting": "decode cache uses same native rank*sequence_length*dtype formula; no generated-token semantic change",
+  "grouping_semantics": "frozen anchor schema: two persisted K/V slots per projection module; rank quantum 32; cap 512",
+  "historical_results_modified": false,
+  "immutable_q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "kv_projection_semantics": "official K/V projection replacement through HeadwiseLowRankModule factors",
+  "metrics": [
+    "mean token NLL",
+    "PPL",
+    "aggregate J=0.5*(Wiki mean NLL+C4 mean NLL)"
+  ],
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "native_rank_semantics": {
+    "exact_match_required": [
+      "total_native_rank",
+      "prefill_cache_bytes",
+      "decode_cache_bytes"
+    ],
+    "gqa_semantics": "two persisted native K/V slots per module in frozen anchor schema",
+    "rank_cap_per_slot": 512,
+    "rank_quantum": 32,
+    "resource_formula": "slot rank * sequence length * dtype bytes; K/V aggregate over all native slots",
+    "slots_per_kv_module": 2
+  },
+  "official_fisher_allocation": "frozen anchor proportional Fisher allocation with integer deficit completion and block-32 rounding",
+  "official_repo": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/Palu",
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "official_uniform_allocation": "anchor-schema equal legal native block distribution with deterministic evenly-spaced remainder and exact realized-rank match to Fisher anchor",
+  "ratio_mapping": {
+    "0.3": {
+      "compression_fraction": 0.7,
+      "retained_fraction": 0.3
+    },
+    "0.5": {
+      "compression_fraction": 0.5,
+      "retained_fraction": 0.5
+    },
+    "0.7": {
+      "compression_fraction": 0.3,
+      "retained_fraction": 0.7
+    }
+  },
+  "resource_accounting": {
+    "exact_match_required": [
+      "total_native_rank",
+      "prefill_cache_bytes",
+      "decode_cache_bytes"
+    ],
+    "gqa_semantics": "two persisted native K/V slots per module in frozen anchor schema",
+    "rank_cap_per_slot": 512,
+    "rank_quantum": 32,
+    "resource_formula": "slot rank * sequence length * dtype bytes; K/V aggregate over all native slots",
+    "slots_per_kv_module": 2
+  },
+  "rope_key_handling": "unchanged official model attention path; no RoPE modification in exchange engine",
+  "runtime_code_path": "official model loader + official HeadwiseLowRankModule + frozen factor cache; no formal schedule search",
+  "status": "OFFICIAL_METHOD_CARD_FROZEN",
+  "tokenizer": "AutoTokenizer from the same model directory"
+}

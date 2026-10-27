@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "point": "moderate",
+  "found": [
+    "/diskE/jiaqizhang/rebuttal_completion_artifacts/OP_moderate_uniform_hs_arc/zero_shot_aggregate.json",
+    "/diskE/jiaqizhang/rebuttal_completion_artifacts/OP_moderate_uniform_wg_piqa/zero_shot_aggregate.json",
+    "/diskE/jiaqizhang/rebuttal_completion_artifacts/OP_moderate_fdp_hs_arc/zero_shot_aggregate.json",
+    "/diskE/jiaqizhang/rebuttal_completion_artifacts/OP_moderate_fdp_wg_piqa/zero_shot_aggregate.json"
+  ],
+  "missing": [],
+  "generated_at": "2026-07-29T09:45:13.836223-07:00"
+}

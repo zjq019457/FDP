@@ -1,0 +1,6 @@
+error,task
+no common samples,hellaswag_localjsonl
+no common samples,arc_challenge_localjsonl
+no common samples,arc_easy_localjsonl
+no common samples,winogrande_localjsonl
+no common samples,piqa_localjsonl

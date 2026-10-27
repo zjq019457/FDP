@@ -1,0 +1,31 @@
+{
+  "schema": "PALU_TABLE1_DENSE_C4_RUN_V1",
+  "run_id": "TABLE1_DENSE_C4_OFFLINE_RETRY2_20260929T1145Z",
+  "status": "COMPLETE",
+  "official_entrypoint": "run_ppl_eval.py::eval_ppl",
+  "adapter": "intercept only official load_dataset(allenai/c4) resolution and read local JSON.GZ shard; evaluator/tokenizer/windows untouched",
+  "c4_source_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/data/c4-validation.00000-of-00008.json.gz",
+  "c4_source_sha256": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+  "pinned_revision": "607bd4c8450a42878aa9ddc051a65a055450ef87",
+  "sha_matches_existing_official_protocol_record": true,
+  "environment": {
+    "python": "3.10.19",
+    "torch": "2.4.0+cu121",
+    "transformers": "4.37.2",
+    "datasets": "2.19.2",
+    "lm_eval": "0.4.2",
+    "dtype": "float16",
+    "gpu": "0"
+  },
+  "started_utc": "2026-09-29T18:38:14.686385+00:00",
+  "historical_results_modified": false,
+  "model_symlink": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/model_reference_attempt2/Llama-2-7b-hf",
+  "serialization_repair": "local C4 TokenizerWrapper -> SimpleNamespace carrying the unchanged input_ids",
+  "retry_utc": "2026-09-29T18:39:14.553570+00:00",
+  "ppl": 7.2632622718811035,
+  "windows": 256,
+  "tokens": 524288,
+  "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/results/dense_c4_partial.json",
+  "completed_utc": "2026-09-29T18:41:57.649634+00:00",
+  "log_sha256": "e3fa7f5a6b84585ead9e19dfe8dd1983bbf37a02a03f33f73a57b6165af389e6"
+}

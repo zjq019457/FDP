@@ -1,0 +1,373 @@
+{
+  "schema": "MPT7B_U015_RELAXED_UNIFORM_RANK_LOCK_V1",
+  "status": "PREDICTED_BYTES_CENSUS_PENDING",
+  "selection_rule": "smallest measured single-epsilon Uniform schedule whose predicted B_live is strictly above the frozen FDP B_live; tie-break is the larger epsilon. Chosen only from already measured Uniform trials. Quality was not used.",
+  "quality_used_to_select": false,
+  "original_uniform_epsilon": 0.015,
+  "relaxed_uniform_epsilon": 0.013021865027912114,
+  "epsilon_direction": "tighter than the original Uniform epsilon, which raises legal rank and B_live",
+  "original_uniform_b_live": 717094912,
+  "frozen_fdp_b_live": 776077312,
+  "predicted_kv_cache_bytes": 776208384,
+  "predicted_minus_fdp_bytes": 131072,
+  "predicted_relative_gap_vs_fdp": 0.00016889039013680122,
+  "retention_vs_dense": 0.722900390625,
+  "fdp_retention_vs_dense": 0.7227783203125,
+  "rank_schedule": [
+    [
+      2112,
+      3808
+    ],
+    [
+      3456,
+      3648
+    ],
+    [
+      2368,
+      2912
+    ],
+    [
+      2080,
+      2880
+    ],
+    [
+      2976,
+      3392
+    ],
+    [
+      3232,
+      3680
+    ],
+    [
+      3200,
+      3584
+    ],
+    [
+      3392,
+      3680
+    ],
+    [
+      3648,
+      3840
+    ],
+    [
+      3840,
+      3936
+    ],
+    [
+      3872,
+      3968
+    ],
+    [
+      3680,
+      3840
+    ],
+    [
+      3840,
+      3936
+    ],
+    [
+      3648,
+      3840
+    ],
+    [
+      3648,
+      3840
+    ],
+    [
+      3648,
+      3840
+    ],
+    [
+      3488,
+      3744
+    ],
+    [
+      3328,
+      3616
+    ],
+    [
+      2944,
+      3392
+    ],
+    [
+      2848,
+      3296
+    ],
+    [
+      2528,
+      3104
+    ],
+    [
+      2400,
+      3008
+    ],
+    [
+      2016,
+      2688
+    ],
+    [
+      2016,
+      2688
+    ],
+    [
+      1664,
+      2496
+    ],
+    [
+      1504,
+      2304
+    ],
+    [
+      1088,
+      2016
+    ],
+    [
+      1568,
+      2400
+    ],
+    [
+      1760,
+      2496
+    ],
+    [
+      2592,
+      3040
+    ],
+    [
+      2368,
+      2848
+    ],
+    [
+      64,
+      928
+    ]
+  ],
+  "rank_schedule_sha256": "7141ac4016a4fd216f5d5289c3b3f2c42db1ddba7fdcd40fd8c3bbd87f1788cf",
+  "per_layer": [
+    {
+      "layer": 0,
+      "threshold": 0.98,
+      "rank_kq": 2112,
+      "rank_v": 3808,
+      "relative_error": 0.011519846038609787
+    },
+    {
+      "layer": 1,
+      "threshold": 0.94,
+      "rank_kq": 3456,
+      "rank_v": 3648,
+      "relative_error": 0.012325957583857922
+    },
+    {
+      "layer": 2,
+      "threshold": 0.84,
+      "rank_kq": 2368,
+      "rank_v": 2912,
+      "relative_error": 0.012884518133050301
+    },
+    {
+      "layer": 3,
+      "threshold": 0.82,
+      "rank_kq": 2080,
+      "rank_v": 2880,
+      "relative_error": 0.011995381477824122
+    },
+    {
+      "layer": 4,
+      "threshold": 0.88,
+      "rank_kq": 2976,
+      "rank_v": 3392,
+      "relative_error": 0.01219419812061514
+    },
+    {
+      "layer": 5,
+      "threshold": 0.94,
+      "rank_kq": 3232,
+      "rank_v": 3680,
+      "relative_error": 0.01133650386490273
+    },
+    {
+      "layer": 6,
+      "threshold": 0.92,
+      "rank_kq": 3200,
+      "rank_v": 3584,
+      "relative_error": 0.01267973867442205
+    },
+    {
+      "layer": 7,
+      "threshold": 0.94,
+      "rank_kq": 3392,
+      "rank_v": 3680,
+      "relative_error": 0.012838811513641435
+    },
+    {
+      "layer": 8,
+      "threshold": 0.96,
+      "rank_kq": 3648,
+      "rank_v": 3840,
+      "relative_error": 0.012450059309671791
+    },
+    {
+      "layer": 9,
+      "threshold": 0.98,
+      "rank_kq": 3840,
+      "rank_v": 3936,
+      "relative_error": 0.010779391330701951
+    },
+    {
+      "layer": 10,
+      "threshold": 0.98,
+      "rank_kq": 3872,
+      "rank_v": 3968,
+      "relative_error": 0.012056124620535721
+    },
+    {
+      "layer": 11,
+      "threshold": 0.96,
+      "rank_kq": 3680,
+      "rank_v": 3840,
+      "relative_error": 0.012820260521454145
+    },
+    {
+      "layer": 12,
+      "threshold": 0.98,
+      "rank_kq": 3840,
+      "rank_v": 3936,
+      "relative_error": 0.009555585519884318
+    },
+    {
+      "layer": 13,
+      "threshold": 0.96,
+      "rank_kq": 3648,
+      "rank_v": 3840,
+      "relative_error": 0.011489293320986187
+    },
+    {
+      "layer": 14,
+      "threshold": 0.96,
+      "rank_kq": 3648,
+      "rank_v": 3840,
+      "relative_error": 0.011839836685451395
+    },
+    {
+      "layer": 15,
+      "threshold": 0.96,
+      "rank_kq": 3648,
+      "rank_v": 3840,
+      "relative_error": 0.011210273325315588
+    },
+    {
+      "layer": 16,
+      "threshold": 0.94,
+      "rank_kq": 3488,
+      "rank_v": 3744,
+      "relative_error": 0.011478613022509281
+    },
+    {
+      "layer": 17,
+      "threshold": 0.92,
+      "rank_kq": 3328,
+      "rank_v": 3616,
+      "relative_error": 0.012239843059167846
+    },
+    {
+      "layer": 18,
+      "threshold": 0.88,
+      "rank_kq": 2944,
+      "rank_v": 3392,
+      "relative_error": 0.012894636912264244
+    },
+    {
+      "layer": 19,
+      "threshold": 0.86,
+      "rank_kq": 2848,
+      "rank_v": 3296,
+      "relative_error": 0.012584542878390791
+    },
+    {
+      "layer": 20,
+      "threshold": 0.82,
+      "rank_kq": 2528,
+      "rank_v": 3104,
+      "relative_error": 0.01242365089077222
+    },
+    {
+      "layer": 21,
+      "threshold": 0.8,
+      "rank_kq": 2400,
+      "rank_v": 3008,
+      "relative_error": 0.012304626772119187
+    },
+    {
+      "layer": 22,
+      "threshold": 0.74,
+      "rank_kq": 2016,
+      "rank_v": 2688,
+      "relative_error": 0.01281942353998423
+    },
+    {
+      "layer": 23,
+      "threshold": 0.74,
+      "rank_kq": 2016,
+      "rank_v": 2688,
+      "relative_error": 0.012942423438061823
+    },
+    {
+      "layer": 24,
+      "threshold": 0.7,
+      "rank_kq": 1664,
+      "rank_v": 2496,
+      "relative_error": 0.012792651258633209
+    },
+    {
+      "layer": 25,
+      "threshold": 0.66,
+      "rank_kq": 1504,
+      "rank_v": 2304,
+      "relative_error": 0.012957423586207583
+    },
+    {
+      "layer": 26,
+      "threshold": 0.6,
+      "rank_kq": 1088,
+      "rank_v": 2016,
+      "relative_error": 0.012729574942345244
+    },
+    {
+      "layer": 27,
+      "threshold": 0.68,
+      "rank_kq": 1568,
+      "rank_v": 2400,
+      "relative_error": 0.012723117999652124
+    },
+    {
+      "layer": 28,
+      "threshold": 0.7,
+      "rank_kq": 1760,
+      "rank_v": 2496,
+      "relative_error": 0.012641392473493433
+    },
+    {
+      "layer": 29,
+      "threshold": 0.8,
+      "rank_kq": 2592,
+      "rank_v": 3040,
+      "relative_error": 0.012871541602035965
+    },
+    {
+      "layer": 30,
+      "threshold": 0.76,
+      "rank_kq": 2368,
+      "rank_v": 2848,
+      "relative_error": 0.012292416966947963
+    },
+    {
+      "layer": 31,
+      "threshold": 0.4,
+      "rank_kq": 64,
+      "rank_v": 928,
+      "relative_error": 0.013021865027912114
+    }
+  ]
+}

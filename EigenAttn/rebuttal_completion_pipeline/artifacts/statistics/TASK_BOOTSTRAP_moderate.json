@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-07-29T20:05:12.836934-07:00",
+  "rows": [
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 10042,
+      "mean_delta_acc": 0.015027444732125235,
+      "ci95_low": 0.01165106552479589,
+      "ci95_high": 0.018522206731726665,
+      "significant_at_05": true,
+      "align": "task+sample_id(+document_hash)",
+      "task": "hellaswag_localjsonl",
+      "point": "moderate"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 1172,
+      "mean_delta_acc": 0.0032376279863480795,
+      "ci95_low": -0.012798634812286658,
+      "ci95_high": 0.01962457337883955,
+      "significant_at_05": false,
+      "align": "task+sample_id(+document_hash)",
+      "task": "arc_challenge_localjsonl",
+      "point": "moderate"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 2376,
+      "mean_delta_acc": 0.010536489898989268,
+      "ci95_low": 0.0008417508417508657,
+      "ci95_high": 0.019781144781144788,
+      "significant_at_05": true,
+      "align": "task+sample_id(+document_hash)",
+      "task": "arc_easy_localjsonl",
+      "point": "moderate"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 1267,
+      "mean_delta_acc": 0.048851617995263524,
+      "ci95_low": 0.02525651144435681,
+      "ci95_high": 0.07261247040252572,
+      "significant_at_05": true,
+      "align": "task+sample_id(+document_hash)",
+      "task": "winogrande_localjsonl",
+      "point": "moderate"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_samples": 1838,
+      "mean_delta_acc": 0.0059743199129490415,
+      "ci95_low": -0.0021762785636560977,
+      "ci95_high": 0.014145810663764968,
+      "significant_at_05": false,
+      "align": "task+sample_id(+document_hash)",
+      "task": "piqa_localjsonl",
+      "point": "moderate"
+    }
+  ],
+  "macro": {
+    "point": "moderate",
+    "n_bootstrap": 10000,
+    "n_samples": 16695,
+    "mean_delta_acc": 0.015151656184485203,
+    "ci95_low": 0.011799940101826834,
+    "ci95_high": 0.018568433662773276,
+    "significant_at_05": true,
+    "align": "task+sample_id(+document_hash)",
+    "status": "ok"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sha": "7ecf6eda0d60b4a4d01c7838f0736b47167320cd7640254816cd4101f417ad59",
+  "status": "DONE_VALID_HISTORICAL",
+  "source": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/evaluations/light/fdp_045",
+  "wiki_ppl": 6.649422798481405,
+  "wiki_nll": 1.8945300536798246,
+  "wiki_windows": 141,
+  "c4_ppl": 9.69294237474176,
+  "c4_nll": 2.271398030454293,
+  "c4_windows": 256,
+  "zero_shot_tasks": {
+    "hellaswag_localjsonl": 0.5625373431587333,
+    "arc_challenge_localjsonl": 0.48293515358361777,
+    "arc_easy_localjsonl": 0.7697811447811448,
+    "winogrande_localjsonl": 0.7237569060773481,
+    "piqa_localjsonl": 0.7845484221980413
+  },
+  "zero_shot_macro": 0.6647117939597771,
+  "scorer_authority": "lm_eval_primary",
+  "completed_at": "2026-09-10T20:42:20Z"
+}

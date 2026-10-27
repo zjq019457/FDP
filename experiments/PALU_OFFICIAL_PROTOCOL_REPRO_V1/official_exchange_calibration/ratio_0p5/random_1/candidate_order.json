@@ -1,0 +1,385 @@
+{
+  "action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "formal_quality_used_to_select": false,
+  "maximum_rank": 512,
+  "minimum_rank": 32,
+  "official_phi_units": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_native_marginal/ratio_0p5/units.csv",
+  "official_phi_units_sha256": "bd1d0c8f67d71bcf9aa961a9296419199bdfe4d332025681018fde73775eceba",
+  "pairs": [
+    {
+      "donor": {
+        "group_id": 4,
+        "module": "k_proj",
+        "module_key": "model.layers.5.self_attn.k_proj",
+        "phi_official": 0.12161089399160119,
+        "q": 0.9750307946160874,
+        "rank": 160,
+        "score": 0.0007628107509608517,
+        "unit": "model.layers.5.self_attn.k_proj::group4"
+      },
+      "proposal": 1,
+      "receiver": {
+        "group_id": 1,
+        "module": "k_proj",
+        "module_key": "model.layers.5.self_attn.k_proj",
+        "phi_official": 0.17748534440670483,
+        "q": 0.9750307946160874,
+        "rank": 160,
+        "score": 0.995559533803982,
+        "unit": "model.layers.5.self_attn.k_proj::group1"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 3,
+        "module": "k_proj",
+        "module_key": "model.layers.25.self_attn.k_proj",
+        "phi_official": 0.3417501221301791,
+        "q": 0.08339118075720033,
+        "rank": 128,
+        "score": 0.0032742148716543573,
+        "unit": "model.layers.25.self_attn.k_proj::group3"
+      },
+      "proposal": 2,
+      "receiver": {
+        "group_id": 4,
+        "module": "k_proj",
+        "module_key": "model.layers.18.self_attn.k_proj",
+        "phi_official": 0.560484855886898,
+        "q": 0.2833780365678124,
+        "rank": 96,
+        "score": 0.9941671369299269,
+        "unit": "model.layers.18.self_attn.k_proj::group4"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 1,
+        "module": "v_proj",
+        "module_key": "model.layers.6.self_attn.v_proj",
+        "phi_official": 8.372923790913774,
+        "q": 0.6954170495624193,
+        "rank": 512,
+        "score": 0.003547172846118718,
+        "unit": "model.layers.6.self_attn.v_proj::group1"
+      },
+      "proposal": 3,
+      "receiver": {
+        "group_id": 6,
+        "module": "k_proj",
+        "module_key": "model.layers.13.self_attn.k_proj",
+        "phi_official": 0.2824560332201145,
+        "q": 0.503014297389254,
+        "rank": 128,
+        "score": 0.9929877191491169,
+        "unit": "model.layers.13.self_attn.k_proj::group6"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 0,
+        "module": "v_proj",
+        "module_key": "model.layers.22.self_attn.v_proj",
+        "phi_official": 0.7606100390812571,
+        "q": 0.17747780013965767,
+        "rank": 288,
+        "score": 0.006531549147411608,
+        "unit": "model.layers.22.self_attn.v_proj::group0"
+      },
+      "proposal": 4,
+      "receiver": {
+        "group_id": 0,
+        "module": "v_proj",
+        "module_key": "model.layers.17.self_attn.v_proj",
+        "phi_official": 0.21331521739102755,
+        "q": 0.5095308247142902,
+        "rank": 384,
+        "score": 0.9920539312625565,
+        "unit": "model.layers.17.self_attn.v_proj::group0"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 7,
+        "module": "k_proj",
+        "module_key": "model.layers.20.self_attn.k_proj",
+        "phi_official": 2.2783799462631578,
+        "q": 0.10538882842944036,
+        "rank": 96,
+        "score": 0.009612145346147183,
+        "unit": "model.layers.20.self_attn.k_proj::group7"
+      },
+      "proposal": 5,
+      "receiver": {
+        "group_id": 4,
+        "module": "k_proj",
+        "module_key": "model.layers.7.self_attn.k_proj",
+        "phi_official": 0.027143380556481134,
+        "q": 0.6173603897100236,
+        "rank": 160,
+        "score": 0.9815808140226974,
+        "unit": "model.layers.7.self_attn.k_proj::group4"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 0,
+        "module": "k_proj",
+        "module_key": "model.layers.5.self_attn.k_proj",
+        "phi_official": 0.34359733756718924,
+        "q": 0.9750307946160874,
+        "rank": 160,
+        "score": 0.013246422065433028,
+        "unit": "model.layers.5.self_attn.k_proj::group0"
+      },
+      "proposal": 6,
+      "receiver": {
+        "group_id": 0,
+        "module": "k_proj",
+        "module_key": "model.layers.17.self_attn.k_proj",
+        "phi_official": -0.16377625793847983,
+        "q": 0.5095308247142902,
+        "rank": 96,
+        "score": 0.9801977329942663,
+        "unit": "model.layers.17.self_attn.k_proj::group0"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 6,
+        "module": "v_proj",
+        "module_key": "model.layers.9.self_attn.v_proj",
+        "phi_official": 1.5974291646316487,
+        "q": 0.6245070683946297,
+        "rank": 512,
+        "score": 0.013477404629444911,
+        "unit": "model.layers.9.self_attn.v_proj::group6"
+      },
+      "proposal": 7,
+      "receiver": {
+        "group_id": 3,
+        "module": "k_proj",
+        "module_key": "model.layers.29.self_attn.k_proj",
+        "phi_official": 0.32486565705858084,
+        "q": 0.11535804021109192,
+        "rank": 128,
+        "score": 0.9753510362166954,
+        "unit": "model.layers.29.self_attn.k_proj::group3"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 4,
+        "module": "v_proj",
+        "module_key": "model.layers.21.self_attn.v_proj",
+        "phi_official": -0.06666768441664317,
+        "q": 0.19257496512646322,
+        "rank": 256,
+        "score": 0.013864550131999054,
+        "unit": "model.layers.21.self_attn.v_proj::group4"
+      },
+      "proposal": 8,
+      "receiver": {
+        "group_id": 4,
+        "module": "k_proj",
+        "module_key": "model.layers.27.self_attn.k_proj",
+        "phi_official": 2.0279372252080066,
+        "q": 0.23228458096117952,
+        "rank": 128,
+        "score": 0.9735649412636411,
+        "unit": "model.layers.27.self_attn.k_proj::group4"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 6,
+        "module": "v_proj",
+        "module_key": "model.layers.28.self_attn.v_proj",
+        "phi_official": 0.4115168539328806,
+        "q": 0.17939419673234716,
+        "rank": 256,
+        "score": 0.01822662804518349,
+        "unit": "model.layers.28.self_attn.v_proj::group6"
+      },
+      "proposal": 9,
+      "receiver": {
+        "group_id": 2,
+        "module": "v_proj",
+        "module_key": "model.layers.30.self_attn.v_proj",
+        "phi_official": 0.13954872984868416,
+        "q": 0.14038645302269334,
+        "rank": 224,
+        "score": 0.9714731927551834,
+        "unit": "model.layers.30.self_attn.v_proj::group2"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 7,
+        "module": "v_proj",
+        "module_key": "model.layers.25.self_attn.v_proj",
+        "phi_official": 0.02718917928632436,
+        "q": 0.08339118075720033,
+        "rank": 288,
+        "score": 0.021887153053930186,
+        "unit": "model.layers.25.self_attn.v_proj::group7"
+      },
+      "proposal": 10,
+      "receiver": {
+        "group_id": 7,
+        "module": "v_proj",
+        "module_key": "model.layers.15.self_attn.v_proj",
+        "phi_official": 0.5723925256470466,
+        "q": 0.5576626296476382,
+        "rank": 448,
+        "score": 0.9688822284672775,
+        "unit": "model.layers.15.self_attn.v_proj::group7"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 0,
+        "module": "v_proj",
+        "module_key": "model.layers.11.self_attn.v_proj",
+        "phi_official": 2.7584880312651876,
+        "q": 0.5848725100963484,
+        "rank": 512,
+        "score": 0.02314738772515801,
+        "unit": "model.layers.11.self_attn.v_proj::group0"
+      },
+      "proposal": 11,
+      "receiver": {
+        "group_id": 2,
+        "module": "k_proj",
+        "module_key": "model.layers.8.self_attn.k_proj",
+        "phi_official": 0.7286883243768898,
+        "q": 0.6197302457129967,
+        "rank": 160,
+        "score": 0.9669112709199356,
+        "unit": "model.layers.8.self_attn.k_proj::group2"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 0,
+        "module": "v_proj",
+        "module_key": "model.layers.1.self_attn.v_proj",
+        "phi_official": -0.012167195895926852,
+        "q": 0.12052861965041449,
+        "rank": 512,
+        "score": 0.025245237178688318,
+        "unit": "model.layers.1.self_attn.v_proj::group0"
+      },
+      "proposal": 12,
+      "receiver": {
+        "group_id": 0,
+        "module": "k_proj",
+        "module_key": "model.layers.11.self_attn.k_proj",
+        "phi_official": 0.7059110893997058,
+        "q": 0.5848725100963484,
+        "rank": 160,
+        "score": 0.9660748729460304,
+        "unit": "model.layers.11.self_attn.k_proj::group0"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 4,
+        "module": "k_proj",
+        "module_key": "model.layers.4.self_attn.k_proj",
+        "phi_official": 0.5571262823641518,
+        "q": 0.4448864318752493,
+        "rank": 160,
+        "score": 0.02720992679239742,
+        "unit": "model.layers.4.self_attn.k_proj::group4"
+      },
+      "proposal": 13,
+      "receiver": {
+        "group_id": 3,
+        "module": "k_proj",
+        "module_key": "model.layers.1.self_attn.k_proj",
+        "phi_official": 1.4342024914512876,
+        "q": 0.12052861965041449,
+        "rank": 64,
+        "score": 0.9544804924787227,
+        "unit": "model.layers.1.self_attn.k_proj::group3"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 7,
+        "module": "k_proj",
+        "module_key": "model.layers.10.self_attn.k_proj",
+        "phi_official": 1.7878602833416153,
+        "q": 0.6843380442230613,
+        "rank": 128,
+        "score": 0.02839555798027993,
+        "unit": "model.layers.10.self_attn.k_proj::group7"
+      },
+      "proposal": 14,
+      "receiver": {
+        "group_id": 6,
+        "module": "v_proj",
+        "module_key": "model.layers.30.self_attn.v_proj",
+        "phi_official": 0.6277021250616599,
+        "q": 0.14038645302269334,
+        "rank": 224,
+        "score": 0.9460999026089769,
+        "unit": "model.layers.30.self_attn.v_proj::group6"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 4,
+        "module": "k_proj",
+        "module_key": "model.layers.28.self_attn.k_proj",
+        "phi_official": 0.7032700293111702,
+        "q": 0.17939419673234716,
+        "rank": 160,
+        "score": 0.03025009463866113,
+        "unit": "model.layers.28.self_attn.k_proj::group4"
+      },
+      "proposal": 15,
+      "receiver": {
+        "group_id": 7,
+        "module": "k_proj",
+        "module_key": "model.layers.31.self_attn.k_proj",
+        "phi_official": -0.1601428920375838,
+        "q": 0.14100785895349516,
+        "rank": 128,
+        "score": 0.942287461670876,
+        "unit": "model.layers.31.self_attn.k_proj::group7"
+      }
+    },
+    {
+      "donor": {
+        "group_id": 3,
+        "module": "k_proj",
+        "module_key": "model.layers.17.self_attn.k_proj",
+        "phi_official": 0.39490718124125124,
+        "q": 0.5095308247142902,
+        "rank": 96,
+        "score": 0.0341205401956306,
+        "unit": "model.layers.17.self_attn.k_proj::group3"
+      },
+      "proposal": 16,
+      "receiver": {
+        "group_id": 6,
+        "module": "k_proj",
+        "module_key": "model.layers.19.self_attn.k_proj",
+        "phi_official": 0.664218978993631,
+        "q": 0.36150360528817727,
+        "rank": 96,
+        "score": 0.9415530770529104,
+        "unit": "model.layers.19.self_attn.k_proj::group6"
+      }
+    }
+  ],
+  "q_mapping_sha256": "6fa7d16bb6689cf88dc78ea6a72f3d630abe1d2cf1ccf2729776a3e6768ae3d3",
+  "rank_quantum": 32,
+  "ratio": 0.5,
+  "signal": "random_1",
+  "source_fisher_schedule": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/results/fisher_0p5_ratio_0.5_fisher_uniform.json",
+  "source_fisher_schedule_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+  "status": "CANDIDATE_ORDER_FROZEN_PRE_QUALITY"
+}

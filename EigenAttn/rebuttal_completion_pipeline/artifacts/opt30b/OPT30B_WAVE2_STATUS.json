@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-29T22:30:36.460599-07:00",
+  "model": "/diskE/jiaqizhang/opt-30b",
+  "model_exists": true,
+  "cmp": "/diskE/jiaqizhang/FGeb026fpv6a/final_model",
+  "eval_executed": true,
+  "returncode": 0,
+  "cmd": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/sanity_AB_opt30b.py",
+    "--cmp_only",
+    "--cmp",
+    "/diskE/jiaqizhang/FGeb026fpv6a/final_model",
+    "--low_json",
+    "/diskE/jiaqizhang/FGeb026fpv6a/final_model/low_rank_config.json",
+    "--tok",
+    "/diskE/jiaqizhang/opt-30b",
+    "--dtype",
+    "fp16",
+    "--cmp_device",
+    "cuda:0",
+    "--wikitext2"
+  ],
+  "log": "/diskF/jiaqizhang/wave2_artifacts/opt30b/sanity_AB_opt30b.log",
+  "schedule_note": "Reused FGeb026fpv6a as single fixed-schedule confirmatory point; not Ours-v2/v3/v4 cherry-pick sweep."
+}

@@ -1,0 +1,1 @@
+{"cross_entropy": "native logits dtype", "dataset": "c4", "input_ids_sha256": "4d67a313d3fff98cba53ac6546bf9a093d4f3f370570ac3a11be92a00ec9283a", "mean_nll": 4.46875, "rank_schedule_sha256": "27614fe9062625031866a42e2829f855b52a7a3113a87a8fa4a8772a0b7aaad0", "skipped": false, "token_count": 2048, "total_nll": 9152.0, "window_id": "c4_00067"}

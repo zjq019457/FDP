@@ -1,0 +1,3 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd1       458G  409G   26G  95% /diskE
+/dev/sde1       458G  341G   94G  79% /diskF

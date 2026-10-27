@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/code/l2x_exchange.py", line 117, in <module>
+    try: main(sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4])
+  File "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/code/l2x_exchange.py", line 72, in main
+    cache[u] = {"remove": probe(pairs, reference, u, -1), "add": probe(pairs, reference, u, +1)}
+  File "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/code/l2x_exchange.py", line 64, in probe
+    try: m = add.score_windows(model, windows, dev, torch)
+  File "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_ADD_BENEFIT_V1_ATTEMPT1_20261001/LLAMA2_E068_NATIVE_ADD_BENEFIT_RUNNER_V1.py", line 364, in score_windows
+    logits = model(input_ids=ids, use_cache=False).logits
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 1189, in forward
+    outputs = self.model(
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 1001, in forward
+    layer_outputs = decoder_layer(
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/models/decompose_modules.py", line 791, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/models/decompose_modules.py", line 704, in forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query_states.dtype)
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/nn/functional.py", line 2139, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacity of 79.25 GiB of which 325.62 MiB is free. Process 150507 has 21.66 GiB memory in use. Process 150829 has 21.33 GiB memory in use. Including non-PyTorch memory, this process has 13.25 GiB memory in use. Process 191479 has 916.00 MiB memory in use. Process 191646 has 21.77 GiB memory in use. 31.70 GiB allowed; Of the allocated memory 12.63 GiB is allocated by PyTorch, and 127.61 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

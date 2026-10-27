@@ -1,0 +1,18 @@
+{
+  "job_id": "OP_mild_c4_ppl",
+  "status": "FAILED",
+  "returncode": 1,
+  "ended_at": "2026-07-29T07:31:02.629527-07:00",
+  "elapsed_sec": 92.6588830947876,
+  "gpu": {
+    "job_id": "OP_mild_c4_ppl",
+    "gpu_index": 1,
+    "gpu_uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 81153,
+    "holder_pid": 2259663,
+    "cuda_visible_devices": "1",
+    "acquired_at": "2026-07-29T07:29:29.968856-07:00"
+  }
+}

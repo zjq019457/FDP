@@ -1,0 +1,100 @@
+{
+  "schema": "MPT7B_FDP_EB_CAMPAIGN_METHOD_COMPATIBILITY_AUDIT_V1",
+  "status": "NEEDS_PROTOCOL_AUDIT_L0_EFFECTIVE_EPSILON_CONFLICT",
+  "quality_authorized": false,
+  "formal_quality_results_exist": false,
+  "scope": "Audit only; no q, allocation, rank, resource target, scorer, or quality result was changed or selected.",
+  "model": {
+    "name": "MPT-7B",
+    "content_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f"
+  },
+  "frozen_method_authority": {
+    "path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK.json",
+    "sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+    "components": ["d1", "d2", "d5"],
+    "lambda": 1.2,
+    "rho_recorded": 0.75,
+    "frozen_text_for_layer0": "canonical builder overrides effective epsilon_0 exactly to e"
+  },
+  "llama3_anchor_evidence": {
+    "provenance_path": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/fdp125/provenance.json",
+    "provenance_file_sha256": "ae4a490dcee2ca4dbd68275e5526b857bd7e6cb7b63bc0eaa8783310ae2c9e7e",
+    "base_e": 0.06,
+    "lambda": 1.2,
+    "rho": 0.75,
+    "layer0_effective_epsilon": 0.06553740122290536,
+    "rank_sha256": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+    "rank_sha_matches_frozen_replay_anchor": true,
+    "provenance_eb_sha256": "2a8f73b4f5d550be9052b0bce8f66dfcd720087d2872f1c412dbb559c5c9eaee"
+  },
+  "mpt_uniform_0011_profile": {
+    "status": "PROFILE_2X512_PASS_QUALITY_BLIND",
+    "profile_path": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/profiles/EB0011_UNIFORM_ATTEMPT2/MPT7B_EB0011_UNIFORM_STEP1_PROFILE_V1.json",
+    "profile_file_sha256": "43fcd1ad06b25e81c20015975dbc71944a65e7c12d1864adf3be6a84dc7cf4fd",
+    "profile_summary_path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/profiles/EB0011_UNIFORM_ATTEMPT2/MPT7B_EB0011_UNIFORM_STEP1_PROFILE_SUMMARY_V1.json",
+    "profile_summary_file_sha256": "079422532d57d8c278e08ff95fdc3be8566b8fd3a6b82e0e1561a062d7dcfa84",
+    "raw_profile_layers": 32,
+    "quality_scoring": false,
+    "layer0_q": 0.0,
+    "layer0_epsilon_mean_normalized_before_override": 0.01318333681149827,
+    "layer0_epsilon_final_in_current_mpt_helper": 0.011,
+    "mpt_helper_sha256": "8709466ea85c25cd0efec7b9fbeab373cfcedb50c07ad028f898f558aa80995e",
+    "current_helper_layer0_policy": "freeze_layer0_at_base=True"
+  },
+  "conflict": {
+    "description": "The frozen method-lock text says effective layer-0 epsilon equals e, while the Llama-3 provenance artifact with the exact frozen replay-anchor rank SHA records layer-0 epsilon 0.06553740122290536 at e=0.06. The MPT helper currently freezes layer 0 at e, which therefore does not reproduce the observed Llama-3 anchor mapping.",
+    "observed_llama3_minus_base_epsilon": 0.00553740122290536,
+    "mpt_schedule_generation_blocked": true,
+    "required_resolution": "Protocol owner must state whether the frozen method is the textual layer-0 override epsilon_0=e or the observed rho=0.75 effective layer-0 mapping. Do not use quality scores to decide."
+  },
+  "mpt_uniform_actual_resource_gates": [
+    {
+      "epsilon_base": 0.011,
+      "status": "UNIFORM_ACTUAL_CACHE_OPERATOR_DUPLICATE_CANARY_PASS",
+      "b_live_bytes": 851705856,
+      "dense_cache_bytes": 1073741824,
+      "retained_ratio": 0.793212890625,
+      "rank_schedule_sha256": "d84d591008fbbd7968514b171d2fd79ed8daf1df0deb00833c2e0fcc67679d98",
+      "realization_sha256": "18f06b4d067866452755acbbb272bd7b737fcc6eeb03c030c6443050fb867a35",
+      "audit_file_sha256": "2205cdd070e2fdba25fe42e72c65156c106399bc5e87ceb2419df715dc10f117"
+    },
+    {
+      "epsilon_base": 0.015,
+      "status": "UNIFORM_ACTUAL_CACHE_OPERATOR_DUPLICATE_CANARY_PASS",
+      "b_live_bytes": 717094912,
+      "dense_cache_bytes": 1073741824,
+      "retained_ratio": 0.6678466796875,
+      "rank_schedule_sha256": "e001d5b9456a6fe77216abd8b4713b4e15ccb972ca629b9a91d4778a361074d3",
+      "realization_sha256": "3144c656766494878ece9acaba6b3de9c2402cc2b2dd56b5df1920712518e535",
+      "audit_file_sha256": "4fa20cf3f17c805e7198ec6571c5c55b3bf17b290ce7647d7f28815a2d089c81"
+    },
+    {
+      "epsilon_base": 0.019,
+      "status": "UNIFORM_ACTUAL_CACHE_OPERATOR_DUPLICATE_CANARY_PASS",
+      "b_live_bytes": 608043008,
+      "dense_cache_bytes": 1073741824,
+      "retained_ratio": 0.5662841796875,
+      "rank_schedule_sha256": "4b8e28bee2cca663ef68bf26e4a772b9666c2f6f1821a83697c3bd62978f93d0",
+      "realization_sha256": "3a789652b395fde0eb49e9d47ef297d527e1552636129c55d3a03e6208dd8714",
+      "audit_file_sha256": "c9da228e85838dc99ed2459eb2ca7fa1ec40001545fabfe285b1c3f1f537af54"
+    }
+  ],
+  "quality_status": {
+    "wikitext2_ppl": "NOT_RUN",
+    "c4_ppl": "NOT_RUN",
+    "j": "NOT_RUN",
+    "zero_shot_accuracy": "NOT_RUN",
+    "reason": "No FDP schedule/resource lock or MPT scorer adapter is frozen; do not substitute the Uniform-only realization audit for a matched formal pair."
+  },
+  "other_profile_tiers": {
+    "epsilon_0_015": "2x512 raw profile not yet run",
+    "epsilon_0_019": "2x512 raw profile not yet run"
+  },
+  "preserved_failed_attempts": {
+    "uniform_0011_realization_attempt1": "INVALIDATED_CHECKPOINT_SIDECAR_PATH; preserved",
+    "uniform_0011_realization_attempt2": "INVALIDATED_INFERENCE_TENSOR_PARITY_HARNESS; preserved",
+    "uniform_0011_realization_attempt3": "PARITY_REFERENCE_DTYPE_MISMATCH; preserved",
+    "uniform_0011_realization_attempt4": "DUPLICATE_CHECKER_READ_WRONG_JSON_FIELD; measured logits and realization hashes match; invalidation preserved",
+    "uniform_0011_step1_profile_attempt1": "INVALIDATED_CHECKPOINT_MANIFEST_FIELD_NAME_MISMATCH_BEFORE_MODEL_LOAD; preserved"
+  }
+}

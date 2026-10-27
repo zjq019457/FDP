@@ -1,0 +1,21 @@
+{
+  "extended_layers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    10,
+    13,
+    14,
+    15,
+    16
+  ],
+  "profile_sha256": "43fcd1ad06b25e81c20015975dbc71944a65e7c12d1864adf3be6a84dc7cf4fd",
+  "q_epsilon_sha256": "8ac2310cd6a093d84b045130fff3bb25c6f5edc1768bca7f5f7db8907b5331e3",
+  "quality_used_to_select": false,
+  "sample_set_sha256": "611586b9a91355f3d71c3d75140095a8a9f6f969dccb252681471288c9cff44e",
+  "uniform_trace_dir": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0011_UNIFORM_RESOURCE_ATTEMPT2"
+}

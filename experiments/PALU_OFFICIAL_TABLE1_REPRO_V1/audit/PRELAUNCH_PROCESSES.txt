@@ -1,0 +1,60 @@
+USER         PID    PPID     ELAPSED STAT CMD
+tjl_0516 1255911 1232821       02:00 Rl   /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/tune_op10_PR/final_online.pt --marker PR --partition train-dev --grid 8 --steps 4 --bound 0.003 --run-name tune_op10_PR_traindev_g8b003 --gpu 0
+tjl_0516 1244531 1230489       31:54 Rl   /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/full_v11_op15_PR/final_online.pt --marker PR --partition validation --grid 8 --steps 4 --bound 0.03 --run-name full_v11_op15_PR_g8b003 --gpu 1
+tjl_0516 1254794 1232897       07:58 Rl   /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/tune_op10_HER2/final_online.pt --marker HER2 --partition train-dev --grid 8 --steps 4 --bound 0.003 --run-name tune_op10_HER2_traindev_g8b003 --gpu 1
+tjl_0516 1244883 1230490       31:16 Rl   /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/full_v11_op15_Ki67/final_online.pt --marker Ki67 --partition validation --grid 8 --steps 4 --bound 0.03 --run-name full_v11_op15_Ki67_g8b003 --gpu 2
+tjl_0516 1253995 1232976       10:39 Rl   /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/tune_op15_Ki67/final_online.pt --marker Ki67 --partition train-dev --grid 8 --steps 4 --bound 0.006 --run-name tune_op15_Ki67_traindev_g8b006 --gpu 2
+tjl_0516 1253781 1232693       11:09 Rl   /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/tune_op15_ER/final_online.pt --marker ER --partition train-dev --grid 8 --steps 4 --bound 0.006 --run-name tune_op15_ER_traindev_g8b006 --gpu 2
+a180429+ 1256598 1256592       00:00 R    ps -eo user,pid,ppid,etime,stat,cmd --sort=-%cpu
+tjl_0516 1256470 1232618       00:23 Rl   /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_head.py --gpu 1 --run-name tune_op10_Ki67 --teacher-name teacher_hard_e0.05s0.1c0.5_Ki67 --target-source teacher --loss l1 --global-context --dev-fraction 0.1 --stratified-weight 2.0 --sub-positive-weight 0.1 --top-sub-weight 0.1 --seed 0 --over-penalty 1.0
+tjl_0516 1256397 1232545       00:24 Rl   /diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_head.py --gpu 0 --run-name tune_op10_ER --teacher-name teacher_hard_e0.05s0.1c0.5_ER --target-source teacher --loss l1 --global-context --dev-fraction 0.1 --stratified-weight 2.0 --sub-positive-weight 0.1 --top-sub-weight 0.1 --seed 0 --over-penalty 1.0
+root     1256537    2723       00:01 Ss   sshd: a1804298693 [priv]
+a180429+  234422       1  5-11:56:02 Sl   codex -c features.code_mode_host=true app-server --listen unix://
+root          17       2  6-01:07:38 I    [rcu_preempt]
+root      961766       2  1-17:01:58 I    [kworker/0:0-kacpi_notify]
+root     1237280       2       46:01 I    [kworker/u256:2-ext4-rsv-conversion]
+root         797       2  6-01:07:37 S    [kcompactd1]
+root        2525       1  6-01:07:30 Ssl  /usr/libexec/udisks2/udisksd
+root     1244817       2       31:20 I    [kworker/u256:1-ext4-rsv-conversion]
+root     1250062       2       22:29 I    [kworker/u258:0-flush-8:16]
+root     1254193       2       10:08 I    [kworker/u258:1-events_power_efficient]
+root     1244760       2       31:41 I    [kworker/u258:4-events_power_efficient]
+root         803       2  6-01:07:37 S    [irq/9-acpi]
+root           1       0  6-01:07:38 Ss   /sbin/init
+root        2519       1  6-01:07:30 Ss   /usr/bin/nvidia-persistenced --verbose
+root     1252716       2       16:16 I    [kworker/u257:0-events_power_efficient]
+tjl_0516 1229835       1    01:11:01 Ss   /usr/lib/systemd/systemd --user
+root     1247233       2       26:31 I    [kworker/u257:3-writeback]
+root     1255399       2       05:56 I    [kworker/u257:1-events_power_efficient]
+root         799       2  6-01:07:37 SN   [khugepaged]
+root          29       2  6-01:07:38 S    [migration/2]
+root        1622       1  6-01:07:32 S<s  /usr/lib/systemd/systemd-journald
+message+    2507       1  6-01:07:30 Ss   @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         832       2  6-01:07:36 S    [kswapd1]
+root        2084       2  6-01:07:32 S    [jbd2/sdd1-8]
+root        1660       1  6-01:07:32 SLsl /sbin/multipathd -d -s
+root      754779       1  4-05:27:03 Ssl  /usr/libexec/fwupd/fwupd
+root     1235603       2       50:50 I    [kworker/120:0-events]
+tjl_0516 1229905 1229831    01:11:00 S    sshd: tjl_0516@pts/0
+root     1229352       2    01:16:13 I    [kworker/32:1-mm_percpu_wq]
+root         215       2  6-01:07:38 S    [migration/33]
+root          35       2  6-01:07:38 S    [migration/3]
+root        1547       2  6-01:07:33 S    [jbd2/dm-0-8]
+root        2523       1  6-01:07:30 Ss   /usr/lib/systemd/systemd-logind
+root         221       2  6-01:07:38 S    [migration/34]
+root         796       2  6-01:07:37 S    [kcompactd0]
+root          47       2  6-01:07:38 S    [migration/5]
+root          23       2  6-01:07:38 S    [migration/1]
+root          65       2  6-01:07:38 S    [migration/8]
+root          71       2  6-01:07:38 S    [migration/9]
+root         227       2  6-01:07:38 S    [migration/35]
+root          53       2  6-01:07:38 S    [migration/6]
+polkitd   754937       1  4-05:26:59 Ssl  /usr/lib/polkit-1/polkitd --no-debug
+root         209       2  6-01:07:38 S    [migration/32]
+root         233       2  6-01:07:38 S    [migration/36]
+root          16       2  6-01:07:38 S    [ksoftirqd/0]
+root         419       2  6-01:07:37 S    [migration/67]
+root         101       2  6-01:07:38 S    [migration/14]
+root         425       2  6-01:07:37 S    [migration/68]
+root          83       2  6-01:07:38 S    [migration/11]
+root          41       2  6-01:07:38 S    [migration/4]

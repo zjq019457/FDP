@@ -1,0 +1,27 @@
+{
+  "engine_source": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_exchange_calibration.py",
+  "formal_quality_started_after_lock": true,
+  "historical_results_modified": false,
+  "only_signal_difference": true,
+  "q_SHA": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "shared": [
+    "rank quantum 32",
+    "donor rank > 32 constraint",
+    "receiver rank < 512 constraint",
+    "same factor realization",
+    "same rank/byte accounting",
+    "same calibration J",
+    "same acceptance rule",
+    "same max 16 proposal bound"
+  ],
+  "shared_between": [
+    "PALU_FDP_PRIOR",
+    "PALU_FDP_NATIVE"
+  ],
+  "signal_difference": {
+    "FDP_NATIVE": "frozen phi_palu",
+    "FDP_PRIOR": "frozen q"
+  },
+  "status": "COMMON_NATIVE_EXCHANGE_ENGINE_AUDITED",
+  "transfer_count": "calibration-derived accepted T, frozen before formal quality; not quality-tuned"
+}

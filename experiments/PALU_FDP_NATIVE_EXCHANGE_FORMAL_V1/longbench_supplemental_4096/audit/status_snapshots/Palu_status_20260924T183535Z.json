@@ -1,0 +1,47 @@
+{
+  "compute_process_rows": [
+    "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 246278, /home/bai-project/jiaqizhang/.venv/bin/python, 15882 MiB",
+    "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 257856, /home/bai-project/jiaqizhang/.venv/bin/python3, 20518 MiB",
+    "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 368656, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4284 MiB",
+    "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 368655, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4284 MiB",
+    "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07, 368657, /diskD/jialin_tang/conda_envs/esv-ihc/bin/python, 4284 MiB",
+    "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806, 5663, /home/bai-project/jiaqizhang/.venv/bin/python, 15828 MiB",
+    "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806, 373854, /home/bai-project/jiaqizhang/.venv/bin/python, 15174 MiB",
+    "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806, 380721, /home/bai-project/jiaqizhang/.venv/bin/python, 17532 MiB",
+    "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5, 246362, /home/bai-project/jiaqizhang/.venv/bin/python, 15896 MiB",
+    "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5, 257857, /home/bai-project/jiaqizhang/.venv/bin/python3, 20518 MiB",
+    "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5, 352305, /home/bai-project/anaconda3/envs/eigen/bin/python, 22724 MiB"
+  ],
+  "diskE_free_bytes": 46839222272,
+  "foreign_jobs_interrupted": 0,
+  "formal_results_modified": false,
+  "gpu_rows": [
+    "0, NVIDIA A100 80GB PCIe, 100 %, 49286 MiB, 31868 MiB",
+    "1, NVIDIA A100 80GB PCIe, 100 %, 48554 MiB, 32599 MiB",
+    "2, NVIDIA A100 80GB PCIe, 100 %, 59158 MiB, 21995 MiB"
+  ],
+  "multi_news_raw": {
+    "fdp_native": {
+      "bytes": 0,
+      "rows": 0,
+      "summary_exists": false,
+      "unique": 0
+    },
+    "uniform": {
+      "bytes": 5265,
+      "rows": 2,
+      "summary_exists": false,
+      "unique": 2
+    }
+  },
+  "observed_utc": "2026-09-24T18:35:35.490569+00:00",
+  "process_rows": [
+    "a180429+    5663       1 Rsl   1-00:15:51  171 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all",
+    "a180429+  246278       1 Rsl     10:21:50  100 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task qmsum --gpu 0",
+    "a180429+  246362       1 Rsl     10:21:46  100 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task qmsum --gpu 2",
+    "a180429+  257856       1 Rl      10:00:43  100 /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 0 --arm A --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/A_Q256_RMAX_0p5_20260924",
+    "a180429+  257857       1 Rl      10:00:43  100 /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 2 --arm B --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/B_Q256_RMAX_0p5_20260924",
+    "a180429+  352305       1 Rsl     01:10:42  168 /home/bai-project/anaconda3/envs/eigen/bin/python -c import torch,runpy,sys; torch.cuda.set_per_process_memory_fraction(0.4,device=0); p=sys.argv[1]; sys.argv=[p]+sys.argv[2:]; runpy.run_path(p,run_name='__main__') /home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline_fdp125_cpu_stage_v1.py --model /diskE/jiaqizhang/Qwen2.5-7B --tokenizer /diskE/jiaqizhang/Qwen2.5-7B --data_dir /home/bai-project/jiaqizhang/wikitext2 --out_dir /diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/qwen25_7b/medium/qwen25_medium_native_rope_resource_basis_cpu_stage_v2_20260924T172454Z --out_prefix qwen25_7b_medium_resource_basis_native_rope_v2_20260924T172454Z --error_budgets 0.0567 --nsamples 512 --seqlen 2048 --seed 2 --dtype bf16 --device cuda:0 --avg_dim 32 --strict_original_rank 1 --attn_implementation eager --low_vram",
+    "a180429+  373854  373822 Rsl        11:48  106 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task multi_news --gpu 1"
+  ]
+}

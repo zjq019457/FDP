@@ -1,0 +1,105 @@
+{
+  "fair_comparisons": {
+    "cc_paper": [
+      [
+        "cc_sliminfer_v1",
+        "sliminfer_original"
+      ]
+    ],
+    "drm_paper": [
+      [
+        "drm_swap_original_k",
+        "sliminfer_original"
+      ],
+      [
+        "sliminfer_drm_add_km",
+        "sliminfer_larger_km"
+      ],
+      [
+        "sliminfer_drm_add_km",
+        "sliminfer_random_add_km"
+      ]
+    ]
+  },
+  "forbidden_same_budget_claim": "cc_sliminfer_v1 vs sliminfer_drm_add_km",
+  "methods": {
+    "cc_sliminfer_v1": {
+      "budget_group": "K",
+      "definition": "Frozen CC v1 selector at the same K schedule as Original.",
+      "implementation_identity": "must be recovered/verified per model; LLaMA source absent locally",
+      "method_config_sha256": "3fe97eeb0ba36e51f943168cbebc8b715e3b867d6d4e1fd9ab3aba7845a7fc49"
+    },
+    "drm_swap_original_k": {
+      "budget_group": "K",
+      "definition": "Start from A_K and perform strict one-in-one-out frozen DRM swaps; final size remains K.",
+      "drm": {
+        "alpha_diff": 0.5,
+        "eta_active": 0.25,
+        "eta_rescue": 0.25,
+        "lambda_red": 0.25,
+        "rescue_policy": "budget_neutral_drm_swap",
+        "rescue_ratio": 0.05,
+        "rescue_score": "drm",
+        "seed": 0,
+        "selector": "historical_drm_mmr"
+      },
+      "method_config_sha256": "e62f14e21d553064a8ec707cb0931217db10f11e6baf8eada7fe9665fb8c7931"
+    },
+    "flexprefill_official": {
+      "adapter_policy": "official repository plus thin schema adapter; no local approximation",
+      "budget_group": "external",
+      "definition": "Official FlexPrefill implementation only.",
+      "method_config_sha256": "daaf25c0824db30c20c6110ea548a90144eec4aeefe7ea209e7c0f4d141025a8"
+    },
+    "full_kv_fa2": {
+      "adapter_policy": "thin adapter only",
+      "budget_group": "full_kv",
+      "definition": "Full KV with official Hugging Face model and FlashAttention2; no SlimInfer pruning.",
+      "method_config_sha256": "84d71b3e1c33318cf19a398060845dc2870fd34f3c636eaa08fd04e361bb99a6"
+    },
+    "lazyllm_official": {
+      "adapter_policy": "do not guess repository; no local approximation",
+      "budget_group": "external",
+      "definition": "Official LazyLLM implementation after repository identity audit.",
+      "method_config_sha256": "d68e1e3e1502cecd6f4af00b76968e04e51ac4a9dff4f7d35c7667f9dc957a01"
+    },
+    "minference_official": {
+      "adapter_policy": "official repository plus thin schema adapter; no local approximation",
+      "budget_group": "external",
+      "definition": "Official MInference implementation only.",
+      "method_config_sha256": "afc776c7a960bbe05052c4d378f9848d663dc347634a3ee2f8cc00bb23b18c23"
+    },
+    "sliminfer_drm_add_km": {
+      "budget_group": "K+M",
+      "definition": "Preserve 100% of A_K and add M blocks using frozen DRM score and historical MMR.",
+      "drm": {
+        "alpha_diff": 0.5,
+        "eta_active": 0.25,
+        "eta_rescue": 0.25,
+        "lambda_red": 0.25,
+        "rescue_policy": "add",
+        "rescue_ratio": 0.05,
+        "rescue_score": "drm",
+        "seed": 0,
+        "selector": "historical_drm_mmr"
+      },
+      "method_config_sha256": "5458653b3d47bf63dff5d441d96716802a4a77977b6e5f951f3b5e2b7b696df2"
+    },
+    "sliminfer_larger_km": {
+      "budget_group": "K+M",
+      "definition": "Directly retain K+M blocks by original SlimInfer relevance.",
+      "method_config_sha256": "e4221342329e03f5dc183ac03b553b35af455095b8d725ba511dfcf3dd6c7cf1"
+    },
+    "sliminfer_original": {
+      "budget_group": "K",
+      "definition": "Original SlimInfer active set A_K without rescue additions or swaps.",
+      "method_config_sha256": "a48662e967c72a8756b374345fdbd25ce647cde65d7aed3fa34cc2c9673597e7"
+    },
+    "sliminfer_random_add_km": {
+      "budget_group": "K+M",
+      "definition": "Preserve 100% of A_K and randomly add M valid pruned blocks with seed 0.",
+      "method_config_sha256": "bbbcaeb2acf7f231ea5f93bffe9ce0839deb61ac5b6fc9a867e3b6c6bbbf42bb",
+      "seed": 0
+    }
+  }
+}

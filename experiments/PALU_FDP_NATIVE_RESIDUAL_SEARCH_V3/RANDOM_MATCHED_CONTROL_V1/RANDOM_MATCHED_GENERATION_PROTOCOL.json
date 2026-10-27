@@ -1,0 +1,126 @@
+{
+  "claim_guard": {
+    "functional_signal_supported": "true only if V3−Random_i has point estimate <0 and paired 95% CI upper bound <0 for each of seeds 0,1,2; otherwise false/not-supported (do not retune V3).",
+    "interpretation_if_not_supported": "Preserve V3 Formal GO; weaken mechanism claim and report that general reallocation flexibility may explain part or all of the gain.",
+    "interpretation_if_supported": "Functional valuation contributes beyond generic budget-neutral non-uniform reallocation, conditional on this matched-control design.",
+    "no_new_search_after_closure": true
+  },
+  "experiment": "PALU_V3_RANDOM_MATCHED_CONTROL_V1",
+  "formal_evaluation": {
+    "bootstrap_n": 10000,
+    "bootstrap_rng_seed_rule": "For seed i, Random_i−V1 uses 2026092600+2*i; V3−Random_i uses 2026092601+2*i; resample Wiki and C4 chunk deltas separately with replacement using the frozen official paired-CI implementation.",
+    "dtype": "inherit same official model loader and frozen formal protocol; no dtype override.",
+    "metrics_per_seed": [
+      "Wiki PPL",
+      "C4 PPL",
+      "J"
+    ],
+    "model_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "paired_comparisons": [
+      "Random_i - V1 Native",
+      "V3 - Random_i"
+    ],
+    "random_summary_std": "sample standard deviation (ddof=1) across the three seed-level J values; report all seeds and mean/std.",
+    "runtime": "same official evaluator/runtime source and CUDA device path as the frozen V3 formal run; hash and versions recorded per run.",
+    "same_formal_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+    "scorer": "official run_official_formal_quality.py windows() CE semantics, fixed 2048-token windows; evaluate V1 Native reference and random allocation in same worker/device."
+  },
+  "frozen_selected_v3_config": {
+    "arm": "A",
+    "config_id": "armA_D16_R16_Rmax0.01_beam0",
+    "rank_quantum": 32,
+    "ratio": 0.5
+  },
+  "frozen_utc": "2026-09-26T21:19:49.701521+00:00",
+  "generation_reads_quality": false,
+  "legality_and_resource_gate": {
+    "every_step": "donor/receiver distinct; pre-rank >=64 / <=480 respectively; post-ranks remain [32,512] and divisible by32; all unit counts and module/group identities unchanged; replayed before/after allocation SHA exact.",
+    "final": "rank sum, factor bytes FP16, prefill cache bytes, decode cache bytes equal V1 and V3 exact census; action count, transfer volume, L1 and directional/gross moved factor bytes equal frozen targets.",
+    "gate_name": "RANDOM_MATCHED_RESOURCE_PASS",
+    "quality_must_not_start_before": "all seeds 0/1/2 manifests exist, each passes every structural and resource gate, and an aggregate manifest binds all three hashes."
+  },
+  "manifest_hashing": {
+    "action_sequence_sha256": "SHA256(UTF-8 canonical compact sorted-key JSON of the ordered actions array; action records exclude their own hash field)",
+    "allocation_sha256": "SHA256(UTF-8 JSON of selection sorted by module key, with compact separators, each value an integer list)",
+    "resource_census": "Recompute from final selection: rank sum; factor bytes = rank*9216; prefill and decode cache bytes = rank*2048*2 each."
+  },
+  "match_targets": {
+    "action_type": "single donor→receiver exchange",
+    "directional_donor_cache_bytes_moved_each_prefill_decode": 3407872,
+    "directional_donor_factor_bytes_moved": 7667712,
+    "exact_final_resource": {
+      "decode_cache_bytes": 536870912,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "total_native_rank": 131072
+    },
+    "exchange_actions": 26,
+    "factor_bytes_per_group_rank_fp16": 9216,
+    "final_allocation_l1_rank_vs_v1": 1664,
+    "final_changed_native_units_v3_reference": 33,
+    "gross_endpoint_cache_bytes_l1_each_prefill_decode": 6815744,
+    "gross_endpoint_factor_bytes_l1": 15335424,
+    "rank_quantum_per_action": 32,
+    "transfer_volume_rank_total": 832
+  },
+  "native_action_space": {
+    "each_action": {
+      "donor_rank_delta": -32,
+      "net_total_rank_delta": 0,
+      "receiver_rank_delta": 32
+    },
+    "rank_ceiling": 512,
+    "rank_floor": 32,
+    "rank_quantum": 32,
+    "role_constraints": "Each selected donor appears only as a donor and once; each selected receiver appears only as a receiver and once; donor and receiver unit sets are disjoint. This guarantees final L1 movement exactly equals 26 transfers without cancellation.",
+    "unit": "one of 512 (layer,K/V,group) native units; group boundaries preserved"
+  },
+  "no_quality_selection": true,
+  "output_layout": {
+    "aggregate_manifest": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RANDOM_MATCHED_CONTROL_V1/RANDOM_MATCHED_AGGREGATE_MANIFEST.json",
+    "per_seed_action_manifest": "seed_<i>/ACTION_MANIFEST.json",
+    "per_seed_log": "runs/seed_<i>/worker.log",
+    "per_seed_results": "runs/seed_<i>/FORMAL_RESULT.json",
+    "protocol_file": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RANDOM_MATCHED_CONTROL_V1/RANDOM_MATCHED_GENERATION_PROTOCOL.json",
+    "root": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/RANDOM_MATCHED_CONTROL_V1",
+    "writes_to_v1_or_v3_frozen_artifacts": false
+  },
+  "quality_blind_generation_algorithm": {
+    "base": "exact frozen V1 Native final_schedule.json selection; no Fisher phi or quality values used",
+    "canonical_unit_id": "<module>::group<0..7>",
+    "donor_eligibility": "baseline rank >= 64",
+    "pairing_and_order": "Pair donor[i] with receiver[i] for i=0..25 in priority order; apply exchanges in that order. No candidate scoring, resampling, retries, or quality-informed changes.",
+    "priority": "For each seed and role compute SHA256(UTF8(\"PALU-RM-V1|seed=<seed>|role=<role>|unit=<canonical_unit_id>\")); sort eligible units by digest bytes ascending, then unit_id ascending as tie-break.",
+    "receiver_eligibility": "baseline rank <= 480",
+    "seed_isolation": "Seed appears only in the SHA-256 priority domain string. Three complete action manifests are generated and audited before any quality evaluation.",
+    "selection": "Select first 26 donor units by donor priority. Select first 26 receiver units by receiver priority after excluding every selected donor unit. If either pool has fewer than 26, fail closed; do not change seeds or algorithm."
+  },
+  "schema": "PALU_V3_RANDOM_MATCHED_GENERATION_PROTOCOL_V1",
+  "scientific_question": "Test whether the formal V3 gain is explained by generic budget-neutral non-uniform reallocation rather than functional valuation.",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "source": {
+    "formal_protocol_manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+    "formal_quality_protocol_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/formal_protocol/FORMAL_QUALITY_PROTOCOL_MANIFEST.json",
+    "formal_quality_protocol_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+    "formal_quality_runner_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/code/run_official_formal_quality.py",
+    "formal_quality_runner_sha256": "f9fba64c28a5b9fe9b3b3de179e397fcdb985e795b271173e79bf583eefd1137",
+    "official_action_space_semantic_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+    "official_native_action_space_file_sha256": "4750f56f217c6b1643c04d57805340e6dbb2ce1f9abf9def8ab90f1430aa1887",
+    "official_native_action_space_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_NATIVE_ACTION_SPACE.json",
+    "v1_native_allocation_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+    "v1_native_schedule_file_sha256": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+    "v1_native_schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/fdp_native/final_schedule.json",
+    "v3_formal_done_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/FORMAL_PPL/DONE.json",
+    "v3_formal_done_sha256": "78d22423f47c34dad8cf46c3dcc62dc0eb63eb40dbbdaf29661c54ac115bcebf",
+    "v3_lock_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_LOCK/V3_LOCK.json",
+    "v3_lock_sha256": "d3d17175e8df6a8b60a8874a388b7d703f72bbf68f3bd9cb7456896f308a6764",
+    "v3_manifest_sha256": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93",
+    "v3_runner_sha256": "1632bab4ccac3442246f2e593068fd6393caa04a9b55834617d124b44c47fdf3",
+    "v3_selected_allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c"
+  },
+  "status": "FROZEN_BEFORE_RANDOM_MANIFEST_GENERATION_AND_QUALITY"
+}

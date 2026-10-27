@@ -1,0 +1,10 @@
+{
+  "MPT_U011_RESOURCE_MATCH_PASS": false,
+  "absolute_difference_bytes": 37617664,
+  "fdp_b_live_bytes": 889323520,
+  "quality_used_to_select": false,
+  "reason": "Frozen epsilon_base=0.011 mapping realizes 889323520 B against Uniform 851705856 B, relative gap 4.4167%. No MPT preregistered tolerance was found. Llama enumeration labels gaps above 1% as FRONTIER. Closing this gap would change the global epsilon scalar and therefore the tier operating point. Quality was not started.",
+  "relative_gap": 0.04416743613419514,
+  "schema": "MPT7B_U011_RESOURCE_LOCK_V1",
+  "uniform_b_live_bytes": 851705856
+}

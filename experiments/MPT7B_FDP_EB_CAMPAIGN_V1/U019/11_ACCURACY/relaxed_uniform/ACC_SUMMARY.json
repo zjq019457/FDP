@@ -1,0 +1,20 @@
+{
+  "arm": "relaxed_uniform",
+  "formal_matched_quality": false,
+  "gpu_free_at_start_bytes": 63804080128,
+  "gpu_total_bytes": 85094825984,
+  "macro": 0.5602604196662907,
+  "metric_policy": "acc_norm if listed in the frozen task YAML, otherwise acc; equal-weight macro",
+  "per_task": {
+    "arc_challenge_localjsonl": 0.38054607508532423,
+    "arc_easy_localjsonl": 0.4802188552188552,
+    "hellaswag_localjsonl": 0.49482174865564627,
+    "piqa_localjsonl": 0.7693144722524483,
+    "winogrande_localjsonl": 0.6764009471191792
+  },
+  "quality_used_to_select_schedule": false,
+  "rank_schedule_sha256": "304e6be429d2908554f838eda4ba800b724b2592db4657907174dd23b689b30f",
+  "schema": "MPT7B_U019_DIAGNOSTIC_ACCURACY_V1",
+  "status": "ACCURACY_COMPLETE",
+  "tier": "U019"
+}

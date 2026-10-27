@@ -1,0 +1,14 @@
+# Vendored pure-Python dependencies for the official LongBench scorer.
+#
+# runtime/longbench_eval.py imports jieba (Chinese tokenisation for vcsum), rouge and
+# fuzzywuzzy. None are present in the llamaqkv environment and there is no network, so
+# they are copied from /diskF/conda/envs/headkv-eigenattn (Python 3.10, the same HeadKV
+# evaluation stack that produced data/LongBench) and prepended to PYTHONPATH rather than
+# installed into the shared conda env.
+#
+# Versions: jieba 0.42.1, rouge 1.0.1, fuzzywuzzy 0.18.0
+# fuzzywuzzy runs without python-Levenshtein, matching the reference env's pure-Python
+# difflib fallback.
+#
+# Override at runtime with LLAMA_DRM_VENDORED_DEPS=/some/other/path.
+/diskF/jiaqizhang/llama_drm_a100_4gpu_v1_deps

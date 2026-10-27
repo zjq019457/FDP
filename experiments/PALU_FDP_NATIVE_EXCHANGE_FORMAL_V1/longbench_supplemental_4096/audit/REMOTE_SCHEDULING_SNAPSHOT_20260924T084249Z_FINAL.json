@@ -1,0 +1,308 @@
+{
+  "compute_pids": [
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/v11_op15_BCI_s42/final_online.pt --marker BCI --partition test --grid 8 --bound 0.03 --run-name fp32g8_v11_op15_BCI_s42 --gpu 0 --dump-images /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/dump_fp32g8_BCI_s42",
+        "owner": "tjl_0516",
+        "pid": 244793
+      },
+      "pid": 244793,
+      "process_name": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python",
+      "used_memory": "4284 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task qmsum --gpu 0",
+        "owner": "a1804298693",
+        "pid": 246278
+      },
+      "pid": 246278,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "15882 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task repobench-p --gpu 0",
+        "owner": "a1804298693",
+        "pid": 254484
+      },
+      "pid": 254484,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "14472 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/v11_op15_ER/final_online.pt --marker ER --partition validation --grid 8 --bound 0.03 --run-name fp32g8_v11_op15_ER --gpu 0",
+        "owner": "tjl_0516",
+        "pid": 255185
+      },
+      "pid": 255185,
+      "process_name": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python",
+      "used_memory": "4286 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/v11_op15_PR/final_online.pt --marker PR --partition validation --grid 8 --bound 0.03 --run-name fp32g8_v11_op15_PR --gpu 0",
+        "owner": "tjl_0516",
+        "pid": 255495
+      },
+      "pid": 255495,
+      "process_name": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python",
+      "used_memory": "4286 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 0 --arm A --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/A_Q256_RMAX_0p5_20260924",
+        "owner": "a1804298693",
+        "pid": 257856
+      },
+      "pid": 257856,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python3",
+      "used_memory": "20518 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+      "identity": {
+        "command": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python experiments/stage1_uni_teacher/stage1_evaluate.py --checkpoint /diskD/jialin_tang/he2ihc/outputs/extensions/stage1_uni_teacher_20260919/head/abl_ABLNOABS/final_online.pt --marker HER2 --partition validation --grid 8 --bound 0.03 --run-name fp32g8_abl_ABLNOABS --gpu 0",
+        "owner": "tjl_0516",
+        "pid": 260265
+      },
+      "pid": 260265,
+      "process_name": "/diskD/jialin_tang/conda_envs/esv-ihc/bin/python",
+      "used_memory": "4286 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all",
+        "owner": "a1804298693",
+        "pid": 5663
+      },
+      "pid": 5663,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "15828 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskF/jiaqizhang/XKV_PAPER_REPRO_FDP_V1/code/xkv_paper_entry.py --flash2 --dataset_name long_bench/passage_retrieval_en,long_bench/lcc,long_bench/repobench-p --datalen 65536 --model_name_or_path /diskF/jiaqizhang/Llama-3.1 --batch_size 1 --method xkv --merge_k --merge_v --rank_k 384 --rank_v 576 --layer_group_size 4 --start_layer_idx 0 --end_layer_idx -1 --customized_merge_config /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/formal_configs/XKV_NATIVE_PHI_EXCHANGE.yaml --result_dir /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/results/formal_resumed/XKV_NATIVE_PHI_EXCHANGE_LONGBENCH_RECOVERY_20260923T2058Z",
+        "owner": "a1804298693",
+        "pid": 51365
+      },
+      "pid": 51365,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "19598 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task repobench-p --gpu 1",
+        "owner": "a1804298693",
+        "pid": 254485
+      },
+      "pid": 254485,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "14486 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task lcc --gpu 2",
+        "owner": "a1804298693",
+        "pid": 185069
+      },
+      "pid": 185069,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "14488 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task qmsum --gpu 2",
+        "owner": "a1804298693",
+        "pid": 246362
+      },
+      "pid": 246362,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python",
+      "used_memory": "15896 MiB"
+    },
+    {
+      "gpu_uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5",
+      "identity": {
+        "command": "/home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 2 --arm B --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/B_Q256_RMAX_0p5_20260924",
+        "owner": "a1804298693",
+        "pid": 257857
+      },
+      "pid": 257857,
+      "process_name": "/home/bai-project/jiaqizhang/.venv/bin/python3",
+      "used_memory": "20518 MiB"
+    }
+  ],
+  "diskE": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sdd1       458G  389G   46G  90% /diskE",
+  "foreign_jobs_interrupted": 0,
+  "gpu_inventory": "GPU 0: NVIDIA A100 80GB PCIe (UUID: GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07)\nGPU 1: NVIDIA A100 80GB PCIe (UUID: GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806)\nGPU 2: NVIDIA A100 80GB PCIe (UUID: GPU-90f68475-4077-7c12-4d66-1cc9092e85c5)",
+  "gpus": [
+    {
+      "free_mib": 13095,
+      "index": 0,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_mib": 81920,
+      "used_mib": 68059,
+      "util_pct": 100,
+      "uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07"
+    },
+    {
+      "free_mib": 31221,
+      "index": 1,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_mib": 81920,
+      "used_mib": 49933,
+      "util_pct": 100,
+      "uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806"
+    },
+    {
+      "free_mib": 30231,
+      "index": 2,
+      "name": "NVIDIA A100 80GB PCIe",
+      "total_mib": 81920,
+      "used_mib": 50923,
+      "util_pct": 100,
+      "uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5"
+    }
+  ],
+  "longbench_manifest_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+  "longbench_q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "observed_utc": "2026-09-24T08:42:49.688471+00:00",
+  "raw_progress": {
+    "lcc": {
+      "PALU_FDP_NATIVE": {
+        "bytes": 251544,
+        "duplicates": 0,
+        "exists": true,
+        "mean_fraction_so_far": 0.00510158013544018,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/lcc.raw.jsonl",
+        "rows": 443,
+        "unique": 443
+      },
+      "PALU_UNIFORM": {
+        "bytes": 277987,
+        "duplicates": 0,
+        "exists": true,
+        "mean_fraction_so_far": 0.00184,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_UNIFORM/lcc.raw.jsonl",
+        "rows": 500,
+        "unique": 500
+      }
+    },
+    "multi_news": {
+      "PALU_FDP_NATIVE": {
+        "bytes": 0,
+        "duplicates": 0,
+        "exists": false,
+        "mean_fraction_so_far": null,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/multi_news.raw.jsonl",
+        "rows": 0,
+        "unique": 0
+      },
+      "PALU_UNIFORM": {
+        "bytes": 0,
+        "duplicates": 0,
+        "exists": false,
+        "mean_fraction_so_far": null,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_UNIFORM/multi_news.raw.jsonl",
+        "rows": 0,
+        "unique": 0
+      }
+    },
+    "qmsum": {
+      "PALU_FDP_NATIVE": {
+        "bytes": 6650,
+        "duplicates": 0,
+        "exists": true,
+        "mean_fraction_so_far": 0.11147660567294305,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/qmsum.raw.jsonl",
+        "rows": 3,
+        "unique": 3
+      },
+      "PALU_UNIFORM": {
+        "bytes": 9593,
+        "duplicates": 0,
+        "exists": true,
+        "mean_fraction_so_far": 0.10305418996622408,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_UNIFORM/qmsum.raw.jsonl",
+        "rows": 4,
+        "unique": 4
+      }
+    },
+    "repobench-p": {
+      "PALU_FDP_NATIVE": {
+        "bytes": 5796,
+        "duplicates": 0,
+        "exists": true,
+        "mean_fraction_so_far": 0.0,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/repobench-p.raw.jsonl",
+        "rows": 10,
+        "unique": 10
+      },
+      "PALU_UNIFORM": {
+        "bytes": 5299,
+        "duplicates": 0,
+        "exists": true,
+        "mean_fraction_so_far": 0.012222222222222223,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_UNIFORM/repobench-p.raw.jsonl",
+        "rows": 9,
+        "unique": 9
+      }
+    }
+  },
+  "relevant_processes": [
+    "   5663       1 Rsl     14:23:03  167  0.7 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all",
+    "  51341   51315 Ssl     11:47:20  0.3  0.0 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -m torch.distributed.run --standalone --nnodes=1 --nproc_per_node=1 /diskF/jiaqizhang/XKV_PAPER_REPRO_FDP_V1/code/xkv_paper_entry.py --flash2 --dataset_name long_bench/passage_retrieval_en,long_bench/lcc,long_bench/repobench-p --datalen 65536 --model_name_or_path /diskF/jiaqizhang/Llama-3.1 --batch_size 1 --method xkv --merge_k --merge_v --rank_k 384 --rank_v 576 --layer_group_size 4 --start_layer_idx 0 --end_layer_idx -1 --customized_merge_config /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/formal_configs/XKV_NATIVE_PHI_EXCHANGE.yaml --result_dir /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/results/formal_resumed/XKV_NATIVE_PHI_EXCHANGE_LONGBENCH_RECOVERY_20260923T2058Z",
+    "  51365   51341 Rsl     11:47:18 96.6  0.4 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskF/jiaqizhang/XKV_PAPER_REPRO_FDP_V1/code/xkv_paper_entry.py --flash2 --dataset_name long_bench/passage_retrieval_en,long_bench/lcc,long_bench/repobench-p --datalen 65536 --model_name_or_path /diskF/jiaqizhang/Llama-3.1 --batch_size 1 --method xkv --merge_k --merge_v --rank_k 384 --rank_v 576 --layer_group_size 4 --start_layer_idx 0 --end_layer_idx -1 --customized_merge_config /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/formal_configs/XKV_NATIVE_PHI_EXCHANGE.yaml --result_dir /diskE/jiaqizhang/XKV_FDP_NATIVE_EXCHANGE_FORMAL_V1/results/formal_resumed/XKV_NATIVE_PHI_EXCHANGE_LONGBENCH_RECOVERY_20260923T2058Z",
+    " 185069       1 Rl      02:27:21  100  0.3 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task lcc --gpu 2",
+    " 246278       1 Rsl        29:03  105  0.3 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task qmsum --gpu 0",
+    " 246362       1 Rsl        28:58  105  0.3 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task qmsum --gpu 2",
+    " 254484       1 Rsl        12:57  125  0.4 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task repobench-p --gpu 0",
+    " 254485       1 Rsl        12:57  125  0.3 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task repobench-p --gpu 1",
+    " 257856       1 Rl         07:55  132  0.3 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 0 --arm A --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/A_Q256_RMAX_0p5_20260924",
+    " 257857       1 Rl         07:55  134  0.3 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 2 --arm B --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/B_Q256_RMAX_0p5_20260924",
+    " 258475       1 Ss         06:55  0.0  0.0 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/runtime_controls/post_tune_controller/palu_v3_post_tune_lock_formal_controller_v1.py",
+    " 259841       1 Ss         02:24  0.0  0.0 a180429+ /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/audit/multi_news_pair_scheduler/palu_multinews_pair_scheduler_v1.py"
+  ],
+  "tmux": "CalledProcessError(1, ['tmux', 'ls'])",
+  "v3": {
+    "FORMAL_DONE": false,
+    "J_calibration_estimate": 1.8831734582781792,
+    "LOCK_status": null,
+    "R": 0.003662109375,
+    "TUNE_DONE": null,
+    "accepted": 15,
+    "checkpoint_mtime_utc": "2026-09-24T06:46:45.736578+00:00",
+    "checkpoint_sha256": "775a08494b74fc9f678b89253a4a2ad152e3c42a5cb46e9693f7857c7ba87fbb",
+    "config_id": "armA_D16_R16_Rmax0.005_beam0",
+    "controller_events": [
+      "{\"foreign_jobs_interrupted\": 0, \"live\": [{\"args\": [\"/home/bai-project/jiaqizhang/.venv/bin/python\", \"-u\", \"/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py\", \"--gpu\", \"1\", \"--phase\", \"tune\", \"--arm\", \"all\"], \"phase\": \"tune\", \"pid\": 5663}], \"pid\": 5663, \"state\": \"V3_TUNE_RUNNING\", \"status\": \"WATCHING_TUNE\", \"utc\": \"2026-09-24T08:35:54.719167+00:00\"}",
+      "{\"foreign_jobs_interrupted\": 0, \"phases\": [\"tune\"], \"pids\": [5663], \"status\": \"WAIT_TUNE_EXIT\", \"tune_done\": false, \"utc\": \"2026-09-24T08:35:54.773182+00:00\"}",
+      "{\"foreign_jobs_interrupted\": 0, \"phases\": [\"tune\"], \"pids\": [5663], \"status\": \"WAIT_TUNE_EXIT\", \"tune_done\": false, \"utc\": \"2026-09-24T08:40:54.873952+00:00\"}"
+    ],
+    "evaluated": 3840,
+    "gross_moved_rank": 480,
+    "pid": 5663,
+    "rejected": 2419,
+    "status": "V3_TUNE_RUNNING"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "captured_utc": "2026-09-29T19:59:47.520121+00:00",
+  "failure_behavior": [
+    {
+      "affected_cells": [
+        "J_LRD_GS32_UNIFORM",
+        "G_LRD_GS4_UNIFORM"
+      ],
+      "old_results_valid": true,
+      "reason": "PytorchStreamReader failed locating file data.pkl; inspected archive contained only version/byteorder/serialization_id, 1194 bytes.",
+      "type": "CORRUPT_STALE_TORCH_TESTLOADER_CACHE"
+    },
+    {
+      "affected_cells": [
+        "J_LRD_GS32_UNIFORM",
+        "G_LRD_GS4_UNIFORM"
+      ],
+      "old_results_valid": true,
+      "reason": "device_map=auto placed modules across cuda:0 and cuda:1 while evaluation batches were explicitly moved to cuda:0.",
+      "type": "CUDA_DEVICE_MAP_INPUT_MISMATCH"
+    }
+  ],
+  "foreign_jobs_interrupted": 0,
+  "repairs": [
+    {
+      "action": "Moved the corrupt C4 cache unchanged into audit/quarantine; official loader regenerated a valid cache.",
+      "old_results_valid": true,
+      "quarantine_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/audit/quarantine/corrupt_c4_testloader_20260929.cache",
+      "quarantine_sha256": "657b17891378d24edd8eb0839fc0f0d9cf4dbcfa8de4d1a9f23a65f62c80a89b"
+    },
+    {
+      "action": "Pinned retries to physical GPU0 with CUDA_VISIBLE_DEVICES=0; changed placement only.",
+      "affected_cells": [
+        "J_LRD_GS32_UNIFORM",
+        "G_LRD_GS4_UNIFORM"
+      ],
+      "old_results_valid": true,
+      "retry_outcome": "both affected cells DONE with WikiText-2 and C4 PPL"
+    }
+  ],
+  "schema": "PALU_TABLE1_RUNTIME_REPAIR_AUDIT_V1"
+}

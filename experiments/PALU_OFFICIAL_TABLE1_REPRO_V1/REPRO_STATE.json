@@ -1,0 +1,584 @@
+{
+  "campaign": "PALU_OFFICIAL_TABLE1_REPRO_V1",
+  "created_utc": "2026-09-29T18:27:16.963285+00:00",
+  "dense_gate": {
+    "c4": {
+      "absolute_error": 0.003262271881103729,
+      "classification": "CLOSE_NUMERICAL_REPRODUCTION",
+      "log_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/logs/dense_c4_offline_retry2.log",
+      "log_sha256": "f58db84b12d8b86b20cbff841bd2f302bbdf32d6a84624465eddf61fa9507dd1",
+      "ppl": 7.2632622718811035,
+      "reference": 7.26,
+      "relative_error": 0.00044934874395368167,
+      "sequence_length": 2048,
+      "source_sha256": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+      "status": "CLOSE_NUMERICAL_REPRODUCTION",
+      "stride": 2048,
+      "tokens": 524288,
+      "windows": 256
+    },
+    "compression_allowed": true,
+    "old_results_valid": true,
+    "status": "PASS_CLOSE_NUMERICAL",
+    "wiki": {
+      "absolute_error": 0.0022633361816408737,
+      "classification": "CLOSE_NUMERICAL_REPRODUCTION",
+      "log_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/logs/dense_wikitext2_official_snapshot_retry2.log",
+      "log_sha256": "1cd619b2ac6f48c90c4e1dab7a93eda3eaa05a5399dc5ebb1e50b4e169863a83",
+      "ppl": 5.472263336181641,
+      "reference": 5.47,
+      "relative_error": 0.0004137726109032676,
+      "sequence_length": 2048,
+      "source_sha256": "3ee89cd6a2ab912afd5d01e98867b46a67d9ec7a9eca0910e5e4c3cdd4cc1925",
+      "status": "CLOSE_NUMERICAL_REPRODUCTION",
+      "stride": 2048,
+      "tokenization": "official evaluator; raw WikiText-2 test texts joined by double newlines; tokenizer defaults; local pinned Salesforce parquet",
+      "tokens": 339968,
+      "windows": 166
+    }
+  },
+  "engineering_fixes": [
+    {
+      "affected_cell": "Dense C4 only",
+      "cell": "DENSE_C4_PPL",
+      "failure_behavior": "Official C4 loader created a local TokenizerWrapper; torch.save(testloader, /tmp cache) raised AttributeError: local class cannot be pickled before any PPL windows were evaluated.",
+      "old_results_valid": true,
+      "repair": "Runtime-only torch.save adapter converts only this C4 wrapper to types.SimpleNamespace(input_ids=...) with identical payload/attribute; official source, tokenization, evaluation, samples, windowing, and scorer unchanged. Unique model-path alias used to avoid reusing attempt-1 partial cache.",
+      "retryable": true,
+      "utc": "2026-09-29T18:39:14.553570+00:00"
+    }
+  ],
+  "foreign_jobs_interrupted": 0,
+  "frozen_inputs": {
+    "appendix_g3_separate": {
+      "automatic_50": 6.02,
+      "uniform_50": 7.36,
+      "wiki_seqlen": 2048
+    },
+    "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "official_repo": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/Palu",
+    "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+    "table1_target": {
+      "dense": {
+        "c4": 7.26,
+        "wiki": 5.47
+      },
+      "g_lrd_gs4_equal_rank": {
+        "c4": 9.82,
+        "wiki": 6.01
+      },
+      "j_lrd": {
+        "c4": 7.75,
+        "wiki": 5.62
+      },
+      "m_lrd": {
+        "c4": 12.01,
+        "wiki": 6.75
+      }
+    }
+  },
+  "gpu_snapshot": {
+    "foreign_jobs_interrupted": 0,
+    "free_mib": [
+      68281,
+      68279,
+      68279
+    ],
+    "models": "NVIDIA A100 80GB PCIe",
+    "visible_gpu_count": 3
+  },
+  "history": [
+    {
+      "GPU_evaluation_started": false,
+      "event": "DENSE_ATTEMPT_BLOCKED",
+      "result_written": false,
+      "type": "DATASET_HUB_UNREACHABLE",
+      "utc": "2026-09-29T18:34:32.796050+00:00"
+    },
+    {
+      "event": "DENSE_C4_SERIALIZATION_FAILURE",
+      "official_repo_modified": false,
+      "old_results_valid": true,
+      "ppl_windows_evaluated": 0,
+      "utc": "2026-09-29T18:39:14.553570+00:00"
+    },
+    {
+      "c4_ppl": 7.2632622718811035,
+      "compressed_cells_started": false,
+      "event": "DENSE_C4_COMPLETE_WIKITEXT_BLOCKED",
+      "foreign_jobs_interrupted": 0,
+      "utc": "2026-09-29T18:41:57.649634+00:00",
+      "wiki_windows": 0
+    },
+    {
+      "c4_ppl": 7.2632622718811035,
+      "compression_cells_allowed": true,
+      "dense_gate": "PASS_CLOSE_NUMERICAL",
+      "event": "DENSE_PPL_BOTH_COMPLETE",
+      "foreign_jobs_interrupted": 0,
+      "utc": "2026-09-29T19:07:53.680182+00:00",
+      "wiki_ppl": 5.472263336181641
+    },
+    {
+      "all_six_tasks_blocked_before_scoring": true,
+      "event": "ZERO_SHOT_TODO_EXTERNAL_DATASET_UNAVAILABLE",
+      "failure_type": "HUGGINGFACE_DATASET_HUB_UNREACHABLE",
+      "foreign_jobs_interrupted": 0,
+      "result_written": false,
+      "task": "openbookqa",
+      "utc": "2026-09-29T19:07:53.680182+00:00"
+    },
+    {
+      "cells_done": [
+        "J_LRD_GS32_UNIFORM",
+        "G_LRD_GS4_UNIFORM",
+        "M_LRD_GS1_UNIFORM",
+        "G_LRD_GS16_UNIFORM",
+        "G_LRD_GS8_UNIFORM",
+        "G_LRD_GS2_UNIFORM"
+      ],
+      "event": "UNIFORM_SWEEP_COMPLETE_USER_REQUESTED_NO_FISHER",
+      "fisher_enabled": false,
+      "foreign_jobs_interrupted": 0,
+      "old_results_valid": true,
+      "utc": "2026-09-29T19:55:42.324945+00:00"
+    },
+    {
+      "affected_cells": [
+        "J_LRD_GS32_UNIFORM",
+        "G_LRD_GS4_UNIFORM"
+      ],
+      "event": "UNIFORM_RETRY_RUNTIME_REPAIRS",
+      "failure_behavior": [
+        "J-LRD and G-LRD gs4 initially failed at C4 PPL loading a stale incomplete 1194-byte torch archive without data.pkl.",
+        "A subsequent retry placed the auto-mapped model across cuda:0/cuda:1 while evaluator inputs were on cuda:0, causing device mismatch for J-LRD and G-LRD gs4."
+      ],
+      "foreign_jobs_interrupted": 0,
+      "old_results_valid": true,
+      "repair": [
+        "Preserved/quarantined only the corrupt C4 cache; official loader regenerated it and M-LRD/J-LRD/G-LRD gs4 C4 evaluation then succeeded.",
+        "Retried J-LRD and G-LRD gs4 with CUDA_VISIBLE_DEVICES=0; this changed device placement only, not model, data, precision, allocation, scoring, or protocol."
+      ],
+      "utc": "2026-09-29T19:59:47.520121+00:00"
+    }
+  ],
+  "next_gate": "Run the explicitly requested no-Fisher uniform decomposition/group-size PPL diagnostics in isolated outputs; do not label these as exact Table1 if official Fisher-based allocation is part of the paper setup.",
+  "official_trace_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/audit/TABLE1_OFFICIAL_TRACE.json",
+  "p3_user_uniform_status": {
+    "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION",
+    "completed_utc": "2026-09-29T19:55:42.324945+00:00",
+    "datasets": [
+      "WikiText-2 PPL",
+      "C4 PPL"
+    ],
+    "fisher_enabled": false,
+    "planned": [
+      "J-LRD gs32",
+      "G-LRD gs4",
+      "M-LRD gs1"
+    ],
+    "results": {
+      "G_LRD_GS4_UNIFORM": {
+        "allocation_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS4_UNIFORM/allocation.json",
+        "allocator": "global uniform; Fisher disabled by request",
+        "cell": "G_LRD_GS4_UNIFORM",
+        "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+        "group_size": 4,
+        "method": "G-LRD",
+        "ppl": {
+          "c4": 12.476009368896484,
+          "wikitext2": 7.356222629547119
+        },
+        "resource": {
+          "allocation_sha256": "d3cc8ad6e87b319ae32c56b00fc157bde7c6f0b3a658792ab69fec20d686fca8",
+          "cache_bytes_per_token_fp16": 262144,
+          "compression_ratio": 0.5,
+          "decode_cache_bytes_at_2048_fp16": 536870912,
+          "factor_bytes": 1207959552,
+          "low_rank_module_count": 64,
+          "prefill_cache_bytes_at_2048_fp16": 536870912,
+          "rank_histogram": {
+            "256": 512
+          },
+          "rank_quantum": 32,
+          "rank_sum": 131072,
+          "realization_sha256": "079c22e4386e2aeea06f500148e01a9c37e0f18e30d9c7ededc2369f231e9554",
+          "resource_pass": true,
+          "total_rank": 262144
+        },
+        "result_file_sha256": "d2444324c0bbcf1df263e1d5b9fc456d2502e02021fb427595ddbc28de8e5908",
+        "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS4_UNIFORM/result.json",
+        "result_sha256_field": "93ecc5f90103e59f93e494ed3757be2d491e9b0d00d0351770956589abe37664",
+        "status": "DONE",
+        "table6_wiki_reference": 6.01,
+        "wiki_absolute_error_vs_table6": 1.3462226295471194,
+        "wiki_relative_error_vs_table6": 0.2239971097416172
+      },
+      "J_LRD_GS32_UNIFORM": {
+        "allocation_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/J_LRD_GS32_UNIFORM/allocation.json",
+        "allocator": "global uniform; Fisher disabled by request",
+        "cell": "J_LRD_GS32_UNIFORM",
+        "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+        "group_size": 32,
+        "method": "J-LRD",
+        "ppl": {
+          "c4": 8.391843795776367,
+          "wikitext2": 6.250679016113281
+        },
+        "resource": {
+          "allocation_sha256": "4c0c46b1664ff1534c88d953d15e4e6bb4cc5a085d0e4d993502b27730f27c82",
+          "cache_bytes_per_token_fp16": 262144,
+          "compression_ratio": 0.5,
+          "decode_cache_bytes_at_2048_fp16": 536870912,
+          "factor_bytes": 2147483648,
+          "low_rank_module_count": 64,
+          "prefill_cache_bytes_at_2048_fp16": 536870912,
+          "rank_histogram": {
+            "2048": 64
+          },
+          "rank_quantum": 32,
+          "rank_sum": 131072,
+          "realization_sha256": "e4166452db1086aed68aff76a3a30a6159118c0ba2d4e301f3cb37917ce8441b",
+          "resource_pass": true,
+          "total_rank": 262144
+        },
+        "result_file_sha256": "b79f1fd41fe0f9ae66f12d675181eeb7ec3dc24f5f0a6b67a51ffb5fbacc3a69",
+        "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/J_LRD_GS32_UNIFORM/result.json",
+        "result_sha256_field": "cae84c6fea4538aa61d8418fed156e0238a71f90ed12294e75d5f3a7e7cbba50",
+        "status": "DONE",
+        "table6_wiki_reference": 5.62,
+        "wiki_absolute_error_vs_table6": 0.6306790161132811,
+        "wiki_relative_error_vs_table6": 0.11222046550058383
+      },
+      "M_LRD_GS1_UNIFORM": {
+        "allocation_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/M_LRD_GS1_UNIFORM/allocation.json",
+        "allocator": "global uniform; Fisher disabled by request",
+        "cell": "M_LRD_GS1_UNIFORM",
+        "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+        "group_size": 1,
+        "method": "M-LRD",
+        "ppl": {
+          "c4": 15.04081916809082,
+          "wikitext2": 7.828170299530029
+        },
+        "resource": {
+          "allocation_sha256": "12c1d181b70bd0120fa1777478c5aa74fa9f513ccc60379ff68160d79360bb26",
+          "cache_bytes_per_token_fp16": 262144,
+          "compression_ratio": 0.5,
+          "decode_cache_bytes_at_2048_fp16": 536870912,
+          "factor_bytes": 1107296256,
+          "low_rank_module_count": 64,
+          "prefill_cache_bytes_at_2048_fp16": 536870912,
+          "rank_histogram": {
+            "64": 2048
+          },
+          "rank_quantum": 32,
+          "rank_sum": 131072,
+          "realization_sha256": "ef9edc21660c8cb24b1dbbfca70402ce75e6fda4c51d8c9b4b074cfbae72c81a",
+          "resource_pass": true,
+          "total_rank": 262144
+        },
+        "result_file_sha256": "7a149b44f3f99730f7940e3d114d4ce6c2da5ce4c5ea8aa6482470352f550c67",
+        "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/M_LRD_GS1_UNIFORM/result.json",
+        "result_sha256_field": "99a646c468679879be14851ec695d3a48d074effaae7fc8888420d5764b595ed",
+        "status": "DONE",
+        "table6_wiki_reference": 6.81,
+        "wiki_absolute_error_vs_table6": 1.0181702995300297,
+        "wiki_relative_error_vs_table6": 0.1495110571997107
+      }
+    },
+    "status": "COMPLETE_USER_REQUESTED_UNIFORM_DIAGNOSTIC",
+    "zero_shot": "TODO_BLOCKED_EXTERNAL_DATASET_UNAVAILABLE"
+  },
+  "prior_failure": {
+    "behavior": "Official run_ppl_eval.py import exited before model load/evaluation with ModuleNotFoundError: fast_hadamard_transform.",
+    "official_repo_modified": false,
+    "recovery": "Isolated environment/import-path investigation; do not modify official source.",
+    "scope": "No GPU work started; no output result written; existing campaign results unaffected."
+  },
+  "scope": "Original PaLu Table 1 Llama-2-7B, 50% compression; Dense gate first; keep Appendix G.3 separate.",
+  "status": "DENSE_PPL_PASS_ZERO_SHOT_TODO_TABLE1_ALLOCATOR_CONFLICT",
+  "storage_snapshot_gib": {
+    "diskE_free": 26,
+    "diskF_free": 99
+  },
+  "table1_protocol_audit": {
+    "classification": "USER_REQUESTED_NO_FISHER_PROTOCOL_DIFFERS_FROM_LIKELY_OFFICIAL_TABLE1_ALLOCATION; keep results separately labeled",
+    "official_repo_default_search_method": "fisher_uniform",
+    "paper_says": "Sec.4.1: truncation-aware SVD-LLM; default G-LRD gs=4 with equal rank size for each group; Fisher info calculated from 2048 WikiText samples of length1024 for rank search.",
+    "reason": "rank-search method and decomposition granularity are orthogonal; equal rank within G-LRD groups does not imply global uniform across all K/V projections/layers.",
+    "user_requested_search_method": "uniform (no Fisher/Automatic)"
+  },
+  "table6_group_size_status": {
+    "comparison_classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_FISHER_UNIFORM",
+    "completed_utc": "2026-09-29T19:55:42.324945+00:00",
+    "dense_reuses_existing_close_numerical": true,
+    "future_rows_protocol_classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_FISHER_UNIFORM",
+    "groups": [
+      32,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "observed_wikitext2": {
+      "G_LRD_GS16_UNIFORM": 6.586825370788574,
+      "G_LRD_GS2_UNIFORM": 7.895185947418213,
+      "G_LRD_GS4_UNIFORM": 7.356222629547119,
+      "G_LRD_GS8_UNIFORM": 6.878166198730469,
+      "J_LRD_GS32_UNIFORM": 6.250679016113281,
+      "M_LRD_GS1_UNIFORM": 7.828170299530029
+    },
+    "reference_wiki": [
+      5.47,
+      5.62,
+      5.74,
+      5.88,
+      6.01,
+      6.42,
+      6.81
+    ],
+    "status": "COMPLETE_USER_REQUESTED_UNIFORM_DIAGNOSTIC",
+    "sweep_status": "COMPLETE"
+  },
+  "uniform_diagnostic_results": {
+    "G_LRD_GS16_UNIFORM": {
+      "allocation_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS16_UNIFORM/allocation.json",
+      "allocator": "global uniform; Fisher disabled by request",
+      "cell": "G_LRD_GS16_UNIFORM",
+      "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+      "group_size": 16,
+      "method": "G-LRD",
+      "ppl": {
+        "wikitext2": 6.586825370788574
+      },
+      "resource": {
+        "allocation_sha256": "33bd434eaa01364fa4a1e7762770a8390fdec833257e4dd5904e5266bebbe833",
+        "cache_bytes_per_token_fp16": 262144,
+        "compression_ratio": 0.5,
+        "decode_cache_bytes_at_2048_fp16": 536870912,
+        "factor_bytes": 1610612736,
+        "low_rank_module_count": 64,
+        "prefill_cache_bytes_at_2048_fp16": 536870912,
+        "rank_histogram": {
+          "1024": 128
+        },
+        "rank_quantum": 32,
+        "rank_sum": 131072,
+        "realization_sha256": "1f8c9b70b5ff68bab72994eb3d4954c37887933224cf49cdd08b36bdbed20ac5",
+        "resource_pass": true,
+        "total_rank": 262144
+      },
+      "result_file_sha256": "22c217acd42d0a5d3a0a0f89ac42cd8acf09b273bb33873b851c91e02356c0f8",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS16_UNIFORM/result.json",
+      "result_sha256_field": "c61590452367c50facf47b4355a7fc53ad252ffb50e67f46ba69d373d8ea45ed",
+      "status": "DONE",
+      "table6_wiki_reference": 5.74,
+      "wiki_absolute_error_vs_table6": 0.846825370788574,
+      "wiki_relative_error_vs_table6": 0.1475305524021906
+    },
+    "G_LRD_GS2_UNIFORM": {
+      "allocation_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS2_UNIFORM/allocation.json",
+      "allocator": "global uniform; Fisher disabled by request",
+      "cell": "G_LRD_GS2_UNIFORM",
+      "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+      "group_size": 2,
+      "method": "G-LRD",
+      "ppl": {
+        "wikitext2": 7.895185947418213
+      },
+      "resource": {
+        "allocation_sha256": "a7ba4dc91058636fffe43a8502de9d0dff30af3b4efd6d42607587a06e2febfb",
+        "cache_bytes_per_token_fp16": 262144,
+        "compression_ratio": 0.5,
+        "decode_cache_bytes_at_2048_fp16": 536870912,
+        "factor_bytes": 1140850688,
+        "low_rank_module_count": 64,
+        "prefill_cache_bytes_at_2048_fp16": 536870912,
+        "rank_histogram": {
+          "128": 1024
+        },
+        "rank_quantum": 32,
+        "rank_sum": 131072,
+        "realization_sha256": "b89f27e9006d58a54c87351a84cd37d362e763215c5d54b80973f856c7721601",
+        "resource_pass": true,
+        "total_rank": 262144
+      },
+      "result_file_sha256": "f54512ce27256592ba6b73553a359d1a7b1e5b9f3156aaca0674166604c6685f",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS2_UNIFORM/result.json",
+      "result_sha256_field": "93927540f6ebc8e043997de556753beeff9045e1657a40f7d79d71f8789fb289",
+      "status": "DONE",
+      "table6_wiki_reference": 6.42,
+      "wiki_absolute_error_vs_table6": 1.475185947418213,
+      "wiki_relative_error_vs_table6": 0.2297797425885067
+    },
+    "G_LRD_GS4_UNIFORM": {
+      "allocation_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS4_UNIFORM/allocation.json",
+      "allocator": "global uniform; Fisher disabled by request",
+      "cell": "G_LRD_GS4_UNIFORM",
+      "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+      "group_size": 4,
+      "method": "G-LRD",
+      "ppl": {
+        "c4": 12.476009368896484,
+        "wikitext2": 7.356222629547119
+      },
+      "resource": {
+        "allocation_sha256": "d3cc8ad6e87b319ae32c56b00fc157bde7c6f0b3a658792ab69fec20d686fca8",
+        "cache_bytes_per_token_fp16": 262144,
+        "compression_ratio": 0.5,
+        "decode_cache_bytes_at_2048_fp16": 536870912,
+        "factor_bytes": 1207959552,
+        "low_rank_module_count": 64,
+        "prefill_cache_bytes_at_2048_fp16": 536870912,
+        "rank_histogram": {
+          "256": 512
+        },
+        "rank_quantum": 32,
+        "rank_sum": 131072,
+        "realization_sha256": "079c22e4386e2aeea06f500148e01a9c37e0f18e30d9c7ededc2369f231e9554",
+        "resource_pass": true,
+        "total_rank": 262144
+      },
+      "result_file_sha256": "d2444324c0bbcf1df263e1d5b9fc456d2502e02021fb427595ddbc28de8e5908",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS4_UNIFORM/result.json",
+      "result_sha256_field": "93ecc5f90103e59f93e494ed3757be2d491e9b0d00d0351770956589abe37664",
+      "status": "DONE",
+      "table6_wiki_reference": 6.01,
+      "wiki_absolute_error_vs_table6": 1.3462226295471194,
+      "wiki_relative_error_vs_table6": 0.2239971097416172
+    },
+    "G_LRD_GS8_UNIFORM": {
+      "allocation_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS8_UNIFORM/allocation.json",
+      "allocator": "global uniform; Fisher disabled by request",
+      "cell": "G_LRD_GS8_UNIFORM",
+      "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+      "group_size": 8,
+      "method": "G-LRD",
+      "ppl": {
+        "wikitext2": 6.878166198730469
+      },
+      "resource": {
+        "allocation_sha256": "32f3e7fd480c9c26cd485527266adcae9587bc156a1b5272587320fe3c2477e9",
+        "cache_bytes_per_token_fp16": 262144,
+        "compression_ratio": 0.5,
+        "decode_cache_bytes_at_2048_fp16": 536870912,
+        "factor_bytes": 1342177280,
+        "low_rank_module_count": 64,
+        "prefill_cache_bytes_at_2048_fp16": 536870912,
+        "rank_histogram": {
+          "512": 256
+        },
+        "rank_quantum": 32,
+        "rank_sum": 131072,
+        "realization_sha256": "b10477daa8102fe7acb7f411d338dd9fc875bfedc7e8bfbad31257ea9d0852ee",
+        "resource_pass": true,
+        "total_rank": 262144
+      },
+      "result_file_sha256": "c82f386f6b71c36bbb0547044d7fe6600e290808b8e7f5c9c27d14c7fa504eff",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/G_LRD_GS8_UNIFORM/result.json",
+      "result_sha256_field": "09bbb4f46cdf8f71dcf07e3570cbf85bf63f84f5627cea5e5a448994c14e1a99",
+      "status": "DONE",
+      "table6_wiki_reference": 5.88,
+      "wiki_absolute_error_vs_table6": 0.9981661987304689,
+      "wiki_relative_error_vs_table6": 0.1697561562466784
+    },
+    "J_LRD_GS32_UNIFORM": {
+      "allocation_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/J_LRD_GS32_UNIFORM/allocation.json",
+      "allocator": "global uniform; Fisher disabled by request",
+      "cell": "J_LRD_GS32_UNIFORM",
+      "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+      "group_size": 32,
+      "method": "J-LRD",
+      "ppl": {
+        "c4": 8.391843795776367,
+        "wikitext2": 6.250679016113281
+      },
+      "resource": {
+        "allocation_sha256": "4c0c46b1664ff1534c88d953d15e4e6bb4cc5a085d0e4d993502b27730f27c82",
+        "cache_bytes_per_token_fp16": 262144,
+        "compression_ratio": 0.5,
+        "decode_cache_bytes_at_2048_fp16": 536870912,
+        "factor_bytes": 2147483648,
+        "low_rank_module_count": 64,
+        "prefill_cache_bytes_at_2048_fp16": 536870912,
+        "rank_histogram": {
+          "2048": 64
+        },
+        "rank_quantum": 32,
+        "rank_sum": 131072,
+        "realization_sha256": "e4166452db1086aed68aff76a3a30a6159118c0ba2d4e301f3cb37917ce8441b",
+        "resource_pass": true,
+        "total_rank": 262144
+      },
+      "result_file_sha256": "b79f1fd41fe0f9ae66f12d675181eeb7ec3dc24f5f0a6b67a51ffb5fbacc3a69",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/J_LRD_GS32_UNIFORM/result.json",
+      "result_sha256_field": "cae84c6fea4538aa61d8418fed156e0238a71f90ed12294e75d5f3a7e7cbba50",
+      "status": "DONE",
+      "table6_wiki_reference": 5.62,
+      "wiki_absolute_error_vs_table6": 0.6306790161132811,
+      "wiki_relative_error_vs_table6": 0.11222046550058383
+    },
+    "M_LRD_GS1_UNIFORM": {
+      "allocation_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/M_LRD_GS1_UNIFORM/allocation.json",
+      "allocator": "global uniform; Fisher disabled by request",
+      "cell": "M_LRD_GS1_UNIFORM",
+      "classification": "PROTOCOL_MISMATCH_TO_LIKELY_OFFICIAL_TABLE1_ALLOCATION; user-requested diagnostic",
+      "group_size": 1,
+      "method": "M-LRD",
+      "ppl": {
+        "c4": 15.04081916809082,
+        "wikitext2": 7.828170299530029
+      },
+      "resource": {
+        "allocation_sha256": "12c1d181b70bd0120fa1777478c5aa74fa9f513ccc60379ff68160d79360bb26",
+        "cache_bytes_per_token_fp16": 262144,
+        "compression_ratio": 0.5,
+        "decode_cache_bytes_at_2048_fp16": 536870912,
+        "factor_bytes": 1107296256,
+        "low_rank_module_count": 64,
+        "prefill_cache_bytes_at_2048_fp16": 536870912,
+        "rank_histogram": {
+          "64": 2048
+        },
+        "rank_quantum": 32,
+        "rank_sum": 131072,
+        "realization_sha256": "ef9edc21660c8cb24b1dbbfca70402ce75e6fda4c51d8c9b4b074cfbae72c81a",
+        "resource_pass": true,
+        "total_rank": 262144
+      },
+      "result_file_sha256": "7a149b44f3f99730f7940e3d114d4ce6c2da5ce4c5ea8aa6482470352f550c67",
+      "result_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/uniform_diagnostics/M_LRD_GS1_UNIFORM/result.json",
+      "result_sha256_field": "99a646c468679879be14851ec695d3a48d074effaae7fc8888420d5764b595ed",
+      "status": "DONE",
+      "table6_wiki_reference": 6.81,
+      "wiki_absolute_error_vs_table6": 1.0181702995300297,
+      "wiki_relative_error_vs_table6": 0.1495110571997107
+    }
+  },
+  "uniform_diagnostic_status": "COMPLETE_USER_REQUESTED_UNIFORM_NO_FISHER",
+  "worker": {
+    "allocator": "uniform",
+    "current_cell": null,
+    "finished_utc": "2026-09-29T19:55:42.324945+00:00",
+    "foreign_jobs_interrupted": 0,
+    "gpu": 0,
+    "log_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/logs/uniform_lrd_sweep_20260929.log",
+    "pid": 1291995,
+    "progress": "All six frozen user-requested uniform diagnostics completed; two cache/device-placement failures repaired by retrying only affected cells.",
+    "status": "COMPLETE"
+  },
+  "zero_shot": {
+    "failed_first_task": "openbookqa",
+    "failure_type": "HUGGINGFACE_DATASET_HUB_UNREACHABLE",
+    "log_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/logs/dense_zero_shot_official_retry2.log",
+    "log_sha256": "9ac5963c80533b3125c837f16d5479d4eee6e6d1074f03c80ccc210fbb6b1514",
+    "metrics_started": false,
+    "next_step": "Restore HF datasets/cache for all six LM-Evaluation-Harness tasks or provide the exact datasets with provenance; do not synthesize scores.",
+    "old_results_valid": true,
+    "retryable": true,
+    "status": "TODO_BLOCKED_EXTERNAL_DATASET_UNAVAILABLE"
+  },
+  "zero_shot_task_blockers_path": "/diskE/jiaqizhang/PALU_OFFICIAL_TABLE1_REPRO_V1/audit/ZERO_SHOT_TASK_BLOCKERS.json"
+}

@@ -1,0 +1,246 @@
+{
+  "schema": "F_COMPRESSED_MODEL_DELETE_RECEIPT_V1",
+  "plan_path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/audits/F_COMPRESSED_MODEL_DELETE_PLAN_20261005.json",
+  "plan_sha256": "9e90213450bb68bb84b97fcb946ce6b5c7202e00262ab3342b38f49871f9757a",
+  "status": "DELETING_VERIFIED_WEIGHT_SHARDS",
+  "target_checkpoint_count": 14,
+  "target_file_count": 56,
+  "planned_bytes": 221560061456,
+  "deleted_files": [
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp/model-00001-of-00004.safetensors",
+      "bytes": 4980633992
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp/model-00002-of-00004.safetensors",
+      "bytes": 4988665824
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp/model-00003-of-00004.safetensors",
+      "bytes": 4982529640
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control/model-00001-of-00004.safetensors",
+      "bytes": 4983780416
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control/model-00002-of-00004.safetensors",
+      "bytes": 4901895448
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control/model-00003-of-00004.safetensors",
+      "bytes": 4985806440
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control/model-00001-of-00004.safetensors",
+      "bytes": 4971393400
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control/model-00002-of-00004.safetensors",
+      "bytes": 4992729056
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control/model-00003-of-00004.safetensors",
+      "bytes": 4909431992
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control/model-00004-of-00004.safetensors",
+      "bytes": 1168138808
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4983046624
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4999470424
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4840881848
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4945402960
+    },
+    {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4989280544
+    },
+    {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4620993136
+    },
+    {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4987003728
+    },
+    {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4944388064
+    },
+    {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4799473328
+    },
+    {
+      "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4968741240
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4883407728
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4974271688
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4926049520
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4998006712
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4634501624
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4972240368
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4937299304
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4828020040
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4945403024
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4989018688
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4622173584
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4987003792
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4939794168
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4810958800
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4983046688
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4999470456
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4840881872
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4979920016
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4935662072
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4825923536
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1050673280
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model/model-00001-of-00004.safetensors",
+      "bytes": 4997044912
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model/model-00002-of-00004.safetensors",
+      "bytes": 4937019024
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model/model-00003-of-00004.safetensors",
+      "bytes": 4893038760
+    },
+    {
+      "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model/model-00004-of-00004.safetensors",
+      "bytes": 1168138808
+    }
+  ],
+  "deleted_bytes": 221560061456,
+  "failures": [],
+  "preserved": [
+    "/diskF/jiaqizhang/Llama-3.1",
+    "/diskF/jiaqizhang/models/新建文件夹",
+    "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "/diskF/jiaqizhang/FDP125_DIRECTION_CORRECTED_V2/models/mistral_7b_v0_2_official/mistral-7B-v0.2"
+  ],
+  "preserved_evidence": "configs, shard indexes, manifests, profiles/bases, logs, metrics, tables, and all non-weight files",
+  "foreign_jobs_interrupted": 0,
+  "finished_utc": "2026-10-05T17:37:43.337783+00:00"
+}

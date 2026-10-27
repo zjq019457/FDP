@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-07-28T08:37:06.482137-07:00",
+  "unlock_requires": [
+    "RAW_OUTPUT_INTERFACE_PASS",
+    "DENSE_PARITY_PASS",
+    "UNIFORM_PARITY_PASS",
+    "LEGACY_FDP_PARITY_PASS",
+    "legacy_fdp_schedule_bytes_frozen"
+  ],
+  "branches": {
+    "R7_long_context": {
+      "status": "protocol_defined_pending_data_audit",
+      "calibration": {
+        "n": 16,
+        "seqlen": 8192,
+        "total_tokens": 131072
+      },
+      "methods": [
+        "dense",
+        "uniform",
+        "fdp_2k",
+        "fdp_8k",
+        "spectral",
+        "middle"
+      ]
+    },
+    "R8_system_metrics": {
+      "status": "protocol_defined",
+      "exclusive_gpu": true,
+      "lengths": [
+        [
+          2048,
+          128
+        ],
+        [
+          8192,
+          128
+        ]
+      ],
+      "warmup": 10,
+      "repeat": 30
+    },
+    "R9_operating_points": {
+      "status": "protocol_defined_pending_variant_recovery",
+      "points": {
+        "mild": 0.82,
+        "moderate": 0.739,
+        "aggressive": 0.589
+      }
+    },
+    "R10_kq_v_ablation": {
+      "status": "protocol_defined"
+    },
+    "R11_robustness": {
+      "status": "protocol_defined",
+      "cal_sizes": [
+        32,
+        64,
+        128
+      ],
+      "lambdas": [
+        0.6,
+        1.2,
+        2.0
+      ]
+    }
+  },
+  "note": "Quality branches must not start before legacy FDP parity. Protocols frozen before reading quality results."
+}

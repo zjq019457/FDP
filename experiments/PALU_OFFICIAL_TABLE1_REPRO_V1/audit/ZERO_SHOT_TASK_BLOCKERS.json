@@ -1,0 +1,62 @@
+{
+  "schema": "PALU_TABLE1_ZERO_SHOT_TASK_BLOCKERS_V1",
+  "captured_utc": "2026-09-29T19:16:00.335244+00:00",
+  "status": "TODO_BLOCKED_HUGGINGFACE_DATASET_HUB_UNAVAILABLE",
+  "failure_type": "external dataset download/permission/network reachability",
+  "failed_first_task": "openbookqa",
+  "error": "ConnectionError: Couldn't reach openbookqa on the Hub",
+  "metrics_started": false,
+  "retryable": true,
+  "next_step": "Restore the official Hugging Face dataset/cache access or provide exact upstream task datasets with provenance; retry only blocked tasks, do not fabricate or switch scorers.",
+  "tasks": {
+    "openbookqa": {
+      "status": "TODO_BLOCKED",
+      "score": null,
+      "reference_pct": 44.2,
+      "metric": "acc",
+      "reason": "No task scoring started because the initial OpenBookQA dataset fetch failed before evaluation; downstream task datasets were not assumed available.",
+      "retryable": true
+    },
+    "hellaswag": {
+      "status": "TODO_BLOCKED",
+      "score": null,
+      "reference_pct": 76.0,
+      "metric": "acc_norm",
+      "reason": "No task scoring started because the initial OpenBookQA dataset fetch failed before evaluation; downstream task datasets were not assumed available.",
+      "retryable": true
+    },
+    "piqa": {
+      "status": "TODO_BLOCKED",
+      "score": null,
+      "reference_pct": 78.07,
+      "metric": "acc",
+      "reason": "No task scoring started because the initial OpenBookQA dataset fetch failed before evaluation; downstream task datasets were not assumed available.",
+      "retryable": true
+    },
+    "arc_easy": {
+      "status": "TODO_BLOCKED",
+      "score": null,
+      "reference_pct": 76.3,
+      "metric": "acc",
+      "reason": "No task scoring started because the initial OpenBookQA dataset fetch failed before evaluation; downstream task datasets were not assumed available.",
+      "retryable": true
+    },
+    "arc_challenge": {
+      "status": "TODO_BLOCKED",
+      "score": null,
+      "reference_pct": 46.42,
+      "metric": "acc_norm",
+      "reason": "No task scoring started because the initial OpenBookQA dataset fetch failed before evaluation; downstream task datasets were not assumed available.",
+      "retryable": true
+    },
+    "winogrande": {
+      "status": "TODO_BLOCKED",
+      "score": null,
+      "reference_pct": 69.3,
+      "metric": "acc",
+      "reason": "No task scoring started because the initial OpenBookQA dataset fetch failed before evaluation; downstream task datasets were not assumed available.",
+      "retryable": true
+    }
+  },
+  "foreign_jobs_interrupted": 0
+}

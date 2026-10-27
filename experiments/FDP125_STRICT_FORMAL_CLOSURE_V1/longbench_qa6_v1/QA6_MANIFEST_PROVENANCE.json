@@ -1,0 +1,233 @@
+{
+  "audit_id": "FDP125_QA6_PROTOCOL_AUDIT_V1",
+  "classification": "MANIFEST_METADATA_COUNT_BUG_ONLY",
+  "decision": "PASS_WITH_CORRECTED_METADATA_MANIFEST",
+  "old_manifest": {
+    "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/FDP125_LONGBENCH_QA6_FORMAL_MANIFEST.json",
+    "file_sha256": "271f4611374fc8756a5eea2d0c0c18b7ee9a236148f3d7223f91a52c6aefd132",
+    "declared_total_samples": 1200
+  },
+  "corrected_manifest": {
+    "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/FDP125_LONGBENCH_QA6_FORMAL_MANIFEST_CORRECTED.json",
+    "file_sha256": "2d5b73583e52adea75e70521adb8811677e5c03114001abe21df7ccd13e2407e",
+    "payload_sha256": "09aa13759d8e8df6384be103be265e689206a28ed21467969949f926dd9fb847",
+    "declared_total_samples": 1150
+  },
+  "task_order_unchanged": [
+    "narrativeqa",
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "per_task_counts": {
+    "narrativeqa": 200,
+    "qasper": 200,
+    "multifieldqa_en": 150,
+    "hotpotqa": 200,
+    "2wikimqa": 200,
+    "musique": 200
+  },
+  "per_task_sum": 1150,
+  "dataset_source": "THUDM/LongBench v1 NarrativeQA config plus five existing frozen LongBench tasks",
+  "dataset_source_url": "https://huggingface.co/datasets/THUDM/LongBench",
+  "dataset_source_config": "narrativeqa",
+  "narrativeqa": {
+    "source_file": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/data/narrativeqa.jsonl",
+    "sample_count": 200,
+    "unique_id_count": 200,
+    "official_prediction_count": 200,
+    "official_unique_id_count": 200,
+    "source_prediction_ids_equal": true
+  },
+  "prediction_artifacts": {
+    "official_uniform": {
+      "narrativeqa": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/official_uniform/narrativeqa.jsonl",
+        "exists": true,
+        "line_count": 200,
+        "unique_id_count": 200,
+        "sha256": "4eb6df55e5a6d7b3f53be0c9a3fa182eb31296975f8076f22ca1504735e3145a",
+        "null_id_count": 0
+      },
+      "qasper": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/official_uniform/qasper.jsonl",
+        "exists": true,
+        "line_count": 200,
+        "unique_id_count": 200,
+        "sha256": "d971e5f4a575ab57cea8ce0632cc7f0759060ec57754a9755a575ad4abf27858",
+        "null_id_count": 0
+      },
+      "multifieldqa_en": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/official_uniform/multifieldqa_en.jsonl",
+        "exists": true,
+        "line_count": 150,
+        "unique_id_count": 150,
+        "sha256": "6c0dc223807f5788cb767fe119514c9c4086ad0562a74cc45d3bba2879ac00da",
+        "null_id_count": 0
+      },
+      "hotpotqa": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/official_uniform/hotpotqa.jsonl",
+        "exists": true,
+        "line_count": 200,
+        "unique_id_count": 200,
+        "sha256": "306018103e48219434e75433a4f8030250d2219e958cba828dc26b526c6f007c",
+        "null_id_count": 0
+      },
+      "2wikimqa": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/official_uniform/2wikimqa.jsonl",
+        "exists": true,
+        "line_count": 200,
+        "unique_id_count": 200,
+        "sha256": "ec64fed724b5d452e227b3870021c25478316ff7399e2cca4c52e523db19aa7c",
+        "null_id_count": 0
+      },
+      "musique": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/official_uniform/musique.jsonl",
+        "exists": true,
+        "line_count": 200,
+        "unique_id_count": 200,
+        "sha256": "611bb2d580359eec98ff0c891921869a40d730e83144cb771b81384d3db90d88",
+        "null_id_count": 0
+      }
+    },
+    "fdp125_direct": {
+      "narrativeqa": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/fdp125_direct/narrativeqa.jsonl",
+        "exists": false,
+        "line_count": 0,
+        "unique_id_count": 0,
+        "sha256": null,
+        "null_id_count": 0
+      },
+      "qasper": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/fdp125_direct/qasper.jsonl",
+        "exists": true,
+        "line_count": 200,
+        "unique_id_count": 200,
+        "sha256": "94c8daa1abbc8b4cbae96e0e5190ddde4d7bc4f3c9aad97ce43bde05fd3e88a1",
+        "null_id_count": 0
+      },
+      "multifieldqa_en": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/fdp125_direct/multifieldqa_en.jsonl",
+        "exists": true,
+        "line_count": 150,
+        "unique_id_count": 150,
+        "sha256": "818b843e15437f4a7168e9f4f3f1264e207fde2f9e33768230d733284095aba9",
+        "null_id_count": 0
+      },
+      "hotpotqa": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/fdp125_direct/hotpotqa.jsonl",
+        "exists": true,
+        "line_count": 200,
+        "unique_id_count": 200,
+        "sha256": "c25698a66ee75c23acfe916b7b4e837b84376146f528c1e7e7eb62f05cd1a5c8",
+        "null_id_count": 0
+      },
+      "2wikimqa": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/fdp125_direct/2wikimqa.jsonl",
+        "exists": true,
+        "line_count": 200,
+        "unique_id_count": 200,
+        "sha256": "c07f9388a42120e88cd17c6366294d12837096935210cd143afb93f7b2c4cc09",
+        "null_id_count": 0
+      },
+      "musique": {
+        "path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/fdp125_direct/musique.jsonl",
+        "exists": true,
+        "line_count": 200,
+        "unique_id_count": 200,
+        "sha256": "3146249cc43e322339db92a61b301417aa6bd4b9c608c4206d16f579ab906dc1",
+        "null_id_count": 0
+      }
+    }
+  },
+  "reuse_equivalence_against_formal": {
+    "official_uniform": {
+      "qasper": {
+        "qa6_sha256": "d971e5f4a575ab57cea8ce0632cc7f0759060ec57754a9755a575ad4abf27858",
+        "formal_sha256": "d971e5f4a575ab57cea8ce0632cc7f0759060ec57754a9755a575ad4abf27858",
+        "byte_identical": true
+      },
+      "multifieldqa_en": {
+        "qa6_sha256": "6c0dc223807f5788cb767fe119514c9c4086ad0562a74cc45d3bba2879ac00da",
+        "formal_sha256": "6c0dc223807f5788cb767fe119514c9c4086ad0562a74cc45d3bba2879ac00da",
+        "byte_identical": true
+      },
+      "hotpotqa": {
+        "qa6_sha256": "306018103e48219434e75433a4f8030250d2219e958cba828dc26b526c6f007c",
+        "formal_sha256": "306018103e48219434e75433a4f8030250d2219e958cba828dc26b526c6f007c",
+        "byte_identical": true
+      },
+      "2wikimqa": {
+        "qa6_sha256": "ec64fed724b5d452e227b3870021c25478316ff7399e2cca4c52e523db19aa7c",
+        "formal_sha256": "ec64fed724b5d452e227b3870021c25478316ff7399e2cca4c52e523db19aa7c",
+        "byte_identical": true
+      },
+      "musique": {
+        "qa6_sha256": "611bb2d580359eec98ff0c891921869a40d730e83144cb771b81384d3db90d88",
+        "formal_sha256": "611bb2d580359eec98ff0c891921869a40d730e83144cb771b81384d3db90d88",
+        "byte_identical": true
+      }
+    },
+    "fdp125_direct": {
+      "qasper": {
+        "qa6_sha256": "94c8daa1abbc8b4cbae96e0e5190ddde4d7bc4f3c9aad97ce43bde05fd3e88a1",
+        "formal_sha256": "94c8daa1abbc8b4cbae96e0e5190ddde4d7bc4f3c9aad97ce43bde05fd3e88a1",
+        "byte_identical": true
+      },
+      "multifieldqa_en": {
+        "qa6_sha256": "818b843e15437f4a7168e9f4f3f1264e207fde2f9e33768230d733284095aba9",
+        "formal_sha256": "818b843e15437f4a7168e9f4f3f1264e207fde2f9e33768230d733284095aba9",
+        "byte_identical": true
+      },
+      "hotpotqa": {
+        "qa6_sha256": "c25698a66ee75c23acfe916b7b4e837b84376146f528c1e7e7eb62f05cd1a5c8",
+        "formal_sha256": "c25698a66ee75c23acfe916b7b4e837b84376146f528c1e7e7eb62f05cd1a5c8",
+        "byte_identical": true
+      },
+      "2wikimqa": {
+        "qa6_sha256": "c07f9388a42120e88cd17c6366294d12837096935210cd143afb93f7b2c4cc09",
+        "formal_sha256": "c07f9388a42120e88cd17c6366294d12837096935210cd143afb93f7b2c4cc09",
+        "byte_identical": true
+      },
+      "musique": {
+        "qa6_sha256": "3146249cc43e322339db92a61b301417aa6bd4b9c608c4206d16f579ab906dc1",
+        "formal_sha256": "3146249cc43e322339db92a61b301417aa6bd4b9c608c4206d16f579ab906dc1",
+        "byte_identical": true
+      }
+    }
+  },
+  "prior_fdp125_partial_attempt": {
+    "log_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/qa6_medium.log",
+    "last_observed_progress": 26,
+    "complete_prediction_file_present": false,
+    "formal_scorer_run": false,
+    "resume_safe": false,
+    "action": "preserve partial log and rebuild full prediction after GPU/protocol gate"
+  },
+  "protocol_fields_verified": [
+    "task_list",
+    "per_task_sample_count",
+    "sample_order",
+    "prompt_config_sha256",
+    "scorer_sha256",
+    "max_input_tokens",
+    "head_tail_overflow",
+    "generation_config",
+    "model/tokenizer identity",
+    "dtype/backend",
+    "prediction reuse source"
+  ],
+  "impact_statement": "The old manifest count was metadata-only; no sample IDs, task ordering, prompt, scorer, model, tokenizer, generation setting, q, lambda, rho, allocation, rank, resource, or existing prediction artifact was changed.",
+  "next_gate": "Run FDP125 NarrativeQA only after using corrected manifest; then score supplemental QA6 with total_samples=1150. Do not alter the frozen 17-task main result.",
+  "scorer_provenance": {
+    "original_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/score_qa6.py",
+    "original_sha256": "7d9a51418fc27ea1a56666ac1bdd2697ffc3ffad793e7121fda828aa8b565418",
+    "corrected_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/score_qa6_corrected.py",
+    "corrected_sha256": "6846515b31db2b4074cda8e844874abc1c1471f7a2669eb4954d556bbf805cce",
+    "count_source": "corrected manifest dataset.task_metadata",
+    "old_scorer_unchanged": true
+  }
+}

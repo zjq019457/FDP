@@ -1,0 +1,6 @@
+test,p_raw,p_holm,reject_at_05
+moderate:hellaswag_localjsonl,1.6821495850655513e-18,8.410747925327757e-18,True
+moderate:winogrande_localjsonl,7.043833424718468e-05,0.0002817533369887387,True
+moderate:arc_easy_localjsonl,0.03992817966861636,0.11978453900584907,False
+moderate:piqa_localjsonl,0.1925264577614627,0.3850529155229254,False
+moderate:arc_challenge_localjsonl,0.7571890741424051,0.7571890741424051,False

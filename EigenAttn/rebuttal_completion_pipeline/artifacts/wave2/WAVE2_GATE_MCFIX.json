@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-29T22:30:35.138176-07:00",
+  "controls": [
+    "uniform_matched",
+    "random_seed0",
+    "random_seed1",
+    "random_seed2",
+    "spectral_tail",
+    "middle_layer",
+    "reconstruction_slope",
+    "depth_front",
+    "depth_back"
+  ],
+  "missing_cleanups": [],
+  "ok": true
+}

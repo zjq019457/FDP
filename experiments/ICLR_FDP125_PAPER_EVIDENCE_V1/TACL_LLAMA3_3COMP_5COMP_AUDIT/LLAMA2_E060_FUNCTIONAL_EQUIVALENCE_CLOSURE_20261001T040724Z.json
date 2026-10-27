@@ -1,0 +1,696 @@
+{
+  "artifact_id": "LLAMA2_E060_FUNCTIONAL_EQUIVALENCE_AND_RESOURCE_GATE_V1",
+  "basis_functional_equivalence": {
+    "new_full_capacity_basis_sha256": "196863f8ac17c17b276a8dc74a9dee9e30ee8e540f960c0638dccf86095f01d0",
+    "new_selected_rank_basis_sha256": "e283682386118a118980f4377efd43a70b357a4e00f8cde3488d13f2a4e4ee07",
+    "old_basis_sha256": "ed8bcc824ddd9ad77b0e734fb96c9e5fc6a5af964eb0aefda45a5a1de2decc5a",
+    "orthonormal_subspace_comparisons": {
+      "K": 32,
+      "Q": 32,
+      "V_head_blocks": 1024,
+      "total": 1088
+    },
+    "pass_criterion": "all comparisons finite; max principal angle < 1e-4 degree; max projector Frobenius delta < 1e-5",
+    "projector_summary": {
+      "K": {
+        "count": 32,
+        "max_principal_angle_deg": 3.306651113363206e-06,
+        "max_projector_frobenius_delta": 2.5981062314156735e-07,
+        "median_projector_frobenius_delta": 1.7504900879369274e-07,
+        "min_principal_cosine": 0.9999999999999983
+      },
+      "Q": {
+        "count": 32,
+        "max_principal_angle_deg": 3.306651113363206e-06,
+        "max_projector_frobenius_delta": 2.5981062314156735e-07,
+        "median_projector_frobenius_delta": 1.7504900879369274e-07,
+        "min_principal_cosine": 0.9999999999999983
+      },
+      "V": {
+        "count": 1024,
+        "max_principal_angle_deg": 3.818191820832846e-06,
+        "max_projector_frobenius_delta": 3.462716948575452e-07,
+        "median_projector_frobenius_delta": 2.1900144899933143e-07,
+        "min_principal_cosine": 0.9999999999999978
+      }
+    },
+    "raw_basis_tensor_equality_not_required": "SVD sign flips and rotations within degenerate subspaces are invariant; comparison uses QR-orthonormalized projectors/principal angles",
+    "status": "BASIS_FUNCTIONAL_EQUIVALENCE_PASS"
+  },
+  "created_utc": "2026-10-01T04:07:24.744216+00:00",
+  "fdp_candidate": {
+    "allocation_sha256": "23af907470c6dce70cefb84ed231e0284015659e80e9f5ab52a7f8d5666825b5",
+    "candidate_status": "RANK_SCHEDULE_CANDIDATE_READY_FOR_CANONICAL_MATERIALIZATION_AND_ACTUAL_BYTE_CENSUS",
+    "effective_eb_sha256_round8": "3034b167a1aa928c4ed55498d39a743ee3df475356f9a5f0f6b981f495747f71",
+    "formal_realization_sha256": "NOT_FROZEN_PENDING_RESOURCE_LOCK",
+    "low_rank_config_sha256": "ffd64358217592dfd19a3d5c0b46bce84a678aa30aa8cde4e06ec7d017fba24c",
+    "rank_pairs": [
+      [
+        4096,
+        4096
+      ],
+      [
+        4096,
+        4096
+      ],
+      [
+        1184,
+        3488
+      ],
+      [
+        864,
+        3072
+      ],
+      [
+        864,
+        3104
+      ],
+      [
+        1408,
+        3488
+      ],
+      [
+        1632,
+        3520
+      ],
+      [
+        2016,
+        3616
+      ],
+      [
+        2400,
+        3712
+      ],
+      [
+        2464,
+        3744
+      ],
+      [
+        2848,
+        3840
+      ],
+      [
+        2368,
+        3712
+      ],
+      [
+        2432,
+        3712
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2848,
+        3840
+      ],
+      [
+        2816,
+        3840
+      ],
+      [
+        2880,
+        3840
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2368,
+        3744
+      ],
+      [
+        2400,
+        3744
+      ],
+      [
+        1952,
+        3648
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2112,
+        3648
+      ],
+      [
+        1952,
+        3648
+      ],
+      [
+        1728,
+        3552
+      ],
+      [
+        2048,
+        3680
+      ],
+      [
+        2176,
+        3648
+      ],
+      [
+        2112,
+        3648
+      ],
+      [
+        2048,
+        3680
+      ],
+      [
+        4064,
+        4096
+      ],
+      [
+        2496,
+        3776
+      ]
+    ],
+    "rank_sha256": "56b904be040e2002a580fbd22cada28db2727ec8c696fb7548e44c7d654f8d00"
+  },
+  "foreign_jobs_interrupted": 0,
+  "invalid_artifact_note": "An initial direct-operator script used an unpinned 1e-3 cutoff and compared BF16 materialized factors against an FP32 dense-then-project reference. Its failure status is invalidated; numeric differences are retained only as BF16 quantization diagnostic. A corrected stored-factor composition check is linked above.",
+  "layer0_resolution": {
+    "current_candidate_layer0_effective_epsilon": 0.06,
+    "current_candidate_layer0_rank_pair": [
+      4096,
+      4096
+    ],
+    "current_frozen_rule": "method lock explicitly sets effective epsilon_0=e after the intermediate schedule",
+    "resolution": "the stale warning refers to an older candidate whose layer0 rho blend was 0.061449; current candidate follows frozen exact-e override .060. This addendum supersedes only the stale status, not method or ranks.",
+    "stale_q_binding_record_status": "Q3_RECOMPUTED_PROFILE_BOUND_SCHEDULE_BLOCKED_BY_LAYER0_PROTOCOL_AUDIT",
+    "stale_reason": "method lock says layer0 epsilon is exactly base e after intermediate schedule, while re_enumerate_v2.py derive_eb_schedule applies rho geometric blend to layer0; old candidate layer0 effective_eb=0.06144907469380756, not 0.060. Do not choose one silently; schedule/resource lock remains blocked until frozen canonical rule is resolved."
+  },
+  "materialization_audit": {
+    "all_32_layer_factor_projection_checks_exact": true,
+    "materialized_factor_parameter_bytes": 2546799872,
+    "note": "Factor tensors match the canonical basis projection in all 32 layers; per-layer factor hashes are included in the linked audit.",
+    "path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/LLAMA2_E060_FDP125_MATERIALIZATION_OPERATOR_AUDIT_V2.json",
+    "representative_operator_parity_from_stored_factors": {
+      "0": {
+        "K_runtime_vs_independent_composition": {
+          "cosine": 1.0,
+          "max_abs": 4.76837158203125e-06,
+          "relative_l2": 4.6697448397026164e-07
+        },
+        "O_runtime_vs_independent_composition": {
+          "cosine": 1.0000001192092896,
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        },
+        "V_runtime_vs_independent_composition": {
+          "cosine": 0.9999997019767761,
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        }
+      },
+      "16": {
+        "K_runtime_vs_independent_composition": {
+          "cosine": 1.0000001192092896,
+          "max_abs": 4.0531158447265625e-06,
+          "relative_l2": 4.523068639628036e-07
+        },
+        "O_runtime_vs_independent_composition": {
+          "cosine": 1.0000001192092896,
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        },
+        "V_runtime_vs_independent_composition": {
+          "cosine": 1.0000001192092896,
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        }
+      },
+      "31": {
+        "K_runtime_vs_independent_composition": {
+          "cosine": 1.000000238418579,
+          "max_abs": 4.0531158447265625e-06,
+          "relative_l2": 4.56431365591925e-07
+        },
+        "O_runtime_vs_independent_composition": {
+          "cosine": 1.000000238418579,
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        },
+        "V_runtime_vs_independent_composition": {
+          "cosine": 1.0,
+          "max_abs": 0.0,
+          "relative_l2": 0.0
+        }
+      }
+    },
+    "sha256": "b00b38e3bedbf9fce11ccf490f01fc2da0e5f95a9a1ec3d193c92de569210e54",
+    "status": "ALL_32_MATERIALIZATION_PROJECTION_PASS"
+  },
+  "method": {
+    "allocator": "TRUE_TWO_PASS_FDP_EB",
+    "components": "d1+d2+d5",
+    "epsilon_base": 0.06,
+    "lambda": 1.2,
+    "layer0_rule": "effective epsilon_0 exactly e=.060, from frozen Llama-3 3comp method lock",
+    "lock_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK.json",
+    "q": "MinMax(raw d1+d2+d5)",
+    "rho": 0.75,
+    "sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f"
+  },
+  "model": {
+    "checkpoint_fingerprint_sha256": "a627fb4d2200089590b109ad82c35098778aa5856660cc691f6626d25c2cf25197",
+    "config_protocol": "Llama-2-7B, 32 layers, 32 Q heads / 32 KV heads, head_dim=128, max_position_embeddings=4096, no RoPE scaling",
+    "repo_id": "meta-llama/Llama-2-7b-hf",
+    "tokenizer_fingerprint_sha256": "74d06083a8ad300"
+  },
+  "new_profile_q_binding": {
+    "d1_mean": 0.3568819665347973,
+    "d1_median": 0.26027936147050224,
+    "d2_mean": 0.0223984388150658,
+    "d2_median": 0.016581622413953653,
+    "d5_nonzero_layers": 0,
+    "profile_rebound_status": "2x512 profile rerun bound to new basis; all layer records exactly match prior Uniform profile; no reuse ambiguity",
+    "profile_sha256": "dcd72dc1e7df1cfb80006a617a8fb15f55621fc4a15febf5083058838f87014c",
+    "q_matches_old_vector_sha": true,
+    "q_sha256_round8": "731af943d4db35c65d0e3d47c69253b0fc9082da3e384b6f1999afc67fdf3e4b"
+  },
+  "resource_census": {
+    "acceptance_source": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama2_7b/medium/unified_resource_lock_v1_20260925T053946Z/LLAMA2_MEDIUM_RESOURCE_CENSUS_V1.json",
+    "acceptance_tolerance_pct": 0.15,
+    "accounting_formula": "sum_l(rank_kq+rank_v)*4096, verified against prior same-model resource census; basis/checkpoint/factor-file sizes are separate quantities",
+    "candidate_vs_official": {
+      "gap_bytes": -10485760,
+      "gap_pct_relative_official": -1.3116904410559107,
+      "within_tolerance": false
+    },
+    "candidate_vs_official_target_bytes": {
+      "gap_bytes": -10092544,
+      "gap_pct": -1.2631233595800524,
+      "target_bytes": 799014912
+    },
+    "candidate_vs_uniform_e060": {
+      "gap_bytes": 4325376,
+      "gap_pct_relative_uniform": 0.5512863347811561,
+      "within_tolerance": false
+    },
+    "fdp125_e060_candidate": {
+      "B_live_bytes": 788922368,
+      "factor_parameter_bytes": 2546799872,
+      "rank_config_sha256": "ffd64358217592dfd19a3d5c0b46bce84a678aa30aa8cde4e06ec7d017fba24c",
+      "rank_sum": 192608
+    },
+    "official": {
+      "B_live_bytes": 799408128,
+      "rank_config_sha256": "ca2ea863f6cf2eeefdea942d5acacbeb75ab6549b8228bd3eabb584cbcd3b3f3"
+    },
+    "quality_authorized": false,
+    "resource_lock_status": "NOT_PASS; candidate is outside 0.15% near-match tolerance against both existing Official schedule and e060 Uniform schedule",
+    "uniform_e060": {
+      "B_live_bytes": 784596992,
+      "rank_config_sha256": "d57412730ed7fa2798c81aea9940572b4a61c3a9e92c9567030bdeb93e1aae96"
+    }
+  },
+  "scope": "read-only functional equivalence audit plus existing materialized candidate census; no scientific knobs, ranks, samples, or quality outputs changed",
+  "selected_uniform_rank_schedule": {
+    "all_32_layer_pairs_identical_old_vs_new": true,
+    "all_32_layers_and_all_numeric_metrics_exactly_equal": true,
+    "max_abs_numeric_profile_differences": {
+      "Z_mse": 0.0,
+      "Z_rel_mse": 0.0,
+      "entropy_cmp_mean": 0.0,
+      "entropy_diff_A": 0.0,
+      "entropy_full_mean": 0.0,
+      "norm_ratio_Z": 0.0,
+      "rank_kq": 0.0,
+      "rank_v": 0.0,
+      "score_mse_causal": 0.0,
+      "score_only_AV_rel_mse": 0.0,
+      "score_rel_mse_causal": 0.0,
+      "score_std_cmp_causal": 0.0,
+      "score_std_full_causal": 0.0,
+      "score_std_ratio_causal": 0.0,
+      "std_cmp": 0.0,
+      "std_full": 0.0,
+      "std_ratio_Z": 0.0,
+      "value_only_Z_rel_mse": 0.0
+    },
+    "new_schedule_sha256": "d57412730ed7fa2798c81aea9940572b4a61c3a9e92c9567030bdeb93e1aae96",
+    "old_schedule_sha256": "d57412730ed7fa2798c81aea9940572b4a61c3a9e92c9567030bdeb93e1aae96",
+    "profile_new_sha256": "dcd72dc1e7df1cfb80006a617a8fb15f55621fc4a15febf5083058838f87014c",
+    "profile_old_sha256": "27400ab4cfdcabab4dd29b968c0c47fc1b1b7d83e4a633c9abb946e0ff06bc0e",
+    "profile_protocol": {
+      "attn_implementation": "eager",
+      "base": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+      "cmp": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/materialize/final_model",
+      "device": "cuda",
+      "device_map_auto": false,
+      "dtype": "bf16",
+      "gpu": 0,
+      "low_json": null,
+      "max_memory_gb": "0:60",
+      "num_seqs": 2,
+      "out": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/step1_profile_2x512_newbasis.json",
+      "prompts_file": null,
+      "seqlen": 512,
+      "tok": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf"
+    },
+    "rank_pairs": [
+      [
+        4096,
+        4096
+      ],
+      [
+        4096,
+        4096
+      ],
+      [
+        1184,
+        3488
+      ],
+      [
+        992,
+        3264
+      ],
+      [
+        832,
+        3008
+      ],
+      [
+        1120,
+        3392
+      ],
+      [
+        1632,
+        3520
+      ],
+      [
+        2016,
+        3616
+      ],
+      [
+        2400,
+        3712
+      ],
+      [
+        2464,
+        3744
+      ],
+      [
+        2848,
+        3840
+      ],
+      [
+        2368,
+        3712
+      ],
+      [
+        2432,
+        3712
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2848,
+        3840
+      ],
+      [
+        2816,
+        3840
+      ],
+      [
+        2880,
+        3840
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2368,
+        3744
+      ],
+      [
+        2400,
+        3744
+      ],
+      [
+        2368,
+        3744
+      ],
+      [
+        2432,
+        3744
+      ],
+      [
+        2112,
+        3648
+      ],
+      [
+        1952,
+        3648
+      ],
+      [
+        1728,
+        3552
+      ],
+      [
+        2048,
+        3680
+      ],
+      [
+        2176,
+        3648
+      ],
+      [
+        2112,
+        3648
+      ],
+      [
+        2048,
+        3680
+      ],
+      [
+        4064,
+        4096
+      ],
+      [
+        1440,
+        3456
+      ]
+    ]
+  },
+  "singular_value_and_error_curves": {
+    "error_mismatch_count": 0,
+    "full_capacity_error_note": "full-capacity report uses min_rank=4096 and clamps measured error; its raw rank-vs-threshold trace is usable, not its clamped error values",
+    "full_capacity_vs_eb090_shared_threshold_points": 274,
+    "full_singular_value_spectra": "NOT_SERIALIZED_IN_SOURCE_REPORTS; not claimed as directly compared",
+    "old_uniform_e060_vs_new_fullbasis_shared_threshold_points": 177,
+    "rank_mismatch_count": 0,
+    "raw_rank_mismatch_count": 0,
+    "source_rank_error_report_sha256": "791debf977d4aaf989e0396306e5639d78854bf4f18c04d8ffcf943318038cd5"
+  },
+  "uniform_operator_and_logits_canary": {
+    "fixed_input_ids_sha256": "04c652100e87183a9b00c5100ed4e01558ef1be102a8cba7036cd372339ad627",
+    "fixed_logits": {
+      "cosine_double": 1.0000000000000013,
+      "finite": true,
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "shape": [
+        1,
+        29,
+        32000
+      ]
+    },
+    "layers": [
+      0,
+      16,
+      31
+    ],
+    "per_layer": {
+      "0": {
+        "attention_output": {
+          "cosine_double": 1.0000000000000002,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            4096
+          ]
+        },
+        "k_reconstructed": {
+          "cosine_double": 1.0,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            32,
+            128
+          ]
+        },
+        "q": {
+          "cosine_double": 1.0000000000000004,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            4096
+          ]
+        },
+        "v_reconstructed": {
+          "cosine_double": 0.9999999999999948,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            32,
+            128
+          ]
+        }
+      },
+      "16": {
+        "attention_output": {
+          "cosine_double": 0.9999999999999998,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            4096
+          ]
+        },
+        "k_reconstructed": {
+          "cosine_double": 1.0,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            32,
+            128
+          ]
+        },
+        "q": {
+          "cosine_double": 1.0000000000000002,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            4096
+          ]
+        },
+        "v_reconstructed": {
+          "cosine_double": 0.9999999999999908,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            32,
+            128
+          ]
+        }
+      },
+      "31": {
+        "attention_output": {
+          "cosine_double": 0.9999999999999998,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            4096
+          ]
+        },
+        "k_reconstructed": {
+          "cosine_double": 1.0000000000000004,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            32,
+            128
+          ]
+        },
+        "q": {
+          "cosine_double": 1.0,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            4096
+          ]
+        },
+        "v_reconstructed": {
+          "cosine_double": 0.9999999999999942,
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "shape": [
+            1,
+            8,
+            32,
+            128
+          ]
+        }
+      }
+    },
+    "separate_fixed_prompt_logits": {
+      "all_finite": true,
+      "cosine_similarity": 0.9999306201934814,
+      "input_ids": [
+        [
+          1,
+          450,
+          4996,
+          17354,
+          1701,
+          29916,
+          432,
+          17204,
+          975,
+          278,
+          17366,
+          11203,
+          29889,
+          450,
+          1298,
+          310,
+          445,
+          4343,
+          29899,
+          2080,
+          12990,
+          277,
+          338,
+          304,
+          7252,
+          1023,
+          1423,
+          9748,
+          29889
+        ]
+      ],
+      "input_ids_sha256": "04c652100e87183a9b00c5100ed4e01558ef1be102a8cba7036cd372339ad627",
+      "input_text": "The quick brown fox jumps over the lazy dog. The point of this fixed-input audit is to compare two checkpoints.",
+      "max_abs_logit_delta": 0.0,
+      "relative_l2_logit_delta": 0.0
+    }
+  }
+}

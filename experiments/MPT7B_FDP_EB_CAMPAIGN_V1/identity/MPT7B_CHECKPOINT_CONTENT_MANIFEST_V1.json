@@ -1,0 +1,282 @@
+{
+  "schema": "MPT7B_FDP_EB_CHECKPOINT_IDENTITY_MANIFEST_V1",
+  "status": "MODEL_CONTENT_FROZEN__RESOURCE_PROFILE_NOT_STARTED",
+  "created_utc": "2026-10-05T09:35:08Z",
+  "model_identity": "MPT-7B base; local content identifies model_type=mpt and architecture MPTForCausalLM",
+  "claimed_hub_repo": "mosaicml/mpt-7b (content is MPT-7B per local README/config; upstream repo revision not embedded or independently resolvable)",
+  "upstream_revision": "UNRESOLVED_LOCAL_COPY__CONTENT_PINNED",
+  "local_source_path": "C:/Users/dell/Downloads/l31/新建文件夹",
+  "remote_checkpoint_path": "/diskF/jiaqizhang/models/新建文件夹",
+  "checkpoint_files": [
+    {
+      "path": "README.md",
+      "bytes": 12032,
+      "sha256": "f5dc3061aa368c17e3a05ab6b6e2242fe312dc0cd8be105dc04de320e7741c85"
+    },
+    {
+      "path": "adapt_tokenizer.py",
+      "bytes": 1724,
+      "sha256": "d68a8c8151448e949ed5ee6ffa5bd326ba76a264ea30b94908af4f5e7beb9583"
+    },
+    {
+      "path": "attention.py",
+      "bytes": 21611,
+      "sha256": "96844cae928f44fd82f113f5d6f416efb2c787747ba893931f4877078166e6c4"
+    },
+    {
+      "path": "blocks.py",
+      "bytes": 2836,
+      "sha256": "b1d019c0a9cc73f27e4d6dca931abb92b9201dd68d4176fe9f89065830e60800"
+    },
+    {
+      "path": "config.json",
+      "bytes": 1227,
+      "sha256": "4f4a7f15b8f979b45bfddb165ce9fbbfea9ef7cb5ef05a6a085dc733f5600850"
+    },
+    {
+      "path": "configuration_mpt.py",
+      "bytes": 11033,
+      "sha256": "b117d206aaaee72be88c368c12a1af9ff4d205268b4bcd6e0743cc9d7df9d36b"
+    },
+    {
+      "path": "custom_embedding.py",
+      "bytes": 292,
+      "sha256": "5959001270bc3dbc76d3ebc54dba0f81ef625a0574d11930bd35ad20c5b1cba5"
+    },
+    {
+      "path": "fc.py",
+      "bytes": 167,
+      "sha256": "a2b575feebcd1891e75d2dd4263ee274dbe1aa73670b8d702bf1ef180723cd7f"
+    },
+    {
+      "path": "ffn.py",
+      "bytes": 1753,
+      "sha256": "a225fc3369fd033a3871f27fec02c8c21dc72f0f9938a14c187ebd89b02f9c4a"
+    },
+    {
+      "path": "flash_attn_triton.py",
+      "bytes": 28182,
+      "sha256": "3f548a86236f026bab28555954ae13afd7b4bc70b6ef81059570ea74d267e63c"
+    },
+    {
+      "path": "generation_config.json",
+      "bytes": 112,
+      "sha256": "ce7e69ec19e32b6ed928941e3502b91ccd04ec1168874f7053b6d58251d7154a"
+    },
+    {
+      "path": "gitattributes",
+      "bytes": 1477,
+      "sha256": "db7c0371f46f0840b8f25794c1e3321c9b5820a8cb6ba9694a46fc64b8fae5a6"
+    },
+    {
+      "path": "hf_prefixlm_converter.py",
+      "bytes": 10486,
+      "sha256": "733b1fbabd02afe580cbc5867a44ee5e4a5a1ce6604f472711fa80b4e040bbe6"
+    },
+    {
+      "path": "meta_init_context.py",
+      "bytes": 3959,
+      "sha256": "8a053984416246791aed29a809df55625c46de8e3643ec16d44fbb16edd93a09"
+    },
+    {
+      "path": "modeling_mpt.py",
+      "bytes": 22197,
+      "sha256": "aaca49e6c4d9177410845da324c5c607d290a7b560ae5062786a4dc9519029fe"
+    },
+    {
+      "path": "norm.py",
+      "bytes": 3116,
+      "sha256": "c2aa062d2d89993399d9ce14d04a8b2e30aacf46ac303ebafed3dc45bf6f15bc"
+    },
+    {
+      "path": "param_init_fns.py",
+      "bytes": 11860,
+      "sha256": "1729529fc244149083265e65a3f2c9de4ff9f198881dd1d689fc5469e128d070"
+    },
+    {
+      "path": "pytorch_model-00001-of-00002.bin",
+      "bytes": 9943040275,
+      "sha256": "f5782a8714b23c6f85c9433411df36de8c2ffac0008b5fd4df20f78fe592990f"
+    },
+    {
+      "path": "pytorch_model-00002-of-00002.bin",
+      "bytes": 3355599187,
+      "sha256": "89642468caaca82ffe684b4c98f3f53249c180d6c99f5895f5be9afeea656f98"
+    },
+    {
+      "path": "pytorch_model.bin.index.json",
+      "bytes": 16023,
+      "sha256": "ec23962cbf9d95376f864a31e7c9ff326f1e62fcf163f9cee2266e428a00bf84"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 113,
+      "sha256": "d79aabb094272d19ee4eef0f9440cee176003ffd2dd863fc1b911238d711a989"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "bytes": 99,
+      "sha256": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad"
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 2113738,
+      "sha256": "3cf430678137c8491ca82fb7092ee49e44ad38857fffe1e4a4a5ed860139a5b8"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 237,
+      "sha256": "7671fbb5b3d610e6e11d4f5fc78d3a7716e8846112ac7e0f72124caedf887570"
+    }
+  ],
+  "checkpoint_file_count": 24,
+  "checkpoint_total_bytes": 13300903736,
+  "content_fingerprint_algorithm": "sha256(canonical UTF-8 JSON of sorted [{path,bytes,sha256}], separators=comma/colon, ensure_ascii=false, sort_keys=true)",
+  "content_fingerprint_sha256": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "config": {
+    "model_type": "mpt",
+    "architectures": [
+      "MPTForCausalLM"
+    ],
+    "hidden_size": 4096,
+    "n_layers": 32,
+    "n_heads": 32,
+    "max_seq_len": 2048,
+    "vocab_size": 50432,
+    "alibi": true,
+    "transformers_version_declared": "4.28.1",
+    "auto_map_present": true
+  },
+  "tokenizer": {
+    "class": "GPTNeoXTokenizerFast",
+    "vocab_size": 50277,
+    "model_vocab_size": 50432,
+    "padded_output_rows": 155,
+    "eos_token_id": 0,
+    "bos_token_id": 0,
+    "tokenizer_json_sha256": "3cf430678137c8491ca82fb7092ee49e44ad38857fffe1e4a4a5ed860139a5b8",
+    "tokenizer_config_sha256": "7671fbb5b3d610e6e11d4f5fc78d3a7716e8846112ac7e0f72124caedf887570"
+  },
+  "load_policy": "Standard Transformers MptConfig/MptForCausalLM; trust_remote_code=false; local_files_only=true; downloaded custom model code not executed",
+  "cpu_load_smoke": {
+    "status": "PASS",
+    "model_class": "MptForCausalLM",
+    "loaded_layers": 32,
+    "dtype": "bfloat16",
+    "missing_keys": 0,
+    "unexpected_keys": 0,
+    "mismatched_keys": 0,
+    "input_token_count": 6,
+    "logits_shape": [
+      1,
+      6,
+      50432
+    ],
+    "logits_finite": true
+  },
+  "official_eigenattention_source": {
+    "repo_path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base",
+    "git_head": "8bd0d3fac373788aa38b9e7f646cc25109661cdd",
+    "working_tree_dirty": true,
+    "recorded_file_hashes": {
+      "run_pipeline.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/run_pipeline.py",
+        "sha256": "541431c1c648bd1ceb12735c70a455e5b12598bd45b1dd777c2ed90973304dd3",
+        "exists": true
+      },
+      "decompose/eigen_attn.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/decompose/eigen_attn.py",
+        "sha256": "6acbc5170b576e9643352b2ea21f0b2c14f8551fc8025730e7d0bd6f9d00da47",
+        "exists": true
+      },
+      "decompose/eigen_attn_utils.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/decompose/eigen_attn_utils.py",
+        "sha256": "de8549068feb1a94fb9c73c8cc974a0781183c631c4b83fefdabfc26b2c8bcb4",
+        "exists": true
+      },
+      "diagnose/step1.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/diagnose/step1.py",
+        "sha256": "1fae83d86a66fce80e1ca523bec91c77a480010387bc6732c329bc1109d9ac97",
+        "exists": true
+      },
+      "diagnose/derive_eb.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/diagnose/derive_eb.py",
+        "sha256": "29624f08b4f951e4deff7ed54fa717d3547d4b6d684d3872774a0f8b1e74e131",
+        "exists": true
+      },
+      "models/decompose_modules.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/models/decompose_modules.py",
+        "sha256": "36051c9a70a1d2ee59cbf9ef7a8c4a455c0f2350e59fc9a949ac9494ac6d5b70",
+        "exists": true
+      },
+      "models/LMClass.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/models/LMClass.py",
+        "sha256": "dcfc534ae5a07512b5c99e6509cd7b416e513f6f246d2489c5376e6a591b2393",
+        "exists": true
+      },
+      "models/modelling_mpt_eigen_attn.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/models/modelling_mpt_eigen_attn.py",
+        "sha256": "89ee4efbf17da3e2b0734ac74315ea0f9bc491e6ab1be5a48dfd1a909924b3fd",
+        "exists": true
+      },
+      "eval/eval_ppl.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/eval/eval_ppl.py",
+        "sha256": "98e3331f0b7f571a56abfc274b5242bf2c142d7ad918fe7717b711cb74b26358",
+        "exists": true
+      },
+      "eval/eval_acc.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/eval/eval_acc.py",
+        "sha256": "e4c715b66f106dd783db4537d1f6488c50213397fad8d154cb01ad460639c1a6",
+        "exists": true
+      },
+      "datautils.py": {
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn_base/datautils.py",
+        "sha256": "771de0f024a35ad2c113d7a21fd1080f11af334606cefe7bd5550f6e5550603e",
+        "exists": true
+      }
+    },
+    "mpt_route": "MPT transformer.blocks; fused Wqkv; ALiBi position_bias; MptBlockEigenAttn/MptEigenAttention",
+    "audit_note": "The default pipeline derive stage uses five components and its MPT threshold rollback (+0.04) is not the Llama-3 strict largest-passing-threshold trace. Neither default derive nor that rollback will be treated as the frozen d1+d2+d5 method without a versioned compatibility adapter."
+  },
+  "method_reference": {
+    "path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/TACL_LLAMA3_3COMP_5COMP_AUDIT/LLAMA3_3COMP_TRUE_TWO_PASS_METHOD_LOCK.json",
+    "sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+    "reference_status": "POST_HOC_REPLICATION_LOCK_NOT_PREREGISTRATION",
+    "components": {
+      "q": "MinMax(raw d1+d2+d5)",
+      "d1": "Z_rel_mse",
+      "d2": "score_rel_mse_causal",
+      "d5": "max(0,-entropy_diff_A)",
+      "lambda": 1.2,
+      "mean_normalization": "epsilon_raw * e/mean(epsilon_raw)",
+      "layer0": "freeze at uniform e",
+      "rank_floor": 64,
+      "threshold_search": "1.00 down to 0.30 inclusive, step 0.02; select largest threshold with relative layer error <= effective epsilon"
+    }
+  },
+  "accuracy_reuse_audit": {
+    "llama3_cell_lock_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama3_8b/medium/FDP125_LLAMA3_8B_MEDIUM_CELL_LOCK.json",
+    "llama3_cell_lock_sha256": "29fbf129266e09da0f08303fc4ea32f2a5291b20e1af020f25a07ec96c802cd6",
+    "task_yaml_dir": "/diskF/jiaqizhang/a1804298693/offline_datasets",
+    "protocol_sha256": "673f5e2de9b9d8f33d39af3b0222e89c2f4d3b0bd066fc1426fee3a0c7e7b5b4",
+    "task_yaml_hashes_match_llama3_formal": true,
+    "task_counts_from_formal_reference": {
+      "arc_challenge_localjsonl": 1172,
+      "arc_easy_localjsonl": 2376,
+      "hellaswag_localjsonl": 10042,
+      "piqa_localjsonl": 1838,
+      "winogrande_localjsonl": 1267,
+      "total": 16695
+    }
+  },
+  "execution_status": {
+    "quality_jobs_started": false,
+    "formal_authorization": false,
+    "reason": "GPU free memory below 32 GiB worker gate at last live check; resource/profile protocol adapter still pending; no formal resource locks yet"
+  },
+  "storage_policy": {
+    "model_and_heavy_artifacts": "F only for this lane",
+    "formal_manifests_and_compact_evidence": "E",
+    "D": "read-only; no writes"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "MPT7B_FULL_RANK_MATERIALIZER_PARITY_V1",
+  "status": "MEASURED",
+  "formal_quality_result": false,
+  "formal_resource_lock": false,
+  "classification": "ACTUAL_CHECKPOINT_FULL_RANK_OPERATOR_PARITY_CANARY",
+  "model_path": "/diskF/jiaqizhang/models/新建文件夹",
+  "model_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "model_content_manifest_sha256": "8fd59bc340a43f13b250c77d118cc8e479993ecdee1a839bcee5cd7bc1f51db9",
+  "checkpoint_weight_dtype": "torch.bfloat16",
+  "torch_version": "2.8.0+cu128",
+  "transformers_version": "4.44.2",
+  "gpu_physical_index": 2,
+  "free_bytes_before": 42956750848,
+  "process_memory_fraction_cap": 0.4,
+  "layer": 0,
+  "input_token_count": 14,
+  "input_ids_sha256": "020c0f691b2ea890682e39c2ccd18d9b784e0ba753d14e04e70f7a967e4b113b",
+  "basis": "per-head identity, full rank; engineering parity only",
+  "rank_kq": 4096,
+  "rank_v": 4096,
+  "official_decompose_modules_sha256": "36051c9a70a1d2ee59cbf9ef7a8c4a455c0f2350e59fc9a949ac9494ac6d5b70",
+  "official_mpt_operator_sha256": "89ee4efbf17da3e2b0734ac74315ea0f9bc491e6ab1be5a48dfd1a909924b3fd",
+  "attention_output_parity": {
+    "shape": [
+      1,
+      14,
+      4096
+    ],
+    "max_abs": 0.0,
+    "relative_l2": 0.0,
+    "cosine": 1.0
+  },
+  "attention_weights_parity": {
+    "shape": [
+      1,
+      32,
+      14,
+      14
+    ],
+    "max_abs": 0.0,
+    "relative_l2": 0.0,
+    "cosine": 0.9999998807907104
+  },
+  "block_output_parity": {
+    "shape": [
+      1,
+      14,
+      4096
+    ],
+    "max_abs": 0.0,
+    "relative_l2": 0.0,
+    "cosine": 1.0000001192092896
+  },
+  "materialized_parameter_parity": {
+    "Wqkv": {
+      "shape": [
+        12288,
+        4096
+      ],
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "cosine": 1.0000001192092896
+    },
+    "out_proj": {
+      "shape": [
+        4096,
+        4096
+      ],
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "cosine": 1.0
+    },
+    "norms_and_ffn_shared_by_identity": true
+  },
+  "cache_parity": {
+    "dense_shapes": [
+      [
+        1,
+        32,
+        14,
+        128
+      ],
+      [
+        1,
+        32,
+        14,
+        128
+      ]
+    ],
+    "eigen_shapes": [
+      [
+        1,
+        32,
+        14,
+        128
+      ],
+      [
+        1,
+        32,
+        14,
+        128
+      ]
+    ],
+    "dense_bytes": 229376,
+    "eigen_bytes": 229376
+  },
+  "all_logits_finite": true,
+  "peak_allocated_bytes": 14786919936,
+  "peak_reserved_bytes": 14864613376,
+  "created_unix": 1791232714.9598317,
+  "scope": "real MPT layer-0 checkpoint-weight full-rank materialization/forward only; no compressed schedule, PPL, C4, zero-shot, or quality claim"
+}

@@ -1,0 +1,26 @@
+{
+  "gate": "LEGACY_FDP_PARITY_PASS",
+  "passed": true,
+  "timestamp": "2026-07-29T01:15:20.743798-07:00",
+  "upstream_artifact_hashes": {
+    "wiki": "eef571c31f0a2a28b71dd51ba334e5520a913243d02de9d2425ba5ef3b80230c",
+    "c4": "2f17ed5185f64e9da8c93c31304e158e6afe9c03ca2c86075ea33b00faf11ae6",
+    "zs1": "8d6c1797f3a05f97e8a7f925693de769aabfbf33939617d0351bc0b8166f94dd",
+    "zs2": "a122b07b267b1652add0f18f4ca2f7dada069dd0992818c48e93c7b497986ab4",
+    "basis": "b1e1de3798a6ea426cb69132283b9f47a8cce1699ebb76a27263459abda40210"
+  },
+  "runner_hash": "88f0b6cf68af2740ba403cd45c1855522ee8aae3d32f5ff38eda93a6670ecc6a",
+  "protocol_hash": "46045088fa3fca40321c6d59d0367e9f8921c0ba97b9492791f4abed6c2091d4",
+  "evaluation_hash": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+  "audit_summary": "legacy FDP R3 aggregate+recompute",
+  "extra": {
+    "recompute_ok": true,
+    "tasks": [
+      "hellaswag_localjsonl",
+      "arc_challenge_localjsonl",
+      "arc_easy_localjsonl",
+      "winogrande_localjsonl",
+      "piqa_localjsonl"
+    ]
+  }
+}

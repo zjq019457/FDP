@@ -1,0 +1,31 @@
+{
+  "basis_durable_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/llama2_e060_fullbasis_uniform_selected_rank.pt",
+  "basis_original_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/llama2_e060_fullbasis_uniform_selected_rank.pt",
+  "basis_sha256": "e283682386118a118980f4377efd43a70b357a4e00f8cde3488d13f2a4e4ee07",
+  "candidate": "llama2_uniform_eb060_same_rank_audit",
+  "materialization_log": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/materialize/log_rank0_1790823962.txt",
+  "model_dir": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/materialize/final_model",
+  "model_index_retained": true,
+  "note": "Only derived weight shards removed by user authorization. Rank/config/tokenizer/logs/results and exact basis retained; rebuild uses the matching base checkpoint and materialization provenance.",
+  "quality_artifact_pointer": null,
+  "rank_config_sha256": "d57412730ed7fa2798c81aea9940572b4a61c3a9e92c9567030bdeb93e1aae96",
+  "removed_at_utc": "2026-10-02T17:41:58.942207+00:00",
+  "removed_bytes": 12791950784,
+  "removed_shards": [
+    {
+      "bytes": 4951814936,
+      "name": "model-00001-of-00003.safetensors"
+    },
+    {
+      "bytes": 4975970776,
+      "name": "model-00002-of-00003.safetensors"
+    },
+    {
+      "bytes": 2864165072,
+      "name": "model-00003-of-00003.safetensors"
+    }
+  ],
+  "retained_model_config": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/materialize/final_model/config.json",
+  "retained_rank_config": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/materialize/final_model/low_rank_config.json",
+  "status": "MODEL_WEIGHTS_REMOVED_REBUILDABLE"
+}

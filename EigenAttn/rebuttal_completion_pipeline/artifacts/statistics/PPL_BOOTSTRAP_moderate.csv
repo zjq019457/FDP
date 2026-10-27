@@ -1,0 +1,3 @@
+align,ci95_high,ci95_low,comparison,dataset,mean_delta_ppl,method_a,method_b,n_bootstrap,n_windows,point,significant_at_05
+window_id,-0.4042639715311207,-0.4583936196281373,Uniform vs FDP Wiki,wikitext2,-0.4308010470521456,uniform,fdp,10000,141,moderate,True
+window_id,-0.8851681750233666,-1.233667090977205,Uniform vs FDP C4,c4,-1.0534968236605078,uniform,fdp,10000,256,moderate,True

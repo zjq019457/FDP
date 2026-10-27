@@ -1,0 +1,256 @@
+{
+  "status": "PASS",
+  "protocol_status": "PASS",
+  "launch_authorized": true,
+  "manifest_sha256": "09aa13759d8e8df6384be103be265e689206a28ed21467969949f926dd9fb847",
+  "manifest_file_sha256": "2d5b73583e52adea75e70521adb8811677e5c03114001abe21df7ccd13e2407e",
+  "task_order": [
+    "narrativeqa",
+    "qasper",
+    "multifieldqa_en",
+    "hotpotqa",
+    "2wikimqa",
+    "musique"
+  ],
+  "expected_total_samples": 1150,
+  "task_counts": {
+    "narrativeqa": 200,
+    "qasper": 200,
+    "multifieldqa_en": 150,
+    "hotpotqa": 200,
+    "2wikimqa": 200,
+    "musique": 200
+  },
+  "methods": {
+    "official_uniform": {
+      "tasks": {
+        "narrativeqa": {
+          "score": 2.09,
+          "sample_count": 200,
+          "prediction_sha256": "4eb6df55e5a6d7b3f53be0c9a3fa182eb31296975f8076f22ca1504735e3145a"
+        },
+        "qasper": {
+          "score": 9.08,
+          "sample_count": 200,
+          "prediction_sha256": "d971e5f4a575ab57cea8ce0632cc7f0759060ec57754a9755a575ad4abf27858"
+        },
+        "multifieldqa_en": {
+          "score": 16.45,
+          "sample_count": 150,
+          "prediction_sha256": "6c0dc223807f5788cb767fe119514c9c4086ad0562a74cc45d3bba2879ac00da"
+        },
+        "hotpotqa": {
+          "score": 5.05,
+          "sample_count": 200,
+          "prediction_sha256": "306018103e48219434e75433a4f8030250d2219e958cba828dc26b526c6f007c"
+        },
+        "2wikimqa": {
+          "score": 3.81,
+          "sample_count": 200,
+          "prediction_sha256": "ec64fed724b5d452e227b3870021c25478316ff7399e2cca4c52e523db19aa7c"
+        },
+        "musique": {
+          "score": 2.88,
+          "sample_count": 200,
+          "prediction_sha256": "611bb2d580359eec98ff0c891921869a40d730e83144cb771b81384d3db90d88"
+        }
+      },
+      "sample_count": 1150,
+      "expected_sample_count": 1150,
+      "resource": {
+        "checkpoint": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/materialized_formal_checkpoints/medium/official_uniform/final_model",
+        "low_rank_config_sha256": "db207077467e658317a1972240a42b211212563f38b3e819210b90006a1615cb",
+        "rank_sha256": null,
+        "actual_bytes": 199917568,
+        "checkpoint_file_manifest": {
+          "files": [
+            {
+              "path": "config.json",
+              "bytes": 727,
+              "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+            },
+            {
+              "path": "generation_config.json",
+              "bytes": 1291,
+              "sha256": "8711cc972b6c80e9eb8ef5e4d4533c71b8898945cbd183364a2d75844643aa26"
+            },
+            {
+              "path": "low_rank_config.json",
+              "bytes": 838,
+              "sha256": "db207077467e658317a1972240a42b211212563f38b3e819210b90006a1615cb"
+            },
+            {
+              "path": "low_rank_config.pt",
+              "bytes": 2145,
+              "sha256": "c3809a9872fca1066e1af1c209ed9fd5da7964e9d429215cbae37a95c7fb70ae"
+            },
+            {
+              "path": "model-00001-of-00004.safetensors",
+              "bytes": 4974143056,
+              "sha256": "75ac9b1ad6bfdb4ac6ebdbe15d9fa5694212541e1b49a8f3c8630a0adffd4e2d"
+            },
+            {
+              "path": "model-00002-of-00004.safetensors",
+              "bytes": 4939267808,
+              "sha256": "2124034d96bb327e657beb59db732bc0bb3f7663e5a3e339be442340d297aed9"
+            },
+            {
+              "path": "model-00003-of-00004.safetensors",
+              "bytes": 4831104440,
+              "sha256": "fc5338d013b84e642ad3b70a371e6aa76e51656d33883351e88f960ac56cf954"
+            },
+            {
+              "path": "model-00004-of-00004.safetensors",
+              "bytes": 1050673280,
+              "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+            },
+            {
+              "path": "model.safetensors.index.json",
+              "bytes": 27044,
+              "sha256": "9b867dec377ea318ee0e8c3815ce27b7779d3d71f21c7d891bc99f040b5c646d"
+            },
+            {
+              "path": "special_tokens_map.json",
+              "bytes": 301,
+              "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+            },
+            {
+              "path": "tokenizer.json",
+              "bytes": 9085698,
+              "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+            },
+            {
+              "path": "tokenizer_config.json",
+              "bytes": 50585,
+              "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+            }
+          ],
+          "sha256": "d1579a2b8b1d76f6819cddefe1ad1f4a3e7fa142e6ee43f464aee80171bd5b5c"
+        },
+        "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+        "operator": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+        "seed": 2,
+        "dtype": "bf16",
+        "attn_implementation": "eager",
+        "provenance": null
+      },
+      "macro_exact": 6.56,
+      "macro": 6.56
+    },
+    "fdp125_direct": {
+      "tasks": {
+        "narrativeqa": {
+          "score": 2.4,
+          "sample_count": 200,
+          "prediction_sha256": "4ed33f36350c6f2df3b7ebc42e592f25c53f5b27321121cf5fb2000211557307"
+        },
+        "qasper": {
+          "score": 9.28,
+          "sample_count": 200,
+          "prediction_sha256": "94c8daa1abbc8b4cbae96e0e5190ddde4d7bc4f3c9aad97ce43bde05fd3e88a1"
+        },
+        "multifieldqa_en": {
+          "score": 18.01,
+          "sample_count": 150,
+          "prediction_sha256": "818b843e15437f4a7168e9f4f3f1264e207fde2f9e33768230d733284095aba9"
+        },
+        "hotpotqa": {
+          "score": 4.96,
+          "sample_count": 200,
+          "prediction_sha256": "c25698a66ee75c23acfe916b7b4e837b84376146f528c1e7e7eb62f05cd1a5c8"
+        },
+        "2wikimqa": {
+          "score": 6.27,
+          "sample_count": 200,
+          "prediction_sha256": "c07f9388a42120e88cd17c6366294d12837096935210cd143afb93f7b2c4cc09"
+        },
+        "musique": {
+          "score": 2.52,
+          "sample_count": 200,
+          "prediction_sha256": "3146249cc43e322339db92a61b301417aa6bd4b9c608c4206d16f579ab906dc1"
+        }
+      },
+      "sample_count": 1150,
+      "expected_sample_count": 1150,
+      "resource": {
+        "checkpoint": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/materialized_formal_checkpoints/medium/fdp125_direct/final_model",
+        "low_rank_config_sha256": "3800ab0b3a3cefe076db21bd5be47515ec3583a21eee811985f57758ddd6f512",
+        "rank_sha256": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+        "actual_bytes": 199753728,
+        "checkpoint_file_manifest": {
+          "files": [
+            {
+              "path": "config.json",
+              "bytes": 727,
+              "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+            },
+            {
+              "path": "generation_config.json",
+              "bytes": 1289,
+              "sha256": "9ea56f95da452c016527298ba1bd3a3c20d9b1e2a847e8e776d17dea8861c409"
+            },
+            {
+              "path": "low_rank_config.json",
+              "bytes": 836,
+              "sha256": "3800ab0b3a3cefe076db21bd5be47515ec3583a21eee811985f57758ddd6f512"
+            },
+            {
+              "path": "low_rank_config.pt",
+              "bytes": 2145,
+              "sha256": "692c29c975f1769b607f8d266a9f4073777d18bbef4701a518c1b1f708986374"
+            },
+            {
+              "path": "model-00001-of-00004.safetensors",
+              "bytes": 4991006800,
+              "sha256": "45c982a8681b0cc8dd09727615196dac757ab9270a9d8d18c8b04797903da6cb"
+            },
+            {
+              "path": "model-00002-of-00004.safetensors",
+              "bytes": 4945765856,
+              "sha256": "d323944127d2f13e021833b7a30cf1d9b77ea25e1274515a4988672e48583ba4"
+            },
+            {
+              "path": "model-00003-of-00004.safetensors",
+              "bytes": 4807151792,
+              "sha256": "8dc37cf586aa0e782ce22dd667bb94440fae011cab54ab5573c2eaaa48b62706"
+            },
+            {
+              "path": "model-00004-of-00004.safetensors",
+              "bytes": 1050673280,
+              "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+            },
+            {
+              "path": "model.safetensors.index.json",
+              "bytes": 27044,
+              "sha256": "293ee90758da022a22778eed8b5ac0254466d97cf37c388ef6329bce8be1ae1d"
+            },
+            {
+              "path": "special_tokens_map.json",
+              "bytes": 301,
+              "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+            },
+            {
+              "path": "tokenizer.json",
+              "bytes": 9085698,
+              "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+            },
+            {
+              "path": "tokenizer_config.json",
+              "bytes": 50585,
+              "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+            }
+          ],
+          "sha256": "01d0c676bd950d6c87c76d6452713bcec77c11d05ef09269ad2407bd186f8013"
+        },
+        "builder": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+        "operator": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/main_eigen_attn.py",
+        "seed": 2,
+        "dtype": "bf16",
+        "attn_implementation": "eager",
+        "provenance": "/diskF/jiaqizhang/fdp125_final_campaign_v1/results/llama/medium/fdp125/provenance.json"
+      },
+      "macro_exact": 7.240000000000001,
+      "macro": 7.24
+    }
+  }
+}

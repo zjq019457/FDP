@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-07-29T20:04:22.666104-07:00",
+  "rows": [
+    {
+      "n_bootstrap": 10000,
+      "n_windows": 141,
+      "mean_delta_ppl": -2.3308974573601384,
+      "ci95_low": -2.6654620312834023,
+      "ci95_high": -2.032206637612898,
+      "significant_at_05": true,
+      "align": "window_id",
+      "point": "aggressive",
+      "dataset": "wikitext2",
+      "comparison": "Uniform vs FDP Wiki",
+      "method_a": "uniform",
+      "method_b": "fdp"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_windows": 256,
+      "mean_delta_ppl": -1.3766403326712757,
+      "ci95_low": -1.9743578096152241,
+      "ci95_high": -0.8168062129067941,
+      "significant_at_05": true,
+      "align": "window_id",
+      "point": "aggressive",
+      "dataset": "c4",
+      "comparison": "Uniform vs FDP C4",
+      "method_a": "uniform",
+      "method_b": "fdp"
+    }
+  ]
+}

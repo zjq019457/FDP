@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "model": "llama3_8b",
+  "tier": "light",
+  "methods": {
+    "uniform": {
+      "B_live": 217219072,
+      "wiki_ppl": 6.728769332634484,
+      "c4_ppl": 9.833558527467364,
+      "rank_sha": "563575a7e726c603fb0798996803c3645445f7030a60a2d914cc2988bd079562",
+      "basis_sha": "738455fae6398a1e9b309ee36039615ff0f09248ded4af6b89bcc40dadb9b2cc"
+    },
+    "parent": {
+      "B_live": 218562560,
+      "wiki_ppl": 6.651764536184463,
+      "c4_ppl": 9.70315768089166,
+      "rank_sha": "ea4d9fda1af3b79ae0924539995a53ae3a778924ea32e1ab61352b30299a20b5",
+      "basis_sha": "c1449a22978f09d9c6fa7a1b9fdafcc53c4bb6ec942de717b3287dfbd067ed9b"
+    },
+    "fdp125": {
+      "B_live": 218923008,
+      "wiki_ppl": 6.633935706456411,
+      "c4_ppl": 9.67960910323553,
+      "rank_sha": "c1dcffb39736ed3e298cb93b47afebc51453f74c357774d6ea4d0326fafebe2b",
+      "basis_sha": "f4ae1b6f3980a17d7a4bb7c1f642b157e0f89a5cb0fde1093dbacec734716147"
+    }
+  },
+  "completed_at": "2026-09-13T01:53:10.050777-07:00"
+}

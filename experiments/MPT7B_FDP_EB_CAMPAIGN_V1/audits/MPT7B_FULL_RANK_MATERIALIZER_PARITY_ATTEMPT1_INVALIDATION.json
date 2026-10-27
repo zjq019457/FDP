@@ -1,0 +1,12 @@
+{
+  "schema": "MPT7B_FULL_RANK_MATERIALIZER_PARITY_ATTEMPT_INVALIDATION_V1",
+  "status": "INVALID_TEST_SETUP_DTYPE_MISMATCH",
+  "formal_quality_result": false,
+  "model_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "stage": "full-rank temporary materialization constructed FP32 module; first forward rejected BF16 hidden state before parity metrics",
+  "exception_type": "RuntimeError",
+  "exception": "expected mat1 and mat2 to have the same dtype, but got: c10::BFloat16 != float",
+  "root_cause": "canary failed to cast newly materialized module to checkpoint dtype before invocation; this is a test setup/runtime dtype binding error, not a quality result or scientific-method change",
+  "action": "preserve this attempt and rerun only the parity canary with explicit BF16 module dtype",
+  "created_unix": 1791232674.1934566
+}

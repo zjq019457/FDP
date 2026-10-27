@@ -1,0 +1,49 @@
+{
+  "title": "Llama-3 151M leave-one-component-out resource feasibility certificate",
+  "created_local_date": "2026-10-05",
+  "status": "NO_LEGAL_SCHEDULE_WITHIN_FROZEN_0.15_PERCENT_MATCH_TOLERANCE",
+  "target_B_live": 151289856,
+  "frozen_match_tolerance_fraction": 0.0015,
+  "source_scan_file": "ABLATION_RESOURCE_SCAN.json",
+  "source_scan_sha256": "86f9f26b2092b2905f99c844f9d9ac938e940fdcdd7a56d58e26ea0ec8b464c6",
+  "candidate_nearest_points": [
+    {
+      "candidate_file": "DROP_D1_nearest_candidate.json",
+      "candidate_sha256": "76209639af5a4abf8deec0d4ea235900c7f1c3936857db6c3bb479d9580cd0f1",
+      "arm": "DROP_D1",
+      "components": [
+        "d2",
+        "d5"
+      ],
+      "rank_sha256": "ebda38efd3638e03c88a799f04f3b543753e528a4b123e3fbb9677e9b65b0368",
+      "candidate_B_live_bytes": 152371200,
+      "target_B_live_bytes": 151289856,
+      "gap_bytes": 1081344,
+      "gap_pct": 0.7147498375568551,
+      "minimum_rank": 64,
+      "within_0p15_percent": false,
+      "realization_status": "CANDIDATE_ONLY_NOT_BUILDER_REPLAYED",
+      "quality_started": false
+    },
+    {
+      "candidate_file": "DROP_D5_nearest_candidate.json",
+      "candidate_sha256": "941e76aa0eb8781280c55e599fc516fde0659ec79410fe27f870c43f674aa65d",
+      "arm": "DROP_D5",
+      "components": [
+        "d1",
+        "d2"
+      ],
+      "rank_sha256": "7ea62c5cc8ed45a2e08cb8e81e8f2fc749f9f09aeae52aa54fad824c91471911",
+      "candidate_B_live_bytes": 153812992,
+      "target_B_live_bytes": 151289856,
+      "gap_bytes": 2523136,
+      "gap_pct": 1.6677496209659952,
+      "minimum_rank": 80,
+      "within_0p15_percent": false,
+      "realization_status": "CANDIDATE_ONLY_NOT_BUILDER_REPLAYED",
+      "quality_started": false
+    }
+  ],
+  "interpretation": "Resource-only candidates fail the frozen same-budget tolerance. Candidate byte counts are not actual realized bytes. No materialization or quality evaluation was run. Do not label these as matched formal ablations.",
+  "next_gate": "Choose whether to keep 151M and record rank-lattice infeasibility, select a new common target and rerun all four arms, or explicitly allow unequal-budget diagnostic quality runs that are not causal matched ablations."
+}

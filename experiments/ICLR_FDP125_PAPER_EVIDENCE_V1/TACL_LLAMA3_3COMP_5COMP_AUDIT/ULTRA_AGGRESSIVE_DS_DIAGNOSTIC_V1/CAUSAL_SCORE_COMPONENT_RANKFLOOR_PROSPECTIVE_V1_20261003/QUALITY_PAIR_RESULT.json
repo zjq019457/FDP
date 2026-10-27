@@ -1,0 +1,85 @@
+{
+  "schema": "FDP125_CAUSAL_SCORE_RANKFLOOR_QUALITY_PAIR_V1",
+  "status": "FORMAL_QUALITY_COMPLETE_PENDING_FINAL_REVIEW",
+  "source_resource_scan_lock_sha256": "0bd1727c8bd8a1288c191901f40ed141c227087e0953d44ae6ce83f2d9e92499",
+  "model": {
+    "repo_id": "meta-llama/Meta-Llama-3-8B",
+    "content_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+    "max_position_embeddings": 8192
+  },
+  "method": "same frozen TRUE_TWO_PASS_FDP_EB; Full=d1+d2+d5; No-S=d1+d5",
+  "protocol_sha256": "da93ade0391d1886941e896092c016d08918defcb8c68eab7e315758209f0644",
+  "runner_sha256": "ffe4e52eda330ee54a408042bc1f9ca50e9c8efb1e6756579c2bbf96279d7852",
+  "window_counts": {
+    "wiki": 141,
+    "c4": 256
+  },
+  "paired_sample_bindings_sha256": {
+    "wiki": "f6c6309b8d329f8fe01e47bc5e7b3ab68f9cbba442439081a25bdd1301e60650",
+    "c4": "773aa004e85277d88ab146d910d44f3c09fdd1489c4d6bd3cb512dbe2a3bfe14"
+  },
+  "arms": {
+    "U_FULL": {
+      "rank_sha256": "0bafdf9cd1dbfa3d2a4a4080f5b8c4ab75a34260b3e1c163f7b65d50131e20a7",
+      "B_live": 151289856,
+      "wiki_ppl": 11.414454017507655,
+      "c4_ppl": 18.783071734432074,
+      "J": 2.6839182365550296
+    },
+    "U_NO_S": {
+      "rank_sha256": "7e74aee100e4ed31364ddbaf04c157c2f7e443121ffeb11223d0089f966deea3",
+      "B_live": 151257088,
+      "wiki_ppl": 11.416152482342628,
+      "c4_ppl": 18.870849416611666,
+      "J": 2.686323804739559
+    }
+  },
+  "deltas_no_s_minus_full": {
+    "wiki_ppl": 0.0016984648349733789,
+    "c4_ppl": 0.08777768217959192,
+    "J": 0.0024055681845291943
+  },
+  "paired_bootstrap": {
+    "replicates": 10000,
+    "rng": "PCG64",
+    "seeds": {
+      "wiki": 20261012,
+      "c4": 20261013
+    },
+    "CI": "percentile 95%",
+    "per_dataset": {
+      "wiki": {
+        "delta_ppl_nos_minus_full_ci95": [
+          -0.013182927346211182,
+          0.01635560933235655
+        ],
+        "delta_logppl_ci95": [
+          -0.0011579919791390725,
+          0.001436354906846137
+        ],
+        "delta_logppl_mean": 0.0001490971205927811,
+        "prob_nos_better": 0.4067
+      },
+      "c4": {
+        "delta_ppl_nos_minus_full_ci95": [
+          0.025666980972314415,
+          0.15312650812675777
+        ],
+        "delta_logppl_ci95": [
+          0.0013584942906163632,
+          0.008085262030363083
+        ],
+        "delta_logppl_mean": 0.004672499673627317,
+        "prob_nos_better": 0.0017
+      }
+    },
+    "delta_J_ci95": [
+      0.0006460432537851392,
+      0.004241152958951061
+    ],
+    "prob_delta_J_lt_zero": 0.0039,
+    "sign_convention": "negative delta favors No-S; positive favors Full"
+  },
+  "canary_status": "both arms finite and exactly repeatable on 2 fixed windows per dataset",
+  "created_utc": "2026-10-04T05:40:33.871372+00:00"
+}

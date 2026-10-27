@@ -1,0 +1,415 @@
+{
+  "schema": "FDP125_ULTRA_RANKFLOOR_MIN_RESOURCE_DIAGNOSTIC_V1",
+  "status": "RESOURCE_CANDIDATES_FROZEN_PENDING_CANONICAL_REPLAY",
+  "quality_blind": true,
+  "quality_evaluation": "NOT_RUN",
+  "quality_authorization": "User authorized PPL at these rank-floor minimum resource points; execution remains gated on canonical replay, realization, parity, and canary.",
+  "model": {
+    "repo_id": "meta-llama/Meta-Llama-3-8B",
+    "content_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+    "max_position_embeddings": 8192
+  },
+  "target_bytes_unchanged": 143474688,
+  "target_tolerance_fraction": 0.0015,
+  "rank_floor": 64,
+  "anchor_bytes": 159416320,
+  "anchor_replay": {
+    "pass": true,
+    "rank_sha256": "9045f56846a48839411b8a1526ec624d5af16ca256d7d1a570b00e545663e7ad",
+    "B_live_bytes": 159416320
+  },
+  "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+  "protocol_lock_sha256": "85c840f6c5053d3a8734b1c1e173d3d6b649271a9e7b72eaf640bcd8b1e60d99",
+  "profile_path": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb090.json",
+  "profile_sha256": "864cf9832892f8bcdcb2521604b7827bc87b9cdf0b29284fd3283e3900d180b9",
+  "rank_trace_report_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/ultra_aggressive_v1/envelope_attempt2/ultra_aggressive_curve_full_q_attempt2_perlayer_eb_report.json",
+  "rank_trace_report_sha256": "6bbaa31614f372e8c2f8bf406d52a6918c1ae7b8c02e4e9e89891a0589a9e3f2",
+  "rank_trace_basis_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/ultra_aggressive_v1/envelope_attempt2/ultra_aggressive_curve_full_q_attempt2_perlayer_eb.pt",
+  "rank_trace_basis_sha256": "1a406846c1374d3782f94ac3b2e1d8580f2df1fa4bacf2d6d8c8f8d350ab77b5",
+  "full_q_sha256_frozen": "2d1480ecceecdd995a0dae34db236078ce503d67fcdff3072fc03d43f23434f5",
+  "full_q_replay_max_abs_error": 0.0,
+  "arms": {
+    "U_FULL": {
+      "arm": "U_FULL",
+      "component_set": "d1+d2+d5",
+      "method": "TRUE_TWO_PASS_FDP_EB",
+      "lambda": 1.2,
+      "rho": 0.75,
+      "epsilon_base": 0.09355136167585255,
+      "scalar_plateau": [
+        0.09355136167585255,
+        0.09355136167585255
+      ],
+      "epsilon_by_layer": [
+        0.09355136167585255,
+        0.12553659393188743,
+        0.08126199181428408,
+        0.06473808106504543,
+        0.07952598477013306,
+        0.06386490038985827,
+        0.0841837616428698,
+        0.09361710089550859,
+        0.08242373219601057,
+        0.08727264442655684,
+        0.09038986988975971,
+        0.08572940504051199,
+        0.07080912811169833,
+        0.06827711284783314,
+        0.08960381117021637,
+        0.10850587384994363,
+        0.10311334618495588,
+        0.09972458926022315,
+        0.10779864701447558,
+        0.09319927288984466,
+        0.11460443384727613,
+        0.11050128671303362,
+        0.09288900213125963,
+        0.09079428115906257,
+        0.08847488249939331,
+        0.07401261007636806,
+        0.11021802798931564,
+        0.10759446679121916,
+        0.10323556238283497,
+        0.06967129514433357,
+        0.10154947372566969,
+        0.11001962291821016
+      ],
+      "rank_vector_kq_v": [
+        [
+          656,
+          960
+        ],
+        [
+          176,
+          784
+        ],
+        [
+          80,
+          584
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          520,
+          872
+        ],
+        [
+          608,
+          880
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          424,
+          800
+        ],
+        [
+          432,
+          816
+        ],
+        [
+          440,
+          808
+        ],
+        [
+          392,
+          776
+        ],
+        [
+          464,
+          808
+        ],
+        [
+          624,
+          904
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          488,
+          848
+        ],
+        [
+          336,
+          776
+        ],
+        [
+          312,
+          776
+        ],
+        [
+          344,
+          776
+        ],
+        [
+          216,
+          688
+        ],
+        [
+          200,
+          696
+        ],
+        [
+          72,
+          600
+        ],
+        [
+          120,
+          656
+        ],
+        [
+          240,
+          720
+        ],
+        [
+          104,
+          656
+        ],
+        [
+          112,
+          680
+        ],
+        [
+          400,
+          824
+        ],
+        [
+          176,
+          720
+        ],
+        [
+          232,
+          728
+        ],
+        [
+          144,
+          680
+        ],
+        [
+          1016,
+          1024
+        ],
+        [
+          488,
+          864
+        ],
+        [
+          328,
+          792
+        ]
+      ],
+      "rank_sha256": "0bafdf9cd1dbfa3d2a4a4080f5b8c4ab75a34260b3e1c163f7b65d50131e20a7",
+      "q_sha256_round8": "f9735666901647a20299ca63bcda3aa2d237d109e7157ca699087b58265ee352",
+      "B_live_bytes": 151289856,
+      "B_target_bytes_unchanged": 143474688,
+      "target_gap_bytes": 7815168,
+      "target_gap_pct": 5.447070914696814,
+      "within_original_target_tolerance": false,
+      "rank_floor_min": 64,
+      "all_ranks_legal": true,
+      "verified_scalar_curve_coverage_max": 0.17030365629771227,
+      "selection_rule": "minimum B_live among all verified rank-response plateaus with every QK/V rank >=64; ties by scalar distance to 0.09 then rank SHA; quality blind",
+      "quality_status": "NOT_RUN_PENDING_CANONICAL_REPLAY_PARITY_CANARY",
+      "candidate_json_sha256": "6cf7f687a90b57a72e90de579cc84496b1b61c6f4b4ccf22ae239bcf1c0c3a9c",
+      "builder_input_sha256": "24fa3cc43422c3b352ba2f33236737deafc20726beca1afba1ec0199b82083f6",
+      "per_layer_csv_sha256": "3b383207ee871e669de575da36771ec245b592fb12d45d7aac92b5e299788675"
+    },
+    "U_NO_S": {
+      "arm": "U_NO_S",
+      "component_set": "d1+d5",
+      "method": "TRUE_TWO_PASS_FDP_EB",
+      "lambda": 1.2,
+      "rho": 0.75,
+      "epsilon_base": 0.09368490799565266,
+      "scalar_plateau": [
+        0.09368490799565266,
+        0.09368490799565266
+      ],
+      "epsilon_by_layer": [
+        0.09368490799565266,
+        0.12539712289597918,
+        0.08127679891819897,
+        0.06321019553285441,
+        0.07862155538880602,
+        0.06429284307712399,
+        0.08381250414998599,
+        0.09416490709652374,
+        0.08484576488749183,
+        0.08743920708206752,
+        0.09152659744037488,
+        0.08605420359349118,
+        0.07094521928560617,
+        0.07174772992514991,
+        0.09055382066718069,
+        0.1099119095552122,
+        0.10411714272977705,
+        0.09975256466098488,
+        0.10719240236567071,
+        0.09260088950740814,
+        0.11453709590155059,
+        0.11077579227214529,
+        0.09327382497630715,
+        0.09031237225184068,
+        0.08929711555513309,
+        0.07284499894561926,
+        0.11008295175988708,
+        0.10706535368563296,
+        0.10261776504040984,
+        0.06839256689869437,
+        0.10201955386841652,
+        0.11017185577308045
+      ],
+      "rank_vector_kq_v": [
+        [
+          656,
+          960
+        ],
+        [
+          176,
+          784
+        ],
+        [
+          80,
+          584
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          520,
+          872
+        ],
+        [
+          544,
+          848
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          424,
+          800
+        ],
+        [
+          432,
+          816
+        ],
+        [
+          440,
+          808
+        ],
+        [
+          392,
+          776
+        ],
+        [
+          464,
+          808
+        ],
+        [
+          624,
+          904
+        ],
+        [
+          496,
+          856
+        ],
+        [
+          488,
+          848
+        ],
+        [
+          336,
+          776
+        ],
+        [
+          312,
+          776
+        ],
+        [
+          344,
+          776
+        ],
+        [
+          216,
+          688
+        ],
+        [
+          240,
+          720
+        ],
+        [
+          72,
+          600
+        ],
+        [
+          120,
+          656
+        ],
+        [
+          240,
+          720
+        ],
+        [
+          104,
+          656
+        ],
+        [
+          112,
+          680
+        ],
+        [
+          400,
+          824
+        ],
+        [
+          176,
+          720
+        ],
+        [
+          232,
+          728
+        ],
+        [
+          144,
+          680
+        ],
+        [
+          1016,
+          1024
+        ],
+        [
+          488,
+          864
+        ],
+        [
+          328,
+          792
+        ]
+      ],
+      "rank_sha256": "1368cf5a0b2590c06d8bc9fdbd264c07d95e312a6cba16d607dd1b94b678798b",
+      "q_sha256_round8": "1cd00d1626225fa06fc82a91e8a607c215836f439150d957c6bf4631cb53dde4",
+      "B_live_bytes": 150831104,
+      "B_target_bytes_unchanged": 143474688,
+      "target_gap_bytes": 7356416,
+      "target_gap_pct": 5.127326710060523,
+      "within_original_target_tolerance": false,
+      "rank_floor_min": 64,
+      "all_ranks_legal": true,
+      "verified_scalar_curve_coverage_max": 0.17075603572944842,
+      "selection_rule": "minimum B_live among all verified rank-response plateaus with every QK/V rank >=64; ties by scalar distance to 0.09 then rank SHA; quality blind",
+      "quality_status": "NOT_RUN_PENDING_CANONICAL_REPLAY_PARITY_CANARY",
+      "candidate_json_sha256": "5f1881422ba49d727ae7b481176b6eb5bd2c219f2099eae31f50261d94279cf2",
+      "builder_input_sha256": "ef5bea5310196c38e601c713f555fb5aaae17f192e6e8a5c4d03bce9f9639ee4",
+      "per_layer_csv_sha256": "96f0075cfa2b807cb4319d171a43f9456121d66394349874a8ee942006956910"
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "calibration_data_gate": {
+    "c4_source": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/input/c4-train.00000-of-01024.json.gz",
+    "c4_source_sha256": "8ef8d75b0e045dec4aa5123a671b4564466b0707086a7ed1ba8721626dfffbc9",
+    "manifest": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/manifest.json",
+    "manifest_frozen_before_exchange_quality": true,
+    "manifest_sha256": "7237081ca6ba79a2ea002b00564ee6ed5be5d4575000352a970ff4f4336fd3cd",
+    "status": "PASS",
+    "wikitext_source": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/data/wiki-train.hf_joined.raw"
+  },
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "created_utc": "2026-09-18T21:35:24.227841+00:00",
+  "exchange_policy": {
+    "acceptance": "delta_J < 0 and paired bootstrap 95% CI upper bound < 0",
+    "candidate_order_frozen_before_quality": true,
+    "engine": "common native exchange engine",
+    "formal_transfer_count_policy": "calibration-derived accepted T; no formal-test tuning",
+    "max_candidate_proposals": 16,
+    "mode": "ONE_SHOT_PROFILE + BOUNDED_SEQUENTIAL_EXCHANGE_VALIDATION",
+    "nominal_quantum": 32
+  },
+  "fisher": {
+    "anchor_sha256": "b7dfa7ae39cbbee24f1095a89eadec4714c86f4ec6e6c9e60b8024e225d1829b",
+    "calibration_dataset": "WikiText-2 train",
+    "calibration_samples": 32,
+    "calibration_seed": 3,
+    "calibration_seqlen": 1024,
+    "formula": "official PaLu elementwise RMS gradient means over K/V projection weights"
+  },
+  "foreign_jobs_interrupted": 0,
+  "frozen_q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "g_lrd": {
+    "decompose_method": "whiten",
+    "head_group_size": 4,
+    "native_conversion": "official HeadwiseLowRankModule primitives and official whiten scaling matrix"
+  },
+  "gpu1_used": false,
+  "immutable_sources": [
+    "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1",
+    "/diskF/jiaqizhang/FDP_NATIVE_TRANSFER_V2_WORK",
+    "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/Palu"
+  ],
+  "model": {
+    "metadata_files": [
+      {
+        "bytes": 609,
+        "name": "config.json",
+        "sha256": "9242e7db1bc2a17873e66084c3b1c6ed10883076e156b338fd6a7775748e2e3c"
+      },
+      {
+        "bytes": 188,
+        "name": "generation_config.json",
+        "sha256": "11e70f5fd0a1a47346b5a941ff0049d226b353a1647735d9ec171a2b1521e881"
+      },
+      {
+        "bytes": 1842767,
+        "name": "tokenizer.json",
+        "sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e"
+      },
+      {
+        "bytes": 776,
+        "name": "tokenizer_config.json",
+        "sha256": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      {
+        "bytes": 414,
+        "name": "special_tokens_map.json",
+        "sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0"
+      },
+      {
+        "bytes": 499723,
+        "name": "tokenizer.model",
+        "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347"
+      },
+      {
+        "bytes": 26788,
+        "name": "model.safetensors.index.json",
+        "sha256": "217d527037a95cd5cd30384afb425987824373b94cc7206beb48ec0c9499c98f"
+      }
+    ],
+    "metadata_manifest_sha256": "ecb4818707e158b2633e08008490d9c41b3a84f072cea43145a973d48c6bbf65",
+    "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "weight_hash_policy": "weight shards are immutable by source path; full 13GB content hash deferred to avoid duplicating the model"
+  },
+  "native_resource": {
+    "exact_match_required": [
+      "total_native_rank",
+      "prefill_cache_bytes",
+      "decode_cache_bytes"
+    ],
+    "gqa_semantics": "two persisted native K/V slots per module in frozen anchor schema",
+    "rank_cap_per_slot": 512,
+    "rank_quantum": 32,
+    "resource_formula": "slot rank * sequence length * dtype bytes; K/V aggregate over all native slots",
+    "slots_per_kv_module": 2
+  },
+  "official_repo": {
+    "commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+    "path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/Palu",
+    "status_note": "working tree contains pre-existing cache/untracked artifacts; source implementation is not modified by this campaign"
+  },
+  "profile_input": {
+    "copied_artifacts": [
+      {
+        "bytes": 46592,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/llama2_ratio_0.3_anchor_schedule.json",
+        "sha256": "a0f30a45b338203ac776438db1b39a7878a749072f7d922a20929f5aab04b8bf",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/official_schedule/ratio_0.3/schedule.json"
+      },
+      {
+        "bytes": 16067,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/llama2_ratio_0.3_anchor_units.csv",
+        "sha256": "508716d38a36d69d4cbe4f102f5315e5c243728d5a65310468d3ff631f7cfc6a",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/official_schedule/ratio_0.3/units.csv"
+      },
+      {
+        "bytes": 46628,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/llama2_ratio_0.5_anchor_schedule.json",
+        "sha256": "d969a428aec03d48df6dc2e18a307e829b482ecdf199fd400343d797d4936766",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/official_schedule/ratio_0.5/schedule.json"
+      },
+      {
+        "bytes": 16085,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/llama2_ratio_0.5_anchor_units.csv",
+        "sha256": "14038dc4f4bd5f96d078868c211cbe039cfdc286e268faf4fca0cf24212e2503",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/official_schedule/ratio_0.5/units.csv"
+      },
+      {
+        "bytes": 46721,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/llama2_ratio_0.7_anchor_schedule.json",
+        "sha256": "2a2192807fe57d22e846d94e646f2d6668a6499ed00f198a385bb20186c4081c",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/official_schedule/ratio_0.7/schedule.json"
+      },
+      {
+        "bytes": 16131,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/llama2_ratio_0.7_anchor_units.csv",
+        "sha256": "1dd1e084e486de4a505a50bc11468f5c0812b922db52cd07be9f58c9fbc87977",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/official_schedule/ratio_0.7/units.csv"
+      },
+      {
+        "bytes": 2337,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/SOURCE_OFFICIAL_SCHEDULE_FREEZE_MANIFEST.json",
+        "sha256": "cd58580a4e1e7561a8033f92e9a7ef9d93af3fe47fa9e3bf3d64c78dfd9b95ec",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/official_schedule/OFFICIAL_SCHEDULE_FREEZE_MANIFEST.json"
+      },
+      {
+        "bytes": 1189,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/SOURCE_OFFICIAL_SCHEDULE_SEMANTICS_AUDIT.json",
+        "sha256": "7a519819432f8b76663e2a5e53b668e4562bb41dc6d17ef5074432e55be58d9f",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/official_schedule/OFFICIAL_SCHEDULE_SEMANTICS_AUDIT.json"
+      },
+      {
+        "bytes": 218473,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/SOURCE_PALU_NATIVE_MARGINAL_PER_UNIT.csv",
+        "sha256": "01fc59cdc5d987c5e1c170beb901191493d7e681df66f43e4a8b7f1f29bd7725",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/PALU_NATIVE_MARGINAL_PER_UNIT.csv"
+      },
+      {
+        "bytes": 2018,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/SOURCE_PALU_SIGNAL_CORRELATION_TABLE.csv",
+        "sha256": "79dfc0674fbaf717940b5d6bd2b241a1559e90832327802ce02da10a59350593",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/PALU_SIGNAL_CORRELATION_TABLE.csv"
+      },
+      {
+        "bytes": 16907,
+        "copied_to": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/audit/SOURCE_PALU_FISHER_VS_FUNCTIONAL_MARGINAL.json",
+        "sha256": "3a0f136d3d52b78e45a247ce5469c818b0d2d5ce27323625ee6fde4cdc485804",
+        "source": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1/PALU_FISHER_VS_FUNCTIONAL_MARGINAL.json"
+      }
+    ],
+    "path": "/diskE/jiaqizhang/PALU_FISHER_VS_FUNCTIONAL_MARGINAL_V1",
+    "status": "IMMUTABLE_REUSED; no phi recomputation"
+  },
+  "ratio_mapping": {
+    "0.3": {
+      "compression_fraction": 0.7,
+      "retained_fraction": 0.3
+    },
+    "0.5": {
+      "compression_fraction": 0.5,
+      "retained_fraction": 0.5
+    },
+    "0.7": {
+      "compression_fraction": 0.3,
+      "retained_fraction": 0.7
+    },
+    "mapping_source": "official Palu README/compress.py and run_official_palu_offline.py; not inferred from filename",
+    "repository_parameter_ratio_target": "retained native rank fraction"
+  },
+  "runtime": {
+    "datasets": "3.3.2",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.44.2"
+  },
+  "status": "CALIBRATION_MANIFEST_FROZEN_PRE_EXCHANGE",
+  "tokenizer": {
+    "authority": "AutoTokenizer from official model path",
+    "model_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf"
+  }
+}

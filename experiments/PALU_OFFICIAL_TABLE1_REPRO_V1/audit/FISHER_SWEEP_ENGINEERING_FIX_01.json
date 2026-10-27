@@ -1,0 +1,14 @@
+{
+  "affected_cell": "J_LRD_GS32_FISHER_UNIFORM",
+  "failure_behavior": "Official Fisher calibration requested WikiText train via the Hub and failed in offline mode before Fisher profiling, decomposition, or PPL evaluation.",
+  "failure_type": "ConnectionError",
+  "foreign_jobs_interrupted": 0,
+  "historical_results_modified": false,
+  "logged_utc": "2026-09-29T20:18:11.638189+00:00",
+  "old_results_valid": true,
+  "quality_result_produced_before_failure": false,
+  "reason": "Couldn't reach 'wikitext' on the Hub (OfflineModeIsEnabled)",
+  "repair": "Apply the local pinned-Parquet loader before importing official palu.data_utils, which captures datasets.load_dataset at module import time.",
+  "retry_scope": "Only the incomplete Fisher Table1/Table6 sweep; no completed quality cell is rerun.",
+  "schema": "PALU_ENGINEERING_FIX_AUDIT_V1"
+}

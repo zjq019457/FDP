@@ -1,0 +1,162 @@
+{
+  "llama31": {
+    "chat_template_sha256": null,
+    "final_prompt_sequence_sha256_by_task": null,
+    "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "reason": "Requested LLaMA result/model snapshot is absent on this machine; no substitute tokenizer was used.",
+    "status": "BLOCKED_SOURCE_ABSENT"
+  },
+  "no_chat_tasks": [
+    "lcc",
+    "lsht",
+    "repobench-p",
+    "samsum",
+    "trec",
+    "triviaqa"
+  ],
+  "prompt_template_file_sha256": "3c06dba9f4308375d8751a7dbf6d0f4167b4d64afc27655e6577cc4bb51f1b91",
+  "prompt_template_source": "configs/dataset2prompt.json",
+  "qwen25": {
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "final_prompt_sequence_sha256_by_task": {
+      "2wikimqa": "1d4420747b52da18eeb1f8765dd40ace98372cca4b40c5db771efcc1ad873818",
+      "gov_report": "587d0e74ce757f00aec8bfcf342ce717e5210fd635d47c23f5b871be0e60ef89",
+      "hotpotqa": "097449c87886a3b8b4cdc2705155f930c2a5676cad26e99c015317bcbca7d640",
+      "lcc": "97985fc2a96b2bd273f38eba8fbb2494c8a10e465845ec8599d15a0344216569",
+      "lsht": "046ef0aeffa5bc2ce52a18f63099632a48b89c0b36331555020d2dc6cd159974",
+      "multi_news": "c10a856f22d1c5ec95b03a2d24fae50e412d74918a28c0bb7be3be307a4dc033",
+      "multifieldqa_en": "a27506c639a140a7bd0cf8c27b6c953f112702c7b9e07e0c05bc0fdf17adca86",
+      "musique": "82e8d592bbfa89edc95daadf4b3e49945aa1a8155860b4e4fe0e235630604278",
+      "passage_count": "ebe1a5bb5acde556b61133cf4942ef6ab23f7d9e03081004452c2ffaea2e0fd1",
+      "passage_retrieval_en": "cc54a0c3601b017ff662097b1ab7b11bed90003a3a565e04a4a97d1e34e973d4",
+      "qasper": "b614135970fcfa9fe88196089e677957ae55e88bd8569e6af1066a431b145f97",
+      "qmsum": "61f198f4f4b52a30e7f8868c05915cbbe90facc8cb34b6f0db3c4ad9d0172164",
+      "repobench-p": "f24d83a14d0dc8d27d3400b759ba3cdfa6bbef23596e2eb92e87da23dc950865",
+      "samsum": "559733e0fad4f4b39a49e1887ec2151c7c4713af460f405b3d685d38dd536938",
+      "trec": "add98558fd9f914547b9b33e2419d296dfff0c59cf3515a4822ab3dc167b488f",
+      "triviaqa": "f59f955ea3782d35b9ea46bda06d04b80521c9e468f5588acb5dce698a040b36",
+      "vcsum": "4bc05cb6587f1f37b84cf3b56a7920ad6eba222f590f22fd8a6ac962cbb7bc68"
+    },
+    "max_raw_prompt_tokens_by_task": {
+      "2wikimqa": 17050,
+      "gov_report": 52555,
+      "hotpotqa": 17655,
+      "lcc": 32634,
+      "lsht": 28153,
+      "multi_news": 14311,
+      "multifieldqa_en": 16498,
+      "musique": 17898,
+      "passage_count": 29628,
+      "passage_retrieval_en": 15641,
+      "qasper": 22045,
+      "qmsum": 30437,
+      "repobench-p": 39268,
+      "samsum": 18047,
+      "trec": 11482,
+      "triviaqa": 24334,
+      "vcsum": 26437
+    },
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "runtime_truncation_count_by_task": {
+      "2wikimqa": 0,
+      "gov_report": 0,
+      "hotpotqa": 0,
+      "lcc": 0,
+      "lsht": 0,
+      "multi_news": 0,
+      "multifieldqa_en": 0,
+      "musique": 0,
+      "passage_count": 0,
+      "passage_retrieval_en": 0,
+      "qasper": 0,
+      "qmsum": 0,
+      "repobench-p": 0,
+      "samsum": 0,
+      "trec": 0,
+      "triviaqa": 0,
+      "vcsum": 0
+    },
+    "snapshot_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "status": "verified_exact_final_rendering",
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "tokenizer_config_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "tokenizer_json_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+  },
+  "rendering_order": [
+    "format dataset template with parsed sample",
+    "tokenize raw formatted prompt without truncation",
+    "if token length exceeds model max, decode first half plus last half",
+    "apply model chat template except for no-chat tasks",
+    "SHA256 exact final prompt UTF-8 text before final tokenizer call"
+  ],
+  "task_templates": {
+    "2wikimqa": {
+      "template_sha256": "9ec4ae308865bd0c62af20b3dc7b12b31f2b447f55684bd88c1aa40f2f636deb",
+      "uses_chat_template": true
+    },
+    "gov_report": {
+      "template_sha256": "91c25d585b189ced91c9280efcb4ecb5dcff9548cd4e3bfae66c68025b569e95",
+      "uses_chat_template": true
+    },
+    "hotpotqa": {
+      "template_sha256": "9ec4ae308865bd0c62af20b3dc7b12b31f2b447f55684bd88c1aa40f2f636deb",
+      "uses_chat_template": true
+    },
+    "lcc": {
+      "template_sha256": "6a1f24cf0bb83cd90f1fca8f0dd24801626c2aaea29db834ddc83b950e71190e",
+      "uses_chat_template": false
+    },
+    "lsht": {
+      "template_sha256": "f3edabdf7fae53d6cadfa7a10f3574d114302161c46dacecd5d30763204bbbf3",
+      "uses_chat_template": false
+    },
+    "multi_news": {
+      "template_sha256": "2af3f28c40b902e6535d4910510d51653613c49de9b2fc287c5958395061101d",
+      "uses_chat_template": true
+    },
+    "multifieldqa_en": {
+      "template_sha256": "20b4666a2de8a1f701bdb6c4e015fa9f8758d64b361d841f7766df6c9ceba770",
+      "uses_chat_template": true
+    },
+    "musique": {
+      "template_sha256": "9ec4ae308865bd0c62af20b3dc7b12b31f2b447f55684bd88c1aa40f2f636deb",
+      "uses_chat_template": true
+    },
+    "passage_count": {
+      "template_sha256": "986550b6c61009c629a4535766d94b7b51e2b2b9e1ed169e4ecb54417466e964",
+      "uses_chat_template": true
+    },
+    "passage_retrieval_en": {
+      "template_sha256": "39b96b7fa52bdd2aa2bde34ea199158505201b9a0a2c3ce94e80249293f60431",
+      "uses_chat_template": true
+    },
+    "qasper": {
+      "template_sha256": "0fbdd123fe7f83d6d6a9c583ca28cb29d68e523bf8fec01a0cf2dcd11037775d",
+      "uses_chat_template": true
+    },
+    "qmsum": {
+      "template_sha256": "dca23b678fe0183bbd9555b57947022aed1b85739da5ad7e1b4708dd0c71c409",
+      "uses_chat_template": true
+    },
+    "repobench-p": {
+      "template_sha256": "ee9ec182ea5ffeb70a7140d55baea97264a8612d88226d323afa90859c36240c",
+      "uses_chat_template": false
+    },
+    "samsum": {
+      "template_sha256": "a68d884234907eefcaa0eacf7b2997f60fa46603988dceae6a44f9b49f045b3f",
+      "uses_chat_template": false
+    },
+    "trec": {
+      "template_sha256": "0eff8bebdba99d91e9d7d91b6ab39455ac74648bea92c9255c9f68c62175b2db",
+      "uses_chat_template": false
+    },
+    "triviaqa": {
+      "template_sha256": "00a802e6377e72fca39b169cf6c28893bedf23ba7286b03ecd15867c3e27a7c4",
+      "uses_chat_template": false
+    },
+    "vcsum": {
+      "template_sha256": "3e5d8241bc9b512eb4929c1ba80882a44f50b446bc2b1d9d79eff030dd10dc27",
+      "uses_chat_template": true
+    }
+  }
+}

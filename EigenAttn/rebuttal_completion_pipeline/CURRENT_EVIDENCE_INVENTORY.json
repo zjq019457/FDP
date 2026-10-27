@@ -1,0 +1,441 @@
+{
+  "generated_at": "2026-07-29T19:56:45.162562-07:00",
+  "gates": {
+    "DENSE_PARITY_PASS": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/DENSE_PARITY_PASS.DONE",
+      "sha256": "aa3fbe41d7135b71d8a2d47df6bde619c8eacf844eb0a55e4bc6c2120d59e0a3"
+    },
+    "UNIFORM_PARITY_PASS": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/UNIFORM_PARITY_PASS.DONE",
+      "sha256": "f64dbb97435878ffab0f703c34ca08559bab1859481d8060824ddc0d023141b6"
+    },
+    "LEGACY_FDP_PARITY_PASS": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/LEGACY_FDP_PARITY_PASS.DONE",
+      "sha256": "796756f62e23d537e34739f25f3c1fe69fc621c7e4fd32041527db42d9435ea4"
+    },
+    "R4_STATISTICS_PASS": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/R4_STATISTICS_PASS.DONE",
+      "sha256": "094001e6cd4e867bdf3bcdd8f1b853b1d335a70545f2ef310ec46bc842938ae8"
+    },
+    "R5_HISTORICAL_PARITY_PASS": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/R5_HISTORICAL_PARITY_PASS.DONE",
+      "sha256": "20ee5f736922e1115938269d702b35394cc14791fc9696744590b129efcfc257"
+    },
+    "R6_STATISTICS_PASS": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/R6_STATISTICS_PASS.DONE",
+      "sha256": "10037eaa3f7312687a640903c25da5596e0858d99a9ae8b87b6d198a54c9da13"
+    },
+    "R8_SYSTEM_METRICS_PASS": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/R8_SYSTEM_METRICS_PASS.DONE",
+      "sha256": "3b9c77d7fdb0d8fc6f840d57050af85bdb5547a904258066a5d017842a7453b3"
+    },
+    "R10_KQV_ABLATION_PASS": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/R10_KQV_ABLATION_PASS.DONE",
+      "sha256": "1d38c8ac7d812cbf5a641b6bbdd260adfb45f644d7e55b2db4783dfadb0d50f8"
+    },
+    "R11_ROBUSTNESS_PASS": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/R11_ROBUSTNESS_PASS.DONE",
+      "sha256": "d095956f0f83b498bed2d2d59ccd55fc5a02adf9e265063458a40865283ce308"
+    },
+    "SUPPLEMENTARY_EXPERIMENTS_COMPLETE": {
+      "exists": true,
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/SUPPLEMENTARY_EXPERIMENTS_COMPLETE.DONE",
+      "sha256": "65028afe83a43978998e615b5b8d769b70f6d8e636a7f38d1b589092d34a90d1"
+    }
+  },
+  "methods": {
+    "dense": {
+      "wikitext2": {
+        "method": "dense",
+        "dataset": "wikitext2",
+        "present": true,
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/R1_dense_wikitext_ppl",
+        "ppl": 6.138120287244493,
+        "token_count_sum": 288768,
+        "used_windows": 141,
+        "evaluation_protocol_hash": null,
+        "aggregate_sha256": "9a14f2b48316c02661f1018d2a07926b4ffdc06688b1faebce2a39d14771bd76",
+        "window_count": 141,
+        "windows_sha256": "2ae7eb143d2fdc2859fb6a912f7706225a3eaf61a5dd28651cb560e85d7bb483",
+        "sample_window_ids": [
+          "wiki_00000",
+          "wiki_00001",
+          "wiki_00002"
+        ],
+        "unique_input_hashes": 141
+      },
+      "c4": {
+        "method": "dense",
+        "dataset": "c4",
+        "present": true,
+        "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/artifacts/R1_dense_c4_ppl",
+        "ppl": 8.59711311681018,
+        "token_count_sum": 524288,
+        "used_windows": 256,
+        "evaluation_protocol_hash": null,
+        "aggregate_sha256": "95ad8b1c6ce68e309a849153b4b3ff942fac54885ce8af6bd2b36aa34cc3809f",
+        "window_count": 256,
+        "windows_sha256": "98d8748817fc7e3f230e1e73ce38127c9e429350c7e9bd4c4cef45b476a0a741",
+        "sample_window_ids": [
+          "c4_00000",
+          "c4_00001",
+          "c4_00002"
+        ],
+        "unique_input_hashes": 231
+      },
+      "zero_shot": {
+        "method": "dense",
+        "tasks": {
+          "hellaswag_localjsonl": {
+            "n": 10042,
+            "correct": 5871,
+            "accuracy_from_correct": 0.5846444931288588,
+            "lm_eval_primary": 0.5846444931288588,
+            "lm_eval_row": {
+              "acc,none": 0.5846444931288588,
+              "acc_stderr,none": 0.004917761181740155,
+              "alias": "hellaswag_localjsonl"
+            },
+            "task_definition_hash": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R1_dense_zs_hs_arc/zero_shot_samples/hellaswag_localjsonl.jsonl",
+            "sample_count": 10042
+          },
+          "arc_challenge_localjsonl": {
+            "n": 1172,
+            "correct": 587,
+            "accuracy_from_correct": 0.5008532423208191,
+            "lm_eval_primary": 0.5008532423208191,
+            "lm_eval_row": {
+              "acc,none": 0.5008532423208191,
+              "acc_stderr,none": 0.014611369529813276,
+              "acc_norm,none": 0.5349829351535836,
+              "acc_norm_stderr,none": 0.014575583922019665,
+              "alias": "arc_challenge_localjsonl"
+            },
+            "task_definition_hash": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R1_dense_zs_hs_arc/zero_shot_samples/arc_challenge_localjsonl.jsonl",
+            "sample_count": 1172
+          },
+          "arc_easy_localjsonl": {
+            "n": 2376,
+            "correct": 1843,
+            "accuracy_from_correct": 0.7756734006734006,
+            "lm_eval_primary": 0.7756734006734006,
+            "lm_eval_row": {
+              "acc,none": 0.7756734006734006,
+              "acc_stderr,none": 0.00855949275824116,
+              "acc_norm,none": 0.6519360269360269,
+              "acc_norm_stderr,none": 0.009774627600259014,
+              "alias": "arc_easy_localjsonl"
+            },
+            "task_definition_hash": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R1_dense_zs_hs_arc/zero_shot_samples/arc_easy_localjsonl.jsonl",
+            "sample_count": 2376
+          },
+          "winogrande_localjsonl": {
+            "n": 1267,
+            "correct": 928,
+            "accuracy_from_correct": 0.7324388318863457,
+            "lm_eval_primary": 0.7324388318863457,
+            "lm_eval_row": {
+              "acc,none": 0.7324388318863457,
+              "acc_stderr,none": 0.01244171845689301,
+              "alias": "winogrande_localjsonl"
+            },
+            "task_definition_hash": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R1_dense_zs_wg_piqa/zero_shot_samples/winogrande_localjsonl.jsonl",
+            "sample_count": 1267
+          },
+          "piqa_localjsonl": {
+            "n": 1838,
+            "correct": 1461,
+            "accuracy_from_correct": 0.794885745375408,
+            "lm_eval_primary": 0.794885745375408,
+            "lm_eval_row": {
+              "acc,none": 0.794885745375408,
+              "acc_stderr,none": 0.009420971671017915,
+              "alias": "piqa_localjsonl"
+            },
+            "task_definition_hash": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R1_dense_zs_wg_piqa/zero_shot_samples/piqa_localjsonl.jsonl",
+            "sample_count": 1838
+          }
+        },
+        "macro_accuracy": 0.6776991426769664,
+        "complete_five_tasks": true
+      }
+    },
+    "uniform_eb045": {
+      "wikitext2": {
+        "method": "uniform_eb045",
+        "dataset": "wikitext2",
+        "present": true,
+        "path": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R2_uniform_wikitext_ppl",
+        "ppl": 6.7294786479615984,
+        "token_count_sum": 288768,
+        "used_windows": 141,
+        "evaluation_protocol_hash": null,
+        "aggregate_sha256": "98d00eb2da984c7944c4f5d9acdb72f768a30dfb4ce0ae5bb4918b8214ae08df",
+        "window_count": 141,
+        "windows_sha256": "40f3d636ce50a2faab8ebc58bd8bc4444844830bd7e5f381d4cdcc65b4966aa2",
+        "sample_window_ids": [
+          "wiki_00000",
+          "wiki_00001",
+          "wiki_00002"
+        ],
+        "unique_input_hashes": 141
+      },
+      "c4": {
+        "method": "uniform_eb045",
+        "dataset": "c4",
+        "present": true,
+        "path": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R2_uniform_c4_ppl",
+        "ppl": 9.83562032647886,
+        "token_count_sum": 524288,
+        "used_windows": 256,
+        "evaluation_protocol_hash": null,
+        "aggregate_sha256": "f5847386c765ac1b7348419c101ec1fde9af49a2de78763ffcf2d7afa0740a19",
+        "window_count": 256,
+        "windows_sha256": "57b01b514a87b23af026c36b0f5c4240ddf426587b491bf69e74062ee3b97b86",
+        "sample_window_ids": [
+          "c4_00000",
+          "c4_00001",
+          "c4_00002"
+        ],
+        "unique_input_hashes": 231
+      },
+      "zero_shot": {
+        "method": "uniform_eb045",
+        "tasks": {
+          "hellaswag_localjsonl": {
+            "n": 10042,
+            "correct": 5638,
+            "accuracy_from_correct": 0.5614419438358893,
+            "lm_eval_primary": 0.5614419438358893,
+            "lm_eval_row": {
+              "acc,none": 0.5614419438358893,
+              "acc_stderr,none": 0.004951964131921342,
+              "alias": "hellaswag_localjsonl"
+            },
+            "task_definition_hash": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R2_uniform_zs_hs_arc/zero_shot_samples/hellaswag_localjsonl.jsonl",
+            "sample_count": 10042
+          },
+          "arc_challenge_localjsonl": {
+            "n": 1172,
+            "correct": 550,
+            "accuracy_from_correct": 0.46928327645051193,
+            "lm_eval_primary": 0.46928327645051193,
+            "lm_eval_row": {
+              "acc,none": 0.46928327645051193,
+              "acc_stderr,none": 0.014583792546304038,
+              "acc_norm,none": 0.5204778156996587,
+              "acc_norm_stderr,none": 0.014599131353035004,
+              "alias": "arc_challenge_localjsonl"
+            },
+            "task_definition_hash": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R2_uniform_zs_hs_arc/zero_shot_samples/arc_challenge_localjsonl.jsonl",
+            "sample_count": 1172
+          },
+          "arc_easy_localjsonl": {
+            "n": 2376,
+            "correct": 1822,
+            "accuracy_from_correct": 0.7668350168350169,
+            "lm_eval_primary": 0.7668350168350169,
+            "lm_eval_row": {
+              "acc,none": 0.7668350168350169,
+              "acc_stderr,none": 0.008676624951179686,
+              "acc_norm,none": 0.6620370370370371,
+              "acc_norm_stderr,none": 0.009706080538632858,
+              "alias": "arc_easy_localjsonl"
+            },
+            "task_definition_hash": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R2_uniform_zs_hs_arc/zero_shot_samples/arc_easy_localjsonl.jsonl",
+            "sample_count": 2376
+          },
+          "winogrande_localjsonl": {
+            "n": 1267,
+            "correct": 915,
+            "accuracy_from_correct": 0.7221783741120757,
+            "lm_eval_primary": 0.7221783741120757,
+            "lm_eval_row": {
+              "acc,none": 0.7221783741120757,
+              "acc_stderr,none": 0.01258891818387159,
+              "alias": "winogrande_localjsonl"
+            },
+            "task_definition_hash": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R2_uniform_zs_wg_piqa/zero_shot_samples/winogrande_localjsonl.jsonl",
+            "sample_count": 1267
+          },
+          "piqa_localjsonl": {
+            "n": 1838,
+            "correct": 1443,
+            "accuracy_from_correct": 0.7850924918389554,
+            "lm_eval_primary": 0.7850924918389554,
+            "lm_eval_row": {
+              "acc,none": 0.7850924918389554,
+              "acc_stderr,none": 0.009583665082653302,
+              "alias": "piqa_localjsonl"
+            },
+            "task_definition_hash": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R2_uniform_zs_wg_piqa/zero_shot_samples/piqa_localjsonl.jsonl",
+            "sample_count": 1838
+          }
+        },
+        "macro_accuracy": 0.6609662206144898,
+        "complete_five_tasks": true
+      }
+    },
+    "FGeb045": {
+      "wikitext2": {
+        "method": "FGeb045",
+        "dataset": "wikitext2",
+        "present": true,
+        "path": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R3_fdp_wikitext_ppl",
+        "ppl": 6.649582661740018,
+        "token_count_sum": 288768,
+        "used_windows": 141,
+        "evaluation_protocol_hash": null,
+        "aggregate_sha256": "eef571c31f0a2a28b71dd51ba334e5520a913243d02de9d2425ba5ef3b80230c",
+        "window_count": 141,
+        "windows_sha256": "c76574852aaba9367f247f16a72095e1cdef9ddd4359e4fa1fa55701c78f53fb",
+        "sample_window_ids": [
+          "wiki_00000",
+          "wiki_00001",
+          "wiki_00002"
+        ],
+        "unique_input_hashes": 141
+      },
+      "c4": {
+        "method": "FGeb045",
+        "dataset": "c4",
+        "present": true,
+        "path": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R3_fdp_c4_ppl",
+        "ppl": 9.693687291910727,
+        "token_count_sum": 524288,
+        "used_windows": 256,
+        "evaluation_protocol_hash": null,
+        "aggregate_sha256": "2f17ed5185f64e9da8c93c31304e158e6afe9c03ca2c86075ea33b00faf11ae6",
+        "window_count": 256,
+        "windows_sha256": "f1128963017bdc1b0f24edf5499c8ac95d54d5677ce0cd11b6801e0c5de2c085",
+        "sample_window_ids": [
+          "c4_00000",
+          "c4_00001",
+          "c4_00002"
+        ],
+        "unique_input_hashes": 231
+      },
+      "zero_shot": {
+        "method": "FGeb045",
+        "tasks": {
+          "hellaswag_localjsonl": {
+            "n": 10042,
+            "correct": 5652,
+            "accuracy_from_correct": 0.5628360884285999,
+            "lm_eval_primary": 0.5628360884285999,
+            "lm_eval_row": {
+              "acc,none": 0.5628360884285999,
+              "acc_stderr,none": 0.004950221546187558,
+              "alias": "hellaswag_localjsonl"
+            },
+            "task_definition_hash": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R3_fdp_zs_hs_arc/zero_shot_samples/hellaswag_localjsonl.jsonl",
+            "sample_count": 10042
+          },
+          "arc_challenge_localjsonl": {
+            "n": 1172,
+            "correct": 570,
+            "accuracy_from_correct": 0.4863481228668942,
+            "lm_eval_primary": 0.4863481228668942,
+            "lm_eval_row": {
+              "acc,none": 0.4863481228668942,
+              "acc_stderr,none": 0.01460594342986095,
+              "acc_norm,none": 0.5366894197952219,
+              "acc_norm_stderr,none": 0.014572000527756996,
+              "alias": "arc_challenge_localjsonl"
+            },
+            "task_definition_hash": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R3_fdp_zs_hs_arc/zero_shot_samples/arc_challenge_localjsonl.jsonl",
+            "sample_count": 1172
+          },
+          "arc_easy_localjsonl": {
+            "n": 2376,
+            "correct": 1826,
+            "accuracy_from_correct": 0.7685185185185185,
+            "lm_eval_primary": 0.7685185185185185,
+            "lm_eval_row": {
+              "acc,none": 0.7685185185185185,
+              "acc_stderr,none": 0.0086547292873258,
+              "acc_norm,none": 0.6797138047138047,
+              "acc_norm_stderr,none": 0.00957415266873942,
+              "alias": "arc_easy_localjsonl"
+            },
+            "task_definition_hash": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R3_fdp_zs_hs_arc/zero_shot_samples/arc_easy_localjsonl.jsonl",
+            "sample_count": 2376
+          },
+          "winogrande_localjsonl": {
+            "n": 1267,
+            "correct": 916,
+            "accuracy_from_correct": 0.7229676400947119,
+            "lm_eval_primary": 0.7229676400947119,
+            "lm_eval_row": {
+              "acc,none": 0.7229676400947119,
+              "acc_stderr,none": 0.012577891015342416,
+              "alias": "winogrande_localjsonl"
+            },
+            "task_definition_hash": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R3_fdp_zs_wg_piqa/zero_shot_samples/winogrande_localjsonl.jsonl",
+            "sample_count": 1267
+          },
+          "piqa_localjsonl": {
+            "n": 1838,
+            "correct": 1445,
+            "accuracy_from_correct": 0.7861806311207835,
+            "lm_eval_primary": 0.7861806311207835,
+            "lm_eval_row": {
+              "acc,none": 0.7861806311207835,
+              "acc_stderr,none": 0.009565994206915597,
+              "alias": "piqa_localjsonl"
+            },
+            "task_definition_hash": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1",
+            "sample_file": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/R3_fdp_zs_wg_piqa/zero_shot_samples/piqa_localjsonl.jsonl",
+            "sample_count": 1838
+          }
+        },
+        "macro_accuracy": 0.6653702002059017,
+        "complete_five_tasks": true
+      }
+    }
+  },
+  "rank_plans": {
+    "uniform": {
+      "path": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/LEGACY_UNIFORM_RANK_PLAN.csv",
+      "sha256": "d0ba9c6174d915761c27e18829d7c5936c151e7775ab5e188ef5925253d636f3"
+    }
+  },
+  "basis_manifests": {
+    "fdp": {
+      "path": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/r3_fgeb045/LEGACY_FDP_MODEL_MANIFEST.json",
+      "sha256": "d0a0f04a03a5506d7638f10fee65db96ebdf1a69f890d78a2649e57248ca7336"
+    }
+  },
+  "kv_memory": {
+    "uniform": {
+      "seqlen": 2048,
+      "bytes_per_elem": 2,
+      "dense_kv_bytes": 268435456,
+      "realized_kv_bytes": 217219072,
+      "retained_ratio": 0.8092041015625
+    }
+  }
+}

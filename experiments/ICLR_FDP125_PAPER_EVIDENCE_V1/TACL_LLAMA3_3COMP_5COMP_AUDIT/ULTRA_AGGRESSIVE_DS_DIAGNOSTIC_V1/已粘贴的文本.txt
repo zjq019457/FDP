@@ -1,0 +1,257 @@
+Continue the current final FDP-EB ablation line with ONE new stronger-compression
+diagnostic tier, named Ultra-Aggressive.
+
+SCIENTIFIC GOAL
+Test whether the Causal score error component d^S becomes functionally useful
+when EigenAttention compression is substantially stronger.
+
+This is a diagnostic extension only.
+Do NOT redesign FDP.
+Do NOT change the frozen three-component Full profile:
+    q_l = MinMax_layers(d_l^Z + d_l^S + d_l^H)
+Do NOT change lambda=1.2.
+Do NOT change calibration data, component definitions, legal-rank machinery,
+layer-0 rule, model, evaluation protocol, or resource accounting.
+
+============================================================
+A. FREEZE THE ULTRA-AGGRESSIVE RESOURCE TARGET BEFORE QUALITY
+============================================================
+
+Use the existing Aggressive ablation Full point as the resource anchor:
+
+    Aggressive Full B_live = 159,416,320 bytes
+
+Define the new Ultra-Aggressive target deterministically as:
+
+    B_target_ultra = 0.90 * 159,416,320
+                   = 143,474,688 bytes
+
+This target is now frozen.
+
+No WikiText, C4, zero-shot, LongBench, or other formal quality result may be
+inspected while choosing the Ultra schedules.
+
+Search only over the existing native legal EigenAttention rank space.
+
+Preferred resource tolerance:
+    |B_live - B_target_ultra| / B_target_ultra <= 0.15%
+
+If no legal schedule falls inside 0.15%, choose the closest legal schedule and
+report the exact gap. Do NOT change the target after seeing quality.
+
+============================================================
+B. BUILD TWO PRIMARY ULTRA ARMS
+============================================================
+
+Arm U-FULL:
+    score_l = d_l^Z + d_l^S + d_l^H
+    q_l = MinMax_layers(score_l)
+
+Arm U-NO-S:
+    score_l = d_l^Z + d_l^H
+    q_l = MinMax_layers(score_l)
+
+For each arm use the existing frozen FDP mapping:
+
+    epsilon_l_raw = epsilon_base / (1 + 1.2 * q_l)
+
+then the existing mean normalization and native legal-rank projection.
+
+The ONLY scientific difference between U-FULL and U-NO-S must be whether
+d_l^S is included.
+
+For the resource-controlled comparison, epsilon_base may be searched
+independently for each arm ONLY to match the frozen Ultra resource target.
+This search must use resource information only.
+
+Do NOT inspect quality during epsilon_base search.
+
+Freeze:
+- epsilon_base
+- per-layer q_l
+- per-layer QK/V legal ranks
+- rank schedule SHA
+- B_live
+before starting formal evaluation.
+
+============================================================
+C. ALSO RECORD THE NATIVE SAME-OPERATING-POINT EFFECT
+============================================================
+
+In addition to the resource-matched comparison, record one native ablation
+diagnostic:
+
+1. Take the frozen U-FULL epsilon_base.
+2. Remove d^S.
+3. Recompute q_l and native legal ranks using the SAME epsilon_base.
+4. Do not retune epsilon_base.
+5. Record:
+   - B_live change
+   - number of layers whose rank changes
+   - QK rank changes
+   - V rank changes
+   - rank SHA
+   - per-layer rank deltas
+
+This native diagnostic answers:
+
+    Does d^S actually move the allocator at this stronger operating point?
+
+Do NOT run a separate quality evaluation for this native diagnostic unless its
+schedule is already identical to one of the formal resource-controlled arms.
+Its main purpose is allocation/mechanism analysis.
+
+============================================================
+D. FORMAL QUALITY EVALUATION
+============================================================
+
+After both resource-controlled schedules are frozen, evaluate U-FULL and
+U-NO-S using exactly the same PPL protocol as the existing final FDP-EB
+Llama-3 ablation:
+
+Model:
+    meta-llama/Meta-Llama-3-8B
+
+Datasets:
+    WikiText
+    C4
+
+Use exactly the same:
+- window construction
+- sample/window IDs
+- tokenization
+- masking
+- dtype/backend
+- deterministic settings
+- evaluation code
+as the current final ablation.
+
+Report:
+
+    Wiki PPL
+    C4 PPL
+    J
+
+where J uses exactly the currently frozen paper definition.
+
+Also save aligned per-window NLL for both arms.
+
+============================================================
+E. PAIRED UNCERTAINTY
+============================================================
+
+Run paired bootstrap with 10,000 resamples using the same frozen bootstrap
+implementation/protocol already used in the paper.
+
+Primary contrast:
+
+    U-FULL - U-NO-S
+
+Report:
+
+    ΔlogPPL_Wiki
+    95% CI
+
+    ΔlogPPL_C4
+    95% CI
+
+    ΔJ
+    95% CI
+
+Use PCG64 and the same deterministic bootstrap convention as the existing
+formal analysis.
+
+No seed shopping.
+
+============================================================
+F. REQUIRED INTERPRETATION OUTPUT
+============================================================
+
+Produce one compact result table:
+
+| Tier | Method | epsilon_base | B_live | target gap | Wiki | C4 | J | rank SHA |
+
+and one paired-comparison table:
+
+| Comparison | resource gap | ΔlogPPL Wiki | 95% CI | ΔlogPPL C4 | 95% CI | ΔJ | 95% CI |
+
+Also report the same-epsilon native allocation effect:
+
+- number of layers changed
+- total QK-rank delta
+- total V-rank delta
+- max per-layer delta
+- whether U-FULL and U-NO-S remain allocation-equivalent
+
+Scientific interpretation must be based on the frozen result:
+
+Case 1:
+If U-FULL and U-NO-S remain allocation-equivalent even at Ultra,
+then d^S is effectively redundant under the tested EigenAttention operating
+range.
+
+Case 2:
+If allocation differs but matched-resource quality is indistinguishable,
+then d^S affects allocation but has no detectable independent quality benefit.
+
+Case 3:
+If U-FULL is better at matched resource with paired CI below zero for ΔJ,
+then stronger compression reveals an independent contribution from d^S.
+
+Case 4:
+If U-NO-S is better, report that result directly; do not retune or search for
+another Ultra target.
+
+Do not claim significance from point estimates alone.
+
+============================================================
+G. STRICT ANTI-TUNING RULES
+============================================================
+
+DO NOT:
+- change lambda
+- reweight d^Z/d^S/d^H
+- change MinMax normalization
+- alter component definitions
+- choose another target after quality is observed
+- search multiple Ultra targets and keep the best
+- change legal rank granularity
+- modify calibration data
+- tune on Wiki/C4
+- rerun seeds until a desired result appears
+- touch the existing frozen Light/Medium/Aggressive results
+
+This is one pre-declared stronger-compression extension.
+
+============================================================
+H. ENGINEERING POLICY
+============================================================
+
+Use existing final implementation and artifacts wherever possible.
+
+Before running:
+- identify the exact final 3-component profile artifact
+- verify component hashes / rank-generation code
+- verify the Aggressive ablation Full anchor really corresponds to
+  B_live=159,416,320
+- verify no stale V1/V2/development implementation is being used
+
+Routine engineering bugs:
+- fix minimally
+- preserve failed logs
+- rerun only affected cells
+
+Do not interrupt foreign GPU jobs.
+Queue/wait for a safe GPU slot if needed.
+
+Do not modify the manuscript yet.
+
+At completion, return:
+1. frozen Ultra protocol
+2. exact schedules and SHAs
+3. resource table
+4. PPL/J table
+5. paired bootstrap table
+6. native same-epsilon allocation-difference summary
+7. concise scientific conclusion about d^S
+8. paths to all small formal evidence artifacts

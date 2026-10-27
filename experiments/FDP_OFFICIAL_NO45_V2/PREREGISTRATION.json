@@ -1,0 +1,53 @@
+{
+ "experiment": "FDP_OFFICIAL_NO45_V2",
+ "written_at": "2026-10-11T09:25-07:00",
+ "written_before_any_quality": true,
+ "user_decision": "2026-10-11: major revision. Official EigenAttention (with 45% stop) is the Uniform baseline at 0.8/0.7/0.6x; FDP-EB and Spectral-tail use the official pipeline without the 45% stop, matched to the official Uniform cache size; Severe adds a fourth setting where all arms run without the 45% stop. New FDP formula without d2. Stop early if FDP-EB is not best at Light or Medium. Delete each checkpoint after its evaluations (manifest first). All 3 GPUs may be used.",
+ "model": "Llama-3-8B base (/diskD/jiaqizhang/Llama-3)",
+ "pipeline": {
+  "code": "upstream UtkarshSaxena1/EigenAttn 8bd0d3fa via code/run_shim_v2.py",
+  "official_variant": "upstream unchanged (45% rank stop: loop continues only while rank_kq > 0.45*1024 and rank_v > 0.45*1024)",
+  "no45_variant": "code/upstream_no45: one line changed in decompose/eigen_attn.py (Llama branch loop condition): the 45% rank stop is replaced by the threshold floor 'threshold > 0.3' used by the upstream OPT/MPT branches; everything else byte-identical (diff recorded)",
+  "calibration": "WikiText-2 train, 512 x 2048, seed 2, upstream datautils (audited windows sha 1b6ad8b1...)",
+  "avg_dim": 4, "search_precision": "upstream fp16 autocast", "threshold_step": 0.02,
+  "per_layer_budget_adapter": "args.error_budget set to eb[i] right before upstream decompose_llama_layer(i) (shim item 5)",
+  "save": "upstream --save_dir (low_rank_config.pt + safetensors)"
+ },
+ "fdp_formula": {
+  "q": "q_l = MinMax_l( Z_rel_mse_l + max(0, -entropy_diff_A_l) )   (d2 = score_rel_mse_causal removed)",
+  "weights_fragility_vector": [1, 0, 0, 0, 1],
+  "budget": "eps_raw_l = base/(1+1.2 q_l); eps_l = base * eps_raw_l / mean(eps_raw); layer 0 frozen to base",
+  "profile_source": "frozen step1_diagnose_llama.py (bf16, seqlen 512, 2 seqs), Dense vs the setting's Uniform checkpoint; Light/Medium/Aggressive reuse FDP_OFFICIAL_PROTOCOL_V1/tiers/<t>/step1.json (parent = official Uniform at eb 0.045/0.060/0.090, identity-gated against the official reproduction)"
+ },
+ "spectral_tail": "tails at the setting's Uniform ranks with the upstream (avg_dim 4) eigenvalues: QK = sum(eval_kq[r_QK/8:])/sum(eval_kq), V = sum(eval_v[:, r_V/8:])/sum(eval_v); score = MinMax(0.5 QK + 0.5 V); then exactly the FDP budget mapping (lambda 1.2, mean-normalised, layer 0 = base) and the no45 search",
+ "settings": {
+  "Light":      {"uniform": "official, eb 0.045", "uniform_B_expected": 212762624},
+  "Medium":     {"uniform": "official, eb 0.060", "uniform_B_expected": 191692800},
+  "Aggressive": {"uniform": "official, eb 0.090", "uniform_B_expected": 164331520},
+  "Severe":     {"uniform": "no45, single eb = the replayed point whose B is nearest to 151,289,856 bytes (0.5636x of 268,435,456)", "all_arms_no45": true}
+ },
+ "resource_matching": {
+  "method": "exact CPU replay of the upstream loop (fp16 'error < eb' comparison) on the recorded no45 full trace (dense-propagated inputs make each layer's curve independent of the budget); every replayed schedule is re-checked against its materialized checkpoint (gate: identical ranks)",
+  "target": "the setting's Uniform B_live",
+  "rule": "scan the scalar base over all breakpoints; eligible if |B - B_U| <= 0.15% of B_U; choose the smallest |gap|, ties -> base closest to the official tier eb (Severe: to the Uniform eb). If none eligible: the closest point with B <= B_U within 1% (NEAR_MATCHED, never more cache than Uniform)",
+  "quality_blind": true
+ },
+ "evaluation": {
+  "ppl": "ppl_instrumented.py (sha ffe4e52e), WikiText-2 141 / C4 256 windows, bf16",
+  "zero_shot": "zero_shot_instrumented.py, piqa/winogrande/arc_easy/arc_challenge/hellaswag localjsonl, bf16, batch 8",
+  "official_uniform_reuse": "OFFICIAL_EIGENATTN_REPRO_V1/eval/p_eb0p0{45,60,90}_ns512_ad4_save (same runners; window ids/input sha and sample ids are asserted equal before any comparison)",
+  "paired_bootstrap": "PPL: 10,000 window replicates PCG64 20261012/20261013; accuracy: 10,000 item replicates within task PCG64 20261014"
+ },
+ "stop_condition": {
+  "stage": "after Light and Medium FDP-EB and Spectral-tail are evaluated (before Aggressive, Severe and ablations)",
+  "rule": "STOP if, at Light or at Medium, FDP-EB's point estimate is worse than Uniform or worse than Spectral-tail on J or on the five-task average accuracy. Per-dataset (WikiText-2, C4) results are reported but do not trigger the stop.",
+  "on_stop": "no further GPU jobs; report to the user"
+ },
+ "ablations_after_pass": {
+  "arms": ["w/o Relative-Z (entropy only)", "w/o Entropy (Relative-Z only)", "+d2 (old three-component formula)"],
+  "settings": ["Light", "Medium", "Aggressive", "Severe"],
+  "matching": "each arm matched to the same Uniform B with the rule above (no fixed-budget comparisons)"
+ },
+ "cleanup": "a checkpoint is deleted only after all its evaluations are persisted and validated; per-file size+SHA256 manifest and low_rank_config are kept",
+ "no_retuning": "lambda, normalisation, layer-0 rule, matching rule and stop condition are frozen; no formula or hyperparameter changes after quality results"
+}

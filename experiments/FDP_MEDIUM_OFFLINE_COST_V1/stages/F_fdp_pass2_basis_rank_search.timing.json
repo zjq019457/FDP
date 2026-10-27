@@ -1,0 +1,61 @@
+{
+ "stage": "F_fdp_pass2_basis_rank_search",
+ "cmd": [
+  "/home/bai-project/anaconda3/envs/eigen/bin/python",
+  "-u",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/code/cost_launch.py",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/stages/F_fdp_pass2_basis_rank_search.torchpeak.json",
+  "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+  "--model",
+  "/diskD/jiaqizhang/Llama-3",
+  "--data_dir",
+  "/home/bai-project/jiaqizhang/wikitext2",
+  "--out_dir",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/fdp_chain/fdp125/basis",
+  "--out_prefix",
+  "fdp125_llama_medium_fdp125",
+  "--per_layer_eb_json",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/fdp_chain/fdp125/per_layer_eb.json",
+  "--freeze_layer0_eb",
+  "--layer0_eb",
+  "0.06",
+  "--nsamples",
+  "512",
+  "--seqlen",
+  "2048",
+  "--dtype",
+  "bf16",
+  "--attn_implementation",
+  "eager",
+  "--device",
+  "cuda:0",
+  "--seed",
+  "2"
+ ],
+ "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+ "rc": 0,
+ "start_epoch": 1791659129.5984738,
+ "wall_s": 2570.458539346,
+ "peak_cpu_rss_bytes": 15620235264,
+ "peak_nvml_gpu_bytes_process_tree": 44293947392,
+ "peak_nvml_gpu_bytes_per_device": {
+  "1": 44293947392
+ },
+ "marker_offsets_s": {
+  "\\[per_layer_eb\\] loaded": 40.11756550404243,
+  "\\[layer 00\\]\\[eb=": 60.39646262093447,
+  "\\[layer 31\\] done": 2567.5716797148343,
+  "\\[saved\\]": 2567.8945690728724
+ },
+ "log": "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/stages/F_fdp_pass2_basis_rank_search.log",
+ "torch": {
+  "script": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+  "t_start": 1791659129.6259475,
+  "t_end": 1791661697.546152,
+  "torch_peak_allocated_bytes": 41890359296,
+  "torch_peak_reserved_bytes": 43893391360
+ },
+ "disk_bytes_after_stage": {
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/fdp_chain/fdp125/basis": 120725523
+ }
+}

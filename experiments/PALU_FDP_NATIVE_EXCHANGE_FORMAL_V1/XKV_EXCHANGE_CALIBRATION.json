@@ -1,0 +1,4838 @@
+{
+  "schema": "XKV_FDP_NATIVE_EXCHANGE_CALIBRATION_V1",
+  "status": "COMPLETE",
+  "formal_quality_started": false,
+  "model": "/diskF/jiaqizhang/Llama-3.1",
+  "runtime_fixed": true,
+  "gpu_visible": "2",
+  "manifest": {
+    "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange_calibration/XKV_EXCHANGE_VALIDATION_MANIFEST.json",
+    "sha256": "7f5b335eb9b7ea4f92256271ee7ef5ce82b766c0034a26f85190595d6fd6f8c0",
+    "split": "train",
+    "counts": {
+      "WikiText-2": 8,
+      "C4": 8
+    },
+    "sequence_length": 4160,
+    "prefix_tokens": 4096,
+    "continuation_tokens": 64,
+    "objective": "0.5 WikiText-2 mean continuation NLL + 0.5 C4 mean continuation NLL"
+  },
+  "native_marginal_lock": {
+    "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/XKV_NATIVE_MARGINAL_LOCK.json",
+    "sha256": "31eabe4b02b58b1269dae84b96b7b61ffef3295bf95b86cd7626d39d9c3c0bd8",
+    "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+    "source_result_sha256": "78bd723648feedbf8caf3fd3bf6fcf14087a82d256803ca03fb1169e50cfb074"
+  },
+  "signals": {
+    "q_prior": [
+      0.4128271628038352,
+      0.6831736664409449,
+      0.6283619671067591,
+      0.6131950230883872,
+      0.4381580885668013,
+      0.16508854501635092,
+      0.16852575114955018,
+      0.1440366372299069
+    ],
+    "native_phi": [
+      -0.07351794121364463,
+      0.0834801221520145,
+      0.02350282651118718,
+      0.0032281744785471744,
+      0.01849617906327694,
+      0.012084108420179263,
+      0.011766385871897711,
+      0.016990041087190377
+    ],
+    "random_seed_0": [
+      4.0,
+      1.0,
+      3.0,
+      5.0,
+      0.0,
+      2.0,
+      7.0,
+      6.0
+    ],
+    "random_seed_1": [
+      5.0,
+      2.0,
+      7.0,
+      0.0,
+      6.0,
+      3.0,
+      1.0,
+      4.0
+    ],
+    "random_seed_2": [
+      7.0,
+      3.0,
+      4.0,
+      1.0,
+      2.0,
+      0.0,
+      5.0,
+      6.0
+    ]
+  },
+  "control": {
+    "signal": "q_prior",
+    "seed": null,
+    "T": 0,
+    "donors": [],
+    "receivers": [],
+    "rank_k": [
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384,
+      384
+    ],
+    "rank_v": [
+      576,
+      576,
+      576,
+      576,
+      576,
+      576,
+      576,
+      576
+    ],
+    "total_native_rank": 7680,
+    "factor_bytes": 1069547520,
+    "runtime_config": {
+      "num_groups": 8,
+      "group_size": 4,
+      "groups": [
+        {
+          "group_id": 0,
+          "layers": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "requested_rank_k": 384,
+          "requested_rank_v": 576,
+          "effective_config_rank_k": 384,
+          "effective_config_rank_v": 576
+        },
+        {
+          "group_id": 1,
+          "layers": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "requested_rank_k": 384,
+          "requested_rank_v": 576,
+          "effective_config_rank_k": 384,
+          "effective_config_rank_v": 576
+        },
+        {
+          "group_id": 2,
+          "layers": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "requested_rank_k": 384,
+          "requested_rank_v": 576,
+          "effective_config_rank_k": 384,
+          "effective_config_rank_v": 576
+        },
+        {
+          "group_id": 3,
+          "layers": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "requested_rank_k": 384,
+          "requested_rank_v": 576,
+          "effective_config_rank_k": 384,
+          "effective_config_rank_v": 576
+        },
+        {
+          "group_id": 4,
+          "layers": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "requested_rank_k": 384,
+          "requested_rank_v": 576,
+          "effective_config_rank_k": 384,
+          "effective_config_rank_v": 576
+        },
+        {
+          "group_id": 5,
+          "layers": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "requested_rank_k": 384,
+          "requested_rank_v": 576,
+          "effective_config_rank_k": 384,
+          "effective_config_rank_v": 576
+        },
+        {
+          "group_id": 6,
+          "layers": [
+            24,
+            25,
+            26,
+            27
+          ],
+          "requested_rank_k": 384,
+          "requested_rank_v": 576,
+          "effective_config_rank_k": 384,
+          "effective_config_rank_v": 576
+        },
+        {
+          "group_id": 7,
+          "layers": [
+            28,
+            29,
+            30,
+            31
+          ],
+          "requested_rank_k": 384,
+          "requested_rank_v": 576,
+          "effective_config_rank_k": 384,
+          "effective_config_rank_v": 576
+        }
+      ],
+      "requested_effective_config_equal": true
+    },
+    "aggregate": {
+      "dataset": {
+        "WikiText-2": {
+          "windows": 8,
+          "mean_token_nll": 2.0362694949562865,
+          "ppl": 7.661972789817844
+        },
+        "C4": {
+          "windows": 8,
+          "mean_token_nll": 2.315691419307228,
+          "ppl": 10.131925906655061
+        }
+      },
+      "J": 2.1759804571317574,
+      "ppl_from_J": 8.810819519502234
+    },
+    "windows": [
+      {
+        "dataset": "WikiText-2",
+        "document_id": "exchange-train-wikitext-2-000",
+        "token_sha": "a75eab765ef8e5ad7c17a70bc8c02c2d3d0b59cd6e197de658c527b9a5e5d4d6",
+        "valid_tokens": 64,
+        "total_nll": 190.53402958222432,
+        "mean_nll": 2.977094212222255,
+        "continuation_ppl": 19.63069106538621,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "WikiText-2",
+        "document_id": "exchange-train-wikitext-2-001",
+        "token_sha": "c230d84d4f03e9ed0264278b5e93cc1f026cc626d925cb4dd0904a203b140df0",
+        "valid_tokens": 64,
+        "total_nll": 116.53615823987639,
+        "mean_nll": 1.8208774724980685,
+        "continuation_ppl": 6.177276462666266,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "WikiText-2",
+        "document_id": "exchange-train-wikitext-2-002",
+        "token_sha": "43b3125c1156f7d350dbd98cb7ff9d6764d7687298451e8bde13b6e6c911a53d",
+        "valid_tokens": 64,
+        "total_nll": 83.1730718142353,
+        "mean_nll": 1.2995792470974266,
+        "continuation_ppl": 3.6677531251437,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "WikiText-2",
+        "document_id": "exchange-train-wikitext-2-003",
+        "token_sha": "d39e0ce929fce270b8868c670188b49e4a1173e885a561ec73e1621c24c09456",
+        "valid_tokens": 64,
+        "total_nll": 99.4807078866288,
+        "mean_nll": 1.554386060728575,
+        "continuation_ppl": 4.732180361783229,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "WikiText-2",
+        "document_id": "exchange-train-wikitext-2-004",
+        "token_sha": "36d2e1912f83401cfe3bf2227d451bc541df2ce80c625b6f518be50117c9faaa",
+        "valid_tokens": 64,
+        "total_nll": 178.34383404208347,
+        "mean_nll": 2.7866224069075543,
+        "continuation_ppl": 16.226121905336065,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "WikiText-2",
+        "document_id": "exchange-train-wikitext-2-005",
+        "token_sha": "e02062f3640949e22de12835da34a53c6f54e0e9f705ca0709b512538edfc18b",
+        "valid_tokens": 64,
+        "total_nll": 86.32879147509811,
+        "mean_nll": 1.348887366798408,
+        "continuation_ppl": 3.853136017748633,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "WikiText-2",
+        "document_id": "exchange-train-wikitext-2-006",
+        "token_sha": "4b1089befc7b0af8f5c15467746f058e96968ddeb30ab543c1b8226b52064649",
+        "valid_tokens": 64,
+        "total_nll": 143.9149377803551,
+        "mean_nll": 2.2486709028180485,
+        "continuation_ppl": 9.475134089723372,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "WikiText-2",
+        "document_id": "exchange-train-wikitext-2-007",
+        "token_sha": "0d62be7fd39ab67bf004849412b54860d8b6e085709302c0a9e5d051fbe658dd",
+        "valid_tokens": 64,
+        "total_nll": 144.2584505971172,
+        "mean_nll": 2.254038290579956,
+        "continuation_ppl": 9.526127536859207,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "C4",
+        "document_id": "exchange-train-c4-000",
+        "token_sha": "f5ea8740728b304218788a1d16558b023e39673194ff912f5e515ef31e42c03c",
+        "valid_tokens": 64,
+        "total_nll": 122.17306183837354,
+        "mean_nll": 1.9089540912245866,
+        "continuation_ppl": 6.746029376095234,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "C4",
+        "document_id": "exchange-train-c4-001",
+        "token_sha": "2911e07b5f97a394c513ad4bd8596f29003321ea0a3bc070bb75f08959614fd3",
+        "valid_tokens": 64,
+        "total_nll": 206.32152177393436,
+        "mean_nll": 3.2237737777177244,
+        "continuation_ppl": 25.122749185704652,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "C4",
+        "document_id": "exchange-train-c4-002",
+        "token_sha": "d5039ca62625a112687bfc7e1739e071ca6ac9635811151ac8daf4e7e8043a3b",
+        "valid_tokens": 64,
+        "total_nll": 169.53873044904321,
+        "mean_nll": 2.6490426632663002,
+        "continuation_ppl": 14.140494948224168,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "C4",
+        "document_id": "exchange-train-c4-003",
+        "token_sha": "cfa18ed74ca225b30c45f10def4f96512719bd8dd1f12ab10cc4cfc22135ee3d",
+        "valid_tokens": 64,
+        "total_nll": 111.39689673064277,
+        "mean_nll": 1.7405765114162932,
+        "continuation_ppl": 5.700628953179628,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "C4",
+        "document_id": "exchange-train-c4-004",
+        "token_sha": "e9f3f0c1eabac77302d1a01efb7cbf1e2eb68f9ba980f874b26cb66584480e50",
+        "valid_tokens": 64,
+        "total_nll": 122.2552940112073,
+        "mean_nll": 1.910238968925114,
+        "continuation_ppl": 6.754702769739473,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "C4",
+        "document_id": "exchange-train-c4-005",
+        "token_sha": "c6fe567eeb5d27f5bf5de33b630b0f0b6fd2b6cb2af865a785a942d6a1a25654",
+        "valid_tokens": 64,
+        "total_nll": 119.19504315411905,
+        "mean_nll": 1.8624225492831101,
+        "continuation_ppl": 6.439317455206885,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "C4",
+        "document_id": "exchange-train-c4-006",
+        "token_sha": "5f199228d6cf14945769e18c3da9c3ae037370c0aea43bf6a5cc42d7e72689c3",
+        "valid_tokens": 64,
+        "total_nll": 182.63604207792378,
+        "mean_nll": 2.853688157467559,
+        "continuation_ppl": 17.3516596255171,
+        "runtime_cache_bytes_after_prefill": 545128448
+      },
+      {
+        "dataset": "C4",
+        "document_id": "exchange-train-c4-007",
+        "token_sha": "288aa0e50b32d0a806a18f9479d22bc7f12b817b128c16df8a58acdce689173b",
+        "valid_tokens": 64,
+        "total_nll": 152.11741665005684,
+        "mean_nll": 2.376834635157138,
+        "continuation_ppl": 10.770755477255602,
+        "runtime_cache_bytes_after_prefill": 545128448
+      }
+    ],
+    "elapsed_seconds": 1179.5121059417725
+  },
+  "schedule_records": [
+    {
+      "signal": "q_prior",
+      "seed": null,
+      "T": 0,
+      "donors": [],
+      "receivers": [],
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1759804571317574,
+      "delta_J": 0.0,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": 0.0,
+        "ci95_delta_J": [
+          0.0,
+          0.0
+        ],
+        "fraction_FDP_better": 0.0,
+        "median_paired_delta": 0.0
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.977094212222255,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8208774724980685,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2995792470974266,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.554386060728575,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7866224069075543,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.348887366798408,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2486709028180485,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.254038290579956,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9089540912245866,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2237737777177244,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6490426632663002,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7405765114162932,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.910238968925114,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8624225492831101,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.853688157467559,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.376834635157138,
+          "delta_mean_nll": 0.0
+        }
+      ]
+    },
+    {
+      "signal": "q_prior",
+      "seed": null,
+      "T": 1,
+      "donors": [
+        7
+      ],
+      "receivers": [
+        1
+      ],
+      "rank_k": [
+        384,
+        416,
+        384,
+        384,
+        384,
+        384,
+        384,
+        352
+      ],
+      "rank_v": [
+        576,
+        624,
+        576,
+        576,
+        576,
+        576,
+        576,
+        528
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1707800027900106,
+      "delta_J": -0.005200454341746763,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.005122626132439015,
+        "ci95_delta_J": [
+          -0.012134638262427444,
+          0.0010102020825755152
+        ],
+        "fraction_FDP_better": 0.625,
+        "median_paired_delta": -0.00271517684632272
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9620092240984377,
+          "delta_mean_nll": -0.015084988123817311
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8092900515111978,
+          "delta_mean_nll": -0.011587420986870711
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.3061949238381203,
+          "delta_mean_nll": 0.006615676740693743
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5631986659500399,
+          "delta_mean_nll": 0.008812605221464764
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7844554325711215,
+          "delta_mean_nll": -0.0021669743364327587
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3662605269228152,
+          "delta_mean_nll": 0.01737316012440715
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.242809105852757,
+          "delta_mean_nll": -0.005861796965291433
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.2351714801216076,
+          "delta_mean_nll": -0.018866810458348482
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9061398486628605,
+          "delta_mean_nll": -0.0028142425617261324
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.221157666586805,
+          "delta_mean_nll": -0.0026161111309193075
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6492115493456367,
+          "delta_mean_nll": 0.00016888607933651656
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.737578784219295,
+          "delta_mean_nll": -0.002997727196998312
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8642762253657565,
+          "delta_mean_nll": -0.04596274355935748
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8638098539358907,
+          "delta_mean_nll": 0.0013873046527805855
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.839613711447555,
+          "delta_mean_nll": -0.014074446020003961
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.381302994210273,
+          "delta_mean_nll": 0.004468359053134918
+        }
+      ]
+    },
+    {
+      "signal": "q_prior",
+      "seed": null,
+      "T": 2,
+      "donors": [
+        7,
+        5
+      ],
+      "receivers": [
+        1,
+        2
+      ],
+      "rank_k": [
+        384,
+        416,
+        416,
+        384,
+        384,
+        352,
+        384,
+        352
+      ],
+      "rank_v": [
+        576,
+        624,
+        624,
+        576,
+        576,
+        528,
+        576,
+        528
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1670536276725443,
+      "delta_J": -0.008926829459213081,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.008821373461013388,
+        "ci95_delta_J": [
+          -0.016660902542541933,
+          -0.002583292814887984
+        ],
+        "fraction_FDP_better": 0.75,
+        "median_paired_delta": -0.004139404017223569
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.961097812740718,
+          "delta_mean_nll": -0.015996399481537082
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8141446214208372,
+          "delta_mean_nll": -0.006732851077231317
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.295529587439887,
+          "delta_mean_nll": -0.0040496596575394506
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5509426749340491,
+          "delta_mean_nll": -0.003443385794525966
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.778750478537404,
+          "delta_mean_nll": -0.007871928370150272
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3529482642898074,
+          "delta_mean_nll": 0.004060897491399373
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2549895872207344,
+          "delta_mean_nll": 0.0063186844026859035
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.224535340374132,
+          "delta_mean_nll": -0.029502950205824163
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.904724942847679,
+          "delta_mean_nll": -0.004229148376907688
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2245792317553423,
+          "delta_mean_nll": 0.000805454037617892
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.651666352809116,
+          "delta_mean_nll": 0.002623689542815555
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7345889380139852,
+          "delta_mean_nll": -0.005987573402308044
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8549041517508158,
+          "delta_mean_nll": -0.05533481717429822
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8608910249431574,
+          "delta_mean_nll": -0.001531524339952739
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.834360852606551,
+          "delta_mean_nll": -0.019327304861008088
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.374204181076493,
+          "delta_mean_nll": -0.002630454080644995
+        }
+      ]
+    },
+    {
+      "signal": "q_prior",
+      "seed": null,
+      "T": 3,
+      "donors": [
+        7,
+        5,
+        6
+      ],
+      "receivers": [
+        1,
+        2,
+        3
+      ],
+      "rank_k": [
+        384,
+        416,
+        416,
+        416,
+        384,
+        352,
+        352,
+        352
+      ],
+      "rank_v": [
+        576,
+        624,
+        624,
+        624,
+        576,
+        528,
+        528,
+        528
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1674461536987337,
+      "delta_J": -0.008534303433023638,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.008446981535369746,
+        "ci95_delta_J": [
+          -0.014884639557361013,
+          -0.002710402101604716
+        ],
+        "fraction_FDP_better": 0.75,
+        "median_paired_delta": -0.003994362299408749
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9632751510016533,
+          "delta_mean_nll": -0.013819061220601725
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8165368126024077,
+          "delta_mean_nll": -0.004340659895660792
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2984429450316384,
+          "delta_mean_nll": -0.0011363020657881862
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5559154050861252,
+          "delta_mean_nll": 0.0015293443575501442
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7785009032377275,
+          "delta_mean_nll": -0.00812150366982678
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3577061402793333,
+          "delta_mean_nll": 0.008818773480925302
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2498618301037823,
+          "delta_mean_nll": 0.0011909272857337783
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.2265535376309344,
+          "delta_mean_nll": -0.02748475294902164
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.887484495255194,
+          "delta_mean_nll": -0.021469595969392685
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.22886850341456,
+          "delta_mean_nll": 0.005094725696835667
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6453945985631435,
+          "delta_mean_nll": -0.003648064703156706
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7343679346995486,
+          "delta_mean_nll": -0.006208576716744574
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8673949820949929,
+          "delta_mean_nll": -0.04284398683012114
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8596460080270845,
+          "delta_mean_nll": -0.0027765412560256664
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.833522802711741,
+          "delta_mean_nll": -0.020165354755818043
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.375666409439873,
+          "delta_mean_nll": -0.001168225717265159
+        }
+      ]
+    },
+    {
+      "signal": "q_prior",
+      "seed": null,
+      "T": 4,
+      "donors": [
+        7,
+        5,
+        6,
+        0
+      ],
+      "receivers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rank_k": [
+        352,
+        416,
+        416,
+        416,
+        416,
+        352,
+        352,
+        352
+      ],
+      "rank_v": [
+        528,
+        624,
+        624,
+        624,
+        624,
+        528,
+        528,
+        528
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.167295739012758,
+      "delta_J": -0.008684718118999513,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.008627525205363945,
+        "ci95_delta_J": [
+          -0.015347767374350596,
+          -0.0009738556079128108
+        ],
+        "fraction_FDP_better": 0.75,
+        "median_paired_delta": -0.011885086859479088
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9576259034492978,
+          "delta_mean_nll": -0.019468308772957243
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.7987051011873518,
+          "delta_mean_nll": -0.0221723713107167
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2930777967176255,
+          "delta_mean_nll": -0.006501450379801099
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5405476495725452,
+          "delta_mean_nll": -0.013838411156029906
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7720160399912857,
+          "delta_mean_nll": -0.014606366916268598
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.377105179645696,
+          "delta_mean_nll": 0.02821781284728786
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.251986980426409,
+          "delta_mean_nll": 0.0033160776083605015
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.2360863993208113,
+          "delta_mean_nll": -0.01795189125914476
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.8895269682616345,
+          "delta_mean_nll": -0.019427122962952126
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2302836787421256,
+          "delta_mean_nll": 0.006509901024401188
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6279325734940358,
+          "delta_mean_nll": -0.021110089772264473
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7377787444274873,
+          "delta_mean_nll": -0.002797766988805961
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.875959364198934,
+          "delta_mean_nll": -0.03427960472617997
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8610951219852723,
+          "delta_mean_nll": -0.0013274272978378576
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.8437563949046307,
+          "delta_mean_nll": -0.00993176256292827
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3832479278789833,
+          "delta_mean_nll": 0.00641329272184521
+        }
+      ]
+    },
+    {
+      "signal": "native_phi",
+      "seed": null,
+      "T": 0,
+      "donors": [],
+      "receivers": [],
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1759804571317574,
+      "delta_J": 0.0,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": 0.0,
+        "ci95_delta_J": [
+          0.0,
+          0.0
+        ],
+        "fraction_FDP_better": 0.0,
+        "median_paired_delta": 0.0
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.977094212222255,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8208774724980685,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2995792470974266,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.554386060728575,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7866224069075543,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.348887366798408,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2486709028180485,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.254038290579956,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9089540912245866,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2237737777177244,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6490426632663002,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7405765114162932,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.910238968925114,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8624225492831101,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.853688157467559,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.376834635157138,
+          "delta_mean_nll": 0.0
+        }
+      ]
+    },
+    {
+      "signal": "native_phi",
+      "seed": null,
+      "T": 1,
+      "donors": [
+        0
+      ],
+      "receivers": [
+        1
+      ],
+      "rank_k": [
+        352,
+        416,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        528,
+        624,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.168571884519366,
+      "delta_J": -0.00740857261239114,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.007366867238604279,
+        "ci95_delta_J": [
+          -0.012799100328604141,
+          -0.0013470560134258855
+        ],
+        "fraction_FDP_better": 0.6875,
+        "median_paired_delta": -0.008673912072481471
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9507680097112825,
+          "delta_mean_nll": -0.026326202510972507
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8007889754849202,
+          "delta_mean_nll": -0.0200884970131483
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2903143978201115,
+          "delta_mean_nll": -0.00926484927731508
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5408172975221532,
+          "delta_mean_nll": -0.013568763206421863
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7775767700804863,
+          "delta_mean_nll": -0.009045636827067938
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3692059004224575,
+          "delta_mean_nll": 0.02031853362404945
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2377069719109386,
+          "delta_mean_nll": -0.010963930907109898
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.2324203233702065,
+          "delta_mean_nll": -0.021617967209749622
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9006519039066916,
+          "delta_mean_nll": -0.008302187317895005
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.226585245283786,
+          "delta_mean_nll": 0.002811467566061765
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6414753622739227,
+          "delta_mean_nll": -0.007567300992377568
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7443483716961055,
+          "delta_mean_nll": 0.0037718602798122447
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8840350538412167,
+          "delta_mean_nll": -0.0262039150838973
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8666490892828733,
+          "delta_mean_nll": 0.00422653999976319
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.852882318470165,
+          "delta_mean_nll": -0.0008058389973939484
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3809241612325422,
+          "delta_mean_nll": 0.004089526075404137
+        }
+      ]
+    },
+    {
+      "signal": "native_phi",
+      "seed": null,
+      "T": 2,
+      "donors": [
+        0,
+        3
+      ],
+      "receivers": [
+        1,
+        2
+      ],
+      "rank_k": [
+        352,
+        416,
+        416,
+        352,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        528,
+        624,
+        624,
+        528,
+        576,
+        576,
+        576,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1689890368615465,
+      "delta_J": -0.006991420270210824,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.006916883030661724,
+        "ci95_delta_J": [
+          -0.014420969616740819,
+          0.0006254237895109972
+        ],
+        "fraction_FDP_better": 0.6875,
+        "median_paired_delta": -0.004818266047891484
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9495206695910383,
+          "delta_mean_nll": -0.027573542631216696
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.7976304512053503,
+          "delta_mean_nll": -0.023247021292718273
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.3048404571964056,
+          "delta_mean_nll": 0.005261210098979063
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5528007943139528,
+          "delta_mean_nll": -0.0015852664146223105
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.776998837303836,
+          "delta_mean_nll": -0.009623569603718352
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3735094137973647,
+          "delta_mean_nll": 0.024622046998956648
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.243614050376891,
+          "delta_mean_nll": -0.005056852441157389
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.222678963189537,
+          "delta_mean_nll": -0.03135932739041891
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9013057423617283,
+          "delta_mean_nll": -0.007648348862858256
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.232482191408053,
+          "delta_mean_nll": 0.008708413690328598
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6414228054127307,
+          "delta_mean_nll": -0.007619857853569556
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7393011396252405,
+          "delta_mean_nll": -0.0012753717910527484
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8727503226909903,
+          "delta_mean_nll": -0.037488646234123735
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.865821726343711,
+          "delta_mean_nll": 0.0033991770606007776
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.8491084778129334,
+          "delta_mean_nll": -0.004579679654625579
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3800385471549816,
+          "delta_mean_nll": 0.0032039119978435338
+        }
+      ]
+    },
+    {
+      "signal": "native_phi",
+      "seed": null,
+      "T": 3,
+      "donors": [
+        0,
+        3,
+        6
+      ],
+      "receivers": [
+        1,
+        2,
+        4
+      ],
+      "rank_k": [
+        352,
+        416,
+        416,
+        352,
+        416,
+        384,
+        352,
+        384
+      ],
+      "rank_v": [
+        528,
+        624,
+        624,
+        528,
+        624,
+        576,
+        528,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1676058265144746,
+      "delta_J": -0.008374630617282719,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.00829830244318678,
+        "ci95_delta_J": [
+          -0.015242752876005027,
+          -0.0009274618743738565
+        ],
+        "fraction_FDP_better": 0.6875,
+        "median_paired_delta": -0.008911649994843174
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.955445801038877,
+          "delta_mean_nll": -0.021648411183377902
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.7938895795014105,
+          "delta_mean_nll": -0.026987892996658047
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.3004031661203044,
+          "delta_mean_nll": 0.000823919022877817
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5455498857409111,
+          "delta_mean_nll": -0.00883617498766398
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.776890344968706,
+          "delta_mean_nll": -0.009732061938848346
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.373244256493308,
+          "delta_mean_nll": 0.02435688969490002
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2475150053169273,
+          "delta_mean_nll": -0.001155897501121217
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.219576736685667,
+          "delta_mean_nll": -0.034461553894288954
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.8999669662225642,
+          "delta_mean_nll": -0.008987125002022367
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2305858324980363,
+          "delta_mean_nll": 0.0068120547803118825
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6358312548982212,
+          "delta_mean_nll": -0.013211408368078992
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7367004444276972,
+          "delta_mean_nll": -0.003876066988595994
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8771276691768435,
+          "delta_mean_nll": -0.03311129974827054
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8633721998376132,
+          "delta_mean_nll": 0.0009496505545030232
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.843354013544513,
+          "delta_mean_nll": -0.010334143923046213
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3822400677599944,
+          "delta_mean_nll": 0.005405432602856308
+        }
+      ]
+    },
+    {
+      "signal": "native_phi",
+      "seed": null,
+      "T": 4,
+      "donors": [
+        0,
+        3,
+        6,
+        5
+      ],
+      "receivers": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "rank_k": [
+        352,
+        416,
+        416,
+        352,
+        416,
+        352,
+        352,
+        416
+      ],
+      "rank_v": [
+        528,
+        624,
+        624,
+        528,
+        624,
+        528,
+        528,
+        624
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1682098387879023,
+      "delta_J": -0.0077706183438550624,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.0077325347203122605,
+        "ci95_delta_J": [
+          -0.013846440972244523,
+          -0.0015773343286145554
+        ],
+        "fraction_FDP_better": 0.75,
+        "median_paired_delta": -0.007732770142865775
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9622189540395993,
+          "delta_mean_nll": -0.01487525818265567
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.800424638588538,
+          "delta_mean_nll": -0.020452833909530455
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.307938299176385,
+          "delta_mean_nll": 0.008359052078958484
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5458159446206992,
+          "delta_mean_nll": -0.008570116107875947
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7754023264715215,
+          "delta_mean_nll": -0.011220080436032731
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3611530493444661,
+          "delta_mean_nll": 0.012265682546058088
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.241764783175313,
+          "delta_mean_nll": -0.006906119642735575
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.2294979784828683,
+          "delta_mean_nll": -0.024540312097087735
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9003946705815906,
+          "delta_mean_nll": -0.008559420642995974
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.228830628679134,
+          "delta_mean_nll": 0.005056850961409509
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6334629852426588,
+          "delta_mean_nll": -0.015579678023641463
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.733742746157077,
+          "delta_mean_nll": -0.006833765259216307
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8738104232543265,
+          "delta_mean_nll": -0.03642854567078757
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8595991691290692,
+          "delta_mean_nll": -0.002823380154040933
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.8502568921999227,
+          "delta_mean_nll": -0.003431265267636263
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3870439314632677,
+          "delta_mean_nll": 0.010209296306129545
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_0",
+      "seed": 0,
+      "T": 0,
+      "donors": [],
+      "receivers": [],
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1759804571317574,
+      "delta_J": 0.0,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": 0.0,
+        "ci95_delta_J": [
+          0.0,
+          0.0
+        ],
+        "fraction_FDP_better": 0.0,
+        "median_paired_delta": 0.0
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.977094212222255,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8208774724980685,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2995792470974266,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.554386060728575,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7866224069075543,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.348887366798408,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2486709028180485,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.254038290579956,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9089540912245866,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2237737777177244,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6490426632663002,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7405765114162932,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.910238968925114,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8624225492831101,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.853688157467559,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.376834635157138,
+          "delta_mean_nll": 0.0
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_0",
+      "seed": 0,
+      "T": 1,
+      "donors": [
+        4
+      ],
+      "receivers": [
+        6
+      ],
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        352,
+        384,
+        416,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        528,
+        576,
+        624,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1756144371615562,
+      "delta_J": -0.00036601997020113686,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.00037126122700960736,
+        "ci95_delta_J": [
+          -0.0022819668211639054,
+          0.0016986202708238805
+        ],
+        "fraction_FDP_better": 0.625,
+        "median_paired_delta": -0.0006510294820145646
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.97432574686718,
+          "delta_mean_nll": -0.0027684653550750227
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8219389415407932,
+          "delta_mean_nll": 0.0010614690427246387
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.302007659463925,
+          "delta_mean_nll": 0.002428412366498378
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5538940024271142,
+          "delta_mean_nll": -0.0004920583014609292
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.783372783800587,
+          "delta_mean_nll": -0.003249623106967192
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3573305000427354,
+          "delta_mean_nll": 0.008443133244327328
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2443593462735407,
+          "delta_mean_nll": -0.004311556544507766
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.250117646574836,
+          "delta_mean_nll": -0.003920644005120266
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9043767846051196,
+          "delta_mean_nll": -0.004577306619466981
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.226179386372678,
+          "delta_mean_nll": 0.0024056086549535394
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6484484149332275,
+          "delta_mean_nll": -0.0005942483330727555
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7456040274155384,
+          "delta_mean_nll": 0.0050275159992452245
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.9079453840495262,
+          "delta_mean_nll": -0.0022935848755878396
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8617147386521538,
+          "delta_mean_nll": -0.0007078106309563736
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.858399548745183,
+          "delta_mean_nll": 0.004711391277623989
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.369816082820762,
+          "delta_mean_nll": -0.00701855233637616
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_0",
+      "seed": 0,
+      "T": 2,
+      "donors": [
+        4,
+        1
+      ],
+      "receivers": [
+        6,
+        7
+      ],
+      "rank_k": [
+        384,
+        352,
+        384,
+        384,
+        352,
+        384,
+        416,
+        416
+      ],
+      "rank_v": [
+        576,
+        528,
+        576,
+        576,
+        528,
+        576,
+        624,
+        624
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.177740635633967,
+      "delta_J": 0.0017601785022094418,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": 0.0017364634929969568,
+        "ci95_delta_J": [
+          -0.0016982353496619138,
+          0.0055702410660721565
+        ],
+        "fraction_FDP_better": 0.5,
+        "median_paired_delta": 0.0004418355476900615
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.968547987121383,
+          "delta_mean_nll": -0.008546225100872107
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8179592779761151,
+          "delta_mean_nll": -0.00291819452195341
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.301103445219269,
+          "delta_mean_nll": 0.0015241981218423462
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5557310435106046,
+          "delta_mean_nll": 0.0013449827820295468
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7820187157049077,
+          "delta_mean_nll": -0.004603691202646587
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3541607235874835,
+          "delta_mean_nll": 0.0052733567890754784
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.248209591131399,
+          "delta_mean_nll": -0.0004613116866494238
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.2729604424548597,
+          "delta_mean_nll": 0.018922151874903648
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9082954996993067,
+          "delta_mean_nll": -0.0006585915252799168
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.220552914601285,
+          "delta_mean_nll": -0.003220863116439432
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6566550044808537,
+          "delta_mean_nll": 0.007612341214553453
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7518606196208566,
+          "delta_mean_nll": 0.011284108204563381
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.906195951425616,
+          "delta_mean_nll": -0.004043017499498092
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8638492945574399,
+          "delta_mean_nll": 0.0014267452743297326
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.866502028056857,
+          "delta_mean_nll": 0.012813870589297949
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3692476309952326,
+          "delta_mean_nll": -0.007587004161905497
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_0",
+      "seed": 0,
+      "T": 3,
+      "donors": [
+        4,
+        1,
+        5
+      ],
+      "receivers": [
+        6,
+        7,
+        3
+      ],
+      "rank_k": [
+        384,
+        352,
+        384,
+        416,
+        352,
+        352,
+        416,
+        416
+      ],
+      "rank_v": [
+        576,
+        528,
+        576,
+        624,
+        528,
+        528,
+        624,
+        624
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1784951141718807,
+      "delta_J": 0.002514657040123325,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": 0.002471073596050924,
+        "ci95_delta_J": [
+          -0.001788195348954602,
+          0.007583646528733467
+        ],
+        "fraction_FDP_better": 0.4375,
+        "median_paired_delta": 0.0012494228301420662
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9799777801163145,
+          "delta_mean_nll": 0.0028835678940595244
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.827423760998954,
+          "delta_mean_nll": 0.0065462885008855665
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2943667634481244,
+          "delta_mean_nll": -0.005212483649302158
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5534586218382174,
+          "delta_mean_nll": -0.0009274388903577346
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.780865563734551,
+          "delta_mean_nll": -0.00575684317300329
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3426206086178354,
+          "delta_mean_nll": -0.006266758180572651
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.249770548905417,
+          "delta_mean_nll": 0.0010996460873684555
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.286274463376685,
+          "delta_mean_nll": 0.03223617279672908
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9001821454512537,
+          "delta_mean_nll": -0.008771945773332845
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.222926083864877,
+          "delta_mean_nll": -0.000847693852847442
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.650441862839216,
+          "delta_mean_nll": 0.001399199572915677
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7561042904599162,
+          "delta_mean_nll": 0.015527779043623013
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.9162021321244538,
+          "delta_mean_nll": 0.0059631631993397605
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8641732887845137,
+          "delta_mean_nll": 0.0017507395014035865
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.860308981466005,
+          "delta_mean_nll": 0.0066208239984462125
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3708249307237566,
+          "delta_mean_nll": -0.0060097044333815575
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_0",
+      "seed": 0,
+      "T": 4,
+      "donors": [
+        4,
+        1,
+        5,
+        2
+      ],
+      "receivers": [
+        6,
+        7,
+        3,
+        0
+      ],
+      "rank_k": [
+        416,
+        352,
+        352,
+        416,
+        352,
+        352,
+        416,
+        416
+      ],
+      "rank_v": [
+        624,
+        528,
+        528,
+        624,
+        528,
+        528,
+        624,
+        624
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.177817765511108,
+      "delta_J": 0.0018373083793505884,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": 0.001839915081007615,
+        "ci95_delta_J": [
+          -0.0026500389554200863,
+          0.0065070525893595734
+        ],
+        "fraction_FDP_better": 0.5625,
+        "median_paired_delta": -0.00037836016417713836
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.976079828953516,
+          "delta_mean_nll": -0.0010143832687390386
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8181543477958257,
+          "delta_mean_nll": -0.002723124702242785
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2973449294913735,
+          "delta_mean_nll": -0.0022343176060530823
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5542484506368055,
+          "delta_mean_nll": -0.00013761009176960215
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.77934972885123,
+          "delta_mean_nll": -0.0072726780563243665
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3657073182121167,
+          "delta_mean_nll": 0.016819951413708623
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2683304518409386,
+          "delta_mean_nll": 0.019659549022890133
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.273876569159256,
+          "delta_mean_nll": 0.019838278579300095
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.908334980988002,
+          "delta_mean_nll": -0.0006191102365846746
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2275920035899617,
+          "delta_mean_nll": 0.0038182258722372353
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6354360827463097,
+          "delta_mean_nll": -0.01360658051999053
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7464624944113893,
+          "delta_mean_nll": 0.0058859829950961284
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8975714444022742,
+          "delta_mean_nll": -0.012667524522839813
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8559847043507034,
+          "delta_mean_nll": -0.006437844932406733
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.854787673292094,
+          "delta_mean_nll": 0.0010995158245350467
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.385823239455931,
+          "delta_mean_nll": 0.00898860429879278
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_1",
+      "seed": 1,
+      "T": 0,
+      "donors": [],
+      "receivers": [],
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1759804571317574,
+      "delta_J": 0.0,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": 0.0,
+        "ci95_delta_J": [
+          0.0,
+          0.0
+        ],
+        "fraction_FDP_better": 0.0,
+        "median_paired_delta": 0.0
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.977094212222255,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8208774724980685,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2995792470974266,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.554386060728575,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7866224069075543,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.348887366798408,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2486709028180485,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.254038290579956,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9089540912245866,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2237737777177244,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6490426632663002,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7405765114162932,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.910238968925114,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8624225492831101,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.853688157467559,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.376834635157138,
+          "delta_mean_nll": 0.0
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_1",
+      "seed": 1,
+      "T": 1,
+      "donors": [
+        3
+      ],
+      "receivers": [
+        2
+      ],
+      "rank_k": [
+        384,
+        384,
+        416,
+        352,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        624,
+        528,
+        576,
+        576,
+        576,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.175959341974888,
+      "delta_J": -2.111515686920029e-05,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": 9.867237074547575e-06,
+        "ci95_delta_J": [
+          -0.003692389020547182,
+          0.0037264442762044324
+        ],
+        "fraction_FDP_better": 0.5625,
+        "median_paired_delta": -0.0015977541770553216
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9661287130611527,
+          "delta_mean_nll": -0.010965499161102343
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8081058254415439,
+          "delta_mean_nll": -0.012771647056524671
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.3057770972445724,
+          "delta_mean_nll": 0.0061978501471458
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5634373887223774,
+          "delta_mean_nll": 0.00905132799380226
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.787138438419788,
+          "delta_mean_nll": 0.0005160315122338943
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3562082883390758,
+          "delta_mean_nll": 0.007320921540667769
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.258722982191557,
+          "delta_mean_nll": 0.010052079373508604
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.250613088701357,
+          "delta_mean_nll": -0.0034252018785991822
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9148194525005238,
+          "delta_mean_nll": 0.005865361275937175
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2231957068433985,
+          "delta_mean_nll": -0.0005780708743259311
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6464252257865155,
+          "delta_mean_nll": -0.002617437479784712
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7341401042394864,
+          "delta_mean_nll": -0.006436407176806824
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.904265107048559,
+          "delta_mean_nll": -0.00597386187655502
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8578133623122994,
+          "delta_mean_nll": -0.004609186970810697
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.847769784375714,
+          "delta_mean_nll": -0.005918373091844842
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3907889063702896,
+          "delta_mean_nll": 0.013954271213151515
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_1",
+      "seed": 1,
+      "T": 2,
+      "donors": [
+        3,
+        6
+      ],
+      "receivers": [
+        2,
+        4
+      ],
+      "rank_k": [
+        384,
+        384,
+        416,
+        352,
+        416,
+        384,
+        352,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        624,
+        528,
+        624,
+        576,
+        528,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1738550618047157,
+      "delta_J": -0.0021253953270417014,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.0020935275548124637,
+        "ci95_delta_J": [
+          -0.005285144739876912,
+          0.0011067276845025701
+        ],
+        "fraction_FDP_better": 0.625,
+        "median_paired_delta": -0.0015429770614900917
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9687466050427247,
+          "delta_mean_nll": -0.008347607179530314
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8075599003250318,
+          "delta_mean_nll": -0.013317572173036751
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.3093602177905268,
+          "delta_mean_nll": 0.009780970693100244
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5600864494772395,
+          "delta_mean_nll": 0.005700388748664409
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.787979999993695,
+          "delta_mean_nll": 0.001357593086140696
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3552371082832906,
+          "delta_mean_nll": 0.006349741484882543
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.247359758833227,
+          "delta_mean_nll": -0.0013111439848216833
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.246688475162955,
+          "delta_mean_nll": -0.007349815417001082
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9078607195187942,
+          "delta_mean_nll": -0.0010933717057923786
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2217572553781793,
+          "delta_mean_nll": -0.0020165223395451903
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6472678531281417,
+          "delta_mean_nll": -0.0017748101381585002
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7318597282865085,
+          "delta_mean_nll": -0.008716783129784744
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8986008497522562,
+          "delta_mean_nll": -0.011638119172857841
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8638976681540953,
+          "delta_mean_nll": 0.0014751188709851704
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.8448491738363373,
+          "delta_mean_nll": -0.008838983631221708
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.382569225912448,
+          "delta_mean_nll": 0.00573459075530991
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_1",
+      "seed": 1,
+      "T": 3,
+      "donors": [
+        3,
+        6,
+        1
+      ],
+      "receivers": [
+        2,
+        4,
+        0
+      ],
+      "rank_k": [
+        416,
+        352,
+        416,
+        352,
+        416,
+        384,
+        352,
+        384
+      ],
+      "rank_v": [
+        624,
+        528,
+        624,
+        528,
+        624,
+        576,
+        528,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.173656912376245,
+      "delta_J": -0.00232354475551233,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.002255033123808488,
+        "ci95_delta_J": [
+          -0.010130893573141009,
+          0.0063239931939719435
+        ],
+        "fraction_FDP_better": 0.625,
+        "median_paired_delta": -0.004637278926111321
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.959951512468251,
+          "delta_mean_nll": -0.017142699754003843
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.7915103864406774,
+          "delta_mean_nll": -0.029367086057391134
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.3091296634647733,
+          "delta_mean_nll": 0.00955041636734677
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5564695217253757,
+          "delta_mean_nll": 0.002083460996800568
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.781277462025173,
+          "delta_mean_nll": -0.005344944882381242
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.389819421775428,
+          "delta_mean_nll": 0.040932054977020016
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.270949711906269,
+          "delta_mean_nll": 0.02227880908822044
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.239024725740819,
+          "delta_mean_nll": -0.015013564839136961
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9149985375370306,
+          "delta_mean_nll": 0.006044446312444052
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.222922263725195,
+          "delta_mean_nll": -0.0008515139925293624
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.629418743919814,
+          "delta_mean_nll": -0.01962391934648622
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7355074805018376,
+          "delta_mean_nll": -0.005069030914455652
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.889591378163459,
+          "delta_mean_nll": -0.02064759076165501
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8582170223453431,
+          "delta_mean_nll": -0.00420552693776699
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.8438665761661923,
+          "delta_mean_nll": -0.009821581301366678
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.385856190114282,
+          "delta_mean_nll": 0.009021554957143962
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_1",
+      "seed": 1,
+      "T": 4,
+      "donors": [
+        3,
+        6,
+        1,
+        5
+      ],
+      "receivers": [
+        2,
+        4,
+        0,
+        7
+      ],
+      "rank_k": [
+        416,
+        352,
+        416,
+        352,
+        416,
+        352,
+        352,
+        416
+      ],
+      "rank_v": [
+        624,
+        528,
+        624,
+        528,
+        624,
+        528,
+        528,
+        624
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1739169555717694,
+      "delta_J": -0.0020635015599879125,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.002025243370383991,
+        "ci95_delta_J": [
+          -0.008952441372960605,
+          0.005726903170911156
+        ],
+        "fraction_FDP_better": 0.6875,
+        "median_paired_delta": -0.007394516534986906
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9588448750473617,
+          "delta_mean_nll": -0.0182493371748933
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.806433401195136,
+          "delta_mean_nll": -0.01444407130293257
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.3075776170226163,
+          "delta_mean_nll": 0.007998369925189763
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5534477936962503,
+          "delta_mean_nll": -0.0009382670323248021
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7722285539202858,
+          "delta_mean_nll": -0.014393852987268474
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3837325565637002,
+          "delta_mean_nll": 0.03484518976529216
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2768802550490364,
+          "delta_mean_nll": 0.02820935223098786
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.2499681268764107,
+          "delta_mean_nll": -0.004070163703545404
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9167726083251182,
+          "delta_mean_nll": 0.007818517100531608
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.212284307985101,
+          "delta_mean_nll": -0.011489469732623547
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6372086248884443,
+          "delta_mean_nll": -0.011834038377855904
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7230396048762486,
+          "delta_mean_nll": -0.017536906540044583
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8951371308903617,
+          "delta_mean_nll": -0.01510183803475229
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8517036799166817,
+          "delta_mean_nll": -0.010718869366428407
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.849706252596661,
+          "delta_mean_nll": -0.003981904870897779
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.387705900298897,
+          "delta_mean_nll": 0.010871265141759068
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_2",
+      "seed": 2,
+      "T": 0,
+      "donors": [],
+      "receivers": [],
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1759804571317574,
+      "delta_J": 0.0,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": 0.0,
+        "ci95_delta_J": [
+          0.0,
+          0.0
+        ],
+        "fraction_FDP_better": 0.0,
+        "median_paired_delta": 0.0
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.977094212222255,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8208774724980685,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2995792470974266,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.554386060728575,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7866224069075543,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.348887366798408,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.2486709028180485,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.254038290579956,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9089540912245866,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2237737777177244,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6490426632663002,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7405765114162932,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.910238968925114,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8624225492831101,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.853688157467559,
+          "delta_mean_nll": 0.0
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.376834635157138,
+          "delta_mean_nll": 0.0
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_2",
+      "seed": 2,
+      "T": 1,
+      "donors": [
+        5
+      ],
+      "receivers": [
+        0
+      ],
+      "rank_k": [
+        416,
+        384,
+        384,
+        384,
+        384,
+        352,
+        384,
+        384
+      ],
+      "rank_v": [
+        624,
+        576,
+        576,
+        576,
+        576,
+        528,
+        576,
+        576
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1724297389628617,
+      "delta_J": -0.003550718168895628,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.003478920110899864,
+        "ci95_delta_J": [
+          -0.009690055464967885,
+          0.003403642470647835
+        ],
+        "fraction_FDP_better": 0.6875,
+        "median_paired_delta": -0.007265470095944693
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9611618471831207,
+          "delta_mean_nll": -0.01593236503913431
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8128916949312952,
+          "delta_mean_nll": -0.007985777566773322
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.2930340844723105,
+          "delta_mean_nll": -0.006545162625116063
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5646307287534,
+          "delta_mean_nll": 0.010244668024824932
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7749987717106706,
+          "delta_mean_nll": -0.011623635196883697
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3788390524177885,
+          "delta_mean_nll": 0.02995168561938044
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.26190475801468,
+          "delta_mean_nll": 0.013233855196631339
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.239170763794391,
+          "delta_mean_nll": -0.014867526785565133
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.916601347460528,
+          "delta_mean_nll": 0.007647256235941313
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2205717128817923,
+          "delta_mean_nll": -0.0032020648359321058
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6285894743487006,
+          "delta_mean_nll": -0.02045318891759962
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7321828951317002,
+          "delta_mean_nll": -0.008393616284593008
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.889819718318904,
+          "delta_mean_nll": -0.02041925060620997
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.860058010773173,
+          "delta_mean_nll": -0.0023645385099371197
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.8378076003371007,
+          "delta_mean_nll": -0.015880557130458328
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3866133628762327,
+          "delta_mean_nll": 0.009778727719094604
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_2",
+      "seed": 2,
+      "T": 2,
+      "donors": [
+        5,
+        3
+      ],
+      "receivers": [
+        0,
+        7
+      ],
+      "rank_k": [
+        416,
+        384,
+        384,
+        352,
+        384,
+        352,
+        384,
+        416
+      ],
+      "rank_v": [
+        624,
+        576,
+        576,
+        528,
+        576,
+        528,
+        576,
+        624
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1738406712174765,
+      "delta_J": -0.0021397859142808784,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.0020848260721265843,
+        "ci95_delta_J": [
+          -0.008976841288373548,
+          0.004991587120465367
+        ],
+        "fraction_FDP_better": 0.625,
+        "median_paired_delta": -0.006873933885685801
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9595620871268693,
+          "delta_mean_nll": -0.01753212509538571
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8156928664025145,
+          "delta_mean_nll": -0.005184606095554045
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.306596016518597,
+          "delta_mean_nll": 0.007016769421170466
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5743300917965826,
+          "delta_mean_nll": 0.01994403106800746
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7736861006560503,
+          "delta_mean_nll": -0.012936306251503993
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3784185989798061,
+          "delta_mean_nll": 0.02953123218139808
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.265259082460034,
+          "delta_mean_nll": 0.016588179641985334
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.238622969971402,
+          "delta_mean_nll": -0.015415320608553884
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9175018008754705,
+          "delta_mean_nll": 0.008547709650883917
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.216393656854052,
+          "delta_mean_nll": -0.007380120863672346
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6287049786988064,
+          "delta_mean_nll": -0.020337684567493852
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7303352911803813,
+          "delta_mean_nll": -0.010241220235911896
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8874048501529614,
+          "delta_mean_nll": -0.02283411877215258
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.85414129721903,
+          "delta_mean_nll": -0.008281252064080036
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.8473204105598597,
+          "delta_mean_nll": -0.0063677469076992566
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3874806400272064,
+          "delta_mean_nll": 0.010646004870068282
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_2",
+      "seed": 2,
+      "T": 3,
+      "donors": [
+        5,
+        3,
+        4
+      ],
+      "receivers": [
+        0,
+        7,
+        6
+      ],
+      "rank_k": [
+        416,
+        384,
+        384,
+        352,
+        352,
+        352,
+        416,
+        416
+      ],
+      "rank_v": [
+        624,
+        576,
+        576,
+        528,
+        528,
+        528,
+        624,
+        624
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1757699012183025,
+      "delta_J": -0.00021055591345486846,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.00015861508659721296,
+        "ci95_delta_J": [
+          -0.006159588266508819,
+          0.005754628129639271
+        ],
+        "fraction_FDP_better": 0.5625,
+        "median_paired_delta": -0.0041794107714849815
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.9657829979860253,
+          "delta_mean_nll": -0.011311214236229716
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.8119287216222801,
+          "delta_mean_nll": -0.008948750875788392
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.3117161084792315,
+          "delta_mean_nll": 0.01213686138180492
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.5749806055391673,
+          "delta_mean_nll": 0.020594544810592197
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.776288354303688,
+          "delta_mean_nll": -0.01033405260386644
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.367410213999392,
+          "delta_mean_nll": 0.01852284720098396
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.269074960637681,
+          "delta_mean_nll": 0.020404057819632726
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.242824367668618,
+          "delta_mean_nll": -0.011213922911338159
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9185172941834026,
+          "delta_mean_nll": 0.009563202958815964
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.2200568667030893,
+          "delta_mean_nll": -0.003716911014635116
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6395540177400107,
+          "delta_mean_nll": -0.009488645526289474
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.732413856747371,
+          "delta_mean_nll": -0.008162654668922187
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8869754195184214,
+          "delta_mean_nll": -0.02326354940669262
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.8577806387547753,
+          "delta_mean_nll": -0.004641910528334847
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.854854325784345,
+          "delta_mean_nll": 0.0011661683167858428
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3821596698253416,
+          "delta_mean_nll": 0.005325034668203443
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_2",
+      "seed": 2,
+      "T": 4,
+      "donors": [
+        5,
+        3,
+        4,
+        1
+      ],
+      "receivers": [
+        0,
+        7,
+        6,
+        2
+      ],
+      "rank_k": [
+        416,
+        352,
+        416,
+        352,
+        352,
+        352,
+        416,
+        416
+      ],
+      "rank_v": [
+        624,
+        528,
+        624,
+        528,
+        528,
+        528,
+        624,
+        624
+      ],
+      "total_native_rank": 7680,
+      "factor_bytes": 1069547520,
+      "resource_match_exact": true,
+      "J_control": 2.1759804571317574,
+      "J_arm": 2.1754794919903446,
+      "delta_J": -0.0005009651414127347,
+      "bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.0004299788546158027,
+        "ci95_delta_J": [
+          -0.007353297002617154,
+          0.0068986015192031395
+        ],
+        "fraction_FDP_better": 0.5625,
+        "median_paired_delta": -0.0040745520582277095
+      },
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-000",
+          "control_mean_nll": 2.977094212222255,
+          "arm_mean_nll": 2.961491104973902,
+          "delta_mean_nll": -0.015603107248352899
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-001",
+          "control_mean_nll": 1.8208774724980685,
+          "arm_mean_nll": 1.812615550953069,
+          "delta_mean_nll": -0.008261921544999495
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-002",
+          "control_mean_nll": 1.2995792470974266,
+          "arm_mean_nll": 1.3078931226555142,
+          "delta_mean_nll": 0.008313875558087602
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-003",
+          "control_mean_nll": 1.554386060728575,
+          "arm_mean_nll": 1.560520391431055,
+          "delta_mean_nll": 0.006134330702479929
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-004",
+          "control_mean_nll": 2.7866224069075543,
+          "arm_mean_nll": 2.7770980099448934,
+          "delta_mean_nll": -0.00952439696266083
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-005",
+          "control_mean_nll": 1.348887366798408,
+          "arm_mean_nll": 1.3748361499519888,
+          "delta_mean_nll": 0.025948783153580735
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-006",
+          "control_mean_nll": 2.2486709028180485,
+          "arm_mean_nll": 2.287624745395078,
+          "delta_mean_nll": 0.03895384257702972
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "exchange-train-wikitext-2-007",
+          "control_mean_nll": 2.254038290579956,
+          "arm_mean_nll": 2.246266779758116,
+          "delta_mean_nll": -0.007771510821839911
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-000",
+          "control_mean_nll": 1.9089540912245866,
+          "arm_mean_nll": 1.9157231303252047,
+          "delta_mean_nll": 0.006769039100618102
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-001",
+          "control_mean_nll": 3.2237737777177244,
+          "arm_mean_nll": 3.228022577241063,
+          "delta_mean_nll": 0.0042487995233386755
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-002",
+          "control_mean_nll": 2.6490426632663002,
+          "arm_mean_nll": 2.6346503675813437,
+          "delta_mean_nll": -0.01439229568495648
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-003",
+          "control_mean_nll": 1.7405765114162932,
+          "arm_mean_nll": 1.7291100958282186,
+          "delta_mean_nll": -0.011466415588074597
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-004",
+          "control_mean_nll": 1.910238968925114,
+          "arm_mean_nll": 1.8854404283229087,
+          "delta_mean_nll": -0.02479854060220532
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-005",
+          "control_mean_nll": 1.8624225492831101,
+          "arm_mean_nll": 1.858149087154743,
+          "delta_mean_nll": -0.0042734621283671
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-006",
+          "control_mean_nll": 2.853688157467559,
+          "arm_mean_nll": 2.8498125154794707,
+          "delta_mean_nll": -0.0038756419880883186
+        },
+        {
+          "dataset": "C4",
+          "document_id": "exchange-train-c4-007",
+          "control_mean_nll": 2.376834635157138,
+          "arm_mean_nll": 2.3784178148489445,
+          "delta_mean_nll": 0.0015831796918064356
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "signal": "q_prior",
+      "seed": null,
+      "selected_T": 2,
+      "selection_rule": "minimum calibration J over nested T=0..4; tie-break lower T",
+      "selected_delta_J": -0.008926829459213081,
+      "selected_bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.008821373461013388,
+        "ci95_delta_J": [
+          -0.016660902542541933,
+          -0.002583292814887984
+        ],
+        "fraction_FDP_better": 0.75,
+        "median_paired_delta": -0.004139404017223569
+      },
+      "all_T": [
+        {
+          "T": 0,
+          "J_arm": 2.1759804571317574,
+          "delta_J": 0.0,
+          "ci95_delta_J": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "T": 1,
+          "J_arm": 2.1707800027900106,
+          "delta_J": -0.005200454341746763,
+          "ci95_delta_J": [
+            -0.012134638262427444,
+            0.0010102020825755152
+          ]
+        },
+        {
+          "T": 2,
+          "J_arm": 2.1670536276725443,
+          "delta_J": -0.008926829459213081,
+          "ci95_delta_J": [
+            -0.016660902542541933,
+            -0.002583292814887984
+          ]
+        },
+        {
+          "T": 3,
+          "J_arm": 2.1674461536987337,
+          "delta_J": -0.008534303433023638,
+          "ci95_delta_J": [
+            -0.014884639557361013,
+            -0.002710402101604716
+          ]
+        },
+        {
+          "T": 4,
+          "J_arm": 2.167295739012758,
+          "delta_J": -0.008684718118999513,
+          "ci95_delta_J": [
+            -0.015347767374350596,
+            -0.0009738556079128108
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "native_phi",
+      "seed": null,
+      "selected_T": 3,
+      "selection_rule": "minimum calibration J over nested T=0..4; tie-break lower T",
+      "selected_delta_J": -0.008374630617282719,
+      "selected_bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.00829830244318678,
+        "ci95_delta_J": [
+          -0.015242752876005027,
+          -0.0009274618743738565
+        ],
+        "fraction_FDP_better": 0.6875,
+        "median_paired_delta": -0.008911649994843174
+      },
+      "all_T": [
+        {
+          "T": 0,
+          "J_arm": 2.1759804571317574,
+          "delta_J": 0.0,
+          "ci95_delta_J": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "T": 1,
+          "J_arm": 2.168571884519366,
+          "delta_J": -0.00740857261239114,
+          "ci95_delta_J": [
+            -0.012799100328604141,
+            -0.0013470560134258855
+          ]
+        },
+        {
+          "T": 2,
+          "J_arm": 2.1689890368615465,
+          "delta_J": -0.006991420270210824,
+          "ci95_delta_J": [
+            -0.014420969616740819,
+            0.0006254237895109972
+          ]
+        },
+        {
+          "T": 3,
+          "J_arm": 2.1676058265144746,
+          "delta_J": -0.008374630617282719,
+          "ci95_delta_J": [
+            -0.015242752876005027,
+            -0.0009274618743738565
+          ]
+        },
+        {
+          "T": 4,
+          "J_arm": 2.1682098387879023,
+          "delta_J": -0.0077706183438550624,
+          "ci95_delta_J": [
+            -0.013846440972244523,
+            -0.0015773343286145554
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_0",
+      "seed": 0,
+      "selected_T": 1,
+      "selection_rule": "minimum calibration J over nested T=0..4; tie-break lower T",
+      "selected_delta_J": -0.00036601997020113686,
+      "selected_bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.00037126122700960736,
+        "ci95_delta_J": [
+          -0.0022819668211639054,
+          0.0016986202708238805
+        ],
+        "fraction_FDP_better": 0.625,
+        "median_paired_delta": -0.0006510294820145646
+      },
+      "all_T": [
+        {
+          "T": 0,
+          "J_arm": 2.1759804571317574,
+          "delta_J": 0.0,
+          "ci95_delta_J": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "T": 1,
+          "J_arm": 2.1756144371615562,
+          "delta_J": -0.00036601997020113686,
+          "ci95_delta_J": [
+            -0.0022819668211639054,
+            0.0016986202708238805
+          ]
+        },
+        {
+          "T": 2,
+          "J_arm": 2.177740635633967,
+          "delta_J": 0.0017601785022094418,
+          "ci95_delta_J": [
+            -0.0016982353496619138,
+            0.0055702410660721565
+          ]
+        },
+        {
+          "T": 3,
+          "J_arm": 2.1784951141718807,
+          "delta_J": 0.002514657040123325,
+          "ci95_delta_J": [
+            -0.001788195348954602,
+            0.007583646528733467
+          ]
+        },
+        {
+          "T": 4,
+          "J_arm": 2.177817765511108,
+          "delta_J": 0.0018373083793505884,
+          "ci95_delta_J": [
+            -0.0026500389554200863,
+            0.0065070525893595734
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_1",
+      "seed": 1,
+      "selected_T": 3,
+      "selection_rule": "minimum calibration J over nested T=0..4; tie-break lower T",
+      "selected_delta_J": -0.00232354475551233,
+      "selected_bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.002255033123808488,
+        "ci95_delta_J": [
+          -0.010130893573141009,
+          0.0063239931939719435
+        ],
+        "fraction_FDP_better": 0.625,
+        "median_paired_delta": -0.004637278926111321
+      },
+      "all_T": [
+        {
+          "T": 0,
+          "J_arm": 2.1759804571317574,
+          "delta_J": 0.0,
+          "ci95_delta_J": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "T": 1,
+          "J_arm": 2.175959341974888,
+          "delta_J": -2.111515686920029e-05,
+          "ci95_delta_J": [
+            -0.003692389020547182,
+            0.0037264442762044324
+          ]
+        },
+        {
+          "T": 2,
+          "J_arm": 2.1738550618047157,
+          "delta_J": -0.0021253953270417014,
+          "ci95_delta_J": [
+            -0.005285144739876912,
+            0.0011067276845025701
+          ]
+        },
+        {
+          "T": 3,
+          "J_arm": 2.173656912376245,
+          "delta_J": -0.00232354475551233,
+          "ci95_delta_J": [
+            -0.010130893573141009,
+            0.0063239931939719435
+          ]
+        },
+        {
+          "T": 4,
+          "J_arm": 2.1739169555717694,
+          "delta_J": -0.0020635015599879125,
+          "ci95_delta_J": [
+            -0.008952441372960605,
+            0.005726903170911156
+          ]
+        }
+      ]
+    },
+    {
+      "signal": "random_seed_2",
+      "seed": 2,
+      "selected_T": 1,
+      "selection_rule": "minimum calibration J over nested T=0..4; tie-break lower T",
+      "selected_delta_J": -0.003550718168895628,
+      "selected_bootstrap": {
+        "n_bootstrap": 10000,
+        "seed": 0,
+        "mean_delta_J": -0.003478920110899864,
+        "ci95_delta_J": [
+          -0.009690055464967885,
+          0.003403642470647835
+        ],
+        "fraction_FDP_better": 0.6875,
+        "median_paired_delta": -0.007265470095944693
+      },
+      "all_T": [
+        {
+          "T": 0,
+          "J_arm": 2.1759804571317574,
+          "delta_J": 0.0,
+          "ci95_delta_J": [
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "T": 1,
+          "J_arm": 2.1724297389628617,
+          "delta_J": -0.003550718168895628,
+          "ci95_delta_J": [
+            -0.009690055464967885,
+            0.003403642470647835
+          ]
+        },
+        {
+          "T": 2,
+          "J_arm": 2.1738406712174765,
+          "delta_J": -0.0021397859142808784,
+          "ci95_delta_J": [
+            -0.008976841288373548,
+            0.004991587120465367
+          ]
+        },
+        {
+          "T": 3,
+          "J_arm": 2.1757699012183025,
+          "delta_J": -0.00021055591345486846,
+          "ci95_delta_J": [
+            -0.006159588266508819,
+            0.005754628129639271
+          ]
+        },
+        {
+          "T": 4,
+          "J_arm": 2.1754794919903446,
+          "delta_J": -0.0005009651414127347,
+          "ci95_delta_J": [
+            -0.007353297002617154,
+            0.0068986015192031395
+          ]
+        }
+      ]
+    }
+  ],
+  "engine": {
+    "module": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/xkv_native_exchange_engine.py",
+    "resource_formula": "official xKV grouped factor-memory formula",
+    "group_unit": "8 native four-layer groups",
+    "quantum": {
+      "delta_k": 32,
+      "delta_v": 48
+    },
+    "nested_T": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "iterative_reprofiling": false
+  },
+  "old_results_modified": false,
+  "formal_manifests_modified": false,
+  "foreign_jobs_interrupted": 0,
+  "elapsed_seconds": 24883.8835773468
+}

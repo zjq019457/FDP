@@ -1,0 +1,26 @@
+/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[Load] BASE /diskE/opt-30b -> cuda:0
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:09<00:59,  9.86s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:19<00:49,  9.82s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:29<00:38,  9.68s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:38<00:28,  9.61s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:48<00:19,  9.57s/it]Loading checkpoint shards:  86%|████████▌ | 6/7 [00:57<00:09,  9.54s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:58<00:00,  6.69s/it]Loading checkpoint shards: 100%|██████████| 7/7 [00:58<00:00,  8.35s/it]
+[Load] CMP /diskD/eigen_outputs_opt30b_r5712/final_model_headwise_KeqQ_calibUP_lora128_all48_v5_ns8192_s12k -> cuda:1
+Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/13 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/calibrate_vscale_ls_v2.py", line 585, in <module>
+    main()
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/calibrate_vscale_ls_v2.py", line 372, in main
+    cmpm = OPTForCausalLM_EigenAttn.from_pretrained(
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 3960, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 4434, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/transformers/modeling_utils.py", line 961, in _load_state_dict_into_meta_model
+    set_module_tensor_to_device(model, param_name, param_device, **set_module_kwargs)
+  File "/home/bai-project/anaconda3/envs/eigen/lib/python3.9/site-packages/accelerate/utils/modeling.py", line 330, in set_module_tensor_to_device
+    new_value = value.to(device)
+torch.AcceleratorError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

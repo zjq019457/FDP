@@ -1,0 +1,16 @@
+{
+  "job_id": "R2_uniform_preflight",
+  "stage": "R2",
+  "kind": "cpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/r2_uniform_preflight.py"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": null,
+  "depends_on": [],
+  "created_at": "2026-07-29T01:45:55.023521-07:00",
+  "meta": {
+    "role": "preflight"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "artifact": "MPT7B_UNIFORM_REALIZATION_AUDIT_V1.json",
+  "attempt": 4,
+  "classification": "ENGINEERING_DUPLICATE_CANARY_FIELD_PATH_BUG",
+  "decision": "Invalidate the duplicate-canary verdict only; preserve the immutable attempt-4 report and all measured outputs. Re-run a clean-process duplicate check with the schema-correct field path.",
+  "evidence": {
+    "actual_b_live_bytes": 851705856,
+    "actual_b_live_matches_predicted": true,
+    "duplicate_logits_match": true,
+    "duplicate_realization_match_by_direct_nested_field_check": true,
+    "layers_rank_bound": 32,
+    "operator_parity_status": "PASS",
+    "peak_allocated_bytes": 15092326400,
+    "previous_logits_sha256": "b32dcfa57f4408cc9d725cb89c5a2c471973b9126fcdfe01d1881a7f69523223",
+    "previous_realization_sha256": "18f06b4d067866452755acbbb272bd7b737fcc6eeb03c030c6443050fb867a35",
+    "current_realization_sha256": "18f06b4d067866452755acbbb272bd7b737fcc6eeb03c030c6443050fb867a35"
+  },
+  "immutable_artifacts": {
+    "attempt4_audit_file_sha256": "656dc6d9b76e1d55c30370f2400dfe09a9405858567365bbb6a0cbd37919b17b",
+    "attempt4_worker_log_sha256": "0486fac7c06b57c374f1a324be36019144a3d09db3d7ec2fbfea4d5ce1af67c6",
+    "auditor_script_sha256_before_fix": "193354748d3e3428ea70db2721d34e896d84a787e2e5c68f266936eaeec2bfaf",
+    "attempt4_audit_path": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/realization/EB0011_UNIFORM_ATTEMPT4/MPT7B_UNIFORM_REALIZATION_AUDIT_V1.json"
+  },
+  "model_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+  "scope": "MPT-7B Uniform EB=0.011 realization/parity/canary validation; not a formal FDP-vs-Uniform resource lock or quality result",
+  "status": "ATTEMPT4_VERDICT_INVALIDATED_CHECKER_BUG; ATTEMPT4_DATA_PRESERVED"
+}

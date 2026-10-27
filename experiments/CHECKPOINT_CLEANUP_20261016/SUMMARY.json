@@ -1,0 +1,72 @@
+[
+ {
+  "dir": "/diskD/jiaqizhang/fdp_eb_orth_paper_v1_diskf_spill/qwen_semantic_hold_spill/qwen_Old_FDP_Exact_MEDIUM/final_model",
+  "freed_gb": 14.69,
+  "n_weights": 3
+ },
+ {
+  "dir": "/diskD/jiaqizhang/fdp_eb_orth_paper_v1_diskf_spill/reviewer_full_completion_v2_20260731/external_official/recalkv_models/llama3_ratio-0.5_gs-4-moderate",
+  "freed_gb": 15.85,
+  "n_weights": 4
+ },
+ {
+  "dir": "/diskD/jiaqizhang/llama3_full_resource_robustness_v1/ultra_aggressive_v1/causal_component_loo151m_v1_20261005/drop_d1_materialized_quality_diag_v1_20261008",
+  "freed_gb": 15.57,
+  "n_weights": 4
+ },
+ {
+  "dir": "/diskD/jiaqizhang/fdp125_failed_materialization_quarantine_20260930/llama2_e090_uniform_materialization_partial",
+  "freed_gb": 6.09,
+  "n_weights": 2
+ },
+ {
+  "dir": "/diskD/jiaqizhang/llama2_eb090_true_two_pass_lane_20261001/materialized/UNIFORM_EB090",
+  "freed_gb": 12.44,
+  "n_weights": 3
+ },
+ {
+  "dir": "/diskD/jiaqizhang/LLAMA2_UNIFORM_EB059_STRICT_MATCH_V1/attempt6/final_model",
+  "freed_gb": 12.8,
+  "n_weights": 3
+ },
+ {
+  "dir": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/materialized_formal_checkpoints/medium/fdp125_direct/final_model",
+  "freed_gb": 15.79,
+  "n_weights": 4
+ },
+ {
+  "dir": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/materialized_formal_checkpoints/medium/official_uniform/final_model",
+  "freed_gb": 15.8,
+  "n_weights": 4
+ },
+ {
+  "dir": "/diskE/jiaqizhang/FLOOR45_CONTROLS_V1_SCRATCH/models/tail45_mat_aggressive/final_model",
+  "freed_gb": 15.74,
+  "n_weights": 4
+ },
+ {
+  "dir": "/diskF/jiaqizhang/fdp125_aggressive_sibling_replay_20261007_gpu1/final_model",
+  "freed_gb": 15.61,
+  "n_weights": 4
+ },
+ {
+  "dir": "/diskF/jiaqizhang/fdp125_aggressive_sibling_replay_20261007_gpu1/realized_model",
+  "freed_gb": 15.61,
+  "n_weights": 4
+ },
+ {
+  "dir": "/diskF/jiaqizhang/FDP_OFFICIAL_FLOOR45_V3_SCRATCH/models/build_fdp_aggressive/final_model",
+  "freed_gb": 15.57,
+  "n_weights": 4
+ },
+ {
+  "dir": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized_v2/severe_no_causal/final_model",
+  "freed_gb": 15.58,
+  "n_weights": 4
+ },
+ {
+  "dir": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized_v2/severe_no_z/final_model",
+  "freed_gb": 15.58,
+  "n_weights": 4
+ }
+]

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "model": "llama3_8b",
+  "tier": "aggressive",
+  "methods": {
+    "uniform": {
+      "B_live": 155090944,
+      "wiki_ppl": 13.189824626309454,
+      "c4_ppl": 20.901409580429988,
+      "rank_sha": "c1c8ea39e03b631ed4ff50eaaace6afec4e60b9098b7a50725afe83cd11398c5",
+      "basis_sha": "86de81bb5779b6a918b16bf649c26764cc2ae584ef4c56c8934f04d038e23530"
+    },
+    "parent": {
+      "B_live": 158105600,
+      "wiki_ppl": 10.318369519877693,
+      "c4_ppl": 18.069218416678243,
+      "rank_sha": "c15a0a97e423ddaf01005bf38b88cf99b5461069a52454a8185925e63b9fe7dc",
+      "basis_sha": "967c630d5f81dbed0fa0efd8082b37d75ab16248fd6a7c8613a610b098bbf495"
+    },
+    "fdp125": {
+      "B_live": 159088640,
+      "wiki_ppl": 10.157443283195123,
+      "c4_ppl": 17.757530416687768,
+      "rank_sha": "96e157944dd20ffe45cfc13414a6d3f4966ac070bccafdda184b88e601bd90e0",
+      "basis_sha": "71086dcf96560eff9eb5bc9853dbae9b261a0c58c215963116bcc27a3875f779"
+    }
+  },
+  "completed_at": "2026-09-13T15:39:18.379432-07:00"
+}

@@ -1,0 +1,159 @@
+{
+  "benchmark_definition_modified": false,
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "formal_results_modified": false,
+  "historical_external_blocker_preserved": true,
+  "loader": "lm_eval.TaskManager(include_path=[offline_task_root, local_task_root])",
+  "missing_tasks": [],
+  "offline_mode": true,
+  "status": "LOCAL_ZERO_SHOT_DATASETS_BOUND",
+  "tasks": {
+    "arc_challenge": {
+      "bindings": [
+        {
+          "bytes": 443517,
+          "exists": true,
+          "kind": "test",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Challenge/ARC-Challenge-Test.jsonl",
+          "samples": 1172,
+          "sha256": "03227c30fd557ad1416c2cb955eeb6dc79eeb21e0679456a1ccd42eaccc0ff87",
+          "status": "FOUND_AND_BOUND"
+        },
+        {
+          "bytes": 650,
+          "exists": true,
+          "kind": "task_config",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/arc_challenge_localjsonl.yaml",
+          "samples": null,
+          "sha256": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d",
+          "status": "FOUND_AND_BOUND"
+        }
+      ],
+      "status": "FOUND_AND_BOUND"
+    },
+    "arc_easy": {
+      "bindings": [
+        {
+          "bytes": 795357,
+          "exists": true,
+          "kind": "test",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Easy/ARC-Easy-Test.jsonl",
+          "samples": 2376,
+          "sha256": "874354cf372667530bd6cbd2d78dca2d657c5e2e746f53cf01d1e9d3a90cbc3d",
+          "status": "FOUND_AND_BOUND"
+        },
+        {
+          "bytes": 702,
+          "exists": true,
+          "kind": "task_config",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/arc_easy_localjsonl.yaml",
+          "samples": null,
+          "sha256": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15",
+          "status": "FOUND_AND_BOUND"
+        }
+      ],
+      "status": "FOUND_AND_BOUND"
+    },
+    "hellaswag": {
+      "bindings": [
+        {
+          "bytes": 12224379,
+          "exists": true,
+          "kind": "validation",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/hellaswag-train-dev/valid_labeled.jsonl",
+          "samples": 10042,
+          "sha256": "c92843707204769d8b656a9c4bbe71fb5b897f98b0cac73bd4d8e925e2419686",
+          "status": "FOUND_AND_BOUND"
+        },
+        {
+          "bytes": 561,
+          "exists": true,
+          "kind": "task_config",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/hellaswag_localjsonl.yaml",
+          "samples": null,
+          "sha256": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815",
+          "status": "FOUND_AND_BOUND"
+        }
+      ],
+      "status": "FOUND_AND_BOUND"
+    },
+    "openbookqa": {
+      "bindings": [
+        {
+          "bytes": 55535,
+          "exists": true,
+          "kind": "test",
+          "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/datasets/allenai/openbookqa/main/test-00000-of-00001.parquet",
+          "samples": 500,
+          "sha256": "cd5483e366daa230c1c87bbdc512d8b7229f14f6dd04d19fc8b1a3855aaaa8a3",
+          "status": "FOUND_AND_BOUND"
+        },
+        {
+          "bytes": 58233,
+          "exists": true,
+          "kind": "validation",
+          "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/datasets/allenai/openbookqa/main/validation-00000-of-00001.parquet",
+          "samples": 500,
+          "sha256": "35370b9cfee8c1ff325ccc74adc434d12c47ca0ac3244aa87f3fa77069285206",
+          "status": "FOUND_AND_BOUND"
+        },
+        {
+          "bytes": 963,
+          "exists": true,
+          "kind": "task_config",
+          "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/local_zero_shot_tasks/openbookqa_localjsonl.yaml",
+          "samples": null,
+          "sha256": "c203fa817c98147d93df29537a5fb8055853c5875f471292868d6b9e06d76a65",
+          "status": "FOUND_AND_BOUND"
+        }
+      ],
+      "status": "FOUND_AND_BOUND"
+    },
+    "piqa": {
+      "bindings": [
+        {
+          "bytes": 602237,
+          "exists": true,
+          "kind": "validation",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/piqa/dev_labeled.jsonl",
+          "samples": 1838,
+          "sha256": "a574189accfc2ce3ddf797a491540afbe7543b0b70411c798d5fabffcf14bb58",
+          "status": "FOUND_AND_BOUND"
+        },
+        {
+          "bytes": 440,
+          "exists": true,
+          "kind": "task_config",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/piqa_localjsonl.yaml",
+          "samples": null,
+          "sha256": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1",
+          "status": "FOUND_AND_BOUND"
+        }
+      ],
+      "status": "FOUND_AND_BOUND"
+    },
+    "winogrande": {
+      "bindings": [
+        {
+          "bytes": 275682,
+          "exists": true,
+          "kind": "validation",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/winogrande/dev.jsonl",
+          "samples": 1267,
+          "sha256": "1aeac79cf46a3dcbe59a71ca7e5372a1490cde2b4ae2387dc56f00378104d2e8",
+          "status": "FOUND_AND_BOUND"
+        },
+        {
+          "bytes": 638,
+          "exists": true,
+          "kind": "task_config",
+          "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/winogrande_localjsonl.yaml",
+          "samples": null,
+          "sha256": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999",
+          "status": "FOUND_AND_BOUND"
+        }
+      ],
+      "status": "FOUND_AND_BOUND"
+    }
+  }
+}

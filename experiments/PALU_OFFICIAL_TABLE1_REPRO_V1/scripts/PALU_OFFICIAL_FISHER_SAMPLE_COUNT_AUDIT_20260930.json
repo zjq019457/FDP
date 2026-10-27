@@ -1,0 +1,23 @@
+{
+  "schema": "PALU_OFFICIAL_FISHER_SAMPLE_COUNT_AUDIT_V1",
+  "date": "2026-09-30",
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "official_fisher_uniform_source": "palu/rank_search.py",
+  "official_loader_behavior": "fisher_uniform calls get_calib_data(..., 2048, seqlen=args.calib_seqlen), then calib_fisher_info(..., args.use_cache); on cache hit it loads the existing Fisher tensor.",
+  "wrapper_field_observed": 32,
+  "effective_fisher_sample_count": 2048,
+  "cache_sha256": "ef5a71b830006bd7fe09b183bf8871becec4b495783811944b353a1d78b9689b",
+  "cache_generation_evidence": "2026-09-29 official fisher_uniform log records cache miss, Fisher-info creation, then save; the later gs=4 run logs cache hit.",
+  "interrupted_worker": {
+    "pid": 1326868,
+    "cell": "J_LRD_GS32_FISHER_UNIFORM",
+    "stage": "factor decomposition before PPL",
+    "completed_quality_result": false,
+    "partial_artifacts_preserved": true,
+    "foreign_jobs_interrupted": 0
+  },
+  "correction": "The prior INVALIDATED_PROTOCOL_MISMATCH label was too strong. The partial cell used the official 2048-sample Fisher cache; wrapper argument 32 was not consumed by fisher_uniform. The cell was interrupted mid-decomposition and must be resumed to obtain PPL.",
+  "historical_completed_results_modified": false,
+  "retry_scope": "Resume only the incomplete J-LRD gs=32 cell and remaining not-yet-completed group-size cells under a new state/output namespace, with explicit wrapper setting 2048.",
+  "foreign_jobs_interrupted": 0
+}

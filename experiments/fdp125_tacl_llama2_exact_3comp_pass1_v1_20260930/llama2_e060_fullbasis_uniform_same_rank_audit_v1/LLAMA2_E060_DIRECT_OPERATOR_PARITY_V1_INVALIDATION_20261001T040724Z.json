@@ -1,0 +1,12 @@
+{
+  "artifact_id": "LLAMA2_E060_DIRECT_OPERATOR_PARITY_V1_INVALIDATION",
+  "created_utc": "2026-10-01T04:07:24.745206+00:00",
+  "foreign_jobs_interrupted": 0,
+  "invalidated_artifact": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/LLAMA2_E060_FDP125_DIRECT_OPERATOR_PARITY_V1.json",
+  "invalidated_sha256": "403d0f4c60c04bffe817d539cd11d5416369d4d905c68b5f6e67a037d741393b",
+  "reason": "V1 used a 1e-3 acceptance cutoff absent from frozen protocol and compared stored BF16-factor runtime to FP32 dense matrix projected through basis, so quantization residual was misclassified as operator-parity failure. This was not a runtime mismatch.",
+  "replacement_artifact": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/LLAMA2_E060_FDP125_MATERIALIZATION_OPERATOR_AUDIT_V2.json",
+  "replacement_sha256": "b00b38e3bedbf9fce11ccf490f01fc2da0e5f95a9a1ec3d193c92de569210e54",
+  "retained_observations": "V1 relative-L2 0.00163\u20130.001675 and cosine >0.999998 remain as quantization diagnostics only.",
+  "status": "INVALIDATED_UNPINNED_THRESHOLD_AND_NONMATCHED_REFERENCE"
+}

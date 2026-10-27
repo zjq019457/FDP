@@ -1,0 +1,20 @@
+{
+  "status": "WORKER_COMPLETE",
+  "gpu_index": 0,
+  "shard_index": 0,
+  "reference_loss": {
+    "A": {
+      "nll_sum": 150688.09155273438,
+      "token_count": 63457,
+      "mean_nll": 2.3746488417784386
+    },
+    "B": {
+      "nll_sum": 150966.19287109375,
+      "token_count": 61410,
+      "mean_nll": 2.4583324030466334
+    }
+  },
+  "probe_file": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_E068_NATIVE_ADD_BENEFIT_V1_ATTEMPT1_20261001/worker_gpu0_probes.jsonl",
+  "probe_file_sha256": "31c2e9daff3b212475d3262d158d1c702a8b494513f1e06bf2fcc5a553ab5f24",
+  "updated_utc": "2026-10-02T03:56:34.950242+00:00"
+}

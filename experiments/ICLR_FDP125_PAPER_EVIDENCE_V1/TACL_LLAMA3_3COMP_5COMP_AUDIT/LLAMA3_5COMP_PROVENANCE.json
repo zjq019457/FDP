@@ -1,0 +1,76 @@
+{
+  "audit_created_utc": "2026-10-01T00:26:05.972556+00:00",
+  "model": {
+    "repo_id": "meta-llama/Meta-Llama-3-8B",
+    "content_fingerprint_sha256": "b6d5136c429a3df995f73537f05abb658bbc0a63203338930fdea9e8f64e7ae0",
+    "current_cell_lock_sha256": "29fbf129266e09da0f08303fc4ea32f2a5291b20e1af020f25a07ec96c802cd6",
+    "note": "Llama-3-8B, not Llama-3.1-8B."
+  },
+  "formal_method_freeze": {
+    "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/FDP_FINAL_METHOD_FREEZE.json",
+    "sha256": "73753c0a752e906dbaf85e2c6c26d13983d0533882420148400ed71eb600737d",
+    "decision_path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/FDP_FINAL_DECISION.json",
+    "decision_sha256": "cf19206928a10bf8636de447a5a4848f517fc0d0585137e540518b109dacc681",
+    "decision_status": "APPROVED",
+    "selected_method": "TRUE_TWO_PASS_FDP_EB",
+    "selected_profile": "historical multi-metric profile",
+    "selection_timing": "FROZEN 2026-09-09 before 2026-09-10 dev manifest; five components d1+d2+d3+d4+d5"
+  },
+  "formula": "s_raw=d1+d2+d3+d4+max(0,-entropy_diff_A); s_tilde=MinMax(s_raw); epsilon_raw=e/(1+1.2*s_tilde); mean-normalize to e; effective layer0 is frozen to e; rank search by canonical threshold builder.",
+  "same_profile_subset_search_comparator": {
+    "component_mask": "11111",
+    "components": [
+      "d1",
+      "d2",
+      "d3",
+      "d4",
+      "d5"
+    ],
+    "source_provenance_sha256": "a0bd5ad30cd7fac5ec74e242fea868a36dabfbe19f08cb153691e4d94cc8b89e",
+    "rank_schedule_file_sha256": "33f91133ead015a12a3cfd198d9dedae5b308640d2233e3d659a43a3b5c6859d",
+    "rank_sha256": "870786eb6b8e5ca5c196ae0a421e384686a011e80a8be7a95f1fd6b0fd1a6064",
+    "b_live_bytes": 198377472,
+    "target_bytes": 198377472,
+    "wiki_ppl": 7.161075194201872,
+    "c4_ppl": 12.074390587688276,
+    "J": 2.229873432911576,
+    "compressed_model_hash": "12f158721a7918c78eb6ee274b6fb02d2584714722875a5708da9f739151c005",
+    "status": "same-profile component-subset search comparator; post-hoc, not the original formal selection freeze"
+  },
+  "historical_frozen_authority": {
+    "component_mask": "11111",
+    "authority_rank_sha256": "4c2336e9a5f009e0babc5e078b48ebfca0fc91d58e219608a22ecc04a7ecf49a",
+    "authority_b_live_bytes": 198377472,
+    "official_b_live_bytes": 198967296,
+    "gap_bytes_fdp_minus_official": -589824,
+    "gap_pct_vs_official": -0.29645,
+    "basis_sha256": "f4a6755020313702c4f85d09b0a0a445e43dfd34d59848923ca149413a0ad52",
+    "wiki_ppl": 7.160824529356363,
+    "c4_ppl": 12.07751148423164,
+    "J": 2.229985150198967,
+    "quality_source": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/MAY_REPLICATION_FINAL_DECISION.json",
+    "quality_source_sha256": "4e797f245f83974844b01526e0e940300c88d3121f9a9f22d53a47b4710346a3",
+    "zero_shot_sources_conflict": true,
+    "zero_shot_report_a": {
+      "delta_fraction": 0.0024,
+      "ci95_fraction": [
+        -0.0026,
+        0.0074
+      ],
+      "p": 0.3526,
+      "source": "FDP_FINAL_DECISION.json"
+    },
+    "zero_shot_report_b": {
+      "official_macro": 0.6491179985,
+      "fdp_macro": 0.6435457559,
+      "delta_pp": -0.55722426,
+      "source": "legacy raw eval; exact artifact/hash binding not yet reconciled"
+    },
+    "zero_shot_status": "CONFLICTING_UNBOUND; do not quote a single five-component ZS value as formal"
+  },
+  "same_as_three_component_replay_family": {
+    "subset_search_code_sha256": "123013ac73df49c312ea02e4ab562c725d5fe2d6b5bd102087a910e77572e45c",
+    "basis_builder_sha256": "e23294114d29da8428229534967daff8f494c8f4078bb3c76db02065b6141336",
+    "operator_sha256": "b6dc7eb0d001848121ffea1f28d152bf19b0efaeff2e3b26ad9dcb5e22aeadb7"
+  }
+}

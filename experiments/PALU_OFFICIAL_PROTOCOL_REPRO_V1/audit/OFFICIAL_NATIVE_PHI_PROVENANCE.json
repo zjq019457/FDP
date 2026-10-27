@@ -1,0 +1,16 @@
+{
+  "finite_difference": "remove one legal 32-rank quantum from one official K/V group, realize through official whiten conversion, evaluate independent calibration split",
+  "freeze_required": "PALU_OFFICIAL_NATIVE_PHI_LOCK.json",
+  "name": "PALU_OFFICIAL_NATIVE_MARGINAL_V1",
+  "official_action_space_sha256": "d28e1f20318fd12d49478f440bc10f978ba0489ace1d3fc7173b892680440a97",
+  "old_phi_status": "VALID_FOR_OLD_ANCHOR_SCHEMA_ONLY",
+  "profiling_split": "independent calibration manifest; no formal Wiki/C4/zero-shot/LongBench quality used for transfer selection",
+  "ratios": [
+    0.7,
+    0.5,
+    0.3
+  ],
+  "reason": "old phi was profiled in the immutable 2-slot/module anchor action space, not the official 8-group/module action space",
+  "status": "NEW_OFFICIAL_PHI_REQUIRED",
+  "unit_count": 512
+}

@@ -1,0 +1,1378 @@
+{
+  "c4": {
+    "chunks": 256,
+    "mean_token_nll": 3.0756874084472656,
+    "ppl": 21.66476933950598,
+    "summed_nll": 1612546.0,
+    "tokens": 524288
+  },
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "method": "PALU_UNIFORM",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "module_census": {
+    "model.layers.0.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.0.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.1.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.1.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.10.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.10.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.11.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.11.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.12.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.12.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.13.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.13.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.14.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.14.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.15.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.15.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.16.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.16.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.17.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.17.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.18.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.18.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.19.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.19.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.2.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.2.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.20.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.20.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.21.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.21.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.22.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.22.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.23.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.23.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.24.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.24.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.25.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.25.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.26.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.26.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.27.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.27.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.28.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.28.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.29.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.29.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.3.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        352,
+        384
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          384
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.3.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.30.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.30.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.31.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.31.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.4.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.4.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.5.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.5.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.6.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.6.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.7.self_attn.k_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.7.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.8.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.8.self_attn.v_proj": {
+      "effective_rank_sum": 736,
+      "requested_ranks": [
+        384,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          384
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        736,
+        4096
+      ]
+    },
+    "model.layers.9.self_attn.k_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    },
+    "model.layers.9.self_attn.v_proj": {
+      "effective_rank_sum": 704,
+      "requested_ranks": [
+        352,
+        352
+      ],
+      "u_shapes": [
+        [
+          2048,
+          352
+        ],
+        [
+          2048,
+          352
+        ]
+      ],
+      "vt_shape": [
+        704,
+        4096
+      ]
+    }
+  },
+  "native_conversion": "official Palu HeadwiseLowRankModule with frozen anchor-schema factors; no schedule search during quality",
+  "protocol_manifest": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/formal_protocol/FORMAL_QUALITY_PROTOCOL_MANIFEST.json",
+  "ratio": 0.7,
+  "resource": {
+    "decode_cache_bytes": 187432960,
+    "prefill_cache_bytes": 187432960,
+    "total_native_rank": 45760
+  },
+  "resource_match_gate": "PASS",
+  "schedule_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/schedules/llama2_ratio_0.7_uniform_schedule.json",
+  "schedule_sha": "7895923137f47c7fef019c5437412caeb76e4eeedee223e697b5001c578bf519",
+  "scorer": "historical official run_ppl_eval semantics; common implementation for all methods",
+  "status": "FORMAL_QUALITY_COMPLETE",
+  "wiki": {
+    "chunks": 166,
+    "mean_token_nll": 2.408120764307229,
+    "ppl": 11.113057455511159,
+    "summed_nll": 818684.0,
+    "tokens": 339968
+  }
+}

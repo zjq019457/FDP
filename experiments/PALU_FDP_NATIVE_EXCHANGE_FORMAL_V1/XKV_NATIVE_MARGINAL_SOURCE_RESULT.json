@@ -1,0 +1,3279 @@
+{
+  "status": "COMPLETE",
+  "experiment": "XKV_FIXED_RUNTIME_NATIVE_MARGINAL_V1",
+  "operator": "xKV",
+  "runtime_fixed": true,
+  "runtime_fix": {
+    "llama_sdpa_output_transpose": true,
+    "decode_q_len_1_causal_mask": true,
+    "upstream_source_modified": false
+  },
+  "model": "/diskF/jiaqizhang/Llama-3.1",
+  "dtype": "torch.bfloat16",
+  "backend": "sdpa",
+  "gpu": "2",
+  "gpu1_used": false,
+  "native_groups": [
+    [
+      0,
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6,
+      7
+    ],
+    [
+      8,
+      9,
+      10,
+      11
+    ],
+    [
+      12,
+      13,
+      14,
+      15
+    ],
+    [
+      16,
+      17,
+      18,
+      19
+    ],
+    [
+      20,
+      21,
+      22,
+      23
+    ],
+    [
+      24,
+      25,
+      26,
+      27
+    ],
+    [
+      28,
+      29,
+      30,
+      31
+    ]
+  ],
+  "native_group_count": 8,
+  "group_size": 4,
+  "control": {
+    "rank_k": 384,
+    "rank_v": 576,
+    "W": 4,
+    "V_over_K": 1.5,
+    "total_native_rank": 7680,
+    "factor_bytes_total": 1069547520
+  },
+  "perturbation": {
+    "delta_k": 32,
+    "delta_v": 48,
+    "ratio": 1.5,
+    "rank_k_perturb": 352,
+    "rank_v_perturb": 528
+  },
+  "factor_memory_formula": {
+    "source": "/diskF/jiaqizhang/fdp_lowrank_operator_zoo_v1/repos/xkv_upstream/scripts/calc_kv_comp_rate.py",
+    "source_SHA256": "a71c1b0fc833aff8837add29996f22a4925fc60dd9162bba31cf583256bd71f6",
+    "definition": "per-group: [B*L*(rank_k+rank_v) + W*B*kv_heads*head_dim*(rank_k+rank_v)] * bits/8",
+    "batch": 1,
+    "seqlen": 65536,
+    "bits": 16,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "group_size": 4,
+    "control_group_bytes": 133693440,
+    "perturbed_group_bytes": 122552320,
+    "delta_group_bytes": 11141120,
+    "runtime_dense_reconstruction_note": "FakeLayerMergingCache reconstructs dense per-layer tensors; factor bytes are the official formula and no persistent factor-memory saving claim is made"
+  },
+  "q_metadata": {
+    "q_SHA": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+    "q_lock": "/diskF/jiaqizhang/FDP_NATIVE_TRANSFER_V2_WORK/FINAL_FDP_CORE_V2/authority/FINAL_FDP_CORE_V2_DIRECTION_FIX.json",
+    "q_lock_SHA256": "378d424e6f2901a5c05c7712d827c9e26ee014a6aca53d69e4c2ebdcb4802dda",
+    "q_to_group_rule": "q_group[g]=mean(q[4g:4g+4]); h_group=mean(1+1.2*q)=1+1.2*q_group; native projection retains 8 constant four-layer groups",
+    "q": [
+      0.0,
+      0.12052861965041449,
+      1.0,
+      0.5307800315649264,
+      0.4448864318752493,
+      0.9750307946160874,
+      0.6954170495624193,
+      0.6173603897100236,
+      0.6197302457129967,
+      0.6245070683946297,
+      0.6843380442230613,
+      0.5848725100963484,
+      0.9182148467721551,
+      0.503014297389254,
+      0.4738883185445016,
+      0.5576626296476382,
+      0.5982198876969251,
+      0.5095308247142902,
+      0.2833780365678124,
+      0.36150360528817727,
+      0.10538882842944036,
+      0.19257496512646322,
+      0.17747780013965767,
+      0.18491258636984245,
+      0.20319130907217875,
+      0.08339118075720033,
+      0.1552359338076421,
+      0.23228458096117952,
+      0.17939419673234716,
+      0.11535804021109192,
+      0.14038645302269334,
+      0.14100785895349516
+    ],
+    "q_group": [
+      0.4128271628038352,
+      0.6831736664409449,
+      0.6283619671067591,
+      0.6131950230883872,
+      0.4381580885668013,
+      0.16508854501635092,
+      0.16852575114955018,
+      0.1440366372299069
+    ],
+    "h_group": [
+      1.4953925953646023,
+      1.8198083997291339,
+      1.7540343605281108,
+      1.7358340277060647,
+      1.5257897062801615,
+      1.198106254019621,
+      1.20223090137946,
+      1.1728439646758884
+    ]
+  },
+  "provenance": {
+    "old_profile_status": "LEGACY_BROKEN_RUNTIME_FRAGILITY",
+    "old_profile_reason": "old profile carries no proof of both repaired runtime fixes and predates/does not bind to the current fixed-runtime audit; excluded from current paper claim",
+    "old_profiles": [
+      {
+        "tier": "LIGHT",
+        "path": "/diskF/jiaqizhang/FDP_NATIVE_TRANSFER_V2_WORK/profiles/xKV/LIGHT/layer_fragility.csv",
+        "exists": true,
+        "mtime": 1789648304.018916,
+        "sha256": "25fa61fdeab1917fa8fe5f6bac9825ba4e02315292f7aee4a286f3c78291bb46"
+      },
+      {
+        "tier": "MEDIUM",
+        "path": "/diskF/jiaqizhang/FDP_NATIVE_TRANSFER_V2_WORK/profiles/xKV/MEDIUM/layer_fragility.csv",
+        "exists": true,
+        "mtime": 1789648304.0419154,
+        "sha256": "08aebc458719e7519d0fe492e60e13718a270f73be7861f1ae4ccb7ae61f0a5b"
+      },
+      {
+        "tier": "AGGRESSIVE",
+        "path": "/diskF/jiaqizhang/FDP_NATIVE_TRANSFER_V2_WORK/profiles/xKV/AGGRESSIVE/layer_fragility.csv",
+        "exists": true,
+        "mtime": 1789648304.0619147,
+        "sha256": "26712a3f2acda5e81fc361ca91c68fbd4663849a46ea8cf2a65225c575fd46a5"
+      }
+    ],
+    "fixed_runtime_audit": {
+      "path": "/diskF/jiaqizhang/xkv_native_runtime_fixed_v1/audit/XKV_FIXED_RUNTIME_AUDIT.json",
+      "sha256": "d2f0a754c118433bbe0c8e2904adba4173d6e994c69fc24aa923637826eea31b",
+      "runtime_fix": {
+        "transpose_fix": true,
+        "decode_causal_fix": true,
+        "implementation": "independent in-memory SDPA wrapper; upstream source unchanged"
+      },
+      "status": "PASS"
+    },
+    "fixed_runtime_gates": {
+      "path": "/diskF/jiaqizhang/xkv_native_runtime_fixed_v1/audit/XKV_FIXED_RUNTIME_GATES.json",
+      "sha256": "03c8d680608801789c3597282796afde8f15268de1820ec8ccfd30bc1c59c26e",
+      "status": "PASS"
+    },
+    "recompute_required": true
+  },
+  "calibration_manifest": {
+    "path": "/home/bai-project/jiaqizhang/XKV_FIXED_RUNTIME_NATIVE_MARGINAL_V1/CALIBRATION_MANIFEST.json",
+    "sha256": "ed818a4fce63c4fd47ac6520633f82a99d8dd31ca910eb705b1b4f1511e64310",
+    "counts": {
+      "WikiText-2": 8,
+      "C4": 8
+    },
+    "prefix_tokens": 4096,
+    "continuation_tokens": 64,
+    "objective": "equal-dataset-weight mean of per-window continuation mean NLL"
+  },
+  "cases": [
+    {
+      "case": "control",
+      "perturb_group": null,
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "runtime_config": {
+        "num_groups": 8,
+        "group_size": 4,
+        "groups": [
+          {
+            "group_id": 0,
+            "layers": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 1,
+            "layers": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 2,
+            "layers": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 3,
+            "layers": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 4,
+            "layers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 5,
+            "layers": [
+              20,
+              21,
+              22,
+              23
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 6,
+            "layers": [
+              24,
+              25,
+              26,
+              27
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 7,
+            "layers": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          }
+        ],
+        "requested_effective_config_equal": true
+      },
+      "aggregate": {
+        "dataset": {
+          "WikiText-2": {
+            "windows": 8,
+            "mean_token_nll": 2.138042158836555,
+            "ppl": 8.482813359180193
+          },
+          "C4": {
+            "windows": 8,
+            "mean_token_nll": 2.101338028470776,
+            "ppl": 8.177103793698723
+          }
+        },
+        "J": 2.1196900936536656,
+        "ppl_from_J": 8.328556015336066
+      },
+      "runtime_dense_reconstructed_cache_bytes_after_prefill": 545128448,
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-000",
+          "token_sha": "347f68a6d21121adfbcba49b66269513dee76283fbd80b5ec4f9dec44613db87",
+          "valid_tokens": 64,
+          "total_nll": 179.67852936405689,
+          "mean_nll": 2.807477021313389,
+          "continuation_ppl": 16.568064569268532,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-001",
+          "token_sha": "23022b7d6ca49eec061e7cff9a9a17c9e890e9c60d4e4ace90a3b064396b6547",
+          "valid_tokens": 64,
+          "total_nll": 61.1577790354786,
+          "mean_nll": 0.9555902974293531,
+          "continuation_ppl": 2.6002050243282078,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-002",
+          "token_sha": "a6f0b9bc18f84572a1c74005038346fff46fc2e3ff865d3fed5ef3a97916dd00",
+          "valid_tokens": 64,
+          "total_nll": 144.39604059327394,
+          "mean_nll": 2.2561881342699053,
+          "continuation_ppl": 9.546629251879027,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-003",
+          "token_sha": "eab74ce07faeca74083105274ae3df30da6c01f25f5b720e2ea8c197f6f73ff0",
+          "valid_tokens": 64,
+          "total_nll": 134.77032208134187,
+          "mean_nll": 2.105786282520967,
+          "continuation_ppl": 8.2135586488856,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-004",
+          "token_sha": "a309358bea304e4041acbfc07ead434242e68bf7711b689196f136837ce0b957",
+          "valid_tokens": 64,
+          "total_nll": 141.16453303501476,
+          "mean_nll": 2.2056958286721056,
+          "continuation_ppl": 9.076565105275975,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-005",
+          "token_sha": "3f8cce3e82dbf94c7a152ee7403494fd1de6af557bf45b21ed6151d9f77b27c7",
+          "valid_tokens": 64,
+          "total_nll": 162.53020590277447,
+          "mean_nll": 2.539534467230851,
+          "continuation_ppl": 12.6737695422557,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-006",
+          "token_sha": "11a10f7c3d7c76b09642409751f256097df240ad0bd15d6441ad2f81f60d97f0",
+          "valid_tokens": 64,
+          "total_nll": 132.87105241022073,
+          "mean_nll": 2.076110193909699,
+          "continuation_ppl": 7.973393560097271,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-007",
+          "token_sha": "69ca3ae7bcc18968158c447c280641ea800ad40cd080a0d6986fb935b3715f13",
+          "valid_tokens": 64,
+          "total_nll": 138.10912290215492,
+          "mean_nll": 2.1579550453461707,
+          "continuation_ppl": 8.653423693455455,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-000",
+          "token_sha": "07dac2435071d3688572276585a7f9645207ad60e72b7cdc3ff552be76977f8a",
+          "valid_tokens": 64,
+          "total_nll": 184.87026221118867,
+          "mean_nll": 2.888597847049823,
+          "continuation_ppl": 17.968097908864276,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-001",
+          "token_sha": "934e31bf2dc60fc66c7cf48fd80021a7be477f97f615a18a1c9d9016c9f1e397",
+          "valid_tokens": 64,
+          "total_nll": 169.24677634972613,
+          "mean_nll": 2.644480880464471,
+          "continuation_ppl": 14.076135988965133,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-002",
+          "token_sha": "048959b2eea06daba4ea520b5546ecc80f3243ff5edc9a8bf20e627e17a7d985",
+          "valid_tokens": 64,
+          "total_nll": 60.03051658311233,
+          "mean_nll": 0.9379768216111302,
+          "continuation_ppl": 2.55480735503921,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-003",
+          "token_sha": "41c06d951ddb324474e975b68f49cb0d253b98334bc0949cfda1c0179278e10a",
+          "valid_tokens": 64,
+          "total_nll": 151.52839666357886,
+          "mean_nll": 2.3676311978684197,
+          "continuation_ppl": 10.672082267511747,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-004",
+          "token_sha": "d79025d813dc08636d968b90299a425fda0091572b27091f115628a2b9dc328e",
+          "valid_tokens": 64,
+          "total_nll": 132.91303591919132,
+          "mean_nll": 2.0767661862373643,
+          "continuation_ppl": 7.978625761052364,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-005",
+          "token_sha": "fa089743c58eb799fea47ea860705b72660379f151304bd6106aa524dcc4534d",
+          "valid_tokens": 64,
+          "total_nll": 96.39475605590269,
+          "mean_nll": 1.5061680633734795,
+          "continuation_ppl": 4.509417841039905,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-006",
+          "token_sha": "20f33db7b04cd166f2676715b6a0dec34f5a22663d3ae1418569811cac41c874",
+          "valid_tokens": 64,
+          "total_nll": 180.42871351185022,
+          "mean_nll": 2.8191986486226597,
+          "continuation_ppl": 16.763411905052738,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-007",
+          "token_sha": "b6d6bd9eb56a8b98af343ce7a8e836f87bdd4a029a5641301cb4bd53c35b2bc0",
+          "valid_tokens": 64,
+          "total_nll": 100.47261328248715,
+          "mean_nll": 1.5698845825388617,
+          "continuation_ppl": 4.806093454657973,
+          "runtime_cache_bytes_after_prefill": 545128448
+        }
+      ],
+      "elapsed_seconds": 1198.1052713394165
+    },
+    {
+      "case": "perturb_group_0",
+      "perturb_group": 0,
+      "rank_k": [
+        352,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        528,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "runtime_config": {
+        "num_groups": 8,
+        "group_size": 4,
+        "groups": [
+          {
+            "group_id": 0,
+            "layers": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "requested_rank_k": 352,
+            "requested_rank_v": 528,
+            "effective_config_rank_k": 352,
+            "effective_config_rank_v": 528
+          },
+          {
+            "group_id": 1,
+            "layers": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 2,
+            "layers": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 3,
+            "layers": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 4,
+            "layers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 5,
+            "layers": [
+              20,
+              21,
+              22,
+              23
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 6,
+            "layers": [
+              24,
+              25,
+              26,
+              27
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 7,
+            "layers": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          }
+        ],
+        "requested_effective_config_equal": true
+      },
+      "aggregate": {
+        "dataset": {
+          "WikiText-2": {
+            "windows": 8,
+            "mean_token_nll": 2.136558005537097,
+            "ppl": 8.470232901717464
+          },
+          "C4": {
+            "windows": 8,
+            "mean_token_nll": 2.09056919156796,
+            "ppl": 8.089518339764306
+          }
+        },
+        "J": 2.1135635985525285,
+        "ppl_from_J": 8.277687140772986
+      },
+      "runtime_dense_reconstructed_cache_bytes_after_prefill": 545128448,
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-000",
+          "token_sha": "347f68a6d21121adfbcba49b66269513dee76283fbd80b5ec4f9dec44613db87",
+          "valid_tokens": 64,
+          "total_nll": 179.9265594338067,
+          "mean_nll": 2.8113524911532295,
+          "continuation_ppl": 16.632398184784286,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-001",
+          "token_sha": "23022b7d6ca49eec061e7cff9a9a17c9e890e9c60d4e4ace90a3b064396b6547",
+          "valid_tokens": 64,
+          "total_nll": 61.20243058032065,
+          "mean_nll": 0.9562879778175102,
+          "continuation_ppl": 2.6020197693612666,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-002",
+          "token_sha": "a6f0b9bc18f84572a1c74005038346fff46fc2e3ff865d3fed5ef3a97916dd00",
+          "valid_tokens": 64,
+          "total_nll": 143.89950926532038,
+          "mean_nll": 2.248429832270631,
+          "continuation_ppl": 9.472850189263136,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-003",
+          "token_sha": "eab74ce07faeca74083105274ae3df30da6c01f25f5b720e2ea8c197f6f73ff0",
+          "valid_tokens": 64,
+          "total_nll": 132.8289014545735,
+          "mean_nll": 2.075451585227711,
+          "continuation_ppl": 7.968143942785212,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-004",
+          "token_sha": "a309358bea304e4041acbfc07ead434242e68bf7711b689196f136837ce0b957",
+          "valid_tokens": 64,
+          "total_nll": 142.27197984902887,
+          "mean_nll": 2.222999685141076,
+          "continuation_ppl": 9.234991425212955,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-005",
+          "token_sha": "3f8cce3e82dbf94c7a152ee7403494fd1de6af557bf45b21ed6151d9f77b27c7",
+          "valid_tokens": 64,
+          "total_nll": 161.4790360408224,
+          "mean_nll": 2.52310993813785,
+          "continuation_ppl": 12.467308995619252,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-006",
+          "token_sha": "11a10f7c3d7c76b09642409751f256097df240ad0bd15d6441ad2f81f60d97f0",
+          "valid_tokens": 64,
+          "total_nll": 133.7258915901184,
+          "mean_nll": 2.0894670560956,
+          "continuation_ppl": 8.080607506022725,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-007",
+          "token_sha": "69ca3ae7bcc18968158c447c280641ea800ad40cd080a0d6986fb935b3715f13",
+          "valid_tokens": 64,
+          "total_nll": 138.58339062100276,
+          "mean_nll": 2.165365478453168,
+          "continuation_ppl": 8.717787498174996,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-000",
+          "token_sha": "07dac2435071d3688572276585a7f9645207ad60e72b7cdc3ff552be76977f8a",
+          "valid_tokens": 64,
+          "total_nll": 184.80017639277503,
+          "mean_nll": 2.88750275613711,
+          "continuation_ppl": 17.948431978081906,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-001",
+          "token_sha": "934e31bf2dc60fc66c7cf48fd80021a7be477f97f615a18a1c9d9016c9f1e397",
+          "valid_tokens": 64,
+          "total_nll": 169.73655800847337,
+          "mean_nll": 2.6521337188823964,
+          "continuation_ppl": 14.184271627768027,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-002",
+          "token_sha": "048959b2eea06daba4ea520b5546ecc80f3243ff5edc9a8bf20e627e17a7d985",
+          "valid_tokens": 64,
+          "total_nll": 59.91654987725997,
+          "mean_nll": 0.936196091832187,
+          "continuation_ppl": 2.5502619817445336,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-003",
+          "token_sha": "41c06d951ddb324474e975b68f49cb0d253b98334bc0949cfda1c0179278e10a",
+          "valid_tokens": 64,
+          "total_nll": 150.66640633283805,
+          "mean_nll": 2.3541625989505945,
+          "continuation_ppl": 10.52930791537824,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-004",
+          "token_sha": "d79025d813dc08636d968b90299a425fda0091572b27091f115628a2b9dc328e",
+          "valid_tokens": 64,
+          "total_nll": 133.56092440872453,
+          "mean_nll": 2.086889443886321,
+          "continuation_ppl": 8.059805654527437,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-005",
+          "token_sha": "fa089743c58eb799fea47ea860705b72660379f151304bd6106aa524dcc4534d",
+          "valid_tokens": 64,
+          "total_nll": 92.11521766614169,
+          "mean_nll": 1.4393002760334639,
+          "continuation_ppl": 4.217743527992084,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-006",
+          "token_sha": "20f33db7b04cd166f2676715b6a0dec34f5a22663d3ae1418569811cac41c874",
+          "valid_tokens": 64,
+          "total_nll": 178.69026326033054,
+          "mean_nll": 2.7920353634426647,
+          "continuation_ppl": 16.314191340919674,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-007",
+          "token_sha": "b6d6bd9eb56a8b98af343ce7a8e836f87bdd4a029a5641301cb4bd53c35b2bc0",
+          "valid_tokens": 64,
+          "total_nll": 100.88533013625238,
+          "mean_nll": 1.5763332833789434,
+          "continuation_ppl": 4.837186661197338,
+          "runtime_cache_bytes_after_prefill": 545128448
+        }
+      ],
+      "elapsed_seconds": 1208.8355445861816
+    },
+    {
+      "case": "perturb_group_1",
+      "perturb_group": 1,
+      "rank_k": [
+        384,
+        352,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        528,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "runtime_config": {
+        "num_groups": 8,
+        "group_size": 4,
+        "groups": [
+          {
+            "group_id": 0,
+            "layers": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 1,
+            "layers": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "requested_rank_k": 352,
+            "requested_rank_v": 528,
+            "effective_config_rank_k": 352,
+            "effective_config_rank_v": 528
+          },
+          {
+            "group_id": 2,
+            "layers": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 3,
+            "layers": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 4,
+            "layers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 5,
+            "layers": [
+              20,
+              21,
+              22,
+              23
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 6,
+            "layers": [
+              24,
+              25,
+              26,
+              27
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 7,
+            "layers": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          }
+        ],
+        "requested_effective_config_equal": true
+      },
+      "aggregate": {
+        "dataset": {
+          "WikiText-2": {
+            "windows": 8,
+            "mean_token_nll": 2.1435866866611377,
+            "ppl": 8.529977183624416
+          },
+          "C4": {
+            "windows": 8,
+            "mean_token_nll": 2.109706854338196,
+            "ppl": 8.245823702845676
+          }
+        },
+        "J": 2.1266467704996668,
+        "ppl_from_J": 8.386697087975875
+      },
+      "runtime_dense_reconstructed_cache_bytes_after_prefill": 545128448,
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-000",
+          "token_sha": "347f68a6d21121adfbcba49b66269513dee76283fbd80b5ec4f9dec44613db87",
+          "valid_tokens": 64,
+          "total_nll": 179.99853296065703,
+          "mean_nll": 2.812477077510266,
+          "continuation_ppl": 16.65111327426244,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-001",
+          "token_sha": "23022b7d6ca49eec061e7cff9a9a17c9e890e9c60d4e4ace90a3b064396b6547",
+          "valid_tokens": 64,
+          "total_nll": 61.63956231348857,
+          "mean_nll": 0.9631181611482589,
+          "continuation_ppl": 2.6198528737742586,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-002",
+          "token_sha": "a6f0b9bc18f84572a1c74005038346fff46fc2e3ff865d3fed5ef3a97916dd00",
+          "valid_tokens": 64,
+          "total_nll": 144.6037292801775,
+          "mean_nll": 2.2594332700027735,
+          "continuation_ppl": 9.577659681338927,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-003",
+          "token_sha": "eab74ce07faeca74083105274ae3df30da6c01f25f5b720e2ea8c197f6f73ff0",
+          "valid_tokens": 64,
+          "total_nll": 135.13324879761785,
+          "mean_nll": 2.111457012462779,
+          "continuation_ppl": 8.26026783426314,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-004",
+          "token_sha": "a309358bea304e4041acbfc07ead434242e68bf7711b689196f136837ce0b957",
+          "valid_tokens": 64,
+          "total_nll": 141.5774916182272,
+          "mean_nll": 2.2121483065348,
+          "continuation_ppl": 9.135320796731254,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-005",
+          "token_sha": "3f8cce3e82dbf94c7a152ee7403494fd1de6af557bf45b21ed6151d9f77b27c7",
+          "valid_tokens": 64,
+          "total_nll": 162.74225873716932,
+          "mean_nll": 2.5428477927682707,
+          "continuation_ppl": 12.715831510552157,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-006",
+          "token_sha": "11a10f7c3d7c76b09642409751f256097df240ad0bd15d6441ad2f81f60d97f0",
+          "valid_tokens": 64,
+          "total_nll": 133.40248867240734,
+          "mean_nll": 2.0844138855063647,
+          "continuation_ppl": 8.039877811545031,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-007",
+          "token_sha": "69ca3ae7bcc18968158c447c280641ea800ad40cd080a0d6986fb935b3715f13",
+          "valid_tokens": 64,
+          "total_nll": 138.41907119075768,
+          "mean_nll": 2.1627979873555887,
+          "continuation_ppl": 8.695433365680817,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-000",
+          "token_sha": "07dac2435071d3688572276585a7f9645207ad60e72b7cdc3ff552be76977f8a",
+          "valid_tokens": 64,
+          "total_nll": 184.66864187573083,
+          "mean_nll": 2.885447529308294,
+          "continuation_ppl": 17.911581759895057,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-001",
+          "token_sha": "934e31bf2dc60fc66c7cf48fd80021a7be477f97f615a18a1c9d9016c9f1e397",
+          "valid_tokens": 64,
+          "total_nll": 169.53119471436366,
+          "mean_nll": 2.6489249174119323,
+          "continuation_ppl": 14.138830061583976,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-002",
+          "token_sha": "048959b2eea06daba4ea520b5546ecc80f3243ff5edc9a8bf20e627e17a7d985",
+          "valid_tokens": 64,
+          "total_nll": 60.34678844213704,
+          "mean_nll": 0.9429185694083912,
+          "continuation_ppl": 2.5674638154191975,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-003",
+          "token_sha": "41c06d951ddb324474e975b68f49cb0d253b98334bc0949cfda1c0179278e10a",
+          "valid_tokens": 64,
+          "total_nll": 150.8123496663493,
+          "mean_nll": 2.3564429635367077,
+          "continuation_ppl": 10.553345973616496,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-004",
+          "token_sha": "d79025d813dc08636d968b90299a425fda0091572b27091f115628a2b9dc328e",
+          "valid_tokens": 64,
+          "total_nll": 133.5789000999648,
+          "mean_nll": 2.08717031406195,
+          "continuation_ppl": 8.062069731498127,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-005",
+          "token_sha": "fa089743c58eb799fea47ea860705b72660379f151304bd6106aa524dcc4534d",
+          "valid_tokens": 64,
+          "total_nll": 100.166811297182,
+          "mean_nll": 1.5651064265184687,
+          "continuation_ppl": 4.783183966424356,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-006",
+          "token_sha": "20f33db7b04cd166f2676715b6a0dec34f5a22663d3ae1418569811cac41c874",
+          "valid_tokens": 64,
+          "total_nll": 180.30253285187064,
+          "mean_nll": 2.8172270758104787,
+          "continuation_ppl": 16.73039417702406,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-007",
+          "token_sha": "b6d6bd9eb56a8b98af343ce7a8e836f87bdd4a029a5641301cb4bd53c35b2bc0",
+          "valid_tokens": 64,
+          "total_nll": 100.762690473558,
+          "mean_nll": 1.5744170386493437,
+          "continuation_ppl": 4.8279263031415525,
+          "runtime_cache_bytes_after_prefill": 545128448
+        }
+      ],
+      "elapsed_seconds": 1209.2898783683777
+    },
+    {
+      "case": "perturb_group_2",
+      "perturb_group": 2,
+      "rank_k": [
+        384,
+        384,
+        352,
+        384,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        528,
+        576,
+        576,
+        576,
+        576,
+        576
+      ],
+      "runtime_config": {
+        "num_groups": 8,
+        "group_size": 4,
+        "groups": [
+          {
+            "group_id": 0,
+            "layers": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 1,
+            "layers": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 2,
+            "layers": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "requested_rank_k": 352,
+            "requested_rank_v": 528,
+            "effective_config_rank_k": 352,
+            "effective_config_rank_v": 528
+          },
+          {
+            "group_id": 3,
+            "layers": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 4,
+            "layers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 5,
+            "layers": [
+              20,
+              21,
+              22,
+              23
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 6,
+            "layers": [
+              24,
+              25,
+              26,
+              27
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 7,
+            "layers": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          }
+        ],
+        "requested_effective_config_equal": true
+      },
+      "aggregate": {
+        "dataset": {
+          "WikiText-2": {
+            "windows": 8,
+            "mean_token_nll": 2.138648038863508,
+            "ppl": 8.487954483661937
+          },
+          "C4": {
+            "windows": 8,
+            "mean_token_nll": 2.104649286195688,
+            "ppl": 8.204225169955473
+          }
+        },
+        "J": 2.121648662529598,
+        "ppl_from_J": 8.344884050500383
+      },
+      "runtime_dense_reconstructed_cache_bytes_after_prefill": 545128448,
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-000",
+          "token_sha": "347f68a6d21121adfbcba49b66269513dee76283fbd80b5ec4f9dec44613db87",
+          "valid_tokens": 64,
+          "total_nll": 179.80108882207423,
+          "mean_nll": 2.80939201284491,
+          "continuation_ppl": 16.599822671155206,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-001",
+          "token_sha": "23022b7d6ca49eec061e7cff9a9a17c9e890e9c60d4e4ace90a3b064396b6547",
+          "valid_tokens": 64,
+          "total_nll": 61.161696273054986,
+          "mean_nll": 0.9556515042664842,
+          "continuation_ppl": 2.6003641795242824,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-002",
+          "token_sha": "a6f0b9bc18f84572a1c74005038346fff46fc2e3ff865d3fed5ef3a97916dd00",
+          "valid_tokens": 64,
+          "total_nll": 143.6215819758363,
+          "mean_nll": 2.2440872183724423,
+          "continuation_ppl": 9.431802450124533,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-003",
+          "token_sha": "eab74ce07faeca74083105274ae3df30da6c01f25f5b720e2ea8c197f6f73ff0",
+          "valid_tokens": 64,
+          "total_nll": 135.5122050139471,
+          "mean_nll": 2.1173782033429234,
+          "continuation_ppl": 8.309323547625812,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-004",
+          "token_sha": "a309358bea304e4041acbfc07ead434242e68bf7711b689196f136837ce0b957",
+          "valid_tokens": 64,
+          "total_nll": 141.4901573121897,
+          "mean_nll": 2.210783708002964,
+          "continuation_ppl": 9.122863253090191,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-005",
+          "token_sha": "3f8cce3e82dbf94c7a152ee7403494fd1de6af557bf45b21ed6151d9f77b27c7",
+          "valid_tokens": 64,
+          "total_nll": 162.28007637310657,
+          "mean_nll": 2.53562619332979,
+          "continuation_ppl": 12.62433364696145,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-006",
+          "token_sha": "11a10f7c3d7c76b09642409751f256097df240ad0bd15d6441ad2f81f60d97f0",
+          "valid_tokens": 64,
+          "total_nll": 132.83925927290693,
+          "mean_nll": 2.0756134261391708,
+          "continuation_ppl": 7.969433618821914,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-007",
+          "token_sha": "69ca3ae7bcc18968158c447c280641ea800ad40cd080a0d6986fb935b3715f13",
+          "valid_tokens": 64,
+          "total_nll": 138.2817308550002,
+          "mean_nll": 2.160652044609378,
+          "continuation_ppl": 8.676793470751402,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-000",
+          "token_sha": "07dac2435071d3688572276585a7f9645207ad60e72b7cdc3ff552be76977f8a",
+          "valid_tokens": 64,
+          "total_nll": 184.3862119910773,
+          "mean_nll": 2.8810345623605826,
+          "continuation_ppl": 17.832712692893477,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-001",
+          "token_sha": "934e31bf2dc60fc66c7cf48fd80021a7be477f97f615a18a1c9d9016c9f1e397",
+          "valid_tokens": 64,
+          "total_nll": 169.703478100535,
+          "mean_nll": 2.6516168453208593,
+          "continuation_ppl": 14.176942047170368,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-002",
+          "token_sha": "048959b2eea06daba4ea520b5546ecc80f3243ff5edc9a8bf20e627e17a7d985",
+          "valid_tokens": 64,
+          "total_nll": 59.89255092013991,
+          "mean_nll": 0.9358211081271861,
+          "continuation_ppl": 2.549305854335199,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-003",
+          "token_sha": "41c06d951ddb324474e975b68f49cb0d253b98334bc0949cfda1c0179278e10a",
+          "valid_tokens": 64,
+          "total_nll": 151.84773710611898,
+          "mean_nll": 2.372620892283109,
+          "continuation_ppl": 10.725465769718857,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-004",
+          "token_sha": "d79025d813dc08636d968b90299a425fda0091572b27091f115628a2b9dc328e",
+          "valid_tokens": 64,
+          "total_nll": 133.1535717016086,
+          "mean_nll": 2.0805245578376343,
+          "continuation_ppl": 8.008668822652567,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-005",
+          "token_sha": "fa089743c58eb799fea47ea860705b72660379f151304bd6106aa524dcc4534d",
+          "valid_tokens": 64,
+          "total_nll": 97.78256086725742,
+          "mean_nll": 1.5278525135508971,
+          "continuation_ppl": 4.608269991354211,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-006",
+          "token_sha": "20f33db7b04cd166f2676715b6a0dec34f5a22663d3ae1418569811cac41c874",
+          "valid_tokens": 64,
+          "total_nll": 180.4482540229219,
+          "mean_nll": 2.8195039691081547,
+          "continuation_ppl": 16.768530899541314,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-007",
+          "token_sha": "b6d6bd9eb56a8b98af343ce7a8e836f87bdd4a029a5641301cb4bd53c35b2bc0",
+          "valid_tokens": 64,
+          "total_nll": 100.36606982253306,
+          "mean_nll": 1.5682198409770791,
+          "continuation_ppl": 4.798099207158475,
+          "runtime_cache_bytes_after_prefill": 545128448
+        }
+      ],
+      "elapsed_seconds": 1214.7525804042816
+    },
+    {
+      "case": "perturb_group_3",
+      "perturb_group": 3,
+      "rank_k": [
+        384,
+        384,
+        384,
+        352,
+        384,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        528,
+        576,
+        576,
+        576,
+        576
+      ],
+      "runtime_config": {
+        "num_groups": 8,
+        "group_size": 4,
+        "groups": [
+          {
+            "group_id": 0,
+            "layers": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 1,
+            "layers": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 2,
+            "layers": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 3,
+            "layers": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "requested_rank_k": 352,
+            "requested_rank_v": 528,
+            "effective_config_rank_k": 352,
+            "effective_config_rank_v": 528
+          },
+          {
+            "group_id": 4,
+            "layers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 5,
+            "layers": [
+              20,
+              21,
+              22,
+              23
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 6,
+            "layers": [
+              24,
+              25,
+              26,
+              27
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 7,
+            "layers": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          }
+        ],
+        "requested_effective_config_equal": true
+      },
+      "aggregate": {
+        "dataset": {
+          "WikiText-2": {
+            "windows": 8,
+            "mean_token_nll": 2.1354350464994525,
+            "ppl": 8.460726515769526
+          },
+          "C4": {
+            "windows": 8,
+            "mean_token_nll": 2.1044831698876365,
+            "ppl": 8.202862427549821
+          }
+        },
+        "J": 2.1199591081935445,
+        "ppl_from_J": 8.33079681939131
+      },
+      "runtime_dense_reconstructed_cache_bytes_after_prefill": 545128448,
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-000",
+          "token_sha": "347f68a6d21121adfbcba49b66269513dee76283fbd80b5ec4f9dec44613db87",
+          "valid_tokens": 64,
+          "total_nll": 179.6147949937731,
+          "mean_nll": 2.8064811717777047,
+          "continuation_ppl": 16.551573482543446,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-001",
+          "token_sha": "23022b7d6ca49eec061e7cff9a9a17c9e890e9c60d4e4ace90a3b064396b6547",
+          "valid_tokens": 64,
+          "total_nll": 60.480138897386496,
+          "mean_nll": 0.945002170271664,
+          "continuation_ppl": 2.5728189622983573,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-002",
+          "token_sha": "a6f0b9bc18f84572a1c74005038346fff46fc2e3ff865d3fed5ef3a97916dd00",
+          "valid_tokens": 64,
+          "total_nll": 144.33060414297506,
+          "mean_nll": 2.2551656897339853,
+          "continuation_ppl": 9.536873341252642,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-003",
+          "token_sha": "eab74ce07faeca74083105274ae3df30da6c01f25f5b720e2ea8c197f6f73ff0",
+          "valid_tokens": 64,
+          "total_nll": 134.33064110175474,
+          "mean_nll": 2.0989162672149178,
+          "continuation_ppl": 8.157324760261321,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-004",
+          "token_sha": "a309358bea304e4041acbfc07ead434242e68bf7711b689196f136837ce0b957",
+          "valid_tokens": 64,
+          "total_nll": 140.9813706462155,
+          "mean_nll": 2.2028339163471173,
+          "continuation_ppl": 9.050625907292504,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-005",
+          "token_sha": "3f8cce3e82dbf94c7a152ee7403494fd1de6af557bf45b21ed6151d9f77b27c7",
+          "valid_tokens": 64,
+          "total_nll": 162.37232451984892,
+          "mean_nll": 2.5370675706226393,
+          "continuation_ppl": 12.642543195079485,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-006",
+          "token_sha": "11a10f7c3d7c76b09642409751f256097df240ad0bd15d6441ad2f81f60d97f0",
+          "valid_tokens": 64,
+          "total_nll": 132.698081640061,
+          "mean_nll": 2.073407525625953,
+          "continuation_ppl": 7.951873216483103,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-007",
+          "token_sha": "69ca3ae7bcc18968158c447c280641ea800ad40cd080a0d6986fb935b3715f13",
+          "valid_tokens": 64,
+          "total_nll": 138.53478786570486,
+          "mean_nll": 2.1646060604016384,
+          "continuation_ppl": 8.711169566186046,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-000",
+          "token_sha": "07dac2435071d3688572276585a7f9645207ad60e72b7cdc3ff552be76977f8a",
+          "valid_tokens": 64,
+          "total_nll": 184.34016111050732,
+          "mean_nll": 2.880315017351677,
+          "continuation_ppl": 17.81988586877211,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-001",
+          "token_sha": "934e31bf2dc60fc66c7cf48fd80021a7be477f97f615a18a1c9d9016c9f1e397",
+          "valid_tokens": 64,
+          "total_nll": 169.8387863052776,
+          "mean_nll": 2.6537310360199626,
+          "continuation_ppl": 14.206946512592918,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-002",
+          "token_sha": "048959b2eea06daba4ea520b5546ecc80f3243ff5edc9a8bf20e627e17a7d985",
+          "valid_tokens": 64,
+          "total_nll": 60.01450343463148,
+          "mean_nll": 0.9377266161661169,
+          "continuation_ppl": 2.5541682082903514,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-003",
+          "token_sha": "41c06d951ddb324474e975b68f49cb0d253b98334bc0949cfda1c0179278e10a",
+          "valid_tokens": 64,
+          "total_nll": 151.59421903357998,
+          "mean_nll": 2.368659672399687,
+          "continuation_ppl": 10.683063878505092,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-004",
+          "token_sha": "d79025d813dc08636d968b90299a425fda0091572b27091f115628a2b9dc328e",
+          "valid_tokens": 64,
+          "total_nll": 133.18162243347615,
+          "mean_nll": 2.080962850523065,
+          "continuation_ppl": 8.01217973296452,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-005",
+          "token_sha": "fa089743c58eb799fea47ea860705b72660379f151304bd6106aa524dcc4534d",
+          "valid_tokens": 64,
+          "total_nll": 96.95346420630813,
+          "mean_nll": 1.5148978782235645,
+          "continuation_ppl": 4.548956555600243,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-006",
+          "token_sha": "20f33db7b04cd166f2676715b6a0dec34f5a22663d3ae1418569811cac41c874",
+          "valid_tokens": 64,
+          "total_nll": 180.33250102045713,
+          "mean_nll": 2.8176953284446427,
+          "continuation_ppl": 16.738230062611912,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-007",
+          "token_sha": "b6d6bd9eb56a8b98af343ce7a8e836f87bdd4a029a5641301cb4bd53c35b2bc0",
+          "valid_tokens": 64,
+          "total_nll": 101.2401254382321,
+          "mean_nll": 1.5818769599723765,
+          "continuation_ppl": 4.8640769262689005,
+          "runtime_cache_bytes_after_prefill": 545128448
+        }
+      ],
+      "elapsed_seconds": 1224.2697386741638
+    },
+    {
+      "case": "perturb_group_4",
+      "perturb_group": 4,
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        352,
+        384,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        528,
+        576,
+        576,
+        576
+      ],
+      "runtime_config": {
+        "num_groups": 8,
+        "group_size": 4,
+        "groups": [
+          {
+            "group_id": 0,
+            "layers": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 1,
+            "layers": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 2,
+            "layers": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 3,
+            "layers": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 4,
+            "layers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "requested_rank_k": 352,
+            "requested_rank_v": 528,
+            "effective_config_rank_k": 352,
+            "effective_config_rank_v": 528
+          },
+          {
+            "group_id": 5,
+            "layers": [
+              20,
+              21,
+              22,
+              23
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 6,
+            "layers": [
+              24,
+              25,
+              26,
+              27
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 7,
+            "layers": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          }
+        ],
+        "requested_effective_config_equal": true
+      },
+      "aggregate": {
+        "dataset": {
+          "WikiText-2": {
+            "windows": 8,
+            "mean_token_nll": 2.1402948598094724,
+            "ppl": 8.501944140962676
+          },
+          "C4": {
+            "windows": 8,
+            "mean_token_nll": 2.102168024008405,
+            "ppl": 8.183893570710746
+          }
+        },
+        "J": 2.1212314419089386,
+        "ppl_from_J": 8.341403119006198
+      },
+      "runtime_dense_reconstructed_cache_bytes_after_prefill": 545128448,
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-000",
+          "token_sha": "347f68a6d21121adfbcba49b66269513dee76283fbd80b5ec4f9dec44613db87",
+          "valid_tokens": 64,
+          "total_nll": 179.84701606957242,
+          "mean_nll": 2.810109626087069,
+          "continuation_ppl": 16.611739198939205,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-001",
+          "token_sha": "23022b7d6ca49eec061e7cff9a9a17c9e890e9c60d4e4ace90a3b064396b6547",
+          "valid_tokens": 64,
+          "total_nll": 61.12356381950667,
+          "mean_nll": 0.9550556846797917,
+          "continuation_ppl": 2.598815293087848,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-002",
+          "token_sha": "a6f0b9bc18f84572a1c74005038346fff46fc2e3ff865d3fed5ef3a97916dd00",
+          "valid_tokens": 64,
+          "total_nll": 144.1419305820018,
+          "mean_nll": 2.252217665343778,
+          "continuation_ppl": 9.508799807099912,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-003",
+          "token_sha": "eab74ce07faeca74083105274ae3df30da6c01f25f5b720e2ea8c197f6f73ff0",
+          "valid_tokens": 64,
+          "total_nll": 134.70394566335017,
+          "mean_nll": 2.1047491509898464,
+          "continuation_ppl": 8.205044524124938,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-004",
+          "token_sha": "a309358bea304e4041acbfc07ead434242e68bf7711b689196f136837ce0b957",
+          "valid_tokens": 64,
+          "total_nll": 141.37809368991293,
+          "mean_nll": 2.2090327139048895,
+          "continuation_ppl": 9.10690315047701,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-005",
+          "token_sha": "3f8cce3e82dbf94c7a152ee7403494fd1de6af557bf45b21ed6151d9f77b27c7",
+          "valid_tokens": 64,
+          "total_nll": 162.9161356183322,
+          "mean_nll": 2.5455646190364405,
+          "continuation_ppl": 12.750425186847474,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-006",
+          "token_sha": "11a10f7c3d7c76b09642409751f256097df240ad0bd15d6441ad2f81f60d97f0",
+          "valid_tokens": 64,
+          "total_nll": 133.2279273106251,
+          "mean_nll": 2.081686364228517,
+          "continuation_ppl": 8.017978752393915,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-007",
+          "token_sha": "69ca3ae7bcc18968158c447c280641ea800ad40cd080a0d6986fb935b3715f13",
+          "valid_tokens": 64,
+          "total_nll": 138.4923554691486,
+          "mean_nll": 2.163943054205447,
+          "continuation_ppl": 8.70539592098036,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-000",
+          "token_sha": "07dac2435071d3688572276585a7f9645207ad60e72b7cdc3ff552be76977f8a",
+          "valid_tokens": 64,
+          "total_nll": 184.55863373167813,
+          "mean_nll": 2.8837286520574708,
+          "continuation_ppl": 17.880820394561052,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-001",
+          "token_sha": "934e31bf2dc60fc66c7cf48fd80021a7be477f97f615a18a1c9d9016c9f1e397",
+          "valid_tokens": 64,
+          "total_nll": 169.64241886575473,
+          "mean_nll": 2.6506627947774177,
+          "continuation_ppl": 14.163422977869066,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-002",
+          "token_sha": "048959b2eea06daba4ea520b5546ecc80f3243ff5edc9a8bf20e627e17a7d985",
+          "valid_tokens": 64,
+          "total_nll": 60.11960659815668,
+          "mean_nll": 0.9393688530961981,
+          "continuation_ppl": 2.558366203755759,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-003",
+          "token_sha": "41c06d951ddb324474e975b68f49cb0d253b98334bc0949cfda1c0179278e10a",
+          "valid_tokens": 64,
+          "total_nll": 151.55055830788024,
+          "mean_nll": 2.3679774735606287,
+          "continuation_ppl": 10.675778390088011,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-004",
+          "token_sha": "d79025d813dc08636d968b90299a425fda0091572b27091f115628a2b9dc328e",
+          "valid_tokens": 64,
+          "total_nll": 133.08843005192466,
+          "mean_nll": 2.079506719561323,
+          "continuation_ppl": 8.000521440044889,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-005",
+          "token_sha": "fa089743c58eb799fea47ea860705b72660379f151304bd6106aa524dcc4534d",
+          "valid_tokens": 64,
+          "total_nll": 95.85542096057907,
+          "mean_nll": 1.497740952509048,
+          "continuation_ppl": 4.4715761489740755,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-006",
+          "token_sha": "20f33db7b04cd166f2676715b6a0dec34f5a22663d3ae1418569811cac41c874",
+          "valid_tokens": 64,
+          "total_nll": 180.83628908189712,
+          "mean_nll": 2.8255670169046425,
+          "continuation_ppl": 16.87050813790254,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-007",
+          "token_sha": "b6d6bd9eb56a8b98af343ce7a8e836f87bdd4a029a5641301cb4bd53c35b2bc0",
+          "valid_tokens": 64,
+          "total_nll": 100.65867069443266,
+          "mean_nll": 1.5727917296005103,
+          "continuation_ppl": 4.8200858041768875,
+          "runtime_cache_bytes_after_prefill": 545128448
+        }
+      ],
+      "elapsed_seconds": 1225.434940814972
+    },
+    {
+      "case": "perturb_group_5",
+      "perturb_group": 5,
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        384,
+        352,
+        384,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        576,
+        528,
+        576,
+        576
+      ],
+      "runtime_config": {
+        "num_groups": 8,
+        "group_size": 4,
+        "groups": [
+          {
+            "group_id": 0,
+            "layers": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 1,
+            "layers": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 2,
+            "layers": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 3,
+            "layers": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 4,
+            "layers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 5,
+            "layers": [
+              20,
+              21,
+              22,
+              23
+            ],
+            "requested_rank_k": 352,
+            "requested_rank_v": 528,
+            "effective_config_rank_k": 352,
+            "effective_config_rank_v": 528
+          },
+          {
+            "group_id": 6,
+            "layers": [
+              24,
+              25,
+              26,
+              27
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 7,
+            "layers": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          }
+        ],
+        "requested_effective_config_equal": true
+      },
+      "aggregate": {
+        "dataset": {
+          "WikiText-2": {
+            "windows": 8,
+            "mean_token_nll": 2.1388184362894265,
+            "ppl": 8.489400932489346
+          },
+          "C4": {
+            "windows": 8,
+            "mean_token_nll": 2.1025757690879345,
+            "ppl": 8.18723119344898
+          }
+        },
+        "J": 2.1206971026886805,
+        "ppl_from_J": 8.336947170767704
+      },
+      "runtime_dense_reconstructed_cache_bytes_after_prefill": 545128448,
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-000",
+          "token_sha": "347f68a6d21121adfbcba49b66269513dee76283fbd80b5ec4f9dec44613db87",
+          "valid_tokens": 64,
+          "total_nll": 179.81160131189972,
+          "mean_nll": 2.809556270498433,
+          "continuation_ppl": 16.60254954302473,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-001",
+          "token_sha": "23022b7d6ca49eec061e7cff9a9a17c9e890e9c60d4e4ace90a3b064396b6547",
+          "valid_tokens": 64,
+          "total_nll": 61.42794268885336,
+          "mean_nll": 0.9598116045133338,
+          "continuation_ppl": 2.61120448794036,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-002",
+          "token_sha": "a6f0b9bc18f84572a1c74005038346fff46fc2e3ff865d3fed5ef3a97916dd00",
+          "valid_tokens": 64,
+          "total_nll": 144.2877553794533,
+          "mean_nll": 2.254496177803958,
+          "continuation_ppl": 9.530490427732314,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-003",
+          "token_sha": "eab74ce07faeca74083105274ae3df30da6c01f25f5b720e2ea8c197f6f73ff0",
+          "valid_tokens": 64,
+          "total_nll": 134.76157359179342,
+          "mean_nll": 2.105649587371772,
+          "continuation_ppl": 8.212435971994664,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-004",
+          "token_sha": "a309358bea304e4041acbfc07ead434242e68bf7711b689196f136837ce0b957",
+          "valid_tokens": 64,
+          "total_nll": 141.12380007881438,
+          "mean_nll": 2.2050593762314747,
+          "continuation_ppl": 9.070790141202107,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-005",
+          "token_sha": "3f8cce3e82dbf94c7a152ee7403494fd1de6af557bf45b21ed6151d9f77b27c7",
+          "valid_tokens": 64,
+          "total_nll": 162.53834876805195,
+          "mean_nll": 2.5396616995008117,
+          "continuation_ppl": 12.67538215730968,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-006",
+          "token_sha": "11a10f7c3d7c76b09642409751f256097df240ad0bd15d6441ad2f81f60d97f0",
+          "valid_tokens": 64,
+          "total_nll": 132.89056191896088,
+          "mean_nll": 2.076415029983764,
+          "continuation_ppl": 7.975824508588679,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-007",
+          "token_sha": "69ca3ae7bcc18968158c447c280641ea800ad40cd080a0d6986fb935b3715f13",
+          "valid_tokens": 64,
+          "total_nll": 138.23345564235933,
+          "mean_nll": 2.1598977444118646,
+          "continuation_ppl": 8.670251031514438,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-000",
+          "token_sha": "07dac2435071d3688572276585a7f9645207ad60e72b7cdc3ff552be76977f8a",
+          "valid_tokens": 64,
+          "total_nll": 184.5665100745391,
+          "mean_nll": 2.8838517199146736,
+          "continuation_ppl": 17.883021084226343,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-001",
+          "token_sha": "934e31bf2dc60fc66c7cf48fd80021a7be477f97f615a18a1c9d9016c9f1e397",
+          "valid_tokens": 64,
+          "total_nll": 169.69328456174117,
+          "mean_nll": 2.6514575712772057,
+          "continuation_ppl": 14.174684208096224,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-002",
+          "token_sha": "048959b2eea06daba4ea520b5546ecc80f3243ff5edc9a8bf20e627e17a7d985",
+          "valid_tokens": 64,
+          "total_nll": 60.13672364181184,
+          "mean_nll": 0.93963630690331,
+          "continuation_ppl": 2.559050540047034,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-003",
+          "token_sha": "41c06d951ddb324474e975b68f49cb0d253b98334bc0949cfda1c0179278e10a",
+          "valid_tokens": 64,
+          "total_nll": 151.25214911808416,
+          "mean_nll": 2.363314829970065,
+          "continuation_ppl": 10.6261169072715,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-004",
+          "token_sha": "d79025d813dc08636d968b90299a425fda0091572b27091f115628a2b9dc328e",
+          "valid_tokens": 64,
+          "total_nll": 133.07767361821607,
+          "mean_nll": 2.079338650284626,
+          "continuation_ppl": 7.999176911183426,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-005",
+          "token_sha": "fa089743c58eb799fea47ea860705b72660379f151304bd6106aa524dcc4534d",
+          "valid_tokens": 64,
+          "total_nll": 96.66046355618164,
+          "mean_nll": 1.5103197430653381,
+          "continuation_ppl": 4.528178416515633,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-006",
+          "token_sha": "20f33db7b04cd166f2676715b6a0dec34f5a22663d3ae1418569811cac41c874",
+          "valid_tokens": 64,
+          "total_nll": 180.37488659861265,
+          "mean_nll": 2.8183576031033226,
+          "continuation_ppl": 16.74931903978251,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-007",
+          "token_sha": "b6d6bd9eb56a8b98af343ce7a8e836f87bdd4a029a5641301cb4bd53c35b2bc0",
+          "valid_tokens": 64,
+          "total_nll": 100.75710260383585,
+          "mean_nll": 1.574329728184935,
+          "continuation_ppl": 4.827504793055283,
+          "runtime_cache_bytes_after_prefill": 545128448
+        }
+      ],
+      "elapsed_seconds": 962.7327649593353
+    },
+    {
+      "case": "perturb_group_6",
+      "perturb_group": 6,
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        352,
+        384
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        528,
+        576
+      ],
+      "runtime_config": {
+        "num_groups": 8,
+        "group_size": 4,
+        "groups": [
+          {
+            "group_id": 0,
+            "layers": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 1,
+            "layers": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 2,
+            "layers": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 3,
+            "layers": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 4,
+            "layers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 5,
+            "layers": [
+              20,
+              21,
+              22,
+              23
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 6,
+            "layers": [
+              24,
+              25,
+              26,
+              27
+            ],
+            "requested_rank_k": 352,
+            "requested_rank_v": 528,
+            "effective_config_rank_k": 352,
+            "effective_config_rank_v": 528
+          },
+          {
+            "group_id": 7,
+            "layers": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          }
+        ],
+        "requested_effective_config_equal": true
+      },
+      "aggregate": {
+        "dataset": {
+          "WikiText-2": {
+            "windows": 8,
+            "mean_token_nll": 2.140659137653927,
+            "ppl": 8.50504177501349
+          },
+          "C4": {
+            "windows": 8,
+            "mean_token_nll": 2.1006821139653873,
+            "ppl": 8.171742071316338
+          }
+        },
+        "J": 2.120670625809657,
+        "ppl_from_J": 8.336726437348219
+      },
+      "runtime_dense_reconstructed_cache_bytes_after_prefill": 545128448,
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-000",
+          "token_sha": "347f68a6d21121adfbcba49b66269513dee76283fbd80b5ec4f9dec44613db87",
+          "valid_tokens": 64,
+          "total_nll": 179.976889296202,
+          "mean_nll": 2.812138895253156,
+          "continuation_ppl": 16.64548311525555,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-001",
+          "token_sha": "23022b7d6ca49eec061e7cff9a9a17c9e890e9c60d4e4ace90a3b064396b6547",
+          "valid_tokens": 64,
+          "total_nll": 61.39565849896462,
+          "mean_nll": 0.9593071640463222,
+          "continuation_ppl": 2.6098876228969337,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-002",
+          "token_sha": "a6f0b9bc18f84572a1c74005038346fff46fc2e3ff865d3fed5ef3a97916dd00",
+          "valid_tokens": 64,
+          "total_nll": 144.51684227236547,
+          "mean_nll": 2.2580756605057104,
+          "continuation_ppl": 9.564665781912295,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-003",
+          "token_sha": "eab74ce07faeca74083105274ae3df30da6c01f25f5b720e2ea8c197f6f73ff0",
+          "valid_tokens": 64,
+          "total_nll": 134.31143230519956,
+          "mean_nll": 2.098616129768743,
+          "continuation_ppl": 8.154876809019454,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-004",
+          "token_sha": "a309358bea304e4041acbfc07ead434242e68bf7711b689196f136837ce0b957",
+          "valid_tokens": 64,
+          "total_nll": 141.50621053797659,
+          "mean_nll": 2.211034539655884,
+          "continuation_ppl": 9.125151842972722,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-005",
+          "token_sha": "3f8cce3e82dbf94c7a152ee7403494fd1de6af557bf45b21ed6151d9f77b27c7",
+          "valid_tokens": 64,
+          "total_nll": 162.74444170125935,
+          "mean_nll": 2.5428819015821773,
+          "continuation_ppl": 12.716265239879773,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-006",
+          "token_sha": "11a10f7c3d7c76b09642409751f256097df240ad0bd15d6441ad2f81f60d97f0",
+          "valid_tokens": 64,
+          "total_nll": 133.00022649904713,
+          "mean_nll": 2.0781285390476114,
+          "continuation_ppl": 7.98950287182873,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-007",
+          "token_sha": "69ca3ae7bcc18968158c447c280641ea800ad40cd080a0d6986fb935b3715f13",
+          "valid_tokens": 64,
+          "total_nll": 138.56577736779582,
+          "mean_nll": 2.1650902713718096,
+          "continuation_ppl": 8.715388631429418,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-000",
+          "token_sha": "07dac2435071d3688572276585a7f9645207ad60e72b7cdc3ff552be76977f8a",
+          "valid_tokens": 64,
+          "total_nll": 184.06161965383217,
+          "mean_nll": 2.8759628070911276,
+          "continuation_ppl": 17.742498503848257,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-001",
+          "token_sha": "934e31bf2dc60fc66c7cf48fd80021a7be477f97f615a18a1c9d9016c9f1e397",
+          "valid_tokens": 64,
+          "total_nll": 169.38299831206677,
+          "mean_nll": 2.6466093486260434,
+          "continuation_ppl": 14.106128503989153,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-002",
+          "token_sha": "048959b2eea06daba4ea520b5546ecc80f3243ff5edc9a8bf20e627e17a7d985",
+          "valid_tokens": 64,
+          "total_nll": 60.064368022704,
+          "mean_nll": 0.93850575035475,
+          "continuation_ppl": 2.5561590235203444,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-003",
+          "token_sha": "41c06d951ddb324474e975b68f49cb0d253b98334bc0949cfda1c0179278e10a",
+          "valid_tokens": 64,
+          "total_nll": 151.11159497752942,
+          "mean_nll": 2.361118671523897,
+          "continuation_ppl": 10.602805877602286,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-004",
+          "token_sha": "d79025d813dc08636d968b90299a425fda0091572b27091f115628a2b9dc328e",
+          "valid_tokens": 64,
+          "total_nll": 133.71254929387942,
+          "mean_nll": 2.089258582716866,
+          "continuation_ppl": 8.078923090057764,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-005",
+          "token_sha": "fa089743c58eb799fea47ea860705b72660379f151304bd6106aa524dcc4534d",
+          "valid_tokens": 64,
+          "total_nll": 96.58832741738297,
+          "mean_nll": 1.509192615896609,
+          "continuation_ppl": 4.523077458851539,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-006",
+          "token_sha": "20f33db7b04cd166f2676715b6a0dec34f5a22663d3ae1418569811cac41c874",
+          "valid_tokens": 64,
+          "total_nll": 180.0045919122058,
+          "mean_nll": 2.8125717486282156,
+          "continuation_ppl": 16.652689728392374,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-007",
+          "token_sha": "b6d6bd9eb56a8b98af343ce7a8e836f87bdd4a029a5641301cb4bd53c35b2bc0",
+          "valid_tokens": 64,
+          "total_nll": 100.62319276067774,
+          "mean_nll": 1.5722373868855897,
+          "continuation_ppl": 4.817414565185392,
+          "runtime_cache_bytes_after_prefill": 545128448
+        }
+      ],
+      "elapsed_seconds": 597.6080784797668
+    },
+    {
+      "case": "perturb_group_7",
+      "perturb_group": 7,
+      "rank_k": [
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        384,
+        352
+      ],
+      "rank_v": [
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        576,
+        528
+      ],
+      "runtime_config": {
+        "num_groups": 8,
+        "group_size": 4,
+        "groups": [
+          {
+            "group_id": 0,
+            "layers": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 1,
+            "layers": [
+              4,
+              5,
+              6,
+              7
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 2,
+            "layers": [
+              8,
+              9,
+              10,
+              11
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 3,
+            "layers": [
+              12,
+              13,
+              14,
+              15
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 4,
+            "layers": [
+              16,
+              17,
+              18,
+              19
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 5,
+            "layers": [
+              20,
+              21,
+              22,
+              23
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 6,
+            "layers": [
+              24,
+              25,
+              26,
+              27
+            ],
+            "requested_rank_k": 384,
+            "requested_rank_v": 576,
+            "effective_config_rank_k": 384,
+            "effective_config_rank_v": 576
+          },
+          {
+            "group_id": 7,
+            "layers": [
+              28,
+              29,
+              30,
+              31
+            ],
+            "requested_rank_k": 352,
+            "requested_rank_v": 528,
+            "effective_config_rank_k": 352,
+            "effective_config_rank_v": 528
+          }
+        ],
+        "requested_effective_config_equal": true
+      },
+      "aggregate": {
+        "dataset": {
+          "WikiText-2": {
+            "windows": 8,
+            "mean_token_nll": 2.1413076528176873,
+            "ppl": 8.510559212450552
+          },
+          "C4": {
+            "windows": 8,
+            "mean_token_nll": 2.1009042080041755,
+            "ppl": 8.173557168070515
+          }
+        },
+        "J": 2.1211059304109314,
+        "ppl_from_J": 8.34035624270413
+      },
+      "runtime_dense_reconstructed_cache_bytes_after_prefill": 545128448,
+      "windows": [
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-000",
+          "token_sha": "347f68a6d21121adfbcba49b66269513dee76283fbd80b5ec4f9dec44613db87",
+          "valid_tokens": 64,
+          "total_nll": 180.0212541227229,
+          "mean_nll": 2.812832095667545,
+          "continuation_ppl": 16.65702577127351,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-001",
+          "token_sha": "23022b7d6ca49eec061e7cff9a9a17c9e890e9c60d4e4ace90a3b064396b6547",
+          "valid_tokens": 64,
+          "total_nll": 61.437728005228564,
+          "mean_nll": 0.9599645000816963,
+          "continuation_ppl": 2.611603760057345,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-002",
+          "token_sha": "a6f0b9bc18f84572a1c74005038346fff46fc2e3ff865d3fed5ef3a97916dd00",
+          "valid_tokens": 64,
+          "total_nll": 144.42053924920037,
+          "mean_nll": 2.256570925768756,
+          "continuation_ppl": 9.550284319919179,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-003",
+          "token_sha": "eab74ce07faeca74083105274ae3df30da6c01f25f5b720e2ea8c197f6f73ff0",
+          "valid_tokens": 64,
+          "total_nll": 134.54259017528966,
+          "mean_nll": 2.102227971488901,
+          "continuation_ppl": 8.184384189216482,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-004",
+          "token_sha": "a309358bea304e4041acbfc07ead434242e68bf7711b689196f136837ce0b957",
+          "valid_tokens": 64,
+          "total_nll": 141.3225089943735,
+          "mean_nll": 2.208164203037086,
+          "continuation_ppl": 9.09899713984383,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-005",
+          "token_sha": "3f8cce3e82dbf94c7a152ee7403494fd1de6af557bf45b21ed6151d9f77b27c7",
+          "valid_tokens": 64,
+          "total_nll": 162.82024145861214,
+          "mean_nll": 2.5440662727908148,
+          "continuation_ppl": 12.731334940609552,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-006",
+          "token_sha": "11a10f7c3d7c76b09642409751f256097df240ad0bd15d6441ad2f81f60d97f0",
+          "valid_tokens": 64,
+          "total_nll": 133.33102256478742,
+          "mean_nll": 2.0832972275748034,
+          "continuation_ppl": 8.030905028914797,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "WikiText-2",
+          "document_id": "n256-wiki-007",
+          "token_sha": "69ca3ae7bcc18968158c447c280641ea800ad40cd080a0d6986fb935b3715f13",
+          "valid_tokens": 64,
+          "total_nll": 138.45363367244136,
+          "mean_nll": 2.163338026131896,
+          "continuation_ppl": 8.700130505079633,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-000",
+          "token_sha": "07dac2435071d3688572276585a7f9645207ad60e72b7cdc3ff552be76977f8a",
+          "valid_tokens": 64,
+          "total_nll": 184.4219366502948,
+          "mean_nll": 2.8815927601608564,
+          "continuation_ppl": 17.842669652609533,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-001",
+          "token_sha": "934e31bf2dc60fc66c7cf48fd80021a7be477f97f615a18a1c9d9016c9f1e397",
+          "valid_tokens": 64,
+          "total_nll": 169.90885295608314,
+          "mean_nll": 2.654825827438799,
+          "continuation_ppl": 14.222508672828155,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-002",
+          "token_sha": "048959b2eea06daba4ea520b5546ecc80f3243ff5edc9a8bf20e627e17a7d985",
+          "valid_tokens": 64,
+          "total_nll": 59.97739472439207,
+          "mean_nll": 0.9371467925686261,
+          "continuation_ppl": 2.5526876705580603,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-003",
+          "token_sha": "41c06d951ddb324474e975b68f49cb0d253b98334bc0949cfda1c0179278e10a",
+          "valid_tokens": 64,
+          "total_nll": 151.09788501993444,
+          "mean_nll": 2.3609044534364756,
+          "continuation_ppl": 10.600534808066653,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-004",
+          "token_sha": "d79025d813dc08636d968b90299a425fda0091572b27091f115628a2b9dc328e",
+          "valid_tokens": 64,
+          "total_nll": 133.1074726502411,
+          "mean_nll": 2.0798042601600173,
+          "continuation_ppl": 8.002902274163867,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-005",
+          "token_sha": "fa089743c58eb799fea47ea860705b72660379f151304bd6106aa524dcc4534d",
+          "valid_tokens": 64,
+          "total_nll": 96.30944069568068,
+          "mean_nll": 1.5048350108700106,
+          "continuation_ppl": 4.503410555201026,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-006",
+          "token_sha": "20f33db7b04cd166f2676715b6a0dec34f5a22663d3ae1418569811cac41c874",
+          "valid_tokens": 64,
+          "total_nll": 180.17159605788765,
+          "mean_nll": 2.8151811884044946,
+          "continuation_ppl": 16.69620066424557,
+          "runtime_cache_bytes_after_prefill": 545128448
+        },
+        {
+          "dataset": "C4",
+          "document_id": "n256-c4-007",
+          "token_sha": "b6d6bd9eb56a8b98af343ce7a8e836f87bdd4a029a5641301cb4bd53c35b2bc0",
+          "valid_tokens": 64,
+          "total_nll": 100.66837574362398,
+          "mean_nll": 1.5729433709941247,
+          "continuation_ppl": 4.820816784127582,
+          "runtime_cache_bytes_after_prefill": 545128448
+        }
+      ],
+      "elapsed_seconds": 597.5863969326019
+    }
+  ],
+  "per_group": [
+    {
+      "group_id": 0,
+      "layers": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "q_group": 0.4128271628038352,
+      "h_group": 1.4953925953646023,
+      "rank_k_control": 384,
+      "rank_v_control": 576,
+      "rank_k_perturb": 352,
+      "rank_v_perturb": 528,
+      "factor_bytes_control": 133693440,
+      "factor_bytes_perturb": 122552320,
+      "delta_factor_bytes": 11141120,
+      "J_control": 2.1196900936536656,
+      "J_perturb": 2.1135635985525285,
+      "delta_J": -0.006126495101137053,
+      "phi_xkv": -0.07351794121364463,
+      "finite": true
+    },
+    {
+      "group_id": 1,
+      "layers": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "q_group": 0.6831736664409449,
+      "h_group": 1.8198083997291339,
+      "rank_k_control": 384,
+      "rank_v_control": 576,
+      "rank_k_perturb": 352,
+      "rank_v_perturb": 528,
+      "factor_bytes_control": 133693440,
+      "factor_bytes_perturb": 122552320,
+      "delta_factor_bytes": 11141120,
+      "J_control": 2.1196900936536656,
+      "J_perturb": 2.1266467704996668,
+      "delta_J": 0.0069566768460012085,
+      "phi_xkv": 0.0834801221520145,
+      "finite": true
+    },
+    {
+      "group_id": 2,
+      "layers": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "q_group": 0.6283619671067591,
+      "h_group": 1.7540343605281108,
+      "rank_k_control": 384,
+      "rank_v_control": 576,
+      "rank_k_perturb": 352,
+      "rank_v_perturb": 528,
+      "factor_bytes_control": 133693440,
+      "factor_bytes_perturb": 122552320,
+      "delta_factor_bytes": 11141120,
+      "J_control": 2.1196900936536656,
+      "J_perturb": 2.121648662529598,
+      "delta_J": 0.001958568875932265,
+      "phi_xkv": 0.02350282651118718,
+      "finite": true
+    },
+    {
+      "group_id": 3,
+      "layers": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "q_group": 0.6131950230883872,
+      "h_group": 1.7358340277060647,
+      "rank_k_control": 384,
+      "rank_v_control": 576,
+      "rank_k_perturb": 352,
+      "rank_v_perturb": 528,
+      "factor_bytes_control": 133693440,
+      "factor_bytes_perturb": 122552320,
+      "delta_factor_bytes": 11141120,
+      "J_control": 2.1196900936536656,
+      "J_perturb": 2.1199591081935445,
+      "delta_J": 0.0002690145398789312,
+      "phi_xkv": 0.0032281744785471744,
+      "finite": true
+    },
+    {
+      "group_id": 4,
+      "layers": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "q_group": 0.4381580885668013,
+      "h_group": 1.5257897062801615,
+      "rank_k_control": 384,
+      "rank_v_control": 576,
+      "rank_k_perturb": 352,
+      "rank_v_perturb": 528,
+      "factor_bytes_control": 133693440,
+      "factor_bytes_perturb": 122552320,
+      "delta_factor_bytes": 11141120,
+      "J_control": 2.1196900936536656,
+      "J_perturb": 2.1212314419089386,
+      "delta_J": 0.0015413482552730784,
+      "phi_xkv": 0.01849617906327694,
+      "finite": true
+    },
+    {
+      "group_id": 5,
+      "layers": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "q_group": 0.16508854501635092,
+      "h_group": 1.198106254019621,
+      "rank_k_control": 384,
+      "rank_v_control": 576,
+      "rank_k_perturb": 352,
+      "rank_v_perturb": 528,
+      "factor_bytes_control": 133693440,
+      "factor_bytes_perturb": 122552320,
+      "delta_factor_bytes": 11141120,
+      "J_control": 2.1196900936536656,
+      "J_perturb": 2.1206971026886805,
+      "delta_J": 0.0010070090350149385,
+      "phi_xkv": 0.012084108420179263,
+      "finite": true
+    },
+    {
+      "group_id": 6,
+      "layers": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "q_group": 0.16852575114955018,
+      "h_group": 1.20223090137946,
+      "rank_k_control": 384,
+      "rank_v_control": 576,
+      "rank_k_perturb": 352,
+      "rank_v_perturb": 528,
+      "factor_bytes_control": 133693440,
+      "factor_bytes_perturb": 122552320,
+      "delta_factor_bytes": 11141120,
+      "J_control": 2.1196900936536656,
+      "J_perturb": 2.120670625809657,
+      "delta_J": 0.000980532155991476,
+      "phi_xkv": 0.011766385871897711,
+      "finite": true
+    },
+    {
+      "group_id": 7,
+      "layers": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "q_group": 0.1440366372299069,
+      "h_group": 1.1728439646758884,
+      "rank_k_control": 384,
+      "rank_v_control": 576,
+      "rank_k_perturb": 352,
+      "rank_v_perturb": 528,
+      "factor_bytes_control": 133693440,
+      "factor_bytes_perturb": 122552320,
+      "delta_factor_bytes": 11141120,
+      "J_control": 2.1196900936536656,
+      "J_perturb": 2.1211059304109314,
+      "delta_J": 0.0014158367572658648,
+      "phi_xkv": 0.016990041087190377,
+      "finite": true
+    }
+  ],
+  "alignment": {
+    "spearman_rho": 0.4523809523809524,
+    "pearson_r": 0.28223714629270746,
+    "q_rank_order_high_to_low": [
+      1,
+      2,
+      3,
+      4,
+      0,
+      6,
+      5,
+      7
+    ],
+    "phi_rank_order_high_to_low": [
+      1,
+      2,
+      4,
+      7,
+      5,
+      6,
+      3,
+      0
+    ],
+    "top2_overlap": [
+      1,
+      2
+    ],
+    "top2_overlap_count": 2,
+    "bottom2_overlap": [],
+    "bottom2_overlap_count": 0
+  },
+  "quality_gates": {
+    "NATIVE_8_GROUP_SEMANTICS_PASS": true,
+    "K_V_SPLIT_PASS": true,
+    "SVD_RUNTIME_CONSUMPTION_PASS": true,
+    "RESOURCE_FORMULA_RUNTIME_CONFIG_PASS": true,
+    "STATE_DISTINCT_PASS": true,
+    "LOGIT_DISTINCT_PASS": true,
+    "CALIBRATION_MANIFEST_IDENTICAL_PASS": true,
+    "OLD_COLLAPSE_RESULTS_MODIFIED": false,
+    "FORMAL_803X_RESULTS_MODIFIED": false
+  },
+  "quality_started": true,
+  "foreign_jobs_interrupted": 0
+}

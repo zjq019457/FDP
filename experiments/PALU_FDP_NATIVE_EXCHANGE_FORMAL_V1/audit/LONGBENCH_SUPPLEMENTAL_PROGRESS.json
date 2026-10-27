@@ -1,0 +1,15 @@
+{
+  "foreign_jobs_interrupted": 0,
+  "formal_cache_bytes": 133693440,
+  "frozen_formal_results_modified": false,
+  "gpu1_used": false,
+  "manifest_sha": "65c0304ee4e7059fb8eabd621edc9e4f8bf374f8a76594cf3642783456fe76c4",
+  "n_samples": 200,
+  "native_rank": 32640,
+  "provenance": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/logs/ratio0p5_uniform_samsum_gpu0.log",
+  "q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "schedule_sha": "3472293139f60b44eeff1a017d6bc9ab55c12e19c3e475b40b2770875743f834",
+  "score": 1.92,
+  "status": "COMPLETE",
+  "updated_cell": "ratio_0.5/PALU_UNIFORM/samsum"
+}

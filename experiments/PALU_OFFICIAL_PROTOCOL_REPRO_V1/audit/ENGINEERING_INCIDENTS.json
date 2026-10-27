@@ -1,0 +1,54 @@
+[
+  {
+    "timestamp": "2026-09-19T15:38:47Z",
+    "branch": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+    "cell": "fullrank_identity_uniform",
+    "status": "ENGINEERING_FAILURE_RETRYABLE",
+    "failure_type": "OFFLINE_DATA_LOADER",
+    "failure": "Pinned official decomposition.py called datasets.load_dataset(\\\"wikitext\\\", \\\"wikitext-2-raw-v1\\\") and the remote runtime could not reach the Hub.",
+    "repair": "Patch only the official calibration-loader edge to use the existing local official WikiText-2 joined raw export with the same random seed, sample count, tokenizer, and sequence length; no rank, manifest, model, scorer, or protocol change.",
+    "affected_cell": "fullrank_identity_uniform",
+    "old_results_valid": true,
+    "foreign_jobs_interrupted": 0,
+    "gpu1_used": false
+  },
+  {
+    "timestamp": "2026-09-19T15:59:44Z",
+    "branch": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+    "cell": "official_fisher_uniform_ratio_0.7",
+    "status": "ENGINEERING_FAILURE_RETRYABLE",
+    "failure_type": "OFFLINE_DATA_LOADER",
+    "failure": "Pinned official rank_search.py imported its own get_calib_data binding and called datasets.load_dataset(\\\"wikitext\\\", \\\"wikitext-2-raw-v1\\\") despite the decomposition loader patch.",
+    "repair": "Patch the official rank_search module binding to the same local official WikiText-2 calibration loader; no rank, manifest, model, scorer, or protocol change.",
+    "affected_cell": "official_fisher_uniform_ratio_0.7",
+    "old_results_valid": true,
+    "foreign_jobs_interrupted": 0,
+    "gpu1_used": false
+  },
+  {
+    "timestamp": "2026-09-19T16:00:35Z",
+    "branch": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+    "cell": "official_fisher_uniform_ratio_0.7",
+    "status": "ENGINEERING_FAILURE_RETRYABLE",
+    "failure_type": "CORRUPT_FROZEN_CACHE",
+    "failure": "The only available official Fisher cache ended at raw tensor bytes without a PyTorch zip central directory; torch.load failed before rank search.",
+    "repair": "Preserve the original /diskF file unchanged; detach only the new branch symlink and rebuild the same official 2048-sample, sequence-1024 Fisher cache inside the new branch using the pinned official code.",
+    "affected_cell": "official_fisher_uniform_ratio_0.7",
+    "old_results_valid": true,
+    "foreign_jobs_interrupted": 0,
+    "gpu1_used": false
+  },
+  {
+    "timestamp": "2026-09-20T00:31:00Z",
+    "branch": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+    "cell": "official_fisher_uniform_ratio_0.7",
+    "status": "ENGINEERING_FAILURE_RETRYABLE",
+    "failure_type": "CUDA_POSITION_ID_DEVICE_MISMATCH",
+    "failure": "After the Fisher cache was successfully written, the shared evaluator called the official Llama model without explicit device-local position_ids and failed in rotary embedding with CPU/CUDA mismatch.",
+    "repair": "Pass deterministic 0..SEQ-1 position_ids on the model device in the shared evaluator; reuse the completed local Fisher cache and read-only whitening cache.",
+    "affected_cell": "official_fisher_uniform_ratio_0.7",
+    "old_results_valid": true,
+    "foreign_jobs_interrupted": 0,
+    "gpu1_used": false
+  }
+]

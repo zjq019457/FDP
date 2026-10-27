@@ -1,0 +1,7 @@
+{
+  "status": "DONE",
+  "job_id": "R2_uniform_preflight",
+  "returncode": 0,
+  "ended_at": "2026-07-28T09:43:31.880204-07:00",
+  "note": "preflight run before tmux start"
+}

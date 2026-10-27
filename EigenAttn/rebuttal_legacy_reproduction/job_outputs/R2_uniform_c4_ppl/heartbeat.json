@@ -1,0 +1,18 @@
+{
+  "job_id": "R2_uniform_c4_ppl",
+  "status": "RUNNING",
+  "pid": 1669719,
+  "gpu": {
+    "job_id": "R2_uniform_c4_ppl",
+    "gpu_index": 1,
+    "gpu_uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 81153,
+    "holder_pid": 1669165,
+    "cuda_visible_devices": "1",
+    "acquired_at": "2026-07-28T09:59:06.238835-07:00"
+  },
+  "running_for_sec": 90.12224984169006,
+  "updated_at": "2026-07-28T10:00:36.371023-07:00"
+}

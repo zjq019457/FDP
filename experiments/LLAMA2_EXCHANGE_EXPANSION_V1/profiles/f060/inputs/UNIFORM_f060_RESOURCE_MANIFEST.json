@@ -1,0 +1,16 @@
+{
+ "note": "adapter: legacy column/field names 'uniform068_*' hold the f060 Uniform schedule",
+ "op": "f060",
+ "outputs": {
+  "per_layer_csv": {
+   "path": "/diskF/jiaqizhang/LLAMA2_EXCHANGE_EXPANSION_V1/profiles/f060/inputs/UNIFORM_f060_PER_LAYER.csv",
+   "sha256": "11f46684ac5f6d37dadc83df3d22aae04bf6da082fa976de45514a89180a9ea8"
+  }
+ },
+ "resource_accounting": {
+  "uniform068_B_live_rank_implied_bytes": 817496064
+ },
+ "schedule_sha256": {
+  "uniform068_rank_schedule": "167e51ff7503886397711120d8b430f879f1ca47bd904f5d8fff85cc27f035c6"
+ }
+}

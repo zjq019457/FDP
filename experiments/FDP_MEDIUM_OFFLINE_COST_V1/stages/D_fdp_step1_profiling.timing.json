@@ -1,0 +1,54 @@
+{
+ "stage": "D_fdp_step1_profiling",
+ "cmd": [
+  "/home/bai-project/anaconda3/envs/eigen/bin/python",
+  "-u",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/code/cost_launch.py",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/stages/D_fdp_step1_profiling.torchpeak.json",
+  "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/step1_diagnose_llama.py",
+  "--base",
+  "/diskD/jiaqizhang/Llama-3",
+  "--cmp",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/fdp_chain/uniform_parent/final_model",
+  "--tok",
+  "/diskD/jiaqizhang/Llama-3",
+  "--dtype",
+  "bf16",
+  "--seqlen",
+  "512",
+  "--num_seqs",
+  "2",
+  "--out",
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/fdp_chain/step1.json",
+  "--gpu",
+  "0",
+  "--attn_implementation",
+  "eager"
+ ],
+ "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+ "rc": 0,
+ "start_epoch": 1791659046.6041448,
+ "wall_s": 82.56660716817714,
+ "peak_cpu_rss_bytes": 9521475584,
+ "peak_nvml_gpu_bytes_process_tree": 17358127104,
+ "peak_nvml_gpu_bytes_per_device": {
+  "1": 17358127104
+ },
+ "marker_offsets_s": {
+  "\\[Phase 1\\]": 1.1643430800177157,
+  "\\[Phase 2\\]": 41.76301189418882,
+  "\\[Phase 3\\]": null,
+  "\\[Phase 4\\]": null
+ },
+ "log": "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/stages/D_fdp_step1_profiling.log",
+ "torch": {
+  "script": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/step1_diagnose_llama.py",
+  "t_start": 1791659046.631199,
+  "t_end": 1791659127.2930653,
+  "torch_peak_allocated_bytes": 16692162048,
+  "torch_peak_reserved_bytes": 16823353344
+ },
+ "disk_bytes_after_stage": {
+  "/diskF/jiaqizhang/FDP_MEDIUM_OFFLINE_COST_V1/work/fdp_chain/step1.json": 0
+ }
+}

@@ -1,0 +1,339 @@
+{
+  "created_at_utc": "2026-10-01T04:25:48.793673+00:00",
+  "dataset_jsonl_sha256": {
+    "lcc": "a35809a88d899f61c116690b12f9e96d443238852cedc1a9fe48d85bff6f7aa1",
+    "multi_news": "f8817c00af317c2d7f81128f334bcfe5780c6c2a515d5c96811aa0ddf8b5ee6b",
+    "qasper": "29aa07d2a63f36f4fb8e8cd200a3428ee3126d750bde6af1c8f9bc41c2366854",
+    "qmsum": "e992f5157679b0c1ca281d0da19d1a8b3496117630ae639c9683ed3dab029113",
+    "repobench-p": "919a4439e2a84ebb25bacc39ac3b3269a7641af6e02ae205ed78d8c53dfe3568",
+    "samsum": "d435a4c7a05d2006872da8dd0c44c0a48648baa1ce4f62a4084d07aa7883f0cc",
+    "trec": "20a88e14f7442f58a39082cdd7396f1093ea8162da0a4ea7ead7d6757514c8f4",
+    "triviaqa": "ed2529de2e10b12c00f49981870c23c7c51667069cdd8d0740e1423ff337d7fa"
+  },
+  "foreign_jobs_interrupted": 0,
+  "hashes": {
+    "dataset_manifest_sha256": "e7a5c5f4d3f85536abfdb93108a0f67228eceb8a91f81ed591f631e0a151e572",
+    "longbench_manifest_sha256": "02b55f781e4f358b74b327195385a588bfa653ae35ca400d3e14b57642996dfa",
+    "metrics_sha256": "f02c7b124587c5dda2be234ba50da3952b8d1c384f288f214364806e7c8683f5",
+    "prompt_sha256": "8d406345f1cb48755e39a3fc1829b106aa8379270c4a094bf97be33ff39da6fa",
+    "q_sha256": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+    "v1_schedule_semantic_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+    "v3_allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c"
+  },
+  "macro": {
+    "definition": "unweighted mean of eight official task scores (each official task score rounded to 2 decimals)",
+    "delta_v3_minus_v1_points": 0.36624999999999375,
+    "v1_native": 39.46,
+    "v3_selected": 39.826249999999995
+  },
+  "n_samples_per_method": 2200,
+  "pair_integrity_validation": {
+    "lcc": {
+      "dataset_reference_rows_verified": 500,
+      "n": 500,
+      "paired_order": "EXACT",
+      "unique_sample_ids": 500
+    },
+    "multi_news": {
+      "dataset_reference_rows_verified": 200,
+      "n": 200,
+      "paired_order": "EXACT",
+      "unique_sample_ids": 200
+    },
+    "qasper": {
+      "dataset_reference_rows_verified": 200,
+      "n": 200,
+      "paired_order": "EXACT",
+      "unique_sample_ids": 200
+    },
+    "qmsum": {
+      "dataset_reference_rows_verified": 200,
+      "n": 200,
+      "paired_order": "EXACT",
+      "unique_sample_ids": 200
+    },
+    "repobench-p": {
+      "dataset_reference_rows_verified": 500,
+      "n": 500,
+      "paired_order": "EXACT",
+      "unique_sample_ids": 500
+    },
+    "samsum": {
+      "dataset_reference_rows_verified": 200,
+      "n": 200,
+      "paired_order": "EXACT",
+      "unique_sample_ids": 200
+    },
+    "trec": {
+      "dataset_reference_rows_verified": 200,
+      "n": 200,
+      "paired_order": "EXACT",
+      "unique_sample_ids": 200
+    },
+    "triviaqa": {
+      "dataset_reference_rows_verified": 200,
+      "n": 200,
+      "paired_order": "EXACT",
+      "unique_sample_ids": 200
+    }
+  },
+  "paired_sample_bootstrap": {
+    "ci95_percentile_points": [
+      -0.07624999999999887,
+      0.8062499999999998
+    ],
+    "replicates": 10000,
+    "seed": 20260930,
+    "statistic": "Within each task, resample paired row indices with replacement; compute official per-method task score rounded to 2 decimal percentage points, subtract V1 from V3; average task deltas equally.",
+    "status": "COMPUTED"
+  },
+  "paired_sample_count_unique": 2200,
+  "protocol": {
+    "max_context_tokens": 4096,
+    "model": "Llama-2-7B",
+    "ratio": 0.5,
+    "sam_sum_decode": "V1 official completed Native output reused; V3 generated in SAMSUM_OFFICIAL_DECODE_REPAIR_V1 using official newline-as-EOS policy; position-limit warning retained without protocol changes"
+  },
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "resource_match": "EXACT",
+  "resource_validation": {
+    "all_non_samsum_rows_verified_ratio_rank_q_schedule": true,
+    "census": {
+      "decode_cache_bytes": 536870912,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "total_native_rank": 131072
+    },
+    "samsum_rows_verified_v1_rank_schedule_and_v3_full_resource_schedule": true,
+    "status": "EXACT",
+    "v1_official_samsum_done_json": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/runs/ratio_0p5/fdp_native/samsum/DONE.json",
+    "v3_official_samsum_done_json": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/SAMSUM_OFFICIAL_DECODE_REPAIR_V1/outputs/v3/DONE.json"
+  },
+  "samsum_decode_repair": {
+    "delta_points": -0.83,
+    "v1_predictions": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/runs/ratio_0p5/fdp_native/samsum/predictions.jsonl",
+    "v1_score": 39.12,
+    "v3_done": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/SAMSUM_OFFICIAL_DECODE_REPAIR_V1/outputs/v3/DONE.json",
+    "v3_predictions": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/SAMSUM_OFFICIAL_DECODE_REPAIR_V1/outputs/v3/predictions.jsonl",
+    "v3_score": 38.29
+  },
+  "samsum_done_metadata_sha256": {
+    "v1": "fa78d062f65a660653415b0a63a794ab876fca8801ea3477b88034b5811e5c1b",
+    "v3": "146244bd4f3f6d18c703e39cd0393fa5c5ace0836b6ae513bf0a2b6743c0bfe8"
+  },
+  "schema": "palu_v1_v3_paired_longbench_final_official_score_v1",
+  "scope": "Supplemental 8-task ratio-0.5 Llama-2-7B V1 Native vs frozen selected V3; CPU rescoring only, no model inference except the already-completed isolated V3 SAMSum official-decode cell; no formal PPL edits.",
+  "scorer": {
+    "metric_rule": "official dataset2metric; maximum across references; trec/triviaqa/samsum/lsht strip leading newlines and score first output line; task score rounded to 2 decimal percent",
+    "sha256": "85a6352e88c909aba956d85acc14db2938f2ff7fb87ca3001a6a7c91912db24c",
+    "source": "official PaLu longbench_utils/scorer.py and metrics.py"
+  },
+  "source_prediction_paths": {
+    "lcc": {
+      "v1": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/lcc.raw.jsonl",
+      "v3": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/lcc.raw.jsonl"
+    },
+    "multi_news": {
+      "v1": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/multi_news.raw.jsonl",
+      "v3": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/multi_news.raw.jsonl"
+    },
+    "qasper": {
+      "v1": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/qasper.raw.jsonl",
+      "v3": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/qasper.raw.jsonl"
+    },
+    "qmsum": {
+      "v1": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/qmsum.raw.jsonl",
+      "v3": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/qmsum.raw.jsonl"
+    },
+    "repobench-p": {
+      "v1": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/repobench-p.raw.jsonl",
+      "v3": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/repobench-p.raw.jsonl"
+    },
+    "samsum": {
+      "v1": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/runs/ratio_0p5/fdp_native/samsum/predictions.jsonl",
+      "v3": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/SAMSUM_OFFICIAL_DECODE_REPAIR_V1/outputs/v3/predictions.jsonl"
+    },
+    "trec": {
+      "v1": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/trec.raw.jsonl",
+      "v3": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/trec.raw.jsonl"
+    },
+    "triviaqa": {
+      "v1": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V1_NATIVE_MATCHED/triviaqa.raw.jsonl",
+      "v3": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/ratio_0.5/PALU_V3_SELECTED/triviaqa.raw.jsonl"
+    }
+  },
+  "source_prediction_sha256": {
+    "v1": {
+      "lcc": "f212a63066f43fd07509bb59739d8bef8d15b80f104333dbabd8e7eed57c3b11",
+      "multi_news": "088df721c6cc883af623aa48ab79481ee9ad4562e833d8a9c01b6fffbf27a567",
+      "qasper": "596ee333b00af154a931cf2c54694f222033f583a37f57aa754df3325d755607",
+      "qmsum": "b61787d66a5383023fbcfc572a2062e6cf9515dfd7ed95f5a699000d8ef649dd",
+      "repobench-p": "a990d58237386b839827aab41df26eaab6eb3e20aa539d74c13b086df83cc722",
+      "samsum": "b46eaa04ceafe31b6bab2ea4f2282f1ee71d127ed72ced065a52896ba7529856",
+      "trec": "bfc3231d5a45e8a8c778727b3fa2bfdb108bcdc9226459c7c15f08c11ce60ec0",
+      "triviaqa": "268188c9c3645c04e0c04e1cf67eb98ce1149592f819ed66f51318e955b6fb2d"
+    },
+    "v3": {
+      "lcc": "799526c1866f77d743a9d7ccc3974b799c285e5c504d327b363f7c1c2e2d8bbf",
+      "multi_news": "002c143bc79a0e229a2d5e5ad38a555b18542299363043a16a4375766697574e",
+      "qasper": "6aff3ef5bc5401acc91826f982c0ace78f1256b17732496cfbb80c08f87c90ae",
+      "qmsum": "1feb8a4107471fd517fd6accb3d3722fa87c541be5ed656912e3607a73723e78",
+      "repobench-p": "44b34dda838d270508beea79c519fedb76f19d304915bc897416487f99d78a99",
+      "samsum": "1923b897847f7f8ac45ea5b1ee751bc482ffea0cf8221255d17240ace2e406d9",
+      "trec": "d131de6222bcdf6f775fd76a35575a59f729be45ccd1e8c38d756c3b93180ca3",
+      "triviaqa": "edc1ac4913773310c9e0156ca674d9df04b2f3d606da87ba32a7a79252abf862"
+    }
+  },
+  "status": "COMPLETE_VALID_PAIRED_SUPPLEMENTAL_OFFICIAL_SCORER",
+  "supersedes": [
+    "FINAL_PAIRED_AUDIT_20260930.json (old scoring aggregation invalid for TREC/TriviaQA/SAMSum)",
+    "OFFICIAL_SCORER_REAGGREGATION_AUDIT_20260930.json (partial; used SAMSum predictions generated under mismatched stop policy)"
+  ],
+  "task_n": {
+    "lcc": 500,
+    "multi_news": 200,
+    "qasper": 200,
+    "qmsum": 200,
+    "repobench-p": 500,
+    "samsum": 200,
+    "trec": 200,
+    "triviaqa": 200
+  },
+  "task_results": {
+    "lcc": {
+      "delta_v3_minus_v1_pp": 2.21,
+      "n": 500,
+      "sample_id_order_match": "EXACT",
+      "v1_native": {
+        "prediction_sha256": "f212a63066f43fd07509bb59739d8bef8d15b80f104333dbabd8e7eed57c3b11",
+        "score_percent": 53.48,
+        "unrounded_mean_percent": 53.478
+      },
+      "v3_selected": {
+        "prediction_sha256": "799526c1866f77d743a9d7ccc3974b799c285e5c504d327b363f7c1c2e2d8bbf",
+        "score_percent": 55.69,
+        "unrounded_mean_percent": 55.688
+      }
+    },
+    "multi_news": {
+      "delta_v3_minus_v1_pp": -0.36,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native": {
+        "prediction_sha256": "088df721c6cc883af623aa48ab79481ee9ad4562e833d8a9c01b6fffbf27a567",
+        "score_percent": 1.4,
+        "unrounded_mean_percent": 1.3951689426969416
+      },
+      "v3_selected": {
+        "prediction_sha256": "002c143bc79a0e229a2d5e5ad38a555b18542299363043a16a4375766697574e",
+        "score_percent": 1.04,
+        "unrounded_mean_percent": 1.0449647453523365
+      }
+    },
+    "qasper": {
+      "delta_v3_minus_v1_pp": -0.15,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native": {
+        "prediction_sha256": "596ee333b00af154a931cf2c54694f222033f583a37f57aa754df3325d755607",
+        "score_percent": 8.2,
+        "unrounded_mean_percent": 8.198423154188959
+      },
+      "v3_selected": {
+        "prediction_sha256": "6aff3ef5bc5401acc91826f982c0ace78f1256b17732496cfbb80c08f87c90ae",
+        "score_percent": 8.05,
+        "unrounded_mean_percent": 8.050100795350536
+      }
+    },
+    "qmsum": {
+      "delta_v3_minus_v1_pp": 0.28,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native": {
+        "prediction_sha256": "b61787d66a5383023fbcfc572a2062e6cf9515dfd7ed95f5a699000d8ef649dd",
+        "score_percent": 19.02,
+        "unrounded_mean_percent": 19.019042382902676
+      },
+      "v3_selected": {
+        "prediction_sha256": "1feb8a4107471fd517fd6accb3d3722fa87c541be5ed656912e3607a73723e78",
+        "score_percent": 19.3,
+        "unrounded_mean_percent": 19.29823363310368
+      }
+    },
+    "repobench-p": {
+      "delta_v3_minus_v1_pp": 1.4,
+      "n": 500,
+      "sample_id_order_match": "EXACT",
+      "v1_native": {
+        "prediction_sha256": "a990d58237386b839827aab41df26eaab6eb3e20aa539d74c13b086df83cc722",
+        "score_percent": 50.4,
+        "unrounded_mean_percent": 50.398
+      },
+      "v3_selected": {
+        "prediction_sha256": "44b34dda838d270508beea79c519fedb76f19d304915bc897416487f99d78a99",
+        "score_percent": 51.8,
+        "unrounded_mean_percent": 51.798
+      }
+    },
+    "samsum": {
+      "delta_v3_minus_v1_pp": -0.83,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native": {
+        "prediction_sha256": "b46eaa04ceafe31b6bab2ea4f2282f1ee71d127ed72ced065a52896ba7529856",
+        "score_percent": 39.12,
+        "unrounded_mean_percent": 39.1239299675924
+      },
+      "v3_selected": {
+        "prediction_sha256": "1923b897847f7f8ac45ea5b1ee751bc482ffea0cf8221255d17240ace2e406d9",
+        "score_percent": 38.29,
+        "unrounded_mean_percent": 38.293460825625864
+      }
+    },
+    "trec": {
+      "delta_v3_minus_v1_pp": -1.5,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native": {
+        "prediction_sha256": "bfc3231d5a45e8a8c778727b3fa2bfdb108bcdc9226459c7c15f08c11ce60ec0",
+        "score_percent": 62.0,
+        "unrounded_mean_percent": 62.0
+      },
+      "v3_selected": {
+        "prediction_sha256": "d131de6222bcdf6f775fd76a35575a59f729be45ccd1e8c38d756c3b93180ca3",
+        "score_percent": 60.5,
+        "unrounded_mean_percent": 60.5
+      }
+    },
+    "triviaqa": {
+      "delta_v3_minus_v1_pp": 1.88,
+      "n": 200,
+      "sample_id_order_match": "EXACT",
+      "v1_native": {
+        "prediction_sha256": "268188c9c3645c04e0c04e1cf67eb98ce1149592f819ed66f51318e955b6fb2d",
+        "score_percent": 82.06,
+        "unrounded_mean_percent": 82.06166056166056
+      },
+      "v3_selected": {
+        "prediction_sha256": "edc1ac4913773310c9e0156ca674d9df04b2f3d606da87ba32a7a79252abf862",
+        "score_percent": 83.94,
+        "unrounded_mean_percent": 83.93666056166056
+      }
+    }
+  },
+  "tasks": [
+    "qasper",
+    "qmsum",
+    "multi_news",
+    "trec",
+    "triviaqa",
+    "samsum",
+    "lcc",
+    "repobench-p"
+  ]
+}

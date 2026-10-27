@@ -1,0 +1,16 @@
+{
+  "c4_chunks": 256,
+  "c4_docs_scanned": 1100,
+  "c4_source_sha256": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+  "calib_dataset": "wikitext2",
+  "calib_seqlen": 1024,
+  "compression_rate_target": null,
+  "eval_seqlen": 2048,
+  "fisher_samples": 2048,
+  "mode": "control",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "param_ratio_target": null,
+  "whiten_samples": 256,
+  "wiki_test_sha256": "d790b833ef8cf03a90db7bf1271b7520b83c45ce07ba3c1a9699df81e239eca0",
+  "wiki_train_sha256": "9e9fa1ad55b1c2c95b08e37dd8e653f638fac2c6de904b79e813611eefbc985f"
+}

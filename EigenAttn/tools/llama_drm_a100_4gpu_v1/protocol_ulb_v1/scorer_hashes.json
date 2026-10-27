@@ -1,0 +1,29 @@
+{
+  "macro_policy": "arithmetic mean of the 17 independently computed task scores",
+  "per_sample_helper_sha256": "b11d62e2833fd99395be82abba322f3551778de1a842849dfe61ded0ed97cd57",
+  "per_sample_helper_source": "tools/consolidate_official_repro_results.py",
+  "pooled_sample_weighting": false,
+  "scorer_sha256": "a71ef393206539961e976bf83f90349008f01208e16944f2a9c935ea4108b243",
+  "scorer_source": "longbench_eval.py",
+  "task_metric_map": {
+    "2wikimqa": "qa_f1_score",
+    "gov_report": "rouge_score",
+    "hotpotqa": "qa_f1_score",
+    "lcc": "code_sim_score",
+    "lsht": "classification_score",
+    "multi_news": "rouge_score",
+    "multifieldqa_en": "qa_f1_score",
+    "musique": "qa_f1_score",
+    "passage_count": "count_score",
+    "passage_retrieval_en": "retrieval_score",
+    "qasper": "qa_f1_score",
+    "qmsum": "rouge_score",
+    "repobench-p": "code_sim_score",
+    "samsum": "rouge_score",
+    "trec": "classification_score",
+    "triviaqa": "qa_f1_score",
+    "vcsum": "rouge_zh_score"
+  },
+  "task_score_rounding_for_legacy_raw": 2,
+  "task_score_scale": 100
+}

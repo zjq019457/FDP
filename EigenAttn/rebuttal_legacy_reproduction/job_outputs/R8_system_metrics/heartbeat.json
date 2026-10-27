@@ -1,0 +1,18 @@
+{
+  "job_id": "R8_system_metrics",
+  "status": "RUNNING",
+  "pid": 2218763,
+  "gpu": {
+    "job_id": "R8_system_metrics",
+    "gpu_index": 0,
+    "gpu_uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07",
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "memory_total_mib": 81920,
+    "memory_free_mib_at_acquire": 62852,
+    "holder_pid": 2218735,
+    "cuda_visible_devices": "0",
+    "acquired_at": "2026-07-29T01:46:28.812087-07:00"
+  },
+  "running_for_sec": 480.6386344432831,
+  "updated_at": "2026-07-29T01:54:29.460160-07:00"
+}

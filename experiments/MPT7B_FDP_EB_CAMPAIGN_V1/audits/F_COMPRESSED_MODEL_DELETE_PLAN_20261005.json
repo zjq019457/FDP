@@ -1,0 +1,690 @@
+{
+  "schema": "F_COMPRESSED_MODEL_DELETE_PLAN_V1",
+  "inventory_path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/audits/F_COMPRESSED_MODEL_INVENTORY_20261005.json",
+  "inventory_sha256": "9b9b407eeefda23c016467664c1aeff55214378e37f8b2a2a00cee23bab1c5d6",
+  "scope": "Only indexed generated EigenAttention model checkpoints and indexed derived PALU model checkpoints under /diskF/jiaqizhang; preserve raw source checkpoints and all non-weight evidence.",
+  "protected_original_roots": [
+    "/diskF/jiaqizhang/Llama-3.1",
+    "/diskF/jiaqizhang/models/新建文件夹",
+    "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+    "/diskF/jiaqizhang/FDP125_DIRECTION_CORRECTED_V2/models/mistral_7b_v0_2_official/mistral-7B-v0.2"
+  ],
+  "checkpoint_count": 14,
+  "weight_file_count": 56,
+  "planned_weight_bytes": 221560061456,
+  "deletion_semantics": "unlink exact verified weight shard files only; retain config, index, manifests, logs, result tables, basis/profile artifacts, and directories.",
+  "checkpoints": [
+    {
+      "directory": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "palullama",
+      "architectures": [
+        "PaluLlamaForCausalLM"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 16002502736,
+      "config_sha256": "a515978d9d6bfb990805d304b9493ceee30b8b2a11e124ff2d1ae51eb85f2405",
+      "index_sha256": {
+        "model.safetensors.index.json": "4e3f1941435e49f2dad3122b905a4de8d5a5ad75a4bb9064d220fadabebc2415"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp/model-00001-of-00004.safetensors",
+          "bytes": 4980633992,
+          "device": 2113,
+          "inode": 4067655,
+          "link_count": 1,
+          "mtime_ns": 1788304453059694622
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp/model-00002-of-00004.safetensors",
+          "bytes": 4988665824,
+          "device": 2113,
+          "inode": 4067656,
+          "link_count": 1,
+          "mtime_ns": 1788304460820469385
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp/model-00003-of-00004.safetensors",
+          "bytes": 4982529640,
+          "device": 2113,
+          "inode": 4067657,
+          "link_count": 1,
+          "mtime_ns": 1788304468740239537
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MEDIUM/fdp/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 4067658,
+          "link_count": 1,
+          "mtime_ns": 1788304470182197689
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "palullama",
+      "architectures": [
+        "PaluLlamaForCausalLM"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15922155584,
+      "config_sha256": "6b5e30b18dd52943c9cc312e7064dadc2b466c2f6833e1cea1351d7fc18c1720",
+      "index_sha256": {
+        "model.safetensors.index.json": "e9482f85b9ee4705faa0fb3c2615b4b9fa7b5ef7b5d80a2d02a8681d96049175"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control/model-00001-of-00004.safetensors",
+          "bytes": 4983780416,
+          "device": 2113,
+          "inode": 4067667,
+          "link_count": 1,
+          "mtime_ns": 1788304984098288851
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control/model-00002-of-00004.safetensors",
+          "bytes": 4901895448,
+          "device": 2113,
+          "inode": 4067668,
+          "link_count": 1,
+          "mtime_ns": 1788304992099056813
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control/model-00003-of-00004.safetensors",
+          "bytes": 4985806440,
+          "device": 2113,
+          "inode": 4067669,
+          "link_count": 1,
+          "mtime_ns": 1788305000431815148
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/AGGRESSIVE/control/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 4067670,
+          "link_count": 1,
+          "mtime_ns": 1788305001768776373
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "palullama",
+      "architectures": [
+        "PaluLlamaForCausalLM"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 16041693256,
+      "config_sha256": "0595c327259362ef104548b5eed6f000af93b0019b86c60361d2eb408dc1aec9",
+      "index_sha256": {
+        "model.safetensors.index.json": "d8e604c20553fc8e6eacc0f1593f39d1a81463629091bcb1ad981e46551f9298"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control/model-00001-of-00004.safetensors",
+          "bytes": 4971393400,
+          "device": 2113,
+          "inode": 4067728,
+          "link_count": 1,
+          "mtime_ns": 1788307409874346013
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control/model-00002-of-00004.safetensors",
+          "bytes": 4992729056,
+          "device": 2113,
+          "inode": 4067729,
+          "link_count": 1,
+          "mtime_ns": 1788307417942113884
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control/model-00003-of-00004.safetensors",
+          "bytes": 4909431992,
+          "device": 2113,
+          "inode": 4067722,
+          "link_count": 1,
+          "mtime_ns": 1788307425738889535
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_recalkv_transfer_confirmation_v1_results/models/MILD/control/model-00004-of-00004.safetensors",
+          "bytes": 1168138808,
+          "device": 2113,
+          "inode": 4067738,
+          "link_count": 1,
+          "mtime_ns": 1788307428017823957
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15874072176,
+      "config_sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa",
+      "index_sha256": {
+        "model.safetensors.index.json": "a8ad7b81a35d469eb91468e4963a014cd74bf3cf795c72364ed5dc1899105916"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4983046624,
+          "device": 2113,
+          "inode": 5112810,
+          "link_count": 1,
+          "mtime_ns": 1789090250932006961
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4999470424,
+          "device": 2113,
+          "inode": 5112811,
+          "link_count": 1,
+          "mtime_ns": 1789090258568762948
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4840881848,
+          "device": 2113,
+          "inode": 5112812,
+          "link_count": 1,
+          "mtime_ns": 1789090266159520782
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_component_subset_search_v2/current_env/light_parent/full_canary/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 5112813,
+          "link_count": 1,
+          "mtime_ns": 1789090267633473802
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15606349920,
+      "config_sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa",
+      "index_sha256": {
+        "model.safetensors.index.json": "e8a1b08839275f5e30238571cc955fd798a6cf7068965ceeb2250d7a62c37cf6"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4945402960,
+          "device": 2113,
+          "inode": 5673347,
+          "link_count": 1,
+          "mtime_ns": 1790976461884894718
+        },
+        {
+          "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4989280544,
+          "device": 2113,
+          "inode": 5673349,
+          "link_count": 1,
+          "mtime_ns": 1790976469432671535
+        },
+        {
+          "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4620993136,
+          "device": 2113,
+          "inode": 5673351,
+          "link_count": 1,
+          "mtime_ns": 1790976476387465934
+        },
+        {
+          "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/aggressive/materialization/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 5673353,
+          "link_count": 1,
+          "mtime_ns": 1790976477734426120
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15781538400,
+      "config_sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa",
+      "index_sha256": {
+        "model.safetensors.index.json": "de24112eaf712a3ec7d68a73e613c5796088479701787dd8d10a02890c685eb8"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4987003728,
+          "device": 2113,
+          "inode": 5673348,
+          "link_count": 1,
+          "mtime_ns": 1790976463877835783
+        },
+        {
+          "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4944388064,
+          "device": 2113,
+          "inode": 5673350,
+          "link_count": 1,
+          "mtime_ns": 1790976471369614270
+        },
+        {
+          "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4799473328,
+          "device": 2113,
+          "inode": 5673352,
+          "link_count": 1,
+          "mtime_ns": 1790976478666398573
+        },
+        {
+          "path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium/materialization/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 5673360,
+          "link_count": 1,
+          "mtime_ns": 1790976480039357993
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15877093936,
+      "config_sha256": "10d5ae73662bc71c3bef419bfb009ff2e58f55c49a7ba80bed57d9a2542da41e",
+      "index_sha256": {
+        "model.safetensors.index.json": "63ade2b20d75a96b5dade800002377feb9199182da1bdc882b01d77585627991"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4968741240,
+          "device": 2113,
+          "inode": 4090976,
+          "link_count": 1,
+          "mtime_ns": 1789014826511885528
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4883407728,
+          "device": 2113,
+          "inode": 4090977,
+          "link_count": 1,
+          "mtime_ns": 1789014832037730301
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4974271688,
+          "device": 2113,
+          "inode": 4090978,
+          "link_count": 1,
+          "mtime_ns": 1789014837641572868
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/light/uniform_043/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 4090979,
+          "link_count": 1,
+          "mtime_ns": 1789014838542547555
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15609231136,
+      "config_sha256": "10d5ae73662bc71c3bef419bfb009ff2e58f55c49a7ba80bed57d9a2542da41e",
+      "index_sha256": {
+        "model.safetensors.index.json": "75eb464d883cf220cf6e0dfafb17167ade0fd2fc3c425783a170334873304704"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4926049520,
+          "device": 2113,
+          "inode": 4091148,
+          "link_count": 1,
+          "mtime_ns": 1789014911372500242
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4998006712,
+          "device": 2113,
+          "inode": 4091177,
+          "link_count": 1,
+          "mtime_ns": 1789014916762348643
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4634501624,
+          "device": 2113,
+          "inode": 4091192,
+          "link_count": 1,
+          "mtime_ns": 1789014922755180071
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/aggressive/uniform_088/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 4091197,
+          "link_count": 1,
+          "mtime_ns": 1789014924367134726
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15788232992,
+      "config_sha256": "10d5ae73662bc71c3bef419bfb009ff2e58f55c49a7ba80bed57d9a2542da41e",
+      "index_sha256": {
+        "model.safetensors.index.json": "db8621d3be8e87ece9a6de494db5bbe53f0c4f4765c5b7f0367459066a26bc0f"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4972240368,
+          "device": 2113,
+          "inode": 4091009,
+          "link_count": 1,
+          "mtime_ns": 1789014860905919139
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4937299304,
+          "device": 2113,
+          "inode": 4091015,
+          "link_count": 1,
+          "mtime_ns": 1789014866405764559
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4828020040,
+          "device": 2113,
+          "inode": 4091016,
+          "link_count": 1,
+          "mtime_ns": 1789014871814612524
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/historical_track/medium/uniform_058/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 4091017,
+          "link_count": 1,
+          "mtime_ns": 1789014872718587113
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15607268576,
+      "config_sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa",
+      "index_sha256": {
+        "model.safetensors.index.json": "b02c6b1cee360cab0c09f7e5b554da20d8dda70080bdec6538292584697c66a2"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4945403024,
+          "device": 2113,
+          "inode": 6204156,
+          "link_count": 1,
+          "mtime_ns": 1788983048712063937
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4989018688,
+          "device": 2113,
+          "inode": 6204157,
+          "link_count": 1,
+          "mtime_ns": 1788983057208822618
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4622173584,
+          "device": 2113,
+          "inode": 6204158,
+          "link_count": 1,
+          "mtime_ns": 1788983064749608449
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb090/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 6204159,
+          "link_count": 1,
+          "mtime_ns": 1788983065936574737
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15788430040,
+      "config_sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa",
+      "index_sha256": {
+        "model.safetensors.index.json": "19cfbc86906fa53d0691fbf3b3ecf12098b06e28a2c46bb744df7d7f01459a0c"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4987003792,
+          "device": 2113,
+          "inode": 6174568,
+          "link_count": 1,
+          "mtime_ns": 1788982948881899210
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4939794168,
+          "device": 2113,
+          "inode": 6174569,
+          "link_count": 1,
+          "mtime_ns": 1788982954102750935
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4810958800,
+          "device": 2113,
+          "inode": 6174570,
+          "link_count": 1,
+          "mtime_ns": 1788982959189606465
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb060/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 6174571,
+          "link_count": 1,
+          "mtime_ns": 1788982959925585563
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15874072296,
+      "config_sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa",
+      "index_sha256": {
+        "model.safetensors.index.json": "a8ad7b81a35d469eb91468e4963a014cd74bf3cf795c72364ed5dc1899105916"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4983046688,
+          "device": 2113,
+          "inode": 6193803,
+          "link_count": 1,
+          "mtime_ns": 1788983000765425678
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4999470456,
+          "device": 2113,
+          "inode": 6201779,
+          "link_count": 1,
+          "mtime_ns": 1788983006761255390
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4840881872,
+          "device": 2113,
+          "inode": 6201780,
+          "link_count": 1,
+          "mtime_ns": 1788983012605089419
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/historical_replay/eb045/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 6201781,
+          "link_count": 1,
+          "mtime_ns": 1788983013287070050
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15792178904,
+      "config_sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa",
+      "index_sha256": {
+        "model.safetensors.index.json": "01d61a05543a71a8875d1704a11f98ab841637538c12ce0d6a8935ee83be13df"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4979920016,
+          "device": 2113,
+          "inode": 7643100,
+          "link_count": 1,
+          "mtime_ns": 1788481951802533880
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4935662072,
+          "device": 2113,
+          "inode": 7643101,
+          "link_count": 1,
+          "mtime_ns": 1788481957148377562
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4825923536,
+          "device": 2113,
+          "inode": 7643102,
+          "link_count": 1,
+          "mtime_ns": 1788481962413223658
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/resource_favored_eb0p06/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1050673280,
+          "device": 2113,
+          "inode": 7643103,
+          "link_count": 1,
+          "mtime_ns": 1788481963167201622
+        }
+      ]
+    },
+    {
+      "directory": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model",
+      "classification": "GENERATED_COMPRESSED_MODEL",
+      "model_type": "llama",
+      "architectures": [
+        "LlamaForCausalLM_EigenAttn"
+      ],
+      "source_reference": "/diskD/jiaqizhang/Llama-3",
+      "checkpoint_bytes": 15995241504,
+      "config_sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa",
+      "index_sha256": {
+        "model.safetensors.index.json": "5757d6c340f456b4595d097d719e42ee54a35e54dbd47db13495552f4247f4c8"
+      },
+      "weight_files": [
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model/model-00001-of-00004.safetensors",
+          "bytes": 4997044912,
+          "device": 2113,
+          "inode": 6331903,
+          "link_count": 1,
+          "mtime_ns": 1788477126400795972
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model/model-00002-of-00004.safetensors",
+          "bytes": 4937019024,
+          "device": 2113,
+          "inode": 6331904,
+          "link_count": 1,
+          "mtime_ns": 1788477132724617070
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model/model-00003-of-00004.safetensors",
+          "bytes": 4893038760,
+          "device": 2113,
+          "inode": 6331905,
+          "link_count": 1,
+          "mtime_ns": 1788477138966440493
+        },
+        {
+          "path": "/diskF/jiaqizhang/fdp_eb_orth_paper_v1_results/official_external_llama3_8b/default_eb025/final_model/model-00004-of-00004.safetensors",
+          "bytes": 1168138808,
+          "device": 2113,
+          "inode": 6331906,
+          "link_count": 1,
+          "mtime_ns": 1788477140358401116
+        }
+      ]
+    }
+  ]
+}

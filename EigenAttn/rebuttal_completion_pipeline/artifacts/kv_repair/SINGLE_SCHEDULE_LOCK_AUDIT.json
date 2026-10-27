@@ -1,0 +1,132 @@
+{
+  "generated_at": "2026-07-29T19:47:09.877617-07:00",
+  "protocol_sha256": "bf8bc0030f95918c425b8b3721331a27d1bfd1711b48692089c000a106b7fd9e",
+  "rows": [
+    {
+      "field": "weights",
+      "locked_value": {
+        "wz": 1.0,
+        "ws": 1.0,
+        "wv": 1.0,
+        "wa": 1.0,
+        "wh": 1.0
+      },
+      "mild": {
+        "wz": 1.0,
+        "ws": 1.0,
+        "wv": 1.0,
+        "wa": 1.0,
+        "wh": 1.0
+      },
+      "moderate": {
+        "wz": 1.0,
+        "ws": 1.0,
+        "wv": 1.0,
+        "wa": 1.0,
+        "wh": 1.0
+      },
+      "aggressive": {
+        "wz": 1.0,
+        "ws": 1.0,
+        "wv": 1.0,
+        "wa": 1.0,
+        "wh": 1.0
+      },
+      "status": "INVARIANT_LOCKED",
+      "notes": "Only eb_base may change across OP"
+    },
+    {
+      "field": "normalization",
+      "locked_value": "mean",
+      "mild": "mean",
+      "moderate": "mean",
+      "aggressive": "mean",
+      "status": "INVARIANT_LOCKED",
+      "notes": "Only eb_base may change across OP"
+    },
+    {
+      "field": "lambda",
+      "locked_value": 1.2,
+      "mild": 1.2,
+      "moderate": 1.2,
+      "aggressive": 1.2,
+      "status": "INVARIANT_LOCKED",
+      "notes": "Only eb_base may change across OP"
+    },
+    {
+      "field": "Layer0_rule",
+      "locked_value": [
+        0
+      ],
+      "mild": [
+        0
+      ],
+      "moderate": [
+        0
+      ],
+      "aggressive": [
+        0
+      ],
+      "status": "INVARIANT_LOCKED",
+      "notes": "Only eb_base may change across OP"
+    },
+    {
+      "field": "clipping_rails",
+      "locked_value": "none",
+      "mild": "none",
+      "moderate": "none",
+      "aggressive": "none",
+      "status": "INVARIANT_LOCKED",
+      "notes": "Only eb_base may change across OP"
+    },
+    {
+      "field": "calibration_domain",
+      "locked_value": "c4",
+      "mild": "c4",
+      "moderate": "c4",
+      "aggressive": "c4",
+      "status": "INVARIANT_LOCKED",
+      "notes": "Only eb_base may change across OP"
+    },
+    {
+      "field": "calibration_size",
+      "locked_value": 64,
+      "mild": 64,
+      "moderate": 64,
+      "aggressive": 64,
+      "status": "INVARIANT_LOCKED",
+      "notes": "Only eb_base may change across OP"
+    },
+    {
+      "field": "rank_search",
+      "locked_value": "decrease_until_budget_met",
+      "mild": "decrease_until_budget_met",
+      "moderate": "decrease_until_budget_met",
+      "aggressive": "decrease_until_budget_met",
+      "status": "INVARIANT_LOCKED",
+      "notes": "Only eb_base may change across OP"
+    },
+    {
+      "field": "eb_base_ALLOWED",
+      "locked_value": "may_differ",
+      "point": "mild",
+      "value": 0.045,
+      "status": "ALLOWED_CHANGE"
+    },
+    {
+      "field": "eb_base_ALLOWED",
+      "locked_value": "may_differ",
+      "point": "moderate",
+      "value": 0.06,
+      "status": "ALLOWED_CHANGE"
+    },
+    {
+      "field": "eb_base_ALLOWED",
+      "locked_value": "may_differ",
+      "point": "aggressive",
+      "value": 0.09,
+      "status": "ALLOWED_CHANGE"
+    }
+  ],
+  "policy": "Single fixed FDP schedule; only eb_base changes across operating points."
+}

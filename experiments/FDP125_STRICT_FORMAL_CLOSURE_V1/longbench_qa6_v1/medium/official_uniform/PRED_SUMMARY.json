@@ -1,0 +1,12 @@
+{
+  "method": "official_uniform",
+  "generated_at": "2026-09-21T18:01:27.186465-07:00",
+  "tasks": {
+    "narrativeqa": {
+      "n": 200,
+      "pred_path": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium/official_uniform/narrativeqa.jsonl",
+      "max_gen": 128
+    }
+  },
+  "eval_executed": true
+}

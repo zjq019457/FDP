@@ -1,0 +1,15 @@
+task: winogrande_localjsonl
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    train: /diskF/jiaqizhang/a1804298693/offline_datasets/winogrande/train.jsonl
+    validation: /diskF/jiaqizhang/a1804298693/offline_datasets/winogrande/dev.jsonl
+training_split: train
+validation_split: validation
+output_type: multiple_choice
+# Must match lm-eval harness winogrande (partial evaluation); not "sentence + two words".
+doc_to_text: !function preprocess_winogrande_local.doc_to_text
+doc_to_target: !function preprocess_winogrande_local.doc_to_target
+doc_to_choice: !function preprocess_winogrande_local.doc_to_choice
+metric_list:
+  - metric: acc

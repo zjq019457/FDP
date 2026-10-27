@@ -1,0 +1,9 @@
+{
+  "artifact_id": "LLAMA2_E060_BASIS_AUDIT_INITIAL_INVALIDATION_V1",
+  "status": "SUPERSEDED_BY_RETRY1",
+  "failed_artifact_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/basis_functional_equivalence_audit.json",
+  "failure_reason": "Initial aggregation applied principal-angle formula directly to non-orthonormal Q/K stored columns and hardcoded status PASS; its Q/K numeric metrics are invalid and it is not acceptance evidence. Retry1 QR-orthonormalizes first and reports corrected metrics.",
+  "corrected_artifact_path": "/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_fullbasis_uniform_same_rank_audit_v1/basis_functional_equivalence_audit_retry1.json",
+  "corrected_sha256": "40e727670c2d09052ffcab5e95fd2e8debcbd41f0a477f7d2e2e5395c9ce7f68",
+  "foreign_jobs_interrupted": 0
+}

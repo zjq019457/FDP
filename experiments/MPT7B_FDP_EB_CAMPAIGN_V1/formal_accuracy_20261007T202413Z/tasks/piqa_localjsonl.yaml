@@ -1,0 +1,14 @@
+task: piqa_localjsonl
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    train: /diskF/jiaqizhang/a1804298693/offline_datasets/piqa/train_labeled.jsonl
+    validation: /diskF/jiaqizhang/a1804298693/offline_datasets/piqa/dev_labeled.jsonl
+training_split: train
+validation_split: validation
+output_type: multiple_choice
+doc_to_text: "{{ goal }}"
+doc_to_choice: "{{ [sol1, sol2] }}"
+doc_to_target: "{{ label }}"
+metric_list:
+  - metric: acc

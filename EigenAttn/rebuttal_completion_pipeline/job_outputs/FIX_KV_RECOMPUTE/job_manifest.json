@@ -1,0 +1,9 @@
+{
+  "job_id": "FIX_KV_RECOMPUTE",
+  "cmd": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_completion_pipeline/runners/repair_kv_recompute.py"
+  ],
+  "started_at": "2026-07-29T19:47:09.424190-07:00",
+  "protocol_hash": "bf8bc0030f95918c425b8b3721331a27d1bfd1711b48692089c000a106b7fd9e"
+}

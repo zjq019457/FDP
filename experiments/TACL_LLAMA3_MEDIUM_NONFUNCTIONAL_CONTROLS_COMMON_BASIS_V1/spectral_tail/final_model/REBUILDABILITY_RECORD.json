@@ -1,0 +1,45 @@
+{
+  "schema": "DISKF_MATERIALIZED_WEIGHTS_REMOVED_REBUILDABLE_V1",
+  "removed_at_utc": "2026-10-07T18:15:47.312587+00:00",
+  "reason": "disk space reclamation on /diskF for CANONICAL_SEVERE_MATCHED_V2 materialization; Light/Medium/Aggressive tiers are closed",
+  "directory": "/diskF/jiaqizhang/TACL_LLAMA3_MEDIUM_NONFUNCTIONAL_CONTROLS_COMMON_BASIS_V1/spectral_tail/final_model",
+  "deleted_files": [
+    {
+      "filename": "model-00001-of-00004.safetensors",
+      "size_bytes": 4980505840,
+      "sha256": "3b2bf9cfb60711cb6882362c738a6aa88d2b4a93af164f17c787c50c4e344493"
+    },
+    {
+      "filename": "model-00002-of-00004.safetensors",
+      "size_bytes": 4943598696,
+      "sha256": "f3b851c0ef4bbba459506b5d6fe83f02bd08aae78dcd4f89a75a764d0c6a4c45"
+    },
+    {
+      "filename": "model-00003-of-00004.safetensors",
+      "size_bytes": 4823422272,
+      "sha256": "67ffa12326d986de090e346c45ed744869d92f5374ec2688b11588728d68e6e6"
+    },
+    {
+      "filename": "model-00004-of-00004.safetensors",
+      "size_bytes": 1050673280,
+      "sha256": "7c5394fe848f6eafef2a44f085e7b72e5ef0d315f98aa87b3827c2b1e6983b89"
+    }
+  ],
+  "total_bytes_freed": 15798200088,
+  "kept_files": {
+    "low_rank_config_json_present": true,
+    "low_rank_config_json_sha256": "42c2c75b40bdb2f83d421ce30a55118cdf775984304abb694b7ad063e6a9b57e",
+    "low_rank_config_pt_present": true,
+    "model_safetensors_index_json_present": true,
+    "model_safetensors_index_json_sha256": "122b0c7e6b04571e5d3919ebfcf633411eb6a361ec42e15f2d67bcc4f73289e2"
+  },
+  "rebuild_inputs": {
+    "shared_eigenbasis_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/05_controls_ablation/LLAMA3_MEDIUM_MATCHED_CONTROLS_V1_20261002T202000Z/native_search/llama3_medium_uniform_curve_eb0p02.pt",
+    "shared_eigenbasis_sha256": "f8e63748585c578352bedd9e5fec218e3072f069d85216a83ef398a6ddf5c1dd",
+    "base_dense_model": "/diskD/jiaqizhang/Llama-3",
+    "materializer_script": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/decompose/eigen_attn.py",
+    "materializer_sha256": "4e85f21b9b4ec0e27bf8f615fcf7edd3dd49f6a86bd842b0a0fc2166be22e695",
+    "rank_allocation_source": "low_rank_config.json in this same directory (kept, not deleted)"
+  },
+  "rebuild_procedure": "Re-run the same cross-tier/common-basis materializer invocation that originally produced this directory (materialize_llama3_cross_tier.py for light/aggressive, materialize_llama3_common_basis_control.py for medium arms), pointing it at the unchanged shared eigenbasis above and the low_rank_config.json preserved in this directory; this regenerates bit-identical *.safetensors shards via _fill_llama_eigen_attn_from_basis, which performs no search and selects no ranks (ranks come solely from low_rank_config.json)."
+}

@@ -1,0 +1,2 @@
+paper setting,paper reported metric,paper reported value,paper table/section,our matched setting,our official reproduction,difference,protocol match,status
+PaLu official compression,WikiText/C4 PPL,not locally stated in pinned README,paper source not bundled,Llama-2 ratios 0.7/0.5/0.3,12-cell formal PPL matrix,requires paper PDF table audit,partial,PAPER_VALUE_NOT_LOCALLY_AVAILABLE

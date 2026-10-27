@@ -1,0 +1,4 @@
+230c230
+<                     while error < args.error_budget and (rank_kq > min_thresh * max_rank_kq) and (rank_v > min_thresh * max_rank_v):
+---
+>                     while error < args.error_budget and args.eigen_attn_params['threshold'] > 0.3:  # FDP_OFFICIAL_NO45_V2: 45% rank stop removed; threshold floor 0.3 as in the upstream OPT/MPT branches

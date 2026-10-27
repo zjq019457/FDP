@@ -1,0 +1,218 @@
+[
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/relaxed_uniform/ACC_SUMMARY.json",
+    "sha256": "c7515d45d0235b5cf09fb9571b37e943396a8641555bd0bc74735bfba274d0d0",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/relaxed_uniform/arc_challenge_localjsonl.json",
+    "sha256": "39a8f84ef729fd9ddccdb53684d78e03e02eadec93b808e2c36c7751fc752f2f",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/relaxed_uniform/arc_easy_localjsonl.json",
+    "sha256": "bd634a55fabee5d06196e0f3840b8fb77ab2d41fdf3266d84632d00c56f166a7",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/relaxed_uniform/hellaswag_localjsonl.json",
+    "sha256": "f9f94252b09e4bee94769c7268b626ad37f534a5220ba77ffbffd441cf97badd",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/relaxed_uniform/piqa_localjsonl.json",
+    "sha256": "ab5939c99af461aa95a3d4498c474e492238a8beaba352667957379d58d0c642",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/relaxed_uniform/winogrande_localjsonl.json",
+    "sha256": "0b8914745fb718a21d2fa4a05724764b50ed8832f10a9e9488729fb5ae06505e",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/fdp/ACC_SUMMARY.json",
+    "sha256": "1ad243556c8e23a41afd546b719275fd3c7d75bc90a38d2090ab8a21f22df5a8",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/fdp/arc_challenge_localjsonl.json",
+    "sha256": "53add150a42e103e89f30ebc0d658ed4eb7180a7dcba7bfd43ffaf97f6daafb1",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/fdp/arc_easy_localjsonl.json",
+    "sha256": "115b562910632374a305402425d058b319c0ab5130eb19f1777afdce39a0359f",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/fdp/hellaswag_localjsonl.json",
+    "sha256": "2d0188aad318db0d377f7b9e99bf6bed64701116da1a2a4f5d6151b78cd2a1be",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/fdp/piqa_localjsonl.json",
+    "sha256": "bec8d2ca224486429ac17b6b1b22906437fff4ff336353fd05677d0c107c6afa",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U011/11_ACCURACY/fdp/winogrande_localjsonl.json",
+    "sha256": "7fc1c114b5ac4805a3799e59b9a8c4c487fca43b1d00cb9a65782f4a09a16ff8",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/relaxed_uniform/ACC_SUMMARY.json",
+    "sha256": "2db59c2724b4b2f2299fbaafebe352f35c2495adc3cfdd4bd35c9449641f0f98",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/relaxed_uniform/arc_challenge_localjsonl.json",
+    "sha256": "249469b71993fdb2094bcbecb9572b33f886ce08ec92cf211a91d74090c4b64a",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/relaxed_uniform/arc_easy_localjsonl.json",
+    "sha256": "0f1bcc3bced7b9164a9abcf6d388905da070865be646e7e79d3a7f8d4ed239d3",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/relaxed_uniform/hellaswag_localjsonl.json",
+    "sha256": "3b6bd06f6212ddf30faf5a506317a4362c55decd6c95774a64155519d1b9f6eb",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/relaxed_uniform/piqa_localjsonl.json",
+    "sha256": "fa42fd9ddf93aa9c06ee2908b288d4e2bbc6fb3a31a4d92f0ad31822b0d78c47",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/relaxed_uniform/winogrande_localjsonl.json",
+    "sha256": "f42b53c208b22b6532c369a769a29ef3c298f6674352d206c62631ff0e30e185",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/fdp/ACC_SUMMARY.json",
+    "sha256": "7de86499c7a6210e6d2def1dd688f8da5b40a22f7a23270fa88403b4410a6489",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/fdp/arc_challenge_localjsonl.json",
+    "sha256": "2538784b5e52773d65d386bb1f3ee2dbeed5bcddbfdabf12674e7c31cc2d31b8",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/fdp/arc_easy_localjsonl.json",
+    "sha256": "edbeeeb89c5478bb99cb05e7a3edfc1f3a09a1630d1d40d4ebb582ace9266514",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/fdp/hellaswag_localjsonl.json",
+    "sha256": "6f98c6f0d3702d084d985eab50d47f94b7038a18b3a49009e5375908963f318d",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/fdp/piqa_localjsonl.json",
+    "sha256": "d208e016038e0145c82829633e6b0e2218c48f570310c0bdfeed9a2b50cbfae4",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U015/11_ACCURACY/fdp/winogrande_localjsonl.json",
+    "sha256": "bbd9df39f0fb4df6843813dbde89b9c938fbcad62ee154bb757c56cedf043ed3",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/relaxed_uniform/ACC_SUMMARY.json",
+    "sha256": "9ae11d168bef4c72306eacf896606157d1b6a48b6bc09f155704abd2b78dc263",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/relaxed_uniform/arc_challenge_localjsonl.json",
+    "sha256": "c2eed0cff77c27894312eb2735110bb9c2ddd02600db382f454cde231d2de0b3",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/relaxed_uniform/arc_easy_localjsonl.json",
+    "sha256": "ec86de408a0f8e292abccb4fe2457c594722f1f3a938a62bd5953a374b1f9103",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/relaxed_uniform/hellaswag_localjsonl.json",
+    "sha256": "c047fc61b99712cf7fddeca8a9484d700d0c32ab96aef44732af764037bc1698",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/relaxed_uniform/piqa_localjsonl.json",
+    "sha256": "cc08e89df77d48406517c13cfed9ecb4af54f1826cdab15794c841811c44f2f4",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/relaxed_uniform/winogrande_localjsonl.json",
+    "sha256": "054fb362374ea54f251373e6a48bf60289430f49bff11128f0f7fd9058c62a83",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/fdp/ACC_SUMMARY.json",
+    "sha256": "069c4fb5db309c141abe44cc3d5c00d020194790af253e27b7a79c44cb02506b",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/fdp/arc_challenge_localjsonl.json",
+    "sha256": "530a2b2bd507d1e8369e493da449354e414e910d1800cfc22eff3a76c457c16d",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/fdp/arc_easy_localjsonl.json",
+    "sha256": "2bce1e05768b105ea2dcd5f5f4de5f6724725b4fce54142384237280d0e6cde9",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/fdp/hellaswag_localjsonl.json",
+    "sha256": "1730e239a6f749bcd79eaef96c3ee96937a318b5e3fcaf3e0f430c80e90df047",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/fdp/piqa_localjsonl.json",
+    "sha256": "84d1162d7d64cf7377baecab519662a6a90a0b8caad76814bf8abfe8ce987499",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  },
+  {
+    "path": "/diskE/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/U019/11_ACCURACY/fdp/winogrande_localjsonl.json",
+    "sha256": "6be7ac639a72c7594b44db59b64bbea82640d3d5a027b5dae0407f7a50d2c8f5",
+    "classification": "HISTORICAL_NON_FORMAL",
+    "reason": "historical execution source binding partial; preserved immutable"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "dataset_sha256": "919a4439e2a84ebb25bacc39ac3b3269a7641af6e02ae205ed78d8c53dfe3568",
+  "foreign_jobs_interrupted": 0,
+  "formal_results_modified": false,
+  "gpu": 0,
+  "log": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/logs/RATIO0P5_UNIFORM_REPOBENCHP_GPU0_20260924T082951Z.log",
+  "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+  "method": "uniform",
+  "n_samples_expected": 500,
+  "pid": 254484,
+  "raw_output": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_UNIFORM/repobench-p.raw.jsonl",
+  "run_id": "RATIO0P5_UNIFORM_REPOBENCHP_GPU0_20260924T082951Z",
+  "started_at_utc": "2026-09-24T08:29:51.673414+00:00",
+  "status": "ACTIVE",
+  "task": "repobench-p"
+}

@@ -1,0 +1,15 @@
+ M datautils.py
+ M decompose/eigen_attn.py
+ M decompose/eigen_attn_utils.py
+ M lm_eval/api/metrics.py
+ M main_eigen_attn.py
+ T models/decompose_modules.py
+ M models/modelling_llama_eigen_attn.py
+ M models/modelling_opt_eigen_attn.py
+?? diagnose/
+?? docs/
+?? eval/
+?? models/mistral_native_adapter.py
+?? models/mistral_native_adapter.py.orig
+?? models/mistral_native_adapter_v2.py
+?? run_pipeline.py

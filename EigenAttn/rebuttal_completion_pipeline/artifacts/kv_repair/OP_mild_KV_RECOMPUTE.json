@@ -1,0 +1,36 @@
+{
+  "point": "mild",
+  "generated_at": "2026-07-29T19:47:09.463679-07:00",
+  "kv_recomputed": true,
+  "dense_kv_bytes": 268435456,
+  "uniform_kv": {
+    "batch": 1,
+    "seqlen": 2048,
+    "bytes_per_elem": 2,
+    "n_layers": 32,
+    "total_rank_sum": 53032,
+    "realized_kv_bytes": 217219072,
+    "dense_kv_bytes": 268435456,
+    "retained_ratio": 0.8092041015625,
+    "formula": "batch*seqlen*bytes_per_elem*sum_l(r_kq+r_v)",
+    "ranks_sha256": "563575a7e726c603fb0798996803c3645445f7030a60a2d914cc2988bd079562",
+    "source": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/r2_uniform_eb045/final_model/low_rank_config.json"
+  },
+  "fdp_kv": {
+    "batch": 1,
+    "seqlen": 2048,
+    "bytes_per_elem": 2,
+    "n_layers": 32,
+    "total_rank_sum": 53464,
+    "realized_kv_bytes": 218988544,
+    "dense_kv_bytes": 268435456,
+    "retained_ratio": 0.8157958984375,
+    "formula": "batch*seqlen*bytes_per_elem*sum_l(r_kq+r_v)",
+    "ranks_sha256": "7ecf6eda0d60b4a4d01c7838f0736b47167320cd7640254816cd4101f417ad59",
+    "source": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/r3_fgeb045/final_model/low_rank_config.json"
+  },
+  "runtime_cache_check_uniform": {},
+  "uniform_model": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/r2_uniform_eb045/final_model",
+  "fdp_model": "/diskF/jiaqizhang/rebuttal_legacy_reproduction_artifacts/r3_fgeb045/final_model",
+  "FORBIDDEN_UNTIL_TRIPLE_MATCH": false
+}

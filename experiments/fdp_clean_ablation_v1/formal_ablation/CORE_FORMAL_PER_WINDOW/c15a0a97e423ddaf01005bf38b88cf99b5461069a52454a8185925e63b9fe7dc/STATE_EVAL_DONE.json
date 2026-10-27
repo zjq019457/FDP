@@ -1,0 +1,21 @@
+{
+  "sha": "c15a0a97e423ddaf01005bf38b88cf99b5461069a52454a8185925e63b9fe7dc",
+  "status": "DONE_VALID_HISTORICAL",
+  "source": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/evaluations/aggressive/fdp_090",
+  "wiki_ppl": 10.317889010738494,
+  "wiki_nll": 2.3338791859065386,
+  "wiki_windows": 141,
+  "c4_ppl": 18.057116171117357,
+  "c4_nll": 2.8935398547910154,
+  "c4_windows": 256,
+  "zero_shot_tasks": {
+    "hellaswag_localjsonl": 0.46285600477992433,
+    "arc_challenge_localjsonl": 0.41638225255972694,
+    "arc_easy_localjsonl": 0.6990740740740741,
+    "winogrande_localjsonl": 0.6037884767166535,
+    "piqa_localjsonl": 0.7453754080522307
+  },
+  "zero_shot_macro": 0.5854952432365219,
+  "scorer_authority": "lm_eval_primary",
+  "completed_at": "2026-09-10T20:42:20Z"
+}

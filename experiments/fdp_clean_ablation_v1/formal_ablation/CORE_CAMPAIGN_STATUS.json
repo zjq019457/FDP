@@ -1,0 +1,8 @@
+{
+  "status": "CORE_FORMAL_CAMPAIGN_COMPLETE",
+  "completed_at": "2026-09-10T22:17:23Z",
+  "unique_physical_states_evaluated": 14,
+  "core_matrix_rows": 16,
+  "bootstrap_evaluations": 16,
+  "authorities_locked": true
+}

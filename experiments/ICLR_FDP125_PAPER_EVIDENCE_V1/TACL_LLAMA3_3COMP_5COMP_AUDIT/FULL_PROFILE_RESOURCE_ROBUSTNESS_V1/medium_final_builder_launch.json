@@ -1,0 +1,197 @@
+{
+  "schema": "LLAMA3_FULL_PROFILE_RESOURCE_FINAL_BUILDER_LAUNCH_V1",
+  "created_utc": "2026-10-02T20:04:54.872202+00:00",
+  "candidate": {
+    "schema": "LLAMA3_FULL_PROFILE_RESOURCE_SCHEDULE_CANDIDATE_V1",
+    "tier": "MEDIUM",
+    "status": "PENDING_FINAL_OFFICIAL_BUILDER_REPLAY",
+    "arm_name": "FULL_RESOURCE_MEDIUM_LOW",
+    "paper_label": "Full profile, resource-controlled",
+    "target_B_live_bytes": 196870144,
+    "candidate_B_live_bytes": 196640768,
+    "gap_bytes": -229376,
+    "gap_pct_vs_target": -0.11651131824234354,
+    "base_scalar": 0.06178259509322545,
+    "scalar_plateau": [
+      0.061414669074550635,
+      0.062150521111900274
+    ],
+    "rank_vector": [
+      [
+        808,
+        992
+      ],
+      [
+        384,
+        872
+      ],
+      [
+        400,
+        776
+      ],
+      [
+        632,
+        904
+      ],
+      [
+        680,
+        928
+      ],
+      [
+        776,
+        952
+      ],
+      [
+        792,
+        960
+      ],
+      [
+        792,
+        952
+      ],
+      [
+        624,
+        904
+      ],
+      [
+        704,
+        928
+      ],
+      [
+        696,
+        928
+      ],
+      [
+        720,
+        928
+      ],
+      [
+        896,
+        992
+      ],
+      [
+        688,
+        936
+      ],
+      [
+        776,
+        960
+      ],
+      [
+        624,
+        912
+      ],
+      [
+        688,
+        936
+      ],
+      [
+        632,
+        904
+      ],
+      [
+        504,
+        840
+      ],
+      [
+        448,
+        824
+      ],
+      [
+        344,
+        776
+      ],
+      [
+        440,
+        832
+      ],
+      [
+        440,
+        824
+      ],
+      [
+        376,
+        808
+      ],
+      [
+        344,
+        800
+      ],
+      [
+        336,
+        800
+      ],
+      [
+        360,
+        816
+      ],
+      [
+        488,
+        856
+      ],
+      [
+        504,
+        856
+      ],
+      [
+        1016,
+        1024
+      ],
+      [
+        784,
+        968
+      ],
+      [
+        696,
+        928
+      ]
+    ],
+    "rank_sha256": "7f55912710453b6c59b099926b28bf6e3713e9ea65cad00b003c0c4ee2c55a4d",
+    "q_sha256": "3e29bec57d805b896e228f81ea2458efe9d5a976ac395cbf14446b1c72673986",
+    "profile_sha256": "d0d5d7653caae9c272d97ae38ef4dd0c3718573bde3250df650c028ca828dba4",
+    "epsilon_input_path": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/medium/medium_selected_epsilon.json",
+    "epsilon_input_sha256": "d16f95e7d0f4ba29001473dbfc55d89667456127efffed6e58aee177bcd9d7ce",
+    "quality_blind": true
+  },
+  "candidate_file_sha256": "c7ca26f9de5926e0c0a4e89fc38c30bcf1780c25911b53893c19412f7382e9c3",
+  "gpu": 0,
+  "session": "fdp125_fullrob_medium_final",
+  "output_dir": "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "-u",
+    "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline.py",
+    "--model",
+    "/diskD/jiaqizhang/Llama-3",
+    "--tokenizer",
+    "/diskD/jiaqizhang/Llama-3",
+    "--data_dir",
+    "/home/bai-project/jiaqizhang/wikitext2",
+    "--out_dir",
+    "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/final/medium",
+    "--out_prefix",
+    "llama3_medium_full_resource_low",
+    "--per_layer_eb_json",
+    "/diskF/jiaqizhang/llama3_full_resource_robustness_v1/medium/medium_selected_epsilon.json",
+    "--freeze_layer0_eb",
+    "--layer0_eb",
+    "0.06178259509322545",
+    "--nsamples",
+    "512",
+    "--seqlen",
+    "2048",
+    "--token_budget",
+    "1500000",
+    "--dtype",
+    "bf16",
+    "--attn_implementation",
+    "eager",
+    "--device",
+    "cuda:0",
+    "--seed",
+    "2"
+  ],
+  "resource_only": true,
+  "quality_outputs": false,
+  "protocol_lock_sha256": "85c840f6c5053d3a8734b1c1e173d3d6b649271a9e7b72eaf640bcd8b1e60d99"
+}

@@ -1,0 +1,21 @@
+{
+  "job_id": "R3_fdp_aggregate",
+  "stage": "R3",
+  "kind": "cpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/r3_aggregate.py"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": null,
+  "depends_on": [
+    "R3_fdp_wikitext_ppl",
+    "R3_fdp_c4_ppl",
+    "R3_fdp_zs_hs_arc",
+    "R3_fdp_zs_wg_piqa"
+  ],
+  "created_at": "2026-07-29T01:45:55.026080-07:00",
+  "meta": {
+    "role": "aggregate"
+  }
+}

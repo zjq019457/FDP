@@ -1,0 +1,21 @@
+{
+  "sha": "e715356b0434ba11ea89e9e9362a74089c756b2f030d97d4838cc70e7ff8bb59",
+  "status": "DONE_VALID_HISTORICAL",
+  "source": "/diskF/jiaqizhang/fdp_may2026_final_reconstruction_v1/evaluations/light/uniform_043",
+  "wiki_ppl": 6.692145857440595,
+  "wiki_nll": 1.900934578679132,
+  "wiki_windows": 141,
+  "c4_ppl": 9.739143062804342,
+  "c4_nll": 2.276153132552281,
+  "c4_windows": 256,
+  "zero_shot_tasks": {
+    "hellaswag_localjsonl": 0.5638319059948218,
+    "arc_challenge_localjsonl": 0.46928327645051193,
+    "arc_easy_localjsonl": 0.7714646464646465,
+    "winogrande_localjsonl": 0.734017363851618,
+    "piqa_localjsonl": 0.7850924918389554
+  },
+  "zero_shot_macro": 0.6647379369201107,
+  "scorer_authority": "lm_eval_primary",
+  "completed_at": "2026-09-10T20:42:20Z"
+}

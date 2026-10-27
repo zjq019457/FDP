@@ -1,0 +1,9 @@
+{
+  "job_id": "P5_qwen_search",
+  "cmd": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_completion_pipeline/runners/qwen_model_search.py"
+  ],
+  "started_at": "2026-07-29T07:31:02.683340-07:00",
+  "protocol_hash": "bf8bc0030f95918c425b8b3721331a27d1bfd1711b48692089c000a106b7fd9e"
+}

@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-07-29T22:30:36.794968-07:00",
+  "runs": [
+    {
+      "method": "fdp_full",
+      "returncode": 0,
+      "ppl": null,
+      "log": "/diskF/jiaqizhang/wave2_artifacts/component_ablation/fdp_full/run.log"
+    },
+    {
+      "method": "uniform_matched_anchor",
+      "returncode": 0,
+      "ppl": null,
+      "log": "/diskF/jiaqizhang/wave2_artifacts/component_ablation/uniform_matched_anchor/run.log"
+    }
+  ],
+  "eval_executed": true,
+  "minus_variants_status": {
+    "variants": [
+      "minus_Z",
+      "minus_S",
+      "minus_V",
+      "minus_A",
+      "minus_Entropy"
+    ],
+    "status": "pending_adaptive_rebuild",
+    "note": "Minus-* require re-running adaptive basis with component disabled then compress at matched KV bytes. WAVE2 executed Full FDP + Uniform confirmatory PPL anchors."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "DONE",
+  "job_id": "R5_historical_parity",
+  "returncode": 0,
+  "ended_at": "2026-07-29T01:32:16.753154-07:00",
+  "gpu": null,
+  "elapsed_sec": 10.013644456863403
+}

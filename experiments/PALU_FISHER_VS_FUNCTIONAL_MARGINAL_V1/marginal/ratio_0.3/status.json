@@ -1,0 +1,23 @@
+{
+  "baseline": {
+    "J": 3.4732968507886923,
+    "c4_nll": 3.7723191284120055,
+    "c4_ppl": 43.48078552368886,
+    "latent_cache_bytes_B1_T2048_fp16": 80216064,
+    "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+    "native_conversion": "official HeadwiseLowRankModule primitives; official whiten scaling matrix",
+    "ratio": 0.3,
+    "schedule_sha": "31ffd70e8c64fcc08ac6fe980b18ea3bfb4af411f31ebdc44b73eb299060c10e",
+    "status": "MARGINAL_BASELINE_COMPLETE",
+    "tokens": 32752,
+    "total_rank": 19584,
+    "wiki_nll": 3.174274573165379,
+    "wiki_ppl": 23.909469005327203
+  },
+  "manifest_sha256": "1dcf74f47e47351dfbaf1dfe71e0c9682eb329a02e1ed878cadb873610975e68",
+  "native_conversion": "official HeadwiseLowRankModule primitives; no native implementation modification",
+  "quality_used_to_design_selection": false,
+  "ratio": 0.3,
+  "schedule_sha": "31ffd70e8c64fcc08ac6fe980b18ea3bfb4af411f31ebdc44b73eb299060c10e",
+  "status": "MARGINAL_PROFILE_COMPLETE"
+}

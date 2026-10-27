@@ -1,0 +1,7 @@
+{
+  "policy": "official implementations only; same Llama3 checkpoint and matched KV bytes",
+  "blocked_methods": [
+    "PyramidKV",
+    "H2O"
+  ]
+}

@@ -1,0 +1,13 @@
+method,metric,point,value
+uniform,wikitext2_ppl,mild,6.7294786479615984
+uniform,c4_ppl,mild,9.83562032647886
+fdp,wikitext2_ppl,mild,6.649582661740018
+fdp,c4_ppl,mild,9.693687291910727
+uniform,wikitext2_ppl,moderate,7.591567798924349
+uniform,c4_ppl,moderate,13.14035894942186
+fdp,wikitext2_ppl,moderate,7.1610500807039585
+fdp,c4_ppl,moderate,12.087788014419148
+uniform,wikitext2_ppl,aggressive,12.646980131106307
+uniform,c4_ppl,aggressive,19.492053099590944
+fdp,wikitext2_ppl,aggressive,10.320963724011435
+fdp,c4_ppl,aggressive,18.118823798130908

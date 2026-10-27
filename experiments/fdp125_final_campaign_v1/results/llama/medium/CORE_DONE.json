@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "model": "llama3_8b",
+  "tier": "medium",
+  "methods": {
+    "parent": {
+      "B_live": 198377472,
+      "wiki_ppl": 7.161075194201872,
+      "c4_ppl": 12.074390587688276,
+      "rank_sha": "870786eb6b8e5ca5c196ae0a421e384686a011e80a8be7a95f1fd6b0fd1a6064",
+      "basis_sha": "b576a87dd8eb87e16ad9da16158ab488e294920a3e65b6725eb644df76cf9df0"
+    },
+    "fdp125": {
+      "B_live": 199753728,
+      "wiki_ppl": 7.1594697724543135,
+      "c4_ppl": 11.99871051780785,
+      "rank_sha": "f0c462759f53f77214eb7fdce65ea311b5890fd0cd7c6c3eaa061f4f07bf211b",
+      "basis_sha": "0e6ac0d426cc64bc752d22f31b9b153d605e31ff150f9622d0dfaaa62f29ad5f"
+    }
+  },
+  "resumed_from": "step1.json",
+  "completed_at": "2026-09-16T02:57:54.678864-07:00"
+}

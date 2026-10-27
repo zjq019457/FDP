@@ -1,0 +1,166 @@
+{
+  "avg_dim_features": 32,
+  "failure": null,
+  "finished_unix": 1791249995.1930294,
+  "gpu_free_at_start_bytes": 42956750848,
+  "gpu_physical_index": 2,
+  "gpu_total_bytes": 85094825984,
+  "gpu_visible_index": 0,
+  "last_layer_status": "UNIFORM_STRICT_LAYER_SEARCH_PASS",
+  "latest_layer_file_sha256": "1f1b3600f3bffd7f1b7c3622c9e5eccbaab5bc446fd1f803d094532ca0e62b40",
+  "layers_done": 32,
+  "layers_total": 32,
+  "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+  "model_content_fingerprint": "3e6db8661db48e835566a784d5ef1d1495a38a629cc3f2f0207364e07c33270f",
+  "model_dir": "/diskF/jiaqizhang/models/新建文件夹",
+  "nsamples": 512,
+  "partial_rank_schedule": [
+    [
+      1536,
+      3584
+    ],
+    [
+      3104,
+      3360
+    ],
+    [
+      1952,
+      2560
+    ],
+    [
+      1632,
+      2528
+    ],
+    [
+      2336,
+      2976
+    ],
+    [
+      2624,
+      3328
+    ],
+    [
+      2688,
+      3232
+    ],
+    [
+      2976,
+      3424
+    ],
+    [
+      3296,
+      3616
+    ],
+    [
+      3424,
+      3712
+    ],
+    [
+      3520,
+      3712
+    ],
+    [
+      3328,
+      3648
+    ],
+    [
+      3424,
+      3680
+    ],
+    [
+      3072,
+      3488
+    ],
+    [
+      3072,
+      3488
+    ],
+    [
+      2912,
+      3392
+    ],
+    [
+      2784,
+      3296
+    ],
+    [
+      2656,
+      3200
+    ],
+    [
+      2016,
+      2784
+    ],
+    [
+      1824,
+      2560
+    ],
+    [
+      1408,
+      2336
+    ],
+    [
+      1280,
+      2240
+    ],
+    [
+      1120,
+      2048
+    ],
+    [
+      864,
+      1856
+    ],
+    [
+      480,
+      1568
+    ],
+    [
+      320,
+      1312
+    ],
+    [
+      64,
+      896
+    ],
+    [
+      192,
+      1152
+    ],
+    [
+      320,
+      1408
+    ],
+    [
+      1312,
+      2080
+    ],
+    [
+      1600,
+      2240
+    ],
+    [
+      64,
+      544
+    ]
+  ],
+  "partial_rank_schedule_sha256": "4b8e28bee2cca663ef68bf26e4a772b9666c2f6f1821a83697c3bd62978f93d0",
+  "per_process_memory_fraction": 0.4,
+  "quality_scoring": false,
+  "rank_schedule_sha256": "4b8e28bee2cca663ef68bf26e4a772b9666c2f6f1821a83697c3bd62978f93d0",
+  "schedule_manifest_sha256": "7dbbc46becdc43147ddc85624ea78030259bb5525005367a18ccb0393750e15d",
+  "schedule_path": "/diskF/jiaqizhang/MPT7B_FDP_EB_CAMPAIGN_V1/resource_stages/EB0019_UNIFORM_RESOURCE_ATTEMPT1/MPT7B_UNIFORM_EB0019_STRICT_RESOURCE_SCHEDULE_V1.json",
+  "schema": "MPT7B_UNIFORM_STRICT_RESOURCE_STAGE_V1",
+  "seed": 2,
+  "seqlen": 2048,
+  "status": "RESOURCE_SCHEDULE_COMPLETE_ACTUAL_RUNTIME_CENSUS_PENDING",
+  "tier_epsilon": 0.019,
+  "token_budget": 1500000,
+  "totals": {
+    "dense_kv_cache_bytes_at_b1_s2048_bf16": 1073741824,
+    "estimated_dense_kv_retained_ratio": 0.5662841796875,
+    "predicted_kv_cache_bytes_at_b1_s2048_bf16": 608043008,
+    "rank_kq_sum": 63200,
+    "rank_v_sum": 85248
+  }
+}

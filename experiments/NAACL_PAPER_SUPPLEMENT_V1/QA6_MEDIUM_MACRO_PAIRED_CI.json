@@ -1,0 +1,103 @@
+{
+ "source": "/diskE/jiaqizhang/FDP125_STRICT_FORMAL_CLOSURE_V1/longbench_qa6_v1/medium",
+ "files": {
+  "official_uniform/narrativeqa": "4eb6df55e5a6d7b3f53be0c9a3fa182eb31296975f8076f22ca1504735e3145a",
+  "fdp125_direct/narrativeqa": "4ed33f36350c6f2df3b7ebc42e592f25c53f5b27321121cf5fb2000211557307",
+  "official_uniform/qasper": "d971e5f4a575ab57cea8ce0632cc7f0759060ec57754a9755a575ad4abf27858",
+  "fdp125_direct/qasper": "94c8daa1abbc8b4cbae96e0e5190ddde4d7bc4f3c9aad97ce43bde05fd3e88a1",
+  "official_uniform/multifieldqa_en": "6c0dc223807f5788cb767fe119514c9c4086ad0562a74cc45d3bba2879ac00da",
+  "fdp125_direct/multifieldqa_en": "818b843e15437f4a7168e9f4f3f1264e207fde2f9e33768230d733284095aba9",
+  "official_uniform/hotpotqa": "306018103e48219434e75433a4f8030250d2219e958cba828dc26b526c6f007c",
+  "fdp125_direct/hotpotqa": "c25698a66ee75c23acfe916b7b4e837b84376146f528c1e7e7eb62f05cd1a5c8",
+  "official_uniform/2wikimqa": "ec64fed724b5d452e227b3870021c25478316ff7399e2cca4c52e523db19aa7c",
+  "fdp125_direct/2wikimqa": "c07f9388a42120e88cd17c6366294d12837096935210cd143afb93f7b2c4cc09",
+  "official_uniform/musique": "611bb2d580359eec98ff0c891921869a40d730e83144cb771b81384d3db90d88",
+  "fdp125_direct/musique": "3146249cc43e322339db92a61b301417aa6bd4b9c608c4206d16f579ab906dc1"
+ },
+ "tasks": {
+  "narrativeqa": {
+   "n": 200,
+   "fdp": 2.4028112923336784,
+   "ref": 2.0896743079146223,
+   "scorer_fdp": 2.4,
+   "scorer_ref": 2.09,
+   "delta": 0.31313698441905613,
+   "ci95": [
+    0.027385517879183686,
+    0.6067985409842526
+   ]
+  },
+  "qasper": {
+   "n": 200,
+   "fdp": 9.279964904882238,
+   "ref": 9.077685885058187,
+   "scorer_fdp": 9.28,
+   "scorer_ref": 9.08,
+   "delta": 0.20227901982405072,
+   "ci95": [
+    -1.3156242160171845,
+    1.7130132923370454
+   ]
+  },
+  "multifieldqa_en": {
+   "n": 150,
+   "fdp": 18.005837087521947,
+   "ref": 16.45358074965021,
+   "scorer_fdp": 18.01,
+   "scorer_ref": 16.45,
+   "delta": 1.5522563378717358,
+   "ci95": [
+    -0.5666867363267016,
+    3.7453300548753305
+   ]
+  },
+  "hotpotqa": {
+   "n": 200,
+   "fdp": 4.9608864758230595,
+   "ref": 5.052191572486843,
+   "scorer_fdp": 4.96,
+   "scorer_ref": 5.05,
+   "delta": -0.09130509666378384,
+   "ci95": [
+    -1.1883457839694351,
+    1.01632629144707
+   ]
+  },
+  "2wikimqa": {
+   "n": 200,
+   "fdp": 6.271628070632647,
+   "ref": 3.812279611065543,
+   "scorer_fdp": 6.27,
+   "scorer_ref": 3.81,
+   "delta": 2.4593484595671042,
+   "ci95": [
+    1.1787301145717985,
+    3.7825194201606043
+   ]
+  },
+  "musique": {
+   "n": 200,
+   "fdp": 2.5219022578973624,
+   "ref": 2.8757478566246193,
+   "scorer_fdp": 2.52,
+   "scorer_ref": 2.88,
+   "delta": -0.35384559872725685,
+   "ci95": [
+    -1.189684336793455,
+    0.48512976138215325
+   ]
+  }
+ },
+ "macro": {
+  "fdp": 7.2405050148484875,
+  "ref": 6.560193330466671,
+  "delta": 0.6803116843818177,
+  "ci95": [
+   0.14159847991998603,
+   1.2250814419446876
+  ],
+  "p_fdp_better": 0.9928,
+  "reps": 10000,
+  "seed": 20261011
+ }
+}

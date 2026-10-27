@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-29T07:31:05.465816-07:00",
+  "rows": [
+    {
+      "n_bootstrap": 10000,
+      "n_windows": 141,
+      "mean_delta_ppl": -0.08006143357531881,
+      "ci95_low": -0.09596930520251679,
+      "ci95_high": -0.06195195593697367,
+      "significant_at_05": true,
+      "comparison": "Uniform vs FDP Wiki",
+      "method_a": "R2_uniform",
+      "method_b": "R3_fdp"
+    },
+    {
+      "n_bootstrap": 10000,
+      "n_windows": 256,
+      "mean_delta_ppl": -0.14205405043038355,
+      "ci95_low": -0.16112715456479343,
+      "ci95_high": -0.124409016275143,
+      "significant_at_05": true,
+      "comparison": "Uniform vs FDP C4",
+      "method_a": "R2_uniform",
+      "method_b": "R3_fdp"
+    }
+  ]
+}

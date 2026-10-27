@@ -1,0 +1,19 @@
+{
+  "experiment": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1_LONGBENCH_SUPPLEMENTAL",
+  "cell": {
+    "status": "ACTIVE",
+    "run_id": "RATIO0P5_FDP_NATIVE_QMSUM_GPU2_20260924T081351Z",
+    "pid": 246362,
+    "gpu": 2,
+    "method": "fdp_native",
+    "task": "qmsum",
+    "started_at_utc": "2026-09-24T08:13:55.088013+00:00",
+    "manifest_file_sha256": "9519dc984b48e4815487207b1580b0dc807353be37de8f699a879d35657ed990",
+    "dataset_sha256": "e992f5157679b0c1ca281d0da19d1a8b3496117630ae639c9683ed3dab029113",
+    "log": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/logs/RATIO0P5_FDP_NATIVE_QMSUM_GPU2_20260924T081351Z.log",
+    "raw_output": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/qmsum.raw.jsonl",
+    "foreign_jobs_interrupted": 0,
+    "formal_results_modified": false
+  },
+  "resource_note": "Frozen ratio-0.5 manifest/schedule path; quality-only workload; foreign processes untouched."
+}

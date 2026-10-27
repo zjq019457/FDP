@@ -1,0 +1,314 @@
+{
+  "audited_utc": "2026-09-24T19:00:18.948926+00:00",
+  "foreign_jobs_interrupted": 0,
+  "live_resources": {
+    "compute_processes": [
+      {
+        "command": "246278 a180429+    10:46:33  100 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task qmsum --gpu 0",
+        "gpu": 0,
+        "pid": "246278",
+        "process": "/home/bai-project/jiaqizhang/.venv/bin/python",
+        "vram": "15882 MiB"
+      },
+      {
+        "command": "257856 a180429+    10:25:26  100 /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 0 --arm A --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/A_Q256_RMAX_0p5_20260924",
+        "gpu": 0,
+        "pid": "257856",
+        "process": "/home/bai-project/jiaqizhang/.venv/bin/python3",
+        "vram": "20518 MiB"
+      },
+      {
+        "command": "5663 a180429+  1-00:40:34  172 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/run_rs_v3.py --gpu 1 --phase tune --arm all",
+        "gpu": 1,
+        "pid": "5663",
+        "process": "/home/bai-project/jiaqizhang/.venv/bin/python",
+        "vram": "15828 MiB"
+      },
+      {
+        "command": "373854 a180429+       36:31  101 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method uniform --task multi_news --gpu 1",
+        "gpu": 1,
+        "pid": "373854",
+        "process": "/home/bai-project/jiaqizhang/.venv/bin/python",
+        "vram": "15660 MiB"
+      },
+      {
+        "command": "246362 a180429+    10:46:29  100 /home/bai-project/jiaqizhang/.venv/bin/python -u /diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/code/run_palu_longbench_supplemental.py --ratio 0.5 --method fdp_native --task qmsum --gpu 2",
+        "gpu": 2,
+        "pid": "246362",
+        "process": "/home/bai-project/jiaqizhang/.venv/bin/python",
+        "vram": "15896 MiB"
+      },
+      {
+        "command": "257857 a180429+    10:25:26  100 /home/bai-project/jiaqizhang/.venv/bin/python3 -u /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/scripts/mie_v2_q256_ab_tune_worker.py --phase tune --gpu 2 --arm B --rmax 0.005 --out-dir /diskE/jiaqizhang/SNAPKV_FDP_NATIVE_FINE_RESOLUTION_V2/MIE_V2/runs/tune/B_Q256_RMAX_0p5_20260924",
+        "gpu": 2,
+        "pid": "257857",
+        "process": "/home/bai-project/jiaqizhang/.venv/bin/python3",
+        "vram": "20518 MiB"
+      },
+      {
+        "command": "352305 a180429+    01:35:25  168 /home/bai-project/anaconda3/envs/eigen/bin/python -c import torch,runpy,sys; torch.cuda.set_per_process_memory_fraction(0.4,device=0); p=sys.argv[1]; sys.argv=[p]+sys.argv[2:]; runpy.run_path(p,run_name='__main__') /home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/build_eigen_basis_llama_error_budget_offline_fdp125_cpu_stage_v1.py --model /diskE/jiaqizhang/Qwen2.5-7B --tokenizer /diskE/jiaqizhang/Qwen2.5-7B --data_dir /home/bai-project/jiaqizhang/wikitext2 --out_dir /diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/qwen25_7b/medium/",
+        "gpu": 2,
+        "pid": "352305",
+        "process": "/home/bai-project/anaconda3/envs/eigen/bin/python",
+        "vram": "21486 MiB"
+      }
+    ],
+    "diskE_df": "/dev/sdd1       458G  391G   44G  90% /diskE",
+    "foreign_jobs_interrupted": 0,
+    "gpus": [
+      {
+        "free": "44737 MiB",
+        "index": 0,
+        "used": "36417 MiB",
+        "utilization": "100 %",
+        "uuid": "GPU-2a3f51fa-009a-ce09-ea2e-3a92710b9a07"
+      },
+      {
+        "free": "49651 MiB",
+        "index": 1,
+        "used": "31503 MiB",
+        "utilization": "100 %",
+        "uuid": "GPU-f8ce0fbb-2938-371f-4676-4c2c44eaa806"
+      },
+      {
+        "free": "23233 MiB",
+        "index": 2,
+        "used": "57920 MiB",
+        "utilization": "100 %",
+        "uuid": "GPU-90f68475-4077-7c12-4d66-1cc9092e85c5"
+      }
+    ],
+    "supplemental_partial_raw": {
+      "PALU_FDP_NATIVE/qmsum": {
+        "bytes": 266369,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_FDP_NATIVE/qmsum.raw.jsonl",
+        "rows": 119,
+        "sha256": "4946c561d27cf3e5f8ca48b3c407736b7419add6ffcf5d20d3f4c54866b173ba",
+        "unique_ids": 119
+      },
+      "PALU_UNIFORM/multi_news": {
+        "bytes": 24619,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_UNIFORM/multi_news.raw.jsonl",
+        "rows": 9,
+        "sha256": "e2e12c8e38148ffef7ec7f28f642514c1f14b128e0206a74432ff95c81443769",
+        "unique_ids": 9
+      },
+      "PALU_UNIFORM/qmsum": {
+        "bytes": 183806,
+        "parse_errors": 0,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/ratio_0.5/PALU_UNIFORM/qmsum.raw.jsonl",
+        "rows": 77,
+        "sha256": "f7c1568898622000a55e3445b18294da8fc73c8e819c3f2e0c0d2225993addd1",
+        "unique_ids": 77
+      }
+    }
+  },
+  "schema": "PALU_CROSS_VERSION_QUALITY_AUDIT_V1",
+  "source_sha256": {
+    "v1_17task_results": "5b13b17027a0561f8e090831f6f3cb77604ddd8827cb8e27531308fe9b3642c9",
+    "v1_formal_fisher_cell": "b5d4ef6782dbf1511b643693d8dc9184f2155d7191e0c54ab77a8acc4f44c14d",
+    "v1_formal_native_cell": "ea25f6ac1af7bdd020e15846bf364d54283f8c539a864e82e31375c3a89dd4d1",
+    "v1_formal_prior_cell": "f21ec2b8005d0fdca5b63b3b6b36c2549502c1348ad09373e54dcfd57bba7484",
+    "v1_pipeline": "080ac16fbe9adb3e6938bc44e5c8dd3cfe6cfbea12c05f914fb26201e7aca48f",
+    "v2_extreme_summary": "bc7a1a9f91fa8b3be9557ecece6d0e37794f538029e1a9a24a481c1c3a4a1bb2",
+    "v2_refresh_summary": "ea4fb1447aa8c4ba555c24fc6ac08d1c46ac1b1af3b1f4c104701901dc60a685",
+    "v3_checkpoint": "d1413e04da082567265b2a621000328d006124ae7e4da9275cd7b165b87f699b"
+  },
+  "v1_longbench_17task_ratio_0p5": {
+    "macros": {
+      "fdp_native": 23.81058823529412,
+      "fdp_prior": 23.729999999999997,
+      "fisher": 23.763529411764708,
+      "random_0": 23.81058823529412,
+      "random_1": 23.841764705882355,
+      "random_2": 23.807058823529413,
+      "random_mean": 23.819803921568628
+    },
+    "manifest_sha256": "9bae78c28c97ce2ae5fb09e6e71fb14f6adfb4ab72a147a824d16edf0d487dda",
+    "native_minus_comparison_macros": {
+      "fdp_native_minus_fdp_prior": 0.08058823529411797,
+      "fdp_native_minus_fisher": 0.0470588235294122,
+      "fdp_native_minus_random_mean": -0.009215686274509768
+    },
+    "per_method_task_counts": {
+      "fdp_native": 17,
+      "fdp_prior": 17,
+      "fisher": 17,
+      "random_0": 17,
+      "random_1": 17,
+      "random_2": 17,
+      "random_mean": 17
+    },
+    "resource": {
+      "decode_cache_bytes": 536870912,
+      "factor_bytes_fp16": 1207959552,
+      "prefill_cache_bytes": 536870912,
+      "total_native_rank": 131072
+    },
+    "resource_match": "ACTUAL_RUNTIME_EXACT",
+    "sample_ids_sha256": "2f1b2b495966885c71301c7975146f776c60ab37446dd92aa00b5cee77372687",
+    "schedules": {
+      "fdp_native": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+      "fisher": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+      "prior": "3cc98560d77a69ff9db7ebfb14daf67088b729deca7b1ed8c013253c6df35b22",
+      "random_0": "287cbd4fe9091afa60c9dd9578cc4b1e8df7d782c6f0662f0161189ebacd70d3",
+      "random_1": "4091d75a03ef8160b6d25d11b9102d1600e0766066046eda1ea981ad09f72013",
+      "random_2": "0c2a92b94473f2020457b1420f6ff628c937148de0658c4420a92d72e03b1f81"
+    },
+    "task_count": 17,
+    "uncertainty_ci": "not computed in this aggregation; point macro only"
+  },
+  "v1_longbench_supplemental_paired_4096": {
+    "lcc": {
+      "ci95": [
+        0.032,
+        0.742
+      ],
+      "mean_delta": 0.372,
+      "n": 500,
+      "replicates": 10000,
+      "seed": 20260924
+    },
+    "repobench-p": {
+      "ci95": [
+        -2.198,
+        -0.598
+      ],
+      "mean_delta": -1.372,
+      "n": 500,
+      "replicates": 10000,
+      "seed": 20260924
+    }
+  },
+  "v1_official_ratio_0p5_formal_deltas": {
+    "ci_in_source": false,
+    "native_minus_fisher_J": -0.0448749036674041,
+    "native_minus_prior_J": -0.030205301491610825
+  },
+  "v1_official_ratio_0p5_formal_ppl": {
+    "PALU_FDP_NATIVE": {
+      "J": 2.697849986064865,
+      "c4_ppl": 20.00166013981016,
+      "manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+      "rank": 32640,
+      "resource_exact": true,
+      "resource_lock_sha256": "f5e2a9ef5d0072c85aeb584d17675e0432d174295adf002807bafcecb7feff88",
+      "wiki_ppl": 11.021905426896108
+    },
+    "PALU_FDP_PRIOR": {
+      "J": 2.728055287556476,
+      "c4_ppl": 20.607081227290166,
+      "manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+      "rank": 32640,
+      "resource_exact": true,
+      "resource_lock_sha256": "cc653df84b9aefc1b9086b2e2a4daae085c57264d9a158c76bb1a2fe7dd2ba06",
+      "wiki_ppl": 11.364288029866774
+    },
+    "PALU_FISHER": {
+      "J": 2.742724889732269,
+      "c4_ppl": 20.919063201568026,
+      "manifest_sha256": "858a57cad57042b1d1d5af3c1fabd62b9935794a3e0bca83460c625feab99010",
+      "rank": 32640,
+      "resource_exact": true,
+      "resource_lock_sha256": "d969a428aec03d48df6dc2e18a307e829b482ecdf199fd400343d797d4936766",
+      "wiki_ppl": 11.528116002386536
+    }
+  },
+  "v2_extreme_ppl_exploratory": {
+    "V1_extreme_J": 5.153197690665004,
+    "V2_extreme_J": 5.12385540697948,
+    "ci95": [
+      -0.03172100021178464,
+      -0.026918985757483055
+    ],
+    "delta_J": -0.029342283685523718,
+    "resource": {
+      "decode_cache_bytes": 67371008,
+      "factor_bytes_fp16": 151584768,
+      "prefill_cache_bytes": 67371008,
+      "total_native_rank": 16448
+    },
+    "resource_match": "ACTUAL_RUNTIME_EXACT",
+    "status": "EXPLORATORY_V2_PPL_FORMAL_COMPLETE",
+    "summary_sha256": "bc7a1a9f91fa8b3be9557ecece6d0e37794f538029e1a9a24a481c1c3a4a1bb2",
+    "v1_extreme_c4_ppl": 223.9328960001994,
+    "v1_extreme_wiki_ppl": 133.62654691047138,
+    "v2_extreme_c4_ppl": 216.53378412413215,
+    "v2_extreme_wiki_ppl": 130.3162556518449
+  },
+  "v2_refresh_only_ratio_0p5_formal": {
+    "matched_fisher_J": 1.9803139789994941,
+    "methods": {
+      "FDP_NATIVE_REFRESH_B1": {
+        "J": 1.9797876196175657,
+        "ci95_vs_matched_fisher": [
+          -0.0006799366162439067,
+          -0.0003903442727267204
+        ],
+        "ci95_vs_native_v1": [
+          0.0037860460200694846,
+          0.005549207864138466
+        ],
+        "delta_J_vs_matched_fisher": -0.0005263593819284651,
+        "delta_J_vs_native_v1": 0.004608924030775174
+      },
+      "FDP_NATIVE_REFRESH_B2": {
+        "J": 1.9799917579056268,
+        "ci95_vs_matched_fisher": [
+          -0.00044267825187599083,
+          -0.00021372637879776667
+        ],
+        "ci95_vs_native_v1": [
+          0.004016252893797425,
+          0.005804879365051277
+        ],
+        "delta_J_vs_matched_fisher": -0.00032222109386736975,
+        "delta_J_vs_native_v1": 0.00481306231883627
+      },
+      "FDP_NATIVE_REFRESH_B4": {
+        "J": 1.9799807311347069,
+        "ci95_vs_matched_fisher": [
+          -0.0004604982074731624,
+          -0.0002168426107817206
+        ],
+        "ci95_vs_native_v1": [
+          0.0039455384515360535,
+          0.005796531643101339
+        ],
+        "delta_J_vs_matched_fisher": -0.0003332478647872783,
+        "delta_J_vs_native_v1": 0.004802035547916361
+      }
+    },
+    "native_v1_reference_J": 1.9751786955867905,
+    "resource_match": "ACTUAL_RUNTIME_EXACT",
+    "scope_note": "this experiment\u2019s matched split/reference; do not substitute for V1 official ratio-0.5 aggregate_J",
+    "status": "FORMAL_PPL_COMPLETE",
+    "summary_sha256": "ea4fb1447aa8c4ba555c24fc6ac08d1c46ac1b1af3b1f4c104701901dc60a685"
+  },
+  "v3_tune_latest": {
+    "R_exact": 0.005859375,
+    "accepted": 24,
+    "accepted_transfer_gross_rank": 768,
+    "calibration_J": 1.881324790418148,
+    "changed_group_units": 30,
+    "checkpoint_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_TUNE/armA_D16_R16_Rmax0.01_beam0/CHECKPOINT.json",
+    "checkpoint_sha256": "d1413e04da082567265b2a621000328d006124ae7e4da9275cd7b165b87f699b",
+    "checkpoint_updated_utc": "2026-09-24T18:37:53Z",
+    "config_id": "armA_D16_R16_Rmax0.01_beam0",
+    "evaluated": 6144,
+    "formal_ppl_started": false,
+    "l1_native_units": 48,
+    "l1_rank_distance_to_v1_frozen_allocation": 1536,
+    "native_rank_total": 131072,
+    "rejected": 4555,
+    "split_note": "calibration J is not comparable to any formal PPL J",
+    "status": "TUNE_RUNNING; latest checkpoint has no DONE marker",
+    "tune_directories": 11,
+    "tune_done_configs": 10,
+    "tune_expected_configs": 12,
+    "worker_active": true,
+    "worker_pid": 5663
+  }
+}

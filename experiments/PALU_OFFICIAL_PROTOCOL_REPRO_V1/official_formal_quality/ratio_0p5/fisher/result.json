@@ -1,0 +1,41 @@
+{
+  "J": 1.9802841738045935,
+  "c4": {
+    "chunks": 256,
+    "mean_token_nll": 2.1654052734375,
+    "ppl": 8.718134429294908,
+    "summed_nll": 1135296.0,
+    "tokens": 524288
+  },
+  "formal_quality_used_to_select": false,
+  "method": "fisher",
+  "official_baseline_method": "PaLu Automatic (Fisher)",
+  "protocol": {
+    "c4_chunks": 256,
+    "c4_docs_scanned": 1100,
+    "c4_source_sha256": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+    "fisher_samples": 2048,
+    "fisher_seqlen": 1024,
+    "sequence_length": 2048,
+    "whiten_samples": 256,
+    "wiki_source_sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83"
+  },
+  "ratio": 0.5,
+  "resource": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "resource_match": "REFERENCE_BASELINE",
+  "source": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/results/fisher_0p5_ratio_0.5_fisher_uniform.json",
+  "source_sha256": "a7d8bd7b6bd41443119a8c5a08f56c5433fd4480952e32bea0db672ec8bd1a38",
+  "status": "OFFICIAL_FISHER_FORMAL_IMPORTED",
+  "wiki": {
+    "chunks": 166,
+    "mean_token_nll": 1.7951630741716869,
+    "ppl": 6.0204564227043535,
+    "summed_nll": 610298.0,
+    "tokens": 339968
+  }
+}

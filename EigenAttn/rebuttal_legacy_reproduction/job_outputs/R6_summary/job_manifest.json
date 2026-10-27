@@ -1,0 +1,18 @@
+{
+  "job_id": "R6_summary",
+  "stage": "R6",
+  "kind": "cpu",
+  "command": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/r6_summary.py"
+  ],
+  "cwd": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn",
+  "preferred_gpu": null,
+  "depends_on": [
+    "R5_historical_parity"
+  ],
+  "created_at": "2026-07-29T07:28:58.256495-07:00",
+  "meta": {
+    "role": "summary"
+  }
+}

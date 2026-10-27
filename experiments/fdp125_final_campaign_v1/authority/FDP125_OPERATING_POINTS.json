@@ -1,0 +1,44 @@
+{
+  "campaign": "FDP125",
+  "created_at": "2026-09-12T23:41:09-0700",
+  "selection_policy": "RESOURCE_ONLY_NO_QUALITY",
+  "llama": {
+    "authority": "validated historical",
+    "full_resource_bytes": 268435456,
+    "LIGHT": {
+      "base_e": 0.045,
+      "target_B_live": 218988544
+    },
+    "MEDIUM": {
+      "base_e": 0.06,
+      "target_B_live": 198377472
+    },
+    "AGGRESSIVE": {
+      "base_e": 0.09,
+      "target_B_live": 158105600
+    }
+  },
+  "qwen": {
+    "authority": "Qwen2.5-7B Base",
+    "full_resource_bytes": 117440512,
+    "LIGHT": {
+      "status": "RESOURCE_ONLY_SEARCH_RUNNING",
+      "target_ratio": 0.816,
+      "search_result": "QWEN_LIGHT_RESOURCE_SEARCH.json"
+    },
+    "MEDIUM": {
+      "base_e": 0.02,
+      "historical_B_live": 86360064,
+      "retained_ratio": 0.7353515625,
+      "status": "HISTORICAL_RESOURCE_AUTHORITY"
+    },
+    "AGGRESSIVE": {
+      "historical_B_live": 69107712,
+      "retained_ratio": 0.5884486607142857,
+      "status": "HISTORICAL_RESOURCE_AUTHORITY_BASE_E_BINDING_PENDING"
+    }
+  },
+  "opt30b": {
+    "status": "AUTHORITY_AUDIT_PENDING"
+  }
+}

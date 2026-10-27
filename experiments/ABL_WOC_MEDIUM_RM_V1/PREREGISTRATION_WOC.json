@@ -1,0 +1,9 @@
+{
+ "experiment": "ABL_WOC_MEDIUM_RM_V1",
+ "written_before_any_quality": true,
+ "requested_by_user": "2026-10-12: redo the Medium w/o Causal ablation, whose cache was 1.58% above the resource-matched Full profile",
+ "arm": "w/o Causal (profile weights 1,0,0,0,1) at Medium; frozen T06 pipeline (step1 of fdp125_final_campaign_v1 medium, lambda 1.2, mean normalisation, layer-0 rule, avg_dim 32, frozen offline builder without rank floor, materializer, 141/256 PPL windows, 5-task ZS)",
+ "only_change": "base tolerance chosen by exact CPU replay so that B_live matches the resource-matched Full profile (196,640,768 B); chosen base 0.06158 gives 196,673,536 B (+0.017%)",
+ "gates": "same replay reproduces the resource-matched Full schedule (196,640,768 B) and the fixed-budget w/o Causal schedule (199,753,728 B); builder ranks must equal the replay",
+ "analysis": "paired w/o Causal minus resource-matched Full on the identical windows (PCG64 20261012/13, 10,000 replicates); reported regardless of sign; the fixed-budget row moves to the appendix"
+}

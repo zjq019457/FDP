@@ -1,0 +1,73 @@
+{
+ "checkpoint": "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized_v2/severe_full/final_model",
+ "deleted_at": "2026-10-11T14:05:19.238603-07:00",
+ "authorized_by": "user 2026-10-11 (old evaluated models on E/F; V2 no45 Aggressive FDP explicitly)",
+ "evaluations": [
+  "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized_v2/severe_full/formal_wikitext2_full_20261007",
+  "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized_v2/severe_full/formal_c4_full_20261007",
+  "/diskF/jiaqizhang/TACL_LLAMA3_SPECTRAL_CROSS_TIER_V1/materialized_v2/severe_full/zero_shot_20261007/zero_shot_aggregate.json"
+ ],
+ "evaluated": true,
+ "files": [
+  {
+   "name": "config.json",
+   "bytes": 727,
+   "sha256": "7cb345ed6b901aa65d8383359e9967790604b8d9a2c27fa5e8728c72064eeefa"
+  },
+  {
+   "name": "generation_config.json",
+   "bytes": 1282,
+   "sha256": "3fdaaea79faa9665f4c74e2ada1521b31ef1b48b94858954a65e9e5cd14ecaff"
+  },
+  {
+   "name": "low_rank_config.json",
+   "bytes": 829,
+   "sha256": "210bf7de7163ead31a71599558969587e1bf8c350853568af4e55c98533db204"
+  },
+  {
+   "name": "low_rank_config.pt",
+   "bytes": 2145,
+   "sha256": "0f993e0c3e15e152d96824a9138da941c0d1b6decf8f0fd3702596cdbe8fef24"
+  },
+  {
+   "name": "model-00001-of-00004.safetensors",
+   "bytes": 4948091472,
+   "sha256": "a0005906a41b3cf9121c79d9ea5aa40088f9bbc24227fa49ec4c60ce743e8e0e"
+  },
+  {
+   "name": "model-00002-of-00004.safetensors",
+   "bytes": 4999381560,
+   "sha256": "ea54bc98ddbd5374b86559a97de9979c2f58c24723d52da7045ca3cf17e9476e"
+  },
+  {
+   "name": "model-00003-of-00004.safetensors",
+   "bytes": 4581300544,
+   "sha256": "4c5d3e5f07b9ba1b9119ab75abdf6f2bf49e95666ed8dbe4d53464cb54ee53c5"
+  },
+  {
+   "name": "model-00004-of-00004.safetensors",
+   "bytes": 1050673280,
+   "sha256": "e4f15e64381b74dcb7857c03cbfb62806534f7582ab885c738980a12e5b78989"
+  },
+  {
+   "name": "model.safetensors.index.json",
+   "bytes": 27044,
+   "sha256": "af88cf967d57b94b59d6db9476b4d7befdf441fed8b56677256177790fe4b5d5"
+  },
+  {
+   "name": "special_tokens_map.json",
+   "bytes": 301,
+   "sha256": "cc2e013b7545f183ef03e079a3c91c6f364fa37e4068c512d7dd843e59024535"
+  },
+  {
+   "name": "tokenizer.json",
+   "bytes": 9085698,
+   "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7"
+  },
+  {
+   "name": "tokenizer_config.json",
+   "bytes": 50585,
+   "sha256": "545ac0ad418892a48c1d26cf50b668030fabf644652072d0248c57c941e0ea2a"
+  }
+ ]
+}

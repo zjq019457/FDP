@@ -1,0 +1,9 @@
+{
+  "job_id": "P6_final_report",
+  "cmd": [
+    "/home/bai-project/anaconda3/envs/eigen/bin/python",
+    "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_completion_pipeline/runners/final_report.py"
+  ],
+  "started_at": "2026-07-29T08:57:25.096155-07:00",
+  "protocol_hash": "bf8bc0030f95918c425b8b3721331a27d1bfd1711b48692089c000a106b7fd9e"
+}

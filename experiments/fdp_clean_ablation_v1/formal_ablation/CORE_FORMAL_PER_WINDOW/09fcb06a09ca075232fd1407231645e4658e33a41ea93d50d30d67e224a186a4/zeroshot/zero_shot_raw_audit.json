@@ -1,0 +1,92 @@
+{
+  "runner": "/home/bai-project/jiaqizhang/EigenAttn/rebuttal_legacy_reproduction/runners/zero_shot_instrumented.py",
+  "runner_hash": "aa2e210166ca6292123e43fc3da984f110d1c1d09b5c02fd937a2e0bc7df49ab",
+  "python": "/home/bai-project/anaconda3/envs/eigen/bin/python",
+  "original_tool": "/home/bai-project/jiaqizhang/EigenAttn/EigenAttn/tools/run_lm_eval_offline_eigen_opt.py",
+  "original_tool_sha256": "55c42cf0642e2cdb523706e6678a138d9ffc3e85fe65f4f65124c2e325086bce",
+  "task_yaml_dir": "/diskF/jiaqizhang/a1804298693/offline_datasets",
+  "task_hashes": {
+    "hellaswag_localjsonl": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815",
+    "arc_challenge_localjsonl": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d",
+    "arc_easy_localjsonl": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15",
+    "winogrande_localjsonl": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999",
+    "piqa_localjsonl": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1"
+  },
+  "aggregate": {
+    "tasks": {
+      "hellaswag_localjsonl": {
+        "n": 10042,
+        "correct": 2700,
+        "accuracy_from_correct": 0.2688707428799044,
+        "lm_eval_primary": 0.2688707428799044,
+        "lm_eval_row": {
+          "acc,none": 0.2688707428799044,
+          "acc_stderr,none": 0.004424664761480249,
+          "alias": "hellaswag_localjsonl"
+        },
+        "task_definition_hash": "ba3f3bac2ca1fe8147faa6867ab417d4c5e52a989727dd1650370764a3723815"
+      },
+      "arc_challenge_localjsonl": {
+        "n": 1172,
+        "correct": 209,
+        "accuracy_from_correct": 0.17832764505119453,
+        "lm_eval_primary": 0.17832764505119453,
+        "lm_eval_row": {
+          "acc,none": 0.17832764505119453,
+          "acc_stderr,none": 0.011186139406711303,
+          "acc_norm,none": 0.22610921501706485,
+          "acc_norm_stderr,none": 0.012224202097063288,
+          "alias": "arc_challenge_localjsonl"
+        },
+        "task_definition_hash": "4f8304d6cd638072c8699a823dd8b71ead8ff820f1fcedc2215799a7ee41190d"
+      },
+      "arc_easy_localjsonl": {
+        "n": 2376,
+        "correct": 942,
+        "accuracy_from_correct": 0.39646464646464646,
+        "lm_eval_primary": 0.39646464646464646,
+        "lm_eval_row": {
+          "acc,none": 0.39646464646464646,
+          "acc_stderr,none": 0.010037412763064526,
+          "acc_norm,none": 0.35395622895622897,
+          "acc_norm_stderr,none": 0.00981237064417441,
+          "alias": "arc_easy_localjsonl"
+        },
+        "task_definition_hash": "28e5f31577e10a8973bfc5243262f50bd5a16ca5e29358a6c18c8df5e1401c15"
+      },
+      "winogrande_localjsonl": {
+        "n": 1267,
+        "correct": 658,
+        "accuracy_from_correct": 0.5193370165745856,
+        "lm_eval_primary": 0.5193370165745856,
+        "lm_eval_row": {
+          "acc,none": 0.5193370165745856,
+          "acc_stderr,none": 0.014041972733712977,
+          "alias": "winogrande_localjsonl"
+        },
+        "task_definition_hash": "7724e1ee315357732f125796126a1f0a99d2f0bf75eb6a63522d3eef9d88f999"
+      },
+      "piqa_localjsonl": {
+        "n": 1838,
+        "correct": 1109,
+        "accuracy_from_correct": 0.6033732317736671,
+        "lm_eval_primary": 0.6033732317736671,
+        "lm_eval_row": {
+          "acc,none": 0.6033732317736671,
+          "acc_stderr,none": 0.011413778810510455,
+          "alias": "piqa_localjsonl"
+        },
+        "task_definition_hash": "1f2249ce2a482faf22e6b84558339d2e3f2cd8ec88f83920af405a51efb308b1"
+      }
+    },
+    "method": "M3_UNIFORM",
+    "model_hash": "85261e0abad01e25f88358e2901510f87f5c761697cd75f2bc914d919efa2624",
+    "runner_hash": "aa2e210166ca6292123e43fc3da984f110d1c1d09b5c02fd937a2e0bc7df49ab"
+  },
+  "notes": [
+    "Uses historical *_localjsonl.yaml via lm_eval TaskManager include_path.",
+    "log_samples=True; per-sample atomic JSON+DONE; accuracy recomputed from correct flags.",
+    "Original EigenAttn sources were not modified."
+  ],
+  "timestamp": "2026-09-10T14:12:39.487294-07:00"
+}

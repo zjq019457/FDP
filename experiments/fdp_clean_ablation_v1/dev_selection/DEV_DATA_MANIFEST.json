@@ -1,0 +1,21 @@
+{
+  "campaign": "FDP-EB Clean Ablation and Ultra-Compression Campaign V1",
+  "created_at": "2026-09-10T05:15:00Z",
+  "dev_wiki": {
+    "source": "/home/bai-project/jiaqizhang/wikitext2/validation-00000-of-00001.parquet",
+    "num_windows": 64,
+    "seqlen": 2048,
+    "tensor_file": "/diskF/jiaqizhang/fdp_clean_ablation_v1/dev_selection/dev_wiki_tokens.pt",
+    "sha256": "d2d90f4440d29df8cfaa5abf06f4f2b782e4641b72b3ed571fbd90cbf987c961"
+  },
+  "dev_c4": {
+    "source": "/diskF/jiaqizhang/fdp_generalized_adapter_v1/v2_execution/snapkv_n256/c4_authoritative_long_candidates.jsonl",
+    "num_windows": 64,
+    "seqlen": 2048,
+    "disjoint_from_formal_manifest": true,
+    "formal_rows_excluded_count": 231,
+    "tensor_file": "/diskF/jiaqizhang/fdp_clean_ablation_v1/dev_selection/dev_c4_tokens.pt",
+    "metadata_file": "/diskF/jiaqizhang/fdp_clean_ablation_v1/dev_selection/dev_c4_metadata.json",
+    "sha256": "71a19b85ce7155fab72e3092101195b22c1faed3076b7eb26ded1af49962aef3"
+  }
+}

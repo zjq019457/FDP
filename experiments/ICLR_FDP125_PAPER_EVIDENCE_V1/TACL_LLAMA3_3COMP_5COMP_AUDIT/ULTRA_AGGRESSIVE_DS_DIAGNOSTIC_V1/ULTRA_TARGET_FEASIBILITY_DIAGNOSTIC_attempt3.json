@@ -1,0 +1,306 @@
+{
+  "target_bytes": 143474688,
+  "arms": {
+    "U_FULL": {
+      "verified_base_coverage_max": 0.12013655991684476,
+      "B_live_at_coverage": 123469824,
+      "target_gap_bytes_at_coverage": -20004864,
+      "min_qk_or_v_rank": 40,
+      "all_ranks_ge_64": false,
+      "legal_rank_floor_min_B_live": 151289856,
+      "legal_rank_floor_min_gap": 7815168,
+      "legal_rank_floor_min_schedule_min_rank": 72,
+      "legal_rank_floor_min_rank_sha256": "0bafdf9cd1dbfa3d2a4a4080f5b8c4ab75a34260b3e1c163f7b65d50131e20a7",
+      "legal_rank_floor_min_scalar_plateau": [
+        0.09355136167585255,
+        0.09355136167585255
+      ],
+      "legal_rank_floor_min_rank_vector_kq_v": [
+        [
+          656,
+          960
+        ],
+        [
+          176,
+          784
+        ],
+        [
+          80,
+          584
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          520,
+          872
+        ],
+        [
+          608,
+          880
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          424,
+          800
+        ],
+        [
+          432,
+          816
+        ],
+        [
+          440,
+          808
+        ],
+        [
+          392,
+          776
+        ],
+        [
+          464,
+          808
+        ],
+        [
+          624,
+          904
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          488,
+          848
+        ],
+        [
+          336,
+          776
+        ],
+        [
+          312,
+          776
+        ],
+        [
+          344,
+          776
+        ],
+        [
+          216,
+          688
+        ],
+        [
+          200,
+          696
+        ],
+        [
+          72,
+          600
+        ],
+        [
+          120,
+          656
+        ],
+        [
+          240,
+          720
+        ],
+        [
+          104,
+          656
+        ],
+        [
+          112,
+          680
+        ],
+        [
+          400,
+          824
+        ],
+        [
+          176,
+          720
+        ],
+        [
+          232,
+          728
+        ],
+        [
+          144,
+          680
+        ],
+        [
+          1016,
+          1024
+        ],
+        [
+          488,
+          864
+        ],
+        [
+          328,
+          792
+        ]
+      ],
+      "legal_max_B_live": 159416320,
+      "target_bracketed": true
+    },
+    "U_NO_S": {
+      "verified_base_coverage_max": 0.11537829259685771,
+      "B_live_at_coverage": 129073152,
+      "target_gap_bytes_at_coverage": -14401536,
+      "min_qk_or_v_rank": 48,
+      "all_ranks_ge_64": false,
+      "legal_rank_floor_min_B_live": 150831104,
+      "legal_rank_floor_min_gap": 7356416,
+      "legal_rank_floor_min_schedule_min_rank": 72,
+      "legal_rank_floor_min_rank_sha256": "1368cf5a0b2590c06d8bc9fdbd264c07d95e312a6cba16d607dd1b94b678798b",
+      "legal_rank_floor_min_scalar_plateau": [
+        0.09368490799565266,
+        0.09368490799565266
+      ],
+      "legal_rank_floor_min_rank_vector_kq_v": [
+        [
+          656,
+          960
+        ],
+        [
+          176,
+          784
+        ],
+        [
+          80,
+          584
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          520,
+          872
+        ],
+        [
+          544,
+          848
+        ],
+        [
+          552,
+          880
+        ],
+        [
+          424,
+          800
+        ],
+        [
+          432,
+          816
+        ],
+        [
+          440,
+          808
+        ],
+        [
+          392,
+          776
+        ],
+        [
+          464,
+          808
+        ],
+        [
+          624,
+          904
+        ],
+        [
+          496,
+          856
+        ],
+        [
+          488,
+          848
+        ],
+        [
+          336,
+          776
+        ],
+        [
+          312,
+          776
+        ],
+        [
+          344,
+          776
+        ],
+        [
+          216,
+          688
+        ],
+        [
+          240,
+          720
+        ],
+        [
+          72,
+          600
+        ],
+        [
+          120,
+          656
+        ],
+        [
+          240,
+          720
+        ],
+        [
+          104,
+          656
+        ],
+        [
+          112,
+          680
+        ],
+        [
+          400,
+          824
+        ],
+        [
+          176,
+          720
+        ],
+        [
+          232,
+          728
+        ],
+        [
+          144,
+          680
+        ],
+        [
+          1016,
+          1024
+        ],
+        [
+          488,
+          864
+        ],
+        [
+          328,
+          792
+        ]
+      ],
+      "legal_max_B_live": 158072832,
+      "target_bracketed": true
+    }
+  },
+  "source_profile_path": "/diskF/jiaqizhang/fdp_clean_ablation_v1/raw_profiles/step1_llama3_8b_eb090.json",
+  "source_profile_sha256": "864cf9832892f8bcdcb2521604b7827bc87b9cdf0b29284fd3283e3900d180b9",
+  "rank_trace_report_sha256": "ff4d79ebd81f3a7b2cc5580bca6996ad06add8d333f131aa19658ed3a25cc733",
+  "rank_trace_basis_sha256": "9ad9087a613e76e1ba694b9b0a3cecf9357bb61d7315b6a1d8b853ad1c376720",
+  "method_lock_sha256": "8a8e95ae4df92203b5ad9afdbec4ed244004b57750e81a41b2f24bc5b880df4f",
+  "status": "PRELIMINARY_TARGET_NOT_REACHED_ON_VERIFIED_CURVE_WITH_RANK_FLOOR_64",
+  "quality_evaluation": "NOT_RUN"
+}

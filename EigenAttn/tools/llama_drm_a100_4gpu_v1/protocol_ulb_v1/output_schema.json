@@ -1,0 +1,201 @@
+{
+  "$id": "urn:ulb:v1:prediction",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "oom"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "prediction": {
+            "const": "[OOM]"
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "all_classes": {
+      "type": [
+        "array",
+        "null"
+      ]
+    },
+    "answers": {
+      "type": "array"
+    },
+    "chat_template_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "content_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "field_sources": {
+      "properties": {
+        "input_tokens": {
+          "enum": [
+            "runtime",
+            "posthoc_reconstructed",
+            "unavailable"
+          ]
+        },
+        "output_tokens": {
+          "enum": [
+            "runtime",
+            "posthoc_reconstructed",
+            "unavailable"
+          ]
+        },
+        "prompt_sha256": {
+          "enum": [
+            "runtime",
+            "posthoc_reconstructed",
+            "unavailable"
+          ]
+        },
+        "sample_id": {
+          "enum": [
+            "runtime",
+            "posthoc_reconstructed",
+            "unavailable"
+          ]
+        },
+        "status": {
+          "enum": [
+            "runtime",
+            "posthoc_reconstructed",
+            "unavailable"
+          ]
+        }
+      },
+      "required": [
+        "sample_id",
+        "prompt_sha256",
+        "status",
+        "input_tokens",
+        "output_tokens"
+      ],
+      "type": "object"
+    },
+    "input_tokens": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "method": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "model_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "output_tokens": {
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "prediction": {
+      "type": "string"
+    },
+    "prompt_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "protocol_id": {
+      "pattern": "^ULB-v1-[0-9a-f]{16}$",
+      "type": "string"
+    },
+    "sample_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "sample_index": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "source_file": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "source_line": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "oom",
+        "failed",
+        "missing"
+      ]
+    },
+    "task": {
+      "enum": [
+        "passage_retrieval_en",
+        "qasper",
+        "multifieldqa_en",
+        "hotpotqa",
+        "2wikimqa",
+        "musique",
+        "gov_report",
+        "qmsum",
+        "multi_news",
+        "vcsum",
+        "passage_count",
+        "trec",
+        "triviaqa",
+        "samsum",
+        "lsht",
+        "lcc",
+        "repobench-p"
+      ]
+    },
+    "template_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "protocol_id",
+    "model_id",
+    "method",
+    "task",
+    "sample_index",
+    "sample_id",
+    "content_sha256",
+    "prompt_sha256",
+    "status",
+    "prediction",
+    "answers",
+    "all_classes",
+    "input_tokens",
+    "output_tokens",
+    "field_sources",
+    "source_file",
+    "source_line"
+  ],
+  "title": "Unified LongBench canonical prediction",
+  "type": "object"
+}

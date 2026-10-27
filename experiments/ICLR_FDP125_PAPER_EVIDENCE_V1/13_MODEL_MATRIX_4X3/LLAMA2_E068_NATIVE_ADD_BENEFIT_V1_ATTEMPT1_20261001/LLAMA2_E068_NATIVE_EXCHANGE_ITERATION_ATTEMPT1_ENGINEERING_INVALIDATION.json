@@ -1,0 +1,12 @@
+{
+  "artifact_id": "LLAMA2_E068_NATIVE_EXCHANGE_ITERATION_ATTEMPT1_ENGINEERING_INVALIDATION_V1",
+  "status": "INVALID_ENGINEERING_PRE_SCORE",
+  "failed_stage": "baseline rank-schedule hash binding in setup_worker",
+  "failure_class": "HASH_DOMAIN_MISMATCH",
+  "diagnosis": "the executor compared the frozen rank_schedule_sha256 provenance identifier to sha_json(rank_pairs), a distinct hash domain; attempt 2 separately pins the rank-pair-list digest and exact frozen rank-pair values",
+  "final_quality_started": false,
+  "prior_status_sha256": "3d03f2c0fb3f95edac55bddb0b004fea19242f2d8061db677da279a7b3a5f554",
+  "prior_log_sha256": "f0f5aae518a0dc51441cfceb7babd7fc091aa186db1a9eeb24cc2e9a2629d34a",
+  "prior_executor_sha256": "7923aa2094584edf64f4caa39c9ee5c6f96315f48135791ff7fba5da6c3af6fe",
+  "created_utc": "2026-10-02T04:16:50.291570+00:00"
+}

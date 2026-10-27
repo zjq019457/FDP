@@ -1,0 +1,59 @@
+{
+  "calibration": {
+    "fisher_dataset": "WikiText-2",
+    "fisher_samples": 2048,
+    "fisher_sequence_length": 1024,
+    "search_method": "official fisher_uniform for Automatic/Fisher reproduction",
+    "whiten_samples": 256,
+    "whiten_sequence_length": 2048
+  },
+  "campaign": "PALU_OFFICIAL_PROTOCOL_REPRO_V1",
+  "compression_mapping": {
+    "0.3": {
+      "compression_fraction": 0.7,
+      "retained_fraction": 0.3
+    },
+    "0.5": {
+      "compression_fraction": 0.5,
+      "retained_fraction": 0.5
+    },
+    "0.7": {
+      "compression_fraction": 0.3,
+      "retained_fraction": 0.7
+    },
+    "repository_param_ratio_target": "retained native rank fraction"
+  },
+  "evaluation": {
+    "c4_chunks": 256,
+    "c4_docs_scanned": 1100,
+    "dtype": "fp16",
+    "scorer": "official run_ppl_eval CrossEntropyLoss reduction",
+    "sequence_length": 2048,
+    "wiki_split": "WikiText-2 test"
+  },
+  "frozen_q_sha": "6f3b59993abbffbd932825b20ff036197c5be6ff63523ab46e94281bc24eecb1",
+  "grouping": {
+    "head_group_size": 4,
+    "llama2_7b_num_attention_heads": 32,
+    "llama2_7b_num_key_value_heads": 32,
+    "method": "G-LRD",
+    "official_group_output_dim": 512,
+    "official_groups_per_kv_projection": 8
+  },
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "model_architecture": "Llama-2-7B HF pretrained",
+  "official_repo": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/official/Palu",
+  "official_repo_commit": "bb22666e2ef96707e8dd21d93fc00146c2e0d615",
+  "old_anchor_schema_results_modified": false,
+  "resource_formula": "sum native group ranks * sequence_length * 2 bytes; K/V aggregate",
+  "source_hashes": {
+    "c4_source": "1f25b6af12da84115301d4ee93ea5246c8fea5bb4a2008472794d95b917cc97f",
+    "official_compress": "d413d8729aa981a67bc98f6035e879f92e2f0ac86066448129f617d14f363544",
+    "official_decomposition": "5c9896bd45910e0f81dbf3e519466eb60c49c2882a66592be2c0fbeb633c09ad",
+    "official_ppl_eval": "ef8190ba6453c000c9def95f1b06706c3cf8908ec7cd61010360d0dfe097dc5f",
+    "official_rank_search": "e789cfd4dd67eb9bb4a1bdb1de4142ddb8a8d3fe41f23d72e0b87a5a292bd5fd",
+    "official_svd_linear": "be0b986b727094e82d1c74694eedb656b755ed73b876bdea54af8f8d41fbd7d4",
+    "wiki_source": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83"
+  },
+  "status": "PALU_OFFICIAL_PROTOCOL_LOCK_FROZEN"
+}

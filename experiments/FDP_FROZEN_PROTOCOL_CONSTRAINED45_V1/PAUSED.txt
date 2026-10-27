@@ -1,0 +1,2 @@
+PAUSED 2026-10-09T10:38:48-07:00 by user request (switch FDP-EB to official-reproduction standard). Running at pause: fdp_basis_light, uni_basis_light, fdp_basis_medium (SIGTERM, ~layer 8/32). All logs/state kept; gates and plans valid.
+RESUMED 2026-10-11T14:51:05-07:00 by user request ("可以 恢复实验。看看效果"); job logs of the paused attempt preserved in logs/jobs_before_resume_20261011T145105

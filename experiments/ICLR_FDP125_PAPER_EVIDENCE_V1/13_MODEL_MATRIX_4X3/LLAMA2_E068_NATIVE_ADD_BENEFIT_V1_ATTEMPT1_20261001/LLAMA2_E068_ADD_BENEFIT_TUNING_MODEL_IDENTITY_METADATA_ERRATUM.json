@@ -1,0 +1,31 @@
+{
+  "artifact_id": "LLAMA2_E068_ADD_BENEFIT_TUNING_MODEL_IDENTITY_METADATA_ERRATUM_V1",
+  "status": "FROZEN_PRE_SCORING_METADATA_ONLY_BINDING",
+  "created_utc": "2026-10-02T03:47:46.104969+00:00",
+  "source_manifest_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_ALLOCATOR_TUNING_STUDY_V1/LLAMA2_FDP_STAGE3_HELDOUT_TUNING_SPLIT_V2_UNIQUE_IDS.json",
+  "source_manifest_sha256": "53532566c8fc635e66a556c51db96ef423ce321adf50b18a8dc8ee4ad2e72194",
+  "source_declared_model_fingerprint": "a627fb4d2200089590b109ad82c35098778aa5856660cc691f6626d25c2cf25197",
+  "source_declared_fingerprint_length": 66,
+  "canonical_model_fingerprint": "a627fb4d2200089590b109ad82c35098778aa585660c691f6626d25c2cf25197",
+  "independent_identity_authorities": {
+    "uniform068_profile_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/LLAMA2_CLEAN_REDESIGN_UNIFORM068_PROFILE_V1_20261001T1516_ATTEMPT7/LLAMA2_CLEAN_REDESIGN_D1_D2_D5_PROFILE_V1.json",
+    "uniform068_profile_sha256": "a06651aa00aaa4a1f2584aed506d3c5e358a50c6a8bec5a10531449c971e8fc3",
+    "cell_authorization_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama2_7b/medium/provenance_binding_v1_20260925T061200Z/LLAMA2_MEDIUM_CELL_LAUNCH_AUTHORIZATION_V1.json",
+    "cell_authorization_sha256": "5bd25896cb172564fba5b684483809c0db39b604185bf36645d5b548471c0d6b",
+    "final_provenance_audit_path": "/diskE/jiaqizhang/ICLR_FDP125_PAPER_EVIDENCE_V1/13_MODEL_MATRIX_4X3/cells/llama2_7b/medium/provenance_binding_v1_20260925T061200Z/LLAMA2_MEDIUM_FINAL_PROVENANCE_HASH_AUDIT_V3.json",
+    "final_provenance_audit_sha256": "e67de18706ce1e1cfd68aaa7892f95712fea54f711eb733c4b1664c705b525a7"
+  },
+  "decision": "Bind this tuning split to the 64-character model identity already fixed by the profile and formal cell authorization; preserve the malformed 66-character field and source manifest unchanged.",
+  "unchanged": [
+    "window_data_bytes",
+    "window_data_sha256",
+    "all_unique_window_ids",
+    "token_id_hashes",
+    "split_assignment",
+    "selection_rule",
+    "tokenizer",
+    "scorer",
+    "loss definition"
+  ],
+  "scoring_started": false
+}

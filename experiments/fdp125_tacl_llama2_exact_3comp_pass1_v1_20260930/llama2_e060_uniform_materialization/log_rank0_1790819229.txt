@@ -1,0 +1,86 @@
+[2026-09-30 18:47:09 root] (main_eigen_attn.py 2603): INFO Namespace(model='/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf', cache_dir='/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_uniform_materialization/hf_cache', resume=None, calib_dataset='wikitext2', wikitext2_data_dir='/home/bai-project/jiaqizhang/wikitext2', nsamples=512, batch_size=1, seed=2, tasks='', eval_ppl=False, num_fewshot=0, limit=-1, multigpu=False, attn_implementation='eager', net='Llama-2-7b', load_low_rank=False, load_peft_model=False, peft_model_path=None, save_dir='/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_uniform_materialization/final_model', output_dir='/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_uniform_materialization', evaluate_baseline=False, avg_dim=4096, error_budget=0.06, fine_tune=False, compress_only=True, resid_mixer_alpha=0.0, resid_mixer_hidden_dim=0, resid_mixer_ln_eps=1e-05, ft_target_modules='', ft_lora_r=64, ft_lora_alpha=64, ft_lora_dropout=0.05, ft_use_dora=0, ft_dora_r=8, ft_dora_alpha=16.0, ft_dora_use_lora_scaling=0, ft_dora_dropout=0.0, ft_dora_eps=1e-06, ft_dora_s_min_ratio=0.25, ft_dora_s_max_ratio=4.0, ft_dora_k_s_min_ratio=0.5, ft_dora_k_s_max_ratio=2.0, ft_dora_k_warmup_steps=20, ft_dora_include_out_up=0, ft_dora_weight_decay=0.0, ft_dora_lr_q=-1.0, ft_dora_lr_k=-1.0, ft_dora_lr_v=-1.0, ft_dora_lr_s=-1.0, ft_learning_rate=0.0002, ft_batch_size=4, ft_grad_accum=4, ft_num_epochs=1.0, ft_max_steps=2000, ft_save_steps=500, ft_logging_steps=10, ft_seqlen=1024, ft_dataset='c4', ft_data_dir='', ft_max_train_samples=20000, ft_bilevel_refresh=False, ft_steps_per_outer=50, ft_outer_rounds=0, ft_inner_mode='lora_qkv', ft_train_mode='qkv_up_vscale', ft_train_last_n=0, ft_grad_clip=0.5, ft_logit_clip=20.0, ft_max_nonfinite=20, ft_token_budget=500000, ft_eval_every=0, ft_keep_best=1, ft_layerwise=False, ft_layerwise_layers='', ft_layerwise_steps=200, ft_layerwise_mode='up_vscale', ft_dircalib=0, ft_dircalib_weight=0.02, ft_dircalib_every=10, ft_dircalib_batches=8, ft_dircalib_seqlen=256, ft_kd=0, ft_kd_weight=0.05, ft_kd_temp=2.0, ft_kd_every=10, ft_kd_batches=8, ft_kd_seqlen=256, save_pre_ft_checkpoint=False, ft_skip_refresh=False, ft_calib_strong=False, ft_compare_ppl=False, ft_ppl_seqlen=2048, ft_ppl_c4_glob='c4-train.*.json.gz', ft_ppl_scan_lines=200000, ft_ppl_pool_docs=20000, ft_ppl_val_chunks=256, ft_ppl_val_seed=0, use_core_rebalance=0, use_column_balance=0, core_rebalance_trainable=1, core_rebalance_orth_rank=8, balance_strength=0.25, balance_mode='trainable', balance_target='qkv', balance_lr_mult_k=0.5, balance_lr_mult_v=1.0, ft_orth_reg_weight=0.0, ft_balance_reg_weight=0.0, ft_orth_lr=-1.0, train_o_proj_up_with_v_balance=0, ft_stage='both', ft_ce_weight=1.0, ft_repair_teacher='', ft_repair_hidden_weight=0.0, ft_repair_logits_weight=0.0, ft_repair_logits_temp=2.0, ft_repair_attn_weight=0.0, ft_repair_every=8, ft_repair_seqlen=128, ft_repair_teacher_dtype='fp16', ft_save_round_ckpt=0, ft_use_safetensors=1, dtype='bf16', seqlen=2048, eigen_basis_path='/diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_7b_uniform_pass1_e060_eb0p06.pt', qkv_export=False, qkv_export_layers='', qkv_export_dir='', qkv_analyze=False, qkv_analyze_stage='baseline', qkv_layers='', qkv_ranks='', qkv_eigen_basis='', qkv_max_batches=2, qkv_sample_vecs=2048, qkv_do_svd=False, qkv_save_approx=False, qkv_svd_niter=4, qkv_svd_oversample=16, repair_basis_pt='', repair_basis_pt_headwise='', repair_keqk=0, force_vscale_one=0, qkv_export_layers_obj=None, qkv_layers_obj=None, qkv_ranks_obj=None, ft_target_modules_obj=None)
+[2026-09-30 18:47:09 root] (main_eigen_attn.py 2604): INFO [dist] world_size=1 rank=0 local_rank=0
+[2026-09-30 18:47:09 root] (main_eigen_attn.py 1388): INFO [pipeline][part 1/7] load base model
+[2026-09-30 18:47:09 root] (main_eigen_attn.py 1389): INFO [pipeline][explain] Load the original checkpoint on CPU first, then cast to the requested dtype so VRAM usage stays predictable.
+[2026-09-30 18:47:11 root] (main_eigen_attn.py 2633): INFO error_budget : 0.06
+[2026-09-30 18:47:11 root] (main_eigen_attn.py 2634): INFO LlamaConfig {
+  "_name_or_path": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.44.2",
+  "use_cache": false,
+  "vocab_size": 32000
+}
+
+[2026-09-30 18:47:11 root] (main_eigen_attn.py 2671): INFO === start low rank decomposition ===
+[2026-09-30 18:47:11 root] (main_eigen_attn.py 1388): INFO [pipeline][part 3/7] load calibration data
+[2026-09-30 18:47:11 root] (main_eigen_attn.py 1389): INFO [pipeline][explain] Calibration samples are used to estimate the low-rank subspace and determine the EigenAttn projection.
+[2026-09-30 18:47:35 root] (main_eigen_attn.py 1388): INFO [pipeline][part 4/7] run EigenAttn decomposition
+[2026-09-30 18:47:35 root] (main_eigen_attn.py 1389): INFO [pipeline][explain] This phase computes the low-rank attention representation and replaces the dense attention blocks.
+[2026-09-30 18:47:35 root] (eigen_attn.py 116): INFO Starting EigenAttn replacement ...
+[2026-09-30 18:47:35 root] (eigen_attn.py 118): INFO [EigenAttn] basis_side = right
+[2026-09-30 18:47:35 root] (eigen_attn.py 123): INFO Loading eigen_basis from: /diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_7b_uniform_pass1_e060_eb0p06.pt
+[2026-09-30 18:47:37 root] (eigen_attn.py 176): INFO layer 0 rank_kq=4096 rank_v=4096
+[2026-09-30 18:47:37 root] (eigen_attn.py 176): INFO layer 1 rank_kq=4096 rank_v=4096
+[2026-09-30 18:47:37 root] (eigen_attn.py 176): INFO layer 2 rank_kq=1184 rank_v=3488
+[2026-09-30 18:47:38 root] (eigen_attn.py 176): INFO layer 3 rank_kq=992 rank_v=3264
+[2026-09-30 18:47:38 root] (eigen_attn.py 176): INFO layer 4 rank_kq=832 rank_v=3008
+[2026-09-30 18:47:38 root] (eigen_attn.py 176): INFO layer 5 rank_kq=1120 rank_v=3392
+[2026-09-30 18:47:39 root] (eigen_attn.py 176): INFO layer 6 rank_kq=1632 rank_v=3520
+[2026-09-30 18:47:39 root] (eigen_attn.py 176): INFO layer 7 rank_kq=2016 rank_v=3616
+[2026-09-30 18:47:39 root] (eigen_attn.py 176): INFO layer 8 rank_kq=2400 rank_v=3712
+[2026-09-30 18:47:40 root] (eigen_attn.py 176): INFO layer 9 rank_kq=2464 rank_v=3744
+[2026-09-30 18:47:40 root] (eigen_attn.py 176): INFO layer 10 rank_kq=2848 rank_v=3840
+[2026-09-30 18:47:40 root] (eigen_attn.py 176): INFO layer 11 rank_kq=2368 rank_v=3712
+[2026-09-30 18:47:41 root] (eigen_attn.py 176): INFO layer 12 rank_kq=2432 rank_v=3712
+[2026-09-30 18:47:41 root] (eigen_attn.py 176): INFO layer 13 rank_kq=2432 rank_v=3744
+[2026-09-30 18:47:41 root] (eigen_attn.py 176): INFO layer 14 rank_kq=2432 rank_v=3744
+[2026-09-30 18:47:42 root] (eigen_attn.py 176): INFO layer 15 rank_kq=2848 rank_v=3840
+[2026-09-30 18:47:42 root] (eigen_attn.py 176): INFO layer 16 rank_kq=2816 rank_v=3840
+[2026-09-30 18:47:42 root] (eigen_attn.py 176): INFO layer 17 rank_kq=2880 rank_v=3840
+[2026-09-30 18:47:43 root] (eigen_attn.py 176): INFO layer 18 rank_kq=2432 rank_v=3744
+[2026-09-30 18:47:43 root] (eigen_attn.py 176): INFO layer 19 rank_kq=2368 rank_v=3744
+[2026-09-30 18:47:43 root] (eigen_attn.py 176): INFO layer 20 rank_kq=2400 rank_v=3744
+[2026-09-30 18:47:44 root] (eigen_attn.py 176): INFO layer 21 rank_kq=2368 rank_v=3744
+[2026-09-30 18:47:44 root] (eigen_attn.py 176): INFO layer 22 rank_kq=2432 rank_v=3744
+[2026-09-30 18:47:44 root] (eigen_attn.py 176): INFO layer 23 rank_kq=2112 rank_v=3648
+[2026-09-30 18:47:45 root] (eigen_attn.py 176): INFO layer 24 rank_kq=1952 rank_v=3648
+[2026-09-30 18:47:45 root] (eigen_attn.py 176): INFO layer 25 rank_kq=1728 rank_v=3552
+[2026-09-30 18:47:46 root] (eigen_attn.py 176): INFO layer 26 rank_kq=2048 rank_v=3680
+[2026-09-30 18:47:46 root] (eigen_attn.py 176): INFO layer 27 rank_kq=2176 rank_v=3648
+[2026-09-30 18:47:46 root] (eigen_attn.py 176): INFO layer 28 rank_kq=2112 rank_v=3648
+[2026-09-30 18:47:47 root] (eigen_attn.py 176): INFO layer 29 rank_kq=2048 rank_v=3680
+[2026-09-30 18:47:47 root] (eigen_attn.py 176): INFO layer 30 rank_kq=4064 rank_v=4096
+[2026-09-30 18:47:47 root] (eigen_attn.py 176): INFO layer 31 rank_kq=1440 rank_v=3456
+[2026-09-30 18:48:38 root] (main_eigen_attn.py 3022): INFO Decomposition time: 87.81s
+[2026-09-30 18:48:38 root] (main_eigen_attn.py 1388): INFO [pipeline][part 6/7] evaluate compressed model
+[2026-09-30 18:48:38 root] (main_eigen_attn.py 1389): INFO [pipeline][explain] Post-compression evaluation before optional fine-tuning.
+[2026-09-30 18:48:38 root] (main_eigen_attn.py 3038): INFO === Evaluating compressed model ===
+[2026-09-30 18:48:39 root] (main_eigen_attn.py 3040): INFO Compressed model parameters : 6.264884608 Billion
+[2026-09-30 18:48:39 root] (main_eigen_attn.py 3050): INFO Compressed model KV Cache Size : 0.730712890625 GB for batch size of 1
+[2026-09-30 18:48:39 root] (main_eigen_attn.py 1388): INFO [pipeline][part 7/7] save compressed checkpoint
+[2026-09-30 18:48:39 root] (main_eigen_attn.py 1389): INFO [pipeline][explain] Persist the compressed model so fine-tuning can resume from a stable checkpoint.
+[2026-09-30 18:48:39 root] (main_eigen_attn.py 3061): INFO Saving compressed model to: /diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_uniform_materialization/final_model
+[2026-09-30 18:49:24 root] (main_eigen_attn.py 3091): INFO Wrote /diskF/jiaqizhang/fdp125_tacl_llama2_exact_3comp_pass1_v1_20260930/llama2_e060_uniform_materialization/final_model/low_rank_config.json and low_rank_config.pt (32 layers).
+[2026-09-30 18:49:24 root] (main_eigen_attn.py 3094): INFO Model saved successfully.

@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-07-29T19:56:45.539302-07:00",
+  "gaps": [
+    {
+      "id": "GAP_R4_MATCHED_CONTROLS",
+      "severity": "critical",
+      "detail": "R4 lacks Random×3, Spectral, Middle, Depth-front/back, Reconstruction-slope",
+      "action": "Build matched-budget controls per operating point"
+    },
+    {
+      "id": "GAP_BOOTSTRAP",
+      "severity": "critical",
+      "detail": "No paired bootstrap/McNemar/Holm on existing windows",
+      "action": "Compute from reused ppl_windows.jsonl and zero_shot samples"
+    },
+    {
+      "id": "GAP_R10_KQV",
+      "severity": "high",
+      "detail": "R10 only Dense+FDP; missing KQ/V branch ablations",
+      "action": "Re-run with instrumented protocol matching R1"
+    },
+    {
+      "id": "GAP_R10_PPL_PROTOCOL",
+      "severity": "high",
+      "detail": "R10 Dense PPL 6.05 vs R1 6.138 due to different eval protocol",
+      "action": "Discard R10 PPL for main claims; re-run with ppl_instrumented.py"
+    },
+    {
+      "id": "GAP_R8_FIELDS",
+      "severity": "medium",
+      "detail": "R8 missing p95, peak reserved, TTFT, offline cost fields",
+      "action": "Extend system metrics runner or document eager-only scope"
+    },
+    {
+      "id": "GAP_OPERATING_POINTS",
+      "severity": "critical",
+      "detail": "No mild/moderate/aggressive operating point rebuilds with matched controls",
+      "action": "Rebuild 3 operating points via legacy builder"
+    },
+    {
+      "id": "GAP_COMPONENT_ABLATION",
+      "severity": "high",
+      "detail": "R11 is lambda×cal only, not minus-Z/S/V/A/Entropy component ablation",
+      "action": "Run component and calibration domain ablations"
+    },
+    {
+      "id": "GAP_QWEN",
+      "severity": "medium",
+      "detail": "No local Qwen2.5-7B base weights",
+      "action": "Download from official HF"
+    },
+    {
+      "id": "GAP_OPT30B",
+      "severity": "medium",
+      "detail": "OPT-30B not in legacy confirmatory pipeline",
+      "action": "Run fixed-schedule aggressive point if raw missing"
+    },
+    {
+      "id": "GAP_EXTERNAL_BASELINE",
+      "severity": "medium",
+      "detail": "No xKV/ReCalKV/PyramidKV official baselines in legacy",
+      "action": "Attempt official implementations or document blocked"
+    }
+  ],
+  "total": 10
+}

@@ -1,0 +1,135 @@
+{
+  "bound_tasks": [
+    "openbookqa_localjsonl",
+    "hellaswag_localjsonl",
+    "piqa_localjsonl",
+    "arc_easy_localjsonl",
+    "arc_challenge_localjsonl",
+    "winogrande_localjsonl"
+  ],
+  "environment": {
+    "accelerate": "1.13.0",
+    "lm_eval": "0.4.11",
+    "python": "/home/bai-project/jiaqizhang/.venv/bin/python",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.53.0"
+  },
+  "foreign_jobs_interrupted": 0,
+  "frozen_at_utc": "2026-09-28T05:00:47.539156+00:00",
+  "historical_results_modified": false,
+  "inputs": {
+    "dataset_files": {
+      "arc_challenge": {
+        "bytes": 443517,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Challenge/ARC-Challenge-Test.jsonl",
+        "samples": 1172,
+        "sha256": "03227c30fd557ad1416c2cb955eeb6dc79eeb21e0679456a1ccd42eaccc0ff87"
+      },
+      "arc_easy": {
+        "bytes": 795357,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Easy/ARC-Easy-Test.jsonl",
+        "samples": 2376,
+        "sha256": "874354cf372667530bd6cbd2d78dca2d657c5e2e746f53cf01d1e9d3a90cbc3d"
+      },
+      "hellaswag": {
+        "bytes": 12224379,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/hellaswag-train-dev/valid_labeled.jsonl",
+        "samples": 10042,
+        "sha256": "c92843707204769d8b656a9c4bbe71fb5b897f98b0cac73bd4d8e925e2419686"
+      },
+      "openbookqa_test": {
+        "bytes": 55535,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/datasets/allenai/openbookqa/main/test-00000-of-00001.parquet",
+        "samples": 500,
+        "sha256": "cd5483e366daa230c1c87bbdc512d8b7229f14f6dd04d19fc8b1a3855aaaa8a3"
+      },
+      "openbookqa_validation": {
+        "bytes": 58233,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/datasets/allenai/openbookqa/main/validation-00000-of-00001.parquet",
+        "samples": 500,
+        "sha256": "35370b9cfee8c1ff325ccc74adc434d12c47ca0ac3244aa87f3fa77069285206"
+      },
+      "piqa": {
+        "bytes": 602237,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/piqa/dev_labeled.jsonl",
+        "samples": 1838,
+        "sha256": "a574189accfc2ce3ddf797a491540afbe7543b0b70411c798d5fabffcf14bb58"
+      },
+      "winogrande": {
+        "bytes": 275682,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/winogrande/dev.jsonl",
+        "samples": 1267,
+        "sha256": "1aeac79cf46a3dcbe59a71ca7e5372a1490cde2b4ae2387dc56f00378104d2e8"
+      }
+    },
+    "local_task_yaml_sha256": {
+      "openbookqa_localjsonl.yaml": "c203fa817c98147d93df29537a5fb8055853c5875f471292868d6b9e06d76a65"
+    },
+    "old_unmatched_zero_shot": {
+      "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_FDP_NATIVE/zeroshot.json",
+      "resource": {
+        "decode_cache_bytes": 133693440,
+        "prefill_cache_bytes": 133693440,
+        "total_native_rank": 32640
+      },
+      "reuse": "forbidden: rank/cache budget differs",
+      "sha256": "dc92b50a511167f056c65611b9055b321809d820b5f83d942b484b07e5254a40"
+    },
+    "quality_loader_sha256": "3382e1de63035912bcc26810054a8bc55776d88be18b6bbeef32526128e68ae2",
+    "runner_sha256": "852bb38c71c49fe2e4832e9cd43ba4adfaa9b117523b9d19a3e7b4cb4029c48f",
+    "v3_manifest_file_sha256": "0041bdf6f296c7ce1783e2fb45bc68089c68e8f6652a0924feb647c7dc941c93"
+  },
+  "manifest_sha256": "1f51401f56400d08e0d4706fc44b7c745730c8aa30381d72ac313f65752f7621",
+  "methods": {
+    "v1_native_formal_reference": {
+      "accepted_transfer_count": 10,
+      "allocation_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf",
+      "output_dir": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/PALU_V1_NATIVE_FORMAL_MATCHED",
+      "rank_sum": 131072,
+      "schedule_file_sha256": "f66c3a81d0c026c3c8a39fa4b9b47563eef73284e0aa3eb055ea7b48a8e92e49",
+      "schedule_path": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/official_exchange_calibration/ratio_0p5/fdp_native/final_schedule.json",
+      "schedule_semantic_sha256": "b14bd9d4c838f024eb885f541b06ba2c689a7ca03e05775d8cc9de82af8766cf"
+    },
+    "v3_selected": {
+      "allocation_sha256": "70e854eb862602f7cfb22faafba2acd1654b0356322486dfbc772b1de42cdf9c",
+      "lock_file_sha256": "d3d17175e8df6a8b60a8874a388b7d703f72bbf68f3bd9cb7456896f308a6764",
+      "lock_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_RESIDUAL_SEARCH_V3/CALIBRATION_LOCK/V3_LOCK.json",
+      "output_dir": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/quality/llama2/ratio_0.5/PALU_V3_POSTHOC_ZEROSHOT_V1/PALU_V3_SELECTED",
+      "rank_sum": 131072
+    }
+  },
+  "metric_rule": "acc,none for all six tasks; unweighted macro mean; preserve acc_norm as secondary raw metric where present",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "protocol": {
+    "batch_size": 1,
+    "limit": null,
+    "model_seqlen": 4096,
+    "num_fewshot": 0,
+    "runtime": "same official lm_eval HFLM wrapper and project venv as prior PaLu zero-shot evaluations",
+    "seed": {
+      "fewshot_random_seed": 1234,
+      "numpy_random_seed": 1234,
+      "random_seed": 0,
+      "torch_random_seed": 1234
+    }
+  },
+  "ratio": 0.5,
+  "resource_match": true,
+  "resources": {
+    "decode_cache_bytes": 536870912,
+    "factor_bytes_fp16": 1207959552,
+    "prefill_cache_bytes": 536870912,
+    "total_native_rank": 131072
+  },
+  "schema": "palu_paired_zeroshot_posthoc_v1",
+  "scope": "supplemental paired quality comparison only; no retuning; formal outputs immutable",
+  "status": "FROZEN_BEFORE_QUALITY_RUN",
+  "tasks": [
+    "openbookqa",
+    "hellaswag",
+    "piqa",
+    "arc_easy",
+    "arc_challenge",
+    "winogrande"
+  ]
+}

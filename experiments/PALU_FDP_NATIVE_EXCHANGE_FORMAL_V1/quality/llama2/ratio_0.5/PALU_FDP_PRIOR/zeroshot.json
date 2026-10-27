@@ -1,0 +1,176 @@
+{
+  "batch_size": 1,
+  "bound_tasks": [
+    "openbookqa_localjsonl",
+    "hellaswag_localjsonl",
+    "piqa_localjsonl",
+    "arc_easy_localjsonl",
+    "arc_challenge_localjsonl",
+    "winogrande_localjsonl"
+  ],
+  "campaign": "PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1",
+  "dataset_bindings": {
+    "arc_challenge": [
+      {
+        "bytes": 443517,
+        "exists": true,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Challenge/ARC-Challenge-Test.jsonl",
+        "samples": 1172,
+        "sha256": "03227c30fd557ad1416c2cb955eeb6dc79eeb21e0679456a1ccd42eaccc0ff87"
+      }
+    ],
+    "arc_easy": [
+      {
+        "bytes": 795357,
+        "exists": true,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/ai2_arc/ARC-Easy/ARC-Easy-Test.jsonl",
+        "samples": 2376,
+        "sha256": "874354cf372667530bd6cbd2d78dca2d657c5e2e746f53cf01d1e9d3a90cbc3d"
+      }
+    ],
+    "hellaswag": [
+      {
+        "bytes": 12224379,
+        "exists": true,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/hellaswag-train-dev/valid_labeled.jsonl",
+        "samples": 10042,
+        "sha256": "c92843707204769d8b656a9c4bbe71fb5b897f98b0cac73bd4d8e925e2419686"
+      }
+    ],
+    "openbookqa": [
+      {
+        "bytes": 55535,
+        "exists": true,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/datasets/allenai/openbookqa/main/test-00000-of-00001.parquet",
+        "samples": 500,
+        "sha256": "cd5483e366daa230c1c87bbdc512d8b7229f14f6dd04d19fc8b1a3855aaaa8a3"
+      },
+      {
+        "bytes": 58233,
+        "exists": true,
+        "path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/datasets/allenai/openbookqa/main/validation-00000-of-00001.parquet",
+        "samples": 500,
+        "sha256": "35370b9cfee8c1ff325ccc74adc434d12c47ca0ac3244aa87f3fa77069285206"
+      }
+    ],
+    "piqa": [
+      {
+        "bytes": 602237,
+        "exists": true,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/piqa/dev_labeled.jsonl",
+        "samples": 1838,
+        "sha256": "a574189accfc2ce3ddf797a491540afbe7543b0b70411c798d5fabffcf14bb58"
+      }
+    ],
+    "winogrande": [
+      {
+        "bytes": 275682,
+        "exists": true,
+        "path": "/diskF/jiaqizhang/a1804298693/offline_datasets/winogrande/dev.jsonl",
+        "samples": 1267,
+        "sha256": "1aeac79cf46a3dcbe59a71ca7e5372a1490cde2b4ae2387dc56f00378104d2e8"
+      }
+    ]
+  },
+  "historical_results_modified": false,
+  "limit": null,
+  "lm_eval_results": {
+    "arc_challenge_localjsonl": {
+      "acc,none": 0.22184300341296928,
+      "acc_norm,none": 0.2713310580204778,
+      "acc_norm_stderr,none": 0.012993807727545919,
+      "acc_stderr,none": 0.012141659068148035,
+      "alias": "arc_challenge_localjsonl"
+    },
+    "arc_easy_localjsonl": {
+      "acc,none": 0.39436026936026936,
+      "acc_norm,none": 0.34553872053872053,
+      "acc_norm_stderr,none": 0.009757948730670471,
+      "acc_stderr,none": 0.010028176038392816,
+      "alias": "arc_easy_localjsonl"
+    },
+    "hellaswag_localjsonl": {
+      "acc,none": 0.3527185819557857,
+      "acc_stderr,none": 0.0047683953541468645,
+      "alias": "hellaswag_localjsonl"
+    },
+    "openbookqa_localjsonl": {
+      "acc,none": 0.196,
+      "acc_norm,none": 0.334,
+      "acc_norm_stderr,none": 0.02111349234774381,
+      "acc_stderr,none": 0.017770751227744897,
+      "alias": "openbookqa_localjsonl"
+    },
+    "piqa_localjsonl": {
+      "acc,none": 0.6403699673558215,
+      "acc_stderr,none": 0.011196669936752529,
+      "alias": "piqa_localjsonl"
+    },
+    "winogrande_localjsonl": {
+      "acc,none": 0.5540647198105761,
+      "acc_stderr,none": 0.013970093482330689,
+      "alias": "winogrande_localjsonl"
+    }
+  },
+  "macro_accuracy": 0.39322609031590366,
+  "method": "PALU_FDP_PRIOR",
+  "model": "/diskF/jiaqizhang/PALU_PAPER_REPRO_AND_FDP_V2/models/Llama-2-7b-hf",
+  "num_fewshot": 0,
+  "protocol": "official PaLu run_lm_eval.py task list; common HFLM wrapper; GPU batch constrained to 1",
+  "ratio": 0.5,
+  "resource": {
+    "decode_cache_bytes": 133693440,
+    "prefill_cache_bytes": 133693440,
+    "total_native_rank": 32640
+  },
+  "schedule_path": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/exchange/calibration/ratio_0.5/fdp_prior/final_schedule.json",
+  "schedule_sha": "1f199ee16b7028626a731271b0fab5facfcf9d65158079594780b9e7dd95f761",
+  "seed": {
+    "fewshot_random_seed": 1234,
+    "numpy_random_seed": 1234,
+    "random_seed": 0,
+    "torch_random_seed": 1234
+  },
+  "selected_accuracy": {
+    "arc_challenge": {
+      "accuracy": 0.22184300341296928,
+      "bound_task": "arc_challenge_localjsonl",
+      "metric": "acc,none"
+    },
+    "arc_easy": {
+      "accuracy": 0.39436026936026936,
+      "bound_task": "arc_easy_localjsonl",
+      "metric": "acc,none"
+    },
+    "hellaswag": {
+      "accuracy": 0.3527185819557857,
+      "bound_task": "hellaswag_localjsonl",
+      "metric": "acc,none"
+    },
+    "openbookqa": {
+      "accuracy": 0.196,
+      "bound_task": "openbookqa_localjsonl",
+      "metric": "acc,none"
+    },
+    "piqa": {
+      "accuracy": 0.6403699673558215,
+      "bound_task": "piqa_localjsonl",
+      "metric": "acc,none"
+    },
+    "winogrande": {
+      "accuracy": 0.5540647198105761,
+      "bound_task": "winogrande_localjsonl",
+      "metric": "acc,none"
+    }
+  },
+  "status": "FORMAL_ZERO_SHOT_COMPLETE",
+  "task_config_dir": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/local_zero_shot_tasks",
+  "tasks": [
+    "openbookqa",
+    "hellaswag",
+    "piqa",
+    "arc_easy",
+    "arc_challenge",
+    "winogrande"
+  ]
+}

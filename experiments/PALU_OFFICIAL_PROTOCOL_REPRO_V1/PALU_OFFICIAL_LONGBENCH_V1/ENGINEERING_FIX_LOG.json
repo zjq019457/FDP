@@ -1,0 +1,35 @@
+[
+  {
+    "timestamp_utc": "2026-09-21T18:00:00Z",
+    "old_behavior": "Both initial official LongBench workers exited during initialization with ValueError: fast_hadamard_transform.__spec__ is None; stale ACTIVE state remained; no quality samples were produced.",
+    "fix": "Added a new-runner-only import repair: use the official fast-hadamard-transform path, preserve the existing profile fallback when the CUDA extension is unavailable, and set a valid ModuleSpec before Transformers probes package availability.",
+    "affected_file": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/code/run_official_longbench.py",
+    "affected_cells": [
+      "ratio_0p5/fisher",
+      "ratio_0p5/fdp_native"
+    ],
+    "patch_sha256": "0cef184905aed218bb47f10442fdf6f02ed34e584ad735058d20ce6b0f943215",
+    "scientific_parameters_modified": false,
+    "old_results_invalidated": false,
+    "foreign_jobs_interrupted": 0,
+    "failed_attempt_records": [
+      "runs/ratio_0p5/fisher/FAILED_ATTEMPT_1.json",
+      "runs/ratio_0p5/fdp_native/FAILED_ATTEMPT_1.json"
+    ]
+  },
+  {
+    "timestamp_utc": "2026-09-21T18:06:00Z",
+    "old_behavior": "Runner imported package-level scorer function instead of official longbench_utils.scorer module; it also omitted official build_chat/post_process adapter. Tasks failed before any valid prediction/result was written.",
+    "fix": "Import the official scorer module via importlib, use official task chat-prompt branch and post_process, and resume only tasks with zero valid samples.",
+    "affected_file": "/diskE/jiaqizhang/PALU_OFFICIAL_PROTOCOL_REPRO_V1/PALU_OFFICIAL_LONGBENCH_V1/code/run_official_longbench.py",
+    "affected_cells": [
+      "ratio_0p5/fisher",
+      "ratio_0p5/fdp_native"
+    ],
+    "patch_sha256": "1571ca0581564e8ee27f1959ba717cb11fd7469d150c4bf4e8d8e9808b4d57b3",
+    "scientific_parameters_modified": false,
+    "old_results_invalidated": false,
+    "prior_worker_restarted": true,
+    "restart_scope": "only own PaLu LongBench workers; foreign_jobs_interrupted=0"
+  }
+]

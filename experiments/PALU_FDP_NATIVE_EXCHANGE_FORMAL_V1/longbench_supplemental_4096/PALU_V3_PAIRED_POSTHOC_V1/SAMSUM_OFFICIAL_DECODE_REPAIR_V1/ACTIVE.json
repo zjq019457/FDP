@@ -1,0 +1,24 @@
+{
+  "acc_worker_pid": 1744085,
+  "completed_epoch": 1790827269.2443538,
+  "current_method": null,
+  "dedupe_audit": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/SAMSUM_OFFICIAL_DECODE_REPAIR_V1/V1_REUSE_DEDUP_AUDIT.json",
+  "exit_code": 0,
+  "exit_codes": {
+    "v1": 1
+  },
+  "failed_method": "v1",
+  "fix_log": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/SAMSUM_OFFICIAL_DECODE_REPAIR_V1/ENGINEERING_FIX_LOG.json",
+  "foreign_jobs_interrupted": 0,
+  "gpu": 2,
+  "gpu2_snapshot": "2, 66568 MiB, 92 %",
+  "launch_epoch": 1790826694.6223478,
+  "launched_epoch": 1790826846.8900616,
+  "manifest_payload_sha256": "b9523a53471451f1664a4bd13b36992e339d9d68875f2ba05e683d174ff51410",
+  "retry_attempt": 2,
+  "started_epoch": 1790826846.9171712,
+  "status": "COMPLETE",
+  "v1_official_baseline_reused": true,
+  "v1_official_reuse": "/diskE/jiaqizhang/PALU_FDP_NATIVE_EXCHANGE_FORMAL_V1/longbench_supplemental_4096/PALU_V3_PAIRED_POSTHOC_V1/SAMSUM_OFFICIAL_DECODE_REPAIR_V1/V1_REUSE_DEDUP_AUDIT.json",
+  "worker_pid": 1751484
+}
